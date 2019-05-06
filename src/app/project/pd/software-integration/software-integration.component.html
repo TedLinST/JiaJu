@@ -1,10 +1,10 @@
-<div class="design-database">
+<div class="software-integration">
   <!-- 横幅菜单 -->
   <pd-banner-menu [srcUrl]="CH_PD_BANNER_SRC" [dataMenu]="CH_PD_BANNER_MENU"
     (clickMenu)="onClickBannerMenu($event)">
   </pd-banner-menu>
-
   <div class="body">
+
     <!-- 面包屑 -->
     <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
       <nz-breadcrumb-item>
@@ -14,12 +14,12 @@
         <a (click)="portalNav.openProductDesign()">产品设计</a>
       </nz-breadcrumb-item>
       <nz-breadcrumb-item>
-        产品设计资料库
+        设计软件集成
       </nz-breadcrumb-item>
     </nz-breadcrumb>
 
-    <!-- 资料库分类筛选 -->
-    <key-dot-title title="资料库分类筛选"></key-dot-title>
+    <!-- 设计软件分类筛选 -->
+    <key-dot-title title="设计软件分类筛选"></key-dot-title>
     <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
       let-index="index">
       <key-menu-type [title]="item.title" [data]="item.data"
@@ -27,42 +27,23 @@
     </ng-template>
 
     <div style="height: 20px;"></div>
-
-    <!-- 资料库列表 -->
-    <key-dot-title title="资料库列表"></key-dot-title>
-    <div class="search-list">
-      <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-        <input type="text" nz-input placeholder="请输入类型"
-          [(ngModel)]="searchValue" />
-      </nz-input-group>
-      <ng-template #suffixIconButton>
-        <button nz-button nzType="primary" nzSearch (click)="onSearch()">
-          <i nz-icon type="search"></i></button>
-      </ng-template>
-    </div>
+    <!-- 产品设计列表 -->
+    <key-dot-title title="产品设计列表"></key-dot-title>
 
     <div *ngIf="listData != null && listData.length > 0">
       <div nz-row>
         <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
-          <div nz-col nzSpan="8" style="margin-bottom: 6px;">
-            <div class="item-box item-box-margin-3">
+          <div nz-col nzSpan="6" style="margin-bottom: 6px;">
+            <div class="key-item-box item-box-margin-3">
               <div class="header">
                 <img [src]="item.src">
-                <key-item-mask isTextLeft="true">
-                  <key-item-mask-label labelTitle="类型" [label]="item.type">
-                  </key-item-mask-label>
-                  <key-item-mask-label labelTitle="规格" [label]="item.specs">
-                  </key-item-mask-label>
-                  <key-item-mask-label labelTitle="风格" [label]="item.style">
-                  </key-item-mask-label>
-                  <key-item-mask-label labelTitle="材料" [label]="item.material">
-                  </key-item-mask-label>
-                  <key-item-mask-label labelTitle="品牌类型"
-                    [label]="item.brandType">
-                  </key-item-mask-label>
-                  <key-item-mask-label labelTitle="使用场所" [label]="item.place">
-                  </key-item-mask-label>
-                </key-item-mask>
+              </div>
+              <div class="body">
+                <div class="title">{{item.title}}</div>
+                <div class="label">{{item.date}}</div>
+                <div class="label">
+                  <i class="fa fa-eye"></i>{{item.number}}
+                </div>
               </div>
             </div>
           </div>
@@ -78,8 +59,10 @@
         </ng-template>
       </div>
     </div>
+
     <div *ngIf="!(listData != null && listData.length > 0)">
       <nz-empty></nz-empty>
     </div>
   </div>
+
 </div>

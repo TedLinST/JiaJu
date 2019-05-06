@@ -61,8 +61,7 @@ export class PortalNavigation {
    * 产品设计开发服务 - 设计软件集成
    */
   openSoftwareIntegration(event?: any) {
-    // this.router.navigateByUrl('software-integration');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('software-integration');
   }
 
   /**

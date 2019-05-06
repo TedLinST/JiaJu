@@ -1,75 +1,74 @@
-
 @charset "UTF-8";
 
 .box-h {
-    width: 100%;
-  }
-  
-  .box-v {
-    height: 100%;
-  }
-  
-  // 水平翻转文字
-  .flipx {
-    -webkit-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-        transform: scaleX(-1);
-    -webkit-filter: FlipH();
-            filter: FlipH();
-  }
-  
-  // 垂直翻转文字
-  .flipy {
-    -webkit-transform: scaleY(-1);
-    -ms-transform: scaleY(-1);
-        transform: scaleY(-1);
-    -webkit-filter: FlipV();
-            filter: FlipV();
-  }
-  
-  // 禁止选中文本
-  .unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  // 文本超出部分隐藏 - 单行
-  .singleTextBeyondHide {
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  
-  // 文本超出部分隐藏 - 多行(需要设置 -webkit-line-clamp ,兼容性问题)
-  .multiTextBeyondHide {
-    width: 100%;
-    overflow: hidden;
-    display: -webkit-box;
-    // 显示多少行，默认为 3 行
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-  
-  // 清除浮动
-  .clearfix {
-    clear: both;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-  
-  // 遮罩层
-  .maskZindex {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1050;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.4
-  }
+  width: 100%;
+}
+
+.box-v {
+  height: 100%;
+}
+
+// 水平翻转文字
+.flipx {
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH();
+  filter: FlipH();
+}
+
+// 垂直翻转文字
+.flipy {
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1);
+  -webkit-filter: FlipV();
+  filter: FlipV();
+}
+
+// 禁止选中文本
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// 文本超出部分隐藏 - 单行
+.singleTextBeyondHide {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 文本超出部分隐藏 - 多行(需要设置 -webkit-line-clamp ,兼容性问题)
+.multiTextBeyondHide {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  // 显示多少行，默认为 3 行
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+// 清除浮动
+.clearfix {
+  clear: both;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+// 遮罩层
+.maskZindex {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4
+}

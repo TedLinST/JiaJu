@@ -25,7 +25,7 @@ export const PortalRoutes = [
     { path: 'data-analysis-details/:id', loadChildren: '../project/pd/data-analysis-details/data-analysis-details.module#DataAnalysisDetailsModule' }, // 大数据分析详情
     { path: 'design-database', loadChildren: '../project/pd/design-database/design-database.module#DesignDatabaseModule' }, // 产品设计资料库
     { path: 'designers-garden', loadChildren: '../project/pd/designers-garden/designers-garden.module#DesignersGardenModule' }, // 设计师园地
-    // { path: 'software-integration', loadChildren: '../project/pd/software-integration/software-integration.module#SoftwareIntegrationModule' }, // 设计软件集成
+    { path: 'software-integration', loadChildren: '../project/pd/software-integration/software-integration.module#SoftwareIntegrationModule' }, // 设计软件集成
     // { path: 'enterprise-resource', loadChildren: '../project/er/enterprise-resource/enterprise-resource.module#EnterpriseResourceModule' }, // 企业资源管理系统
     // { path: 'organization', loadChildren: '../project/er/organization/organization.module#OrganizationModule' }, // 组织管理
     // { path: 'sale', loadChildren: '../project/er/sale/sale.module#SaleModule' }, // 销售管理
