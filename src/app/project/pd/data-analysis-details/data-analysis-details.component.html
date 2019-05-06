@@ -1,0 +1,120 @@
+<div class="data-analysis-details">
+
+  <!-- 横幅菜单 -->
+  <pd-banner-menu [srcUrl]="CH_PD_BANNER_SRC" [dataMenu]="CH_PD_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </pd-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openProductDesign()">产品设计</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openDataAnalysis()">大数据分析</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        大数据分析案例详情页
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+    <!-- 分析条件选择区 -->
+    <key-dot-title title="分析条件选择区"></key-dot-title>
+    <div class="body-content">
+      <form nz-form nzLayout="inline">
+        <nz-form-item>
+          <nz-form-label style="width:70px;">类型</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option1"
+              (ngModelChange)="onSelectOption(1,option1)">
+              <nz-option nzValue="类型 1" nzLabel="类型 1"></nz-option>
+              <nz-option nzValue="类型 2" nzLabel="类型 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">风格</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select nzAllowClear="true" name="option2" [(ngModel)]="option2"
+              (ngModelChange)="onSelectOption(2,option2)">
+              <nz-option nzValue="风格 1" nzLabel="风格 1"></nz-option>
+              <nz-option nzValue="风格 2" nzLabel="风格 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">材料</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select nzAllowClear="true" name="option3" [(ngModel)]="option3"
+              (ngModelChange)="onSelectOption(3,option3)">
+              <nz-option nzValue="材料 1" nzLabel="材料 1"></nz-option>
+              <nz-option nzValue="材料 2" nzLabel="材料 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">品牌类型</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select nzAllowClear="true" name="option4" [(ngModel)]="option4"
+              (ngModelChange)="onSelectOption(4,option4)">
+              <nz-option nzValue="品牌类型 1" nzLabel="品牌类型 1"></nz-option>
+              <nz-option nzValue="品牌类型 2" nzLabel="品牌类型 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">品牌</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select nzAllowClear="true" name="option5" [(ngModel)]="option5"
+              (ngModelChange)="onSelectOption(5,option5)">
+              <nz-option nzValue="品牌 1" nzLabel="品牌 1"></nz-option>
+              <nz-option nzValue="品牌 2" nzLabel="品牌 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">价格</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select nzAllowClear="true" name="option6" [(ngModel)]="option6"
+              (ngModelChange)="onSelectOption(6,option6)">
+              <nz-option nzValue="价格 1" nzLabel="价格 1"></nz-option>
+              <nz-option nzValue="价格 2" nzLabel="价格 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">定位人群</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select nzAllowClear="true" name="option7" [(ngModel)]="option7"
+              (ngModelChange)="onSelectOption(7,option7)">
+              <nz-option nzValue="定位人群 1" nzLabel="定位人群 1"></nz-option>
+              <nz-option nzValue="定位人群 2" nzLabel="定位人群 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">颜色</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select nzAllowClear="true" name="option8" [(ngModel)]="option8"
+              (ngModelChange)="onSelectOption(8,option8)">
+              <nz-option nzValue="颜色 1" nzLabel="颜色 1"></nz-option>
+              <nz-option nzValue="颜色 2" nzLabel="颜色 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+    </div>
+
+    <!-- 数据走势 -->
+    <key-dot-title title="数据走势"></key-dot-title>
+    <div class="body-content">
+      <div echarts [options]="chartBaseOption" (chartInit)="onChartInit($event)">
+      </div>
+    </div>
+
+  </div>
+
+</div>

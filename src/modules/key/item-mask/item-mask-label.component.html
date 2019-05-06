@@ -1,0 +1,11 @@
+<div class="label" [class.singleTextBeyondHide]="isTextBeyondHide">
+  <ng-template [ngIf]="label">
+    <ng-template [ngIf]="labelTitle">
+      {{labelTitle}}：
+    </ng-template>
+    {{label}}
+  </ng-template>
+  <ng-template [ngIf]="!label">
+    <ng-content></ng-content>
+  </ng-template>
+</div>

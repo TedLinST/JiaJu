@@ -1,0 +1,83 @@
+.key-vertical-menu {
+  z-index: 100;
+  background-color: #a9d4ae;
+  background-color: rgba(131, 195, 134, 0.7);
+  text-align: center;
+  width: 160px;
+  color: #fff;
+  padding: 10px 0px;
+  height: 100%;
+
+  &.key-vertical-menu-200 {
+    width: 200px;
+  }
+
+  >li {
+    line-height: 50px;
+    position: relative;
+
+    &.arrow {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-left: 6px solid #fff;
+        border-bottom: 6px solid transparent;
+      }
+    }
+
+    // 二级菜单
+    .sub-menu-ul {
+      display: none;
+      background-color: #a9d4ae;
+      background-color: rgba(137, 138, 142, 0.6);
+      text-align: center;
+      width: 160px;
+      position: absolute;
+      top: 0px;
+      left: 160px;
+      color: #fff;
+      padding: 10px 0px;
+      border-left: 1px solid #fff;
+
+      >li {
+        line-height: 50px;
+        position: relative;
+
+        &:hover {
+          color: #fff;
+          background-color: #898a8e;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &:hover {
+      color: #333;
+      background-color: #76bb78;
+      cursor: pointer;
+
+      .sub-menu-ul {
+        display: block;
+      }
+
+      &.arrow {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 22px;
+          right: 10px;
+          width: 0;
+          height: 0;
+          border-right: 6px solid transparent;
+          border-left: 6px solid transparent;
+          border-top: 6px solid #fff;
+        }
+      }
+    }
+  }
+}

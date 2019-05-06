@@ -1,0 +1,23 @@
+// 滚动栏
+:host ::ng-deep .ant-back-top {
+  height: 229px;
+    width: 45px;
+}
+
+.scroll-bar {
+  .scroll-bar-inner {
+    background: url("/assets/imgs/scroll-bar.jpg");
+    width: 45px;
+    height: 229px;
+
+    .item {
+      width: 45px;
+      height: 45px;
+    }
+
+    .line {
+      width: 45px;
+      height: 1px;
+    }
+  }
+}

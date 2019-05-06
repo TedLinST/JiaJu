@@ -1,0 +1,81 @@
+.product-design {
+
+  // 行业智库
+  .item-hangyezhiku {
+    background-color: #e6e6e6;
+    margin: 0px auto;
+    margin-top: 12px;
+    width: 1198px;
+    padding: 10px 0px;
+    height: 199px;
+    overflow: hidden;
+
+    .header {
+      float: left;
+      padding: 0px 10px;
+
+      .subTitle {
+        font-size: 22px;
+        color: #676767;
+      }
+
+      .title {
+        font-size: 28px;
+        color: #000000;
+
+        i {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .img {
+      float: left;
+    }
+
+    .body {
+      float: left;
+      padding: 10px 15px;
+      width: 660px;
+
+      .title {
+        color: #333333;
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+
+      .content {
+        color: #666666;
+        font-size: 15px;
+        height: 110px;
+        overflow: hidden;
+      }
+
+      .more {
+        text-align: right;
+
+        a {
+          color: #5fb35f;
+        }
+      }
+    }
+  }
+
+  // 设计软件集成
+  .box-dd {
+    border: 1px solid #dbdbdb;
+    height: 158px;
+    overflow: hidden;
+
+    .img {
+      float: left;
+      width: 148px;
+    }
+
+    .text {
+      height: 100%;
+      padding: 5px 8px;
+      margin-left: 148px;
+    }
+  }
+}

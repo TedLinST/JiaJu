@@ -1,0 +1,520 @@
+<div class="home">
+
+  <!-- 横幅 -->
+  <div class="key-banner">
+    <nz-carousel>
+      <div nz-carousel-content *ngFor="let item of dataHandler.BANNER">
+        <img class="img-bg" [src]="item.src">
+        <div class="box">
+          <div class="title">{{item.title}}</div>
+          <div class="label">{{item.text}}</div>
+        </div>
+      </div>
+    </nz-carousel>
+  </div>
+
+  <!-- 企业资源管理系统 -->
+  <key-item-chunk [enTitle]="dataHandler.ER.enTitle"
+    [title]="dataHandler.ER.title" [menuData]="dataHandler.ER.menuData"
+    [currentIndex]="currentIndexER"
+    (switchIndexChange)="carouselER.goTo($event);">
+    <div body>
+      <key-item-chunk-body [isMaxItem]="true">
+        <nz-carousel #carouselER [nzDots]="false">
+          <div nz-carousel-content *ngFor="let resource of dataHandler.ER.data">
+            <div class="resource-item">
+              <img [src]="resource.src">
+            </div>
+          </div>
+        </nz-carousel>
+        <div class="key-arrow key-arrow-horizontal">
+          <i class="fa fa-angle-left left"
+            (click)="carouselER.pre();switchER(-1);"></i>
+          <i class="fa fa-angle-right right"
+            (click)="carouselER.next();switchER(1);"></i>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 产品设计开发服务 -->
+  <key-item-chunk [enTitle]="dataHandler.PD.enTitle"
+    [title]="dataHandler.PD.title" [menuData]="dataHandler.PD.menuData"
+    (switchIndexChange)="currentIndexPD = $event">
+    <div body>
+      <!-- 大数据分析 -->
+      <key-item-chunk-body *ngIf="currentIndexPD == 0" [isMore]="true"
+        (clickMore)="portalNav.openDataAnalysis()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data0"
+            let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-bg item-box-margin-1">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="title">
+                    {{item.title}}
+                  </div>
+                  <div class="label">
+                    {{item.date}}
+                  </div>
+                  <div class="label label-hidde" style="height: 63px;">
+                    {{item.text}}
+                  </div>
+                </div>
+                <div class="footer footer-right">
+                  <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 产品设计资料库 -->
+      <key-item-chunk-body *ngIf="currentIndexPD == 1" [isMore]="true"
+        (clickMore)="portalNav.openDesignDatabase()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data1"
+            let-index="index">
+            <div nz-col nzSpan="6">
+              <div class="item-box item-box-bg item-box-margin-10"
+                (click)="openDesignDatabaseDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="title">{{item.title}}</div>
+                  <div class="label">{{item.date}}</div>
+                  <div class="label">
+                    <i class="fa fa-eye"></i>{{item.number}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 设计师园地 -->
+      <key-item-chunk-body *ngIf="currentIndexPD == 2" [isMore]="true"
+        (clickMore)="portalNav.openDesignersGarden()">
+        <key-carousel [data]="dataHandler.PD.data2" [labelArray]="labelArrayPD2"
+          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+      <!-- 设计软件集成 -->
+      <key-item-chunk-body *ngIf="currentIndexPD == 3" [isMore]="true"
+        (clickMore)="portalNav.openSoftwareIntegration()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data3"
+            let-index="index">
+            <div nz-col nzSpan="6">
+              <div class="item-box item-box-bg item-box-margin-5"
+                (click)="openSoftwareIntegrationDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="label">{{item.title}}</div>
+                  <div class="label">
+                    <i class="fa fa-eye"></i>{{item.number}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 校企合作服务 -->
+  <key-item-chunk [enTitle]="dataHandler.SEC.enTitle"
+    [title]="dataHandler.SEC.title" [menuData]="dataHandler.SEC.menuData"
+    (switchIndexChange)="currentIndexSEC = $event">
+    <div body>
+      <!-- 学校项目 -->
+      <key-item-chunk-body *ngIf="currentIndexSEC == 0" [isMore]="true"
+        (clickMore)="onClickMoreSEC0()">
+        <div class="SEC0-style">
+          <div class="left" (click)="openSchoolProjectDetails(1)">
+            <img src="/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-1.jpg">
+            <key-item-mask>
+              <key-item-mask-label label="重点推荐项目标题"></key-item-mask-label>
+            </key-item-mask>
+          </div>
+          <div class="right"
+            style="padding-left: 6px;width: calc(100% - 299px)">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data0"
+              let-index="index">
+              <div nz-col nzSpan="8" style="height: 182px;margin-bottom: 21px;">
+                <div class="item-box item-box-margin-3"
+                  (click)="openQuickAccess(item.id)">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask>
+                      <key-item-mask-label [label]="item.title">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 企业需求 -->
+      <key-item-chunk-body *ngIf="currentIndexSEC == 1" [showItemNumber]="5"
+        [isMore]="true" (clickMore)="onClickMoreSEC1()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data1"
+            let-index="index">
+            <div nz-col nzSpan="4">
+              <div class="item-box item-box-margin-3"
+                (click)="openEnterpriseNeedsDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 互动讲堂 -->
+      <key-item-chunk-body *ngIf="currentIndexSEC == 2" [isMore]="true"
+        (clickMore)="onClickMoreSEC2()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data2"
+            let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-margin-3">
+                <div class="header">
+                  <video [src]="item.src" controls="controls"
+                    style="width: 100%;">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 有困难找专家 -->
+      <key-item-chunk-body *ngIf="currentIndexSEC == 3" [isMore]="true"
+        (clickMore)="onClickMoreSEC3()">
+        <key-carousel [data]="dataHandler.SEC.data3" nzSpan="4"
+          [labelArray]="labelArraySEC3"
+          (clickItem)="openSeekExpertDetails($event)">
+        </key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 综合服务 -->
+  <key-item-chunk [enTitle]="dataHandler.IS.enTitle"
+    [title]="dataHandler.IS.title" [menuData]="dataHandler.IS.menuData"
+    (switchIndexChange)="currentIndexIS = $event">
+    <div body>
+      <!-- 展会服务 -->
+      <key-item-chunk-body *ngIf="currentIndexIS == 0" [isMaxItem]="true">
+        <div class="IS0-style">
+          <div class="top-title">
+            <div class="title">简约风展会区 共筑家具之美</div>
+            <div class="EnTitle">EXHIBITION AREA</div>
+          </div>
+          <div class="key-item-chunk-body-max-content">
+            <key-carousel [data]="dataHandler.IS.data0" nzSpan="6"
+              [maskMode]="true" (clickItem)="openExhibitionDetails($event)">
+            </key-carousel>
+          </div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 政府服务 -->
+      <key-item-chunk-body *ngIf="currentIndexIS == 1" [isMaxItem]="true">
+        <div class="IS1-style">
+          <div class="top-title">
+            <div class="title">政府服务</div>
+            <div class="EnTitle">GOVERNMENT SERVICE</div>
+          </div>
+          <div class="key-item-chunk-body-max-content">
+            <key-carousel [data]="dataHandler.IS.data1" nzSpan="6"
+              [maskMode]="true" (clickItem)="openGovernmentDetails($event)">
+            </key-carousel>
+          </div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 金融服务 -->
+      <key-item-chunk-body *ngIf="currentIndexIS == 2" [showItemNumber]="5"
+        [isMoreAlignSelect]="true" [isMore]="true"
+        (clickMore)="onClickMoreIS2()">
+        <div class="selectIS2" style="margin-bottom: 10px">
+          <nz-select nzAllowClear="true" style="width: 300px;"
+            nzPlaceHolder="请选择项目" [(ngModel)]="selectValueIS2"
+            (ngModelChange)="onSelectIS2()">
+            <nz-option *ngFor="let option of dataHandler.IS.dataSelect2"
+              [nzLabel]="option.label" [nzValue]="option.value">
+            </nz-option>
+          </nz-select>
+        </div>
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="iSdata2" let-index="index">
+            <div *ngIf="index < 5" nz-col nzSpan="4">
+              <div class="item-box item-box-margin-3"
+                (click)="openFinanceDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 物流售后服务 -->
+      <key-item-chunk-body *ngIf="currentIndexIS == 3">
+        <div class="IS3-style" (click)="openLogistics()">
+          <img src="/assets/imgs/home/zongHeFuWu/wuliu.jpg">
+          <key-item-mask [isTextLeft]="true">
+            <key-item-mask-label [isTextBeyondHide]="false" label="制定制度并不困难，关键是要让员工认可、内化服务理念、服务宗旨，这样员工才会主动地、绞尽脑汁地去想、去做他能为客户所做的事情。同时，物流公司在服务上的竞争，关键不是服务项目和产品的多少，
+            因为这是很易模仿的，而在于服务文化。因为建立和改变物流企业文化，需要一段漫长的过程。在这个过程中，管理者起着决定性的作用。">
+            </key-item-mask-label>
+          </key-item-mask>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 原辅材料机械设备服务 -->
+  <key-item-chunk [enTitle]="dataHandler.ME.enTitle"
+    [title]="dataHandler.ME.title" [menuData]="dataHandler.ME.menuData"
+    (switchIndexChange)="currentIndexME = $event">
+    <div body>
+      <!-- 木材团购 -->
+      <key-item-chunk-body *ngIf="currentIndexME == 0" [isMore]="true"
+        (clickMore)="onClickMoreME0()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.ME.data0"
+            let-index="index">
+            <div nz-col nzSpan="6">
+              <div class="item-box item-box-bg item-box-margin-1"
+                (click)="openWoodShoppingDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="label">类型：{{item.type}}</div>
+                  <div class="label">名称：{{item.title}}</div>
+                  <div class="label">产地：{{item.address}}</div>
+                  <div class="label">规格：{{item.specs}}</div>
+                  <div class="label">
+                    <span>团号：{{item.code}}</span>
+                    <span>团长：{{item.people}}</span>
+                  </div>
+                  <div class="label">
+                    <span>价格：{{item.price}}</span>
+                    <span>状态：{{item.status}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 机械设备 -->
+      <key-item-chunk-body *ngIf="currentIndexME == 1" [isMore]="true"
+        (clickMore)="onClickMoreME1()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.ME.data1"
+            let-index="index">
+            <div nz-col nzSpan="12">
+              <div class="item-box item-box-bg item-box-margin-1"
+                (click)="openMechanicsEquipmentDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="label">产品名称：{{item.type}}</div>
+                  <div class="label">产品说明：{{item.explain}}</div>
+                  <div class="label">
+                    <span>发布日期：{{item.date}}</span>
+                    <span>所在地：{{item.address}}</span>
+                  </div>
+                  <div class="label">
+                    <span>价格：{{item.price}}</span>
+                    <span>联系：{{item.tel}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 原辅材料机械设备服务 -->
+  <key-item-chunk [enTitle]="dataHandler.FM.enTitle"
+    [title]="dataHandler.FM.title" [menuData]="dataHandler.FM.menuData"
+    (switchIndexChange)="currentIndexFM = $event">
+    <div body>
+      <!-- 推荐商品 -->
+      <key-item-chunk-body *ngIf="currentIndexFM == 0" [isMore]="true"
+        [showItemNumber]="5" (clickMore)="onClickMoreFM0()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data0"
+            let-index="index">
+            <div nz-col nzSpan="4" style="height: 397px;margin-bottom: 5px;">
+              <div class="item-box item-box-margin-3"
+                (click)="openCommodityDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask isTextLeft="true">
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="链接" [label]="item.link">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="价格" [label]="item.price">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 团购 -->
+      <key-item-chunk-body *ngIf="currentIndexFM == 1" [isMore]="true"
+        (clickMore)="onClickMoreFM1()">
+        <div class="FM1-style">
+          <div class="left" (click)="openGroupBuyingDetails(0)">
+            <img src="/assets/imgs/home/jiaJuShangCheng/tuangou-1.jpg">
+            <key-item-mask>
+              <key-item-mask-label label="团购商品名称0"></key-item-mask-label>
+            </key-item-mask>
+          </div>
+          <div class="right"
+            style="padding-left: 14px;width: calc(100% - 472px)">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data1"
+              let-index="index">
+              <div nz-col nzSpan="8" style="height: 394px;margin-bottom: 12px;">
+                <div class="item-box item-box-margin-8"
+                  (click)="openGroupBuyingDetails(item.id)">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask isTextLeft="true">
+                      <key-item-mask-label [label]="item.title">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 品牌 -->
+      <key-item-chunk-body *ngIf="currentIndexFM == 2" [isMore]="true"
+        [isMaxItem]="true" (clickMore)="onClickMoreFM2()">
+        <div class="FM2-style">
+          <div class="body">
+            <div class="max-logo">
+              <div class="text">
+                LOGO
+              </div>
+            </div>
+            <key-carousel [data]="dataHandler.FM.data2" nzSpan="5"
+              [rowArray]="[0,1]" (clickItem)="openBrandDetails($event)">
+            </key-carousel>
+          </div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 众筹频道 -->
+      <key-item-chunk-body *ngIf="currentIndexFM == 3">
+        <div class="FM3-style">
+          <div class="searchFM3">
+            <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+              <input type="text" nz-input placeholder="请输入项目名称"
+                [(ngModel)]="searchValueFM3" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+              <button nz-button nzType="primary" nzSearch
+                (click)="onSearchFM3()">
+                <i nz-icon type="search"></i></button>
+            </ng-template>
+          </div>
+          <div class="btnFM3">
+            <button nz-button nzType="primary">发布资金</button>
+          </div>
+          <div *ngIf="FMdata3 != null && FMdata3.length > 0">
+            <div nz-row>
+              <ng-template ngFor let-item [ngForOf]="FMdata3" let-index="index">
+                <div nz-col nzSpan="8" style="margin-bottom: 2px">
+                  <div class="item-box item-box-bg item-box-margin-1"
+                    (click)="openChannelChannelDetails(item.id)">
+                    <div class="header">
+                      <img [src]="item.src">
+                      <key-item-mask [isMaskPaved]="true">
+                        <key-item-mask-label [label]="item.title">
+                        </key-item-mask-label>
+                        <key-item-mask-label [label]="item.subTitle">
+                        </key-item-mask-label>
+                      </key-item-mask>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+          <div *ngIf="!(FMdata3 != null && FMdata3.length > 0)">
+            <nz-empty></nz-empty>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 快速入口 -->
+  <key-item-chunk [enTitle]="dataHandler.FE.enTitle"
+    [title]="dataHandler.FE.title" [menuData]="dataHandler.FE.menuData">
+    <div body>
+      <key-item-chunk-body>
+
+        <div class="FE0-style">
+          <div class="left" (click)="openQuickAccess(0)">
+            <img src="/assets/imgs/home/kuaiSuRuKou/rukou-1.jpg">
+            <key-item-mask>
+              <key-item-mask-label label="大数据分析服务"></key-item-mask-label>
+            </key-item-mask>
+          </div>
+          <div class="right"
+            style="padding-left: 6px;width: calc(100% - 299px)">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.FE.data0"
+              let-index="index">
+              <div nz-col nzSpan="8" style="height: 182px;margin-bottom: 21px;">
+                <div class="item-box item-box-margin-3"
+                  (click)="openQuickAccess(item.id)">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask>
+                      <key-item-mask-label [label]="item.title">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+</div>

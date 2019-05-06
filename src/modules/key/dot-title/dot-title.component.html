@@ -1,0 +1,11 @@
+<div class="key-dot-title" [class.key-dot-title-inline]="isDotTitleInline">
+  <span class="dot" [ngStyle]="dotStyles"></span>
+  <ng-template [ngIf]="!isTemplate">
+    <span class="title" [ngStyle]="styles">
+      {{title}}
+    </span>
+  </ng-template>
+  <ng-template [ngIf]="isTemplate">
+    <ng-content></ng-content>
+  </ng-template>
+</div>

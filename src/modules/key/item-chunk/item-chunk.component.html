@@ -1,0 +1,20 @@
+<div class="key-item-chunk">
+  <div class="header">
+    <div class="en-title">{{enTitle}}</div>
+    <div class="title">
+      {{title}}
+      <div *ngIf="isTitleLine" class="line left"></div>
+      <div *ngIf="isTitleLine" class="line right"></div>
+    </div>
+    <div class="menu">
+      <ng-template ngFor let-menu [ngForOf]="menuData" let-index="index">
+        <a [class.active]="currentIndex == index"
+          (click)="switchIndex(index)">{{menu.title}}</a>
+      </ng-template>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="body">
+    <ng-content select="[body]"></ng-content>
+  </div>
+</div>

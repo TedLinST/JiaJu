@@ -1,0 +1,93 @@
+<div class="data-analysis">
+  <!-- 横幅菜单 -->
+  <pd-banner-menu [srcUrl]="CH_PD_BANNER_SRC" [dataMenu]="CH_PD_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </pd-banner-menu>
+
+  <!-- 企业内部数据分析案例 -->
+  <key-item-chunk [enTitle]="dataHandler.IDAC.enTitle"
+    [title]="dataHandler.IDAC.title">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item
+            [ngForOf]="dataHandler.IDAC.data" let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-bg item-box-margin-1">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="title">
+                    {{item.title}}
+                  </div>
+                  <div class="label">
+                    {{item.date}}
+                  </div>
+                </div>
+                <div class="footer footer-right">
+                  <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 行业智库 -->
+  <key-item-chunk [enTitle]="dataHandler.ITT.enTitle"
+    [title]="dataHandler.ITT.title">
+    <div body>
+      <key-item-chunk-body>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.ITT.data"
+          let-index="index">
+          <div class="item-itt">
+            <img class="img" [src]="item.src">
+            <div class="body">
+              <div class="text">{{item.text}}</div>
+              <div class="info">
+                <span class="author">{{item.author}}</span>
+                <span class="time">{{item.time}}</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 互联网数据平台 -->
+  <key-item-chunk [enTitle]="dataHandler.IDP.enTitle"
+    [title]="dataHandler.IDP.title">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item
+            [ngForOf]="dataHandler.IDP.data" let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-bg item-box-margin-1">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="title">
+                    {{item.title}}
+                  </div>
+                  <div class="label">
+                    {{item.date}}
+                  </div>
+                </div>
+                <div class="footer footer-right">
+                  <a (click)="openDataPlatformDetails(item.id)">MORE+</a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

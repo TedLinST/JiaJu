@@ -1,0 +1,59 @@
+<div class="protal-header flex flex-h">
+  <div class="logo flex flex-v flex-no-shrink">
+    <a (click)="portalNav.onHome()"
+      class="box-v box-h flex flex-v flex-h-center flex-v-center">
+      <span>家具产业链互联网平台</span>
+      <samp>FURNITURE INDUSTRY CHAIN INTERNET PLATFORM</samp>
+    </a>
+  </div>
+  <div class="menu flex flex-grow-1">
+    <ul class="menu-ul">
+      <li (click)="portalNav.onHome()">首页</li>
+      <li (click)="portalNav.openProductDesign($event)">产品设计开发服务</li>
+      <li (click)="portalNav.openEnterpriseResource($event)">企业资源管理系统</li>
+      <li (click)="portalNav.openSECooperation($event)">校企合作服务
+        <ul class="sub-menu-ul">
+          <li class="arrow">
+            学校项目
+            <ul class="three-menu-ul">
+              <li>学校项目一</li>
+              <li>学校项目二</li>
+              <li>学校项目三</li>
+            </ul>
+          </li>
+          <li class="arrow">
+            企业需求
+            <ul class="three-menu-ul">
+              <li>企业需求一</li>
+              <li>企业需求二</li>
+              <li>企业需求三</li>
+            </ul>
+          </li>
+          <li>互动讲堂</li>
+          <li>有困难找专家</li>
+        </ul>
+      </li>
+      <li (click)="portalNav.openIntegratedServices($event)">综合服务</li>
+      <li (click)="portalNav.openMaterialEquipment($event)">原辅材料机械设备服务
+        <ul class="sub-menu-ul">
+          <li>原辅材料商城</li>
+          <li>原辅材料团购</li>
+          <li>原辅材料求购</li>
+          <li>原辅材料供应商</li>
+          <li>木材拍卖行</li>
+          <li>机械设备商城</li>
+          <li>机械设备供应商</li>
+          <li>机械设备求购</li>
+        </ul>
+      </li>
+      <li (click)="portalNav.openFurnitureMall($event)">家具商城</li>
+    </ul>
+  </div>
+  <div class="user-info flex flex-no-shrink">
+    <a (click)="portalNav.onLogin()">登录</a>
+    |
+    <a (click)="portalNav.onRegister()">注册</a>
+  </div>
+</div>
+
+<div style="height: 80px;"></div>

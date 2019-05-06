@@ -1,0 +1,36 @@
+<div class="key-menu-type">
+  <div class="item" [class.item-line]="isShowLine">
+    <div class="top">
+      <span class="title">
+        {{title}}
+        <ng-template [ngIf]="!!title && isShowColon">
+          ：
+        </ng-template>
+      </span>
+      <ng-template ngFor let-col [ngForOf]="data" let-index="index">
+        <a class="label" (click)="onClockLabel(col)"
+          [class.active]="selectMap[col.id]">
+          {{col.label}}
+          <ng-template [ngIf]="col.subData != null && col.subData.length > 0">
+            <span class="fa fa-angle-down on1"></span>
+            <span class="fa fa-angle-up on2"></span>
+          </ng-template>
+        </a>
+      </ng-template>
+    </div>
+    <div class="bottom" *ngIf="subData != null && subData.length > 0">
+      <div class="sub-type">
+        <ng-template ngFor let-subCol [ngForOf]="subData" let-subIndex="index">
+          <a class="sub-label" (click)="onClockSubLabel(subCol)"
+            [class.active]="selectSubMap[subCol.id]">
+            {{subCol.label}}
+          </a>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>

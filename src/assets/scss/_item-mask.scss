@@ -1,0 +1,70 @@
+.key-item-mask {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+
+  &.key-item-mask-left {
+    text-align: left;
+  }
+
+  &.key-item-mask-right {
+    text-align: right;
+  }
+
+  .key-item-mask-body {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    color: #fff;
+    padding: 8px 10px;
+
+    .label {
+      margin-bottom: 4px;
+
+      span {
+        display: inline-block;
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  // 铺满
+  &.item-mask-paved {
+    height: 100%;
+
+    .key-item-mask-body {
+      display: none;
+      height: 100%;
+    }
+
+    &:hover {
+      .key-item-mask-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+    }
+  }
+
+
+
+
+
+}

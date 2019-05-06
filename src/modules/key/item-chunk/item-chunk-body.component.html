@@ -1,0 +1,7 @@
+<div class="key-item-chunk-body key-col-{{showItemNumber}}"
+  [class.key-item-chunk-body-max]="isMaxItem">
+  <div class="tools" [class.align-select]="isMoreAlignSelect">
+    <a class="more" *ngIf="isMore" (click)="onClickMore()">MORE+</a>
+  </div>
+  <ng-content></ng-content>
+</div>

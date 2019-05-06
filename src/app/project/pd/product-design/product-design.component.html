@@ -1,0 +1,153 @@
+<div class="product-design">
+  <!-- 横幅菜单 -->
+  <pd-banner-menu [srcUrl]="CH_PD_BANNER_SRC" [dataMenu]="CH_PD_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </pd-banner-menu>
+
+  <!-- 大数据分析 -->
+  <key-item-chunk [enTitle]="dataHandler.DA.enTitle"
+    [title]="dataHandler.DA.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openDataAnalysis()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.DA.data"
+            let-index="index">
+            <div nz-col nzSpan="12">
+              <div class="item-box item-box-bg item-box-margin-1">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="title">
+                    {{item.title}}
+                  </div>
+                  <div class="label">
+                    {{item.date}}
+                  </div>
+                  <div class="label label-hidde" style="height: 63px;">
+                    {{item.text}}
+                  </div>
+                </div>
+                <div class="footer footer-right">
+                  <a
+                    (click)="portalNav.openDataDnalysisDetails(item.id)">MORE+</a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 行业智库 -->
+  <div class="item-hangyezhiku">
+    <div class="header">
+      <div class="subTitle">{{dataHandler.IL.enTitle}}</div>
+      <div class="title" (click)="onClickMoreIL()">
+        {{dataHandler.IL.title}}
+        <i class="fa fa-angle-right"></i>
+      </div>
+    </div>
+    <img class="img" [src]="dataHandler.IL?.data[0].src">
+    <div class="body">
+      <div class="title">{{dataHandler.IL?.data[0].title}}</div>
+      <div class="content">{{dataHandler.IL?.data[0].content}}
+      </div>
+      <div class="more">
+        <a
+          (click)="openIndustryLibraryDetails(dataHandler.IL?.data[0].id)">MORE+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 设计师园地 -->
+  <key-item-chunk [enTitle]="dataHandler.DG.enTitle"
+    [title]="dataHandler.DG.title" [menuData]="dataHandler.DG.menuData"
+    [isTitleLine]="true" (switchIndexChange)="currentIndexDG = $event">
+    <div body>
+      <!-- 优秀设计师 -->
+      <key-item-chunk-body *ngIf="currentIndexDG == 0" [isMore]="true"
+        (clickMore)="onClickMoreDG0()">
+        <key-carousel [data]="dataHandler.DG.data0" nzSpan="4"
+          [labelArray]="labelArrayDG"
+          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+      <!-- 新锐设计师 -->
+      <key-item-chunk-body *ngIf="currentIndexDG == 1" [isMore]="true"
+        (clickMore)="onClickMoreDG1()">
+        <key-carousel [data]="dataHandler.DG.data1" nzSpan="4"
+          [labelArray]="labelArrayDG"
+          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+      <!-- 设计师论坛 -->
+      <key-item-chunk-body *ngIf="currentIndexDG == 2" [isMore]="true"
+        (clickMore)="onClickMoreDG2()">
+        <key-carousel [data]="dataHandler.DG.data2" nzSpan="4"
+          [labelArray]="labelArrayDG"
+          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 产品设计资料库 -->
+  <key-item-chunk [enTitle]="dataHandler.DD.enTitle"
+    [title]="dataHandler.DD.title" [menuData]="dataHandler.DD.menuData">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openDesignDatabase()" showItemNumber="5">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.DD.data"
+            let-index="index">
+            <div nz-col nzSpan="4">
+              <div class="item-box item-box-bg item-box-margin-3"
+                (click)="openDesignDatabaseDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 设计软件集成 -->
+  <key-item-chunk [enTitle]="dataHandler.SI.enTitle"
+    [title]="dataHandler.SI.title" [menuData]="dataHandler.SI.menuData">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openSoftwareIntegration()">
+        <ng-template ngFor let-item [ngForOf]="dataHandler.SI.data"
+          let-index="index">
+          <key-dot-title [title]="item.title"></key-dot-title>
+          <div nz-row>
+            <ng-template ngFor let-subData [ngForOf]="item.subData"
+              let-colIndex="index">
+              <div nz-col nzSpan="6">
+                <div class="item-box item-box-bg item-box-margin-3"
+                  (click)="openSoftwareIntegrationDetails(subData.id)">
+                  <div class="box-dd">
+                    <img class="img" [src]="subData.src">
+                    <div
+                      class="text flex flex-grow-1 flex-h-center flex-v-center">
+                      {{subData.title}}</div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </ng-template>
+
+
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+</div>

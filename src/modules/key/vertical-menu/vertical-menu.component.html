@@ -1,0 +1,15 @@
+<ul class="key-vertical-menu" [class.key-vertical-menu-200]="isWidth200" [ngStyle]="styles">
+  <ng-template ngFor let-menu [ngForOf]="data" let-index="index">
+    <li [class.arrow]="menu.subData != null && menu.subData.length > 0"
+      (click)="onClickMenu(menu)">
+      {{menu.title}}
+      <ul *ngIf="menu.subData != null && menu.subData.length > 0"
+        class="sub-menu-ul">
+        <ng-template ngFor let-menuSub [ngForOf]="menu.subData"
+          let-indexSub="index">
+          <li (click)="onClickMenu(menuSub)">{{menuSub.title}}</li>
+        </ng-template>
+      </ul>
+    </li>
+  </ng-template>
+</ul>

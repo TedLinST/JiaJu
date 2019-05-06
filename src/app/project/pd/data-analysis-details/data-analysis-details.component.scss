@@ -1,0 +1,23 @@
+.data-analysis-details {
+  a {
+    color: #555;
+
+    &:hover {
+      color: #84c486;
+    }
+  }
+
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+
+    .breadcrumb {
+      margin-bottom: 15px;
+    }
+
+    .body-content {
+      padding: 5px 15px;
+      margin-bottom: 10px;
+    }
+  }
+}

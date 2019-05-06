@@ -1,0 +1,29 @@
+<div>
+    <div class="header">
+        <protal-header></protal-header>
+    </div>
+    <div class="body">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+        <protal-footer></protal-footer>
+    </div>
+    
+    <nz-back-top class="scroll-bar" [nzTemplate]="tpl" [nzVisibilityHeight]="100">
+        <ng-template #tpl>
+            <div class="scroll-bar-inner">
+                <div class="item" (click)="onQQ($event)"></div>
+                <div class="line"></div>
+                <div class="item" (click)="onTel($event)"></div>
+                <div class="line"></div>
+                <div class="item" (click)="onBj($event)"></div>
+                <div class="line"></div>
+                <div class="item" (click)="onWx($event)"></div>
+                <div class="line"></div>
+                <div class="item"></div>
+                <div class="line"></div>
+            </div>
+        </ng-template>
+    </nz-back-top>
+
+</div>

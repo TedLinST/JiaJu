@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*===============
+ 约定：
+ 常量全部用大写字母来命名：$BROWSER_WINDOW_WIDTH: 1366px;
+ 函数用驼峰式命名法来命名：@mixin humpNamingFunction($parameter){}
+===============*/
+
+/*===============
+ 基础样式
+===============*/
+
+// 浏览器窗口基本宽度
+$BROWSER_WINDOW_WIDTH: 1366px;
+
+body {
+  min-width: $BROWSER_WINDOW_WIDTH;
+}
+
+/* 初始化样式 */
+@import "./init";
+
+/* 基础样式 */
+@import "./basics";
+
+/* 弹性布局样式 */
+@import "./flex";
+
+/* 横幅样式 */
+@import "./banner";
+
+/* 项目块样式 */
+@import "./item-chunk";
+
+/* 旋转木马样式 */
+@import "./_carousel";
+
+/* 项目遮罩层样式 */
+@import "./item-mask";
+
+/* 垂直菜单 */
+@import "_vertical-menu.scss";
+
+/* 圆点标题 */
+@import "_dot-title.scss";
+
+/* 菜单分类 */
+@import "_menu-type.scss";

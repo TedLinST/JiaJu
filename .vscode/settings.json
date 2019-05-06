@@ -1,0 +1,27 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed", // 压缩
+            "extensionName": ".min.css", // 编译后缀名
+            "savePath": "src/assets/css" // 编译保存的路径
+        }
+    ],
+    // 
+    "liveSassCompile.settings.generateMap": false,
+    // 自动将供应商前缀添加到不支持的CSS属性
+    "liveSassCompile.settings.autoprefix": [
+        "> 5%",
+        "last 5 versions"
+    ],
+    // 要排除特定文件夹
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**",
+        "src/app/*"
+    ],
+    // 指定要编译的文件夹
+    "liveSassCompile.settings.includeItems": [
+        "src/assets/scss/**"
+    ],
+    "editor.tabSize": 2
+}

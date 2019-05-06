@@ -1,0 +1,38 @@
+<div class="key-carousel">
+  <nz-carousel #carousel [nzDots]="false">
+    <div nz-carousel-content *ngFor="let item of data">
+      <ng-template ngFor let-row [ngForOf]="rowArray" let-rowIndex="index">
+        <div nz-row [style.marginBottom.px]="space * 2">
+          <ng-template ngFor let-subData [ngForOf]="item.data"
+            let-index="index">
+            <div nz-col [nzSpan]="nzSpan">
+              <div class="carousel-box carousel-box-margin-{{space}}"
+                (click)="onClick(subData.id)">
+                <div class="header">
+                  <img [src]="subData.src">
+                  <key-item-mask *ngIf="maskMode">
+                    <key-item-mask-label [label]="subData.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+                <div *ngIf="!maskMode" class="body"
+                  [class.body-padding]="labelArray != null && labelArray.length > 0"
+                  [class.body-bg]="isBodyBg">
+                  <ng-template ngFor let-labels [ngForOf]="labelArray">
+                    <key-carousel-label [label]="labels.label"
+                      [value]="subData[labels.key]" [unit]="labels.unit">
+                    </key-carousel-label>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </ng-template>
+    </div>
+  </nz-carousel>
+  <div class="key-arrow key-arrow-horizontal-out">
+    <i class="fa fa-angle-left left" (click)="carousel.pre();"></i>
+    <i class="fa fa-angle-right right" (click)="carousel.next();"></i>
+  </div>
+</div>

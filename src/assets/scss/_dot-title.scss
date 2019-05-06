@@ -1,0 +1,20 @@
+.key-dot-title {
+  &.key-dot-title-inline {
+    display: inline-block;
+  }
+
+  font-size: 16px;
+  margin: 5px 0px;
+
+  span.dot {
+    display: inline-block;
+    margin-right: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #41ec50;
+    border-radius: 50%;
+  }
+
+  span.title {}
+  
+}
