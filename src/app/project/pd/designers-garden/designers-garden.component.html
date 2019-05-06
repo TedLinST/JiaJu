@@ -1,0 +1,21 @@
+<div class="designers-garden">
+  <!-- 横幅菜单 -->
+  <pd-banner-menu [srcUrl]="CH_PD_BANNER_SRC" [dataMenu]="CH_PD_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </pd-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openProductDesign()">产品设计</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        设计师园地
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+</div>

@@ -54,8 +54,7 @@ export class PortalNavigation {
    * 产品设计开发服务 - 设计师园地
    */
   openDesignersGarden(event?: any) {
-    // this.router.navigateByUrl('designers-garden');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('designers-garden');
   }
 
   /**
