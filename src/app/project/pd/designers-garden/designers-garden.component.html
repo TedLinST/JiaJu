@@ -17,5 +17,171 @@
         设计师园地
       </nz-breadcrumb-item>
     </nz-breadcrumb>
+
+    <!-- 搜索条件 -->
+    <key-dot-title title="搜索条件"></key-dot-title>
+    <div class="body-content">
+      <form nz-form nzLayout="inline">
+        <nz-form-item>
+          <nz-form-control>
+            <label name="option1" nz-checkbox [(ngModel)]="option1"
+              (ngModelChange)="onSelectOption(1,option1)">
+              优秀设计师
+            </label>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-control>
+            <label name="option2" nz-checkbox [(ngModel)]="option2"
+              (ngModelChange)="onSelectOption(2,option2)">
+              新锐设计师
+            </label>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">擅长风格</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select name="option3" [(ngModel)]="option3"
+              (ngModelChange)="onSelectOption(3,option3)">
+              <nz-option nzValue="擅长风格 1" nzLabel="擅长风格 1"></nz-option>
+              <nz-option nzValue="擅长风格 2" nzLabel="擅长风格 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">所在城市</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select name="option4" [(ngModel)]="option4"
+              (ngModelChange)="onSelectOption(4,option4)">
+              <nz-option nzValue="所在城市 1" nzLabel="所在城市 1"></nz-option>
+              <nz-option nzValue="所在城市 2" nzLabel="所在城市 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">从业年限</nz-form-label>
+          <nz-form-control style="width:120px;">
+            <nz-select name="option5" [(ngModel)]="option5"
+              (ngModelChange)="onSelectOption(5,option5)">
+              <nz-option nzValue="从业年限 1" nzLabel="从业年限 1"></nz-option>
+              <nz-option nzValue="从业年限 2" nzLabel="从业年限 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:80px;">设计师类型</nz-form-label>
+          <nz-form-control style="width:140px;">
+            <nz-select name="option6" [(ngModel)]="option6"
+              (ngModelChange)="onSelectOption(6,option6)">
+              <nz-option nzValue="设计师类型 1" nzLabel="设计师类型 1"></nz-option>
+              <nz-option nzValue="设计师类型 2" nzLabel="设计师类型 2"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+    </div>
   </div>
+
+  <!-- 优秀设计师 -->
+  <key-item-chunk [enTitle]="dataHandler.FD.enTitle"
+    [title]="dataHandler.FD.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body>
+        <key-carousel [data]="dataHandler.FD.data" nzSpan="4"
+          [labelArray]="labelArray"
+          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 设计师列表 -->
+  <key-item-chunk [enTitle]="dataHandler.DL.enTitle"
+    [title]="dataHandler.DL.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body>
+        <div class="itemDL">
+          <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+            <div class="item">
+              <div class="header">
+                <img class="img" [src]="item.src">
+                <div class="right">
+                  <button class="btn" nz-button nzType="primary"
+                    (click)="onTel(item.id)">联系设计师</button>
+                  <button class="btn" nz-button nzType="primary"
+                    (click)="onCooperate(item.id)">发起合作</button>
+                </div>
+                <div class="info">
+                  <div class="p">
+                    <span>设计师名称：{{item.name}}</span><span>经验：{{item.experience}}</span>
+                  </div>
+                  <div class="p">
+                    <span>擅长风格：{{item.style}}</span><span>所在城市：{{item.place}}</span>
+                  </div>
+                  <div class="p">
+                    <span>评分与雷达图：{{item.score}}</span>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="body">
+                <div nz-row>
+                  <ng-template ngFor let-item [ngForOf]="item.subData"
+                    let-index="index">
+                    <div nz-col nzSpan="8" style="margin-bottom: 5px;">
+                      <div class="item-box item-box-margin-3">
+                        <div class="header">
+                          <img [src]="item.src">
+                        </div>
+                        <div class="body">
+                          <div class="title">{{item.title}}</div>
+                          <div class="label">
+                            <i class="fa fa-eye"></i>{{item.number}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <div class="pagination">
+            <nz-pagination [nzShowTotal]="rangeTemplate" [nzPageIndex]="1"
+              [nzTotal]="total" [nzPageSize]="pageSize"
+              (nzPageIndexChange)="onPageIndexChange()">
+            </nz-pagination>
+            <ng-template #rangeTemplate let-range="range" let-total>
+              显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+            </ng-template>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 家具论坛 -->
+  <key-item-chunk [enTitle]="dataHandler.FF.enTitle"
+    [title]="dataHandler.FF.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true" (clickMore)="onClickMoreFF()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FF.data"
+            let-index="index">
+            <div nz-col nzSpan="12" style="margin-bottom: 6px;">
+              <div class="item-box item-box-bg item-box-margin-3"
+                (click)="openFFDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title"></key-item-mask-label>
+                    <key-item-mask-label [label]="item.date"></key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
 </div>

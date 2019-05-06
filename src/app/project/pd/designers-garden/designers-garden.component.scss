@@ -6,5 +6,72 @@
     .breadcrumb {
       margin-bottom: 15px;
     }
+
+    .body-content {
+      padding: 5px 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .itemDL {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+
+    .item {
+      border: 1px solid #e3e2e3;
+      padding: 15px;
+      margin-bottom: 15px;
+
+      >.header {
+        padding: 0px 6px;
+
+        .img {
+          width: 120px;
+          height: 120px;
+          float: left;
+        }
+
+        .info {
+          height: 120px;
+          margin-left: 120px;
+          margin-right: 140px;
+          padding: 15px;
+
+          .p {
+            margin-bottom: 10px;
+
+            span {
+              display: inline-block;
+              font-size: 16px;
+              margin-right: 20px;
+              min-width: 240px;
+            }
+          }
+        }
+
+        .right {
+          float: right;
+          padding: 15px 0;
+
+          button {
+            display: block;
+            margin-bottom: 18px;
+            min-width: 120px;
+            background-color: #f4a674;
+            border-color: #f4a674;
+          }
+        }
+      }
+
+      >.body {
+        
+      }
+    }
+
+    .pagination {
+      text-align: right;
+    }
   }
 }
