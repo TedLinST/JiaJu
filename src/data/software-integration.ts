@@ -51,8 +51,8 @@ export const DataSoftwareIntegrationHandler = {
           label: '3MAX'
         },
         {
-          id: 'UG',
-          label: '国内出口'
+          id: '3',
+          label: 'UG'
         }
       ]
     },
