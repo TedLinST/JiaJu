@@ -1,0 +1,20 @@
+.material-supplier {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+
+    .filter-row {
+      margin-bottom: 15px;
+      .search {
+        float: right;
+        display: inline-block;
+        width: 300px;
+      }
+    }
+
+    .pagination {
+      margin-top: 15px;
+      text-align: right;
+    }
+  }
+}
