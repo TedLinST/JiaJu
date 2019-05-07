@@ -111,6 +111,21 @@
         }
       }
 
+      // 垂直箭头在右外
+      &.key-arrow-vertical-right-out {
+        i {
+          right: -80px;
+
+          &.top {
+            top: 0px;
+          }
+
+          &.bottom {
+            bottom: 0px;
+          }
+        }
+      }
+
     }
 
     .key-item-chunk-body {
@@ -121,7 +136,7 @@
       &.key-item-chunk-body-max {
         width: 100%;
 
-        .tools{
+        .tools {
           right: calc((100% - 1200px) / 2 + 5px);
         }
 
@@ -158,6 +173,7 @@
 
       .item-box {
         border: 1px solid transparent;
+
         &.item-box-margin-1 {
           margin: 0 1px;
         }
@@ -260,7 +276,7 @@
 
         }
 
-        &:hover{
+        &:hover {
           border: 1px solid #38a636;
         }
 

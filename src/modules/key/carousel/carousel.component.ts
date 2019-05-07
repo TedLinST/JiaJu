@@ -31,6 +31,9 @@ export class CarouselComponent implements OnInit {
   // 行数
   @Input() rowArray = [0];
 
+  // 箭头类型
+  @Input() arrowType: 'horizontal-out' | 'vertical-right-out' = 'horizontal-out';
+
   constructor() { }
 
   ngOnInit() {

@@ -2,7 +2,8 @@
   <nz-carousel #carousel [nzDots]="false">
     <div nz-carousel-content *ngFor="let item of data">
       <ng-template ngFor let-row [ngForOf]="rowArray" let-rowIndex="index">
-        <div nz-row [style.marginBottom.px]="space * 2">
+        <div nz-row
+          [style.marginBottom.px]="(rowArray != null && rowArray.length > 1) ? (space * 2):'0px'">
           <ng-template ngFor let-subData [ngForOf]="item.data"
             let-index="index">
             <div nz-col [nzSpan]="nzSpan">
@@ -31,8 +32,17 @@
       </ng-template>
     </div>
   </nz-carousel>
-  <div class="key-arrow key-arrow-horizontal-out">
+  <!-- 箭头水平在外 -->
+  <div *ngIf="arrowType == 'horizontal-out' && data != null && data.length > 1"
+    class="key-arrow key-arrow-horizontal-out">
     <i class="fa fa-angle-left left" (click)="carousel.pre();"></i>
     <i class="fa fa-angle-right right" (click)="carousel.next();"></i>
+  </div>
+  <!-- 箭头垂直在右外 -->
+  <div
+    *ngIf="arrowType == 'vertical-right-out' && data != null && data.length > 1"
+    class="key-arrow key-arrow-vertical-right-out">
+    <i class="fa fa-angle-up top" (click)="carousel.pre();"></i>
+    <i class="fa fa-angle-down bottom" (click)="carousel.next();"></i>
   </div>
 </div>

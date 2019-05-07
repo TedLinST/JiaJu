@@ -13,4 +13,199 @@
     <a (click)="portalNav.openEquipmentPurchase()">机械设备求购</a>
   </div>
 
+  <!-- 原辅材料商城 -->
+  <key-item-chunk [enTitle]="dataHandler.MM.enTitle"
+    [title]="dataHandler.MM.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true" [showItemNumber]="5"
+        (clickMore)="portalNav.openMaterialMart()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.MM.data"
+            let-index="index">
+            <div nz-col nzSpan="4" style="height: 242px;margin-bottom: 6px;">
+              <div class="item-box item-box-margin-3"
+                (click)="openMaterialMartDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 原辅材料团购 -->
+  <key-item-chunk [enTitle]="dataHandler.MS.enTitle"
+    [title]="dataHandler.MS.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true" [showItemNumber]="5"
+        (clickMore)="portalNav.openEquipmentShopping()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.MS.data"
+            let-index="index">
+            <div nz-col nzSpan="4" style="height: 242px;margin-bottom: 6px;">
+              <div class="item-box item-box-margin-3"
+                (click)="openEquipmentShoppingDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 原辅材料求购 -->
+  <key-item-chunk [enTitle]="dataHandler.MP.enTitle"
+    [title]="dataHandler.MP.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openMaterialPurchase()">
+        <key-carousel [data]="dataHandler.MP.data" nzSpan="4"
+          arrowType="vertical-right-out"
+          (clickItem)="openMaterialPurchaseDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 原辅材料供应商 -->
+  <key-item-chunk [enTitle]="dataHandler.MSU.enTitle"
+    [title]="dataHandler.MSU.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true" [showItemNumber]="5"
+        (clickMore)="portalNav.openMaterialSupplier()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.MSU.data"
+            let-index="index">
+            <div nz-col nzSpan="4" style="height: 242px;margin-bottom: 6px;">
+              <div class="item-box item-box-margin-3"
+                (click)="openMaterialSupplierDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 木材拍卖行 -->
+  <key-item-chunk [enTitle]="dataHandler.TA.enTitle"
+    [title]="dataHandler.TA.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openTimberAuction()">
+        <key-carousel [data]="dataHandler.TA.data" nzSpan="4"
+          (clickItem)="openTimberAuctionDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 机械设备商城 -->
+  <key-item-chunk [enTitle]="dataHandler.EM.enTitle"
+    [title]="dataHandler.EM.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openEquipmentMart()">
+        <key-carousel [data]="dataHandler.EM.data" nzSpan="4"
+          (clickItem)="openEquipmentMartDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 机械设备供应商 -->
+  <key-item-chunk [enTitle]="dataHandler.ES.enTitle"
+    [title]="dataHandler.ES.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openEquipmentSupplier()">
+        <key-carousel [data]="dataHandler.ES.data" nzSpan="4"
+          (clickItem)="openEquipmentSupplierDetails($event)"></key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 机械设备求购 -->
+  <key-item-chunk [enTitle]="dataHandler.EP.enTitle"
+    [title]="dataHandler.EP.title" [isTitleLine]="true">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openEquipmentPurchase()">
+        <div class="EP-list">
+          <div class="header">
+            <div class="row">
+              <div class="col col-1">产品图片</div>
+              <div class="col col-2">产品名称</div>
+              <div class="col col-3">所在地</div>
+              <div class="col col-4">价格</div>
+              <div class="col col-5">联系</div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="body">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.EP.data"
+              let-index="index">
+              <div class="row">
+                <div class="col col-1">
+                  <img [src]='item.src'>
+                </div>
+                <div class="col col-2">
+                  <div class="title singleTextBeyondHide">{{item.title}}</div>
+                  <div class="label singleTextBeyondHide">
+                    <span>设备类型：{{item.equipmentType}}</span>
+                    <span>设备体量：{{item.equipmentVolumes}}</span>
+                  </div>
+                  <div class="label singleTextBeyondHide">
+                    <span>生产企业：{{item.enterprise}}</span>
+                    <span>日期：{{item.date}}</span>
+                  </div>
+                  <div class="label singleTextBeyondHide">
+                    <span>产地：{{item.area}}</span>
+                    <span>销量：{{item.qty}}</span>
+                  </div>
+                  <div class="label singleTextBeyondHide">
+                    <span>说明：{{item.explain}}</span>
+                  </div>
+                </div>
+                <div class="col col-3">
+                  <div>{{item.location}}</div>
+                </div>
+                <div class="col col-4">
+                  <div>{{item.price}}</div>
+                </div>
+                <div class="col col-5">
+                  <button class="btn" nz-button nzType="primary"
+                    nzSize="small" (click)="onPurchase(item.id)">加购</button>
+                  <button class="btn" nz-button nzType="primary"
+                    nzSize="small" (click)="onCollection(item.id)">收藏</button>
+                  <button class="btn" nz-button nzType="primary"
+                    nzSize="small" (click)="onTel(item.id)">联系方式</button>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
 </div>
