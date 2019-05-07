@@ -85,8 +85,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('material-mart');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('material-mart');
   }
 
   /**

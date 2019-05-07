@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
-import { DataMaterialSupplierHandler } from 'src/data/me/material-supplier';
+import { DataMaterialMartHandler } from 'src/data/me/material-mart';
 import { Utils } from 'src/modules/utils/utils';
 
 @Component({
-  selector: 'app-material-supplier',
-  templateUrl: './material-supplier.component.html',
-  styleUrls: ['./material-supplier.component.scss']
+  selector: 'app-material-mart',
+  templateUrl: './material-mart.component.html',
+  styleUrls: ['./material-mart.component.scss']
 })
-export class MaterialSupplierComponent implements OnInit {
+export class MaterialMartComponent implements OnInit {
 
   // 横幅图片
   CH_ME_MATERIAL_BANNER_SRC: any;
@@ -30,6 +30,12 @@ export class MaterialSupplierComponent implements OnInit {
   total: 0;
 
   option1: any;
+  option2: any;
+  option3: any;
+  minPrice: number;
+  maxPrice: number;
+  allQty: number;
+  qty: number;
   searchValue: any;
 
   constructor(private router: Router) {
@@ -38,7 +44,7 @@ export class MaterialSupplierComponent implements OnInit {
 
   ngOnInit() {
     this.CH_ME_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MATERIAL_BANNER_SRC;
-    this.dataHandler = DataMaterialSupplierHandler;
+    this.dataHandler = DataMaterialMartHandler;
     this.total = this.dataHandler.LIST_DATA.length;
     this.handleListData(this.dataHandler.LIST_DATA);
   }
@@ -83,6 +89,13 @@ export class MaterialSupplierComponent implements OnInit {
   }
 
   /**
+   * 价格输入框失去焦点
+   */
+  onBlurPriceChange() {
+    this.listData = Utils.arrayRandomSort(this.listData);
+  }
+
+  /**
    * 所在地下拉框
    * @param option 
    */
@@ -92,6 +105,48 @@ export class MaterialSupplierComponent implements OnInit {
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
         if (row.location) {
           let text = '' + row.location;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+      });
+      this.handleListData(listData);
+    } else {
+      this.handleListData(this.dataHandler.LIST_DATA);
+    }
+  }
+
+  /**
+   * 产地下拉框
+   * @param option 
+   */
+  onSelectOption2(option: any) {
+    if (this.dataHandler.LIST_DATA && option != null) {
+      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
+      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
+        if (row.area) {
+          let text = '' + row.area;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+      });
+      this.handleListData(listData);
+    } else {
+      this.handleListData(this.dataHandler.LIST_DATA);
+    }
+  }
+
+  /**
+   * 截止日期下拉框
+   * @param option 
+   */
+  onSelectOption3(option: any) {
+    if (this.dataHandler.LIST_DATA && option != null) {
+      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
+      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
+        if (row.date) {
+          let text = '' + row.date;
           if (text.match(regExp)) {
             return true;
           }
@@ -130,10 +185,18 @@ export class MaterialSupplierComponent implements OnInit {
   }
 
   /**
-   * 企业链接
+   * 购买
    * @param id
    */
-  onLink(id: any) {
+  onPurchase(id: any) {
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 加购
+   * @param id
+   */
+  onAddPurchase(id: any) {
     this.navigateDeveloping();
   }
 

@@ -179,6 +179,38 @@ export const DataMaterialSupplierHandler = {
     {
       id: 1,
       title: 'xxxx公司',
+      business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
+      attribute: '上市',
+      location: '汕头',
+      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+    },
+    {
+      id: 1,
+      title: 'xxxx公司',
+      business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
+      attribute: '上市',
+      location: '汕头',
+      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+    },
+    {
+      id: 1,
+      title: 'xxxxxxxxxxxx公司',
+      business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
+      attribute: '上市',
+      location: '汕头',
+      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+    },
+    {
+      id: 1,
+      title: 'xxx有限公司',
+      business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
+      attribute: '上市',
+      location: '汕头',
+      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+    },
+    {
+      id: 1,
+      title: 'xx公司',
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
@@ -194,7 +226,7 @@ export const DataMaterialSupplierHandler = {
     },
     {
       id: 1,
-      title: 'xxxx公司',
+      title: 'xxxxxxx公司',
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
@@ -204,7 +236,7 @@ export const DataMaterialSupplierHandler = {
       id: 1,
       title: 'xxxx公司',
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
-      attribute: '上市',
+      attribute: '股份制',
       location: '汕头',
       src: '/assets/imgs/material-supplier/gongyingshang.jpg'
     },
@@ -212,48 +244,16 @@ export const DataMaterialSupplierHandler = {
       id: 1,
       title: 'xxxx公司',
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
-      attribute: '上市',
+      attribute: '国企',
       location: '汕头',
       src: '/assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
-      title: 'xxxx公司',
+      title: 'xx公司',
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
-      attribute: '上市',
-      location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
-    },
-    {
-      id: 1,
-      title: 'xxxx公司',
-      business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
-      attribute: '上市',
-      location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
-    },
-    {
-      id: 1,
-      title: 'xxxx公司',
-      business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
-      attribute: '上市',
-      location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
-    },
-    {
-      id: 1,
-      title: 'xxxx公司',
-      business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
-      attribute: '上市',
-      location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
-    },
-    {
-      id: 1,
-      title: 'xxxx公司',
-      business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
-      attribute: '上市',
-      location: '汕头',
+      attribute: '民营',
+      location: '揭阳',
       src: '/assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
