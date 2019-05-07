@@ -75,8 +75,8 @@
                   <span>日期：{{item.date}}</span>
                   <span>数量：{{item.qty}}</span>
                 </div>
-                <div class="label">
-                  <span>说明：{{item.explain}}</span>
+                <div class="label" style="max-height: 66px;overflow: hidden;">
+                  <span [title]="item.explain">说明：{{item.explain}}</span>
                 </div>
               </div>
               <div class="col col-3">
