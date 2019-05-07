@@ -1,4 +1,4 @@
-// 原辅材料机械设备服务数据助手
+// 原辅材料机械设备服务 - 机械设备商城数据助手
 export const DataEquipmentMartHandler = {
   // 条件选择区
   TYPE_FILTER: [
