@@ -1,0 +1,27 @@
+// 面包屑
+.ant-breadcrumb {
+  margin-bottom: 15px !important;
+
+  .ant-breadcrumb-link {
+    color: #888 !important;
+
+    a {
+      color: #555 !important;
+
+      &:hover {
+        color: #84c486 !important;
+      }
+    }
+  }
+}
+
+// 按钮
+/* .ant-btn {
+
+  &:focus,
+  &:hover {
+    color: #84c486 !important;
+    background-color: #fff;
+    border-color: #84c486 !important;
+  }
+} */

@@ -12,7 +12,7 @@ import { DataMaterialEquipmentHandler } from 'src/data/me/material-equipment';
 export class MaterialEquipmentComponent implements OnInit {
 
   // 横幅图片
-  CH_ME_MIN_BANNER_SRC: any;
+  CH_ME_MIN_MATERIAL_BANNER_SRC: any;
 
   // 门户导航
   portalNav: any;
@@ -25,7 +25,7 @@ export class MaterialEquipmentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.CH_ME_MIN_BANNER_SRC = ConstantHandler.CH_ME_MIN_BANNER_SRC;
+    this.CH_ME_MIN_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MIN_MATERIAL_BANNER_SRC;
     this.dataHandler = DataMaterialEquipmentHandler;
   }
 

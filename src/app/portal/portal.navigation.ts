@@ -82,6 +82,9 @@ export class PortalNavigation {
    * 原辅材料机械设备服务 - 原辅材料商城
    */
   openMaterialMart(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     // this.router.navigateByUrl('material-mart');
     this.navigateDeveloping();
   }
@@ -90,6 +93,9 @@ export class PortalNavigation {
    * 原辅材料机械设备服务 - 原辅材料团购
    */
   openEquipmentShopping(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     // this.router.navigateByUrl('material-shopping');
     this.navigateDeveloping();
   }
@@ -98,6 +104,9 @@ export class PortalNavigation {
    * 原辅材料机械设备服务 - 原辅材料求购
    */
   openMaterialPurchase(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     // this.router.navigateByUrl('material-purchase');
     this.navigateDeveloping();
   }
@@ -106,6 +115,9 @@ export class PortalNavigation {
    * 原辅材料机械设备服务 - 原辅材料供应商
    */
   openMaterialSupplier(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     // this.router.navigateByUrl('material-supplier');
     this.navigateDeveloping();
   }
@@ -114,6 +126,9 @@ export class PortalNavigation {
    * 原辅材料机械设备服务 - 木材拍卖行
    */
   openTimberAuction(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     // this.router.navigateByUrl('timber-auction');
     this.navigateDeveloping();
   }
@@ -122,14 +137,19 @@ export class PortalNavigation {
    * 原辅材料机械设备服务 - 机械设备商城
    */
   openEquipmentMart(event?: any) {
-    // this.router.navigateByUrl('equipment-mart');
-    this.navigateDeveloping();
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl('equipment-mart');
   }
 
   /**
    * 原辅材料机械设备服务 - 机械设备供应商
    */
   openEquipmentSupplier(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     // this.router.navigateByUrl('equipment-supplier');
     this.navigateDeveloping();
   }
@@ -138,6 +158,9 @@ export class PortalNavigation {
    * 原辅材料机械设备服务 - 机械设备求购
    */
   openEquipmentPurchase(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     // this.router.navigateByUrl('equipment-purchase');
     this.navigateDeveloping();
   }

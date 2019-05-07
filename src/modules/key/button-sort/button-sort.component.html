@@ -1,0 +1,6 @@
+<button class="key-button-sort" nz-button nzType="default" (click)="onClick()">
+  <span class="label">{{label}} </span>
+  <i *ngIf="active == '0'" class="fa fa-sort"></i>
+  <i *ngIf="active == '-1'" class="fa fa-sort-desc"></i>
+  <i *ngIf="active == '1'" class="fa fa-sort-up"></i>
+</button>

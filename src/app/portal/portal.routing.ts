@@ -42,6 +42,14 @@ export const PortalRoutes = [
     // { path: 'finance', loadChildren: '../project/is/finance/finance.module#FinanceModule' }, // 金融服务
     // { path: 'logistics', loadChildren: '../project/is/logistics/logistics.module#LogisticsModule' }, // 物流售后服务
     { path: 'material-equipment', loadChildren: '../project/me/material-equipment/material-equipment.module#MaterialEquipmentModule' }, // 原辅材料机械设备服务
+    // { path: 'material-mart', loadChildren: '../project/me/material-mart/material-mart.module#MaterialMartModule' }, // 原辅材料商城
+    // { path: 'material-shopping', loadChildren: '../project/me/material-shopping/material-shopping.module#MaterialShoppingModule' }, // 原辅材料团购
+    // { path: 'material-purchase', loadChildren: '../project/me/material-purchase/material-purchase.module#MaterialPurchaseModule' }, // 原辅材料求购
+    // { path: 'material-supplier', loadChildren: '../project/me/material-supplier/material-supplier.module#MaterialSupplierModule' }, // 原辅材料供应商
+    // { path: 'timber-auction', loadChildren: '../project/me/timber-auction/timber-auction.module#TimberAuctionModule' }, // 木材拍卖行
+    { path: 'equipment-mart', loadChildren: '../project/me/equipment-mart/equipment-mart.module#EquipmentMartModule' }, // 机械设备商城
+    // { path: 'equipment-supplier', loadChildren: '../project/me/equipment-supplier/equipment-supplier.module#EquipmentSupplierModule' }, // 机械设备供应商
+    // { path: 'equipment-purchase', loadChildren: '../project/me/equipment-purchase/equipment-purchase.module#EquipmentPurchaseModule' }, // 机械设备求购
     // { path: 'wood-shopping', loadChildren: '../project/me/wood-shopping/wood-shopping.module#WoodShoppingModule' }, // 木材团购
     // { path: 'mechanics-equipment', loadChildren: '../project/me/mechanics-equipment/mechanics-equipment.module#MechanicsEquipmentModule' }, // 机械设备
     // { path: 'furniture-mall', loadChildren: '../project/fm/furniture-mall/furniture-mall.module#FurnitureMallModule' }, // 家具商城

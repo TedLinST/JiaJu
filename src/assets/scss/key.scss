@@ -23,6 +23,9 @@ body {
 /* 基础样式 */
 @import "./basics";
 
+/* 框架样式修改 */
+@import "_ant-style.scss";
+
 /* 弹性布局样式 */
 @import "./flex";
 
@@ -49,3 +52,6 @@ body {
 
 /* 盒子样式 */
 @import "_item-box.scss";
+
+/* 按钮排序 */
+@import "_button-sort.scss";

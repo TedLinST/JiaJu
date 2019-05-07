@@ -7,6 +7,7 @@ import { ItemMaskModule } from './item-mask/item-mask.module';
 import { VerticalMenuModule } from './vertical-menu/vertical-menu.module';
 import { DotTitleModule } from './dot-title/dot-title.module';
 import { MenuTypeModule } from './menu-type/menu-type.module';
+import { ButtonSortModule } from './button-sort/button-sort.module';
 
 @NgModule({
   exports: [
@@ -17,7 +18,8 @@ import { MenuTypeModule } from './menu-type/menu-type.module';
     ItemMaskModule,
     VerticalMenuModule,
     DotTitleModule,
-    MenuTypeModule
+    MenuTypeModule,
+    ButtonSortModule
   ]
 })
 export class NgKeyModule { }

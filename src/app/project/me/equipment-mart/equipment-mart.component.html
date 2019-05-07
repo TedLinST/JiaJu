@@ -1,0 +1,131 @@
+<div class="equipment-mart">
+  <!-- 横幅 -->
+  <me-banner [srcUrl]="CH_ME_EQUIPMENT_BANNER_SRC">
+  </me-banner>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openMaterialEquipment()">原辅材料机械设备服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        机械设备商城
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <!-- 条件选择区 -->
+    <key-dot-title title="条件选择区"></key-dot-title>
+    <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
+      let-index="index">
+      <key-menu-type [title]="item.title" [data]="item.data"
+        (clickType)="onClickType($event)"></key-menu-type>
+    </ng-template>
+
+    <div style="height: 20px;"></div>
+
+    <!-- 过滤 -->
+    <div class="filter-row">
+      <key-button-sort label="销量"
+        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
+      <key-button-sort label="热度"
+        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
+      <key-button-sort label="价格"
+        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
+      <!-- 价格区间 -->
+      <nz-input-number style="margin-left:6px;" [(ngModel)]="minPrice"
+        (nzBlur)="onBlurPriceChange()" [nzPlaceHolder]="'￥请输入'" [nzStep]="1">
+      </nz-input-number>
+      -
+      <nz-input-number [(ngModel)]="maxPrice" [nzStep]="1"
+        (nzBlur)="onBlurPriceChange()" [nzPlaceHolder]="'￥请输入'">
+      </nz-input-number>
+
+      <div class="search">
+        <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+          <input type="text" nz-input placeholder="请输入产品名称"
+            [(ngModel)]="searchValue" />
+        </nz-input-group>
+        <ng-template #suffixIconButton>
+          <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+            <i nz-icon type="search"></i></button>
+        </ng-template>
+      </div>
+    </div>
+
+    <!-- 列表数据 -->
+    <div *ngIf="listData != null && listData.length > 0">
+      <div class="list">
+        <div class="header">
+          <div class="row">
+            <div class="col col-1">产品图片</div>
+            <div class="col col-2">产品名称</div>
+            <div class="col col-3">所在地</div>
+            <div class="col col-4">价格</div>
+            <div class="col col-5">联系</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="body">
+          <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+            <div class="row">
+              <div class="col col-1">
+                <img [src]='item.src'>
+              </div>
+              <div class="col col-2">
+                <div class="title singleTextBeyondHide">{{item.title}}</div>
+                <div class="label singleTextBeyondHide">
+                  <span>设备类型：{{item.equipmentType}}</span>
+                  <span>设备体量：{{item.equipmentVolumes}}</span>
+                </div>
+                <div class="label singleTextBeyondHide">
+                  <span>生产企业：{{item.enterprise}}</span>
+                  <span>日期：{{item.date}}</span>
+                </div>
+                <div class="label singleTextBeyondHide">
+                  <span>产地：{{item.area}}</span>
+                  <span>销量：{{item.qty}}</span>
+                </div>
+                <div class="label singleTextBeyondHide">
+                  <span>说明：{{item.explain}}</span>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div>{{item.location}}</div>
+              </div>
+              <div class="col col-4">
+                <div>{{item.price}}</div>
+              </div>
+              <div class="col col-5">
+                <button class="btn" nz-button nzType="primary" nzSize="small"
+                  (click)="onPurchase(item.id)">加购</button>
+                <button class="btn" nz-button nzType="primary" nzSize="small"
+                  (click)="onCollection(item.id)">收藏</button>
+                <button class="btn" nz-button nzType="primary" nzSize="small"
+                  (click)="onTel(item.id)">联系方式</button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </ng-template>
+        </div>
+        <div class="footer">
+          <div class="pagination">
+            <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
+              [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
+              (nzPageIndexChange)="onPageIndexChange()">
+            </nz-pagination>
+            <ng-template #rangeTemplate let-range="range" let-total>
+              显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!(listData != null && listData.length > 0)">
+      <nz-empty></nz-empty>
+    </div>
+  </div>
+</div>

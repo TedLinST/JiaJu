@@ -24,6 +24,7 @@ export class SoftwareIntegrationComponent implements OnInit {
 
   // 门户导航
   portalNav: any;
+  
   // 一页大小
   pageSize = 8;
 
