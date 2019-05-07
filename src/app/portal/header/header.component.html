@@ -37,7 +37,13 @@
       <li (click)="portalNav.openMaterialEquipment($event)">原辅材料机械设备服务
         <ul class="sub-menu-ul">
           <li (click)="portalNav.openMaterialMart($event)">原辅材料商城</li>
-          <li (click)="portalNav.openEquipmentShopping($event)">原辅材料团购</li>
+          <li class="arrow" (click)="portalNav.openEquipmentShopping($event)">
+            原辅材料团购
+            <ul class="three-menu-ul">
+              <li (click)="portalNav.openWoodShopping($event)">木材团购</li>
+              <li (click)="portalNav.openFurnitureRawShopping($event)">家具辅料团购</li>
+            </ul>
+          </li>
           <li (click)="portalNav.openMaterialPurchase($event)">原辅材料求购</li>
           <li (click)="portalNav.openMaterialSupplier($event)">原辅材料供应商</li>
           <li (click)="portalNav.openTimberAuction($event)">木材拍卖行</li>

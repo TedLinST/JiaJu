@@ -60,11 +60,17 @@
               </div>
               <div class="body">
                 <div class="title">{{item.title}}</div>
-                <div class="label">主营：{{item.business}}</div>
                 <div class="label">
                   <span>属性：{{item.attribute}}</span>
                   <span>所在地：{{item.location}}</span>
                 </div>
+                <div class="label" style="height: 65px;overflow: hidden;">
+                  主营：{{item.business}}
+                </div>
+              </div>
+              <div class="footer">
+                <button class="btn-bg" nz-button nzSize="small" nzType="primary" (click)="onLink(item.id)" style="margin-right: 6px">企业链接</button>
+                <button class="btn-bg" nz-button nzSize="small" nzType="primary" (click)="onCollection(item.id)">收藏</button>
               </div>
             </div>
           </div>
