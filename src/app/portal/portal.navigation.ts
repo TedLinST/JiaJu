@@ -158,8 +158,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('equipment-purchase');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('equipment-purchase');
   }
 
   /**

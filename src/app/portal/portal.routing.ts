@@ -49,7 +49,7 @@ export const PortalRoutes = [
     // { path: 'timber-auction', loadChildren: '../project/me/timber-auction/timber-auction.module#TimberAuctionModule' }, // 木材拍卖行
     { path: 'equipment-mart', loadChildren: '../project/me/equipment-mart/equipment-mart.module#EquipmentMartModule' }, // 机械设备商城
     { path: 'equipment-supplier', loadChildren: '../project/me/equipment-supplier/equipment-supplier.module#EquipmentSupplierModule' }, // 机械设备供应商
-    // { path: 'equipment-purchase', loadChildren: '../project/me/equipment-purchase/equipment-purchase.module#EquipmentPurchaseModule' }, // 机械设备求购
+    { path: 'equipment-purchase', loadChildren: '../project/me/equipment-purchase/equipment-purchase.module#EquipmentPurchaseModule' }, // 机械设备求购
     // { path: 'wood-shopping', loadChildren: '../project/me/wood-shopping/wood-shopping.module#WoodShoppingModule' }, // 木材团购
     // { path: 'mechanics-equipment', loadChildren: '../project/me/mechanics-equipment/mechanics-equipment.module#MechanicsEquipmentModule' }, // 机械设备
     // { path: 'furniture-mall', loadChildren: '../project/fm/furniture-mall/furniture-mall.module#FurnitureMallModule' }, // 家具商城
