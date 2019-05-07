@@ -100,6 +100,28 @@ export class PortalNavigation {
   }
 
   /**
+   * 原辅材料机械设备服务 - 原辅材料团购 - 木材团购
+   */
+  openWoodShopping(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('wood-shopping');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 原辅材料团购 - 家具辅料团购
+   */
+  openFurnitureRawShopping(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('furniture-raw-shopping');
+    this.navigateDeveloping();
+  }
+
+  /**
    * 原辅材料机械设备服务 - 原辅材料求购
    */
   openMaterialPurchase(event?: any) {
