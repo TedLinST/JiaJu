@@ -17,6 +17,9 @@ export class BannerMenuComponent implements OnInit {
   // 菜单数据
   @Input() dataMenu: KeyVerticalMenuEvent[] = [];
 
+  // 当前要激活的标题
+  @Input() activeTitle: any;
+
   constructor() { }
 
   ngOnInit() {

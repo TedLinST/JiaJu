@@ -1,0 +1,14 @@
+.me-banner {
+  position: relative;
+
+  &.min-banner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .bg {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+}

@@ -41,7 +41,7 @@ export const PortalRoutes = [
     // { path: 'government', loadChildren: '../project/is/government/government.module#GovernmentModule' }, // 政府服务
     // { path: 'finance', loadChildren: '../project/is/finance/finance.module#FinanceModule' }, // 金融服务
     // { path: 'logistics', loadChildren: '../project/is/logistics/logistics.module#LogisticsModule' }, // 物流售后服务
-    // { path: 'material-equipment', loadChildren: '../project/me/material-equipment/material-equipment.module#MaterialEquipmentModule' }, // 原辅材料机械设备服务
+    { path: 'material-equipment', loadChildren: '../project/me/material-equipment/material-equipment.module#MaterialEquipmentModule' }, // 原辅材料机械设备服务
     // { path: 'wood-shopping', loadChildren: '../project/me/wood-shopping/wood-shopping.module#WoodShoppingModule' }, // 木材团购
     // { path: 'mechanics-equipment', loadChildren: '../project/me/mechanics-equipment/mechanics-equipment.module#MechanicsEquipmentModule' }, // 机械设备
     // { path: 'furniture-mall', loadChildren: '../project/fm/furniture-mall/furniture-mall.module#FurnitureMallModule' }, // 家具商城

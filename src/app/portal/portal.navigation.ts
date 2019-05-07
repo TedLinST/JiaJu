@@ -72,9 +72,73 @@ export class PortalNavigation {
   }
 
   /**
-   * 材料机械
+   * 原辅材料机械设备服务
    */
   openMaterialEquipment(event?: any) {
+    this.router.navigateByUrl('material-equipment');
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 原辅材料商城
+   */
+  openMaterialMart(event?: any) {
+    // this.router.navigateByUrl('material-mart');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 原辅材料团购
+   */
+  openEquipmentShopping(event?: any) {
+    // this.router.navigateByUrl('material-shopping');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 原辅材料求购
+   */
+  openMaterialPurchase(event?: any) {
+    // this.router.navigateByUrl('material-purchase');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 原辅材料供应商
+   */
+  openMaterialSupplier(event?: any) {
+    // this.router.navigateByUrl('material-supplier');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 木材拍卖行
+   */
+  openTimberAuction(event?: any) {
+    // this.router.navigateByUrl('timber-auction');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 机械设备商城
+   */
+  openEquipmentMart(event?: any) {
+    // this.router.navigateByUrl('equipment-mart');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 机械设备供应商
+   */
+  openEquipmentSupplier(event?: any) {
+    // this.router.navigateByUrl('equipment-supplier');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 原辅材料机械设备服务 - 机械设备求购
+   */
+  openEquipmentPurchase(event?: any) {
+    // this.router.navigateByUrl('equipment-purchase');
     this.navigateDeveloping();
   }
 

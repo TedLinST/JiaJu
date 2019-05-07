@@ -36,14 +36,14 @@
       <li (click)="portalNav.openIntegratedServices($event)">综合服务</li>
       <li (click)="portalNav.openMaterialEquipment($event)">原辅材料机械设备服务
         <ul class="sub-menu-ul">
-          <li>原辅材料商城</li>
-          <li>原辅材料团购</li>
-          <li>原辅材料求购</li>
-          <li>原辅材料供应商</li>
-          <li>木材拍卖行</li>
-          <li>机械设备商城</li>
-          <li>机械设备供应商</li>
-          <li>机械设备求购</li>
+          <li (click)="portalNav.openMaterialMart()">原辅材料商城</li>
+          <li (click)="portalNav.openEquipmentShopping()">原辅材料团购</li>
+          <li (click)="portalNav.openMaterialPurchase()">原辅材料求购</li>
+          <li (click)="portalNav.openMaterialSupplier()">原辅材料供应商</li>
+          <li (click)="portalNav.openTimberAuction()">木材拍卖行</li>
+          <li (click)="portalNav.openEquipmentMart()">机械设备商城</li>
+          <li (click)="portalNav.openEquipmentSupplier()">机械设备供应商</li>
+          <li (click)="portalNav.openEquipmentPurchase()">机械设备求购</li>
         </ul>
       </li>
       <li (click)="portalNav.openFurnitureMall($event)">家具商城</li>

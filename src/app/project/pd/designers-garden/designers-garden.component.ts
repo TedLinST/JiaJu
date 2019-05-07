@@ -3,7 +3,7 @@ import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-men
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
-import { DataDesignersGardenHandler } from 'src/data/designers-garden';
+import { DataDesignersGardenHandler } from 'src/data/pd/designers-garden';
 import { KeyCarouselLabelEvent } from 'src/modules/key/carousel/carousel-label.event';
 import { Utils } from 'src/modules/utils/utils';
 

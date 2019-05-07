@@ -1,7 +1,7 @@
 <ul class="key-vertical-menu" [class.key-vertical-menu-200]="isWidth200" [ngStyle]="styles">
   <ng-template ngFor let-menu [ngForOf]="data" let-index="index">
     <li [class.arrow]="menu.subData != null && menu.subData.length > 0"
-      (click)="onClickMenu(menu)">
+      (click)="onClickMenu(menu)" [class.active]="menu.title == activeTitle">
       {{menu.title}}
       <ul *ngIf="menu.subData != null && menu.subData.length > 0"
         class="sub-menu-ul">

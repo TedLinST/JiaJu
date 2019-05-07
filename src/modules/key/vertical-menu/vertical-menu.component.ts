@@ -19,6 +19,9 @@ export class VerticalMenuComponent implements OnInit {
   // 样式
   @Input() styles: any;
 
+  // 当前要激活的标题
+  @Input() activeTitle: any;
+
   constructor() { }
 
   ngOnInit() {

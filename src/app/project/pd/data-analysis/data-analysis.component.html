@@ -1,7 +1,7 @@
 <div class="data-analysis">
   <!-- 横幅菜单 -->
   <pd-banner-menu [srcUrl]="CH_PD_BANNER_SRC" [dataMenu]="CH_PD_BANNER_MENU"
-    (clickMenu)="onClickBannerMenu($event)">
+    activeTitle="大数据分析" (clickMenu)="onClickBannerMenu($event)">
   </pd-banner-menu>
 
   <!-- 企业内部数据分析案例 -->
@@ -10,8 +10,8 @@
     <div body>
       <key-item-chunk-body>
         <div nz-row>
-          <ng-template ngFor let-item
-            [ngForOf]="dataHandler.IDAC.data" let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.IDAC.data"
+            let-index="index">
             <div nz-col nzSpan="8">
               <div class="item-box item-box-bg item-box-margin-1">
                 <div class="header">
@@ -26,7 +26,8 @@
                   </div>
                 </div>
                 <div class="footer footer-right">
-                  <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  <a
+                    (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
                 </div>
               </div>
             </div>
@@ -64,8 +65,8 @@
     <div body>
       <key-item-chunk-body>
         <div nz-row>
-          <ng-template ngFor let-item
-            [ngForOf]="dataHandler.IDP.data" let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.IDP.data"
+            let-index="index">
             <div nz-col nzSpan="8">
               <div class="item-box item-box-bg item-box-margin-1">
                 <div class="header">

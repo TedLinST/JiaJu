@@ -56,7 +56,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &.active {
       color: #333;
       background-color: #76bb78;
       cursor: pointer;

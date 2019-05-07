@@ -23,4 +23,7 @@ export class ConstantHandler {
     }
   ];
 
+  // 原辅材料机械设备服务 - 小横幅图片
+  public static CH_ME_MIN_BANNER_SRC = '/assets/imgs/raw-material/top.jpg';
+
 }

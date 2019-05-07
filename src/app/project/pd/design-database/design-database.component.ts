@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 import { Router } from '@angular/router';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
-import { DataDesignDatabaseHandler } from 'src/data/design-database';
+import { DataDesignDatabaseHandler } from 'src/data/pd/design-database';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { Utils } from 'src/modules/utils/utils';
 

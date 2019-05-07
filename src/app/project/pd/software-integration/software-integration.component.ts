@@ -3,7 +3,7 @@ import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-men
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
-import { DataSoftwareIntegrationHandler } from 'src/data/software-integration';
+import { DataSoftwareIntegrationHandler } from 'src/data/pd/software-integration';
 import { Utils } from 'src/modules/utils/utils';
 
 @Component({

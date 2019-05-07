@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, AfterContentInit, AfterViewInit } from '@
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { DataDataAnalysisDetailsHandler } from 'src/data/data-analysis-details';
+import { DataDataAnalysisDetailsHandler } from 'src/data/pd/data-analysis-details';
 import { Utils } from 'src/modules/utils/utils';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 
