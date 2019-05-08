@@ -246,32 +246,32 @@ export const DataHomeHandler = {
     data0: [
       {
         id: 1,
-        title: '最新推荐项目',
+        title: '环境友好型秸秆板家具制造技术推广',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-2.jpg'
       },
       {
         id: 2,
-        title: '最新推荐项目',
+        title: '《木纹立体打印装饰制品技术要求》行业标准制定',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-3.jpg'
       },
       {
         id: 3,
-        title: '最新推荐项目',
+        title: '木竹纤维柔性装饰材料制造关键技术研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-4.jpg'
       },
       {
         id: 4,
-        title: '最新推荐项目',
+        title: '中国传统家具艺术数据库的研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-5.jpg'
       },
       {
         id: 5,
-        title: '最新推荐项目',
+        title: '现代中式家具的开发与工业化生产方式研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-6.jpg'
       },
       {
         id: 6,
-        title: '最新推荐项目',
+        title: '家具生命周期评价（LCA）的研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-7.jpg'
       }
     ],
