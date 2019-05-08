@@ -116,8 +116,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('furniture-raw-shopping');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('furniture-raw-shopping');
   }
 
   /**

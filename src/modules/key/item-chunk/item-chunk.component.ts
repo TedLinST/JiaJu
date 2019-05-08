@@ -24,6 +24,9 @@ export class ItemChunkComponent implements OnInit, AfterContentInit {
   // 当前下标
   @Input() currentIndex = 0;
 
+  // 上边距
+  @Input() marginTop = 45;
+
   constructor() {
   }
 

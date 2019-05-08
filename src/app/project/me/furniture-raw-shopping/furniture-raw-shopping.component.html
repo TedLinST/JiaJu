@@ -1,4 +1,4 @@
-<div class="wood-shopping">
+<div class="furniture-raw-shopping">
   <!-- 横幅 -->
   <me-banner [srcUrl]="CH_ME_MATERIAL_BANNER_SRC">
   </me-banner>
@@ -16,12 +16,12 @@
         <a (click)="portalNav.openmMaterialShopping()">原辅材料团购</a>
       </nz-breadcrumb-item>
       <nz-breadcrumb-item>
-        木材团购
+        家具辅料团购
       </nz-breadcrumb-item>
     </nz-breadcrumb>
 
     <!-- 标题 -->
-    <key-item-chunk marginTop="20" title="木材团购" enTitle="TIMBER GROUP BUYING"></key-item-chunk>
+    <key-item-chunk marginTop="20" title="家具辅料团购" enTitle="GROUP PURCHASE OF FURNITURE ACCESSORIES"></key-item-chunk>
 
     <!-- 条件选择区 -->
     <key-dot-title title="条件选择区"></key-dot-title>
@@ -58,7 +58,7 @@
         </nz-select>
         <div class="search">
           <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-            <input type="text" nz-input placeholder="请输入商品名"
+            <input type="text" nz-input placeholder="请输入产品标题"
               [(ngModel)]="searchValue" />
           </nz-input-group>
           <ng-template #suffixIconButton>
@@ -99,23 +99,13 @@
                 <img [src]="item.src">
               </div>
               <div class="body">
-                <div class="title">商品名：{{item.title}}</div>
-                <div class="label">产品标题：{{item.subTitle}}</div>
-                <div class="label">产地：{{item.area}}</div>
+                <div class="title">产品标题：{{item.title}}</div>
                 <div class="label">类型：{{item.type}}</div>
-                <div class="label">
-                  <span>规格：{{item.specs}}</span>
-                  <span>宽度：{{item.width}}</span>
-                </div>
-                <div class="label">
-                  价格：{{item.price}}
-                </div>
-                <div class="label">
-                  截止日期：{{item.date}}
-                </div>
-                <div class="label">
-                  已报名数量：{{item.qty}}
-                </div>
+                <div class="label">产地：{{item.area}}</div>
+                <div class="label">所在地：{{item.location}}</div>
+                <div class="label">规格：{{item.specs}}</div>
+                <div class="label">价格：{{item.price}}</div>
+                <div class="label">销售数量：{{item.qty}}</div>
               </div>
               <div class="footer">
                 <button class="btn-bg" nz-button nzSize="small" nzType="primary"
