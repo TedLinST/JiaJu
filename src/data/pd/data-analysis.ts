@@ -1,7 +1,6 @@
 // 大数据分析数据助手
 export const DataDataAnalysisHandler = {
 
-  
   // 企业内部数据分析案例
   IDAC: {
     title: '企业内部数据分析案例',
