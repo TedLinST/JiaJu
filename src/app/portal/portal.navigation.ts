@@ -91,7 +91,7 @@ export class PortalNavigation {
   /**
    * 原辅材料机械设备服务 - 原辅材料团购
    */
-  openEquipmentShopping(event?: any) {
+  openmMaterialShopping(event?: any) {
     if (!!event) {
       event.stopPropagation();
     }
@@ -106,8 +106,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('wood-shopping');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('wood-shopping');
   }
 
   /**

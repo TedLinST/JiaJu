@@ -4,7 +4,7 @@
   <!-- 子菜单 -->
   <div class="menu">
     <a (click)="portalNav.openMaterialMart()">原辅材料商城</a>
-    <a (click)="portalNav.openEquipmentShopping()">原辅材料团购</a>
+    <a (click)="portalNav.openmMaterialShopping()">原辅材料团购</a>
     <a (click)="portalNav.openMaterialPurchase()">原辅材料求购</a>
     <a (click)="portalNav.openMaterialSupplier()">原辅材料供应商</a>
     <a (click)="portalNav.openTimberAuction()">木材拍卖行</a>
@@ -45,13 +45,13 @@
     [title]="dataHandler.MS.title" [isTitleLine]="true">
     <div body>
       <key-item-chunk-body [isMore]="true" [showItemNumber]="5"
-        (clickMore)="portalNav.openEquipmentShopping()">
+        (clickMore)="portalNav.openmMaterialShopping()">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.MS.data"
             let-index="index">
             <div nz-col nzSpan="4" style="height: 242px;margin-bottom: 6px;">
               <div class="item-box item-box-margin-3"
-                (click)="openEquipmentShoppingDetails(item.id)">
+                (click)="openmMaterialShoppingDetails(item.id)">
                 <div class="header">
                   <img [src]="item.src">
                   <key-item-mask>

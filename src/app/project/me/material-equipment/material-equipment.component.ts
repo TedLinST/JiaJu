@@ -48,7 +48,7 @@ export class MaterialEquipmentComponent implements OnInit {
    * 原辅材料团购详情
    * @param id 
    */
-  openEquipmentShoppingDetails(id: any) {
+  openmMaterialShoppingDetails(id: any) {
     this.navigateDeveloping();
   }
 
