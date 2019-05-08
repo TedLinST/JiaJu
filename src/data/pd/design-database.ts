@@ -105,7 +105,7 @@ export const DataDesignDatabaseHandler = {
   LIST_DATA: [
     {
       id: 1,
-      type: '类型1',
+      type: '衣柜',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
@@ -115,7 +115,7 @@ export const DataDesignDatabaseHandler = {
     },
     {
       id: 2,
-      type: '类型2',
+      type: '书柜',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
