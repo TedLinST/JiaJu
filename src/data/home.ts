@@ -43,23 +43,23 @@ export const DataHomeHandler = {
     data0: [
       {
         id: 1,
-        title: '大数据分析标题1',
+        title: '大数据分析案例',
         date: '2019-04-24',
-        text: '大数据，又称巨量资料，指的是所涉及的数据资料量规模巨大到无法通过人脑甚至主流软件工具，在合理时间内达到撷娶管理、处理、并整理成为帮助...',
+        text: '大数据（Big Data）是一个企业在生产经营过程中创造的大量数据，数据量大、价值密度低、时效性强是其主要特征。通过信息化手段对大数据进行高效、科学的分析，并通过可视化的方式表达，能够极大的帮助企业实时掌握市场发展趋势和企业生产动态，从而实现生产经营策略的精准化、高效化和智能化。',
         src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/daShuJuFenXi-1.jpg'
       },
       {
         id: 2,
-        title: '大数据分析标题2',
+        title: '互联网指数',
         date: '2019-04-25',
-        text: '大数据，又称巨量资料，指的是所涉及的数据资料量规模巨大到无法通过人脑甚至主流软件工具，在合理时间内达到撷娶管理、处理、并整理成为帮助...',
+        text: '通过对网民在互联网上的搜索、购物、浏览等行为进行汇总，科学分析网民对于家具相关内容的关注情况，从而获取当前家具行业发展的总体趋势、消费特征、热点内容等信息。通过分析互联网指数，我们可以快速、精准获取人们对家具的需求，得到相对客观的消费趋势结论。',
         src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/daShuJuFenXi-2.jpg'
       },
       {
         id: 3,
-        title: '大数据分析标题3',
+        title: '定制家具增长乏力，集成整装会成为新热点？',
         date: '2019-04-26',
-        text: '大数据，又称巨量资料，指的是所涉及的数据资料量规模巨大到无法通过人脑甚至主流软件工具，在合理时间内达到撷娶管理、处理、并整理成为帮助...',
+        text: '3月春暖花开，家具行业迎来3•15、展会、营销峰会、新品发布会等促销节点。 对于定制家具业来说，唯有忙碌的脚步方能应对2019的不确定性，还要适应全屋定制业务增速大幅下降的新常态，以及以多种形式突围企业经营成长的困境。',
         src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/daShuJuFenXi-3.jpg'
       }
     ],
@@ -67,28 +67,28 @@ export const DataHomeHandler = {
     data1: [
       {
         id: 1,
-        title: '产品设计资料1',
+        title: '家具参数',
         date: '2019-04-24',
         number: 1280,
         src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-1.jpg'
       },
       {
         id: 2,
-        title: '产品设计资料2',
+        title: '家具风格',
         date: '2019-04-25',
         number: 2500,
         src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-2.jpg'
       },
       {
         id: 3,
-        title: '产品设计资料3',
+        title: '家具材料',
         date: '2019-04-26',
         number: 100,
         src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-3.jpg'
       },
       {
         id: 4,
-        title: '产品设计资料4',
+        title: '家具品牌',
         date: '2019-04-26',
         number: 7800,
         src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-4.jpg'
@@ -101,51 +101,51 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '设计师名称',
+            title: 'Dieter Rams',
             number: 1,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 2,
-            title: '设计师名称',
+            title: 'YRJO KUKKAPURO',
             number: 2,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 3,
-            title: '设计师名称',
+            title: 'はらけんや(原研哉)',
             number: 3,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 4,
-            title: '设计师名称',
+            title: '朱小杰',
             number: 4,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           },
           {
             id: 5,
-            title: '设计师名称',
+            title: '侯正光',
             number: 5,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-5.jpg'
           },
           {
             id: 6,
-            title: '设计师名称',
+            title: '赖亚楠',
             number: 6,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-6.jpg'
           },
           {
             id: 7,
-            title: '设计师名称',
+            title: '温浩',
             number: 7,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-7.jpg'
           },
           {
             id: 8,
-            title: '设计师名称',
+            title: '石大宇',
             number: 8,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-8.jpg'
           }
         ]
       },
@@ -154,51 +154,51 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '设计师名称',
+            title: '张雷',
             number: 1,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-9.jpg'
           },
           {
             id: 2,
-            title: '设计师名称',
+            title: '于历战',
             number: 2,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-10.jpg'
           },
           {
             id: 3,
-            title: '设计师名称',
+            title: '吕永忠',
             number: 3,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-11.jpg'
           },
           {
             id: 4,
-            title: '设计师名称',
+            title: '周宸宸',
             number: 4,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-12.jpg'
           },
           {
             id: 5,
-            title: '设计师名称',
+            title: 'Dieter Rams',
             number: 5,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 6,
-            title: '设计师名称',
+            title: 'YRJO KUKKAPURO',
             number: 6,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 7,
-            title: '设计师名称',
+            title: 'はらけんや(原研哉)',
             number: 7,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 8,
-            title: '设计师名称',
+            title: '朱小杰',
             number: 8,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           }
         ]
       }
@@ -207,27 +207,27 @@ export const DataHomeHandler = {
     data3: [
       {
         id: 1,
-        title: '设计软件1',
+        title: '酷家乐',
         number: 420,
-        src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng.jpg'
+        src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-1.jpg'
       },
       {
         id: 2,
-        title: '设计软件2',
+        title: '圆方',
         number: 2500,
-        src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng.jpg'
+        src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-2.jpg'
       },
       {
         id: 3,
-        title: '设计软件3',
+        title: '造易',
         number: 100,
-        src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng.jpg'
+        src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-3.jpg'
       },
       {
         id: 4,
-        title: '设计软件4',
+        title: '三维家',
         number: 7800,
-        src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng.jpg'
+        src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-4.jpg'
       }
     ]
   },
