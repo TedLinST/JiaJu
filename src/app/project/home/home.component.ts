@@ -276,8 +276,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
       // 原辅材料机械设备服务 - 原辅材料商城
       this.portalNav.openMaterialMart();
     } else if (id == 6) {
-      // 原辅材料机械设备服务 - 原辅材料供应商
-      this.portalNav.openMaterialSupplier();
+      // 原辅材料机械设备服务 - 机械设备供应商
+      this.portalNav.openEquipmentSupplier();
     } else {
       this.navigateDeveloping();
     }

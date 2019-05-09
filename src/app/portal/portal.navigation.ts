@@ -192,7 +192,7 @@ export class PortalNavigation {
   }
 
   /**
-   * 校企合作
+   * 校企合作服务
    */
   openSECooperation(event?: any) {
     this.navigateDeveloping();
