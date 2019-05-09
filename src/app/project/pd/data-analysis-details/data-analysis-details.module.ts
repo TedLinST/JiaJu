@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DataAnalysisDetailsComponent } from './data-analysis-details.component';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { BannerMenuModule } from '../resource/banner-menu.module';
+import { PdBannerMenuModule } from '../resource/banner-menu.module';
 import { NgKeyModule } from 'src/modules/key/key.module';
 import { NgxEchartsModule } from 'ngx-echarts';
 
@@ -16,7 +16,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
       }
     ]),
     NgZorroAntdModule,
-    BannerMenuModule,
+    PdBannerMenuModule,
     NgKeyModule,
     NgxEchartsModule
   ],

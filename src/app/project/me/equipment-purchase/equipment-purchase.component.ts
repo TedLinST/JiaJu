@@ -4,9 +4,10 @@ import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataEquipmentPurchaseHandler } from 'src/data/me/equipment-purchase';
 import { Utils } from 'src/modules/utils/utils';
-import { NzNotificationService } from 'ng-zorro-antd';
+import { NzNotificationService, UploadFile } from 'ng-zorro-antd';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { IdCounter } from 'src/modules/utils/id-counter';
+import { Observable, Observer } from 'rxjs';
 
 @Component({
   selector: 'app-equipment-purchase',
@@ -37,9 +38,10 @@ export class EquipmentPurchaseComponent implements OnInit {
   maxPrice: number;
   searchValue: any;
 
-  bean: any = {};
-
   validateForm: FormGroup;
+
+  avatarUrl: any;
+  loading = false;
 
   constructor(private router: Router, private notification: NzNotificationService, private fb: FormBuilder) {
     this.portalNav = new PortalNavigation(router);
@@ -76,7 +78,7 @@ export class EquipmentPurchaseComponent implements OnInit {
       explain: this.validateForm.get('explain').value,
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: this.avatarUrl ? this.avatarUrl : ''
     });
     this.total = this.total + 1;
     this.notification.create(
@@ -84,6 +86,7 @@ export class EquipmentPurchaseComponent implements OnInit {
       '提示',
       '发出求购成功！',
     );
+
   }
 
   /**
@@ -192,6 +195,66 @@ export class EquipmentPurchaseComponent implements OnInit {
    */
   navigateDeveloping() {
     this.router.navigateByUrl('developing');
+  }
+
+
+  beforeUpload = (file: File) => {
+    return new Observable((observer: Observer<boolean>) => {
+      const isJPG = (file.type === 'image/jpeg' || file.type === 'image/png' || file.type === 'image/bmp');
+      if (!isJPG) {
+        this.notification.create(
+          'error',
+          '提示',
+          '只能上传图片文件！',
+        );
+        observer.complete();
+        return;
+      }
+      const isLt2M = file.size / 1024 / 1024 < 2;
+      if (!isLt2M) {
+        this.notification.create(
+          'warning',
+          '提示',
+          '图像必须小于2MB！',
+        );
+        observer.complete();
+        return;
+      }
+      observer.next(isJPG && isLt2M);
+      observer.complete();
+    });
+  };
+
+  handleChange(info: { file: UploadFile }): void {
+    switch (info.file.status) {
+      case 'uploading':
+        this.loading = true;
+        break;
+      case 'done':
+        this.getBase64(info.file!.originFileObj!, (img: string) => {
+          this.loading = false;
+          this.avatarUrl = img;
+        });
+        break;
+      case 'error':
+        this.getBase64(info.file!.originFileObj!, (img: string) => {
+          this.loading = false;
+          this.avatarUrl = img;
+        });
+        /* this.notification.create(
+          'error',
+          '提示',
+          '网络出错',
+        );
+        this.loading = false; */
+        break;
+    }
+  }
+
+  getBase64(img: File, callback: (img: string) => void): void {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => callback(reader.result!.toString()));
+    reader.readAsDataURL(img);
   }
 
 }

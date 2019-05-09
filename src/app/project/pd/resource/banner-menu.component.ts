@@ -6,7 +6,7 @@ import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-men
   templateUrl: './banner-menu.component.html',
   styleUrls: ['./banner-menu.component.scss']
 })
-export class BannerMenuComponent implements OnInit {
+export class PdBannerMenuComponent implements OnInit {
 
   // 点击菜单
   @Output() clickMenu: EventEmitter<any> = new EventEmitter<any>();

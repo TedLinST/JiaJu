@@ -86,5 +86,206 @@ export const DataMaterialPurchaseHandler = {
   ],
 
   // 列表数据
-  LIST_DATA: []
+  LIST_DATA: [
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+    {
+      Id: '1',
+      PinMing: '松木',
+      LeiXing: '原木',
+      ChanDi: '汕头',
+      JiaoYiDi: '揭阳',
+      GuiGe: '34cm',
+      LianXiRen: '***',
+      ShouJi: '***'
+    },
+  ]
 };

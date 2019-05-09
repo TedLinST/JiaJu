@@ -18,9 +18,9 @@
     </nz-breadcrumb>
     <!-- 完善求购内容 -->
     <key-dot-title title="完善求购内容"></key-dot-title>
-    <form nz-form nzLayout="inline">
-      <form nz-form [nzLayout]="'inline'" [formGroup]="validateForm"
-        (ngSubmit)="submitForm()">
+    <form nz-form [nzLayout]="'inline'" [formGroup]="validateForm"
+      (ngSubmit)="submitForm()">
+      <div style="float: left;width: 900px;">
         <div>
           <nz-form-item>
             <nz-form-label style="width:70px;">产品名称</nz-form-label>
@@ -41,6 +41,15 @@
             </nz-form-control>
           </nz-form-item>
           <nz-form-item>
+            <nz-form-label style="width:70px;">品牌</nz-form-label>
+            <nz-form-control>
+              <input formControlName="brand" nz-input placeholder="请输入品牌" />
+              <nz-form-explain
+                *ngIf="validateForm.get('brand')?.dirty && validateForm.get('brand')?.errors">
+                请输入品牌!</nz-form-explain>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
             <nz-form-label style="width:70px;">产地</nz-form-label>
             <nz-form-control>
               <input formControlName="area" nz-input placeholder="请输入产地" />
@@ -50,17 +59,6 @@
             </nz-form-control>
           </nz-form-item>
           <nz-form-item>
-            <nz-form-label style="width:70px;">品牌</nz-form-label>
-            <nz-form-control>
-              <input formControlName="brand" nz-input placeholder="请输入品牌" />
-              <nz-form-explain
-                *ngIf="validateForm.get('brand')?.dirty && validateForm.get('brand')?.errors">
-                请输入品牌!</nz-form-explain>
-            </nz-form-control>
-          </nz-form-item>
-        </div>
-        <div>
-          <nz-form-item>
             <nz-form-label style="width:70px;">交易地</nz-form-label>
             <nz-form-control>
               <input formControlName="place" nz-input placeholder="请输入交易地" />
@@ -69,6 +67,8 @@
                 请输入交易地!</nz-form-explain>
             </nz-form-control>
           </nz-form-item>
+        </div>
+        <div>
           <nz-form-item>
             <nz-form-label style="width:70px;">说明</nz-form-label>
             <nz-form-control style="width:695px;">
@@ -76,11 +76,28 @@
             </nz-form-control>
           </nz-form-item>
         </div>
-        <div style="text-align: center;margin-top: 10px;">
-          <button nz-button nzType="primary" style="width: 200px;"
-            [disabled]="!validateForm.valid">发布求购</button>
-        </div>
-      </form>
+      </div>
+      <div style="float: left;width: 300px;">
+        <nz-upload class="avatar-uploader" [nzAccept]="'image/*'"
+          nzAction="/uplod" nzName="avatar" nzListType="picture-card"
+          [nzShowUploadList]="false" [nzBeforeUpload]="beforeUpload"
+          (nzChange)="handleChange($event)">
+          <ng-container *ngIf="!avatarUrl">
+            <div class="upload-box">
+              <i class="upload-icon" nz-icon
+                [nzType]="loading ? 'loading' : 'plus'"></i>
+              <div class="ant-upload-text">点击上传文件</div>
+            </div>
+
+          </ng-container>
+          <img *ngIf="avatarUrl" [src]="avatarUrl" class="avatar" />
+        </nz-upload>
+      </div>
+      <div class="clearfix"></div>
+      <div style="text-align: center;margin-top: 10px;">
+        <button nz-button nzType="primary" style="width: 200px;"
+          [disabled]="!validateForm.valid">发布求购</button>
+      </div>
     </form>
     <!-- 条件选择区 -->
     <key-dot-title title="条件选择区"></key-dot-title>
