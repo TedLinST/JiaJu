@@ -4,6 +4,8 @@ import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataEquipmentMartHandler } from 'src/data/me/equipment-mart';
 import { Utils } from 'src/modules/utils/utils';
+import { UtilsMe } from '../utils/banner-menu';
+import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 
 @Component({
   selector: 'app-equipment-mart',
@@ -14,6 +16,9 @@ export class EquipmentMartComponent implements OnInit {
 
   // 横幅图片
   CH_ME_EQUIPMENT_BANNER_SRC: any;
+
+  // 横幅菜单
+  CH_ME_BANNER_MENU: KeyVerticalMenuEvent[];
 
   // 门户导航
   portalNav: any;
@@ -39,9 +44,18 @@ export class EquipmentMartComponent implements OnInit {
 
   ngOnInit() {
     this.CH_ME_EQUIPMENT_BANNER_SRC = ConstantHandler.CH_ME_EQUIPMENT_BANNER_SRC;
+    this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataEquipmentMartHandler;
     this.total = this.dataHandler.LIST_DATA.length;
     this.handleListData(this.dataHandler.LIST_DATA);
+  }
+
+  /**
+   * 点击横幅菜单
+   * @param menu 
+   */
+  onClickBannerMenu(menu: KeyVerticalMenuEvent) {
+    UtilsMe.clickBannerMenu(this.portalNav, menu);
   }
 
   /**

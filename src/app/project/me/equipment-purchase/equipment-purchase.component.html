@@ -1,7 +1,9 @@
 <div class="equipment-purchase">
   <!-- 横幅 -->
-  <me-banner [srcUrl]="CH_ME_MATERIAL_BANNER_SRC">
-  </me-banner>
+  <me-banner-menu [srcUrl]="CH_ME_MATERIAL_BANNER_SRC"
+    [dataMenu]="CH_ME_BANNER_MENU" activeTitle="机械设备求购"
+    (clickMenu)="onClickBannerMenu($event)">
+  </me-banner-menu>
 
   <div class="body">
     <!-- 面包屑 -->

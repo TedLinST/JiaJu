@@ -6,6 +6,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataDesignersGardenHandler } from 'src/data/pd/designers-garden';
 import { KeyCarouselLabelEvent } from 'src/modules/key/carousel/carousel-label.event';
 import { Utils } from 'src/modules/utils/utils';
+import { UtilsPd } from '../utils/banner-menu';
 
 @Component({
   selector: 'app-designers-garden',
@@ -70,21 +71,7 @@ export class DesignersGardenComponent implements OnInit {
    * @param menu 
    */
   onClickBannerMenu(menu: KeyVerticalMenuEvent) {
-    if (!!menu) {
-      if (menu.id == '1') {
-        // 大数据分析
-        this.portalNav.openDataAnalysis();
-      } else if (menu.id == '2') {
-        // 产品设计资料库
-        this.portalNav.openDesignDatabase();
-      } else if (menu.id == '3') {
-        // 设计师园地
-        this.portalNav.openDesignersGarden();
-      } else if (menu.id == '4') {
-        // 设计软件集成
-        this.portalNav.openSoftwareIntegration();
-      }
-    }
+    UtilsPd.clickBannerMenu(this.portalNav, menu);
   }
 
   /**

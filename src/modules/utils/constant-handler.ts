@@ -1,3 +1,5 @@
+import { KeyVerticalMenuEvent } from '../key/vertical-menu/vertical-menu.event';
+
 export class ConstantHandler {
 
   // 产品设计开发服务 - 横幅图片
@@ -31,5 +33,51 @@ export class ConstantHandler {
 
   // 原辅材料机械设备服务 - 设备横幅图片
   public static CH_ME_EQUIPMENT_BANNER_SRC = '/assets/imgs/equipment-mart/banner.jpg';
+
+  // 产品设计开发服务 - 横幅菜单
+  public static CH_ME_BANNER_MENU: KeyVerticalMenuEvent[] = [
+    {
+      id: '1',
+      title: '原辅材料商城'
+    },
+    {
+      id: '2',
+      title: '原辅材料团购',
+      subMenu: [
+        {
+          id: '2-1',
+          title: '木材团购',
+        },
+        {
+          id: '2-2',
+          title: '家具辅料团购',
+        }
+      ]
+    },
+    {
+      id: '3',
+      title: '原辅材料求购'
+    },
+    {
+      id: '4',
+      title: '原辅材料供应商'
+    },
+    {
+      id: '5',
+      title: '木材拍卖行'
+    },
+    {
+      id: '6',
+      title: '机械设备商城'
+    },
+    {
+      id: '7',
+      title: '机械设备供应商'
+    },
+    {
+      id: '8',
+      title: '机械设备求购'
+    }
+  ];
 
 }

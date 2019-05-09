@@ -4,6 +4,8 @@ import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataMaterialMartHandler } from 'src/data/me/material-mart';
 import { Utils } from 'src/modules/utils/utils';
+import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
+import { UtilsMe } from '../utils/banner-menu';
 
 @Component({
   selector: 'app-material-mart',
@@ -14,6 +16,9 @@ export class MaterialMartComponent implements OnInit {
 
   // 横幅图片
   CH_ME_MATERIAL_BANNER_SRC: any;
+
+  // 横幅菜单
+  CH_ME_BANNER_MENU: KeyVerticalMenuEvent[];
 
   // 门户导航
   portalNav: any;
@@ -44,9 +49,18 @@ export class MaterialMartComponent implements OnInit {
 
   ngOnInit() {
     this.CH_ME_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MATERIAL_BANNER_SRC;
+    this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataMaterialMartHandler;
     this.total = this.dataHandler.LIST_DATA.length;
     this.handleListData(this.dataHandler.LIST_DATA);
+  }
+
+  /**
+   * 点击横幅菜单
+   * @param menu 
+   */
+  onClickBannerMenu(menu: KeyVerticalMenuEvent) {
+    UtilsMe.clickBannerMenu(this.portalNav, menu);
   }
 
   /**

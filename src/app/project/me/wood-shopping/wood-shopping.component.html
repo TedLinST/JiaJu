@@ -1,7 +1,9 @@
 <div class="wood-shopping">
   <!-- 横幅 -->
-  <me-banner [srcUrl]="CH_ME_MATERIAL_BANNER_SRC">
-  </me-banner>
+  <me-banner-menu [srcUrl]="CH_ME_MATERIAL_BANNER_SRC"
+    [dataMenu]="CH_ME_BANNER_MENU" activeTitle="原辅材料团购" activeSubTitle="木材团购"
+    (clickMenu)="onClickBannerMenu($event)">
+  </me-banner-menu>
 
   <div class="body">
     <!-- 面包屑 -->
@@ -21,7 +23,8 @@
     </nz-breadcrumb>
 
     <!-- 标题 -->
-    <key-item-chunk marginTop="20" title="木材团购" enTitle="TIMBER GROUP BUYING"></key-item-chunk>
+    <key-item-chunk marginTop="20" title="木材团购" enTitle="TIMBER GROUP BUYING">
+    </key-item-chunk>
 
     <!-- 条件选择区 -->
     <key-dot-title title="条件选择区"></key-dot-title>

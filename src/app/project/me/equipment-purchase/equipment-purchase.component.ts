@@ -8,6 +8,8 @@ import { NzNotificationService, UploadFile } from 'ng-zorro-antd';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { IdCounter } from 'src/modules/utils/id-counter';
 import { Observable, Observer } from 'rxjs';
+import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
+import { UtilsMe } from '../utils/banner-menu';
 
 @Component({
   selector: 'app-equipment-purchase',
@@ -18,6 +20,9 @@ export class EquipmentPurchaseComponent implements OnInit {
 
   // 横幅图片
   CH_ME_MATERIAL_BANNER_SRC: any;
+
+  // 横幅菜单
+  CH_ME_BANNER_MENU: KeyVerticalMenuEvent[];
 
   // 门户导航
   portalNav: any;
@@ -49,6 +54,7 @@ export class EquipmentPurchaseComponent implements OnInit {
 
   ngOnInit() {
     this.CH_ME_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MATERIAL_BANNER_SRC;
+    this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataEquipmentPurchaseHandler;
     this.total = this.dataHandler.LIST_DATA.length;
     this.handleListData(this.dataHandler.LIST_DATA);
@@ -61,6 +67,14 @@ export class EquipmentPurchaseComponent implements OnInit {
       place: [null, [Validators.required]],
       explain: [null]
     });
+  }
+
+  /**
+   * 点击横幅菜单
+   * @param menu 
+   */
+  onClickBannerMenu(menu: KeyVerticalMenuEvent) {
+    UtilsMe.clickBannerMenu(this.portalNav, menu);
   }
 
   submitForm(): void {

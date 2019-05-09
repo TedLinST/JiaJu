@@ -1,6 +1,7 @@
 <div class="material-equipment">
   <!-- 横幅 -->
-  <me-banner [isMinBanner]="true" [srcUrl]="CH_ME_MIN_MATERIAL_BANNER_SRC"></me-banner>
+  <me-banner-menu [isMinBanner]="true" [isMenu]="false"
+    [srcUrl]="CH_ME_MIN_MATERIAL_BANNER_SRC"></me-banner-menu>
   <!-- 子菜单 -->
   <div class="menu">
     <a (click)="portalNav.openMaterialMart()">原辅材料商城</a>
@@ -192,12 +193,12 @@
                   <div>{{item.price}}</div>
                 </div>
                 <div class="col col-5">
-                  <button class="btn" nz-button nzType="primary"
-                    nzSize="small" (click)="onPurchase(item.id)">加购</button>
-                  <button class="btn" nz-button nzType="primary"
-                    nzSize="small" (click)="onCollection(item.id)">收藏</button>
-                  <button class="btn" nz-button nzType="primary"
-                    nzSize="small" (click)="onTel(item.id)">联系方式</button>
+                  <button class="btn" nz-button nzType="primary" nzSize="small"
+                    (click)="onPurchase(item.id)">加购</button>
+                  <button class="btn" nz-button nzType="primary" nzSize="small"
+                    (click)="onCollection(item.id)">收藏</button>
+                  <button class="btn" nz-button nzType="primary" nzSize="small"
+                    (click)="onTel(item.id)">联系方式</button>
                 </div>
                 <div class="clearfix"></div>
               </div>

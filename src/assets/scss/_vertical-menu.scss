@@ -48,7 +48,8 @@
         line-height: 50px;
         position: relative;
 
-        &:hover {
+        &:hover,
+        &.active {
           color: #fff;
           background-color: #898a8e;
           cursor: pointer;

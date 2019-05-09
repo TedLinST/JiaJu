@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { WoodShoppingComponent } from './wood-shopping.component';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { MeBannerModule } from '../resource/banner.module';
+import { MeBannerMenuModule } from '../resource/banner-menu.module';
 import { NgKeyModule } from 'src/modules/key/key.module';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { NgKeyModule } from 'src/modules/key/key.module';
       }
     ]),
     NgZorroAntdModule,
-    MeBannerModule,
+    MeBannerMenuModule,
     NgKeyModule
   ],
   declarations: [

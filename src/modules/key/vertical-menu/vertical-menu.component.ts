@@ -22,6 +22,9 @@ export class VerticalMenuComponent implements OnInit {
   // 当前要激活的标题
   @Input() activeTitle: any;
 
+  // 当前要激活的子标题
+  @Input() activeSubTitle: any;
+
   constructor() { }
 
   ngOnInit() {
@@ -29,9 +32,11 @@ export class VerticalMenuComponent implements OnInit {
 
   /**
    * 点击菜单
-   * @param menu 
+   * @param menu
+   * @param event 
    */
-  onClickMenu(menu: KeyVerticalMenuEvent) {
+  onClickMenu(menu: KeyVerticalMenuEvent, event: any) {
+    event.stopPropagation();
     this.clickMenu.emit(menu);
   }
 
