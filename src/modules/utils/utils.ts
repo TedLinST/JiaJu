@@ -91,6 +91,30 @@ export class Utils {
     }
 
     /**
+     * 数据过滤
+     * @param data 数据源
+     * @param filters 过滤器 filters：{'key1':['value1','value2','value3'],'key2':['value4','value5','value6']}
+     */
+    public static dataFilter(data: any[], filters: any) {
+        let keys = Object.keys(filters)
+        let result = data.filter(item => {
+            return keys.every(key => filters[key].indexOf(item[key]) !== -1)
+        });
+        return result;
+    }
+
+    /**
+     * 数据分页
+     * @param data 数据源
+     * @param pageIndex 页下标
+     * @param pageSize 页大小
+     */
+    public static dataPagination(data: any, pageIndex: number, pageSize: number) {
+        let offset = (pageIndex - 1) * pageSize;
+        return (offset + pageSize >= data.length) ? data.slice(offset, data.length) : data.slice(offset, offset + pageSize);
+    }
+
+    /**
      * 格式化成两位数的数字
      */
     public static formatNumber = (n: number) => {

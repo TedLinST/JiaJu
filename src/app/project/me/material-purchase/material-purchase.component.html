@@ -1,7 +1,9 @@
 <div class="material-purchase">
   <!-- 横幅 -->
-  <me-banner [srcUrl]="CH_ME_MATERIAL_BANNER_SRC">
-  </me-banner>
+  <me-banner-menu [srcUrl]="CH_ME_MATERIAL_BANNER_SRC"
+    [dataMenu]="CH_ME_BANNER_MENU" activeTitle="原辅材料求购"
+    (clickMenu)="onClickBannerMenu($event)">
+  </me-banner-menu>
 
   <div class="body">
     <!-- 面包屑 -->
@@ -207,7 +209,7 @@
           <div class="pagination">
             <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
               [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
-              (nzPageIndexChange)="onPageIndexChange()">
+              (nzPageIndexChange)="onPageIndexChange($event)">
             </nz-pagination>
             <ng-template #rangeTemplate let-range="range" let-total>
               显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条

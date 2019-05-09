@@ -1,7 +1,9 @@
 <div class="material-supplier">
   <!-- 横幅 -->
-  <me-banner [srcUrl]="CH_ME_MATERIAL_BANNER_SRC">
-  </me-banner>
+  <me-banner-menu [srcUrl]="CH_ME_MATERIAL_BANNER_SRC"
+    [dataMenu]="CH_ME_BANNER_MENU" activeTitle="原辅材料供应商"
+    (clickMenu)="onClickBannerMenu($event)">
+  </me-banner-menu>
 
   <div class="body">
     <!-- 面包屑 -->
@@ -17,7 +19,8 @@
       </nz-breadcrumb-item>
     </nz-breadcrumb>
     <!-- 标题 -->
-    <key-item-chunk marginTop="20" title="原辅材料供应商" enTitle="SUPPLIER OF RAW AND AUXILIARY MATERIALS"></key-item-chunk>
+    <key-item-chunk marginTop="20" title="原辅材料供应商"
+      enTitle="SUPPLIER OF RAW AND AUXILIARY MATERIALS"></key-item-chunk>
     <!-- 条件选择区 -->
     <key-dot-title title="条件选择区"></key-dot-title>
     <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
@@ -84,7 +87,7 @@
       <div class="pagination">
         <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
           [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
-          (nzPageIndexChange)="onPageIndexChange()">
+          (nzPageIndexChange)="onPageIndexChange($event)">
         </nz-pagination>
         <ng-template #rangeTemplate let-range="range" let-total>
           显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条

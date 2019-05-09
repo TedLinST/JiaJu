@@ -4,7 +4,7 @@ import { MaterialEquipmentComponent } from './material-equipment.component';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { NgKeyModule } from 'src/modules/key/key.module';
-import { MeBannerModule } from '../resource/banner.module';
+import { MeBannerMenuModule } from '../resource/banner-menu.module';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { MeBannerModule } from '../resource/banner.module';
       }
     ]),
     NgZorroAntdModule,
-    MeBannerModule,
+    MeBannerMenuModule,
     NgKeyModule
   ],
   declarations: [

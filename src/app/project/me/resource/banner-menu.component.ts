@@ -2,14 +2,17 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 
 @Component({
-  selector: 'pd-banner-menu',
+  selector: 'me-banner-menu',
   templateUrl: './banner-menu.component.html',
   styleUrls: ['./banner-menu.component.scss']
 })
-export class PdBannerMenuComponent implements OnInit {
+export class MeBannerMenuComponent implements OnInit {
 
   // 点击菜单
   @Output() clickMenu: EventEmitter<any> = new EventEmitter<any>();
+
+  // 小横幅
+  @Input() isMinBanner = false;
 
   // 图片 url
   @Input() srcUrl: any = '';

@@ -5,6 +5,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { DataDataAnalysisDetailsHandler } from 'src/data/pd/data-analysis-details';
 import { Utils } from 'src/modules/utils/utils';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
+import { UtilsPd } from '../utils/banner-menu';
 
 @Component({
   selector: 'app-data-analysis-details',
@@ -114,21 +115,7 @@ export class DataAnalysisDetailsComponent implements OnInit, AfterContentInit, A
    * @param menu 
    */
   onClickBannerMenu(menu: KeyVerticalMenuEvent) {
-    if (!!menu) {
-      if (menu.id == '1') {
-        // 大数据分析
-        this.portalNav.openDataAnalysis();
-      } else if (menu.id == '2') {
-        // 产品设计资料库
-        this.portalNav.openDesignDatabase();
-      } else if (menu.id == '3') {
-        // 设计师园地
-        this.portalNav.openDesignersGarden();
-      } else if (menu.id == '4') {
-        // 设计软件集成
-        this.portalNav.openSoftwareIntegration();
-      }
-    }
+    UtilsPd.clickBannerMenu(this.portalNav, menu);
   }
 
   /**

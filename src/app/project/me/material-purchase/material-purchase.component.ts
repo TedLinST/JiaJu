@@ -7,6 +7,8 @@ import { Utils } from 'src/modules/utils/utils';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NzNotificationService } from 'ng-zorro-antd';
 import { IdCounter } from 'src/modules/utils/id-counter';
+import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
+import { UtilsMe } from '../utils/banner-menu';
 
 @Component({
   selector: 'app-material-purchase',
@@ -17,6 +19,9 @@ export class MaterialPurchaseComponent implements OnInit {
 
   // 横幅图片
   CH_ME_MATERIAL_BANNER_SRC: any;
+
+  // 横幅菜单
+  CH_ME_BANNER_MENU: KeyVerticalMenuEvent[];
 
   // 门户导航
   portalNav: any;
@@ -49,9 +54,10 @@ export class MaterialPurchaseComponent implements OnInit {
 
   ngOnInit() {
     this.CH_ME_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MATERIAL_BANNER_SRC;
+    this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataMaterialPurchaseHandler;
     this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListData(this.dataHandler.LIST_DATA);
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
 
     this.validateForm = this.fb.group({
       PinMing: [null, [Validators.required]],
@@ -62,6 +68,14 @@ export class MaterialPurchaseComponent implements OnInit {
       JieZhiRiQi: [null],
       ShuoMing: [null]
     });
+  }
+
+  /**
+   * 点击横幅菜单
+   * @param menu 
+   */
+  onClickBannerMenu(menu: KeyVerticalMenuEvent) {
+    UtilsMe.clickBannerMenu(this.portalNav, menu);
   }
 
   submitForm(): void {
@@ -103,6 +117,23 @@ export class MaterialPurchaseComponent implements OnInit {
     } else {
       this.listData = [];
     }
+  }
+
+  /**
+   * 处理列表数据分页
+   * @param data 
+   * @param pageIndex 
+   */
+  handleListDataPagination(data: any[], pageIndex: number) {
+    this.listData = Utils.dataPagination(data, pageIndex, this.pageSize);
+    this.total = data.length;
+  }
+
+  /**
+   * 页码改变
+   */
+  onPageIndexChange(event: any) {
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, event);
   }
 
   /**
@@ -203,17 +234,10 @@ export class MaterialPurchaseComponent implements OnInit {
           }
         }
       });
-      this.handleListData(listData);
+      this.handleListDataPagination(listData, 1);
     } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
+      this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
     }
-  }
-
-  /**
-   * 分页
-   */
-  onPageIndexChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
   }
 
   /**

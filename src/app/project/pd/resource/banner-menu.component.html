@@ -1,6 +1,8 @@
 <div class="pd-banner-menu">
   <img class="bg" [src]="srcUrl">
-  <key-vertical-menu [data]="dataMenu" (clickMenu)="onClickMenu($event)" [activeTitle]="activeTitle"
+  <key-vertical-menu *ngIf="isMenu" [data]="dataMenu"
+    (clickMenu)="onClickMenu($event)" [activeTitle]="activeTitle"
+    [activeSubTitle]="activeSubTitle"
     [styles]="{'position':'absolute','top':'0px','left':'6%'}">
   </key-vertical-menu>
 </div>

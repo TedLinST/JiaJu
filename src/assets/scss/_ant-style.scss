@@ -16,8 +16,49 @@
 }
 
 // 通知消息框
-.ant-notification{
+.ant-notification {
   top: 95px !important;
+}
+
+// 分页
+
+// 分页样式
+.ant-pagination-item {
+
+  &:focus,
+  &:hover {
+    border-color: #33b371 !important;
+
+    a {
+      color: #33b371 !important;
+
+    }
+  }
+}
+
+.ant-pagination-item-active {
+  background-color: #33b371 !important;
+  color: #fff !important;
+  border-color: #33b371 !important;
+
+  a {
+    color: #fff !important;
+  }
+}
+
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover,
+.ant-pagination-next:hover a,
+.ant-pagination-prev:hover a {
+  border-color: #33b371 !important;
+}
+
+.ant-pagination-next:focus .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link,
+.ant-pagination-prev:focus .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link {
+  color: #33b371 !important;
+  border-color: #33b371 !important;
 }
 
 // 按钮

@@ -52,7 +52,7 @@
       <div class="pagination">
         <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
           [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
-          (nzPageIndexChange)="onPageIndexChange()">
+          (nzPageIndexChange)="onPageIndexChange($event)">
         </nz-pagination>
         <ng-template #rangeTemplate let-range="range" let-total>
           显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条

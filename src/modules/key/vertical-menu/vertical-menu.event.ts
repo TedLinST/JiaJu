@@ -4,5 +4,5 @@ export interface KeyVerticalMenuEvent {
   // 名称
   title: string;
   // 子菜单
-  subMenu?: any[]
+  subMenu?: KeyVerticalMenuEvent[]
 }
