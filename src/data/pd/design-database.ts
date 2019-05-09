@@ -125,7 +125,7 @@ export const DataDesignDatabaseHandler = {
     },
     {
       id: 3,
-      type: '类型3',
+      type: '玄关柜',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
@@ -135,93 +135,93 @@ export const DataDesignDatabaseHandler = {
     },
     {
       id: 4,
-      type: '类型4',
+      type: '博古架',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-1.jpg'
+      src: '/assets/imgs/design-database/xiangxi-4.jpg'
     },
     {
       id: 5,
-      type: '类型5',
+      type: '酒柜',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-2.jpg'
+      src: '/assets/imgs/design-database/xiangxi-5.jpg'
     },
     {
       id: 6,
-      type: '类型6',
+      type: '书椅',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-3.jpg'
+      src: '/assets/imgs/design-database/xiangxi-6.jpg'
     },
     {
       id: 7,
-      type: '类型7',
+      type: '沙发',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-1.jpg'
+      src: '/assets/imgs/design-database/xiangxi-7.jpg'
     },
     {
       id: 8,
-      type: '类型8',
+      type: '餐椅',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-2.jpg'
+      src: '/assets/imgs/design-database/xiangxi-8.jpg'
     },
     {
       id: 9,
-      type: '类型9',
+      type: '妆凳',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-3.jpg'
+      src: '/assets/imgs/design-database/xiangxi-9.jpg'
     },
     {
       id: 10,
-      type: '类型10',
+      type: '普通单床',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-1.jpg'
+      src: '/assets/imgs/design-database/xiangxi-10.jpg'
     },
     {
       id: 11,
-      type: '类型11',
+      type: '美式床',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-2.jpg'
+      src: '/assets/imgs/design-database/xiangxi-11.jpg'
     },
     {
       id: 12,
-      type: '类型12',
+      type: '上下床',
       specs: '100 * 20 * 128',
       style: '传统中式',
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-3.jpg'
+      src: '/assets/imgs/design-database/xiangxi-12.jpg'
     },
     {
       id: 13,
