@@ -279,27 +279,27 @@ export const DataHomeHandler = {
     data1: [
       {
         id: 1,
-        title: '企业需求1',
+        title: '小户型实木家具设计方案创新',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-1.jpg'
       },
       {
         id: 2,
-        title: '企业需求2',
+        title: '精装住宅室内家具产品设计',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-2.jpg'
       },
       {
         id: 3,
-        title: '企业需求3',
+        title: '非洲树种奥古曼的硬度改良探索',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-3.jpg'
       },
       {
         id: 4,
-        title: '企业需求4',
+        title: '家具独立门店新型引流集客方式的研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-4.jpg'
       },
       {
         id: 5,
-        title: '企业需求5',
+        title: '家具电商供应链成本控制方案探索',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-5.jpg'
       }
     ],
@@ -308,17 +308,17 @@ export const DataHomeHandler = {
       {
         id: 1,
         title: '互动讲堂标题1',
-        src: '/assets/videos/home/movie.ogg'
+        src: '/assets/videos/home/movie0.mp4'
       },
       {
         id: 2,
         title: '互动讲堂标题2',
-        src: '/assets/videos/home/movie.ogg'
+        src: '/assets/videos/home/movie1.mp4'
       },
       {
         id: 3,
         title: '互动讲堂标题3',
-        src: '/assets/videos/home/movie.ogg'
+        src: '/assets/videos/home/movie2.mp4'
       }
     ],
     // 有困难找专家
@@ -328,39 +328,39 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '李坚院士',
+            text: '主要研究方向：木材科学及相关学科',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia1.jpg'
           },
           {
             id: 2,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '吕建雄教授',
+            text: '主要研究方向：木材物理与干燥、木材保护与改性',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia2.jpg'
           },
           {
             id: 3,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '吴义强教授',
+            text: '主要研究方向：木材科学、生物质复合材料',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia3.jpg'
           },
           {
             id: 4,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '吴智慧教授',
+            text: '主要研究方向：木材加工、家具与木制品设计和制造',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
           },
           {
             id: 5,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '李贤军教授',
+            text: '主要研究方向：木材干燥、木材功能性改良',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5.jpg'
           },
           {
             id: 6,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '陈礼辉教授',
+            text: '主要研究方向：植物资源化学与新材料的研究',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia6.jpg'
           }
         ]
       },
@@ -369,39 +369,39 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '李坚院士',
+            text: '主要研究方向：木材科学及相关学科',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia1.jpg'
           },
           {
             id: 2,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '吕建雄教授',
+            text: '主要研究方向：木材物理与干燥、木材保护与改性',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia2.jpg'
           },
           {
             id: 3,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '吴义强教授',
+            text: '主要研究方向：木材科学、生物质复合材料',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia3.jpg'
           },
           {
             id: 4,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '吴智慧教授',
+            text: '主要研究方向：木材加工、家具与木制品设计和制造',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
           },
           {
             id: 5,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '李贤军教授',
+            text: '主要研究方向：木材干燥、木材功能性改良',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5.jpg'
           },
           {
             id: 6,
-            title: '专家名称',
-            text: '家具设计师',
-            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia.jpg'
+            title: '陈礼辉教授',
+            text: '主要研究方向：植物资源化学与新材料的研究',
+            src: '/assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia6.jpg'
           }
         ]
       }
@@ -425,22 +425,22 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '展会名称1',
+            title: '第16届青岛国际家具展 2019年5月16日-19日',
             src: '/assets/imgs/home/zongHeFuWu/zhanhui-1.jpg'
           },
           {
             id: 2,
-            title: '展会名称2',
+            title: '第9届中国（郑州）实木家具展览会 2019年5月18日-20日',
             src: '/assets/imgs/home/zongHeFuWu/zhanhui-2.jpg'
           },
           {
             id: 3,
-            title: '展会名称3',
+            title: '中国国际实木家具（天津）展览会 2019年5月28日-31日',
             src: '/assets/imgs/home/zongHeFuWu/zhanhui-3.jpg'
           },
           {
             id: 4,
-            title: '展会名称4',
+            title: '第20届成都国际家具工业展览会 2019年6月1日-4日',
             src: '/assets/imgs/home/zongHeFuWu/zhanhui-4.jpg'
           }
         ]
@@ -450,23 +450,23 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '展会名称1',
-            src: '/assets/imgs/home/zongHeFuWu/zhanhui-1.jpg'
+            title: '第十一届苏州家具展览会 2019年6月13日-16日',
+            src: '/assets/imgs/home/zongHeFuWu/zhanhui-5.jpg'
           },
           {
             id: 2,
-            title: '展会名称2',
-            src: '/assets/imgs/home/zongHeFuWu/zhanhui-2.jpg'
+            title: '2019北京国际家居展暨时尚生活节 2019年6月21日-23日',
+            src: '/assets/imgs/home/zongHeFuWu/zhanhui-6.jpg'
           },
           {
             id: 3,
-            title: '展会名称3',
-            src: '/assets/imgs/home/zongHeFuWu/zhanhui-3.jpg'
+            title: '2019北京国际智能家居博览会 2019年6月28-30日',
+            src: '/assets/imgs/home/zongHeFuWu/zhanhui-7.jpg'
           },
           {
             id: 4,
-            title: '展会名称4',
-            src: '/assets/imgs/home/zongHeFuWu/zhanhui-4.jpg'
+            title: '第七届上海国际智能家居展览会（全智展） 2019年7月3-5日',
+            src: '/assets/imgs/home/zongHeFuWu/zhanhui-8.jpg'
           }
         ]
       }
