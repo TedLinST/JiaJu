@@ -73,5 +73,101 @@ export const DataEquipmentPurchaseHandler = {
 
   // 列表数据
   LIST_DATA: [
+    {
+      id: 1,
+      title: '自动分中卧式圆木多片锯dc',
+      equipmentType: '类型',
+      equipmentVolumes: '100',
+      date: '2019-04-29',
+      area: '中国',
+      explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+      location: '所在地',
+      price: '50000',
+      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+    },
+    {
+      id: 1,
+      title: '自动分中卧式圆木多片锯lkjhg',
+      equipmentType: '类型',
+      equipmentVolumes: '100',
+      date: '2019-04-29',
+      area: '中国',
+      explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+      location: '所在地',
+      price: '50000',
+      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+    },
+    {
+      id: 1,
+      title: '自动分中卧式圆木多片锯Zzxk',
+      equipmentType: '类型',
+      equipmentVolumes: '100',
+      date: '2019-04-29',
+      area: '中国',
+      explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+      location: '所在地',
+      price: '50000',
+      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+    },
+    {
+      id: 1,
+      title: '自动分中卧式圆木多片锯ahkl',
+      equipmentType: '类型',
+      equipmentVolumes: '100',
+      date: '2019-04-29',
+      area: '中国',
+      explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+      location: '所在地',
+      price: '50000',
+      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+    },
+    {
+      id: 1,
+      title: '自动分中卧式圆木多片锯agd',
+      equipmentType: '类型',
+      equipmentVolumes: '100',
+      date: '2019-04-29',
+      area: '中国',
+      explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+      location: '所在地',
+      price: '50000',
+      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+    },
+    {
+      id: 1,
+      title: '自动分中卧式圆木多片锯jksdfg',
+      equipmentType: '类型',
+      equipmentVolumes: '100',
+      date: '2019-04-29',
+      area: '中国',
+      explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+      location: '所在地',
+      price: '50000',
+      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+    },
+    {
+      id: 1,
+      title: '自动分中卧式圆木多片锯vzb',
+      equipmentType: '类型',
+      equipmentVolumes: '100',
+      date: '2019-04-29',
+      area: '中国',
+      explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+      location: '所在地',
+      price: '50000',
+      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+    },
+    {
+      id: 1,
+      title: '自动分中卧式圆木多片锯大声道',
+      equipmentType: '类型',
+      equipmentVolumes: '100',
+      date: '2019-04-29',
+      area: '中国',
+      explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+      location: '所在地',
+      price: '50000',
+      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+    }
   ]
 };

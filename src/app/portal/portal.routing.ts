@@ -46,7 +46,7 @@ export const PortalRoutes = [
     // { path: 'material-shopping', loadChildren: '../project/me/material-shopping/material-shopping.module#MaterialShoppingModule' }, // 原辅材料团购
     { path: 'wood-shopping', loadChildren: '../project/me/wood-shopping/wood-shopping.module#WoodShoppingModule' }, // 木材团购
     { path: 'furniture-raw-shopping', loadChildren: '../project/me/furniture-raw-shopping/furniture-raw-shopping.module#FurnitureRawShoppingModule' }, // 家具辅料团购
-    // { path: 'material-purchase', loadChildren: '../project/me/material-purchase/material-purchase.module#MaterialPurchaseModule' }, // 原辅材料求购
+    { path: 'material-purchase', loadChildren: '../project/me/material-purchase/material-purchase.module#MaterialPurchaseModule' }, // 原辅材料求购
     { path: 'material-supplier', loadChildren: '../project/me/material-supplier/material-supplier.module#MaterialSupplierModule' }, // 原辅材料供应商
     // { path: 'timber-auction', loadChildren: '../project/me/timber-auction/timber-auction.module#TimberAuctionModule' }, // 木材拍卖行
     { path: 'equipment-mart', loadChildren: '../project/me/equipment-mart/equipment-mart.module#EquipmentMartModule' }, // 机械设备商城

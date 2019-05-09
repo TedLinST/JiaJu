@@ -2,19 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
-import { DataEquipmentPurchaseHandler } from 'src/data/me/equipment-purchase';
+import { DataMaterialPurchaseHandler } from 'src/data/me/material-purchase';
 import { Utils } from 'src/modules/utils/utils';
-import { NzNotificationService, UploadFile } from 'ng-zorro-antd';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { NzNotificationService } from 'ng-zorro-antd';
 import { IdCounter } from 'src/modules/utils/id-counter';
-import { Observable, Observer } from 'rxjs';
 
 @Component({
-  selector: 'app-equipment-purchase',
-  templateUrl: './equipment-purchase.component.html',
-  styleUrls: ['./equipment-purchase.component.scss']
+  selector: 'app-material-purchase',
+  templateUrl: './material-purchase.component.html',
+  styleUrls: ['./material-purchase.component.scss']
 })
-export class EquipmentPurchaseComponent implements OnInit {
+export class MaterialPurchaseComponent implements OnInit {
 
   // 横幅图片
   CH_ME_MATERIAL_BANNER_SRC: any;
@@ -28,20 +27,21 @@ export class EquipmentPurchaseComponent implements OnInit {
   listData: any[] = [];
 
   // 一页大小
-  pageSize = 8;
+  pageSize = 20;
 
   // 总数据
   total: number = 0;
 
+  option1: any;
+  option2: any;
   option3: any;
   minPrice: number;
   maxPrice: number;
+  allQty: number;
+  qty: number;
   searchValue: any;
 
   validateForm: FormGroup;
-
-  avatarUrl: any;
-  loading = false;
 
   constructor(private router: Router, private notification: NzNotificationService, private fb: FormBuilder) {
     this.portalNav = new PortalNavigation(router);
@@ -49,17 +49,18 @@ export class EquipmentPurchaseComponent implements OnInit {
 
   ngOnInit() {
     this.CH_ME_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MATERIAL_BANNER_SRC;
-    this.dataHandler = DataEquipmentPurchaseHandler;
+    this.dataHandler = DataMaterialPurchaseHandler;
     this.total = this.dataHandler.LIST_DATA.length;
     this.handleListData(this.dataHandler.LIST_DATA);
 
     this.validateForm = this.fb.group({
-      title: [null, [Validators.required]],
-      type: [null, [Validators.required]],
-      area: [null, [Validators.required]],
-      brand: [null, [Validators.required]],
-      place: [null, [Validators.required]],
-      explain: [null]
+      PinMing: [null, [Validators.required]],
+      GuiGe: [null, [Validators.required]],
+      ChanDi: [null, [Validators.required]],
+      JiaGe: [null, [Validators.required]],
+      SuoZaiDi: [null, [Validators.required]],
+      JieZhiRiQi: [null],
+      ShuoMing: [null]
     });
   }
 
@@ -70,15 +71,15 @@ export class EquipmentPurchaseComponent implements OnInit {
     }
     this.listData.unshift({
       id: IdCounter.newId(),
-      title: this.validateForm.get('title').value,
-      equipmentType: this.validateForm.get('type').value,
-      equipmentVolumes: '100',
-      date: '2019-04-29',
-      area: this.validateForm.get('area').value,
-      explain: this.validateForm.get('explain').value,
-      location: '所在地',
-      price: '50000',
-      src: this.avatarUrl ? this.avatarUrl : ''
+      PinMing: this.validateForm.get('PinMing').value,
+      GuiGe: this.validateForm.get('GuiGe').value,
+      ChanDi: this.validateForm.get('ChanDi').value,
+      JiaGe: this.validateForm.get('JiaGe').value,
+      SuoZaiDi: this.validateForm.get('SuoZaiDi').value,
+      JieZhiRiQi: this.validateForm.get('JieZhiRiQi').value,
+      ShuoMing: this.validateForm.get('ShuoMing').value,
+      LianXiRen: '***',
+      ShouJi: '***'
     });
     this.total = this.total + 1;
     this.notification.create(
@@ -86,7 +87,6 @@ export class EquipmentPurchaseComponent implements OnInit {
       '提示',
       '发出求购成功！',
     );
-
   }
 
   /**
@@ -126,6 +126,48 @@ export class EquipmentPurchaseComponent implements OnInit {
    */
   onBlurPriceChange() {
     this.listData = Utils.arrayRandomSort(this.listData);
+  }
+
+  /**
+   * 所在地下拉框
+   * @param option 
+   */
+  onSelectOption(option: any) {
+    if (this.dataHandler.LIST_DATA && option != null) {
+      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
+      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
+        if (row.location) {
+          let text = '' + row.location;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+      });
+      this.handleListData(listData);
+    } else {
+      this.handleListData(this.dataHandler.LIST_DATA);
+    }
+  }
+
+  /**
+   * 产地下拉框
+   * @param option 
+   */
+  onSelectOption2(option: any) {
+    if (this.dataHandler.LIST_DATA && option != null) {
+      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
+      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
+        if (row.area) {
+          let text = '' + row.area;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+      });
+      this.handleListData(listData);
+    } else {
+      this.handleListData(this.dataHandler.LIST_DATA);
+    }
   }
 
   /**
@@ -183,78 +225,10 @@ export class EquipmentPurchaseComponent implements OnInit {
   }
 
   /**
-   * 联系方式
-   * @param id 
-   */
-  onTel(id: any) {
-    this.navigateDeveloping();
-  }
-
-  /**
    * 导航到正在开发中页面
    */
   navigateDeveloping() {
     this.router.navigateByUrl('developing');
-  }
-
-
-  beforeUpload = (file: File) => {
-    return new Observable((observer: Observer<boolean>) => {
-      const isJPG = (file.type === 'image/jpeg' || file.type === 'image/png' || file.type === 'image/bmp');
-      if (!isJPG) {
-        this.notification.create(
-          'error',
-          '提示',
-          '只能上传图片文件！',
-        );
-        observer.complete();
-        return;
-      }
-      const isLt2M = file.size / 1024 / 1024 < 2;
-      if (!isLt2M) {
-        this.notification.create(
-          'warning',
-          '提示',
-          '图像必须小于2MB！',
-        );
-        observer.complete();
-        return;
-      }
-      observer.next(isJPG && isLt2M);
-      observer.complete();
-    });
-  };
-
-  handleChange(info: { file: UploadFile }): void {
-    switch (info.file.status) {
-      case 'uploading':
-        this.loading = true;
-        break;
-      case 'done':
-        this.getBase64(info.file!.originFileObj!, (img: string) => {
-          this.loading = false;
-          this.avatarUrl = img;
-        });
-        break;
-      case 'error':
-        this.getBase64(info.file!.originFileObj!, (img: string) => {
-          this.loading = false;
-          this.avatarUrl = img;
-        });
-        /* this.notification.create(
-          'error',
-          '提示',
-          '网络出错',
-        );
-        this.loading = false; */
-        break;
-    }
-  }
-
-  getBase64(img: File, callback: (img: string) => void): void {
-    const reader = new FileReader();
-    reader.addEventListener('load', () => callback(reader.result!.toString()));
-    reader.readAsDataURL(img);
   }
 
 }

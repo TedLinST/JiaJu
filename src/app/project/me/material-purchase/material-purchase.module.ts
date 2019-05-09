@@ -1,25 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductDesignComponent } from './product-design.component';
+import { MaterialPurchaseComponent } from './material-purchase.component';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { PdBannerMenuModule } from '../resource/banner-menu.module';
+import { MeBannerModule } from '../resource/banner.module';
 import { NgKeyModule } from 'src/modules/key/key.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild([
       {
-        path: '', component: ProductDesignComponent,
+        path: '', component: MaterialPurchaseComponent,
       }
     ]),
     NgZorroAntdModule,
-    PdBannerMenuModule,
+    MeBannerModule,
     NgKeyModule
   ],
   declarations: [
-    ProductDesignComponent
+    MaterialPurchaseComponent
   ]
 })
-export class ProductDesignModule { }
+export class MaterialPurchaseModule { }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BannerMenuComponent } from './banner-menu.component';
+import { PdBannerMenuComponent } from './banner-menu.component';
 import { NgKeyModule } from 'src/modules/key/key.module';
 
 @NgModule({
@@ -8,8 +8,8 @@ import { NgKeyModule } from 'src/modules/key/key.module';
     CommonModule,
     NgKeyModule
   ],
-  exports: [BannerMenuComponent],
-  declarations: [BannerMenuComponent],
+  exports: [PdBannerMenuComponent],
+  declarations: [PdBannerMenuComponent],
   providers: []
 })
-export class BannerMenuModule { }
+export class PdBannerMenuModule { }

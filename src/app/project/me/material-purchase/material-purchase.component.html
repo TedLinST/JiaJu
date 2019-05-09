@@ -1,0 +1,224 @@
+<div class="material-purchase">
+  <!-- 横幅 -->
+  <me-banner [srcUrl]="CH_ME_MATERIAL_BANNER_SRC">
+  </me-banner>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openMaterialEquipment()">原辅材料机械设备服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        原辅材料求购
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+    <!-- 完善求购内容 -->
+    <key-dot-title title="完善求购内容"></key-dot-title>
+    <form nz-form [nzLayout]="'inline'" [formGroup]="validateForm"
+      (ngSubmit)="submitForm()">
+      <div>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">品名</nz-form-label>
+          <nz-form-control>
+            <input formControlName="PinMing" nz-input placeholder="请输入品名" />
+            <nz-form-explain
+              *ngIf="validateForm.get('PinMing')?.dirty && validateForm.get('PinMing')?.errors">
+              请输入品名!</nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">规格</nz-form-label>
+          <nz-form-control>
+            <input formControlName="GuiGe" nz-input placeholder="请输入规格" />
+            <nz-form-explain
+              *ngIf="validateForm.get('GuiGe')?.dirty && validateForm.get('GuiGe')?.errors">
+              请输入规格!</nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">价格</nz-form-label>
+          <nz-form-control>
+            <input formControlName="JiaGe" nz-input placeholder="请输入价格" />
+            <nz-form-explain
+              *ngIf="validateForm.get('JiaGe')?.dirty && validateForm.get('JiaGe')?.errors">
+              请输入价格!</nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">产地</nz-form-label>
+          <nz-form-control>
+            <input formControlName="ChanDi" nz-input placeholder="请输入产地" />
+            <nz-form-explain
+              *ngIf="validateForm.get('ChanDi')?.dirty && validateForm.get('ChanDi')?.errors">
+              请输入产地!</nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">所在地</nz-form-label>
+          <nz-form-control>
+            <input formControlName="SuoZaiDi" nz-input placeholder="请输入所在地" />
+            <nz-form-explain
+              *ngIf="validateForm.get('SuoZaiDi')?.dirty && validateForm.get('SuoZaiDi')?.errors">
+              请输入所在地!</nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">截止日期</nz-form-label>
+          <nz-form-control style="width:174px;">
+            <nz-date-picker formControlName="JieZhiRiQi"></nz-date-picker>
+            <nz-form-explain
+              *ngIf="validateForm.get('JieZhiRiQi')?.dirty && validateForm.get('JieZhiRiQi')?.errors">
+              请输入截止日期!</nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div>
+        <nz-form-item>
+          <nz-form-label style="width:70px;">说明</nz-form-label>
+          <nz-form-control style="width:695px;">
+            <input formControlName="ShuoMing" nz-input placeholder="请输入说明" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div style="text-align: center;margin-top: 10px;">
+        <button nz-button nzType="primary" style="width: 200px;"
+          [disabled]="!validateForm.valid">发布求购</button>
+      </div>
+    </form>
+    <!-- 条件选择区 -->
+    <key-dot-title title="条件选择区"></key-dot-title>
+    <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
+      let-index="index">
+      <key-menu-type [title]="item.title" [data]="item.data"
+        (clickType)="onClickType($event)"></key-menu-type>
+    </ng-template>
+    <div style="height: 20px;"></div>
+    <!-- 过滤 -->
+    <div class="filter-row">
+      <div>
+        <key-button-sort label="热度"
+          (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
+        <key-button-sort label="价格"
+          (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
+        <span style="margin: 0px 5px 0px 15px;">产地</span>
+        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option2"
+          style="width:100px;" (ngModelChange)="onSelectOption2(option2)">
+          <nz-option nzValue="汕头" nzLabel="汕头"></nz-option>
+          <nz-option nzValue="揭阳" nzLabel="揭阳"></nz-option>
+        </nz-select>
+        <span style="margin: 0px 5px 0px 15px;">所在地</span>
+        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option1"
+          style="width:100px;" (ngModelChange)="onSelectOption(option1)">
+          <nz-option nzValue="汕头" nzLabel="汕头"></nz-option>
+          <nz-option nzValue="揭阳" nzLabel="揭阳"></nz-option>
+        </nz-select>
+        <span style="margin: 0px 5px 0px 15px;">截止日期</span>
+        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option3"
+          style="width:100px;" (ngModelChange)="onSelectOption3(option3)">
+          <nz-option nzValue="2019-05-08" nzLabel="2019-05-08"></nz-option>
+          <nz-option nzValue="2019-05-09" nzLabel="2019-05-09"></nz-option>
+        </nz-select>
+        <div class="search">
+          <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+            <input type="text" nz-input placeholder="请输入品名"
+              [(ngModel)]="searchValue" />
+          </nz-input-group>
+          <ng-template #suffixIconButton>
+            <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+              <i nz-icon type="search"></i></button>
+          </ng-template>
+        </div>
+      </div>
+      <div style="margin-top: 10px;">
+        <!-- 价格区间 -->
+        <span style="margin: 0px 5px 0px 15px;">价格区间</span>
+        <nz-input-number [(ngModel)]="minPrice" (nzBlur)="onBlurPriceChange()"
+          [nzPlaceHolder]="'￥请输入'" [nzStep]="1">
+        </nz-input-number>
+        <span style="margin: 0px 5px;">-</span>
+        <nz-input-number [(ngModel)]="maxPrice" [nzStep]="1"
+          (nzBlur)="onBlurPriceChange()" [nzPlaceHolder]="'￥请输入'">
+        </nz-input-number>
+        <span style="margin: 0px 5px 0px 15px;">总数量</span>
+        <nz-input-number [(ngModel)]="allQty" [nzStep]="1"
+          (nzBlur)="onBlurPriceChange()">
+        </nz-input-number>
+        <span style="margin: 0px 5px 0px 15px;">已抱团数量</span>
+        <nz-input-number [(ngModel)]="qty" [nzStep]="1"
+          (nzBlur)="onBlurPriceChange()">
+        </nz-input-number>
+      </div>
+    </div>
+    <!-- 列表数据 -->
+    <div *ngIf="listData != null && listData.length > 0">
+      <div class="list">
+        <div class="header">
+          <div class="row">
+            <div class="col col-1">品名</div>
+            <div class="col col-2">类型</div>
+            <div class="col col-3">产地</div>
+            <div class="col col-4">交易地</div>
+            <div class="col col-5">规格</div>
+            <div class="col col-6">联系人</div>
+            <div class="col col-7">手机</div>
+            <div class="col col-8">操作</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="body">
+          <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+            <div class="row">
+              <div class="col col-1">
+                <div class="singleTextBeyondHide">{{item.PinMing}}</div>
+              </div>
+              <div class="col col-2">
+                <div class="singleTextBeyondHide">{{item.LeiXing}}</div>
+              </div>
+              <div class="col col-3">
+                <div class="singleTextBeyondHide">{{item.ChanDi}}</div>
+              </div>
+              <div class="col col-4">
+                <div class="singleTextBeyondHide">{{item.JiaoYiDi}}</div>
+              </div>
+              <div class="col col-5">
+                <div class="singleTextBeyondHide">{{item.GuiGe}}</div>
+              </div>
+              <div class="col col-6">
+                <div class="singleTextBeyondHide">{{item.LianXiRen}}</div>
+              </div>
+              <div class="col col-7">
+                <div class="singleTextBeyondHide">{{item.ShouJi}}</div>
+              </div>
+              <div class="col col-8">
+                <button class="btn" nz-button nzType="primary" nzSize="small"
+                  (click)="onCollection(item.Id)">收藏</button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </ng-template>
+        </div>
+        <div class="footer">
+          <div class="pagination">
+            <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
+              [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
+              (nzPageIndexChange)="onPageIndexChange()">
+            </nz-pagination>
+            <ng-template #rangeTemplate let-range="range" let-total>
+              显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!(listData != null && listData.length > 0)">
+      <nz-empty></nz-empty>
+    </div>
+
+  </div>
+</div>
