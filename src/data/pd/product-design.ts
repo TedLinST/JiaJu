@@ -55,39 +55,39 @@ export const DataProductDesignHandler = {
         data: [
           {
             id: 1,
-            title: '优秀设计师',
+            title: 'Dieter Rams',
             number: 1,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 2,
-            title: '优秀设计师',
+            title: 'YRJO KUKKAPURO',
             number: 2,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 3,
-            title: '优秀设计师',
+            title: 'はらけんや(原研哉)',
             number: 3,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 4,
-            title: '优秀设计师',
+            title: '朱小杰',
             number: 4,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           },
           {
             id: 5,
-            title: '优秀设计师',
+            title: '侯正光',
             number: 5,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-5.jpg'
           },
           {
             id: 6,
-            title: '优秀设计师',
+            title: '赖亚楠',
             number: 6,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-6.jpg'
           }
         ]
       },
@@ -96,39 +96,39 @@ export const DataProductDesignHandler = {
         data: [
           {
             id: 1,
-            title: '优秀设计师',
-            number: 1,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '温浩',
+            number: 7,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-7.jpg'
           },
           {
             id: 2,
-            title: '优秀设计师',
-            number: 2,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '石大宇',
+            number: 8,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-8.jpg'
           },
           {
             id: 3,
-            title: '优秀设计师',
-            number: 3,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '张雷',
+            number: 1,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-9.jpg'
           },
           {
             id: 4,
-            title: '优秀设计师',
-            number: 4,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '于历战',
+            number: 2,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-10.jpg'
           },
           {
             id: 5,
-            title: '优秀设计师',
-            number: 5,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '吕永忠',
+            number: 3,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-11.jpg'
           },
           {
             id: 6,
-            title: '优秀设计师',
-            number: 6,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '周宸宸',
+            number: 4,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-12.jpg'
           }
         ]
       }
@@ -140,39 +140,39 @@ export const DataProductDesignHandler = {
         data: [
           {
             id: 1,
-            title: '新锐设计师',
+            title: 'Dieter Rams',
             number: 1,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 2,
-            title: '新锐设计师',
+            title: 'YRJO KUKKAPURO',
             number: 2,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 3,
-            title: '新锐设计师',
+            title: 'はらけんや(原研哉)',
             number: 3,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 4,
-            title: '新锐设计师',
+            title: '朱小杰',
             number: 4,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           },
           {
             id: 5,
-            title: '新锐设计师',
+            title: '侯正光',
             number: 5,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-5.jpg'
           },
           {
             id: 6,
-            title: '新锐设计师',
+            title: '赖亚楠',
             number: 6,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-6.jpg'
           }
         ]
       },
@@ -181,39 +181,39 @@ export const DataProductDesignHandler = {
         data: [
           {
             id: 1,
-            title: '新锐设计师',
-            number: 1,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '温浩',
+            number: 7,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-7.jpg'
           },
           {
             id: 2,
-            title: '新锐设计师',
-            number: 2,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '石大宇',
+            number: 8,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-8.jpg'
           },
           {
             id: 3,
-            title: '新锐设计师',
-            number: 3,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '张雷',
+            number: 1,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-9.jpg'
           },
           {
             id: 4,
-            title: '新锐设计师',
-            number: 4,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '于历战',
+            number: 2,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-10.jpg'
           },
           {
             id: 5,
-            title: '新锐设计师',
-            number: 5,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '吕永忠',
+            number: 3,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-11.jpg'
           },
           {
             id: 6,
-            title: '新锐设计师',
-            number: 6,
-            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
+            title: '周宸宸',
+            number: 4,
+            src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-12.jpg'
           }
         ]
       }
