@@ -65,7 +65,8 @@
                   </div>
                 </div>
                 <div class="footer footer-right">
-                  <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  <a
+                    (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
                 </div>
               </div>
             </div>
@@ -140,7 +141,8 @@
           <div class="left" (click)="openSchoolProjectDetails(1)">
             <img src="/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-1.jpg">
             <key-item-mask>
-              <key-item-mask-label label="人造板节能环保制造技术研究与示范"></key-item-mask-label>
+              <key-item-mask-label label="人造板节能环保制造技术研究与示范">
+              </key-item-mask-label>
             </key-item-mask>
           </div>
           <div class="right"
@@ -298,7 +300,7 @@
     <div body>
       <!-- 木材团购 -->
       <key-item-chunk-body *ngIf="currentIndexME == 0" [isMore]="true"
-        (clickMore)="onClickMoreME0()">
+        (clickMore)="portalNav.openWoodShopping()">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.ME.data0"
             let-index="index">
@@ -329,7 +331,7 @@
       </key-item-chunk-body>
       <!-- 机械设备 -->
       <key-item-chunk-body *ngIf="currentIndexME == 1" [isMore]="true"
-        (clickMore)="onClickMoreME1()">
+        (clickMore)="portalNav.openEquipmentMart()">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.ME.data1"
             let-index="index">
@@ -359,7 +361,7 @@
     </div>
   </key-item-chunk>
 
-  <!-- 原辅材料机械设备服务 -->
+  <!-- 家具商城 -->
   <key-item-chunk [enTitle]="dataHandler.FM.enTitle"
     [title]="dataHandler.FM.title" [menuData]="dataHandler.FM.menuData"
     (switchIndexChange)="currentIndexFM = $event">
@@ -488,7 +490,7 @@
       <key-item-chunk-body>
 
         <div class="FE0-style">
-          <div class="left" (click)="openQuickAccess(0)">
+          <div class="left" (click)="portalNav.openDataAnalysis()">
             <img src="/assets/imgs/home/kuaiSuRuKou/rukou-1.jpg">
             <key-item-mask>
               <key-item-mask-label label="大数据分析服务"></key-item-mask-label>

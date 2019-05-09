@@ -3,6 +3,10 @@ import { Router } from '@angular/router';
 export class PortalNavigation {
 
   constructor(private router: Router) {
+    // 滚动条回到顶部
+    if (!!window) {
+      window.scrollTo(0, 0);
+    }
   }
 
   /**
@@ -85,7 +89,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    this.router.navigateByUrl('material-mart');
+    this.router.navigate(['material-mart']);
   }
 
   /**

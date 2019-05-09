@@ -119,20 +119,6 @@ export class HomeComponent implements OnInit, AfterContentInit {
   }
 
   /**
-   * 木材团购 - 更多
-   */
-  onClickMoreME0() {
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 机械设备 - 更多
-   */
-  onClickMoreME1() {
-    this.navigateDeveloping();
-  }
-
-  /**
    * 推荐商品 - 更多
    */
   onClickMoreFM0() {
@@ -286,7 +272,15 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openQuickAccess(id: any) {
-    this.navigateDeveloping();
+    if (id == 5) {
+      // 原辅材料机械设备服务 - 原辅材料商城
+      this.portalNav.openMaterialMart();
+    } else if (id == 6) {
+      // 原辅材料机械设备服务 - 原辅材料供应商
+      this.portalNav.openMaterialSupplier();
+    } else {
+      this.navigateDeveloping();
+    }
   }
 
   /**
