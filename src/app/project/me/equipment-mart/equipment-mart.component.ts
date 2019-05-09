@@ -32,7 +32,7 @@ export class EquipmentMartComponent implements OnInit {
   pageSize = 10;
 
   // 总数据
-  total: 0;
+  total: number = 0;
 
   minPrice: number;
   maxPrice: number;
@@ -47,7 +47,7 @@ export class EquipmentMartComponent implements OnInit {
     this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataEquipmentMartHandler;
     this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListData(this.dataHandler.LIST_DATA);
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
   }
 
   /**
@@ -75,10 +75,20 @@ export class EquipmentMartComponent implements OnInit {
   }
 
   /**
-   * 分页
+   * 处理列表数据分页
+   * @param data 
+   * @param pageIndex 
    */
-  onPageIndexChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
+  handleListDataPagination(data: any[], pageIndex: number) {
+    this.listData = Utils.dataPagination(data, pageIndex, this.pageSize);
+    this.total = data.length;
+  }
+
+  /**
+   * 页码改变
+   */
+  onPageIndexChange(event: any) {
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, event);
   }
 
   /**
@@ -116,9 +126,9 @@ export class EquipmentMartComponent implements OnInit {
           }
         }
       });
-      this.handleListData(listData);
+      this.handleListDataPagination(listData, 1);
     } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
+      this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
     }
   }
 

@@ -57,7 +57,7 @@ export class EquipmentPurchaseComponent implements OnInit {
     this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataEquipmentPurchaseHandler;
     this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListData(this.dataHandler.LIST_DATA);
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
 
     this.validateForm = this.fb.group({
       title: [null, [Validators.required]],
@@ -120,6 +120,23 @@ export class EquipmentPurchaseComponent implements OnInit {
   }
 
   /**
+   * 处理列表数据分页
+   * @param data 
+   * @param pageIndex 
+   */
+  handleListDataPagination(data: any[], pageIndex: number) {
+    this.listData = Utils.dataPagination(data, pageIndex, this.pageSize);
+    this.total = data.length;
+  }
+
+  /**
+   * 页码改变
+   */
+  onPageIndexChange(event: any) {
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, event);
+  }
+
+  /**
    * 点击分类
    * @param event 
    */
@@ -175,17 +192,10 @@ export class EquipmentPurchaseComponent implements OnInit {
           }
         }
       });
-      this.handleListData(listData);
+      this.handleListDataPagination(listData, 1);
     } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
+      this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
     }
-  }
-
-  /**
-   * 分页
-   */
-  onPageIndexChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
   }
 
   /**

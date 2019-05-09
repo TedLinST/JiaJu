@@ -33,7 +33,7 @@ export class DesignDatabaseComponent implements OnInit {
   pageSize = 9;
 
   // 总数据
-  total: 0;
+  total: number = 0;
 
   // 列表数据
   listData: any[] = [];
@@ -47,7 +47,7 @@ export class DesignDatabaseComponent implements OnInit {
     this.CH_PD_BANNER_MENU = ConstantHandler.CH_PD_BANNER_MENU;
     this.dataHandler = DataDesignDatabaseHandler;
     this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListData(this.dataHandler.LIST_DATA);
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
   }
 
   /**
@@ -79,33 +79,27 @@ export class DesignDatabaseComponent implements OnInit {
           }
         }
       });
-      this.handleListData(listData);
+      this.handleListDataPagination(listData, 1);
     } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
+      this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
     }
   }
 
   /**
-   * 处理列表数据
+   * 处理列表数据分页
+   * @param data 
+   * @param pageIndex 
    */
-  handleListData(listData: any[]) {
-    if (listData != null && listData.length > 0) {
-      let listDataTemp = Utils.arrayRandomSort(listData);
-      this.listData = [];
-      let len = listData.length > this.pageSize ? this.pageSize : listData.length;
-      for (let i = 0; i < len; i++) {
-        this.listData.push(listDataTemp[i]);
-      }
-    } else {
-      this.listData = [];
-    }
+  handleListDataPagination(data: any[], pageIndex: number) {
+    this.listData = Utils.dataPagination(data, pageIndex, this.pageSize);
+    this.total = data.length;
   }
 
   /**
-   * 分页
+   * 页码改变
    */
-  onPageIndexChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
+  onPageIndexChange(event: any) {
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, event);
   }
 
   /**
@@ -113,6 +107,19 @@ export class DesignDatabaseComponent implements OnInit {
    * @param event 
    */
   onClickType(event: any) {
+    /* let array = [{
+      key1: 'value1',
+      key2: 'value4',
+    }, {
+      key1: 'value2',
+      key2: 'value5',
+    }];
+
+    let filters = {
+      key1: ['value1', 'value2'],
+      key2: ['value4']
+    }
+    let res = Utils.dataFilter(array, filters); */
     this.listData = Utils.arrayRandomSort(this.listData);
   }
 

@@ -63,7 +63,7 @@ export class DesignersGardenComponent implements OnInit {
     this.CH_PD_BANNER_MENU = ConstantHandler.CH_PD_BANNER_MENU;
     this.dataHandler = DataDesignersGardenHandler;
     this.total = this.dataHandler.DL.data.length;
-    this.handleListData(this.dataHandler.DL.data);
+    this.handleListDataPagination(this.dataHandler.DL.data, 1);
   }
 
   /**
@@ -106,10 +106,20 @@ export class DesignersGardenComponent implements OnInit {
   }
 
   /**
-   * 分页
+   * 处理列表数据分页
+   * @param data 
+   * @param pageIndex 
    */
-  onPageIndexChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
+  handleListDataPagination(data: any[], pageIndex: number) {
+    this.listData = Utils.dataPagination(data, pageIndex, this.pageSize);
+    this.total = data.length;
+  }
+
+  /**
+   * 页码改变
+   */
+  onPageIndexChange(event: any) {
+    this.handleListDataPagination(this.dataHandler.DL.data, event);
   }
 
   /**
