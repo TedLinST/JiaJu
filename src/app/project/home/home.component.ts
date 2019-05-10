@@ -272,10 +272,13 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openQuickAccess(id: any) {
-    if (id == 5) {
+    if (id == 1) {
+      // 产品设计开发服务 - 大数据分析
+      this.portalNav.openDataAnalysis();
+    } else if (id == 6) {
       // 原辅材料机械设备服务 - 原辅材料商城
       this.portalNav.openMaterialMart();
-    } else if (id == 6) {
+    } else if (id == 7) {
       // 原辅材料机械设备服务 - 机械设备供应商
       this.portalNav.openEquipmentSupplier();
     } else {

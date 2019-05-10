@@ -138,10 +138,11 @@
       <key-item-chunk-body *ngIf="currentIndexSEC == 0" [isMore]="true"
         (clickMore)="onClickMoreSEC0()">
         <div class="SEC0-style">
-          <div class="left" (click)="openSchoolProjectDetails(1)">
-            <img src="/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-1.jpg">
+          <div class="left"
+            (click)="openSchoolProjectDetails(dataHandler.SEC.data0[0].id)">
+            <img [src]="dataHandler.SEC.data0[0].src">
             <key-item-mask>
-              <key-item-mask-label label="人造板节能环保制造技术研究与示范">
+              <key-item-mask-label [label]="dataHandler.SEC.data0[0].title">
               </key-item-mask-label>
             </key-item-mask>
           </div>
@@ -149,9 +150,10 @@
             style="padding-left: 6px;width: calc(100% - 299px)">
             <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data0"
               let-index="index">
-              <div nz-col nzSpan="8" style="height: 182px;margin-bottom: 21px;">
+              <div *ngIf="index > 0" nz-col nzSpan="8"
+                style="height: 182px;margin-bottom: 21px;">
                 <div class="item-box item-box-margin-3"
-                  (click)="openQuickAccess(item.id)">
+                  (click)="openSchoolProjectDetails(item.id)">
                   <div class="header">
                     <img [src]="item.src">
                     <key-item-mask>
@@ -395,17 +397,20 @@
       <key-item-chunk-body *ngIf="currentIndexFM == 1" [isMore]="true"
         (clickMore)="onClickMoreFM1()">
         <div class="FM1-style">
-          <div class="left" (click)="openGroupBuyingDetails(0)">
-            <img src="/assets/imgs/home/jiaJuShangCheng/tuangou-1.jpg">
+          <div class="left"
+            (click)="openGroupBuyingDetails(dataHandler.FM.data1[0].id)">
+            <img [src]="dataHandler.FM.data1[0].src">
             <key-item-mask>
-              <key-item-mask-label label="团购商品名称0"></key-item-mask-label>
+              <key-item-mask-label [label]="dataHandler.FM.data1[0].title">
+              </key-item-mask-label>
             </key-item-mask>
           </div>
           <div class="right"
             style="padding-left: 14px;width: calc(100% - 472px)">
             <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data1"
               let-index="index">
-              <div nz-col nzSpan="8" style="height: 394px;margin-bottom: 12px;">
+              <div *ngIf="index > 0" nz-col nzSpan="8"
+                style="height: 394px;margin-bottom: 12px;">
                 <div class="item-box item-box-margin-8"
                   (click)="openGroupBuyingDetails(item.id)">
                   <div class="header">
@@ -490,17 +495,17 @@
       <key-item-chunk-body>
 
         <div class="FE0-style">
-          <div class="left" (click)="portalNav.openDataAnalysis()">
-            <img src="/assets/imgs/home/kuaiSuRuKou/rukou-1.jpg">
+          <div class="left" (click)="openQuickAccess(dataHandler.FE.data0[0].id)">
+            <img [src]="dataHandler.FE.data0[0].src">
             <key-item-mask>
-              <key-item-mask-label label="大数据分析服务"></key-item-mask-label>
+              <key-item-mask-label [label]="dataHandler.FE.data0[0].title"></key-item-mask-label>
             </key-item-mask>
           </div>
           <div class="right"
             style="padding-left: 6px;width: calc(100% - 299px)">
             <ng-template ngFor let-item [ngForOf]="dataHandler.FE.data0"
               let-index="index">
-              <div nz-col nzSpan="8" style="height: 182px;margin-bottom: 21px;">
+              <div *ngIf="index > 0" nz-col nzSpan="8" style="height: 182px;margin-bottom: 21px;">
                 <div class="item-box item-box-margin-3"
                   (click)="openQuickAccess(item.id)">
                   <div class="header">

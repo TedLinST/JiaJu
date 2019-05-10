@@ -31,11 +31,15 @@ export const PortalRoutes = [
     // { path: 'sale', loadChildren: '../project/er/sale/sale.module#SaleModule' }, // 销售管理
     // { path: 'development', loadChildren: '../project/er/development/development.module#DevelopmentModule' }, // 开发管理
     // { path: 'production', loadChildren: '../project/er/production/production.module#ProductionModule' }, // 生产管理
-    // { path: 's-e-cooperation', loadChildren: '../project/sec/s-e-cooperation/s-e-cooperation.module#SECooperationModule' }, // 校企合作服务
+    { path: 's-e-cooperation', loadChildren: '../project/sec/s-e-cooperation/s-e-cooperation.module#SECooperationModule' }, // 校企合作服务
     // { path: 'school-project', loadChildren: '../project/sec/school-project/school-project.module#SchoolProjectModule' }, // 学校项目
     // { path: 'enterprise-needs', loadChildren: '../project/sec/enterprise-needs/enterprise-needs.module#EnterpriseNeedsModule' }, // 企业需求
+    // { path: 'se-resources', loadChildren: '../project/sec/se-resources/se-resources.module#SeResourcesModule' }, // 校企资源
+    // { path: 'enterprise-recruitment', loadChildren: '../project/sec/enterprise-recruitment/enterprise-recruitment.module#EnterpriseRecruitmentModule' }, // 企业招聘
     // { path: 'interaction-forum', loadChildren: '../project/sec/interaction-forum/interaction-forum.module#InteractionForumModule' }, // 互动讲堂
+    // { path: 'se-news', loadChildren: '../project/sec/se-news/se-news.module#SeNewsModule' }, // 校企新闻
     // { path: 'seek-expert', loadChildren: '../project/sec/seek-expert/seek-expert.module#SeekExpertModule' }, // 有困难找专家
+    // { path: 'file-download', loadChildren: '../project/sec/file-download/file-download.module#FileDownloadModule' }, // 文件下载
     // { path: 'integrated-services', loadChildren: '../project/is/integrated-services/integrated-services.module#IntegratedServicesModule' }, // 综合服务
     // { path: 'exhibition', loadChildren: '../project/is/exhibition/exhibition.module#ExhibitionModule' }, // 展会服务
     // { path: 'government', loadChildren: '../project/is/government/government.module#GovernmentModule' }, // 政府服务
@@ -52,8 +56,6 @@ export const PortalRoutes = [
     { path: 'equipment-mart', loadChildren: '../project/me/equipment-mart/equipment-mart.module#EquipmentMartModule' }, // 机械设备商城
     { path: 'equipment-supplier', loadChildren: '../project/me/equipment-supplier/equipment-supplier.module#EquipmentSupplierModule' }, // 机械设备供应商
     { path: 'equipment-purchase', loadChildren: '../project/me/equipment-purchase/equipment-purchase.module#EquipmentPurchaseModule' }, // 机械设备求购
-    // { path: 'wood-shopping', loadChildren: '../project/me/wood-shopping/wood-shopping.module#WoodShoppingModule' }, // 木材团购
-    // { path: 'mechanics-equipment', loadChildren: '../project/me/mechanics-equipment/mechanics-equipment.module#MechanicsEquipmentModule' }, // 机械设备
     // { path: 'furniture-mall', loadChildren: '../project/fm/furniture-mall/furniture-mall.module#FurnitureMallModule' }, // 家具商城
     // { path: 'commodity', loadChildren: '../project/fm/commodity/commodity.module#CommodityModule' }, // 商品
     // { path: 'group-buying', loadChildren: '../project/fm/group-buying/group-buying.module#GroupBuyingModule' }, // 团购

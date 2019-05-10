@@ -5,7 +5,7 @@ import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataWoodShoppingHandler } from 'src/data/me/wood-shopping';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
-import { UtilsMe } from '../utils/banner-menu';
+import { UtilsMe } from '../utils/utils-me';
 
 @Component({
   selector: 'app-wood-shopping',

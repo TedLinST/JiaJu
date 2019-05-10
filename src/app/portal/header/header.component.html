@@ -13,24 +13,20 @@
       <li (click)="portalNav.openEnterpriseResource($event)">企业资源管理系统</li>
       <li (click)="portalNav.openSECooperation($event)">校企合作服务
         <ul class="sub-menu-ul">
-          <li class="arrow">
-            学校项目
+          <li class="arrow" (click)="portalNav.openSchoolProject($event)">学校项目
             <ul class="three-menu-ul">
               <li>学校项目一</li>
               <li>学校项目二</li>
               <li>学校项目三</li>
             </ul>
           </li>
-          <li class="arrow">
-            企业需求
-            <ul class="three-menu-ul">
-              <li>企业需求一</li>
-              <li>企业需求二</li>
-              <li>企业需求三</li>
-            </ul>
-          </li>
-          <li>互动讲堂</li>
-          <li>有困难找专家</li>
+          <li (click)="portalNav.openEnterpriseNeeds($event)">企业需求</li>
+          <li (click)="portalNav.openSeResources($event)">校企资源</li>
+          <li (click)="portalNav.openEnterpriseRecruitment($event)">企业招聘</li>
+          <li (click)="portalNav.openInteractionForum($event)">互动讲堂</li>
+          <li (click)="portalNav.openSeNews($event)">校企新闻</li>
+          <li (click)="portalNav.openSeekExpert($event)">有困难找专家</li>
+          <li (click)="portalNav.openFileDownload($event)">文件下载</li>
         </ul>
       </li>
       <li (click)="portalNav.openIntegratedServices($event)">综合服务</li>
@@ -41,7 +37,8 @@
             原辅材料团购
             <ul class="three-menu-ul">
               <li (click)="portalNav.openWoodShopping($event)">木材团购</li>
-              <li (click)="portalNav.openFurnitureRawShopping($event)">家具辅料团购</li>
+              <li (click)="portalNav.openFurnitureRawShopping($event)">家具辅料团购
+              </li>
             </ul>
           </li>
           <li (click)="portalNav.openMaterialPurchase($event)">原辅材料求购</li>

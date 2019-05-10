@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { DataProductDesignHandler } from 'src/data/pd/product-design';
 import { KeyCarouselLabelEvent } from 'src/modules/key/carousel/carousel-label.event';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
-import { UtilsPd } from '../utils/banner-menu';
+import { UtilsPd } from '../utils/utils-pd';
 
 @Component({
   selector: 'app-product-design',

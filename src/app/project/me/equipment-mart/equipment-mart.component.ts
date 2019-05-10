@@ -4,7 +4,7 @@ import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataEquipmentMartHandler } from 'src/data/me/equipment-mart';
 import { Utils } from 'src/modules/utils/utils';
-import { UtilsMe } from '../utils/banner-menu';
+import { UtilsMe } from '../utils/utils-me';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 
 @Component({

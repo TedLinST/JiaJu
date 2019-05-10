@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { DataDataAnalysisHandler } from 'src/data/pd/data-analysis';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
-import { UtilsPd } from '../utils/banner-menu';
+import { UtilsPd } from '../utils/utils-pd';
 
 @Component({
   selector: 'app-data-analysis',

@@ -246,31 +246,36 @@ export const DataHomeHandler = {
     data0: [
       {
         id: 1,
+        title: '人造板节能环保制造技术研究与示范',
+        src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-1.jpg'
+      },
+      {
+        id: 2,
         title: '环境友好型秸秆板家具制造技术推广',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-2.jpg'
       },
       {
-        id: 2,
+        id: 3,
         title: '《木纹立体打印装饰制品技术要求》行业标准制定',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-3.jpg'
       },
       {
-        id: 3,
+        id: 4,
         title: '木竹纤维柔性装饰材料制造关键技术研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-4.jpg'
       },
       {
-        id: 4,
+        id: 5,
         title: '中国传统家具艺术数据库的研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-5.jpg'
       },
       {
-        id: 5,
+        id: 6,
         title: '现代中式家具的开发与工业化生产方式研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-6.jpg'
       },
       {
-        id: 6,
+        id: 7,
         title: '家具生命周期评价（LCA）的研究',
         src: '/assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-7.jpg'
       }
@@ -770,39 +775,46 @@ export const DataHomeHandler = {
         title: '团购商品名称1',
         link: 'www.baidu.com',
         price: '2000 RMB',
-        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-2.jpg'
+        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-1.jpg'
       },
       {
         id: 2,
         title: '团购商品名称2',
         link: 'www.baidu.com',
         price: '2000 RMB',
-        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-3.jpg'
+        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-2.jpg'
       },
       {
         id: 3,
         title: '团购商品名称3',
         link: 'www.baidu.com',
         price: '2000 RMB',
-        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-4.jpg'
+        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-3.jpg'
       },
       {
         id: 4,
         title: '团购商品名称4',
         link: 'www.baidu.com',
         price: '2000 RMB',
-        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-5.jpg'
+        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-4.jpg'
       },
       {
         id: 5,
         title: '团购商品名称5',
         link: 'www.baidu.com',
         price: '2000 RMB',
-        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-6.jpg'
+        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-5.jpg'
       },
       {
         id: 6,
         title: '团购商品名称6',
+        link: 'www.baidu.com',
+        price: '2000 RMB',
+        src: '/assets/imgs/home/jiaJuShangCheng/tuangou-6.jpg'
+      },
+      {
+        id: 7,
+        title: '团购商品名称7',
         link: 'www.baidu.com',
         price: '2000 RMB',
         src: '/assets/imgs/home/jiaJuShangCheng/tuangou-7.jpg'
@@ -910,31 +922,36 @@ export const DataHomeHandler = {
     data0: [
       {
         id: 1,
+        title: '大数据分析服务',
+        src: '/assets/imgs/home/kuaiSuRuKou/rukou-1.jpg'
+      },
+      {
+        id: 2,
         title: '企业资源管理系统',
         src: '/assets/imgs/home/kuaiSuRuKou/rukou-2.jpg'
       },
       {
-        id: 2,
+        id: 3,
         title: '企业研发项目需求',
         src: '/assets/imgs/home/kuaiSuRuKou/rukou-3.jpg'
       },
       {
-        id: 3,
+        id: 4,
         title: '有困难找专家',
         src: '/assets/imgs/home/kuaiSuRuKou/rukou-4.jpg'
       },
       {
-        id: 4,
+        id: 5,
         title: '展会服务',
         src: '/assets/imgs/home/kuaiSuRuKou/rukou-5.jpg'
       },
       {
-        id: 5,
+        id: 6,
         title: '原辅材料供需商城',
         src: '/assets/imgs/home/kuaiSuRuKou/rukou-6.jpg'
       },
       {
-        id: 6,
+        id: 7,
         title: '机械设备供需商城',
         src: '/assets/imgs/home/kuaiSuRuKou/rukou-7.jpg'
       }

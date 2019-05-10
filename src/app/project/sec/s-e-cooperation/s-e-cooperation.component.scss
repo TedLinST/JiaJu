@@ -1,0 +1,33 @@
+.s-e-cooperation {
+  .SP-style {
+    .left {
+      float: left;
+      position: relative;
+      border: 1px solid transparent;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        border: 1px solid #38a636;
+      }
+    }
+
+    .right {
+      float: left;
+
+      .row {
+        .col {
+          float: left;
+          position: relative;
+          margin-left: 4px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

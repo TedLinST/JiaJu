@@ -5,7 +5,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { DataDataAnalysisDetailsHandler } from 'src/data/pd/data-analysis-details';
 import { Utils } from 'src/modules/utils/utils';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
-import { UtilsPd } from '../utils/banner-menu';
+import { UtilsPd } from '../utils/utils-pd';
 
 @Component({
   selector: 'app-data-analysis-details',

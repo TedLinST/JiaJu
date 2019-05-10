@@ -5,7 +5,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataMaterialSupplierHandler } from 'src/data/me/material-supplier';
 import { Utils } from 'src/modules/utils/utils';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
-import { UtilsMe } from '../utils/banner-menu';
+import { UtilsMe } from '../utils/utils-me';
 
 @Component({
   selector: 'app-material-supplier',

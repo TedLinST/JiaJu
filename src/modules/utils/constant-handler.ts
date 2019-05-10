@@ -80,4 +80,43 @@ export class ConstantHandler {
     }
   ];
 
+  // 校企合作服务 - 横幅图片
+  public static CH_SEC_BANNER_SRC = '/assets/imgs/s-e-cooperation/banner.jpg';
+
+  // 校企合作服务 - 横幅菜单
+  public static CH_SEC_BANNER_MENU = [
+    {
+      id: '1',
+      title: '学校项目'
+    },
+    {
+      id: '2',
+      title: '企业需求'
+    },
+    {
+      id: '3',
+      title: '校企资源'
+    },
+    {
+      id: '4',
+      title: '企业招聘'
+    },
+    {
+      id: '5',
+      title: '互动讲堂'
+    },
+    {
+      id: '6',
+      title: '校企新闻'
+    },
+    {
+      id: '7',
+      title: '有困难找专家'
+    },
+    {
+      id: '8',
+      title: '文件下载'
+    }
+  ];
+
 }

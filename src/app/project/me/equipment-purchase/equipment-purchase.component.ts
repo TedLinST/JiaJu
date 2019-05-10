@@ -9,7 +9,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { IdCounter } from 'src/modules/utils/id-counter';
 import { Observable, Observer } from 'rxjs';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
-import { UtilsMe } from '../utils/banner-menu';
+import { UtilsMe } from '../utils/utils-me';
 
 @Component({
   selector: 'app-equipment-purchase',

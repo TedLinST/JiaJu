@@ -5,7 +5,7 @@ import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataSoftwareIntegrationHandler } from 'src/data/pd/software-integration';
 import { Utils } from 'src/modules/utils/utils';
-import { UtilsPd } from '../utils/banner-menu';
+import { UtilsPd } from '../utils/utils-pd';
 
 @Component({
   selector: 'app-software-integration',

@@ -1,0 +1,20 @@
+.sec-banner-menu {
+  position: relative;
+
+  &.min-banner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .bg {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .key-vertical-menu {
+    position: absolute;
+    top: 0px;
+    left: 6%;
+  }
+
+}

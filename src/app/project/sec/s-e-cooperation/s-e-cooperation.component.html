@@ -1,0 +1,52 @@
+<div class="s-e-cooperation">
+  <!-- 横幅 -->
+  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </sec-banner-menu>
+
+  <!-- 学校项目 -->
+  <key-item-chunk [enTitle]="dataHandler.SP.enTitle"
+    [title]="dataHandler.SP.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openSchoolProject()">
+        <div class="SP-style">
+          <div class="left"
+            (click)="openSchoolProjectDetails(dataHandler.SP.data[0].id)">
+            <img [src]="dataHandler.SP.data[0].src">
+            <key-item-mask>
+              <key-item-mask-label [label]="dataHandler.SP.data[0].BiaoTi">
+              </key-item-mask-label>
+              <key-item-mask-label [label]="dataHandler.SP.data[0].JiBie">
+              </key-item-mask-label>
+              <key-item-mask-label [label]="dataHandler.SP.data[0].FaBuShiJian">
+              </key-item-mask-label>
+            </key-item-mask>
+          </div>
+          <div class="right"
+            style="padding-left: 6px;width: calc(100% - 299px)">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.SP.data"
+              let-index="index">
+              <div *ngIf="index > 0" nz-col nzSpan="8"
+                style="height: 182px;margin-bottom: 21px;">
+                <div class="item-box item-box-margin-3"
+                  (click)="openSchoolProjectDetails(item.id)">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask [isTextLeft]="true">
+                      <key-item-mask-label [label]="item.BiaoTi">
+                      </key-item-mask-label>
+                      <key-item-mask-label [label]="item.JiBie">
+                      </key-item-mask-label>
+                      <key-item-mask-label [label]="item.FaBuShiJian">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+    </div>

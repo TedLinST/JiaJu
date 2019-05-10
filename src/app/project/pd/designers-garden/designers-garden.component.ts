@@ -6,7 +6,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataDesignersGardenHandler } from 'src/data/pd/designers-garden';
 import { KeyCarouselLabelEvent } from 'src/modules/key/carousel/carousel-label.event';
 import { Utils } from 'src/modules/utils/utils';
-import { UtilsPd } from '../utils/banner-menu';
+import { UtilsPd } from '../utils/utils-pd';
 
 @Component({
   selector: 'app-designers-garden',

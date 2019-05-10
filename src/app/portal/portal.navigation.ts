@@ -195,6 +195,94 @@ export class PortalNavigation {
    * 校企合作服务
    */
   openSECooperation(event?: any) {
+    this.router.navigateByUrl('s-e-cooperation');
+  }
+
+  /**
+   * 校企合作服务 - 学校项目
+   */
+  openSchoolProject(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('school-project');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 校企合作服务 - 企业需求
+   */
+  openEnterpriseNeeds(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('enterprise-needs');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 校企合作服务 - 校企资源
+   */
+  openSeResources(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('se-resources');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 校企合作服务 - 企业招聘
+   */
+  openEnterpriseRecruitment(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('enterprise-recruitment');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 校企合作服务 - 互动讲堂
+   */
+  openInteractionForum(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('interaction-forum');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 校企合作服务 - 校企新闻
+   */
+  openSeNews(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('se-news');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 校企合作服务 - 有困难找专家
+   */
+  openSeekExpert(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('seek-expert');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 校企合作服务 - 文件下载
+   */
+  openFileDownload(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('file-download');
     this.navigateDeveloping();
   }
 

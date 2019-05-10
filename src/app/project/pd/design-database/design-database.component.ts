@@ -5,7 +5,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataDesignDatabaseHandler } from 'src/data/pd/design-database';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { Utils } from 'src/modules/utils/utils';
-import { UtilsPd } from '../utils/banner-menu';
+import { UtilsPd } from '../utils/utils-pd';
 
 @Component({
   selector: 'app-design-database',
