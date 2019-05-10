@@ -8,19 +8,19 @@ export const DataDataAnalysisHandler = {
     data: [
       {
         id: 1,
-        title: '数据分析标题1',
+        title: '大数据分析案例',
         date: '2019-04-24',
         src: '/assets/imgs/data-analysis/fenxi-1.jpg'
       },
       {
         id: 2,
-        title: '数据分析标题2',
+        title: '互联网指数',
         date: '2019-04-25',
         src: '/assets/imgs/data-analysis/fenxi-2.jpg'
       },
       {
         id: 3,
-        title: '数据分析标题3',
+        title: '定制家具增长乏力，集成整装会成为新热点？',
         date: '2019-04-25',
         src: '/assets/imgs/data-analysis/fenxi-3.jpg'
       }
