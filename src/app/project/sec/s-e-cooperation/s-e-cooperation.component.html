@@ -260,8 +260,10 @@
         <div class="lecture">
           <ng-template ngFor let-item [ngForOf]="dataHandler.IF.data1"
             let-index="index">
-            <a class="label singleTextBeyondHide">
-              NO.{{index+1}} {{item.BiaoTi}}</a>
+            <div class="label">
+              <a class="singleTextBeyondHide">
+                NO.{{index+1}} {{item.BiaoTi}}</a>
+            </div>
           </ng-template>
           <div class="clearfix"></div>
         </div>
@@ -289,7 +291,8 @@
             </key-item-mask>
           </div>
           <div class="right">
-            <div class="header singleTextBeyondHide">{{senActiveItem.BiaoTi}}</div>
+            <div class="header singleTextBeyondHide">{{senActiveItem.BiaoTi}}
+            </div>
             <div class="body">{{senActiveItem.ZhaiYao}}</div>
             <div class="footer">发布时间：{{senActiveItem.FaBuShiJian}}</div>
           </div>
@@ -347,9 +350,11 @@
               <ng-template ngFor let-subItem
                 [ngForOf]="dataHandler.FD['data' + (index-1)]"
                 let-subIndex="index">
-                <a class="label singleTextBeyondHide"
-                  (click)="onDownloadFile(subItem.id,subItem.url)">
-                  {{subItem.BiaoTi}}</a>
+                <div class="label">
+                  <a class="singleTextBeyondHide"
+                    (click)="onDownloadFile(subItem.id,subItem.url)">
+                    {{subItem.BiaoTi}}</a>
+                </div>
               </ng-template>
               <div class="clearfix"></div>
             </div>
@@ -362,9 +367,11 @@
         <div class="FD-style">
           <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data0"
             let-index="index">
-            <a class="label singleTextBeyondHide"
-              (click)="onDownloadFile(item.id,item.url)">
-              {{item.BiaoTi}}</a>
+            <div class="label">
+              <a class="singleTextBeyondHide"
+                (click)="onDownloadFile(item.id,item.url)">
+                {{item.BiaoTi}}</a>
+            </div>
           </ng-template>
           <div class="clearfix"></div>
         </div>
@@ -375,9 +382,11 @@
         <div class="FD-style">
           <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data1"
             let-index="index">
-            <a class="label singleTextBeyondHide"
-              (click)="onDownloadFile(item.id,item.url)">
-              {{item.BiaoTi}}</a>
+            <div class="label">
+              <a class="singleTextBeyondHide"
+                (click)="onDownloadFile(item.id,item.url)">
+                {{item.BiaoTi}}</a>
+            </div>
           </ng-template>
           <div class="clearfix"></div>
         </div>
@@ -388,9 +397,11 @@
         <div class="FD-style">
           <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data2"
             let-index="index">
-            <a class="label singleTextBeyondHide"
-              (click)="onDownloadFile(item.id,item.url)">
-              {{item.BiaoTi}}</a>
+            <div class="label">
+              <a class="singleTextBeyondHide"
+                (click)="onDownloadFile(item.id,item.url)">
+                {{item.BiaoTi}}</a>
+            </div>
           </ng-template>
           <div class="clearfix"></div>
         </div>
@@ -401,9 +412,11 @@
         <div class="FD-style">
           <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data3"
             let-index="index">
-            <a class="label singleTextBeyondHide"
-              (click)="onDownloadFile(item.id,item.url)">
-              {{item.BiaoTi}}</a>
+            <div class="label">
+              <a class="singleTextBeyondHide"
+                (click)="onDownloadFile(item.id,item.url)">
+                {{item.BiaoTi}}</a>
+            </div>
           </ng-template>
           <div class="clearfix"></div>
         </div>
@@ -414,9 +427,11 @@
         <div class="FD-style">
           <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data4"
             let-index="index">
-            <a class="label singleTextBeyondHide"
-              (click)="onDownloadFile(item.id,item.url)">
-              {{item.BiaoTi}}</a>
+            <div class="label">
+              <a class="singleTextBeyondHide"
+                (click)="onDownloadFile(item.id,item.url)">
+                {{item.BiaoTi}}</a>
+            </div>
           </ng-template>
           <div class="clearfix"></div>
         </div>
@@ -427,9 +442,11 @@
         <div class="FD-style">
           <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data5"
             let-index="index">
-            <a class="label singleTextBeyondHide"
+            <div class="label">
+              <a class="singleTextBeyondHide"
               (click)="onDownloadFile(item.id,item.url)">
               {{item.BiaoTi}}</a>
+            </div>
           </ng-template>
           <div class="clearfix"></div>
         </div>

@@ -130,10 +130,11 @@
       padding: 4px 15px;
       float: left;
 
-      &:hover {
-        color: #38a636;
+      a {
+        &:hover {
+          color: #38a636;
+        }
       }
-
     }
   }
 
@@ -220,8 +221,10 @@
       float: left;
       text-decoration: underline;
 
-      &:hover {
-        color: #38a636;
+      a {
+        &:hover {
+          color: #38a636;
+        }
       }
 
     }
