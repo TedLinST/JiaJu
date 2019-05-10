@@ -50,3 +50,391 @@
         </div>
       </key-item-chunk-body>
     </div>
+  </key-item-chunk>
+
+  <!-- 企业需求 -->
+  <key-item-chunk [enTitle]="dataHandler.EN.enTitle"
+    [title]="dataHandler.EN.title">
+    <div body>
+      <key-item-chunk-body [showItemNumber]="5" [isMore]="true"
+        (clickMore)="portalNav.openEnterpriseNeeds()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.EN.data"
+            let-index="index">
+            <div nz-col nzSpan="4">
+              <div class="item-box item-box-margin-3"
+                style="height: 395px;margin-bottom: 6px;"
+                (click)="openEnterpriseNeedsDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label [label]="item.BiaoTi">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.FaBuShiJian">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 校企资源 -->
+  <key-item-chunk [enTitle]="dataHandler.SER.enTitle"
+    [title]="dataHandler.SER.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openSeResources()">
+        <div class="SER-style">
+          <div class="left">
+            <key-dot-title title="学校资源"></key-dot-title>
+            <div nz-row>
+              <ng-template ngFor let-item [ngForOf]="dataHandler.SER.data0"
+                let-index="index">
+                <div nz-col nzSpan="12">
+                  <div class="item-box item-box-margin-3"
+                    (click)="openSeResourcesDetails(item.id)">
+                    <div class="body">
+                      <div class="title">{{item.BiaoTi}}</div>
+                      <div class="label label-color singleTextBeyondHide">
+                        {{item.XingZhi}}</div>
+                      <div class="label singleTextBeyondHide">地区：{{item.DiQu}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="right">
+            <key-dot-title title="企业资源"></key-dot-title>
+            <div nz-row>
+              <ng-template ngFor let-item [ngForOf]="dataHandler.SER.data1"
+                let-index="index">
+                <div nz-col nzSpan="12">
+                  <div class="item-box item-box-margin-3"
+                    (click)="openSeResourcesDetails(item.id)">
+                    <div class="body">
+                      <div class="title">{{item.BiaoTi}}</div>
+                      <div class="label label-color singleTextBeyondHide">
+                        {{item.JingYingFanWei}}</div>
+                      <div class="label singleTextBeyondHide">地区：{{item.DiQu}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 校企招聘 -->
+  <key-item-chunk [enTitle]="dataHandler.ER.enTitle"
+    [title]="dataHandler.ER.title" [menuData]="dataHandler.ER.menuData"
+    (switchIndexChange)="currentIndexER = $event">
+    <div body>
+      <!-- 研究生应聘 -->
+      <key-item-chunk-body *ngIf="currentIndexER == 0" [isMore]="true"
+        (clickMore)="portalNav.openEnterpriseRecruitment()">
+        <div class="ER-style">
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.ER.data0"
+              let-index="index">
+              <div nz-col nzSpan="8">
+                <div class="item-box item-box-margin-3"
+                  (click)="openEnterpriseRecruitmentDetails(item.id)">
+                  <div class="body">
+                    <div class="title">{{item.BiaoTi}}</div>
+                    <div class="label singleTextBeyondHide">
+                      {{item.GongSi}}</div>
+                    <div class="label label-color singleTextBeyondHide">
+                      类型：{{item.LeiXing}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 本专科生应聘 -->
+      <key-item-chunk-body *ngIf="currentIndexER == 1" [isMore]="true"
+        (clickMore)="portalNav.openEnterpriseRecruitment()">
+        <div class="ER-style">
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.ER.data1"
+              let-index="index">
+              <div nz-col nzSpan="8">
+                <div class="item-box item-box-margin-3"
+                  (click)="openEnterpriseRecruitmentDetails(item.id)">
+                  <div class="body">
+                    <div class="title">{{item.BiaoTi}}</div>
+                    <div class="label singleTextBeyondHide">
+                      {{item.GongSi}}</div>
+                    <div class="label label-color singleTextBeyondHide">
+                      类型：{{item.LeiXing}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 专家应聘 -->
+      <key-item-chunk-body *ngIf="currentIndexER == 2" [isMore]="true"
+        (clickMore)="portalNav.openEnterpriseRecruitment()">
+        <div class="ER-style">
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.ER.data2"
+              let-index="index">
+              <div nz-col nzSpan="8">
+                <div class="item-box item-box-margin-3"
+                  (click)="openEnterpriseRecruitmentDetails(item.id)">
+                  <div class="body">
+                    <div class="title">{{item.BiaoTi}}</div>
+                    <div class="label singleTextBeyondHide">
+                      {{item.GongSi}}</div>
+                    <div class="label label-color singleTextBeyondHide">
+                      类型：{{item.LeiXing}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </key-item-chunk-body>
+
+      <key-item-chunk-body>
+        <div class="notice">
+          <key-dot-title title="招聘会预告"></key-dot-title>
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.ER.data3"
+              let-index="index">
+              <div nz-col nzSpan="8">
+                <div class="item-box item-box-margin-3"
+                  (click)="openEnterpriseRecruitmentNoticeDetails(item.id)">
+                  <div class="body">
+                    <div class="title">{{item.BiaoTi}}</div>
+                    <div class="label singleTextBeyondHide">
+                      发布时间：{{item.FaBuShiJian}}</div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 互动讲堂 -->
+  <key-item-chunk [enTitle]="dataHandler.IF.enTitle"
+    [title]="dataHandler.IF.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openInteractionForum()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.IF.data0"
+            let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-margin-3">
+                <div class="header">
+                  <video [src]="item.src" controls="controls"
+                    style="width: 100%;">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+        <div class="lecture">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.IF.data1"
+            let-index="index">
+            <a class="label singleTextBeyondHide">
+              NO.{{index+1}} {{item.BiaoTi}}</a>
+          </ng-template>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 校企新闻 -->
+  <key-item-chunk [enTitle]="dataHandler.SEN.enTitle"
+    [title]="dataHandler.SEN.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true" (clickMore)="portalNav.openSeNews()">
+        <div class="SEN-style">
+          <div class="left">
+            <img class="max-img" [src]="senActiveItem.src">
+            <key-item-mask>
+              <div class="min-img-box">
+                <ng-template ngFor let-item [ngForOf]="dataHandler.SEN.data"
+                  let-index="index">
+                  <img *ngIf="index < 5" class="min-img"
+                    [class.active]="item.id == senActiveItem.id"
+                    [src]="item.src" (click)="onSenActiveItem(item)">
+                </ng-template>
+              </div>
+            </key-item-mask>
+          </div>
+          <div class="right">
+            <div class="header singleTextBeyondHide">{{senActiveItem.BiaoTi}}</div>
+            <div class="body">{{senActiveItem.ZhaiYao}}</div>
+            <div class="footer">发布时间：{{senActiveItem.FaBuShiJian}}</div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 有困难找专家 -->
+  <key-item-chunk [enTitle]="dataHandler.SE.enTitle"
+    [title]="dataHandler.SE.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openSeekExpert()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.SE.data0"
+            let-index="index">
+            <div nz-col nzSpan="6">
+              <div class="item-box item-box-margin-8"
+                style="height: 299px;margin-bottom: 16px;">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+        <div style="padding: 0px 5px;">
+          <key-carousel [data]="dataHandler.SE.data1" nzSpan="4"
+            [labelArray]="labelArray"
+            (clickItem)="openSeekExpertDetails($event)"></key-carousel>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 文件下载 -->
+  <key-item-chunk [enTitle]="dataHandler.FD.enTitle"
+    [title]="dataHandler.FD.title" [menuData]="dataHandler.FD.menuData"
+    (switchIndexChange)="currentIndexFD = $event">
+    <div body>
+      <!-- 全部 -->
+      <key-item-chunk-body *ngIf="currentIndexFD == 0" [isMore]="true"
+        (clickMore)="portalNav.openFileDownload()">
+        <div class="FD-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FD.menuData"
+            let-index="index">
+            <div *ngIf="index > 0">
+              <div class="dot-title">
+                <key-dot-title [title]="item.title"
+                  [styles]="{'fontSize.px':'15'}">
+                </key-dot-title>
+              </div>
+              <ng-template ngFor let-subItem
+                [ngForOf]="dataHandler.FD['data' + (index-1)]"
+                let-subIndex="index">
+                <a class="label singleTextBeyondHide"
+                  (click)="onDownloadFile(subItem.id,subItem.url)">
+                  {{subItem.BiaoTi}}</a>
+              </ng-template>
+              <div class="clearfix"></div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 协议书 -->
+      <key-item-chunk-body *ngIf="currentIndexFD == 1" [isMore]="true"
+        (clickMore)="portalNav.openFileDownload()">
+        <div class="FD-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data0"
+            let-index="index">
+            <a class="label singleTextBeyondHide"
+              (click)="onDownloadFile(item.id,item.url)">
+              {{item.BiaoTi}}</a>
+          </ng-template>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 方案书 -->
+      <key-item-chunk-body *ngIf="currentIndexFD == 2" [isMore]="true"
+        (clickMore)="portalNav.openFileDownload()">
+        <div class="FD-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data1"
+            let-index="index">
+            <a class="label singleTextBeyondHide"
+              (click)="onDownloadFile(item.id,item.url)">
+              {{item.BiaoTi}}</a>
+          </ng-template>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 邀请函 -->
+      <key-item-chunk-body *ngIf="currentIndexFD == 3" [isMore]="true"
+        (clickMore)="portalNav.openFileDownload()">
+        <div class="FD-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data2"
+            let-index="index">
+            <a class="label singleTextBeyondHide"
+              (click)="onDownloadFile(item.id,item.url)">
+              {{item.BiaoTi}}</a>
+          </ng-template>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 发言稿 -->
+      <key-item-chunk-body *ngIf="currentIndexFD == 4" [isMore]="true"
+        (clickMore)="portalNav.openFileDownload()">
+        <div class="FD-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data3"
+            let-index="index">
+            <a class="label singleTextBeyondHide"
+              (click)="onDownloadFile(item.id,item.url)">
+              {{item.BiaoTi}}</a>
+          </ng-template>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 订单培养 -->
+      <key-item-chunk-body *ngIf="currentIndexFD == 5" [isMore]="true"
+        (clickMore)="portalNav.openFileDownload()">
+        <div class="FD-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data4"
+            let-index="index">
+            <a class="label singleTextBeyondHide"
+              (click)="onDownloadFile(item.id,item.url)">
+              {{item.BiaoTi}}</a>
+          </ng-template>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+      <!-- 商业计划书 -->
+      <key-item-chunk-body *ngIf="currentIndexFD == 6" [isMore]="true"
+        (clickMore)="portalNav.openFileDownload()">
+        <div class="FD-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FD.data5"
+            let-index="index">
+            <a class="label singleTextBeyondHide"
+              (click)="onDownloadFile(item.id,item.url)">
+              {{item.BiaoTi}}</a>
+          </ng-template>
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

@@ -17,7 +17,7 @@
   <key-item-chunk [enTitle]="dataHandler.ER.enTitle"
     [title]="dataHandler.ER.title" [menuData]="dataHandler.ER.menuData"
     [currentIndex]="currentIndexER"
-    (switchIndexChange)="carouselER.goTo($event);">
+    (switchIndexChange)="carouselER.goTo($event); currentIndexER = $event">
     <div body>
       <key-item-chunk-body [isMaxItem]="true">
         <nz-carousel #carouselER [nzDots]="false">
@@ -495,17 +495,20 @@
       <key-item-chunk-body>
 
         <div class="FE0-style">
-          <div class="left" (click)="openQuickAccess(dataHandler.FE.data0[0].id)">
+          <div class="left"
+            (click)="openQuickAccess(dataHandler.FE.data0[0].id)">
             <img [src]="dataHandler.FE.data0[0].src">
             <key-item-mask>
-              <key-item-mask-label [label]="dataHandler.FE.data0[0].title"></key-item-mask-label>
+              <key-item-mask-label [label]="dataHandler.FE.data0[0].title">
+              </key-item-mask-label>
             </key-item-mask>
           </div>
           <div class="right"
             style="padding-left: 6px;width: calc(100% - 299px)">
             <ng-template ngFor let-item [ngForOf]="dataHandler.FE.data0"
               let-index="index">
-              <div *ngIf="index > 0" nz-col nzSpan="8" style="height: 182px;margin-bottom: 21px;">
+              <div *ngIf="index > 0" nz-col nzSpan="8"
+                style="height: 182px;margin-bottom: 21px;">
                 <div class="item-box item-box-margin-3"
                   (click)="openQuickAccess(item.id)">
                   <div class="header">
