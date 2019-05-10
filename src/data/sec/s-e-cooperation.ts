@@ -564,7 +564,41 @@ export const DataSECooperationHandler = {
     title: '校企新闻',
     enTitle: 'SCHOOL-ENTERPRISE NEWS',
     data: [
-
+      {
+        id: '1',
+        BiaoTi: '新闻标题A',
+        ZhaiYao: '摘要内容A',
+        FaBuShiJian: '2019-05-10',
+        src: '/assets/imgs/s-e-cooperation/xinwen-1.jpg',
+      },
+      {
+        id: '2',
+        BiaoTi: '新闻标题B',
+        ZhaiYao: '摘要内容B',
+        FaBuShiJian: '2019-05-10',
+        src: '/assets/imgs/s-e-cooperation/xinwen-2.jpg',
+      },
+      {
+        id: '3',
+        BiaoTi: '新闻标题C',
+        ZhaiYao: '摘要内容C',
+        FaBuShiJian: '2019-05-10',
+        src: '/assets/imgs/s-e-cooperation/xinwen-3.jpg',
+      },
+      {
+        id: '4',
+        BiaoTi: '新闻标题D',
+        ZhaiYao: '摘要内容D',
+        FaBuShiJian: '2019-05-10',
+        src: '/assets/imgs/s-e-cooperation/xinwen-4.jpg',
+      },
+      {
+        id: '5',
+        BiaoTi: '新闻标题E',
+        ZhaiYao: '摘要内容E',
+        FaBuShiJian: '2019-05-10',
+        src: '/assets/imgs/s-e-cooperation/xinwen-5.jpg',
+      }
     ]
   },
 

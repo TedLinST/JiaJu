@@ -275,7 +275,25 @@
     <div body>
       <key-item-chunk-body [isMore]="true" (clickMore)="portalNav.openSeNews()">
         <div class="SEN-style">
-
+          <div class="left">
+            <img class="max-img" [src]="senActiveItem.src">
+            <key-item-mask>
+              <div class="min-img-box">
+                <ng-template ngFor let-item [ngForOf]="dataHandler.SEN.data"
+                  let-index="index">
+                  <img *ngIf="index < 5" class="min-img"
+                    [class.active]="item.id == senActiveItem.id"
+                    [src]="item.src" (click)="onSenActiveItem(item)">
+                </ng-template>
+              </div>
+            </key-item-mask>
+          </div>
+          <div class="right">
+            <div class="header singleTextBeyondHide">{{senActiveItem.BiaoTi}}</div>
+            <div class="body">{{senActiveItem.ZhaiYao}}</div>
+            <div class="footer">发布时间：{{senActiveItem.FaBuShiJian}}</div>
+          </div>
+          <div class="clearfix"></div>
         </div>
       </key-item-chunk-body>
     </div>

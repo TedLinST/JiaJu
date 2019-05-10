@@ -35,6 +35,8 @@ export class SECooperationComponent implements OnInit {
     { key: 'ZhiCheng' }
   ];
 
+  senActiveItem: any;
+
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
   }
@@ -43,6 +45,8 @@ export class SECooperationComponent implements OnInit {
     this.CH_SEC_BANNER_SRC = ConstantHandler.CH_SEC_BANNER_SRC;
     this.CH_SEC_BANNER_MENU = ConstantHandler.CH_SEC_BANNER_MENU;
     this.dataHandler = DataSECooperationHandler;
+    // 校企新闻
+    this.senActiveItem = this.dataHandler.SEN.data[0];
   }
 
   /**
@@ -103,6 +107,14 @@ export class SECooperationComponent implements OnInit {
    */
   navigateDeveloping() {
     this.router.navigateByUrl('developing');
+  }
+
+  /**
+   * 激活校企新闻
+   * @param item 
+   */
+  onSenActiveItem(item: any) {
+    this.senActiveItem = item;
   }
 
   /**

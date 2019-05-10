@@ -140,6 +140,69 @@
   .SEN-style {
     border-top: 5px solid #ffc5c5;
     background-color: #f5f5f5;
+
+    .left,
+    .right {
+      float: left;
+      height: 349px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .left {
+      width: 525px;
+
+      .max-img {
+        width: 100%;
+      }
+
+      .min-img-box {
+        padding: 0px 5px;
+
+        .min-img {
+          width: 89px;
+          height: 59px;
+          margin-right: 12px;
+          border: 1px solid #fff;
+
+          &:last-child {
+            margin-right: 0px;
+          }
+
+          &.active,
+          &:hover {
+            border-color: #38a636;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 675px;
+      padding: 0px 14px;
+      font-size: 16px;
+
+      .header {
+        border-bottom: 1px dashed #cecece;
+        padding: 6px 0px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        color: #444;
+      }
+
+      .body {
+        padding: 6px 0px;
+        height: 271px;
+        overflow: hidden;
+      }
+
+      .footer {
+        padding: 6px 0px;
+        border-top: 1px dashed #cecece;
+        text-align: right;
+      }
+    }
   }
 
   .FD-style {
