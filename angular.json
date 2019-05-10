@@ -36,7 +36,8 @@
               "src/assets/css",
               "src/assets/fonts",
               "src/assets/imgs",
-              "src/assets/videos"
+              "src/assets/videos",
+              "src/assets/file"
             ],
             "styles": [
               "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
