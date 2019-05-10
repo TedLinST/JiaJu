@@ -9,77 +9,77 @@ export const DataMaterialEquipmentHandler = {
       {
         id: 1,
         title: '材料1',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 2,
         title: '材料2',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 3,
         title: '材料3',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 4,
         title: '材料4',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 5,
         title: '材料5',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       },
       {
         id: 6,
         title: '材料6',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 7,
         title: '材料7',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 8,
         title: '材料8',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 9,
         title: '材料9',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 10,
         title: '材料10',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       },
       {
         id: 11,
         title: '材料11',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 12,
         title: '材料12',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 13,
         title: '材料13',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 14,
         title: '材料14',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 15,
         title: '材料15',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       }
     ]
   },
@@ -92,77 +92,77 @@ export const DataMaterialEquipmentHandler = {
       {
         id: 1,
         title: '材料1',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 2,
         title: '材料2',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 3,
         title: '材料3',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 4,
         title: '材料4',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 5,
         title: '材料5',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       },
       {
         id: 6,
         title: '材料6',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 7,
         title: '材料7',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 8,
         title: '材料8',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 9,
         title: '材料9',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 10,
         title: '材料10',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       },
       {
         id: 11,
         title: '材料11',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 12,
         title: '材料12',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 13,
         title: '材料13',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 14,
         title: '材料14',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 15,
         title: '材料15',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       }
     ]
   },
@@ -178,32 +178,32 @@ export const DataMaterialEquipmentHandler = {
           {
             id: 1,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 2,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 3,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 4,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 5,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 6,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           }
         ]
       },
@@ -213,32 +213,32 @@ export const DataMaterialEquipmentHandler = {
           {
             id: 1,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 2,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 3,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 4,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 5,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 6,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           }
         ]
       }
@@ -253,77 +253,77 @@ export const DataMaterialEquipmentHandler = {
       {
         id: 1,
         title: '材料1',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 2,
         title: '材料2',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 3,
         title: '材料3',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 4,
         title: '材料4',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 5,
         title: '材料5',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       },
       {
         id: 6,
         title: '材料6',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 7,
         title: '材料7',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 8,
         title: '材料8',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 9,
         title: '材料9',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 10,
         title: '材料10',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       },
       {
         id: 11,
         title: '材料11',
-        src: '/assets/imgs/raw-material/gongyingshang-1.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
       },
       {
         id: 12,
         title: '材料12',
-        src: '/assets/imgs/raw-material/gongyingshang-2.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
       },
       {
         id: 13,
         title: '材料13',
-        src: '/assets/imgs/raw-material/gongyingshang-3.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
       },
       {
         id: 14,
         title: '材料14',
-        src: '/assets/imgs/raw-material/gongyingshang-4.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
       },
       {
         id: 15,
         title: '材料15',
-        src: '/assets/imgs/raw-material/gongyingshang-5.jpg'
+        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
       }
     ]
   },
@@ -339,32 +339,32 @@ export const DataMaterialEquipmentHandler = {
           {
             id: 1,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 2,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 3,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 4,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 5,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           },
           {
             id: 6,
             title: '材料',
-            src: '/assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/cailiao.jpg'
           }
         ]
       }
@@ -382,32 +382,32 @@ export const DataMaterialEquipmentHandler = {
           {
             id: 1,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 2,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 3,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 4,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 5,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 6,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           }
         ]
       },
@@ -417,32 +417,32 @@ export const DataMaterialEquipmentHandler = {
           {
             id: 1,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 2,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 3,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 4,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 5,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 6,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           }
         ]
       }
@@ -460,32 +460,32 @@ export const DataMaterialEquipmentHandler = {
           {
             id: 1,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 2,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 3,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 4,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 5,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 6,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           }
         ]
       },
@@ -495,32 +495,32 @@ export const DataMaterialEquipmentHandler = {
           {
             id: 1,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 2,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 3,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 4,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 5,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           },
           {
             id: 6,
             title: '机械设备',
-            src: '/assets/imgs/raw-material/jixie.jpg'
+            src: 'assets/imgs/raw-material/jixie.jpg'
           }
         ]
       }
@@ -544,7 +544,7 @@ export const DataMaterialEquipmentHandler = {
         explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
         location: '所在地',
         price: '50000',
-        src: '/assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/chanpin.jpg'
       },
       {
         id: 2,
@@ -558,7 +558,7 @@ export const DataMaterialEquipmentHandler = {
         explain: '说明说明说明说明说明说明说明说明说明说说明',
         location: '所在地所在地',
         price: '50000',
-        src: '/assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/chanpin.jpg'
       },
       {
         id: 3,
@@ -572,7 +572,7 @@ export const DataMaterialEquipmentHandler = {
         explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
         location: '所在地所在地所在地所在地所在地所在地所在地所在地',
         price: '50000',
-        src: '/assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/chanpin.jpg'
       },
       {
         id: 4,
@@ -586,7 +586,7 @@ export const DataMaterialEquipmentHandler = {
         explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
         location: '所在地所在地所在地所在地所在地所在地所在地所在地',
         price: '50000',
-        src: '/assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/chanpin.jpg'
       },
       {
         id: 5,
@@ -600,7 +600,7 @@ export const DataMaterialEquipmentHandler = {
         explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
         location: '所在地所在地所在地所在地所在地所在地所在地所在地',
         price: '50000',
-        src: '/assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/chanpin.jpg'
       }
     ]
   }

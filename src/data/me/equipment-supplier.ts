@@ -80,7 +80,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -90,7 +90,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -100,7 +100,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -110,7 +110,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -120,7 +120,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -130,7 +130,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '揭阳',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -140,7 +140,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '8',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -150,7 +150,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '7',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '揭阳',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -160,7 +160,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '12',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -170,7 +170,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '4',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -180,7 +180,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '43',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -190,7 +190,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '45',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -200,7 +200,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '23',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -210,7 +210,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '13',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -220,7 +220,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -230,7 +230,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -240,7 +240,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -250,7 +250,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -260,7 +260,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     },
     {
       id: 1,
@@ -270,7 +270,7 @@ export const DataEquipmentSupplierHandler = {
       qty: '123',
       explain: '企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍企业介绍',
       location: '中国 - 汕头',
-      src: '/assets/imgs/equipment-supplier/qiye.jpg'
+      src: 'assets/imgs/equipment-supplier/qiye.jpg'
     }
   ]
 };

@@ -3,7 +3,7 @@ import { KeyVerticalMenuEvent } from '../key/vertical-menu/vertical-menu.event';
 export class ConstantHandler {
 
   // 产品设计开发服务 - 横幅图片
-  public static CH_PD_BANNER_SRC = '/assets/imgs/product-design/toubu-1.jpg';
+  public static CH_PD_BANNER_SRC = 'assets/imgs/product-design/toubu-1.jpg';
 
   // 产品设计开发服务 - 横幅菜单
   public static CH_PD_BANNER_MENU = [
@@ -26,13 +26,13 @@ export class ConstantHandler {
   ];
 
   // 原辅材料机械设备服务 - 小材料横幅图片
-  public static CH_ME_MIN_MATERIAL_BANNER_SRC = '/assets/imgs/raw-material/top.jpg';
+  public static CH_ME_MIN_MATERIAL_BANNER_SRC = 'assets/imgs/raw-material/top.jpg';
 
   // 原辅材料机械设备服务 - 材料横幅图片
-  public static CH_ME_MATERIAL_BANNER_SRC = '/assets/imgs/material-supplier/top.jpg';
+  public static CH_ME_MATERIAL_BANNER_SRC = 'assets/imgs/material-supplier/top.jpg';
 
   // 原辅材料机械设备服务 - 设备横幅图片
-  public static CH_ME_EQUIPMENT_BANNER_SRC = '/assets/imgs/equipment-mart/banner.jpg';
+  public static CH_ME_EQUIPMENT_BANNER_SRC = 'assets/imgs/equipment-mart/banner.jpg';
 
   // 产品设计开发服务 - 横幅菜单
   public static CH_ME_BANNER_MENU: KeyVerticalMenuEvent[] = [
@@ -81,7 +81,7 @@ export class ConstantHandler {
   ];
 
   // 校企合作服务 - 横幅图片
-  public static CH_SEC_BANNER_SRC = '/assets/imgs/s-e-cooperation/banner.jpg';
+  public static CH_SEC_BANNER_SRC = 'assets/imgs/s-e-cooperation/banner.jpg';
 
   // 校企合作服务 - 横幅菜单
   public static CH_SEC_BANNER_MENU = [

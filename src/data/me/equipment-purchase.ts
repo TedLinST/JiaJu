@@ -83,7 +83,7 @@ export const DataEquipmentPurchaseHandler = {
       explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: 'assets/imgs/equipment-purchase/chanpin.jpg'
     },
     {
       id: 1,
@@ -95,7 +95,7 @@ export const DataEquipmentPurchaseHandler = {
       explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: 'assets/imgs/equipment-purchase/chanpin.jpg'
     },
     {
       id: 1,
@@ -107,7 +107,7 @@ export const DataEquipmentPurchaseHandler = {
       explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: 'assets/imgs/equipment-purchase/chanpin.jpg'
     },
     {
       id: 1,
@@ -119,7 +119,7 @@ export const DataEquipmentPurchaseHandler = {
       explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: 'assets/imgs/equipment-purchase/chanpin.jpg'
     },
     {
       id: 1,
@@ -131,7 +131,7 @@ export const DataEquipmentPurchaseHandler = {
       explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: 'assets/imgs/equipment-purchase/chanpin.jpg'
     },
     {
       id: 1,
@@ -143,7 +143,7 @@ export const DataEquipmentPurchaseHandler = {
       explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: 'assets/imgs/equipment-purchase/chanpin.jpg'
     },
     {
       id: 1,
@@ -155,7 +155,7 @@ export const DataEquipmentPurchaseHandler = {
       explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: 'assets/imgs/equipment-purchase/chanpin.jpg'
     },
     {
       id: 1,
@@ -167,7 +167,7 @@ export const DataEquipmentPurchaseHandler = {
       explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
       location: '所在地',
       price: '50000',
-      src: '/assets/imgs/equipment-purchase/chanpin.jpg'
+      src: 'assets/imgs/equipment-purchase/chanpin.jpg'
     }
   ]
 };

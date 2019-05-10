@@ -10,49 +10,49 @@ export const DataSECooperationHandler = {
         BiaoTi: '项目标题',
         JiBie: '项目的级别',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/shouye-2.jpg'
+        src: 'assets/imgs/s-e-cooperation/shouye-2.jpg'
       },
       {
         id: 2,
         BiaoTi: '项目标题',
         JiBie: '项目的级别',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/shouye-3.jpg'
+        src: 'assets/imgs/s-e-cooperation/shouye-3.jpg'
       },
       {
         id: 3,
         BiaoTi: '项目标题',
         JiBie: '项目的级别',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/shouye-4.jpg'
+        src: 'assets/imgs/s-e-cooperation/shouye-4.jpg'
       },
       {
         id: 4,
         BiaoTi: '项目标题',
         JiBie: '项目的级别',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/shouye-5.jpg'
+        src: 'assets/imgs/s-e-cooperation/shouye-5.jpg'
       },
       {
         id: 5,
         BiaoTi: '项目标题',
         JiBie: '项目的级别',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/shouye-6.jpg'
+        src: 'assets/imgs/s-e-cooperation/shouye-6.jpg'
       },
       {
         id: 6,
         BiaoTi: '项目标题',
         JiBie: '项目的级别',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/shouye-7.jpg'
+        src: 'assets/imgs/s-e-cooperation/shouye-7.jpg'
       },
       {
         id: 7,
         BiaoTi: '项目标题',
         JiBie: '项目的级别',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/shouye-8.jpg'
+        src: 'assets/imgs/s-e-cooperation/shouye-8.jpg'
       }
     ]
   },
@@ -66,61 +66,61 @@ export const DataSECooperationHandler = {
         id: '1',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-1.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-1.jpg'
       },
       {
         id: '2',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-2.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-2.jpg'
       },
       {
         id: '3',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-3.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-3.jpg'
       },
       {
         id: '4',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-4.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-4.jpg'
       },
       {
         id: '5',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-5.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-5.jpg'
       },
       {
         id: '6',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-1.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-1.jpg'
       },
       {
         id: '7',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-2.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-2.jpg'
       },
       {
         id: '8',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-3.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-3.jpg'
       },
       {
         id: '9',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-4.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-4.jpg'
       },
       {
         id: '10',
         BiaoTi: '需求标题',
         FaBuShiJian: '项目发布时间',
-        src: '/assets/imgs/s-e-cooperation/xuqiu-5.jpg'
+        src: 'assets/imgs/s-e-cooperation/xuqiu-5.jpg'
       }
     ]
   },
@@ -517,17 +517,17 @@ export const DataSECooperationHandler = {
       {
         id: 1,
         BiaoTi: '互动讲堂标题1',
-        src: '/assets/videos/home/movie0.mp4'
+        src: 'assets/videos/home/movie0.mp4'
       },
       {
         id: 2,
         BiaoTi: '互动讲堂标题2',
-        src: '/assets/videos/home/movie1.mp4'
+        src: 'assets/videos/home/movie1.mp4'
       },
       {
         id: 3,
         BiaoTi: '互动讲堂标题3',
-        src: '/assets/videos/home/movie2.mp4'
+        src: 'assets/videos/home/movie2.mp4'
       }
     ],
     // 讲座安排
@@ -569,35 +569,35 @@ export const DataSECooperationHandler = {
         BiaoTi: '新闻标题A',
         ZhaiYao: '摘要内容A',
         FaBuShiJian: '2019-05-10',
-        src: '/assets/imgs/s-e-cooperation/xinwen-1.jpg',
+        src: 'assets/imgs/s-e-cooperation/xinwen-1.jpg',
       },
       {
         id: '2',
         BiaoTi: '新闻标题B',
         ZhaiYao: '摘要内容B',
         FaBuShiJian: '2019-05-10',
-        src: '/assets/imgs/s-e-cooperation/xinwen-2.jpg',
+        src: 'assets/imgs/s-e-cooperation/xinwen-2.jpg',
       },
       {
         id: '3',
         BiaoTi: '新闻标题C',
         ZhaiYao: '摘要内容C',
         FaBuShiJian: '2019-05-10',
-        src: '/assets/imgs/s-e-cooperation/xinwen-3.jpg',
+        src: 'assets/imgs/s-e-cooperation/xinwen-3.jpg',
       },
       {
         id: '4',
         BiaoTi: '新闻标题D',
         ZhaiYao: '摘要内容D',
         FaBuShiJian: '2019-05-10',
-        src: '/assets/imgs/s-e-cooperation/xinwen-4.jpg',
+        src: 'assets/imgs/s-e-cooperation/xinwen-4.jpg',
       },
       {
         id: '5',
         BiaoTi: '新闻标题E',
         ZhaiYao: '摘要内容E',
         FaBuShiJian: '2019-05-10',
-        src: '/assets/imgs/s-e-cooperation/xinwen-5.jpg',
+        src: 'assets/imgs/s-e-cooperation/xinwen-5.jpg',
       }
     ]
   },
@@ -610,42 +610,42 @@ export const DataSECooperationHandler = {
       {
         id: '1',
         BiaoTi: '专业门类',
-        src: '/assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
+        src: 'assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
       },
       {
         id: '2',
         BiaoTi: '专业门类',
-        src: '/assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
+        src: 'assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
       },
       {
         id: '3',
         BiaoTi: '专业门类',
-        src: '/assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
+        src: 'assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
       },
       {
         id: '41',
         BiaoTi: '专业门类',
-        src: '/assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
+        src: 'assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
       },
       {
         id: '5',
         BiaoTi: '专业门类',
-        src: '/assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
+        src: 'assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
       },
       {
         id: '6',
         BiaoTi: '专业门类',
-        src: '/assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
+        src: 'assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
       },
       {
         id: '7',
         BiaoTi: '专业门类',
-        src: '/assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
+        src: 'assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
       },
       {
         id: '8',
         BiaoTi: '专业门类',
-        src: '/assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
+        src: 'assets/imgs/s-e-cooperation/zhuanyemenlei.jpg'
       },
     ],
     data1: [
@@ -657,42 +657,42 @@ export const DataSECooperationHandler = {
             MingCheng: '专家名称',
             ZhuanYe: '主要专业领域',
             ZhiCheng: '家具设计师',
-            src: '/assets/imgs/s-e-cooperation/zhuanjia.jpg'
+            src: 'assets/imgs/s-e-cooperation/zhuanjia.jpg'
           },
           {
             id: '2',
             MingCheng: '专家名称',
             ZhuanYe: '主要专业领域',
             ZhiCheng: '家具设计师',
-            src: '/assets/imgs/s-e-cooperation/zhuanjia.jpg'
+            src: 'assets/imgs/s-e-cooperation/zhuanjia.jpg'
           },
           {
             id: '3',
             MingCheng: '专家名称',
             ZhuanYe: '主要专业领域',
             ZhiCheng: '家具设计师',
-            src: '/assets/imgs/s-e-cooperation/zhuanjia.jpg'
+            src: 'assets/imgs/s-e-cooperation/zhuanjia.jpg'
           },
           {
             id: '4',
             MingCheng: '专家名称',
             ZhuanYe: '主要专业领域',
             ZhiCheng: '家具设计师',
-            src: '/assets/imgs/s-e-cooperation/zhuanjia.jpg'
+            src: 'assets/imgs/s-e-cooperation/zhuanjia.jpg'
           },
           {
             id: '5',
             MingCheng: '专家名称',
             ZhuanYe: '主要专业领域',
             ZhiCheng: '家具设计师',
-            src: '/assets/imgs/s-e-cooperation/zhuanjia.jpg'
+            src: 'assets/imgs/s-e-cooperation/zhuanjia.jpg'
           },
           {
             id: '6',
             MingCheng: '专家名称',
             ZhuanYe: '主要专业领域',
             ZhiCheng: '家具设计师',
-            src: '/assets/imgs/s-e-cooperation/zhuanjia.jpg'
+            src: 'assets/imgs/s-e-cooperation/zhuanjia.jpg'
           }
         ]
       }
@@ -717,46 +717,46 @@ export const DataSECooperationHandler = {
       {
         id: '1',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }, {
         id: '2',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '3',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '4',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '5',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '6',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '7',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '8',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '9',
         BiaoTi: 'XXXX协议书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }
     ],
     // 方案书
@@ -764,46 +764,46 @@ export const DataSECooperationHandler = {
       {
         id: '1',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }, {
         id: '2',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '3',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '4',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '5',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '6',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '7',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '8',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '9',
         BiaoTi: 'XXXX方案书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }
     ],
     // 邀请函
@@ -811,46 +811,46 @@ export const DataSECooperationHandler = {
       {
         id: '1',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }, {
         id: '2',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '3',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '4',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '5',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '6',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '7',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '8',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '9',
         BiaoTi: 'XXXX邀请函',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }
     ],
     // 发言稿
@@ -858,46 +858,46 @@ export const DataSECooperationHandler = {
       {
         id: '1',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }, {
         id: '2',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '3',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '4',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '5',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '6',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '7',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '8',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '9',
         BiaoTi: 'XXXX发言稿',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }
     ],
     // 订单培养
@@ -905,46 +905,46 @@ export const DataSECooperationHandler = {
       {
         id: '1',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }, {
         id: '2',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '3',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '4',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '5',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '6',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '7',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '8',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '9',
         BiaoTi: 'XXXX订单培养',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }
     ],
     // 商业计划书
@@ -952,46 +952,46 @@ export const DataSECooperationHandler = {
       {
         id: '1',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }, {
         id: '2',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '3',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '4',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '5',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '6',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '7',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '8',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       },
       {
         id: '9',
         BiaoTi: 'XXXX商业计划书',
-        url: '/assets/file/菜单.xlsx',
+        url: 'assets/file/菜单.xlsx',
       }
     ]
 

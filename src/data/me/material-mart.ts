@@ -96,7 +96,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -108,7 +108,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -120,7 +120,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -132,7 +132,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -144,7 +144,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -156,7 +156,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -168,7 +168,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -180,7 +180,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -192,7 +192,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -204,7 +204,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -216,7 +216,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -228,7 +228,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -240,7 +240,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -252,7 +252,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -264,7 +264,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -276,7 +276,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -288,7 +288,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -300,7 +300,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -312,7 +312,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -324,7 +324,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -336,7 +336,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -348,7 +348,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -360,7 +360,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     },
     {
       id: 1,
@@ -372,7 +372,7 @@ export const DataMaterialMartHandler = {
       width: '100',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/material-mart/shangcheng.jpg'
+      src: 'assets/imgs/material-mart/shangcheng.jpg'
     }
   ]
 };

@@ -96,7 +96,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -107,7 +107,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -118,7 +118,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -129,7 +129,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -140,7 +140,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -151,7 +151,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -162,7 +162,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -173,7 +173,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -184,7 +184,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -195,7 +195,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -206,7 +206,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
     {
       id: 1,
@@ -217,7 +217,7 @@ export const DataFurnitureRawShoppingHandler = {
       location: '揭阳',
       price: '￥5230',
       qty: '300',
-      src: '/assets/imgs/furniture-raw-shopping/fuliao.jpg'
+      src: 'assets/imgs/furniture-raw-shopping/fuliao.jpg'
     },
   ]
 };

@@ -111,7 +111,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-1.jpg'
+      src: 'assets/imgs/design-database/xiangxi-1.jpg'
     },
     {
       id: 2,
@@ -121,7 +121,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-2.jpg'
+      src: 'assets/imgs/design-database/xiangxi-2.jpg'
     },
     {
       id: 3,
@@ -131,7 +131,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-3.jpg'
+      src: 'assets/imgs/design-database/xiangxi-3.jpg'
     },
     {
       id: 4,
@@ -141,7 +141,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-4.jpg'
+      src: 'assets/imgs/design-database/xiangxi-4.jpg'
     },
     {
       id: 5,
@@ -151,7 +151,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-5.jpg'
+      src: 'assets/imgs/design-database/xiangxi-5.jpg'
     },
     {
       id: 6,
@@ -161,7 +161,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-6.jpg'
+      src: 'assets/imgs/design-database/xiangxi-6.jpg'
     },
     {
       id: 7,
@@ -171,7 +171,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-7.jpg'
+      src: 'assets/imgs/design-database/xiangxi-7.jpg'
     },
     {
       id: 8,
@@ -181,7 +181,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-8.jpg'
+      src: 'assets/imgs/design-database/xiangxi-8.jpg'
     },
     {
       id: 9,
@@ -191,7 +191,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-9.jpg'
+      src: 'assets/imgs/design-database/xiangxi-9.jpg'
     },
     {
       id: 10,
@@ -201,7 +201,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-10.jpg'
+      src: 'assets/imgs/design-database/xiangxi-10.jpg'
     },
     {
       id: 11,
@@ -211,7 +211,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-11.jpg'
+      src: 'assets/imgs/design-database/xiangxi-11.jpg'
     },
     {
       id: 12,
@@ -221,7 +221,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-12.jpg'
+      src: 'assets/imgs/design-database/xiangxi-12.jpg'
     },
     {
       id: 13,
@@ -231,7 +231,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-1.jpg'
+      src: 'assets/imgs/design-database/xiangxi-1.jpg'
     },
     {
       id: 14,
@@ -241,7 +241,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-2.jpg'
+      src: 'assets/imgs/design-database/xiangxi-2.jpg'
     },
     {
       id: 15,
@@ -251,7 +251,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-3.jpg'
+      src: 'assets/imgs/design-database/xiangxi-3.jpg'
     },
     {
       id: 16,
@@ -261,7 +261,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-1.jpg'
+      src: 'assets/imgs/design-database/xiangxi-1.jpg'
     },
     {
       id: 17,
@@ -271,7 +271,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-2.jpg'
+      src: 'assets/imgs/design-database/xiangxi-2.jpg'
     },
     {
       id: 18,
@@ -281,7 +281,7 @@ export const DataDesignDatabaseHandler = {
       material: '材料',
       place: '民用家具',
       brandType: '国内',
-      src: '/assets/imgs/design-database/xiangxi-3.jpg'
+      src: 'assets/imgs/design-database/xiangxi-3.jpg'
     }
   ]
 };

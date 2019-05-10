@@ -78,7 +78,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -86,7 +86,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -94,7 +94,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -102,7 +102,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -110,7 +110,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -118,7 +118,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -126,7 +126,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -134,7 +134,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -142,7 +142,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -150,7 +150,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -158,7 +158,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -166,7 +166,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -174,7 +174,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -182,7 +182,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -190,7 +190,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -198,7 +198,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -206,7 +206,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -214,7 +214,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -222,7 +222,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -230,7 +230,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -238,7 +238,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '股份制',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -246,7 +246,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '国企',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -254,7 +254,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '民营',
       location: '揭阳',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
     {
       id: 1,
@@ -262,7 +262,7 @@ export const DataMaterialSupplierHandler = {
       business: '砂纸,日本富士星砂纸砂带,砂轮片,八角砂,圆盘砂,砂纸带,砂布带等',
       attribute: '上市',
       location: '汕头',
-      src: '/assets/imgs/material-supplier/gongyingshang.jpg'
+      src: 'assets/imgs/material-supplier/gongyingshang.jpg'
     },
   ]
 };

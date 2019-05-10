@@ -154,7 +154,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'VR智能室内设计平台',//简介
       date: '2019-05-06',
       number: 420,
-      src: '/assets/imgs/software-integration/ruanjian-1.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-1.jpg'
     },
     {
       id: 2,
@@ -162,7 +162,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'国内领先的家装云设计软件服务商',//简介
       date: '2019-05-06',
       number: 2500,
-      src: '/assets/imgs/software-integration/ruanjian-2.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-2.jpg'
     },
     {
       id: 3,
@@ -170,7 +170,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'准确根据客户需求进行展示和呈现的软件',//简介
       date: '2019-05-06',
       number: 100,
-      src: '/assets/imgs/software-integration/ruanjian-3.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-3.jpg'
     },
     {
       id: 4,
@@ -178,7 +178,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'高效便捷的家居设计与家具设计软件',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-4.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-4.jpg'
     },
     {
       id: 5,
@@ -186,7 +186,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'整体家居解决方案服务商',
       date: '2019-05-06',
       number: 420,
-      src: '/assets/imgs/software-integration/ruanjian-5.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-5.jpg'
     },
     {
       id: 6,
@@ -194,7 +194,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'定制家具信息化解决方案提供商',
       date: '2019-05-06',
       number: 2500,
-      src: '/assets/imgs/software-integration/ruanjian-6.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-6.jpg'
     },
     {
       id: 7,
@@ -202,7 +202,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'家居行业前后端软件技术服务提供商',
       date: '2019-05-06',
       number: 100,
-      src: '/assets/imgs/software-integration/ruanjian-7.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-7.jpg'
     },
     {
       id: 8,
@@ -210,7 +210,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'快速处理设计产品并提供完整数据流的软件',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-8.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-8.jpg'
     },
     {
       id: 9,
@@ -218,7 +218,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'交互式CAD/CAM系统',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-9.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-9.jpg'
     },
     {
       id: 10,
@@ -226,7 +226,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'为木工行业打造的数字化加工生产软件',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-10.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-10.jpg'
     },
     {
       id: 11,
@@ -234,7 +234,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'强大的专业3D造型软件',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-11.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-11.jpg'
     },
     {
       id: 12,
@@ -242,7 +242,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'专业的机械设计软件视窗产品',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-12.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-12.jpg'
     },
     {
       id: 13,
@@ -250,7 +250,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'三维动画渲染和制作软件',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-13.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-13.jpg'
     },
     {
       id: 14,
@@ -258,7 +258,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'自动计算机辅助设计软件',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-14.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-14.jpg'
     },
     {
       id: 15,
@@ -266,7 +266,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'位图图像处理软件',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-15.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-15.jpg'
     },
     {
       id: 16,
@@ -274,7 +274,7 @@ export const DataSoftwareIntegrationHandler = {
       // test:'极具竞争力的3D辅助产品设计软件',
       date: '2019-05-06',
       number: 7800,
-      src: '/assets/imgs/software-integration/ruanjian-16.jpg'
+      src: 'assets/imgs/software-integration/ruanjian-16.jpg'
     }
   ]
 };

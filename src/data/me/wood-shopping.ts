@@ -97,7 +97,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -110,7 +110,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -123,7 +123,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -136,7 +136,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -149,7 +149,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -162,7 +162,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -175,7 +175,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -188,7 +188,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-07',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -201,7 +201,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -214,7 +214,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-08',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -227,7 +227,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-09',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
     {
       id: 1,
@@ -240,7 +240,7 @@ export const DataWoodShoppingHandler = {
       price: '￥5230',
       date: '2019-05-10',
       qty: '300',
-      src: '/assets/imgs/wood-shopping/tuangou.jpg'
+      src: 'assets/imgs/wood-shopping/tuangou.jpg'
     },
   ]
 };
