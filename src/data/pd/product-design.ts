@@ -8,16 +8,16 @@ export const DataProductDesignHandler = {
     data: [
       {
         id: 1,
-        title: '大数据分析标题1',
+        title: '大数据分析案例',
         date: '2019-04-24',
-        text: '大数据，又称巨量资料，指的是所涉及的数据资料量规模巨大到无法通过人脑甚至主流软件工具，在合理时间内达到撷娶管理、处理、并整理成为帮助...',
+        text: '大数据（Big Data）是一个企业在生产经营过程中创造的大量数据，数据量大、价值密度低、时效性强是其主要特征。通过信息化手段对大数据进行高效、科学的分析，并通过可视化的方式表达，能够极大的帮助企业实时掌握市场发展趋势和企业生产动态，从而实现生产经营策略的精准化、高效化和智能化。',
         src: '/assets/imgs/product-design/dashuju-1.jpg'
       },
       {
         id: 2,
-        title: '大数据分析标题2',
+        title: '互联网指数',
         date: '2019-04-25',
-        text: '大数据，又称巨量资料，指的是所涉及的数据资料量规模巨大到无法通过人脑甚至主流软件工具，在合理时间内达到撷娶管理、处理、并整理成为帮助...',
+        text: '通过对网民在互联网上的搜索、购物、浏览等行为进行汇总，科学分析网民对于家具相关内容的关注情况，从而获取当前家具行业发展的总体趋势、消费特征、热点内容等信息。通过分析互联网指数，我们可以快速、精准获取人们对家具的需求，得到相对客观的消费趋势结论。',
         src: '/assets/imgs/product-design/dashuju-2.jpg'
       }
     ]
@@ -30,10 +30,8 @@ export const DataProductDesignHandler = {
     data: [
       {
         id: 1,
-        title: '这个一个标题',
-        content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'
-          + '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'
-          + '内容内容内容内容内容内容内容内容内容内容内容内容内容',
+        title: '定制家具增长乏力，集成整装会成为新热点？',
+        content: '3月春暖花开，家具行业迎来3•15、展会、营销峰会、新品发布会等促销节点。 对于定制家具业来说，唯有忙碌的脚步方能应对2019的不确定性，还要适应全屋定制业务增速大幅下降的新常态，以及以多种形式突围企业经营成长的困境。',
         src: '/assets/imgs/product-design/hangyezhiku.jpg'
       }
     ]
@@ -225,37 +223,37 @@ export const DataProductDesignHandler = {
         {
           id: 1,
           title: '设计师论坛',
-          number: 1,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 2,
           title: '设计师论坛',
-          number: 2,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 3,
           title: '设计师论坛',
-          number: 3,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 4,
           title: '设计师论坛',
-          number: 4,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 5,
           title: '设计师论坛',
-          number: 5,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 6,
           title: '设计师论坛',
-          number: 6,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         }
       ]
@@ -266,37 +264,37 @@ export const DataProductDesignHandler = {
         {
           id: 1,
           title: '设计师论坛',
-          number: 1,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 2,
           title: '设计师论坛',
-          number: 2,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 3,
           title: '设计师论坛',
-          number: 3,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 4,
           title: '设计师论坛',
-          number: 4,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 5,
           title: '设计师论坛',
-          number: 5,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         },
         {
           id: 6,
           title: '设计师论坛',
-          number: 6,
+          number: '2019-5-18',
           src: '/assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi.jpg'
         }
       ]
@@ -310,27 +308,27 @@ export const DataProductDesignHandler = {
     data: [
       {
         id: 1,
-        title: '类型1',
+        title: '家具参数',
         src: '/assets/imgs/product-design/ziliaoku-1.jpg'
       },
       {
         id: 2,
-        title: '类型3',
+        title: '家具风格',
         src: '/assets/imgs/product-design/ziliaoku-2.jpg'
       },
       {
         id: 3,
-        title: '类型3',
+        title: '家具材料',
         src: '/assets/imgs/product-design/ziliaoku-3.jpg'
       },
       {
         id: 4,
-        title: '类型4',
+        title: '家具品牌',
         src: '/assets/imgs/product-design/ziliaoku-4.jpg'
       },
       {
         id: 5,
-        title: '类型5',
+        title: '使用场所',
         src: '/assets/imgs/product-design/ziliaoku-5.jpg'
       }
     ]

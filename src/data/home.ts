@@ -483,22 +483,22 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '政府服务1',
+            title: '《家具中有害物质检测》等278项国家标准公布',
             src: '/assets/imgs/home/zongHeFuWu/zhengfu-1.jpg'
           },
           {
             id: 2,
-            title: '政府服务2',
+            title: '《建筑卫生陶瓷行业准入标准》',
             src: '/assets/imgs/home/zongHeFuWu/zhengfu-2.jpg'
           },
           {
             id: 3,
-            title: '政府服务3',
+            title: '关于调整部分产品出口退税率的通知',
             src: '/assets/imgs/home/zongHeFuWu/zhengfu-3.jpg'
           },
           {
             id: 4,
-            title: '政府服务4',
+            title: '中国木制工艺品出口美国植物检验检疫要求',
             src: '/assets/imgs/home/zongHeFuWu/zhengfu-4.jpg'
           }
         ]
@@ -508,23 +508,23 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '政府服务1',
-            src: '/assets/imgs/home/zongHeFuWu/zhengfu-1.jpg'
-          },
-          {
-            id: 2,
-            title: '政府服务2',
-            src: '/assets/imgs/home/zongHeFuWu/zhengfu-2.jpg'
-          },
-          {
-            id: 3,
-            title: '政府服务3',
+            title: '关于促进家具行业环境保护工作的指导意见',
             src: '/assets/imgs/home/zongHeFuWu/zhengfu-3.jpg'
           },
           {
-            id: 4,
-            title: '政府服务4',
+            id: 2,
+            title: '上海市实木地板产品质量监督抽查结果',
+            src: '/assets/imgs/home/zongHeFuWu/zhengfu-1.jpg'
+          },
+          {
+            id: 3,
+            title: '中国家具行业知识产权保护办法',
             src: '/assets/imgs/home/zongHeFuWu/zhengfu-4.jpg'
+          },
+          {
+            id: 4,
+            title: '发布国家环境保护标准《环境标志产品技术要求 家具》的公告',
+            src: '/assets/imgs/home/zongHeFuWu/zhengfu-2.jpg'
           }
         ]
       }
@@ -533,37 +533,37 @@ export const DataHomeHandler = {
     data2: [
       {
         id: 1,
-        title: '金融服务1',
+        title: '关于加快推进工业节能与绿色发展的通知',
         subTitle: 'zhanhuifuwu1',
         src: '/assets/imgs/home/zongHeFuWu/jinrong-1.jpg'
       },
       {
         id: 2,
-        title: '金融服务2',
+        title: '粤港澳大湾区发展规划纲要',
         subTitle: 'zhanhuifuwu2',
         src: '/assets/imgs/home/zongHeFuWu/jinrong-2.jpg'
       },
       {
         id: 3,
-        title: '金融服务3',
+        title: '关于加强金融服务民营企业的若干意见',
         subTitle: 'zhanhuifuwu3',
         src: '/assets/imgs/home/zongHeFuWu/jinrong-3.jpg'
       },
       {
         id: 4,
-        title: '金融服务4',
+        title: '中国银行支持民营企业二十条',
         subTitle: 'zhanhuifuwu4',
         src: '/assets/imgs/home/zongHeFuWu/jinrong-4.jpg'
       },
       {
         id: 5,
-        title: '金融服务5',
+        title: '关于培育发展现代化都市圈的指导意见',
         subTitle: 'zhanhuifuwu5',
         src: '/assets/imgs/home/zongHeFuWu/jinrong-5.jpg'
       },
       {
         id: 6,
-        title: '金融服务1',
+        title: '推进商品交易市场发展平台经济的指导意见',
         subTitle: 'zhanhuifuwu1',
         src: '/assets/imgs/home/zongHeFuWu/jinrong-5.jpg'
       },
@@ -613,49 +613,49 @@ export const DataHomeHandler = {
     data0: [
       {
         id: 1,
-        type: '原木',
-        title: '木材团购1',
-        address: '加蓬共和国',
-        specs: '100 * 20 * 128',
-        code: '12345678',
-        people: 'admin',
-        price: '7/kg',
+        type: '板材',
+        title: '陕西云杉优质木材板材烘干木材55毫米',
+        address: '陕西宝鸡',
+        specs: '55毫米等厚不等宽',
+        code: '12345671',
+        people: '国财',
+        price: '1500元/m³',
         status: '在售',
         src: '/assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/mucai-1.jpg'
       },
       {
         id: 2,
-        type: '原木',
-        title: '木材团购2',
-        address: '加蓬共和国',
-        specs: '100 * 20 * 128',
-        code: '12345678',
-        people: 'admin',
-        price: '7/kg',
+        type: '木皮',
+        title: '杨木木皮漂白各种厚度和杨木原色科技木面皮各种厚度',
+        address: '山东临沂',
+        specs: '4×8尺',
+        code: '12345672',
+        people: '裕民',
+        price: '20元/m³',
         status: '在售',
         src: '/assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/mucai-2.jpg'
       },
       {
         id: 3,
-        type: '原木',
-        title: '木材团购3',
-        address: '加蓬共和国',
-        specs: '100 * 20 * 128',
-        code: '12345678',
-        people: 'admin',
-        price: '7/kg',
+        type: '皮革',
+        title: '麻布纹皮革面料软包硬包背景墙装饰布料沙发家具座椅PU皮料人造革',
+        address: '浙江金华',
+        specs: '宽幅1380mm，厚度0.6mm',
+        code: '12345673',
+        people: '浙材',
+        price: '22.8元/m',
         status: '在售',
         src: '/assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/mucai-3.jpg'
       },
       {
         id: 4,
-        type: '原木',
-        title: '木材团购4',
-        address: '加蓬共和国',
-        specs: '100 * 20 * 128',
-        code: '12345678',
-        people: 'admin',
-        price: '7/kg',
+        type: '五金及配件',
+        title: '汇泰龙304不锈钢阻尼液压缓冲铰链橱柜衣柜门配件飞机合页一只价',
+        address: '广东佛山',
+        specs: '直弯/全盖/全遮',
+        code: '12345674',
+        people: '广贸',
+        price: '16.8元/个',
         status: '在售',
         src: '/assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/mucai-4.jpg'
       }
@@ -664,22 +664,22 @@ export const DataHomeHandler = {
     data1: [
       {
         id: 1,
-        title: '机械设备1',
+        title: 'AP-MP200全自动线条喷漆机',
         address: '中国',
-        explain: '我是一条说明我是一条说明我是一条说明我是一条说明',
-        price: '2000 RMB',
+        explain: '木材加工台式涂装设备，全自动线条喷漆机',
+        price: '180000 RMB',
         date: '2019-04-26',
-        tel: '12345678910',
+        tel: '13845678910',
         src: '/assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/shebei-1.jpg'
       },
       {
         id: 2,
-        title: '机械设备2',
+        title: 'AP-SBJ-1T2N3S铣砂一体直线砂边机',
         address: '中国',
-        explain: '我是一条说明我是一条说明我是一条说明我是一条说明我是一条说明',
-        price: '3000 RMB',
+        explain: '木材加工台式砂光设备，铣砂一体直线砂边机',
+        price: '230000 RMB',
         date: '2019-04-26',
-        tel: '12345678910',
+        tel: '13845678910',
         src: '/assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/shebei-2.jpg'
       }
     ]
