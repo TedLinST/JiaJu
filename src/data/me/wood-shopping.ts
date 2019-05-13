@@ -92,7 +92,7 @@ export const DataWoodShoppingHandler = {
       subTitle: '圆柱花旗松防腐原木立柱 ',
       area: '美国',//北美洲-美国
       type: '原木',
-      specs: '150*3000mm',//厚度*宽度*长度：150*150*3000mm 
+      specs: '150*3000mm',//150*150*3000mm 
       width: '150mm',
       price: '￥150/根',//150元/根
       date: '2019-10-15',
@@ -105,8 +105,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '美国红松木方料',
       area: '美国',
       type: '方材',
-      specs: '450*2000mm',//450*250*2000mm
-      width: '250mm',
+      specs: '250*2000mm',//450*250*2000mm
+      width: '450mm',
       price: '￥1800/立方米',
       date: '2019-11-16',
       qty: '100',//总数量:200;已报名数量：100
@@ -118,8 +118,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '橡木拼板板材',
       area: '美国',
       type: '板材',
-      specs: '1220*18mm',//1220*2440*18mm
-      width: '2440mm',
+      specs: '2440*18mm',//1220*2440*18mm
+      width: '1220mm',
       price: '￥3000/立方米',
       date: '2020-01-05',
       qty: '50',//总数量:250;已报名数量：50
@@ -131,8 +131,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '杨木科技木皮',
       area: '中国浙江',
       type: '薄木',
-      specs: '1220*5mm',//1220*2440*5mm
-      width: '2440',
+      specs: '2440*5mm',//1220*2440*5mm
+      width: '1220mm',
       price: '￥150/立方米',
       date: '2020-03-04',
       qty: '50',//总数量:300;已报名数量：50
@@ -144,8 +144,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '杨木板材',
       area: '山东临沂',
       type: '原木',
-      specs: '1220*12mm',//1220*2440*12mm
-      width: '2440mm',
+      specs: '2440*12mm',//1220*2440*12mm
+      width: '1220mm',
       price: '￥2000/立方米',
       date: '2020-06-15',
       qty: '60',//总数量:70;已报名数量：60
@@ -157,8 +157,8 @@ export const DataWoodShoppingHandler = {
       subTitle: 'E0级环保板材12mm实木多层板',
       area: '中国上海',
       type: '普通胶合板',
-      specs: '1220*12mm',//1220*2440*12mm
-      width: '2440mm',
+      specs: '2440*12mm',//1220*2440*12mm
+      width: '1220mm',
       price: '￥130/张',
       date: '2019-09-06',
       qty: '30',//总数量:80;已报名数量：30
@@ -170,8 +170,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '二次成型多层板杨木芯胶合板',
       area: '山东临沂',
       type: '成型胶合板',
-      specs: '1220*12mm',//1220*2440*12mm
-      width: '2440mm',
+      specs: '2440*12mm',//1220*2440*12mm
+      width: '1220mm',
       price: '￥60/张',
       date: '2020-06-15',
       qty: '50',//总数量:100;已报名数量：50
@@ -183,8 +183,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '18mm松木细木工板E0级大芯板',
       area: '中国上海',
       type: '细木工板',
-      specs: '1220*18mm',//1220*2440*18mm
-      width: '2440mm',
+      specs: '2440*18mm',//1220*2440*18mm
+      width: '1220mm',
       price: '￥150/张',
       date: '2020-03-06',
       qty: '30',//总数量:200;已报名数量：30
@@ -196,8 +196,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '新西兰松直拼板E0级实木集成板',
       area: '新西兰',//大洋洲新西兰
       type: '集成材',
-      specs: '1220*12mm',//1220*2440*12mm
-      width: '2440mm',
+      specs: '2440*12mm',//1220*2440*12mm
+      width: '1220mm',
       price: '￥200/张',
       date: '2020-03-09',
       qty: '40',//总数量:70;已报名数量：40
@@ -222,8 +222,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '免漆颗粒生态刨花板',
       area: '山东临沂',
       type: '普通刨花板',
-      specs: '1220*12mm',//1220*2440*12mm
-      width: '2440mm',
+      specs: '2440*12mm',//1220*2440*12mm
+      width: '1220mm',
       price: '￥80/张',
       date: '2020-05-15',
       qty: '50',//总数量:80;已报名数量：50
@@ -248,8 +248,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '实木多层进口无醛级OSB板',
       area: '山东临沂',
       type: '定向刨花板',
-      specs: '1220*12mm',//1220*2440*12mm
-      width: '2440mm',
+      specs: '2440*12mm',//1220*2440*12mm
+      width: '1220mm',
       price: '￥110/张',
       date: '2020-02-02',
       qty: '20',//总数量:70;已报名数量：20
@@ -274,8 +274,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '12毫米定制中密度纤维板',
       area: '江苏苏州',
       type: '中密度纤维板',
-      specs: '1220*12mm',//1220*2440*12mm
-      width: '2440mm',
+      specs: '2440*12mm',//1220*2440*12mm
+      width: '1220mm',
       price: '￥60/张',
       date: '2020-06-16',
       qty: '20',//总数量:100;已报名数量：20
@@ -287,8 +287,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '12毫米定制高密度纤维板',
       area: '江苏苏州',
       type: '高密度纤维板',
-      specs: '1220*12mm',//1220*2440*12mm
-      width: '2440mm',
+      specs: '2440*12mm',//1220*2440*12mm
+      width: '1220mm',
       price: '￥70/张',
       date: '2020-03-14',
       qty: '10',//总数量:20;已报名数量：10
@@ -300,8 +300,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '防火防水纤维水泥板',
       area: '浙江杭州',
       type: '特殊用途纤维板',
-      specs: '1220*8mm',//1220*2440*8mm
-      width: '2440mm',
+      specs: '2440*8mm',//1220*2440*8mm
+      width: '1220mm',
       price: '￥60/张',
       date: '2020-05-02',
       qty: '50',//总数量:70;已报名数量：50
@@ -326,8 +326,8 @@ export const DataWoodShoppingHandler = {
       subTitle: '三聚氰胺浸渍纸人造板',
       area: '浙江嘉兴',
       type: '浸渍纸贴面人造板',
-      specs: '1220*3mm',//1220*2440*3mm
-      width: '2440mm',
+      specs: '2440*3mm',//1220*2440*3mm
+      width: '1220mm',
       price: '￥50/张',
       date: '2020-08-03',
       qty: '20',//总数量:80;已报名数量：20
