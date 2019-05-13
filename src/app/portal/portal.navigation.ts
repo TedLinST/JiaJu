@@ -236,8 +236,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('enterprise-recruitment');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('enterprise-recruitment');
   }
 
   /**
