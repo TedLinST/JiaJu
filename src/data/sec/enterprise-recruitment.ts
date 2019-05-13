@@ -13,37 +13,37 @@ export const DataEnterpriseRecruitmentHandler = {
     data0: [
       {
         id: '1',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'X企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '2',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '3',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XXX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '4',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XXXX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '5',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XXXXX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '6',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XXXXXX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       }
@@ -51,37 +51,37 @@ export const DataEnterpriseRecruitmentHandler = {
     data1: [
       {
         id: '1',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称X',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '2',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '3',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XXX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '4',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XXXX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '5',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XXXXX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '6',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XXXXXX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       }
@@ -99,7 +99,7 @@ export const DataEnterpriseRecruitmentHandler = {
     data0: [
       {
         id: '1',
-        ZhiWei: '产品经理',
+        ZhiWei: '产品经理X',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -110,7 +110,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '2',
-        ZhiWei: '产品经理',
+        ZhiWei: '产品经理XX',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -121,7 +121,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '3',
-        ZhiWei: '产品经理',
+        ZhiWei: '产品经理XXX',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -132,7 +132,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '4',
-        ZhiWei: '产品经理',
+        ZhiWei: '产品经理XXXX',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -143,7 +143,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '5',
-        ZhiWei: '产品经理',
+        ZhiWei: '产品经理XXXXX',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -154,7 +154,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '6',
-        ZhiWei: '产品经理',
+        ZhiWei: '产品经理XXXXXX',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -167,7 +167,7 @@ export const DataEnterpriseRecruitmentHandler = {
     data1: [
       {
         id: '1',
-        ZhiWei: '产品经理',
+        ZhiWei: 'X产品经理',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -178,7 +178,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '2',
-        ZhiWei: '产品经理',
+        ZhiWei: 'XX产品经理',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -189,7 +189,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '3',
-        ZhiWei: '产品经理',
+        ZhiWei: 'XXX产品经理',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -200,7 +200,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '4',
-        ZhiWei: '产品经理',
+        ZhiWei: 'XXXX产品经理',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -211,7 +211,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '5',
-        ZhiWei: '产品经理',
+        ZhiWei: 'XXXXX产品经理',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -222,7 +222,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '6',
-        ZhiWei: '产品经理',
+        ZhiWei: 'XXXXXX产品经理',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
@@ -245,37 +245,37 @@ export const DataEnterpriseRecruitmentHandler = {
     data0: [
       {
         id: '1',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称X',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '2',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '3',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XXX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '4',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XXXX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '5',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XXXXX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '6',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: '企业名称XXXXXX',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       }
@@ -283,37 +283,37 @@ export const DataEnterpriseRecruitmentHandler = {
     data1: [
       {
         id: '1',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'X企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '2',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '3',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XXX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '4',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XXXX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '5',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XXXXX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       },
       {
         id: '6',
-        QiYeMingCheng: '企业名称',
+        QiYeMingCheng: 'XXXXXX企业名称',
         ZhaoPinBiaoTi: '招聘标题',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       }
@@ -327,7 +327,7 @@ export const DataEnterpriseRecruitmentHandler = {
     data: [
       {
         id: '1',
-        MingCheng: '招聘会名称',
+        MingCheng: '招聘会名称X',
         ZhaoPinShiJian: '2019-05-13',
         JuBanChengShi: '汕头市',
         JuBanDiDian: '汕头市龙湖区',
@@ -336,7 +336,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '2',
-        MingCheng: '招聘会名称',
+        MingCheng: '招聘会名称XX',
         ZhaoPinShiJian: '2019-05-13',
         JuBanChengShi: '汕头市',
         JuBanDiDian: '汕头市龙湖区',
@@ -345,7 +345,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '3',
-        MingCheng: '招聘会名称',
+        MingCheng: '招聘会名称XXX',
         ZhaoPinShiJian: '2019-05-13',
         JuBanChengShi: '汕头市',
         JuBanDiDian: '汕头市龙湖区',
@@ -354,7 +354,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '4',
-        MingCheng: '招聘会名称',
+        MingCheng: '招聘会名称XXXX',
         ZhaoPinShiJian: '2019-05-13',
         JuBanChengShi: '汕头市',
         JuBanDiDian: '汕头市龙湖区',
@@ -363,7 +363,7 @@ export const DataEnterpriseRecruitmentHandler = {
       },
       {
         id: '5',
-        MingCheng: '招聘会名称',
+        MingCheng: '招聘会名称XXXXX',
         ZhaoPinShiJian: '2019-05-13',
         JuBanChengShi: '汕头市',
         JuBanDiDian: '汕头市龙湖区',
