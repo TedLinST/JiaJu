@@ -1,0 +1,197 @@
+<div class="enterprise-recruitment">
+  <!-- 横幅 -->
+  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </sec-banner-menu>
+
+  <!-- 研究生应聘 -->
+  <key-item-chunk [enTitle]="dataHandler.GA.enTitle"
+    [title]="dataHandler.GA.title" [menuData]="dataHandler.GA.menuData"
+    (switchIndexChange)="currentIndexGA = $event">
+    <div body>
+      <!-- 按企业浏览 -->
+      <key-item-chunk-body *ngIf="currentIndexGA == 0">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.GA.data0"
+            let-index="index">
+            <div nz-col nzSpan="8" style="margin-bottom: 2px;">
+              <div class="item-box item-box-logo item-box-margin-1"
+                (click)="openGADetails(item.id)">
+                <img class="img" [src]="item.src">
+                <div class="title singleTextBeyondHide">
+                  {{item.QiYeMingCheng}}
+                </div>
+                <div class="label singleTextBeyondHide">
+                  {{item.ZhaoPinBiaoTi}}
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 按企业浏览 -->
+      <key-item-chunk-body *ngIf="currentIndexGA == 1">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.GA.data1"
+            let-index="index">
+            <div nz-col nzSpan="8" style="margin-bottom: 2px;">
+              <div class="item-box item-box-logo item-box-margin-1"
+                (click)="openGADetails(item.id)">
+                <img class="img" [src]="item.src">
+                <div class="title singleTextBeyondHide">
+                  {{item.QiYeMingCheng}}
+                </div>
+                <div class="label singleTextBeyondHide">
+                  {{item.ZhaoPinBiaoTi}}
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 本专科生应聘 -->
+  <key-item-chunk [enTitle]="dataHandler.UA.enTitle"
+    [title]="dataHandler.UA.title" [menuData]="dataHandler.UA.menuData"
+    (switchIndexChange)="currentIndexUA = $event">
+    <div body>
+      <!-- 按企业浏览 -->
+      <key-item-chunk-body *ngIf="currentIndexUA == 0">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.UA.data0"
+            let-index="index">
+            <div nz-col nzSpan="8" style="margin-bottom: 2px;">
+              <div class="item-box item-box-txt item-box-margin-1"
+                (click)="openUADetails(item.id)">
+                <div class="title singleTextBeyondHide">
+                  {{item.ZhiWei}}
+                  <span class="xin-shui">
+                    {{item.XinShui}}
+                  </span>
+                </div>
+                <div class="label">
+                  <span>{{item.DiDian}}</span>
+                  <span>{{item.JingYan}}</span>
+                  <span>{{item.XueWei}}</span>
+                </div>
+                <div class="label singleTextBeyondHide">
+                  <span>{{item.GongSiMingCheng}}</span>
+                </div>
+                <div class="label">
+                  <span>{{item.GongSiXingZhi}}</span>
+                  |
+                  <span>{{item.GongSiGuiMo}}</span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 按企业浏览 -->
+      <key-item-chunk-body *ngIf="currentIndexUA == 1">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.UA.data1"
+            let-index="index">
+            <div nz-col nzSpan="8" style="margin-bottom: 2px;">
+              <div class="item-box item-box-txt item-box-margin-1"
+                (click)="openUADetails(item.id)">
+                <div class="title singleTextBeyondHide">
+                  {{item.ZhiWei}}
+                  <span class="xin-shui">
+                    {{item.XinShui}}
+                  </span>
+                </div>
+                <div class="label">
+                  <span>{{item.DiDian}}</span>
+                  <span>{{item.JingYan}}</span>
+                  <span>{{item.XueWei}}</span>
+                </div>
+                <div class="label singleTextBeyondHide">
+                  <span>{{item.GongSiMingCheng}}</span>
+                </div>
+                <div class="label">
+                  <span>{{item.GongSiXingZhi}}</span>
+                  |
+                  <span>{{item.GongSiGuiMo}}</span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 专家应聘 -->
+  <key-item-chunk [enTitle]="dataHandler.EA.enTitle"
+    [title]="dataHandler.EA.title" [menuData]="dataHandler.EA.menuData"
+    (switchIndexChange)="currentIndexEA = $event">
+    <div body>
+      <!-- 按企业浏览 -->
+      <key-item-chunk-body *ngIf="currentIndexEA == 0">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.EA.data0"
+            let-index="index">
+            <div nz-col nzSpan="8" style="margin-bottom: 2px;">
+              <div class="item-box item-box-logo item-box-margin-1"
+                (click)="openEADetails(item.id)">
+                <img class="img" [src]="item.src">
+                <div class="title singleTextBeyondHide">
+                  {{item.QiYeMingCheng}}
+                </div>
+                <div class="label singleTextBeyondHide">
+                  {{item.ZhaoPinBiaoTi}}
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <!-- 按企业浏览 -->
+      <key-item-chunk-body *ngIf="currentIndexEA == 1">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.EA.data1"
+            let-index="index">
+            <div nz-col nzSpan="8" style="margin-bottom: 2px;">
+              <div class="item-box item-box-logo item-box-margin-1"
+                (click)="openEADetails(item.id)">
+                <img class="img" [src]="item.src">
+                <div class="title singleTextBeyondHide">
+                  {{item.QiYeMingCheng}}
+                </div>
+                <div class="label singleTextBeyondHide">
+                  {{item.ZhaoPinBiaoTi}}
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 家具行业招聘会预告 -->
+  <key-item-chunk [enTitle]="dataHandler.FIRF.enTitle"
+    [title]="dataHandler.FIRF.title">
+    <div body>
+      <key-item-chunk-body>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.FIRF.data"
+          let-index="index">
+          <div class="item-firf">
+            <img class="img" [src]="item.src">
+            <div class="body">
+              <div class="text">{{item.MingCheng}}</div>
+              <div class="label">招聘时间：{{item.ZhaoPinShiJian}}</div>
+              <div class="label">举办城市：{{item.JuBanChengShi}}</div>
+              <div class="label">举办地址：{{item.JuBanDiDian}}</div>
+              <div class="label label-min">发布时间：{{item.FaBuShiJian}}</div>
+            </div>
+          </div>
+        </ng-template>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

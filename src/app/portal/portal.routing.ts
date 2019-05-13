@@ -35,7 +35,7 @@ export const PortalRoutes = [
     { path: 'school-project', loadChildren: '../project/sec/school-project/school-project.module#SchoolProjectModule' }, // 学校项目
     { path: 'enterprise-needs', loadChildren: '../project/sec/enterprise-needs/enterprise-needs.module#EnterpriseNeedsModule' }, // 企业需求
     // { path: 'se-resources', loadChildren: '../project/sec/se-resources/se-resources.module#SeResourcesModule' }, // 校企资源
-    // { path: 'enterprise-recruitment', loadChildren: '../project/sec/enterprise-recruitment/enterprise-recruitment.module#EnterpriseRecruitmentModule' }, // 企业招聘
+    { path: 'enterprise-recruitment', loadChildren: '../project/sec/enterprise-recruitment/enterprise-recruitment.module#EnterpriseRecruitmentModule' }, // 企业招聘
     // { path: 'interaction-forum', loadChildren: '../project/sec/interaction-forum/interaction-forum.module#InteractionForumModule' }, // 互动讲堂
     // { path: 'se-news', loadChildren: '../project/sec/se-news/se-news.module#SeNewsModule' }, // 校企新闻
     // { path: 'seek-expert', loadChildren: '../project/sec/seek-expert/seek-expert.module#SeekExpertModule' }, // 有困难找专家

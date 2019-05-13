@@ -8,78 +8,78 @@ export const DataMaterialEquipmentHandler = {
     data: [
       {
         id: 1,
-        title: '材料1',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '天然木材',
+        src: 'assets/imgs/raw-material/material-1.jpg'
       },
       {
         id: 2,
-        title: '材料2',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '人造板材',
+        src: 'assets/imgs/raw-material/material-2.jpg'
       },
       {
         id: 3,
-        title: '材料3',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '金属材料',
+        src: 'assets/imgs/raw-material/material-3.jpg'
       },
       {
         id: 4,
-        title: '材料4',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '高分子材料',
+        src: 'assets/imgs/raw-material/material-4.jpg'
       },
       {
         id: 5,
-        title: '材料5',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '竹藤材料',
+        src: 'assets/imgs/raw-material/material-5.jpg'
       },
       {
         id: 6,
-        title: '材料6',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '玻璃',
+        src: 'assets/imgs/raw-material/material-6.jpg'
       },
       {
         id: 7,
-        title: '材料7',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '纺织品',
+        src: 'assets/imgs/raw-material/material-7.jpg'
       },
       {
         id: 8,
-        title: '材料8',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '皮革',
+        src: 'assets/imgs/raw-material/material-8.jpg'
       },
       {
         id: 9,
-        title: '材料9',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '石材',
+        src: 'assets/imgs/raw-material/material-9.jpg'
       },
       {
         id: 10,
-        title: '材料10',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '涂料',
+        src: 'assets/imgs/raw-material/material-10.jpg'
       },
       {
         id: 11,
-        title: '材料11',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '胶黏剂',
+        src: 'assets/imgs/raw-material/material-11.jpg'
       },
       {
         id: 12,
-        title: '材料12',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '五金及配件',
+        src: 'assets/imgs/raw-material/material-12.jpg'
       },
       {
         id: 13,
-        title: '材料13',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '电子元器件',
+        src: 'assets/imgs/raw-material/material-13.jpg'
       },
       {
         id: 14,
-        title: '材料14',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '填充材料',
+        src: 'assets/imgs/raw-material/material-14.jpg'
       },
       {
         id: 15,
-        title: '材料15',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '其他原辅材料',
+        src: 'assets/imgs/raw-material/material-15.jpg'
       }
     ]
   },
@@ -91,78 +91,78 @@ export const DataMaterialEquipmentHandler = {
     data: [
       {
         id: 1,
-        title: '材料1',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '天然木材',
+        src: 'assets/imgs/raw-material/purchase-1.jpg'
       },
       {
         id: 2,
-        title: '材料2',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '人造板材',
+        src: 'assets/imgs/raw-material/purchase-2.jpg'
       },
       {
         id: 3,
-        title: '材料3',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '金属材料',
+        src: 'assets/imgs/raw-material/purchase-3.jpg'
       },
       {
         id: 4,
-        title: '材料4',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '高分子材料',
+        src: 'assets/imgs/raw-material/purchase-4.jpg'
       },
       {
         id: 5,
-        title: '材料5',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '竹藤材料',
+        src: 'assets/imgs/raw-material/purchase-5.jpg'
       },
       {
         id: 6,
-        title: '材料6',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '玻璃',
+        src: 'assets/imgs/raw-material/purchase-6.jpg'
       },
       {
         id: 7,
-        title: '材料7',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '纺织品',
+        src: 'assets/imgs/raw-material/purchase-7.jpg'
       },
       {
         id: 8,
-        title: '材料8',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '皮革',
+        src: 'assets/imgs/raw-material/purchase-8.jpg'
       },
       {
         id: 9,
-        title: '材料9',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '石材',
+        src: 'assets/imgs/raw-material/purchase-9.jpg'
       },
       {
         id: 10,
-        title: '材料10',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '涂料',
+        src: 'assets/imgs/raw-material/purchase-10.jpg'
       },
       {
         id: 11,
-        title: '材料11',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '胶黏剂',
+        src: 'assets/imgs/raw-material/purchase-11.jpg'
       },
       {
         id: 12,
-        title: '材料12',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '五金及配件',
+        src: 'assets/imgs/raw-material/purchase-12.jpg'
       },
       {
         id: 13,
-        title: '材料13',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '电子元器件',
+        src: 'assets/imgs/raw-material/purchase-13.jpg'
       },
       {
         id: 14,
-        title: '材料14',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '填充材料',
+        src: 'assets/imgs/raw-material/purchase-14.jpg'
       },
       {
         id: 15,
-        title: '材料15',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '其他原辅材料',
+        src: 'assets/imgs/raw-material/purchase-15.jpg'
       }
     ]
   },
@@ -178,32 +178,32 @@ export const DataMaterialEquipmentHandler = {
           {
             id: 1,
             title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/qiugou-1.jpg'
           },
           {
             id: 2,
             title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/qiugou-2.jpg'
           },
           {
             id: 3,
             title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/qiugou-3.jpg'
           },
           {
             id: 4,
             title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/qiugou-4.jpg'
           },
           {
             id: 5,
             title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/qiugou-5.jpg'
           },
           {
             id: 6,
             title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            src: 'assets/imgs/raw-material/qiugou-6.jpg'
           }
         ]
       },
@@ -252,78 +252,78 @@ export const DataMaterialEquipmentHandler = {
     data: [
       {
         id: 1,
-        title: '材料1',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '天然木材',
+        src: 'assets/imgs/raw-material/supplier-1.jpg'
       },
       {
         id: 2,
-        title: '材料2',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '人造板材',
+        src: 'assets/imgs/raw-material/supplier-2.jpg'
       },
       {
         id: 3,
-        title: '材料3',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '金属材料',
+        src: 'assets/imgs/raw-material/supplier-3.jpg'
       },
       {
         id: 4,
-        title: '材料4',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '高分子材料',
+        src: 'assets/imgs/raw-material/supplier-4.jpg'
       },
       {
         id: 5,
-        title: '材料5',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '竹藤材料',
+        src: 'assets/imgs/raw-material/supplier-5.jpg'
       },
       {
         id: 6,
-        title: '材料6',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '玻璃',
+        src: 'assets/imgs/raw-material/supplier-6.jpg'
       },
       {
         id: 7,
-        title: '材料7',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '纺织品',
+        src: 'assets/imgs/raw-material/supplier-7.jpg'
       },
       {
         id: 8,
-        title: '材料8',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '皮革',
+        src: 'assets/imgs/raw-material/supplier-8.jpg'
       },
       {
         id: 9,
-        title: '材料9',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '石材',
+        src: 'assets/imgs/raw-material/supplier-9.jpg'
       },
       {
         id: 10,
-        title: '材料10',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '涂料',
+        src: 'assets/imgs/raw-material/supplier-10.jpg'
       },
       {
         id: 11,
-        title: '材料11',
-        src: 'assets/imgs/raw-material/gongyingshang-1.jpg'
+        title: '胶黏剂',
+        src: 'assets/imgs/raw-material/supplier-11.jpg'
       },
       {
         id: 12,
-        title: '材料12',
-        src: 'assets/imgs/raw-material/gongyingshang-2.jpg'
+        title: '五金及配件',
+        src: 'assets/imgs/raw-material/supplier-12.jpg'
       },
       {
         id: 13,
-        title: '材料13',
-        src: 'assets/imgs/raw-material/gongyingshang-3.jpg'
+        title: '电子元器件',
+        src: 'assets/imgs/raw-material/supplier-13.jpg'
       },
       {
         id: 14,
-        title: '材料14',
-        src: 'assets/imgs/raw-material/gongyingshang-4.jpg'
+        title: '填充材料',
+        src: 'assets/imgs/raw-material/supplier-14.jpg'
       },
       {
         id: 15,
-        title: '材料15',
-        src: 'assets/imgs/raw-material/gongyingshang-5.jpg'
+        title: '其他原辅材料',
+        src: 'assets/imgs/raw-material/supplier-15.jpg'
       }
     ]
   },
@@ -338,33 +338,33 @@ export const DataMaterialEquipmentHandler = {
         data: [
           {
             id: 1,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            title: '白蜡木',
+            src: 'assets/imgs/raw-material/auction-1.jpg'
           },
           {
             id: 2,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            title: '芬兰松',
+            src: 'assets/imgs/raw-material/auction-2.jpg'
           },
           {
             id: 3,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            title: '乌金木',
+            src: 'assets/imgs/raw-material/auction-3.jpg'
           },
           {
             id: 4,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            title: '柚木',
+            src: 'assets/imgs/raw-material/auction-4.jpg'
           },
           {
             id: 5,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            title: '橡胶木',
+            src: 'assets/imgs/raw-material/auction-5.jpg'
           },
           {
             id: 6,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
+            title: '缅甸花梨',
+            src: 'assets/imgs/raw-material/auction-6.jpg'
           }
         ]
       }
@@ -381,33 +381,33 @@ export const DataMaterialEquipmentHandler = {
         data: [
           {
             id: 1,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '双排多轴数控榫槽机',
+            src: 'assets/imgs/raw-material/machinery-1.jpg'
           },
           {
             id: 2,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '自动单轴燕尾榫机',
+            src: 'assets/imgs/raw-material/machinery-2.jpg'
           },
           {
             id: 3,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '自动木工平刨床',
+            src: 'assets/imgs/raw-material/machinery-3.jpg'
           },
           {
             id: 4,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '数控带锯机',
+            src: 'assets/imgs/raw-material/machinery-4.jpg'
           },
           {
             id: 5,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '全自动线条堆垛机',
+            src: 'assets/imgs/raw-material/machinery-5.jpg'
           },
           {
             id: 6,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '全自动线条喷漆机',
+            src: 'assets/imgs/raw-material/machinery-6.jpg'
           }
         ]
       },
@@ -416,33 +416,33 @@ export const DataMaterialEquipmentHandler = {
         data: [
           {
             id: 1,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '冷压机',
+            src: 'assets/imgs/raw-material/machinery-7.jpg'
           },
           {
             id: 2,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '四小头单轴雕刻机',
+            src: 'assets/imgs/raw-material/machinery-8.jpg'
           },
           {
             id: 3,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '双筒吸尘器',
+            src: 'assets/imgs/raw-material/machinery-9.jpg'
           },
           {
             id: 4,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '圆棒机',
+            src: 'assets/imgs/raw-material/machinery-10.jpg'
           },
           {
             id: 5,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '环保UV自动化喷涂生产线',
+            src: 'assets/imgs/raw-material/machinery-11.jpg'
           },
           {
             id: 6,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '全自动封边机',
+            src: 'assets/imgs/raw-material/machinery-12.jpg'
           }
         ]
       }
@@ -459,33 +459,33 @@ export const DataMaterialEquipmentHandler = {
         data: [
           {
             id: 1,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '东莞森钰',
+            src: 'assets/imgs/raw-material/dsz-1.jpg'
           },
           {
             id: 2,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '佛山奥派',
+            src: 'assets/imgs/raw-material/dsz-2.jpg'
           },
           {
             id: 3,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '佛山马氏',
+            src: 'assets/imgs/raw-material/dsz-3.jpg'
           },
           {
             id: 4,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '河口良得',
+            src: 'assets/imgs/raw-material/dsz-4.jpg'
           },
           {
             id: 5,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '江苏腾飞',
+            src: 'assets/imgs/raw-material/dsz-5.jpg'
           },
           {
             id: 6,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
+            title: '青岛美光',
+            src: 'assets/imgs/raw-material/dsz-6.jpg'
           }
         ]
       },
@@ -534,73 +534,73 @@ export const DataMaterialEquipmentHandler = {
     data: [
       {
         id: 1,
-        title: '自动分中卧式圆木多片锯',
-        equipmentType: '类型',
-        equipmentVolumes: '100',
+        title: '自动双端开榫机',
+        equipmentType: '铣床',
+        equipmentVolumes: '台式设备',
         enterprise: '中国制造',
-        date: '2019-04-29',
-        area: '中国',
+        date: '2019-03-28',
+        area: '广东佛山',
         qty: '123',
-        explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+        explain: '能达成双端同时开榫功能即可',
         location: '所在地',
         price: '50000',
-        src: 'assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/Machinery purchase-1.jpg'
       },
       {
         id: 2,
-        title: '自动分中卧式圆木多片锯',
-        equipmentType: '类型',
-        equipmentVolumes: '100',
+        title: '全自动裁板锯',
+        equipmentType: '锯切设备',
+        equipmentVolumes: '台式',
         enterprise: '中国制造',
-        date: '2019-04-29',
-        area: '中国',
+        date: '2019-04-02',
+        area: '浙江台州',
         qty: '123',
-        explain: '说明说明说明说明说明说明说明说明说明说说明',
+        explain: '能够裁板幅面2440mm以上',
         location: '所在地所在地',
         price: '50000',
-        src: 'assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/Machinery purchase-2.jpg'
       },
       {
         id: 3,
-        title: '自动分中卧式圆木多片锯',
-        equipmentType: '类型',
-        equipmentVolumes: '100',
+        title: '推台锯',
+        equipmentType: '锯切设备',
+        equipmentVolumes: '台式设备',
         enterprise: '中国制造',
-        date: '2019-04-29',
-        area: '中国',
+        date: '2019-05-06',
+        area: '湖南常德',
         qty: '123',
-        explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+        explain: '要求精度高，能直接加工普通刨花板幅面板材，需要现货，急需',
         location: '所在地所在地所在地所在地所在地所在地所在地所在地',
         price: '50000',
-        src: 'assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/Machinery purchase-3.jpg'
       },
       {
         id: 4,
-        title: '自动分中卧式圆木多片锯',
-        equipmentType: '类型',
-        equipmentVolumes: '100',
+        title: '自动仿形铣床',
+        equipmentType: '铣床设备',
+        equipmentVolumes: '台式设备',
         enterprise: '中国制造',
-        date: '2019-04-29',
-        area: '中国',
+        date: '2019-02-28',
+        area: '湖南常德',
         qty: '123',
-        explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+        explain: '为加快生产效率，替代3-4个工位，需要8台，电话详聊',
         location: '所在地所在地所在地所在地所在地所在地所在地所在地',
         price: '50000',
-        src: 'assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/Machinery purchase-4.jpg'
       },
       {
         id: 5,
-        title: '自动分中卧式圆木多片锯',
-        equipmentType: '类型',
-        equipmentVolumes: '100',
+        title: '铣砂一体直线砂光机',
+        equipmentType: '砂光设备',
+        equipmentVolumes: '台式设备',
         enterprise: '中国制造',
-        date: '2019-04-29',
-        area: '中国',
+        date: '2019-04-16',
+        area: '江西赣州',
         qty: '123',
-        explain: '说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明',
+        explain: '要求木线铣型和砂光能够同时完成，需要2台',
         location: '所在地所在地所在地所在地所在地所在地所在地所在地',
         price: '50000',
-        src: 'assets/imgs/raw-material/chanpin.jpg'
+        src: 'assets/imgs/raw-material/Machinery purchase-5.jpg'
       }
     ]
   }

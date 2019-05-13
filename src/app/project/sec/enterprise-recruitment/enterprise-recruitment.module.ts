@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SchoolProjectComponent } from './school-project.component';
+import { EnterpriseRecruitmentComponent } from './enterprise-recruitment.component';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { NgKeyModule } from 'src/modules/key/key.module';
@@ -11,7 +11,7 @@ import { SecBannerMenuModule } from '../resource/banner-menu.module';
     CommonModule,
     RouterModule.forChild([
       {
-        path: '', component: SchoolProjectComponent,
+        path: '', component: EnterpriseRecruitmentComponent,
       }
     ]),
     NgZorroAntdModule,
@@ -19,7 +19,7 @@ import { SecBannerMenuModule } from '../resource/banner-menu.module';
     SecBannerMenuModule
   ],
   declarations: [
-    SchoolProjectComponent
+    EnterpriseRecruitmentComponent
   ]
 })
-export class SchoolProjectModule { }
+export class EnterpriseRecruitmentModule { }
