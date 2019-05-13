@@ -33,7 +33,7 @@ export const PortalRoutes = [
     // { path: 'production', loadChildren: '../project/er/production/production.module#ProductionModule' }, // 生产管理
     { path: 's-e-cooperation', loadChildren: '../project/sec/s-e-cooperation/s-e-cooperation.module#SECooperationModule' }, // 校企合作服务
     { path: 'school-project', loadChildren: '../project/sec/school-project/school-project.module#SchoolProjectModule' }, // 学校项目
-    // { path: 'enterprise-needs', loadChildren: '../project/sec/enterprise-needs/enterprise-needs.module#EnterpriseNeedsModule' }, // 企业需求
+    { path: 'enterprise-needs', loadChildren: '../project/sec/enterprise-needs/enterprise-needs.module#EnterpriseNeedsModule' }, // 企业需求
     // { path: 'se-resources', loadChildren: '../project/sec/se-resources/se-resources.module#SeResourcesModule' }, // 校企资源
     // { path: 'enterprise-recruitment', loadChildren: '../project/sec/enterprise-recruitment/enterprise-recruitment.module#EnterpriseRecruitmentModule' }, // 企业招聘
     // { path: 'interaction-forum', loadChildren: '../project/sec/interaction-forum/interaction-forum.module#InteractionForumModule' }, // 互动讲堂
