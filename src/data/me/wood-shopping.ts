@@ -96,7 +96,7 @@ export const DataWoodShoppingHandler = {
       width: '150mm',
       price: '￥150/根',//150元/根
       date: '2019-10-15',
-      qty: '200',
+      qty: '200',//总数量:500;已报名数量：200
       src: 'assets/imgs/wood-shopping/tuangou-1.jpg'
     },
     {
@@ -109,7 +109,7 @@ export const DataWoodShoppingHandler = {
       width: '250mm',
       price: '￥1800/立方米',
       date: '2019-11-16',
-      qty: '100',
+      qty: '100',//总数量:200;已报名数量：100
       src: 'assets/imgs/wood-shopping/tuangou-2.jpg'
     },
     {
@@ -122,7 +122,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥3000/立方米',
       date: '2020-01-05',
-      qty: '50',
+      qty: '50',//总数量:250;已报名数量：50
       src: 'assets/imgs/wood-shopping/tuangou-3.jpg'
     },
     {
@@ -135,7 +135,7 @@ export const DataWoodShoppingHandler = {
       width: '2440',
       price: '￥150/立方米',
       date: '2020-03-04',
-      qty: '50',
+      qty: '50',//总数量:300;已报名数量：50
       src: 'assets/imgs/wood-shopping/tuangou-4.jpg'
     },
     {
@@ -148,7 +148,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥2000/立方米',
       date: '2020-06-15',
-      qty: '60',
+      qty: '60',//总数量:70;已报名数量：60
       src: 'assets/imgs/wood-shopping/tuangou-5.jpg'
     },
     {
@@ -161,7 +161,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥130/张',
       date: '2019-09-06',
-      qty: '30',
+      qty: '30',//总数量:80;已报名数量：30
       src: 'assets/imgs/wood-shopping/tuangou-6.jpg'
     },
     {
@@ -174,7 +174,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥60/张',
       date: '2020-06-15',
-      qty: '50',
+      qty: '50',//总数量:100;已报名数量：50
       src: 'assets/imgs/wood-shopping/tuangou-7.jpg'
     },
     {
@@ -187,7 +187,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥150/张',
       date: '2020-03-06',
-      qty: '30',
+      qty: '30',//总数量:200;已报名数量：30
       src: 'assets/imgs/wood-shopping/tuangou-8.jpg'
     },
     {
@@ -200,7 +200,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥200/张',
       date: '2020-03-09',
-      qty: '40',
+      qty: '40',//总数量:70;已报名数量：40
       src: 'assets/imgs/wood-shopping/tuangou-9.jpg'
     },
     {
@@ -213,7 +213,7 @@ export const DataWoodShoppingHandler = {
       width: '250mm',
       price: '￥1500/立方米',
       date: '2020-08-20',
-      qty: '30',
+      qty: '30',//总数量:60;已报名数量：30
       src: 'assets/imgs/wood-shopping/tuangou-10.jpg'
     },
     {
@@ -226,7 +226,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥80/张',
       date: '2020-05-15',
-      qty: '50',
+      qty: '50',//总数量:80;已报名数量：50
       src: 'assets/imgs/wood-shopping/tuangou-11.jpg'
     },
     {
@@ -239,7 +239,7 @@ export const DataWoodShoppingHandler = {
       width: '300mm',
       price: '￥800/立方米',
       date: '2020-05-16',
-      qty: '50',
+      qty: '50',//总数量:90;已报名数量：50
       src: 'assets/imgs/wood-shopping/tuangou-12.jpg'
     },
     {
@@ -252,7 +252,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥110/张',
       date: '2020-02-02',
-      qty: '20',
+      qty: '20',//总数量:70;已报名数量：20
       src: 'assets/imgs/wood-shopping/tuangou-13.jpg'
     },
     {
@@ -265,7 +265,7 @@ export const DataWoodShoppingHandler = {
       width: '300mm',
       price: '￥2000/立方米',
       date: '2020-04-03',
-      qty: '10',
+      qty: '50',//总数量:80;已报名数量：50
       src: 'assets/imgs/wood-shopping/tuangou-14.jpg'
     },
     {
@@ -278,7 +278,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥60/张',
       date: '2020-06-16',
-      qty: '20',
+      qty: '20',//总数量:100;已报名数量：20
       src: 'assets/imgs/wood-shopping/tuangou-15.jpg'
     },
     {
@@ -291,7 +291,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥70/张',
       date: '2020-03-14',
-      qty: '10',
+      qty: '10',//总数量:20;已报名数量：10
       src: 'assets/imgs/wood-shopping/tuangou-16.jpg'
     },
     {
@@ -304,7 +304,7 @@ export const DataWoodShoppingHandler = {
       width: '2440mm',
       price: '￥60/张',
       date: '2020-05-02',
-      qty: '50',
+      qty: '50',//总数量:70;已报名数量：50
       src: 'assets/imgs/wood-shopping/tuangou-17.jpg'
     },
     {
@@ -317,7 +317,7 @@ export const DataWoodShoppingHandler = {
       width: '200mm',
       price: '￥800/立方米',
       date: '2020-08-09',
-      qty: '10',
+      qty: '10',//总数量:20;已报名数量：10
       src: 'assets/imgs/wood-shopping/tuangou-18.jpg'
     },
     {
@@ -329,21 +329,21 @@ export const DataWoodShoppingHandler = {
       specs: '1220*3mm',//1220*2440*3mm
       width: '2440mm',
       price: '￥50/张',
-      date: '2020-08-13',
-      qty: '20',
+      date: '2020-08-03',
+      qty: '20',//总数量:80;已报名数量：20
       src: 'assets/imgs/wood-shopping/tuangou-19.jpg'
     },
     {
       id: 20,
       title: '竹材人造板',
       subTitle: '竹板材无甲醛楠竹人造板',
-      area: '汕头',
+      area: '福建南平',
       type: '竹材人造板',
       specs: '2000*20mm',//2000*400*20mm
       width: '400mm',
       price: '￥180/张',
       date: '2020-06-13',
-      qty: '50',
+      qty: '50',//总数量:80;已报名数量：50
       src: 'assets/imgs/wood-shopping/tuangou-20.jpg'
     },
   ]
