@@ -1,0 +1,103 @@
+<div class="school-project">
+  <!-- 横幅 -->
+  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </sec-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openSECooperation()">校企合作服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        学校项目
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <!-- 标题 -->
+    <key-item-chunk title="学校项目" marginTop="20" enTitle="SCHOOL PROJECT">
+    </key-item-chunk>
+
+    <!-- 条件选择区 -->
+    <key-dot-title title="条件选择区"></key-dot-title>
+    <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
+      let-index="index">
+      <key-menu-type [title]="item.title" [data]="item.data"
+        (clickType)="onClickType($event)"></key-menu-type>
+    </ng-template>
+
+    <!-- 过滤 -->
+    <div class="filter-row">
+      <key-button-sort label="按层次" [active]="btnSortActiveMap['CengCi']"
+        (clickChange)="onClickButtonSortChange($event,'CengCi')"></key-button-sort>
+      <key-button-sort label="按分类" [active]="btnSortActiveMap['FenLei']"
+        (clickChange)="onClickButtonSortChange($event,'FenLei')"></key-button-sort>
+      <key-button-sort label="发布时间" [active]="btnSortActiveMap['FaBuShiJian']"
+        (clickChange)="onClickButtonSortChange($event,'FaBuShiJian')"></key-button-sort>
+      <div class="search">
+        <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+          <input type="text" nz-input placeholder="请输入项目名称"
+            [(ngModel)]="searchValue" />
+        </nz-input-group>
+        <ng-template #suffixIconButton>
+          <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+            <i nz-icon type="search"></i></button>
+        </ng-template>
+      </div>
+    </div>
+    <!-- 列表数据 -->
+    <div *ngIf="listData != null && listData.length > 0">
+      <div class="list">
+        <div class="header">
+          项目列表
+        </div>
+        <div class="body">
+          <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+            <div class="row">
+              <div class="col col-1">
+                <img [src]='item.src'>
+              </div>
+              <div class="col col-2">
+                <div class="title singleTextBeyondHide">
+                  {{item.MingCheng}}
+                  <span class="time">{{item.FaBuShiJian}}</span>
+                </div>
+                <div class="label singleTextBeyondHide">{{item.FaBuXueXiao}}
+                </div>
+                <div class="label label-width singleTextBeyondHide">
+                  <span>[标签] {{item.BiaoQian}}</span>
+                  <span>[层次]：{{item.CengCi}}</span>
+                  <span>[分类]：{{item.FenLei}}</span>
+                  <span>[来源]：{{item.LaiYuan}}</span>
+                  <span style="width: 118px;">
+                    <button class="btn" nz-button nzType="primary"
+                      nzSize="small" (click)="onCollection(item.id)">收藏</button>
+                  </span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </ng-template>
+        </div>
+        <div class="footer">
+          <div class="pagination">
+            <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
+              [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
+              (nzPageIndexChange)="onPageIndexChange($event)">
+            </nz-pagination>
+            <ng-template #rangeTemplate let-range="range" let-total>
+              显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!(listData != null && listData.length > 0)">
+      <nz-empty></nz-empty>
+    </div>
+  </div>
+</div>

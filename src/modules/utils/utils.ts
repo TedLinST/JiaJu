@@ -72,6 +72,33 @@ export class Utils {
     }
 
     /**
+     * 数组根据字段进行排序
+     * @param arr 
+     * @param key 
+     * @param order 
+     */
+    public static arrayKeySort(arr: any[], key: any, order: -1 | 0 | 1 = 0) {
+        arr.sort((data1, data2) => {
+            let value1 = key ? data1[key] : "";
+            let value2 = key ? data2[key] : "";
+            let result: any = null;
+            if (typeof value1 == "string" && typeof value2 == "string") {
+                result = value1.localeCompare(value2);
+            } else if (typeof value1 == "number" && typeof value2 == "number") {
+                result = (value1 < value2) ? -1 : (value1 > value2) ? 1 : 0;
+            } else if (!!!value1 && value2 != null) {
+                result = -1;
+            } else if (value1 != null && !!!value2) {
+                result = 1;
+            } else if (!!!value1 && !!!value2) {
+                result = 0;
+            }
+            return (order * result);
+        });
+        return arr;
+    }
+
+    /**
      * 产生随机整数，包含下限值，包括上限值
      * @param lower 下限
      * @param upper 上限
