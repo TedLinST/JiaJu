@@ -13,12 +13,13 @@
       <li (click)="portalNav.openEnterpriseResource($event)">企业资源管理系统</li>
       <li (click)="portalNav.openSECooperation($event)">校企合作服务
         <ul class="sub-menu-ul">
-          <li class="arrow" (click)="portalNav.openSchoolProject($event)">学校项目
-            <ul class="three-menu-ul">
+          <!-- class="arrow" -->
+          <li (click)="portalNav.openSchoolProject($event)">学校项目
+            <!-- <ul class="three-menu-ul">
               <li>学校项目一</li>
               <li>学校项目二</li>
               <li>学校项目三</li>
-            </ul>
+            </ul> -->
           </li>
           <li (click)="portalNav.openEnterpriseNeeds($event)">企业需求</li>
           <li (click)="portalNav.openSeResources($event)">校企资源</li>

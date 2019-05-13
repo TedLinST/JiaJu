@@ -25,7 +25,12 @@ export class ButtonSortComponent implements OnInit {
     if (active > 1) {
       active = -1;
     }
-    this.active = active;
+    // 点击排序后,等于零时暂不处理
+    if (active == 0) {
+      this.active = '1';
+    } else {
+      this.active = active;
+    }
     this.clickChange.emit(this.active);
   }
 

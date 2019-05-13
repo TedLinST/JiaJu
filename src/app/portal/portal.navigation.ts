@@ -205,8 +205,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('school-project');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('school-project');
   }
 
   /**
@@ -216,8 +215,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('enterprise-needs');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('enterprise-needs');
   }
 
   /**

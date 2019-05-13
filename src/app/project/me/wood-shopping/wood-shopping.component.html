@@ -95,14 +95,14 @@
     <div *ngIf="listData != null && listData.length > 0">
       <div nz-row>
         <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
-          <div nz-col nzSpan="6" style="margin-bottom: 6px;">
+          <div nz-col nzSpan="6" style="margin-bottom: 12px; height: 546px;">
             <div class="key-item-box item-box-bg item-box-margin-8">
               <div class="header">
                 <img [src]="item.src">
               </div>
               <div class="body">
                 <div class="title">商品名：{{item.title}}</div>
-                <div class="label">产品标题：{{item.subTitle}}</div>
+                <div class="label singleTextBeyondHide">产品标题：{{item.subTitle}}</div>
                 <div class="label">产地：{{item.area}}</div>
                 <div class="label">类型：{{item.type}}</div>
                 <div class="label">
