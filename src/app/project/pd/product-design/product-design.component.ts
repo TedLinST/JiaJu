@@ -31,7 +31,7 @@ export class ProductDesignComponent implements OnInit {
       key: 'title',
     },
     {
-      label: '时间',
+      label: '年限',
       key: 'number',
     }
   ];
