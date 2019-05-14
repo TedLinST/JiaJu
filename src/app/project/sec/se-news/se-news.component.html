@@ -1,0 +1,84 @@
+<div class="se-news">
+  <!-- 横幅 -->
+  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </sec-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openSECooperation()">校企合作服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        校企新闻
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <key-item-chunk title="校企新闻" marginTop="20" enTitle="SCHOOL-ENTERPRISE NEWS">
+    <div body>
+      <key-item-chunk-body>
+        <!-- 过滤 -->
+        <div class="filter-row">
+          <div class="search">
+            <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+              <input type="text" nz-input placeholder="请输入新闻标题"
+                [(ngModel)]="searchValue" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+              <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+                <i nz-icon type="search"></i></button>
+            </ng-template>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <!-- 列表数据 -->
+        <div *ngIf="listData != null && listData.length > 0">
+          <div class="list">
+            <div class="header">
+              项目列表
+            </div>
+            <div class="body">
+              <ng-template ngFor let-item [ngForOf]="listData"
+                let-index="index">
+                <div class="row">
+                  <div class="col col-1">
+                    <img [src]='item.src'>
+                  </div>
+                  <div class="col col-2">
+                    <div class="title singleTextBeyondHide">
+                      {{item.BiaoTi}}
+                      <span class="time">{{item.FaBuShiJian}}</span>
+                    </div>
+                    <div class="label" style="height: 64px;overflow: hidden;">
+                      {{item.JianJie}}
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </ng-template>
+            </div>
+            <div class="footer">
+              <div class="pagination">
+                <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
+                  [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
+                  (nzPageIndexChange)="onPageIndexChange($event)">
+                </nz-pagination>
+                <ng-template #rangeTemplate let-range="range" let-total>
+                  显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!(listData != null && listData.length > 0)">
+          <nz-empty></nz-empty>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+</div>

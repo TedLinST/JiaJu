@@ -255,8 +255,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('se-news');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('se-news');
   }
 
   /**
