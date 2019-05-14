@@ -54,7 +54,7 @@ export const DataProductDesignHandler = {
           {
             id: 1,
             title: 'Dieter Rams',
-            number: 1,
+            number: '2019-5-18',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
