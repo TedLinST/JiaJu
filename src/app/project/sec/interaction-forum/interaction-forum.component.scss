@@ -1,0 +1,58 @@
+.interaction-forum {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  .item-oipla {
+    padding: 0px 4px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    height: 179px;
+
+    .img {
+      float: left;
+      width: 337px;
+      height: 179px;
+    }
+
+    .body {
+      margin-left: 337px;
+      padding: 12px 15px;
+      height: 100%;
+
+      .text {
+        font-size: 19px;
+        overflow: hidden;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 10px;
+      }
+
+      .label {
+        color: #555;
+        font-size: 15px;
+        margin-bottom: 4px;
+
+        &.label-min {
+          font-size: 12px;
+          color: #777;
+        }
+      }
+    }
+  }
+
+  .filter-row {
+    margin-top: 10px;
+
+    .search {
+      float: right;
+      width: 300px;
+    }
+  }
+
+  .pagination {
+    margin-top: 10px;
+    text-align: right;
+  }
+}

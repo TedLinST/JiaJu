@@ -1,0 +1,117 @@
+<div class="interaction-forum">
+  <!-- 横幅 -->
+  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </sec-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openSECooperation()">校企合作服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        互动讲堂
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 在线互动入口链接区 -->
+  <key-item-chunk [enTitle]="dataHandler.OIPLA.enTitle"
+    [title]="dataHandler.OIPLA.title">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row style="margin-bottom: 10px;">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.OIPLA.data0"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 235px;margin-bottom: 6px;">
+              <div class="item-box item-box-margin-3"
+                (click)="openOIPLADetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.OIPLA.data1"
+          let-index="index">
+          <div class="item-oipla">
+            <img class="img" [src]="item.src">
+            <div class="body">
+              <div class="text">{{item.BiaoTi}}</div>
+              <div class="label" style="height: 91px;overflow: hidden;">
+                {{item.ZhaiYao}}</div>
+              <div class="label label-min">开始时间：{{item.KaiShiShiJian}}</div>
+            </div>
+          </div>
+        </ng-template>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 往期精彩回顾 -->
+  <key-item-chunk [enTitle]="dataHandler.WR.enTitle"
+    [title]="dataHandler.WR.title">
+    <div body>
+      <key-item-chunk-body>
+        <!-- 条件选择区 -->
+        <key-dot-title title="条件选择区"></key-dot-title>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.WR.TYPE_FILTER"
+          let-index="index">
+          <key-menu-type [title]="item.title" [data]="item.data"
+            (clickType)="onClickType($event)"></key-menu-type>
+        </ng-template>
+        <!-- 过滤 -->
+        <div class="filter-row">
+          <div class="search">
+            <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+              <input type="text" nz-input placeholder="请输入名称"
+                [(ngModel)]="searchValue" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+              <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+                <i nz-icon type="search"></i></button>
+            </ng-template>
+          </div>
+          <div class="clearfix" style="margin-bottom: 10px;"></div>
+        </div>
+        <!-- 列表数据 -->
+        <div *ngIf="listData != null && listData.length > 0">
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+              <div nz-col nzSpan="6" style="height: auto;margin-bottom: 6px;">
+                <div class="item-box item-box-margin-3"
+                  (click)="openWRDetails(item.id)">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask>
+                      <key-item-mask-label [label]="item.BiaoTi">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="pagination">
+            <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
+              [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
+              (nzPageIndexChange)="onPageIndexChange($event)">
+            </nz-pagination>
+            <ng-template #rangeTemplate let-range="range" let-total>
+              显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+            </ng-template>
+          </div>
+        </div>
+        <div *ngIf="!(listData != null && listData.length > 0)">
+          <nz-empty></nz-empty>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

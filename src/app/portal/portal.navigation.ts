@@ -245,8 +245,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('interaction-forum');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('interaction-forum');
   }
 
   /**
