@@ -168,7 +168,7 @@ export const DataEnterpriseRecruitmentHandler = {
       {
         id: '1',
         ZhiWei: 'X产品经理',
-        XinShui: '10K-20K',
+        XinShui: '10K-30K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
@@ -179,7 +179,7 @@ export const DataEnterpriseRecruitmentHandler = {
       {
         id: '2',
         ZhiWei: 'XX产品经理',
-        XinShui: '10K-20K',
+        XinShui: '20K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
@@ -204,7 +204,7 @@ export const DataEnterpriseRecruitmentHandler = {
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
-        XueWei: '本科',
+        XueWei: '大专',
         GongSiMingCheng: '北京奇思奇益管理咨询有限公司',
         GongSiXingZhi: '民营',
         GongSiGuiMo: '100-200人'
@@ -212,7 +212,7 @@ export const DataEnterpriseRecruitmentHandler = {
       {
         id: '5',
         ZhiWei: 'XXXXX产品经理',
-        XinShui: '10K-20K',
+        XinShui: '15K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
@@ -223,10 +223,10 @@ export const DataEnterpriseRecruitmentHandler = {
       {
         id: '6',
         ZhiWei: 'XXXXXX产品经理',
-        XinShui: '10K-20K',
+        XinShui: '10K',
         DiDian: '汕头',
         JingYan: '3-5年',
-        XueWei: '本科',
+        XueWei: '大专',
         GongSiMingCheng: '北京奇思奇益管理咨询有限公司',
         GongSiXingZhi: '民营',
         GongSiGuiMo: '100-200人'

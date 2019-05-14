@@ -194,4 +194,138 @@
     </div>
   </key-item-chunk>
 
+  <div class="search-chunk">
+    <div class="header">
+      职位搜索
+    </div>
+    <div class="body">
+      <form nz-form [nzLayout]="'inline'" (ngSubmit)="submitForm()">
+        <div nz-row [nzGutter]="24">
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">工作地点
+              </nz-form-label>
+              <nz-form-control>
+                <nz-select nzAllowClear="true" name="GongZuoDiDian1"
+                  style="width: 210px;margin-right: 10px;"
+                  [(ngModel)]="bean.GongZuoDiDian1"
+                  (ngModelChange)="onSelectGongZuoDiDian1(bean.GongZuoDiDian1)">
+                  <ng-template ngFor let-item [ngForOf]="provinceList"
+                    let-index="index">
+                    <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                    </nz-option>
+                  </ng-template>
+                </nz-select>
+                <nz-select nzAllowClear="true" name="GongZuoDiDian2"
+                  style="width: 210px;" [(ngModel)]="bean.GongZuoDiDian2">
+                  <ng-template ngFor let-item [ngForOf]="cityData"
+                    let-index="index">
+                    <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                    </nz-option>
+                  </ng-template>
+                </nz-select>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">工作经验（年）</nz-form-label>
+              <nz-form-control>
+                <input nz-input name="GongZuoJingYan" style="width: 430px;"
+                  [(ngModel)]="bean.GongZuoJingYan" />
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+        <div nz-row [nzGutter]="24">
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">学历
+              </nz-form-label>
+              <nz-form-control>
+                <nz-select nzAllowClear="true" name="XueLi"
+                  style="width: 430px;" [(ngModel)]="bean.XueLi">
+                  <ng-template ngFor let-item [ngForOf]="educationalLevel"
+                    let-index="index">
+                    <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                    </nz-option>
+                  </ng-template>
+                </nz-select>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">企业规模（人）</nz-form-label>
+              <nz-form-control>
+                <input nz-input name="QiYeGuiMo" style="width: 430px;"
+                  [(ngModel)]="bean.QiYeGuiMo" />
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+        <div nz-row [nzGutter]="24">
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">薪资范围（K）
+              </nz-form-label>
+              <nz-form-control>
+                <nz-input-number style="width: 210px;margin-right: 10px;"
+                  name="XinZiFanWei1" [(ngModel)]="bean.XinZiFanWei1"
+                  [nzMax]="bean.XinZiFanWei2">
+                </nz-input-number>
+                <nz-input-number style="width: 210px;" name="XinZiFanWei2"
+                  [(ngModel)]="bean.XinZiFanWei2" [nzMin]="bean.XinZiFanWei1">
+                </nz-input-number>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">职业方向</nz-form-label>
+              <nz-form-control>
+                <input nz-input name="ZhiYeFangXiang" style="width: 430px;"
+                  [(ngModel)]="bean.ZhiYeFangXiang" />
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+        <div class="btn-div">
+          <button class="btn" nz-button nzType="primary">检索职位</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div *ngIf="searchData != null && searchData.length > 0">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="searchData" let-index="index">
+            <div nz-col nzSpan="8" style="margin-bottom: 2px;">
+              <div class="key-item-box item-box-txt item-box-margin-1"
+                (click)="openUADetails(item.id)">
+                <div class="title singleTextBeyondHide">
+                  {{item.ZhiWei}}
+                  <span class="xin-shui">
+                    {{item.XinShui}}
+                  </span>
+                </div>
+                <div class="label">
+                  <span>{{item.DiDian}}</span>
+                  <span>{{item.JingYan}}</span>
+                  <span>{{item.XueWei}}</span>
+                </div>
+                <div class="label singleTextBeyondHide">
+                  <span>{{item.GongSiMingCheng}}</span>
+                </div>
+                <div class="label">
+                  <span>{{item.GongSiXingZhi}}</span>
+                  |
+                  <span>{{item.GongSiGuiMo}}</span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -124,8 +124,11 @@ export class Utils {
      */
     public static dataFilter(data: any[], filters: any) {
         let keys = Object.keys(filters)
-        let result = data.filter(item => {
-            return keys.every(key => filters[key].indexOf(item[key]) !== -1)
+        let result = data.filter((item: any) => {
+            let boolean = keys.every((key: any) => {
+                return filters[key].indexOf(item[key]) !== -1;
+            });
+            return boolean;
         });
         return result;
     }

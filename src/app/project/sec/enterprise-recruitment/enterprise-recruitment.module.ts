@@ -5,10 +5,12 @@ import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { NgKeyModule } from 'src/modules/key/key.module';
 import { SecBannerMenuModule } from '../resource/banner-menu.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule.forChild([
       {
         path: '', component: EnterpriseRecruitmentComponent,

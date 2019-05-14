@@ -2,6 +2,18 @@ import { KeyVerticalMenuEvent } from '../key/vertical-menu/vertical-menu.event';
 
 export class ConstantHandler {
 
+  // 学历等级
+  public static CH_EDUCATIONAL_LEVEL = [
+    { id: '小学', text: '小学' },
+    { id: '初中', text: '初中' },
+    { id: '中专', text: '中专' },
+    { id: '高中', text: '高中' },
+    { id: '大专', text: '大专' },
+    { id: '本科', text: '本科' },
+    { id: '硕士研究生', text: '硕士研究生' },
+    { id: '博士研究生', text: '博士研究生' }
+  ];
+
   // 产品设计开发服务 - 横幅图片
   public static CH_PD_BANNER_SRC = 'assets/imgs/product-design/toubu-1.jpg';
 
