@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EnterpriseRecruitmentComponent } from './enterprise-recruitment.component';
+import { SeResourcesComponent } from './se-resources.component';
 import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { NgKeyModule } from 'src/modules/key/key.module';
 import { SecBannerMenuModule } from '../resource/banner-menu.module';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     RouterModule.forChild([
       {
-        path: '', component: EnterpriseRecruitmentComponent,
+        path: '', component: SeResourcesComponent,
       }
     ]),
     NgZorroAntdModule,
@@ -21,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     SecBannerMenuModule
   ],
   declarations: [
-    EnterpriseRecruitmentComponent
+    SeResourcesComponent
   ]
 })
-export class EnterpriseRecruitmentModule { }
+export class SeResourcesModule { }
