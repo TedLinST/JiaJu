@@ -225,8 +225,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('se-resources');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('se-resources');
   }
 
   /**

@@ -1,0 +1,123 @@
+.se-resources {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+
+    .filter-row {
+      margin-top: 10px;
+
+      .search {
+        float: right;
+        width: 300px;
+      }
+    }
+
+    .list {
+      margin-top: 10px;
+
+      .header {
+
+        color: #000000;
+        background-color: #c1e8d4;
+        font-size: 15px;
+
+        .col {
+          padding: 6px 10px;
+          text-align: left;
+          float: left;
+
+          &.col-1 {
+            width: 700px;
+          }
+
+          &.col-2 {
+            width: 320px;
+          }
+
+          &.col-3 {
+            width: 180px;
+          }
+        }
+      }
+
+      .body {
+        .row {
+          border-bottom: 1px solid #ddd;
+          padding: 5px 0px;
+
+          .col {
+            padding: 6px 8px;
+            text-align: left;
+            float: left;
+
+            &.col-1 {
+              width: 161px;
+              overflow: hidden;
+
+              img {
+                max-width: 100%;
+              }
+            }
+
+            &.col-2 {
+              width: 539px;
+
+
+              .title {
+                font-size: 18px;
+                color: #000;
+                margin-bottom: 5px;
+                margin-top: 4px;
+              }
+
+              .label {
+                color: #6f6f6f;
+                font-size: 15px;
+                margin-bottom: 3px;
+                padding-right: 15px;
+              }
+
+            }
+
+            &.col-3 {
+              width: 320px;
+              padding-top: 40px;
+
+              span {
+                display: inline-block;
+                padding: 3px 15px;
+                border-radius: 10px;
+                background-color: #3c311b;
+                color: #fff;
+              }
+            }
+
+            &.col-4 {
+              width: 180px;
+              padding-top: 40px;
+
+              button {
+                display: block;
+                min-width: 100px;
+                background-color: #f4a674;
+                border-color: #f4a674;
+              }
+            }
+          }
+
+          &:hover,
+          &.active {
+            background-color: #f5f5f5;
+          }
+        }
+      }
+
+      .footer {
+        .pagination {
+          margin-top: 15px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

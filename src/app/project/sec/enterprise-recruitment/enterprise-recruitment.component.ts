@@ -71,6 +71,7 @@ export class EnterpriseRecruitmentComponent implements OnInit {
   onSelectGongZuoDiDian1(value: any) {
     if (!!value) {
       this.cityData = this.cityList[value];
+      this.bean.GongZuoDiDian2 = null;
     }
   }
 
