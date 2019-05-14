@@ -84,27 +84,6 @@ export class HomeComponent implements OnInit, AfterContentInit {
   }
 
   /**
-   * 学校项目 - 更多
-   */
-  onClickMoreSEC0() {
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 企业需求 - 更多
-   */
-  onClickMoreSEC1() {
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 互动讲堂 - 更多
-   */
-  onClickMoreSEC2() {
-    this.navigateDeveloping();
-  }
-
-  /**
    * 有困难找专家 - 更多
    */
   onClickMoreSEC3() {

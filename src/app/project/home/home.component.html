@@ -136,7 +136,7 @@
     <div body>
       <!-- 学校项目 -->
       <key-item-chunk-body *ngIf="currentIndexSEC == 0" [isMore]="true"
-        (clickMore)="onClickMoreSEC0()">
+        (clickMore)="portalNav.openSchoolProject()">
         <div class="SEC0-style">
           <div class="left"
             (click)="openSchoolProjectDetails(dataHandler.SEC.data0[0].id)">
@@ -170,7 +170,7 @@
       </key-item-chunk-body>
       <!-- 企业需求 -->
       <key-item-chunk-body *ngIf="currentIndexSEC == 1" [showItemNumber]="5"
-        [isMore]="true" (clickMore)="onClickMoreSEC1()">
+        [isMore]="true" (clickMore)="portalNav.openEnterpriseNeeds()">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data1"
             let-index="index">
@@ -191,7 +191,7 @@
       </key-item-chunk-body>
       <!-- 互动讲堂 -->
       <key-item-chunk-body *ngIf="currentIndexSEC == 2" [isMore]="true"
-        (clickMore)="onClickMoreSEC2()">
+        (clickMore)="portalNav.openInteractionForum()">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data2"
             let-index="index">
