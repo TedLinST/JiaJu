@@ -148,92 +148,26 @@ export class MaterialPurchaseComponent implements OnInit {
     this.listData = Utils.arrayRandomSort(this.listData);
   }
 
-  /**
-   * 点击按钮进行排序
-   * @param event 
-   */
-  onClickButtonSortChange(event: any) {
-    this.listData = Utils.arrayRandomSort(this.listData);
-  }
-
-  /**
-   * 价格输入框失去焦点
-   */
-  onBlurPriceChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
-  }
-
-  /**
-   * 所在地下拉框
-   * @param option 
-   */
-  onSelectOption(option: any) {
-    if (this.dataHandler.LIST_DATA && option != null) {
-      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.location) {
-          let text = '' + row.location;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-      });
-      this.handleListData(listData);
-    } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
-    }
-  }
-
-  /**
-   * 产地下拉框
-   * @param option 
-   */
-  onSelectOption2(option: any) {
-    if (this.dataHandler.LIST_DATA && option != null) {
-      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.area) {
-          let text = '' + row.area;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-      });
-      this.handleListData(listData);
-    } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
-    }
-  }
-
-  /**
-   * 截止日期下拉框
-   * @param option 
-   */
-  onSelectOption3(option: any) {
-    if (this.dataHandler.LIST_DATA && option != null) {
-      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.date) {
-          let text = '' + row.date;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-      });
-      this.handleListData(listData);
-    } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
-    }
-  }
-
   // 搜索
   onSearch() {
     this.activePagaIndex = 1;
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.title) {
-          let text = '' + row.title;
+        if (row.PinMing) {
+          let text = '' + row.PinMing;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.LeiXing) {
+          let text = '' + row.LeiXing;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.ChanDi) {
+          let text = '' + row.ChanDi;
           if (text.match(regExp)) {
             return true;
           }

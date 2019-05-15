@@ -94,68 +94,25 @@
       </div>
     </form>
     <!-- 条件选择区 -->
-    <key-dot-title title="条件选择区"></key-dot-title>
+    <!-- <key-dot-title title="条件选择区"></key-dot-title>
     <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
       let-index="index">
       <key-menu-type [title]="item.title" [data]="item.data"
         (clickType)="onClickType($event)"></key-menu-type>
-    </ng-template>
-    <div style="height: 20px;"></div>
+    </ng-template> -->
     <!-- 过滤 -->
     <div class="filter-row">
-      <div>
-        <key-button-sort label="热度"
-          (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-        <key-button-sort label="价格"
-          (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-        <span style="margin: 0px 5px 0px 15px;">产地</span>
-        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option2"
-          style="width:100px;" (ngModelChange)="onSelectOption2(option2)">
-          <nz-option nzValue="汕头" nzLabel="汕头"></nz-option>
-          <nz-option nzValue="揭阳" nzLabel="揭阳"></nz-option>
-        </nz-select>
-        <span style="margin: 0px 5px 0px 15px;">所在地</span>
-        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option1"
-          style="width:100px;" (ngModelChange)="onSelectOption(option1)">
-          <nz-option nzValue="汕头" nzLabel="汕头"></nz-option>
-          <nz-option nzValue="揭阳" nzLabel="揭阳"></nz-option>
-        </nz-select>
-        <span style="margin: 0px 5px 0px 15px;">截止日期</span>
-        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option3"
-          style="width:100px;" (ngModelChange)="onSelectOption3(option3)">
-          <nz-option nzValue="2019-05-08" nzLabel="2019-05-08"></nz-option>
-          <nz-option nzValue="2019-05-09" nzLabel="2019-05-09"></nz-option>
-        </nz-select>
-        <div class="search">
-          <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-            <input type="text" nz-input placeholder="请输入品名"
-              [(ngModel)]="searchValue" />
-          </nz-input-group>
-          <ng-template #suffixIconButton>
-            <button nz-button nzType="primary" nzSearch (click)="onSearch()">
-              <i nz-icon type="search"></i></button>
-          </ng-template>
-        </div>
+      <div class="search">
+        <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+          <input type="text" nz-input placeholder="请输入品名、类型、产地"
+            [(ngModel)]="searchValue" />
+        </nz-input-group>
+        <ng-template #suffixIconButton>
+          <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+            <i nz-icon type="search"></i></button>
+        </ng-template>
       </div>
-      <div style="margin-top: 10px;">
-        <!-- 价格区间 -->
-        <span style="margin: 0px 5px 0px 15px;">价格区间</span>
-        <nz-input-number [(ngModel)]="minPrice" (nzBlur)="onBlurPriceChange()"
-          [nzPlaceHolder]="'￥请输入'" [nzStep]="1">
-        </nz-input-number>
-        <span style="margin: 0px 5px;">-</span>
-        <nz-input-number [(ngModel)]="maxPrice" [nzStep]="1"
-          (nzBlur)="onBlurPriceChange()" [nzPlaceHolder]="'￥请输入'">
-        </nz-input-number>
-        <span style="margin: 0px 5px 0px 15px;">总数量</span>
-        <nz-input-number [(ngModel)]="allQty" [nzStep]="1"
-          (nzBlur)="onBlurPriceChange()">
-        </nz-input-number>
-        <span style="margin: 0px 5px 0px 15px;">已抱团数量</span>
-        <nz-input-number [(ngModel)]="qty" [nzStep]="1"
-          (nzBlur)="onBlurPriceChange()">
-        </nz-input-number>
-      </div>
+      <div class="clearfix"></div>
     </div>
     <!-- 列表数据 -->
     <div *ngIf="listData != null && listData.length > 0">
