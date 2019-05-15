@@ -206,41 +206,6 @@ export const DataMaterialEquipmentHandler = {
             src: 'assets/imgs/raw-material/qiugou-6.jpg'
           }
         ]
-      },
-      {
-        id: 2,
-        data: [
-          {
-            id: 1,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
-          },
-          {
-            id: 2,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
-          },
-          {
-            id: 3,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
-          },
-          {
-            id: 4,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
-          },
-          {
-            id: 5,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
-          },
-          {
-            id: 6,
-            title: '材料',
-            src: 'assets/imgs/raw-material/cailiao.jpg'
-          }
-        ]
       }
     ]
   },
@@ -486,41 +451,6 @@ export const DataMaterialEquipmentHandler = {
             id: 6,
             title: '青岛美光',
             src: 'assets/imgs/raw-material/dsz-6.jpg'
-          }
-        ]
-      },
-      {
-        id: 2,
-        data: [
-          {
-            id: 1,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
-          },
-          {
-            id: 2,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
-          },
-          {
-            id: 3,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
-          },
-          {
-            id: 4,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
-          },
-          {
-            id: 5,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
-          },
-          {
-            id: 6,
-            title: '机械设备',
-            src: 'assets/imgs/raw-material/jixie.jpg'
           }
         ]
       }
