@@ -93,7 +93,8 @@
 
   <!-- 产品设计资料库 -->
   <key-item-chunk [enTitle]="dataHandler.DD.enTitle"
-    [title]="dataHandler.DD.title" [menuData]="dataHandler.DD.menuData">
+    [title]="dataHandler.DD.title" [menuData]="dataHandler.DD.menuData"
+    [isTitleLine]="true">
     <div body>
       <key-item-chunk-body [isMore]="true"
         (clickMore)="portalNav.openDesignDatabase()" showItemNumber="5">
@@ -120,7 +121,8 @@
 
   <!-- 设计软件集成 -->
   <key-item-chunk [enTitle]="dataHandler.SI.enTitle"
-    [title]="dataHandler.SI.title" [menuData]="dataHandler.SI.menuData">
+    [title]="dataHandler.SI.title" [menuData]="dataHandler.SI.menuData"
+    [isTitleLine]="true">
     <div body>
       <key-item-chunk-body [isMore]="true"
         (clickMore)="portalNav.openSoftwareIntegration()">
