@@ -1,7 +1,7 @@
-<div class="se-news">
+<div class="file-download">
   <!-- 横幅 -->
-  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU" activeTitle='校企新闻'
-    (clickMenu)="onClickBannerMenu($event)">
+  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU"
+    activeTitle='文件下载' (clickMenu)="onClickBannerMenu($event)">
   </sec-banner-menu>
 
   <div class="body">
@@ -14,19 +14,21 @@
         <a (click)="portalNav.openSECooperation()">校企合作服务</a>
       </nz-breadcrumb-item>
       <nz-breadcrumb-item>
-        校企新闻
+        文件下载
       </nz-breadcrumb-item>
     </nz-breadcrumb>
   </div>
 
-  <key-item-chunk title="校企新闻" marginTop="20" enTitle="SCHOOL-ENTERPRISE NEWS">
+  <key-item-chunk [enTitle]="dataHandler.FD.enTitle"
+    [title]="dataHandler.FD.title" [menuData]="dataHandler.FD.menuData"
+    (switchIndexChange)="switchIndexChange($event)">
     <div body>
       <key-item-chunk-body>
         <!-- 过滤 -->
         <div class="filter-row">
           <div class="search">
             <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-              <input type="text" nz-input placeholder="请输入新闻标题"
+              <input type="text" nz-input placeholder="请输入文档名称"
                 [(ngModel)]="searchValue" />
             </nz-input-group>
             <ng-template #suffixIconButton>
@@ -40,22 +42,32 @@
         <div *ngIf="listData != null && listData.length > 0">
           <div class="list">
             <div class="header">
-              项目列表
+              <div class="row">
+                <div class="col col-1">文档名称</div>
+                <div class="col col-2">价格</div>
+                <div class="col col-3">下载</div>
+                <div class="col col-4">下载量</div>
+                <div class="clearfix"></div>
+              </div>
             </div>
             <div class="body">
               <ng-template ngFor let-item [ngForOf]="listData"
                 let-index="index">
                 <div class="row">
                   <div class="col col-1">
-                    <img [src]='item.src'>
+                    <div class="singleTextBeyondHide">{{item.WenDangMingCheng}}
+                    </div>
                   </div>
                   <div class="col col-2">
-                    <div class="title singleTextBeyondHide">
-                      {{item.BiaoTi}}
-                      <span class="time">{{item.FaBuShiJian}}</span>
-                    </div>
-                    <div class="label" style="height: 64px;overflow: hidden;">
-                      {{item.JianJie}}
+                    <div class="singleTextBeyondHide">{{item.JiaGe}}</div>
+                  </div>
+                  <div class="col col-3">
+                    <button class="btn" nz-button nzType="primary"
+                      nzSize="small"
+                      (click)="onDownloadFile(item.id,item.url)">点击下载</button>
+                  </div>
+                  <div class="col col-4">
+                    <div class="singleTextBeyondHide">{{item.XiaZaiLiang}} 次
                     </div>
                   </div>
                   <div class="clearfix"></div>
@@ -81,4 +93,5 @@
       </key-item-chunk-body>
     </div>
   </key-item-chunk>
+
 </div>

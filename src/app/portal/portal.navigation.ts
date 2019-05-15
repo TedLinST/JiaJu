@@ -275,8 +275,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('file-download');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('file-download');
   }
 
   /**
