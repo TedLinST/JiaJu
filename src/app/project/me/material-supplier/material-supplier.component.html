@@ -18,85 +18,77 @@
         原辅材料供应商
       </nz-breadcrumb-item>
     </nz-breadcrumb>
-    <!-- 标题 -->
-    <key-item-chunk marginTop="20" title="原辅材料供应商"
-      enTitle="SUPPLIER OF RAW AND AUXILIARY MATERIALS"></key-item-chunk>
-    <!-- 条件选择区 -->
-    <key-dot-title title="条件选择区"></key-dot-title>
-    <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
-      let-index="index">
-      <key-menu-type [title]="item.title" [data]="item.data"
-        (clickType)="onClickType($event)"></key-menu-type>
-    </ng-template>
-    <div style="height: 20px;"></div>
-    <!-- 过滤 -->
-    <div class="filter-row">
-      <key-button-sort label="热度"
-        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-      <key-button-sort label="价格"
-        (clickChange)="onClickButtonSortChange($event)"
-        style="margin-right:6px;"></key-button-sort>
-      所在地
-      <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option1"
-        style="width:120px;" (ngModelChange)="onSelectOption(option1)">
-        <nz-option nzValue="汕头" nzLabel="汕头"></nz-option>
-        <nz-option nzValue="揭阳" nzLabel="揭阳"></nz-option>
-      </nz-select>
-      <div class="search">
-        <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-          <input type="text" nz-input placeholder="请输入企业名称"
-            [(ngModel)]="searchValue" />
-        </nz-input-group>
-        <ng-template #suffixIconButton>
-          <button nz-button nzType="primary" nzSearch (click)="onSearch()">
-            <i nz-icon type="search"></i></button>
-        </ng-template>
-      </div>
-    </div>
-
-    <!-- 列表数据 -->
-    <div *ngIf="listData != null && listData.length > 0">
-      <div nz-row>
-        <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
-          <div nz-col nzSpan="6" style="margin-bottom: 6px;">
-            <div class="key-item-box item-box-bg item-box-margin-3">
-              <div class="header">
-                <img [src]="item.src">
-              </div>
-              <div class="body">
-                <div class="title">{{item.title}}</div>
-                <div class="label">
-                  <span>属性：{{item.attribute}}</span>
-                  <span>所在地：{{item.location}}</span>
-                </div>
-                <div class="label" style="height: 65px;overflow: hidden;">
-                  主营：{{item.business}}
-                </div>
-              </div>
-              <div class="footer">
-                <button class="btn-bg" nz-button nzSize="small" nzType="primary"
-                  (click)="onLink(item.id)"
-                  style="margin-right: 6px">企业链接</button>
-                <button class="btn-bg" nz-button nzSize="small" nzType="primary"
-                  (click)="onCollection(item.id)">收藏</button>
-              </div>
-            </div>
-          </div>
-        </ng-template>
-      </div>
-      <div class="pagination">
-        <nz-pagination [(nzPageIndex)]="activePagaIndex" [nzTotal]="total"
-          [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
-          (nzPageIndexChange)="onPageIndexChange($event)">
-        </nz-pagination>
-        <ng-template #rangeTemplate let-range="range" let-total>
-          显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
-        </ng-template>
-      </div>
-    </div>
-    <div *ngIf="!(listData != null && listData.length > 0)">
-      <nz-empty></nz-empty>
-    </div>
-
   </div>
+
+  <key-item-chunk marginTop="20" title="原辅材料供应商"
+    enTitle="SUPPLIER OF RAW AND AUXILIARY MATERIALS">
+    <div body>
+      <key-item-chunk-body>
+        <!-- 条件选择区 -->
+        <!-- <key-dot-title title="条件选择区"></key-dot-title>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
+          let-index="index">
+          <key-menu-type [title]="item.title" [data]="item.data"
+            (clickType)="onClickType($event)"></key-menu-type>
+        </ng-template> -->
+        <!-- 过滤 -->
+        <div class="filter-row">
+          <div class="search">
+            <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+              <input type="text" nz-input placeholder="请输入企业名称、属性、所在地"
+                [(ngModel)]="searchValue" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+              <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+                <i nz-icon type="search"></i></button>
+            </ng-template>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <!-- 列表数据 -->
+        <div *ngIf="listData != null && listData.length > 0">
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+              <div nz-col nzSpan="6" style="margin-bottom: 6px;height: 480px;">
+                <div class="key-item-box item-box-bg item-box-margin-3">
+                  <div class="header">
+                    <img [src]="item.src">
+                  </div>
+                  <div class="body">
+                    <div class="title">{{item.title}}</div>
+                    <div class="label">属性：{{item.attribute}}</div>
+                    <div class="label">所在地：{{item.location}}</div>
+                    <div class="label" style="height: 45px;overflow: hidden;">
+                      主营：{{item.business}}
+                    </div>
+                    <button class="btn-bg" nz-button nzSize="small"
+                      nzType="primary" (click)="onLink(item.id)"
+                      style="margin-right: 6px">企业链接</button>
+                    <button class="btn-bg" nz-button nzSize="small"
+                      nzType="primary"
+                      (click)="onCollection(item.id)">收藏</button>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="pagination">
+            <nz-pagination [(nzPageIndex)]="activePagaIndex" [nzTotal]="total"
+              [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
+              (nzPageIndexChange)="onPageIndexChange($event)">
+            </nz-pagination>
+            <ng-template #rangeTemplate let-range="range" let-total>
+              显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+            </ng-template>
+          </div>
+        </div>
+        <div *ngIf="!(listData != null && listData.length > 0)">
+          <nz-empty></nz-empty>
+        </div>
+      </key-item-chunk-body>
+    </div>
+
+  </key-item-chunk>
+
 </div>

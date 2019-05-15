@@ -37,7 +37,7 @@ export class MaterialSupplierComponent implements OnInit {
   // 当前页下标
   activePagaIndex: number = 1;
 
-  option1: any;
+  // 搜索文本
   searchValue: any;
 
   constructor(private router: Router) {
@@ -102,35 +102,6 @@ export class MaterialSupplierComponent implements OnInit {
     this.listData = Utils.arrayRandomSort(this.listData);
   }
 
-  /**
-   * 点击按钮进行排序
-   * @param event 
-   */
-  onClickButtonSortChange(event: any) {
-    this.listData = Utils.arrayRandomSort(this.listData);
-  }
-
-  /**
-   * 所在地下拉框
-   * @param option 
-   */
-  onSelectOption(option: any) {
-    if (this.dataHandler.LIST_DATA && option != null) {
-      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.location) {
-          let text = '' + row.location;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-      });
-      this.handleListData(listData);
-    } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
-    }
-  }
-
   // 搜索
   onSearch() {
     this.activePagaIndex = 1;
@@ -139,6 +110,18 @@ export class MaterialSupplierComponent implements OnInit {
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
         if (row.title) {
           let text = '' + row.title;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.attribute) {
+          let text = '' + row.attribute;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.location) {
+          let text = '' + row.location;
           if (text.match(regExp)) {
             return true;
           }
