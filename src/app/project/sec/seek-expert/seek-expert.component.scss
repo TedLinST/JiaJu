@@ -1,0 +1,19 @@
+.seek-expert {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  button.btn {
+    display: block;
+    min-width: 100px;
+    margin-top: 8px;
+    background-color: #3c311b;
+    border-color: #3c311b;
+  }
+
+  .pagination {
+    margin-top: 15px;
+    text-align: right;
+  }
+}

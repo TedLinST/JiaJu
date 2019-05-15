@@ -265,8 +265,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('seek-expert');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('seek-expert');
   }
 
   /**
