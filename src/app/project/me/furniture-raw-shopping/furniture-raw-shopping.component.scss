@@ -2,25 +2,25 @@
   >.body {
     width: 1200px;
     margin: 20px auto 0px;
+  }
 
-    .filter-row {
-      margin-bottom: 15px;
+  .filter-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
 
-      .search {
-        float: right;
-        display: inline-block;
-        width: 300px;
-      }
+    .search {
+      float: right;
+      width: 300px;
     }
+  }
 
-    .btn-bg {
-      background-color: #f4a674;
-      border-color: #f4a674;
-    }
+  .btn-bg {
+    background-color: #f4a674;
+    border-color: #f4a674;
+  }
 
-    .pagination {
-      margin-top: 15px;
-      text-align: right;
-    }
+  .pagination {
+    margin-top: 15px;
+    text-align: right;
   }
 }

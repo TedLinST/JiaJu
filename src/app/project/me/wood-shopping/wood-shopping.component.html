@@ -47,7 +47,7 @@
       </key-button-sort>
       <div class="search">
         <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-          <input type="text" nz-input placeholder="请输入商品名、产品标题、类型"
+          <input type="text" nz-input placeholder="请输入产品名、标题、类型"
             [(ngModel)]="searchValue" />
         </nz-input-group>
         <ng-template #suffixIconButton>
@@ -67,8 +67,8 @@
                 <img [src]="item.src">
               </div>
               <div class="body">
-                <div class="title">商品名：{{item.title}}</div>
-                <div class="label singleTextBeyondHide">产品标题：{{item.subTitle}}
+                <div class="title">产品名：{{item.title}}</div>
+                <div class="label singleTextBeyondHide">标题：{{item.subTitle}}
                 </div>
                 <div class="label">产地：{{item.area}}</div>
                 <div class="label">类型：{{item.type}}</div>

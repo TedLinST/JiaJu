@@ -42,47 +42,7 @@ export const DataFurnitureRawShoppingHandler = {
           label: '条件2.4'
         }
       ]
-    },
-    {
-      id: '3',
-      title: '条件三',
-      data: [
-        {
-          id: '1',
-          label: '条件3.1',
-          subData: [
-            {
-              id: '1',
-              label: '条件3.1.1'
-            },
-            {
-              id: '2',
-              label: '条件3.1.2'
-            },
-            {
-              id: '3',
-              label: '条件3.1.3'
-            },
-          ]
-        },
-        {
-          id: '2',
-          label: '条件3.2'
-        },
-        {
-          id: '3',
-          label: '条件3.3'
-        },
-        {
-          id: '4',
-          label: '条件3.4'
-        },
-        {
-          id: '5',
-          label: '条件3.5'
-        }
-      ]
-    },
+    }
   ],
 
   // 列表数据
@@ -94,7 +54,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '五金及配件',
       specs: '100N',
       location: '广东 广州',
-      price: '6',
+      price: '6元',
       qty: '200个',
       src: 'assets/imgs/furniture-raw-shopping/furniture-1.jpg'
     },
@@ -105,7 +65,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '五金及配件',
       specs: 'M6/M8',
       location: '广东 深圳',
-      price: '1',
+      price: '1元',
       qty: '500个',
       src: 'assets/imgs/furniture-raw-shopping/furniture-2.jpg'
     },
@@ -116,7 +76,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '五金及配件',
       specs: '8寸到24寸',
       location: '广东 佛山',
-      price: '6',
+      price: '6元',
       qty: '150个',
       src: 'assets/imgs/furniture-raw-shopping/furniture-3.jpg'
     },
@@ -127,7 +87,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '五金及配件',
       specs: '77mm/109mm/141mm/171mm',
       location: '广东 广州',
-      price: '2-5',
+      price: '5元',
       qty: '100个',
       src: 'assets/imgs/furniture-raw-shopping/furniture-4.jpg'
     },
@@ -138,7 +98,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '五金及配件',
       specs: '厚度1mm',
       location: '江苏 苏州',
-      price: '3—18',
+      price: '18元',
       qty: '200个',
       src: 'assets/imgs/furniture-raw-shopping/furniture-5.jpg'
     },
@@ -149,7 +109,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '五金及配件',
       specs: '1.5寸2寸',
       location: '上海 中国',
-      price: '12—18',
+      price: '18元',
       qty: '100个',
       src: 'assets/imgs/furniture-raw-shopping/furniture-6.jpg'
     },
@@ -160,7 +120,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '五金及配件',
       specs: '110*64mm 承重60kg/2只',
       location: '北京 中国',
-      price: '150',
+      price: '150元',
       qty: '20个',
       src: 'assets/imgs/furniture-raw-shopping/furniture-7.jpg'
     },
@@ -171,7 +131,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '玻璃',
       specs: '1000*500mm',
       location: '山东 滕州',
-      price: '3',
+      price: '3元',
       qty: '50块',
       src: 'assets/imgs/furniture-raw-shopping/furniture-8.jpg'
     },
@@ -182,7 +142,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '皮革',
       specs: '0.8-1mm厚',
       location: '浙江 杭州',
-      price: '25',
+      price: '25元',
       qty: '50m2',
       src: 'assets/imgs/furniture-raw-shopping/furniture-9.jpg'
     },
@@ -193,7 +153,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '皮革',
       specs: '1.5mm厚',
       location: '浙江 杭州',
-      price: '35',
+      price: '35元',
       qty: '50m3',
       src: 'assets/imgs/furniture-raw-shopping/furniture-10.jpg'
     },
@@ -204,7 +164,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '胶黏剂',
       specs: '30000—45000MPA.S',
       location: '广东 东莞',
-      price: '20',
+      price: '20元',
       qty: '100kg',
       src: 'assets/imgs/furniture-raw-shopping/furniture-11.jpg'
     },
@@ -215,7 +175,7 @@ export const DataFurnitureRawShoppingHandler = {
       type: '胶黏剂',
       specs: 'A组分：20000MPA.S（25℃) B组分：20000MPA.S（25℃)',
       location: '广东 东莞',
-      price: '60',
+      price: '60元',
       qty: '50kg',
       src: 'assets/imgs/furniture-raw-shopping/furniture-12.jpg'
     },
