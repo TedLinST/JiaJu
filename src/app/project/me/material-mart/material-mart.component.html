@@ -33,59 +33,24 @@
     <div style="height: 20px;"></div>
     <!-- 过滤 -->
     <div class="filter-row">
-      <div>
-        <key-button-sort label="热度"
-          (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-        <key-button-sort label="价格"
-          (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-        <span style="margin: 0px 5px 0px 15px;">产地</span>
-        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option2"
-          style="width:100px;" (ngModelChange)="onSelectOption2(option2)">
-          <nz-option nzValue="汕头" nzLabel="汕头"></nz-option>
-          <nz-option nzValue="揭阳" nzLabel="揭阳"></nz-option>
-        </nz-select>
-        <span style="margin: 0px 5px 0px 15px;">所在地</span>
-        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option1"
-          style="width:100px;" (ngModelChange)="onSelectOption(option1)">
-          <nz-option nzValue="汕头" nzLabel="汕头"></nz-option>
-          <nz-option nzValue="揭阳" nzLabel="揭阳"></nz-option>
-        </nz-select>
-        <span style="margin: 0px 5px 0px 15px;">截止日期</span>
-        <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option3"
-          style="width:100px;" (ngModelChange)="onSelectOption3(option3)">
-          <nz-option nzValue="3" nzLabel="3"></nz-option>
-          <nz-option nzValue="4" nzLabel="4"></nz-option>
-        </nz-select>
-        <div class="search">
-          <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-            <input type="text" nz-input placeholder="请输入商品名"
-              [(ngModel)]="searchValue" />
-          </nz-input-group>
-          <ng-template #suffixIconButton>
-            <button nz-button nzType="primary" nzSearch (click)="onSearch()">
-              <i nz-icon type="search"></i></button>
-          </ng-template>
-        </div>
-      </div>
-      <div style="margin-top: 10px;">
-        <!-- 价格区间 -->
-        <span style="margin: 0px 5px 0px 15px;">价格区间</span>
-        <nz-input-number [(ngModel)]="minPrice" (nzBlur)="onBlurPriceChange()"
-          [nzPlaceHolder]="'￥请输入'" [nzStep]="1">
-        </nz-input-number>
-        <span style="margin: 0px 5px;">-</span>
-        <nz-input-number [(ngModel)]="maxPrice" [nzStep]="1"
-          (nzBlur)="onBlurPriceChange()" [nzPlaceHolder]="'￥请输入'">
-        </nz-input-number>
-        <span style="margin: 0px 5px 0px 15px;">总数量</span>
-        <nz-input-number [(ngModel)]="allQty" [nzStep]="1"
-          (nzBlur)="onBlurPriceChange()">
-        </nz-input-number>
-        <span style="margin: 0px 5px 0px 15px;">已抱团数量</span>
-        <nz-input-number [(ngModel)]="qty" [nzStep]="1"
-          (nzBlur)="onBlurPriceChange()">
-        </nz-input-number>
-
+      <key-button-sort label="按价格" [active]="btnSortActiveMap['price']"
+        (clickChange)="onClickButtonSortChange($event,'price')">
+      </key-button-sort>
+      <key-button-sort label="按总数量" [active]="btnSortActiveMap['totalQty']"
+        (clickChange)="onClickButtonSortChange($event,'totalQty')">
+      </key-button-sort>
+      <key-button-sort label="按抱团数量" [active]="btnSortActiveMap['qty']"
+        (clickChange)="onClickButtonSortChange($event,'qty')">
+      </key-button-sort>
+      <div class="search">
+        <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+          <input type="text" nz-input placeholder="请输入产品名、产地、类型"
+            [(ngModel)]="searchValue" />
+        </nz-input-group>
+        <ng-template #suffixIconButton>
+          <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+            <i nz-icon type="search"></i></button>
+        </ng-template>
       </div>
     </div>
 
@@ -99,17 +64,16 @@
                 <img [src]="item.src">
               </div>
               <div class="body">
-                <div class="title">商品名：{{item.title}}</div>
-                <div class="label">产品标题：{{item.subTitle}}</div>
-                <div class="label">产地：{{item.area}}</div>
-                <div class="label">类型：{{item.type}}</div>
-                <div class="label">
-                  <span>规格：{{item.specs}}</span>
-                  <span>宽度：{{item.width}}</span>
+                <div class="label singleTextBeyondHide">产品名：{{item.title}}</div>
+                <div class="label singleTextBeyondHide">材料：{{item.subTitle}}
                 </div>
+                <div class="label singleTextBeyondHide">产地：{{item.area}}</div>
+                <div class="label">类型：{{item.type}}</div>
+                <div class="label">规格：{{item.specs}}</div>
+                <div class="label">价格：{{item.price}}</div>
                 <div class="label">
-                  <span>价格：{{item.price}}</span>
-                  <span>销量：{{item.qty}}</span>
+                  <span>总数量：{{item.totalQty}}</span>
+                  <span>报团数量：{{item.qty}}</span>
                 </div>
               </div>
               <div class="footer">
