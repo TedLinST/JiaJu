@@ -1,4 +1,10 @@
 .enterprise-recruitment {
+  
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
   .item-box-logo {
     border: 1px solid #d0d0d0;
     padding: 30px 10px;
@@ -125,9 +131,7 @@
         }
       }
 
-      .footer {
-
-      }
+      .footer {}
     }
   }
 }

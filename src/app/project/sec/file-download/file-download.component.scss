@@ -1,0 +1,87 @@
+.file-download {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  .filter-row {
+    .search {
+      float: right;
+      width: 300px;
+    }
+  }
+
+  .list {
+    margin-top: 15px;
+
+    .header,
+    .body {
+      .row {
+        .col {
+          display: inline-block;
+          padding: 6px 12px;
+          text-align: left;
+          float: left;
+
+          &.col-1 {
+            width: 720px;
+          }
+
+          &.col-2 {
+            width: 160px;
+            color: #8e0000;
+          }
+
+          &.col-3 {
+            width: 160px;
+
+            button {
+              display: block;
+              min-width: 100px;
+              background-color: #3598a3;
+              border-color: #3598a3;
+            }
+          }
+
+          &.col-4 {
+            width: 160px;
+            color: #0088c1;
+          }
+        }
+      }
+    }
+
+    .header {
+      .row {
+        color: #434343;
+        background-color: #bdf1f8;
+        font-size: 15px;
+        font-weight: 600;
+        .col{
+          color: #434343 !important;
+        }
+      }
+    }
+
+    .body {
+      .row {
+        border-bottom: 1px solid #e5e5e5;
+        background-color: #f8f8f8;
+        padding: 5px 0px;
+
+        &:hover,
+        &.active {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    .footer {
+      .pagination {
+        margin-top: 15px;
+        text-align: right;
+      }
+    }
+  }
+
+}

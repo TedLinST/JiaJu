@@ -39,7 +39,7 @@ export const PortalRoutes = [
     { path: 'interaction-forum', loadChildren: '../project/sec/interaction-forum/interaction-forum.module#InteractionForumModule' }, // 互动讲堂
     { path: 'se-news', loadChildren: '../project/sec/se-news/se-news.module#SeNewsModule' }, // 校企新闻
     { path: 'seek-expert', loadChildren: '../project/sec/seek-expert/seek-expert.module#SeekExpertModule' }, // 有困难找专家
-    // { path: 'file-download', loadChildren: '../project/sec/file-download/file-download.module#FileDownloadModule' }, // 文件下载
+    { path: 'file-download', loadChildren: '../project/sec/file-download/file-download.module#FileDownloadModule' }, // 文件下载
     // { path: 'integrated-services', loadChildren: '../project/is/integrated-services/integrated-services.module#IntegratedServicesModule' }, // 综合服务
     // { path: 'exhibition', loadChildren: '../project/is/exhibition/exhibition.module#ExhibitionModule' }, // 展会服务
     // { path: 'government', loadChildren: '../project/is/government/government.module#GovernmentModule' }, // 政府服务
