@@ -87,6 +87,7 @@ export class SeResourcesComponent implements OnInit {
 
   // 搜索
   onSearch() {
+    this.activePagaIndex = 1;
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {

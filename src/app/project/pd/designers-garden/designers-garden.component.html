@@ -146,7 +146,7 @@
             </div>
           </ng-template>
           <div class="pagination">
-            <nz-pagination [nzShowTotal]="rangeTemplate" [nzPageIndex]="1"
+            <nz-pagination [nzShowTotal]="rangeTemplate" [(nzPageIndex)]="activePagaIndex"
               [nzTotal]="total" [nzPageSize]="pageSize"
               (nzPageIndexChange)="onPageIndexChange($event)">
             </nz-pagination>

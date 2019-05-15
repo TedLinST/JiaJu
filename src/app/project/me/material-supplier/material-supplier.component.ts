@@ -34,6 +34,9 @@ export class MaterialSupplierComponent implements OnInit {
   // 总数据
   total: number = 0;
 
+  // 当前页下标
+  activePagaIndex: number = 1;
+
   option1: any;
   searchValue: any;
 
@@ -46,7 +49,7 @@ export class MaterialSupplierComponent implements OnInit {
     this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataMaterialSupplierHandler;
     this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
 
   /**
@@ -87,7 +90,8 @@ export class MaterialSupplierComponent implements OnInit {
    * 页码改变
    */
   onPageIndexChange(event: any) {
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, event);
+    this.activePagaIndex = event;
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
 
   /**
@@ -129,6 +133,7 @@ export class MaterialSupplierComponent implements OnInit {
 
   // 搜索
   onSearch() {
+    this.activePagaIndex = 1;
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
@@ -139,9 +144,9 @@ export class MaterialSupplierComponent implements OnInit {
           }
         }
       });
-      this.handleListDataPagination(listData, 1);
+      this.handleListDataPagination(listData, this.activePagaIndex);
     } else {
-      this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
+      this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
     }
   }
 

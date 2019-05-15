@@ -83,6 +83,7 @@ export class FileDownloadComponent implements OnInit {
 
   // 搜索
   onSearch() {
+    this.activePagaIndex = 1;
     if (this.allListData && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.allListData.filter((row: any) => {

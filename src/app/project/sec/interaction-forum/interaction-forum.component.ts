@@ -34,6 +34,7 @@ export class InteractionForumComponent implements OnInit {
   // 总数据
   total: number = 0;
 
+  // 当前页下标
   activePagaIndex: number = 1;
 
   // 搜索文本
@@ -61,6 +62,7 @@ export class InteractionForumComponent implements OnInit {
 
   // 搜索
   onSearch() {
+    this.activePagaIndex = 1;
     if (this.dataHandler.WR.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.WR.LIST_DATA.filter((row: any) => {

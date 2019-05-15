@@ -195,7 +195,7 @@
         </div>
         <div class="footer">
           <div class="pagination">
-            <nz-pagination [nzPageIndex]="1" [nzTotal]="total"
+            <nz-pagination [(nzPageIndex)]="activePagaIndex" [nzTotal]="total"
               [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
               (nzPageIndexChange)="onPageIndexChange($event)">
             </nz-pagination>

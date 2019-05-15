@@ -34,14 +34,18 @@ export class WoodShoppingComponent implements OnInit {
   // 总数据
   total: number = 0;
 
-  option1: any;
-  option2: any;
-  option3: any;
-  minPrice: number;
-  maxPrice: number;
-  allQty: number;
-  qty: number;
+  // 当前页下标
+  activePagaIndex: number = 1;
+
+  // 搜索文本
   searchValue: any;
+
+  // 按钮排序激活
+  btnSortActiveMap: any = {
+    price: 0,
+    totalQty: 0,
+    qty: 0
+  };
 
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
@@ -52,7 +56,7 @@ export class WoodShoppingComponent implements OnInit {
     this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataWoodShoppingHandler;
     this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
 
   /**
@@ -61,22 +65,6 @@ export class WoodShoppingComponent implements OnInit {
    */
   onClickBannerMenu(menu: KeyVerticalMenuEvent) {
     UtilsMe.clickBannerMenu(this.portalNav, menu);
-  }
-
-  /**
-   * 处理列表数据
-   */
-  handleListData(listData: any[]) {
-    if (listData != null && listData.length > 0) {
-      let listDataTemp = Utils.arrayRandomSort(listData);
-      this.listData = [];
-      let len = listData.length > this.pageSize ? this.pageSize : listData.length;
-      for (let i = 0; i < len; i++) {
-        this.listData.push(listDataTemp[i]);
-      }
-    } else {
-      this.listData = [];
-    }
   }
 
   /**
@@ -93,7 +81,8 @@ export class WoodShoppingComponent implements OnInit {
    * 页码改变
    */
   onPageIndexChange(event: any) {
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, event);
+    this.activePagaIndex = event;
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
 
   /**
@@ -108,82 +97,20 @@ export class WoodShoppingComponent implements OnInit {
    * 点击按钮进行排序
    * @param event 
    */
-  onClickButtonSortChange(event: any) {
-    this.listData = Utils.arrayRandomSort(this.listData);
-  }
-
-  /**
-   * 价格输入框失去焦点
-   */
-  onBlurPriceChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
-  }
-
-  /**
-   * 所在地下拉框
-   * @param option 
-   */
-  onSelectOption(option: any) {
-    if (this.dataHandler.LIST_DATA && option != null) {
-      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.location) {
-          let text = '' + row.location;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-      });
-      this.handleListData(listData);
-    } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
-    }
-  }
-
-  /**
-   * 产地下拉框
-   * @param option 
-   */
-  onSelectOption2(option: any) {
-    if (this.dataHandler.LIST_DATA && option != null) {
-      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.area) {
-          let text = '' + row.area;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-      });
-      this.handleListData(listData);
-    } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
-    }
-  }
-
-  /**
-   * 截止日期下拉框
-   * @param option 
-   */
-  onSelectOption3(option: any) {
-    if (this.dataHandler.LIST_DATA && option != null) {
-      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.date) {
-          let text = '' + row.date;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-      });
-      this.handleListData(listData);
-    } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
-    }
+  onClickButtonSortChange(event: any, id: any) {
+    this.btnSortActiveMap = {
+      price: 0,
+      totalQty: 0,
+      qty: 0
+    };
+    this.btnSortActiveMap[id] = event;
+    this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
+    this.onSearch();
   }
 
   // 搜索
   onSearch() {
+    this.activePagaIndex = 1;
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
@@ -193,10 +120,22 @@ export class WoodShoppingComponent implements OnInit {
             return true;
           }
         }
+        if (row.subTitle) {
+          let text = '' + row.subTitle;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.type) {
+          let text = '' + row.type;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
       });
-      this.handleListDataPagination(listData, 1);
+      this.handleListDataPagination(listData, this.activePagaIndex);
     } else {
-      this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
+      this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
     }
   }
 

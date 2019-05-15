@@ -76,12 +76,18 @@ export class Utils {
      * @param arr 
      * @param key 
      * @param order 
+     * @param isNumber
      */
-    public static arrayKeySort(arr: any[], key: any, order: -1 | 0 | 1 = 0) {
+    public static arrayKeySort(arr: any[], key: any, order: -1 | 0 | 1 = 0, isNumber?: boolean) {
         arr.sort((data1, data2) => {
             let value1 = key ? data1[key] : "";
             let value2 = key ? data2[key] : "";
             let result: any = null;
+            // 转数字类型
+            if (isNumber) {
+                value1 = parseFloat(value1);
+                value2 = parseFloat(value2);
+            }
             if (typeof value1 == "string" && typeof value2 == "string") {
                 result = value1.localeCompare(value2);
             } else if (typeof value1 == "number" && typeof value2 == "number") {

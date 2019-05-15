@@ -34,6 +34,9 @@ export class EquipmentMartComponent implements OnInit {
   // 总数据
   total: number = 0;
 
+  // 当前页下标
+  activePagaIndex: number = 1;
+
   minPrice: number;
   maxPrice: number;
   searchValue: any;
@@ -47,7 +50,7 @@ export class EquipmentMartComponent implements OnInit {
     this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataEquipmentMartHandler;
     this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
 
   /**
@@ -56,22 +59,6 @@ export class EquipmentMartComponent implements OnInit {
    */
   onClickBannerMenu(menu: KeyVerticalMenuEvent) {
     UtilsMe.clickBannerMenu(this.portalNav, menu);
-  }
-
-  /**
-   * 处理列表数据
-   */
-  handleListData(listData: any[]) {
-    if (listData != null && listData.length > 0) {
-      let listDataTemp = Utils.arrayRandomSort(listData);
-      this.listData = [];
-      let len = listData.length > this.pageSize ? this.pageSize : listData.length;
-      for (let i = 0; i < len; i++) {
-        this.listData.push(listDataTemp[i]);
-      }
-    } else {
-      this.listData = [];
-    }
   }
 
   /**
@@ -88,7 +75,8 @@ export class EquipmentMartComponent implements OnInit {
    * 页码改变
    */
   onPageIndexChange(event: any) {
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, event);
+    this.activePagaIndex = event;
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
 
   /**
@@ -116,6 +104,7 @@ export class EquipmentMartComponent implements OnInit {
 
   // 搜索
   onSearch() {
+    this.activePagaIndex = 1
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
@@ -126,9 +115,9 @@ export class EquipmentMartComponent implements OnInit {
           }
         }
       });
-      this.handleListDataPagination(listData, 1);
+      this.handleListDataPagination(listData, this.activePagaIndex);
     } else {
-      this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
+      this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
     }
   }
 

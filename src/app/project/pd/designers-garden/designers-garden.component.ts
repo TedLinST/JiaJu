@@ -48,9 +48,14 @@ export class DesignersGardenComponent implements OnInit {
     }
   ];
 
+  // 一页大小
   pageSize = 4;
 
+  // 总数据
   total = 0;
+
+  // 当前页下标
+  activePagaIndex: number = 1;
 
   listData: any[] = [];
 
@@ -63,7 +68,7 @@ export class DesignersGardenComponent implements OnInit {
     this.CH_PD_BANNER_MENU = ConstantHandler.CH_PD_BANNER_MENU;
     this.dataHandler = DataDesignersGardenHandler;
     this.total = this.dataHandler.DL.data.length;
-    this.handleListDataPagination(this.dataHandler.DL.data, 1);
+    this.handleListDataPagination(this.dataHandler.DL.data, this.activePagaIndex);
   }
 
   /**
@@ -119,7 +124,8 @@ export class DesignersGardenComponent implements OnInit {
    * 页码改变
    */
   onPageIndexChange(event: any) {
-    this.handleListDataPagination(this.dataHandler.DL.data, event);
+    this.activePagaIndex = event;
+    this.handleListDataPagination(this.dataHandler.DL.data, this.activePagaIndex);
   }
 
   /**

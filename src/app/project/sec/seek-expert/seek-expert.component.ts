@@ -34,6 +34,7 @@ export class SeekExpertComponent implements OnInit {
   // 总数据
   total: number = 0;
 
+  // 当前页下标
   activePagaIndex: number = 1;
 
   constructor(private router: Router) {

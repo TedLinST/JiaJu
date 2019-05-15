@@ -32,6 +32,9 @@ export class SoftwareIntegrationComponent implements OnInit {
   // 总数据
   total: number = 0;
 
+  // 当前页下标
+  activePagaIndex: number = 1;
+
   // 列表数据
   listData: any[] = [];
 
@@ -44,7 +47,7 @@ export class SoftwareIntegrationComponent implements OnInit {
     this.CH_PD_BANNER_MENU = ConstantHandler.CH_PD_BANNER_MENU;
     this.dataHandler = DataSoftwareIntegrationHandler;
     this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, 1);
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
 
   /**
@@ -85,7 +88,8 @@ export class SoftwareIntegrationComponent implements OnInit {
    * 页码改变
    */
   onPageIndexChange(event: any) {
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, event);
+    this.activePagaIndex = event;
+    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
 
   /**
