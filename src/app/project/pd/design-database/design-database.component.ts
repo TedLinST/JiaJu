@@ -82,6 +82,18 @@ export class DesignDatabaseComponent implements OnInit {
             return true;
           }
         }
+        if (row.style) {
+          let text = '' + row.style;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.material) {
+          let text = '' + row.material;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
       });
       this.handleListDataPagination(listData, this.activePagaIndex);
     } else {

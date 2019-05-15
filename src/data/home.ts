@@ -566,39 +566,15 @@ export const DataHomeHandler = {
         title: '推进商品交易市场发展平台经济的指导意见',
         subTitle: 'zhanhuifuwu1',
         src: 'assets/imgs/home/zongHeFuWu/jinrong-5.jpg'
-      },
-      {
-        id: 7,
-        title: '金融服务2',
-        subTitle: 'zhanhuifuwu2',
-        src: 'assets/imgs/home/zongHeFuWu/jinrong-1.jpg'
-      },
-      {
-        id: 8,
-        title: '金融服务3',
-        subTitle: 'zhanhuifuwu3',
-        src: 'assets/imgs/home/zongHeFuWu/jinrong-3.jpg'
-      },
-      {
-        id: 9,
-        title: '金融服务4',
-        subTitle: 'zhanhuifuwu4',
-        src: 'assets/imgs/home/zongHeFuWu/jinrong-2.jpg'
-      },
-      {
-        id: 10,
-        title: '金融服务5',
-        subTitle: 'zhanhuifuwu5',
-        src: 'assets/imgs/home/zongHeFuWu/jinrong-4.jpg'
       }
     ],
     // 金融服务 - 下拉框数据
-    dataSelect2: [
+    /* dataSelect2: [
       { label: '项目一', value: '1' },
       { label: '项目二', value: '2' },
       { label: '项目三', value: '3' },
       { label: '项目四', value: '4' }
-    ],
+    ], */
   },
 
   // 原辅材料机械设备服务 - 菜单

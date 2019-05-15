@@ -45,57 +45,15 @@ export const DataDesignDatabaseHandler = {
       data: [
         {
           id: '1',
-          label: '柜类',
-          subData: [
-            {
-              id: '1-1',
-              label: '柜类一'
-            },
-            {
-              id: '1-2',
-              label: '柜类二'
-            },
-            {
-              id: '1-3',
-              label: '柜类三'
-            }
-          ]
+          label: '柜类'
         },
         {
           id: '2',
-          label: '椅凳类',
-          subData: [
-            {
-              id: '2-1',
-              label: '椅凳类一'
-            },
-            {
-              id: '2-2',
-              label: '椅凳类二'
-            },
-            {
-              id: '2-3',
-              label: '椅凳类三'
-            }
-          ]
+          label: '椅凳类'
         },
         {
           id: '3',
-          label: '床类',
-          subData: [
-            {
-              id: '3-1',
-              label: '床类一'
-            },
-            {
-              id: '3-2',
-              label: '床类二'
-            },
-            {
-              id: '3-3',
-              label: '床类三'
-            }
-          ]
+          label: '床类'
         }
       ]
     }

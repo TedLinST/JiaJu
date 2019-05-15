@@ -27,13 +27,6 @@ export class DesignersGardenComponent implements OnInit {
   // 门户导航
   portalNav: any;
 
-  option1: any = false;
-  option2: any = true;
-  option3: any = '擅长风格 1';
-  option4: any = '';
-  option5: any = '';
-  option6: any = '';
-
   labelArray: KeyCarouselLabelEvent[] = [
     {
       key: 'title',
@@ -57,7 +50,16 @@ export class DesignersGardenComponent implements OnInit {
   // 当前页下标
   activePagaIndex: number = 1;
 
+  // 搜索文本
+  searchValue: any;
+
   listData: any[] = [];
+
+  // 按钮排序激活
+  btnSortActiveMap: any = {
+    experience: 0,
+    score: 0
+  };
 
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
@@ -126,6 +128,51 @@ export class DesignersGardenComponent implements OnInit {
   onPageIndexChange(event: any) {
     this.activePagaIndex = event;
     this.handleListDataPagination(this.dataHandler.DL.data, this.activePagaIndex);
+  }
+
+  /**
+   * 点击按钮进行排序
+   * @param event 
+   */
+  onClickButtonSortChange(event: any, id: any) {
+    this.btnSortActiveMap = {
+      experience: 0,
+      score: 0
+    };
+    this.btnSortActiveMap[id] = event;
+    this.listData = Utils.arrayKeySort(this.dataHandler.DL.data, id, event);
+    this.onSearch();
+  }
+
+  // 搜索
+  onSearch() {
+    this.activePagaIndex = 1;
+    if (this.dataHandler.DL.data && this.searchValue != null) {
+      const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
+      let listData = this.dataHandler.DL.data.filter((row: any) => {
+        if (row.name) {
+          let text = '' + row.name;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.style) {
+          let text = '' + row.style;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.place) {
+          let text = '' + row.place;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+      });
+      this.handleListDataPagination(listData, this.activePagaIndex);
+    } else {
+      this.handleListDataPagination(this.dataHandler.DL.data, this.activePagaIndex);
+    }
   }
 
   /**

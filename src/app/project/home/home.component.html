@@ -255,7 +255,7 @@
       <key-item-chunk-body *ngIf="currentIndexIS == 2" [showItemNumber]="5"
         [isMoreAlignSelect]="true" [isMore]="true"
         (clickMore)="onClickMoreIS2()">
-        <div class="selectIS2" style="margin-bottom: 10px">
+        <!-- <div class="selectIS2" style="margin-bottom: 10px">
           <nz-select nzAllowClear="true" style="width: 300px;"
             nzPlaceHolder="请选择项目" [(ngModel)]="selectValueIS2"
             (ngModelChange)="onSelectIS2()">
@@ -263,7 +263,7 @@
               [nzLabel]="option.label" [nzValue]="option.value">
             </nz-option>
           </nz-select>
-        </div>
+        </div> -->
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="iSdata2" let-index="index">
             <div *ngIf="index < 5" nz-col nzSpan="4">
