@@ -29,6 +29,9 @@ body {
 /* 弹性布局样式 */
 @import "./flex";
 
+/* 栅格布局样式 */
+@import "_grid.scss";
+
 /* 横幅样式 */
 @import "./banner";
 
