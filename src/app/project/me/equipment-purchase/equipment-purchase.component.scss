@@ -4,24 +4,21 @@
     margin: 20px auto 0px;
 
     .filter-row {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      margin-top: 15px;
 
       .search {
         float: right;
-        display: inline-block;
         width: 300px;
       }
     }
 
     .list {
-      margin-top: 15px;
-
       .header,
       .body {
         .row {
           .col {
-            display: inline-block;
-            padding: 6px;
+            padding: 6px 12px;
             text-align: left;
             float: left;
 
@@ -35,7 +32,7 @@
             }
 
             &.col-2 {
-              width: 520px;
+              width: 580px;
 
 
               .title {
@@ -58,7 +55,7 @@
             }
 
             &.col-3 {
-              width: 260px;
+              width: 200px;
             }
 
             &.col-4 {

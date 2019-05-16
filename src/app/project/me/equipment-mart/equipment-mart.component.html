@@ -34,24 +34,16 @@
 
     <!-- 过滤 -->
     <div class="filter-row">
-      <key-button-sort label="销量"
-        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-      <key-button-sort label="热度"
-        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-      <key-button-sort label="价格"
-        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-      <!-- 价格区间 -->
-      <nz-input-number style="margin-left:6px;" [(ngModel)]="minPrice"
-        (nzBlur)="onBlurPriceChange()" [nzPlaceHolder]="'￥请输入'" [nzStep]="1">
-      </nz-input-number>
-      -
-      <nz-input-number [(ngModel)]="maxPrice" [nzStep]="1"
-        (nzBlur)="onBlurPriceChange()" [nzPlaceHolder]="'￥请输入'">
-      </nz-input-number>
 
+      <key-button-sort label="销量" [active]="btnSortActiveMap['qty']"
+        (clickChange)="onClickButtonSortChange($event,'qty')">
+      </key-button-sort>
+      <key-button-sort label="按价格" [active]="btnSortActiveMap['price']"
+        (clickChange)="onClickButtonSortChange($event,'price')">
+      </key-button-sort>
       <div class="search">
         <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-          <input type="text" nz-input placeholder="请输入产品名称"
+          <input type="text" nz-input placeholder="请输入产品名称、设备类型、设备体量、所在地"
             [(ngModel)]="searchValue" />
         </nz-input-group>
         <ng-template #suffixIconButton>
@@ -67,7 +59,7 @@
         <div class="header">
           <div class="row">
             <div class="col col-1">产品图片</div>
-            <div class="col col-2">产品名称</div>
+            <div class="col col-2">产品信息</div>
             <div class="col col-3">所在地</div>
             <div class="col col-4">价格</div>
             <div class="col col-5">联系</div>
@@ -94,7 +86,7 @@
                   <span>产地：{{item.area}}</span>
                   <span>销量：{{item.qty}}</span>
                 </div>
-                <div class="label singleTextBeyondHide">
+                <div class="label">
                   <span>说明：{{item.explain}}</span>
                 </div>
               </div>

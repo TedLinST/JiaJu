@@ -41,10 +41,15 @@ export class EquipmentPurchaseComponent implements OnInit {
   // 当前页下标
   activePagaIndex: number = 1;
 
-  option3: any;
-  minPrice: number;
-  maxPrice: number;
+  // 搜索文本
   searchValue: any;
+
+  // 按钮排序激活
+  btnSortActiveMap: any = {
+    price: 0,
+    totalQty: 0,
+    qty: 0
+  };
 
   validateForm: FormGroup;
 
@@ -152,36 +157,13 @@ export class EquipmentPurchaseComponent implements OnInit {
    * 点击按钮进行排序
    * @param event 
    */
-  onClickButtonSortChange(event: any) {
-    this.listData = Utils.arrayRandomSort(this.listData);
-  }
-
-  /**
-   * 价格输入框失去焦点
-   */
-  onBlurPriceChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
-  }
-
-  /**
-   * 截止日期下拉框
-   * @param option 
-   */
-  onSelectOption3(option: any) {
-    if (this.dataHandler.LIST_DATA && option != null) {
-      const regExp = new RegExp(Utils.escapeRegexp(option), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.date) {
-          let text = '' + row.date;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-      });
-      this.handleListData(listData);
-    } else {
-      this.handleListData(this.dataHandler.LIST_DATA);
-    }
+  onClickButtonSortChange(event: any, id: any) {
+    this.btnSortActiveMap = {
+      price: 0
+    };
+    this.btnSortActiveMap[id] = event;
+    this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
+    this.onSearch();
   }
 
   // 搜索
@@ -192,6 +174,24 @@ export class EquipmentPurchaseComponent implements OnInit {
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
         if (row.title) {
           let text = '' + row.title;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.equipmentType) {
+          let text = '' + row.equipmentType;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.equipmentVolumes) {
+          let text = '' + row.equipmentVolumes;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.location) {
+          let text = '' + row.location;
           if (text.match(regExp)) {
             return true;
           }

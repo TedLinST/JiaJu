@@ -37,9 +37,14 @@ export class EquipmentMartComponent implements OnInit {
   // 当前页下标
   activePagaIndex: number = 1;
 
-  minPrice: number;
-  maxPrice: number;
+  // 搜索文本
   searchValue: any;
+
+  // 按钮排序激活
+  btnSortActiveMap: any = {
+    price: 0,
+    qty: 0
+  };
 
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
@@ -91,15 +96,14 @@ export class EquipmentMartComponent implements OnInit {
    * 点击按钮进行排序
    * @param event 
    */
-  onClickButtonSortChange(event: any) {
-    this.listData = Utils.arrayRandomSort(this.listData);
-  }
-
-  /**
-   * 价格输入框失去焦点
-   */
-  onBlurPriceChange() {
-    this.listData = Utils.arrayRandomSort(this.listData);
+  onClickButtonSortChange(event: any, id: any) {
+    this.btnSortActiveMap = {
+      price: 0,
+      qty: 0
+    };
+    this.btnSortActiveMap[id] = event;
+    this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
+    this.onSearch();
   }
 
   // 搜索
@@ -110,6 +114,24 @@ export class EquipmentMartComponent implements OnInit {
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
         if (row.title) {
           let text = '' + row.title;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.equipmentType) {
+          let text = '' + row.equipmentType;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.equipmentVolumes) {
+          let text = '' + row.equipmentVolumes;
+          if (text.match(regExp)) {
+            return true;
+          }
+        }
+        if (row.location) {
+          let text = '' + row.location;
           if (text.match(regExp)) {
             return true;
           }

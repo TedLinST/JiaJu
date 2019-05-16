@@ -108,34 +108,15 @@
       <key-menu-type [title]="item.title" [data]="item.data"
         (clickType)="onClickType($event)"></key-menu-type>
     </ng-template>
-    <div style="height: 20px;"></div>
     <!-- 过滤 -->
     <div class="filter-row">
-      <key-button-sort label="热度"
-        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-      <key-button-sort label="价格"
-        (clickChange)="onClickButtonSortChange($event)"></key-button-sort>
-      <!-- 价格区间 -->
-      <span style="margin: 0px 5px 0px 15px;">价格区间</span>
-      <nz-input-number [(ngModel)]="minPrice" (nzBlur)="onBlurPriceChange()"
-        [nzPlaceHolder]="'￥请输入'" [nzStep]="1">
-      </nz-input-number>
-      <span style="margin: 0px 5px;">-</span>
-      <nz-input-number [(ngModel)]="maxPrice" [nzStep]="1"
-        (nzBlur)="onBlurPriceChange()" [nzPlaceHolder]="'￥请输入'">
-      </nz-input-number>
-      <!-- 截止日期 -->
-      <span style="margin: 0px 5px 0px 15px;">截止日期</span>
-      <nz-select nzAllowClear="true" name="option1" [(ngModel)]="option3"
-        style="width:140px;" (ngModelChange)="onSelectOption3(option3)">
-        <nz-option nzValue="2019-04-29" nzLabel="2019-04-29"></nz-option>
-        <nz-option nzValue="2019-05-08" nzLabel="2019-05-08"></nz-option>
-        <nz-option nzValue="2019-05-09" nzLabel="2019-05-09"></nz-option>
-      </nz-select>
+      <key-button-sort label="价格" [active]="btnSortActiveMap['price']"
+        (clickChange)="onClickButtonSortChange($event,'price')">
+      </key-button-sort>
       <!-- 搜索 -->
       <div class="search">
         <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-          <input type="text" nz-input placeholder="请输入产品名称"
+          <input type="text" nz-input placeholder="请输入产品名称、设备类型、设备体量、所在地"
             [(ngModel)]="searchValue" />
         </nz-input-group>
         <ng-template #suffixIconButton>
@@ -149,7 +130,7 @@
         <div class="header">
           <div class="row">
             <div class="col col-1">产品图片</div>
-            <div class="col col-2">产品名称</div>
+            <div class="col col-2">产品信息</div>
             <div class="col col-3">所在地</div>
             <div class="col col-4">价格</div>
             <div class="col col-5">联系</div>
