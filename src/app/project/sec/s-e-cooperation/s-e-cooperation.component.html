@@ -322,8 +322,8 @@
           </ng-template>
         </div>
         <div style="padding: 0px 5px;">
-          <key-carousel [data]="dataHandler.SE.data1" nzSpan="4"
-            [labelArray]="labelArray"
+          <key-carousel [data]="dataHandler.SE.data1" nzSpan="4" space="1"
+            [bodyStyle]="{'height':'126px'}" [labelArray]="labelArray"
             (clickItem)="openSeekExpertDetails($event)"></key-carousel>
         </div>
       </key-item-chunk-body>
@@ -444,8 +444,8 @@
             let-index="index">
             <div class="label">
               <a class="singleTextBeyondHide"
-              (click)="onDownloadFile(item.id,item.url)">
-              {{item.BiaoTi}}</a>
+                (click)="onDownloadFile(item.id,item.url)">
+                {{item.BiaoTi}}</a>
             </div>
           </ng-template>
           <div class="clearfix"></div>

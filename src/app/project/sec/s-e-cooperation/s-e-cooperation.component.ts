@@ -31,8 +31,8 @@ export class SECooperationComponent implements OnInit {
 
   labelArray: KeyCarouselLabelEvent[] = [
     { key: 'MingCheng' },
-    { key: 'ZhuanYe' },
-    { key: 'ZhiCheng' }
+    { key: 'ZhiCheng' },
+    { key: 'ZhuanYe' }
   ];
 
   senActiveItem: any;

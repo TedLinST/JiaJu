@@ -16,7 +16,7 @@
                     </key-item-mask-label>
                   </key-item-mask>
                 </div>
-                <div *ngIf="!maskMode" class="body"
+                <div *ngIf="!maskMode" class="body" [ngStyle]="bodyStyle"
                   [class.body-padding]="labelArray != null && labelArray.length > 0"
                   [class.body-bg]="isBodyBg">
                   <ng-template ngFor let-labels [ngForOf]="labelArray">
