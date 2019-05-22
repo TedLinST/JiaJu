@@ -21,7 +21,7 @@ export const PortalRoutes = [
     { path: 'seek-expert', loadChildren: '../project/sec/seek-expert/seek-expert.module#SeekExpertModule' }, // 有困难找专家
     { path: 'file-download', loadChildren: '../project/sec/file-download/file-download.module#FileDownloadModule' }, // 文件下载
     { path: 'integrated-services', loadChildren: '../project/is/integrated-services/integrated-services.module#IntegratedServicesModule' }, // 综合服务
-    // { path: 'exhibition', loadChildren: '../project/is/exhibition/exhibition.module#ExhibitionModule' }, // 展会服务
+    { path: 'exhibition', loadChildren: '../project/is/exhibition/exhibition.module#ExhibitionModule' }, // 展会服务
     // { path: 'furniture-fair', loadChildren: '../project/is/furniture-fair/furniture-fair.module#FurnitureFairModule' }, // 家具展会详细
     // { path: 'pre-registration', loadChildren: '../project/is/pre-registration/pre-registration.module#PreRegistrationModule' }, // 预登记详细
     // { path: 'apply-exhibitors', loadChildren: '../project/is/apply-exhibitors/apply-exhibitors.module#ApplyExhibitorsModule' }, // 申请参展详细

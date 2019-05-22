@@ -1,0 +1,107 @@
+<div class="exhibition">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeTitle="展会服务" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        展会服务
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 国外主要展会 -->
+  <key-item-chunk [enTitle]="dataHandler.FE.enTitle"
+    [title]="dataHandler.FE.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="E-style">
+          <div class="top-title">
+            <div class="title">{{dataHandler.FE.subTtile}}</div>
+            <div class="EnTitle">{{dataHandler.FE.subEnTtile}}</div>
+          </div>
+          <key-carousel [data]="dataHandler.FE.data" nzSpan="6"
+            [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
+          </key-carousel>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 国内主要展会 -->
+  <key-item-chunk [enTitle]="dataHandler.DE.enTitle"
+    [title]="dataHandler.DE.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="E-style">
+          <div class="top-title">
+            <div class="title">{{dataHandler.DE.subTtile}}</div>
+            <div class="EnTitle">{{dataHandler.DE.subEnTtile}}</div>
+          </div>
+          <key-carousel [data]="dataHandler.DE.data" nzSpan="6"
+            [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
+          </key-carousel>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 专门性展会 -->
+  <key-item-chunk [enTitle]="dataHandler.SE.enTitle"
+    [title]="dataHandler.SE.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="E-style">
+          <div class="top-title">
+            <div class="title">{{dataHandler.SE.subTtile}}</div>
+            <div class="EnTitle">{{dataHandler.SE.subEnTtile}}</div>
+          </div>
+          <key-carousel [data]="dataHandler.SE.data" nzSpan="6"
+            [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
+          </key-carousel>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 展会日历 -->
+  <key-item-chunk [enTitle]="dataHandler.EC.enTitle"
+    [title]="dataHandler.EC.title" [menuData]="dataHandler.EC.menuData"
+    (switchIndexChange)="currentIndexEC = $event">
+    <div body>
+      <key-item-chunk-body>
+        <div class="z-row EC-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.EC['data' + currentIndexEC]"
+            let-index="index">
+            <div class="z-col z-col-4">
+              <div class="box">
+                <div class="header">
+                  {{item.date}}
+                </div>
+                <div class="body">
+                  <ng-template ngFor let-subItem [ngForOf]="item.data"
+                    let-index="index">
+                    <div class="label">
+                      {{subItem.title}}
+                      <span class="time">{{subItem.time}}</span>
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

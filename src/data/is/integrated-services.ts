@@ -40,6 +40,35 @@ export const DataIntegratedServicesHandler = {
             src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
           }
         ]
+      },
+      {
+        id: 2,
+        data: [
+          {
+            id: 1,
+            title: '123',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+          },
+          {
+            id: 2,
+            title: '123',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+          },
+          {
+            id: 3,
+            title: '123',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+          },
+          {
+            id: 4,
+            title: '123',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+          }
+        ]
       }
     ],
     // 国外展会
@@ -72,12 +101,70 @@ export const DataIntegratedServicesHandler = {
             src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
           }
         ]
+      },
+      {
+        id: 2,
+        data: [
+          {
+            id: 1,
+            title: '456',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+          },
+          {
+            id: 2,
+            title: '456',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+          },
+          {
+            id: 3,
+            title: '456',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+          },
+          {
+            id: 4,
+            title: '456',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+          }
+        ]
       }
     ],
     // 专门性展会
     data2: [
       {
         id: 1,
+        data: [
+          {
+            id: 1,
+            title: '789',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+          },
+          {
+            id: 2,
+            title: '789',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+          },
+          {
+            id: 3,
+            title: '789',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+          },
+          {
+            id: 4,
+            title: '789',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+          }
+        ]
+      },
+      {
+        id: 2,
         data: [
           {
             id: 1,

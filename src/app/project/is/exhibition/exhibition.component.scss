@@ -1,0 +1,59 @@
+.exhibition {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  .E-style {
+    background-color: #e9eaeb;
+    padding: 10px 10px;
+
+    .top-title {
+      padding-left: 8px;
+      width: 1200px;
+      margin: 0px auto 8px;
+
+      .title {
+        color: #648bff;
+        font-size: 20px;
+      }
+
+      .EnTitle {
+        color: #abacb0;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .EC-style {
+    .box {
+      margin: 0px 3px 6px 3px;
+
+      .header {
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #92d2b1;
+        color: #222;
+        text-align: center;
+      }
+
+      .body {
+        padding: 8px 12px;
+        background-color: #f1f1f1;
+        color: #555;
+
+        .label {
+          margin-bottom: 3px;
+          font-size: 15px;
+
+          .time {
+            float: right;
+            font-size: 13px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -198,8 +198,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('exhibition');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('exhibition');
   }
 
   /**
