@@ -57,8 +57,7 @@
       }
     }
 
-    &:hover,
-    &.active {
+    &:hover {
       color: #333;
       background-color: #76bb78;
       cursor: pointer;
@@ -80,6 +79,12 @@
           border-top: 6px solid #fff;
         }
       }
+    }
+
+    &.active {
+      color: #333;
+      background-color: #76bb78;
+      cursor: pointer;
     }
   }
 }

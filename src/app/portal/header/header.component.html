@@ -30,7 +30,41 @@
           <li (click)="portalNav.openFileDownload($event)">文件下载</li>
         </ul>
       </li>
-      <li (click)="portalNav.openIntegratedServices($event)">综合服务</li>
+      <li (click)="portalNav.openIntegratedServices($event)">
+        综合服务
+        <ul class="sub-menu-ul">
+          <li class="arrow" (click)="portalNav.openExhibition($event)">展会服务
+            <ul class="three-menu-ul">
+              <li (click)="portalNav.openFurnitureFair($event)">家具展会详细</li>
+              <li (click)="portalNav.openPreRegistration($event)">预登记详细</li>
+              <li (click)="portalNav.openApplyExhibitors($event)">申请参展详细</li>
+            </ul>
+          </li>
+          <li class="arrow" (click)="portalNav.openGovernment($event)">政府服务
+            <ul class="three-menu-ul">
+              <li (click)="portalNav.openFurnitureStandard($event)">家具国家标准</li>
+              <li (click)="portalNav.openPatentService($event)">专利服务</li>
+            </ul>
+          </li>
+          <li class="arrow" (click)="portalNav.openFinance($event)">金融服务
+            <ul class="three-menu-ul">
+              <li (click)="portalNav.openFindingFunds($event)">找资金</li>
+              <li (click)="portalNav.openSelectedItems($event)">选项目</li>
+              <li (click)="portalNav.openOfflineFinancing($event)">线下融资活动</li>
+              <li (click)="portalNav.openFundInformation($event)">资金信息详细</li>
+              <li (click)="portalNav.openProjectInformation($event)">项目信息详细</li>
+            </ul>
+          </li>
+          <li class="arrow" (click)="portalNav.openFurnitureDelivery($event)">家具送装
+            <ul class="three-menu-ul">
+              <li (click)="portalNav.openDeliveryOrder($event)">送装下单</li>
+              <li (click)="portalNav.openServiceIntroduction($event)">服务介绍</li>
+              <li (click)="portalNav.openMasterJoined($event)">师傅加入</li>
+              <li (click)="portalNav.openMerchantOpening($event)">商家开通</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
       <li (click)="portalNav.openMaterialEquipment($event)">原辅材料机械设备服务
         <ul class="sub-menu-ul">
           <li (click)="portalNav.openMaterialMart($event)">原辅材料商城</li>
