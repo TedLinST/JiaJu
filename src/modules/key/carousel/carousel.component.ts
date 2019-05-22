@@ -8,6 +8,9 @@ import { KeyCarouselLabelEvent } from './carousel-label.event';
 export class CarouselComponent implements OnInit {
 
   // 切换下标回调
+  @Output() clickItemIndex: EventEmitter<any> = new EventEmitter<any>();
+
+  // 切换内容回调
   @Output() clickItem: EventEmitter<any> = new EventEmitter<any>();
 
   // 数据源
@@ -45,8 +48,9 @@ export class CarouselComponent implements OnInit {
   /**
    * 点击
    */
-  onClick(id: any) {
-    this.clickItem.emit(id);
+  onClick(item: any) {
+    this.clickItemIndex.emit(item.id);
+    this.clickItem.emit(item);
   }
 
 }

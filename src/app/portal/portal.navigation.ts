@@ -188,6 +188,204 @@ export class PortalNavigation {
    * 综合服务
    */
   openIntegratedServices(event?: any) {
+    this.router.navigateByUrl('integrated-services');
+  }
+
+  /**
+   * 综合服务 - 展会服务
+   */
+  openExhibition(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('exhibition');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 展会服务 - 家具展会详细
+   */
+  openFurnitureFair(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('furniture-fair');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 展会服务 - 预登记详细
+   */
+  openPreRegistration(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('pre-registration');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 展会服务 - 申请参展详细
+   */
+  openApplyExhibitors(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('apply-exhibitors');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 政府服务
+   */
+  openGovernment(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('government');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 政府服务 - 家具国家标准
+   */
+  openFurnitureStandard(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('furniture-standard');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 政府服务 - 专利服务
+   */
+  openPatentService(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('patent-service');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 金融服务
+   */
+  openFinance(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('finance');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 金融服务 - 找资金
+   */
+  openFindingFunds(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('finding-funds');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 金融服务 - 选项目
+   */
+  openSelectedItems(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('selected-items');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 金融服务 - 线下融资活动
+   */
+  openOfflineFinancing(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('offline-financing');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 金融服务 - 资金信息详细
+   */
+  openFundInformation(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('fund-information');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 金融服务 - 项目信息详细
+   */
+  openProjectInformation(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('project-information');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 家具送装
+   */
+  openFurnitureDelivery(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('furniture-delivery');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 家具送装 - 送装下单
+   */
+  openDeliveryOrder(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('delivery-order');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 家具送装 - 服务介绍
+   */
+  openServiceIntroduction(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('service-introduction');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 家具送装 - 师傅加入
+   */
+  openMasterJoined(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('master-joined');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 家具送装 - 商家开通
+   */
+  openMerchantOpening(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('merchant-opening');
     this.navigateDeveloping();
   }
 

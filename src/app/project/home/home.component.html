@@ -101,7 +101,7 @@
       <key-item-chunk-body *ngIf="currentIndexPD == 2" [isMore]="true"
         (clickMore)="portalNav.openDesignersGarden()">
         <key-carousel [data]="dataHandler.PD.data2" [labelArray]="labelArrayPD2"
-          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+          (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>
       </key-item-chunk-body>
       <!-- 设计软件集成 -->
       <key-item-chunk-body *ngIf="currentIndexPD == 3" [isMore]="true"
@@ -212,7 +212,7 @@
         (clickMore)="portalNav.openSeekExpert()">
         <key-carousel [data]="dataHandler.SEC.data3" nzSpan="4"
           [labelArray]="labelArraySEC3"
-          (clickItem)="openSeekExpertDetails($event)">
+          (clickItemIndex)="openSeekExpertDetails($event)">
         </key-carousel>
       </key-item-chunk-body>
     </div>
@@ -232,7 +232,7 @@
           </div>
           <div class="key-item-chunk-body-max-content">
             <key-carousel [data]="dataHandler.IS.data0" nzSpan="6"
-              [maskMode]="true" (clickItem)="openExhibitionDetails($event)">
+              [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
             </key-carousel>
           </div>
         </div>
@@ -246,7 +246,7 @@
           </div>
           <div class="key-item-chunk-body-max-content">
             <key-carousel [data]="dataHandler.IS.data1" nzSpan="6"
-              [maskMode]="true" (clickItem)="openGovernmentDetails($event)">
+              [maskMode]="true" (clickItemIndex)="openGovernmentDetails($event)">
             </key-carousel>
           </div>
         </div>
@@ -440,7 +440,7 @@
               </div>
             </div>
             <key-carousel [data]="dataHandler.FM.data2" nzSpan="5"
-              [rowArray]="[0,1]" (clickItem)="openBrandDetails($event)">
+              [rowArray]="[0,1]" (clickItemIndex)="openBrandDetails($event)">
             </key-carousel>
           </div>
         </div>

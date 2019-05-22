@@ -257,8 +257,8 @@ export const DataSECooperationHandler = {
 
   // 企业招聘
   ER: {
-    title: '企业需求',
-    enTitle: 'BUSINESS NEEDS',
+    title: '企业招聘',
+    enTitle: 'ENTERPRISE RECRUITMENT',
     menuData: [
       { title: ' 研究生应聘' },
       { title: '本专科生应聘' },

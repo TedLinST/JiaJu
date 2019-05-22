@@ -1,24 +1,4 @@
 export const PortalRoutes = [
-    // 首页
-    // { path: 'home', loadChildren: '../project/home/home.module#HomeModule' },
-    // 产品设计开发服务
-    // { path: 'product-design', loadChildren: '../project/product-design/product-design.module#ProductDesignModule' },
-    // 产品设计开发服务 - 大数据分析
-    // { path: 'data-analysis', loadChildren: '../project/data-analysis/data-analysis.module#DataAnalysisModule' },
-    // 产品设计开发服务 - 大数据分析 - 详情
-    // { path: 'data-analysis-details/:id', loadChildren: '../project/data-analysis-details/data-analysis-details.module#DataAnalysisDetailsModule' },
-    // 产品设计开发服务 - 产品设计资料库
-    // { path: 'design-database', loadChildren: '../project/design-database/design-database.module#DesignDatabaseModule' },
-    // 产品设计开发服务 - 设计师园地
-    // { path: 'designer-garden', loadChildren: '../project/designer-garden/designer-garden.module#DesignerGardenModule' },
-    // 产品设计开发服务 - 设计软件集成
-    // { path: 'software-integration', loadChildren: '../project/software-integration/software-integration.module#SoftwareIntegrationModule' },
-    // 原辅材料机械设备服务
-    // { path: 'raw-material', loadChildren: '../project/raw-material/raw-material.module#RawMaterialModule' },
-    // 原辅材料机械设备服务 - 原辅材料 - 木材团购
-    // { path: 'wood-group-buy', loadChildren: '../project/wood-group-buy/wood-group-buy.module#WoodGroupBuyModule' },
-
-
     { path: 'home', loadChildren: '../project/home/home.module#HomeModule' }, // 首页
     { path: 'product-design', loadChildren: '../project/pd/product-design/product-design.module#ProductDesignModule' }, // 产品设计开发服务
     { path: 'data-analysis', loadChildren: '../project/pd/data-analysis/data-analysis.module#DataAnalysisModule' }, // 大数据分析
@@ -40,11 +20,25 @@ export const PortalRoutes = [
     { path: 'se-news', loadChildren: '../project/sec/se-news/se-news.module#SeNewsModule' }, // 校企新闻
     { path: 'seek-expert', loadChildren: '../project/sec/seek-expert/seek-expert.module#SeekExpertModule' }, // 有困难找专家
     { path: 'file-download', loadChildren: '../project/sec/file-download/file-download.module#FileDownloadModule' }, // 文件下载
-    // { path: 'integrated-services', loadChildren: '../project/is/integrated-services/integrated-services.module#IntegratedServicesModule' }, // 综合服务
+    { path: 'integrated-services', loadChildren: '../project/is/integrated-services/integrated-services.module#IntegratedServicesModule' }, // 综合服务
     // { path: 'exhibition', loadChildren: '../project/is/exhibition/exhibition.module#ExhibitionModule' }, // 展会服务
+    // { path: 'furniture-fair', loadChildren: '../project/is/furniture-fair/furniture-fair.module#FurnitureFairModule' }, // 家具展会详细
+    // { path: 'pre-registration', loadChildren: '../project/is/pre-registration/pre-registration.module#PreRegistrationModule' }, // 预登记详细
+    // { path: 'apply-exhibitors', loadChildren: '../project/is/apply-exhibitors/apply-exhibitors.module#ApplyExhibitorsModule' }, // 申请参展详细
     // { path: 'government', loadChildren: '../project/is/government/government.module#GovernmentModule' }, // 政府服务
+    // { path: 'furniture-standard', loadChildren: '../project/is/furniture-standard/furniture-standard.module#FurnitureStandardModule' }, // 家具国家标准
+    // { path: 'patent-service', loadChildren: '../project/is/patent-service/patent-service.module#PatentServiceModule' }, // 专利服务
     // { path: 'finance', loadChildren: '../project/is/finance/finance.module#FinanceModule' }, // 金融服务
-    // { path: 'logistics', loadChildren: '../project/is/logistics/logistics.module#LogisticsModule' }, // 物流售后服务
+    // { path: 'finding-funds', loadChildren: '../project/is/finding-funds/finding-funds.module#FindingFundsModule' }, // 找资金
+    // { path: 'selected-items', loadChildren: '../project/is/selected-items/selected-items.module#SelectedItemsModule' }, // 选项目
+    // { path: 'offline-financing', loadChildren: '../project/is/offline-financing/offline-financing.module#OfflineFinancingModule' }, // 线下融资活动
+    // { path: 'fund-information', loadChildren: '../project/is/fund-information/fund-information.module#FundInformationModule' }, // 资金信息详细
+    // { path: 'project-information', loadChildren: '../project/is/project-information/project-information.module#ProjectInformationModule' }, // 项目信息详细
+    // { path: 'furniture-delivery', loadChildren: '../project/is/furniture-delivery/furniture-delivery.module#FurnitureDeliveryModule' }, // 家具送装
+    // { path: 'delivery-order', loadChildren: '../project/is/delivery-order/delivery-order.module#DeliveryOrderModule' }, // 送装下单
+    // { path: 'service-introduction', loadChildren: '../project/is/service-introduction/service-introduction.module#ServiceIntroductionModule' }, // 服务介绍
+    // { path: 'master-joined', loadChildren: '../project/is/master-joined/master-joined.module#MasterJoinedModule' }, // 师傅加入
+    // { path: 'merchant-opening', loadChildren: '../project/is/merchant-opening/merchant-opening.module#MerchantOpeningModule' }, // 商家开通
     { path: 'material-equipment', loadChildren: '../project/me/material-equipment/material-equipment.module#MaterialEquipmentModule' }, // 原辅材料机械设备服务
     { path: 'material-mart', loadChildren: '../project/me/material-mart/material-mart.module#MaterialMartModule' }, // 原辅材料商城
     // { path: 'material-shopping', loadChildren: '../project/me/material-shopping/material-shopping.module#MaterialShoppingModule' }, // 原辅材料团购

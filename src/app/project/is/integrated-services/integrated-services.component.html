@@ -1,0 +1,217 @@
+<div class="integrated-services">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        综合服务
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 展会服务 -->
+  <key-item-chunk [enTitle]="dataHandler.ES.enTitle"
+    [title]="dataHandler.ES.title" [menuData]="dataHandler.ES.menuData"
+    (switchIndexChange)="currentIndexES = $event">
+    <div body>
+      <!-- 国内展会 -->
+      <key-item-chunk-body *ngIf="currentIndexES == 0" [isMore]="true"
+        (clickMore)="portalNav.openExhibition()">
+        <key-carousel [data]="dataHandler.ES.data0" nzSpan="6" [maskMode]="true"
+          (clickItem)="openExhibitionDetails($event)">
+        </key-carousel>
+      </key-item-chunk-body>
+      <!-- 国外展会 -->
+      <key-item-chunk-body *ngIf="currentIndexES == 1" [isMore]="true"
+        (clickMore)="portalNav.openExhibition()">
+        <key-carousel [data]="dataHandler.ES.data1" nzSpan="6" [maskMode]="true"
+          (clickItem)="openExhibitionDetails($event)">
+        </key-carousel>
+      </key-item-chunk-body>
+      <!-- 专门性展会 -->
+      <key-item-chunk-body *ngIf="currentIndexES == 2" [isMore]="true"
+        (clickMore)="portalNav.openExhibition()">
+        <key-carousel [data]="dataHandler.ES.data2" nzSpan="6" [maskMode]="true"
+          (clickItem)="openExhibitionDetails($event)">
+        </key-carousel>
+      </key-item-chunk-body>
+
+      <key-item-chunk-body>
+        <div class="ES-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">展会详情介绍</div>
+                <div class="body">
+                  <div class="title">{{currentTitleES}}</div>
+                  <div>{{currentContentES}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">展会资讯</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.ES.data3"
+                    let-index="index">
+                    <div class="label">
+                      <span class="time">{{item.time}}</span>
+                      {{item.title}}
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 政府服务 -->
+  <key-item-chunk [enTitle]="dataHandler.GS.enTitle"
+    [title]="dataHandler.GS.title" [menuData]="dataHandler.GS.menuData"
+    (switchIndexChange)="currentIndexGS = $event">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openGovernment()">
+        <div class="GS-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">企业信息</div>
+                <div class="body">
+                  <div class="z-row">
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img
+                          [src]="dataHandler.GS['data'+currentIndexGS].QiYe[0].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.GS['data'+currentIndexGS].QiYe[0].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img
+                          [src]="dataHandler.GS['data'+currentIndexGS].QiYe[1].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.GS['data'+currentIndexGS].QiYe[1].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">政策信息</div>
+                <div class="body">
+                  <ng-template ngFor let-item
+                    [ngForOf]="dataHandler.GS['data'+currentIndexGS].ZhengCe"
+                    let-index="index">
+                    <div class="label">
+                      <span class="time">{{item.time}}</span>
+                      {{item.title}}
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 金融服务 -->
+  <key-item-chunk [enTitle]="dataHandler.FS.enTitle"
+    [title]="dataHandler.FS.title" [menuData]="dataHandler.FS.menuData"
+    (switchIndexChange)="currentIndexFS = $event">
+    <div body>
+      <key-item-chunk-body *ngIf="currentIndexFS == 0" [isMore]="true"
+        (clickMore)="portalNav.openFinance()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FS.data0"
+            let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-margin-3"
+                (click)="openFinanceDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+      <key-item-chunk-body *ngIf="currentIndexFS == 1" [isMore]="true"
+        (clickMore)="portalNav.openFinance()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FS.data1"
+            let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-margin-3"
+                (click)="openFinanceDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 物流售后服务 -->
+  <key-item-chunk [enTitle]="dataHandler.LS.enTitle"
+    [title]="dataHandler.LS.title">
+    <div body>
+      <key-item-chunk-body [showItemNumber]="5" [isMore]="true"
+        (clickMore)="portalNav.openFurnitureDelivery()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.LS.data"
+            let-index="index">
+            <div nz-col nzSpan="4">
+              <div class="item-box item-box-margin-1"
+                (click)="openFurnitureDeliveryDetails(item.id)">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isMaskPaved]="true">
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.enTitle">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+
+</div>

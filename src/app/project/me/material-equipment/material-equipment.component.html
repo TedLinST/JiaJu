@@ -76,7 +76,7 @@
         (clickMore)="portalNav.openMaterialPurchase()">
         <key-carousel [data]="dataHandler.MP.data" nzSpan="4"
           arrowType="vertical-right-out"
-          (clickItem)="openMaterialPurchaseDetails($event)"></key-carousel>
+          (clickItemIndex)="openMaterialPurchaseDetails($event)"></key-carousel>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>
@@ -115,7 +115,7 @@
       <key-item-chunk-body [isMore]="true"
         (clickMore)="portalNav.openTimberAuction()">
         <key-carousel [data]="dataHandler.TA.data" nzSpan="4"
-          (clickItem)="openTimberAuctionDetails($event)"></key-carousel>
+          (clickItemIndex)="openTimberAuctionDetails($event)"></key-carousel>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>
@@ -127,7 +127,7 @@
       <key-item-chunk-body [isMore]="true"
         (clickMore)="portalNav.openEquipmentMart()">
         <key-carousel [data]="dataHandler.EM.data" nzSpan="4"
-          (clickItem)="openEquipmentMartDetails($event)"></key-carousel>
+          (clickItemIndex)="openEquipmentMartDetails($event)"></key-carousel>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>
@@ -139,7 +139,7 @@
       <key-item-chunk-body [isMore]="true"
         (clickMore)="portalNav.openEquipmentSupplier()">
         <key-carousel [data]="dataHandler.ES.data" nzSpan="4"
-          (clickItem)="openEquipmentSupplierDetails($event)"></key-carousel>
+          (clickItemIndex)="openEquipmentSupplierDetails($event)"></key-carousel>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>

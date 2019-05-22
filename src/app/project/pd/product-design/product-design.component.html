@@ -72,21 +72,21 @@
         (clickMore)="onClickMoreDG0()">
         <key-carousel [data]="dataHandler.DG.data0" nzSpan="4"
           [labelArray]="labelArrayDG"
-          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+          (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>
       </key-item-chunk-body>
       <!-- 新锐设计师 -->
       <key-item-chunk-body *ngIf="currentIndexDG == 1" [isMore]="true"
         (clickMore)="onClickMoreDG1()">
         <key-carousel [data]="dataHandler.DG.data1" nzSpan="4"
           [labelArray]="labelArrayDG"
-          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+          (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>
       </key-item-chunk-body>
       <!-- 设计师论坛 -->
       <key-item-chunk-body *ngIf="currentIndexDG == 2" [isMore]="true"
         (clickMore)="onClickMoreDG2()">
         <key-carousel [data]="dataHandler.DG.data2" nzSpan="4"
           [labelArray]="labelArrayDG"
-          (clickItem)="openDesignersGardenDetails($event)"></key-carousel>
+          (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>

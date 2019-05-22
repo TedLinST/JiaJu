@@ -131,4 +131,90 @@ export class ConstantHandler {
     }
   ];
 
+  // 综合服务 - 横幅图片
+  public static CH_IS_BANNER_SRC = 'assets/imgs/integrated-services/banner.jpg';
+
+  // 综合服务 - 横幅菜单
+  public static CH_IS_BANNER_MENU = [
+    {
+      id: '1',
+      title: '展会服务',
+      subMenu: [
+        {
+          id: '1-1',
+          title: '家具展会详细',
+        },
+        {
+          id: '1-2',
+          title: '预登记详细',
+        },
+        {
+          id: '1-3',
+          title: '申请参展详细',
+        }
+      ]
+    },
+    {
+      id: '2',
+      title: '政府服务',
+      subMenu: [
+        {
+          id: '2-1',
+          title: '家具国家标准',
+        },
+        {
+          id: '2-2',
+          title: '专利服务',
+        }
+      ]
+    },
+    {
+      id: '3',
+      title: '金融服务',
+      subMenu: [
+        {
+          id: '3-1',
+          title: '找资金',
+        },
+        {
+          id: '3-2',
+          title: '选项目',
+        },
+        {
+          id: '3-3',
+          title: '线下融资活动',
+        },
+        {
+          id: '3-4',
+          title: '资金信息详细',
+        },
+        {
+          id: '3-5',
+          title: '项目信息详细',
+        }
+      ]
+    },
+    {
+      id: '4',
+      title: '家具送装',
+      subMenu: [
+        {
+          id: '4-1',
+          title: '送装下单',
+        },
+        {
+          id: '4-2',
+          title: '服务介绍',
+        },
+        {
+          id: '4-3',
+          title: '师傅加入',
+        },
+        {
+          id: '4-4',
+          title: '商家开通',
+        }
+      ]
+    }
+  ];
 }
