@@ -208,8 +208,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('furniture-fair');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('furniture-fair');
   }
 
   /**

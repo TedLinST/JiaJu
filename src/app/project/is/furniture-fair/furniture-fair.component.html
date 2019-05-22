@@ -1,0 +1,143 @@
+<div class="furniture-fair">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="家具展会详细" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openExhibition()">展会服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        家具展会详细
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 展会详细介绍与展会资讯 -->
+  <key-item-chunk [enTitle]="dataHandler.EDEI.enTitle"
+    [title]="dataHandler.EDEI.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="EDEI-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">展会详情介绍</div>
+                <div class="body">
+                  <div class="title">{{dataHandler.EDEI.data0.title}}</div>
+                  <div>{{dataHandler.EDEI.data0.content}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">展会资讯</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.EDEI.data1"
+                    let-index="index">
+                    <div class="label">
+                      <span class="time">{{item.time}}</span>
+                      {{item.title}}
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <key-item-chunk-body [showItemNumber]="5">
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.EDEI.data2"
+              let-index="index">
+              <div nz-col nzSpan="4">
+                <div class="item-box item-box-margin-1"
+                  (click)="openEDEIDetails(item.id)">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask [isMaskPaved]="true">
+                      <key-item-mask-label [label]="item.title">
+                      </key-item-mask-label>
+                      <key-item-mask-label [label]="item.enTitle">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </key-item-chunk-body>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 展会回顾与预告 -->
+  <key-item-chunk [enTitle]="dataHandler.ERP.enTitle"
+    [title]="dataHandler.ERP.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="ERP-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box" style="padding-right: 10px">
+                <div class="header">本届展会</div>
+                <div class="body">
+                  <div nz-row>
+                    <ng-template ngFor let-item
+                      [ngForOf]="dataHandler.ERP.data0" let-index="index">
+                      <div nz-col nzSpan="12">
+                        <div class="item-box item-box-margin-5"
+                          style="height: 289px;margin-bottom: 10px;">
+                          <div class="header">
+                            <img [src]="item.src">
+                            <key-item-mask>
+                              <key-item-mask-label [label]="item.title">
+                              </key-item-mask-label>
+                            </key-item-mask>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box" style="padding-left: 10px">
+                <div class="header">往届展会</div>
+                <div class="body">
+                  <div nz-row>
+                    <ng-template ngFor let-item
+                      [ngForOf]="dataHandler.ERP.data1" let-index="index">
+                      <div nz-col nzSpan="12">
+                        <div class="item-box item-box-margin-5"
+                          style="height: 289px;margin-bottom: 10px;">
+                          <div class="header">
+                            <img [src]="item.src">
+                            <key-item-mask>
+                              <key-item-mask-label [label]="item.title">
+                              </key-item-mask-label>
+                            </key-item-mask>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>
