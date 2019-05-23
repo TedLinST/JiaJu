@@ -74,14 +74,14 @@ export const DataSchoolProjectHandler = {
   LIST_DATA: [
     {
       id: 1,
-      MingCheng: '这是项目名称X',
-      FaBuXueXiao: 'XXXX学校',
-      FaBuShiJian: '2019-05-13 120:00:01',
-      CengCi: '层次3',
-      BiaoQian: '奖学金',
-      FenLei: '分类一',
+      MingCheng: '人造板节能环保制造技术研究与示范',
+      FaBuXueXiao: '中南林业科技大学',
+      FaBuShiJian: '2018年12月6日',
+      CengCi: '博士',
+      BiaoQian: '本项目着力于研究采用更加科学合理的手段，在人造板制造过程中达到节能环保的，并推广该技术',
+      FenLei: '科研项目',
       LaiYuan: 'XXXXX',
-      src: 'assets/imgs/school-project/xuexiaoxiangmu.jpg'
+      src: 'assets/imgs/school-project/school-1.jpg'
     },
     {
       id: 2,
@@ -92,7 +92,7 @@ export const DataSchoolProjectHandler = {
       BiaoQian: '奖学金',
       FenLei: '分类一',
       LaiYuan: 'XXXXX',
-      src: 'assets/imgs/school-project/xuexiaoxiangmu.jpg'
+      src: 'assets/imgs/school-project/school-2.jpg'
     },
     {
       id: 3,
@@ -103,7 +103,7 @@ export const DataSchoolProjectHandler = {
       BiaoQian: '奖学金',
       FenLei: '分类一',
       LaiYuan: 'XXXXX',
-      src: 'assets/imgs/school-project/xuexiaoxiangmu.jpg'
+      src: 'assets/imgs/school-project/school-3.jpg'
     },
     {
       id: 4,
@@ -114,7 +114,7 @@ export const DataSchoolProjectHandler = {
       BiaoQian: '奖学金',
       FenLei: '分类二',
       LaiYuan: 'XXXXX',
-      src: 'assets/imgs/school-project/xuexiaoxiangmu.jpg'
+      src: 'assets/imgs/school-project/school-4.jpg'
     },
     {
       id: 5,
@@ -125,7 +125,7 @@ export const DataSchoolProjectHandler = {
       BiaoQian: '奖学金',
       FenLei: '分类二',
       LaiYuan: 'XXXXX',
-      src: 'assets/imgs/school-project/xuexiaoxiangmu.jpg'
+      src: 'assets/imgs/school-project/school-5.jpg'
     },
     {
       id: 6,
@@ -136,7 +136,7 @@ export const DataSchoolProjectHandler = {
       BiaoQian: '奖学金',
       FenLei: '分类二',
       LaiYuan: 'XXXXX',
-      src: 'assets/imgs/school-project/xuexiaoxiangmu.jpg'
+      src: 'assets/imgs/school-project/school-6.jpg'
     },
     {
       id: 7,
@@ -147,7 +147,7 @@ export const DataSchoolProjectHandler = {
       BiaoQian: '奖学金',
       FenLei: '分类二',
       LaiYuan: 'XXXXX',
-      src: 'assets/imgs/school-project/xuexiaoxiangmu.jpg'
+      src: 'assets/imgs/school-project/school-7.jpg'
     },
     {
       id: 8,
