@@ -1,0 +1,330 @@
+<div class="government">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeTitle="政府服务" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        政府服务
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 政策资讯区 -->
+  <key-item-chunk [enTitle]="dataHandler.PIA.enTitle"
+    [title]="dataHandler.PIA.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="PIA-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">最新资讯</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.PIA.data"
+                    let-index="index">
+                    <div class="label singleTextBeyondHide"
+                      (click)="setItemInfoPIA(item)">
+                      <span class="time">{{item.date}}</span>
+                      {{item.title}}
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">资讯详情</div>
+                <div class="body">
+                  <div class="title">{{currentTitlePIA}}</div>
+                  <div>{{currentContentPIA}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 家具国家标准区 -->
+  <key-item-chunk [enTitle]="dataHandler.FNSD.enTitle"
+    [title]="dataHandler.FNSD.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openFurnitureStandard()">
+        <div class="FNSD-style">
+          <div class="z-row">
+            <div class="z-col z-col-3">
+              <div class="box">
+                <div class="header">ISO 国际标准</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.FNSD.data0"
+                    let-index="index">
+                    <div class="label singleTextBeyondHide">{{item.title}}</div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-3">
+              <div class="box">
+                <div class="header">GB 中国国家标准</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.FNSD.data1"
+                    let-index="index">
+                    <div class="label singleTextBeyondHide">{{item.title}}</div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-3">
+              <div class="box">
+                <div class="header">行业标准</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.FNSD.data2"
+                    let-index="index">
+                    <div class="label singleTextBeyondHide">{{item.title}}</div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 专利服务区 -->
+  <key-item-chunk [enTitle]="dataHandler.PSA.enTitle"
+    [title]="dataHandler.PSA.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openPatentService()">
+        <div class="PSA-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">国家专利局</div>
+                <div class="body">
+                  <div class="z-row">
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img [src]="dataHandler.PSA.data0[0].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.PSA.data0[0].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img [src]="dataHandler.PSA.data0[1].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.PSA.data0[1].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">专利政策</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.PSA.data1"
+                    let-index="index">
+                    <div class="label">
+                      <span class="time">{{item.date}}</span>
+                      {{item.title}}
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 税务服务区 -->
+  <key-item-chunk [enTitle]="dataHandler.TSA.enTitle"
+    [title]="dataHandler.TSA.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="TSA-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">国家税务局</div>
+                <div class="body">
+                  <div class="z-row">
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img [src]="dataHandler.TSA.data0[0].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.TSA.data0[0].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img [src]="dataHandler.TSA.data0[1].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.TSA.data0[1].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">税务政策</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.TSA.data1"
+                    let-index="index">
+                    <div class="label">
+                      <span class="time">{{item.date}}</span>
+                      {{item.title}}
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 环保服务区 -->
+  <key-item-chunk [enTitle]="dataHandler.ESA.enTitle"
+    [title]="dataHandler.ESA.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="ESA-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">环保服务企业</div>
+                <div class="body">
+                  <div class="z-row">
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img [src]="dataHandler.ESA.data0[0].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.ESA.data0[0].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img [src]="dataHandler.ESA.data0[1].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.ESA.data0[1].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">国家环保政策</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.ESA.data1"
+                    let-index="index">
+                    <div class="label">
+                      <span class="time">{{item.date}}</span>
+                      {{item.title}}
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 工商服务区 -->
+  <key-item-chunk [enTitle]="dataHandler.BSA.enTitle"
+    [title]="dataHandler.BSA.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="BSA-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">各地工商局</div>
+                <div class="body">
+                  <div class="z-row">
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img [src]="dataHandler.BSA.data0[0].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.BSA.data0[0].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                    <div class="z-col z-col-2">
+                      <div class="img-box" style="width: 260px;height: 276px;">
+                        <img [src]="dataHandler.BSA.data0[1].src">
+                        <key-item-mask>
+                          <key-item-mask-label
+                            [label]="dataHandler.BSA.data0[1].title">
+                          </key-item-mask-label>
+                        </key-item-mask>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">工商政策</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.BSA.data1"
+                    let-index="index">
+                    <div class="label">
+                      <span class="time">{{item.date}}</span>
+                      {{item.title}}
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+</div>

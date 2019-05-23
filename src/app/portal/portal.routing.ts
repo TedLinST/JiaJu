@@ -25,7 +25,7 @@ export const PortalRoutes = [
     { path: 'furniture-fair', loadChildren: '../project/is/furniture-fair/furniture-fair.module#FurnitureFairModule' }, // 家具展会详细
     // { path: 'pre-registration', loadChildren: '../project/is/pre-registration/pre-registration.module#PreRegistrationModule' }, // 预登记详细
     { path: 'apply-exhibitors', loadChildren: '../project/is/apply-exhibitors/apply-exhibitors.module#ApplyExhibitorsModule' }, // 申请参展详细
-    // { path: 'government', loadChildren: '../project/is/government/government.module#GovernmentModule' }, // 政府服务
+    { path: 'government', loadChildren: '../project/is/government/government.module#GovernmentModule' }, // 政府服务
     // { path: 'furniture-standard', loadChildren: '../project/is/furniture-standard/furniture-standard.module#FurnitureStandardModule' }, // 家具国家标准
     // { path: 'patent-service', loadChildren: '../project/is/patent-service/patent-service.module#PatentServiceModule' }, // 专利服务
     // { path: 'finance', loadChildren: '../project/is/finance/finance.module#FinanceModule' }, // 金融服务
