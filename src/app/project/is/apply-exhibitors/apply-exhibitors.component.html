@@ -1,0 +1,492 @@
+<div class="apply-exhibitors">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="申请参展详细" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openExhibition()">展会服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        申请参展详细
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 申请参展详细 -->
+  <key-item-chunk [enTitle]="dataHandler.AE.enTitle"
+    [title]="dataHandler.AE.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="AE-style">
+          <div class="title">{{dataHandler.AE.data.title}}</div>
+          <div class="date">（{{dataHandler.AE.data.date}}）</div>
+          <div class="subTitle">参展商回执表</div>
+          <div class="subEnTitle">SPACE APPLICATION FROM</div>
+          <div class="p">
+            本公司需要 Weneed： 标准展位 STANDARD BOOTH
+            <span class="underline" style="width: 550px;"><samp></samp></span>
+            个 UNIT (9㎡/UNIT)
+          </div>
+          <div class="p">
+            公司名称 COMPANY：
+            <span class="underline" style="width: 920px;"><samp></samp></span>
+          </div>
+          <div class="p">
+            地址 ADDRESS：
+            <span class="underline" style="width: 962px;"><samp></samp></span>
+          </div>
+          <div class="p">
+            国家及地区 COUNTRY：
+            <span class="underline" style="width: 907px;"><samp></samp></span>
+          </div>
+          <div class="p">
+            手机 MOBILE：
+            <span class="underline" style="width: 975px;"><samp></samp></span>
+          </div>
+          <div class="p">
+            <div class="p4">
+              产品市场 TARGET MARKET：
+            </div>
+            <span class="space"></span>
+            <span class="square"><samp></samp></span>国内市场 CHINA
+            <span class="space"></span>
+            <span class="square"><samp></samp></span>外销市场 WORLDWIDE
+            （出口国家 WHICH COUNTRIES
+            <span class="underline" style="width: 420px;"><samp></samp></span>）
+          </div>
+          <div class="p">
+            <div class="p4">
+              参展产品类型 PRODUCT TYPE：
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>现代家具 MODERN
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>北欧家具 NORDIC STYLE
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>全屋定制家具 CUSTOM-MADE
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>美式家具 AMERICAN STYLE
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>欧式家具 EURO-STYLE
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>中式家具 CHINESE STYLE
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>红木家具 ROSEWOOD
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>法式家具 FRENCH STYLE
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>韩式家具 KOREAN STYLE
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>软床/床垫 FRAME/MATTRESS
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>沙发 SOFA
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>青少年儿童家具 YOUTH&CHILDREN
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>东南亚家具 SOUTHEAST ASIAN
+                STYLE
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>新古典家具 NEO-CLASSICAL
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>客厅家具 LIVINGROOM
+                STYLE
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>创意设计 CREATIVE DESIGN
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>办公家具 OFFICE
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>户外家具 OUTDOOR
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>原生态家具 RAW WOOD
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>橱柜/衣柜 CUPBOARD/WARDROBE
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>金属玻璃家具 METAL/GLASS
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>软装设计 SOFT DECOR DESIGN
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>智能家居 SMART HOME
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>瓷砖 CREAMIC TILE
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>卫浴 BATHROOM
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>门窗 DOORS AND WINDOWS
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>地板 FLOOR
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>新型材料 NEW MATERIALS
+              </div>
+            </div>
+            <div class="p4 z-row">
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>家居饰品、灯饰及工艺家具
+                DECER、LIGHTINGS、HANDCRAFT
+              </div>
+              <div class="z-col z-col-2">
+                <span class="space"></span>
+                <span class="square"><samp></samp></span>其他 OTHER
+              </div>
+            </div>
+          </div>
+          <div class="p">
+            品牌名称 BRAND NAME：
+            <span class="underline" style="width: 890px;"><samp></samp></span>
+          </div>
+          <div class="subTitle" style="margin-top: 15px;">参展商手册</div>
+          <div class="p4">1.展馆安排</div>
+          <div class="p" style="padding-left: 30px;">
+            <table class="table table-bordered">
+              <tr>
+                <th>1号馆</th>
+                <td>1：新中式品牌馆</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>2号馆</th>
+                <td>2：批发中心</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>3号馆</th>
+                <td>3.1：知名品牌馆</td>
+                <td>3.2：国际贸易馆</td>
+              </tr>
+              <tr>
+                <th>4号馆</th>
+                <td>4.1：软体品牌馆 / 国际名品街（家居独立大店）</td>
+                <td>4.2：设计家居馆</td>
+              </tr>
+              <tr>
+                <th>5号馆</th>
+                <td>5.1：软体品牌馆</td>
+                <td>5.2：实木生活馆</td>
+              </tr>
+              <tr>
+                <th>6号馆</th>
+                <td>6.1：软体品牌馆 / 童趣生活馆 </td>
+                <td>6.2：实木生活馆</td>
+              </tr>
+              <tr>
+                <th>7号馆</th>
+                <td>7.1：童趣生活馆</td>
+                <td>7.2：实木生活馆</td>
+              </tr>
+              <tr>
+                <th>8号馆</th>
+                <td>全屋定制馆</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>9号馆</th>
+                <td>名家居世博园主题馆</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="p4">2.展览日期及开放时间</div>
+          <div class="p" style="padding-left: 30px;">
+            <table class="table table-bordered">
+              <tr>
+                <th>展览日期</th>
+                <th>2019年3月16日-20日</th>
+              </tr>
+              <tr>
+                <td>开放时间</td>
+                <td>
+                  参 展 商：2019年3月16日-20日 上午 8：30 至下午 5：30
+                  <br>
+                  专 业 观 众：2019年3月16日-20日 上午 9：00 至下午 5：00
+                  <br>
+                  非专业观众：2019年3月20日 上午 9：00 至下午 4：00
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="p4">3.展会相关机构</div>
+          <div class="p" style="padding-left: 30px;">
+            <table class="table table-bordered">
+              <tr>
+                <th>主办机构</th>
+                <th>广东现代会展管理有限公司</th>
+              </tr>
+              <tr>
+                <td>承办机构</td>
+                <td>
+                  东莞市厚街镇人民政府
+                  <br>
+                  香港家私协会
+                  <br>
+                  东莞名家具俱乐部
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="p4">4.大会证件</div>
+          <div class="p" style="padding-left: 30px;">
+            <table class="table table-bordered">
+              <tr>
+                <th>证件名称</th>
+                <th class="text-center">布展期</th>
+                <th class="text-center">展览期</th>
+                <th class="text-center">撤展期</th>
+              </tr>
+              <tr>
+                <td>参展商工作证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>临时出入证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>组委会工作证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>买家证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>VIP买家证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>服务工作证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>摄影证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>采访证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>翻译证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>咨委证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>国际买家证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>评委证</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="p4">5.客商邀请</div>
+          <div class="p f-15" style="padding-left: 30px;">
+            (1) 大会向每个参展商免费提供一定数量的中英文请柬，供参展商邀请自己的客户前来展会参观洽谈，请柬将以快递方式寄至各参展商。
+            <br>
+            (2) 客商必须持请柬、本人专业名片、身份证明（身份证、护照、驾驶证等国家承认的身份证件）才能在报到处免费办理买家证。
+            <br>
+            (3) 大会还向客商提供更为方便的办理方式：预先登记获取二维码，扫码入场。客商可登陆名家具展官网www.gde3f.com-观众服务-
+            预先登记或关注名家具微信号-展会报名-观众登记，填写信息获得个人入场二维码，并凭借该二维码扫码入场。
+          </div>
+          <div class="p4">6.木材出省准运证</div>
+          <div class="p f-15" style="padding-left: 30px;">
+            为方便外省参展商将展品运回，特邀请东莞市林业局现场办公为参展商办理木材出省准运证。
+            <br>
+            办理时间：2019年3月19-20日 11:00-16:30
+            <br>
+            办理地点：3号馆序厅现场办公室
+            <br>
+            咨询电话：0769-85981990
+          </div>
+          <div class="p4">7.承办单位账户</div>
+          <div class="p f-15" style="padding-left: 30px;">
+            开户名称 : 广东现代会展管理有限公司
+            <br>
+            银行名称 : 东莞农村商业银行厚街支行
+            <br>
+            帐 号：090010190010019710
+          </div>
+          <div class="p4">8.大会接电服务商</div>
+          <div class="p f-15" style="padding-left: 30px;">
+            广州倍嘉展示设计有限公司（联系电话：400-0868-588）
+          </div>
+          <div class="p4">9.大会广告搭建商</div>
+          <div class="p f-15" style="padding-left: 30px;">
+            东莞恒轩广告有限公司（联系电话 :0769-85758555）
+          </div>
+          <div class="p4">10.大会接待单位</div>
+          <div class="p f-15" style="padding-left: 30px;">
+            东莞市国际旅行社 （联系电话：0769-22474606）
+          </div>
+          <div class="p4">11.电力供应</div>
+          <div class="p f-15" style="padding-left: 30px;">
+            ① 大会提供基本展览馆照明。标准电力供应为：单相220伏特（V）50赫（Hz）
+            <br>
+            ② 摊位电力供应将于每日展览会结束后三十分钟关闭。
+          </div>
+          <div class="p4">12.参展须知细则</div>
+          <div class="p" style="padding-left: 30px;">
+            <div class="p4 f-15">
+              ①保安
+              <br>
+              1)展馆的保安由大会安排，特派保安员二十四小时巡逻会场。在展览期间会尽力保证展馆及展品安全。但对工作人员受伤、展品遗失或损毁
+              <br>
+              2)布、撤展期间，参展商负责其展品之安全。
+              <br>
+              3)如发现任何可疑人物，请立即通知在场的保安员。
+              <br>
+              4)展览会结束后，请勿将贵重物品留置于展位内，并确保所有陈列柜均已上锁。参展商有责任自行妥善保管其贵重物品。
+            </div>
+            <div class="p4 f-15">
+              ②展品/产品的介绍及演示
+              <br>
+              需要在展台内演示或示范其设备、展品或产品的参展商必须遵循:
+              <br>
+              1)向大会以书面形式提交演示展品的所有详细材料。
+              <br>
+              2)确保运转时所有机器都配备有安全装置，这些安全装置仅在机器被切断电源时才可以移走。
+              <br>
+              3)确保所有展示运转机器都由参展公司专业人员操作，在无上述人员监管情况下机器不可运转。
+              <br>
+              4)必须安全地安装和防护所有可运转展品并将其固定在安全位置，以防滑动，展品在展台内的放置不得对参观者、工作人员或其他人员
+              <br>
+              5)参展商在展位内进行任何形式的展示或产品展示演出，均禁止使用一切对声源进行扩音的设备（如音响、喇叭等）
+              <br>
+              6)必须独立放置启动装置，避免参观者或其他未经许可的人员操作。
+              <br>
+              7)避免展品产生的有毒气体、废气或其它刺激物排入展馆。该类展品的演示必须要经过相关监管部门的批准。
+              <br>
+              8)涉及瓦斯、明火和焊接等的演示必须加装防护装置，该类演示必须事先向承办机构申报并经消防局批准后方可使用。
+            </div>
+          </div>
+          <div class="p">
+            展位价格：
+          </div>
+          <div class="p">
+            特装推荐：
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>
