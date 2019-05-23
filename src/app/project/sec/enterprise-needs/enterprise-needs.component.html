@@ -1,7 +1,7 @@
 <div class="enterprise-needs">
   <!-- 横幅 -->
-  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU" activeTitle='企业需求'
-    (clickMenu)="onClickBannerMenu($event)">
+  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU"
+    activeTitle='企业需求' (clickMenu)="onClickBannerMenu($event)">
   </sec-banner-menu>
 
   <div class="body">
@@ -71,16 +71,20 @@
                 </div>
                 <div class="label singleTextBeyondHide">{{item.FaBuXueXiao}}
                 </div>
-                <div class="label label-width singleTextBeyondHide">
-                  <span>[标签] {{item.BiaoQian}}</span>
-                  <span>[层次]：{{item.CengCi}}</span>
-                  <span>[分类]：{{item.FenLei}}</span>
-                  <span>[来源]：{{item.LaiYuan}}</span>
-                  <span style="width: 118px;">
+                <div class="label label-width"
+                  style="position: relative">
+                  <span
+                    style="width: 100px;position: absolute;top: -10px;right:0px;">
                     <button class="btn" nz-button nzType="primary"
                       nzSize="small"
                       (click)="onCollection(item.id)">收藏项目</button>
                   </span>
+                  <span>[层次]：{{item.CengCi}}</span>
+                  <span>[分类]：{{item.FenLei}}</span>
+                  <span>[来源]：{{item.LaiYuan}}</span>
+                </div>
+                <div class="label">
+                  <span>{{item.BiaoQian}}</span>
                 </div>
               </div>
               <div class="clearfix"></div>

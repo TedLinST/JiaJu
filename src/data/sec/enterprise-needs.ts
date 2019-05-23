@@ -160,50 +160,6 @@ export const DataEnterpriseNeedsHandler = {
       FenLei: '科研项目',
       LaiYuan: 'XXXXX',
       src: 'assets/imgs/enterprise-needs/needs-8.jpg'
-    },
-    {
-      id: 9,
-      MingCheng: '这是企业需求项目名称XXXXXXXXX',
-      FaBuXueXiao: 'XXXX学校',
-      FaBuShiJian: '2019-05-13 120:00:09',
-      CengCi: '层次2',
-      BiaoQian: '奖学金',
-      FenLei: '分类三',
-      LaiYuan: 'XXXXX',
-      src: 'assets/imgs/enterprise-needs/xiangmu.jpg'
-    },
-    {
-      id: 10,
-      MingCheng: 'X这是企业需求项目名称',
-      FaBuXueXiao: 'XXXX学校',
-      FaBuShiJian: '2019-05-13 120:00:10',
-      CengCi: '层次1',
-      BiaoQian: '奖学金',
-      FenLei: '分类三',
-      LaiYuan: 'XXXXX',
-      src: 'assets/imgs/enterprise-needs/xiangmu.jpg'
-    },
-    {
-      id: 11,
-      MingCheng: 'XX这是企业需求项目名称',
-      FaBuXueXiao: 'XXXX学校',
-      FaBuShiJian: '2019-05-13 120:00:11',
-      CengCi: '层次1',
-      BiaoQian: '奖学金',
-      FenLei: '分类三',
-      LaiYuan: 'XXXXX',
-      src: 'assets/imgs/enterprise-needs/xiangmu.jpg'
-    },
-    {
-      id: 12,
-      MingCheng: 'XXX这是企业需求项目名称',
-      FaBuXueXiao: 'XXXX学校',
-      FaBuShiJian: '2019-05-13 120:00:12',
-      CengCi: '层次1',
-      BiaoQian: '奖学金',
-      FenLei: '分类四',
-      LaiYuan: 'XXXXX',
-      src: 'assets/imgs/enterprise-needs/xiangmu.jpg'
     }
   ]
 }
