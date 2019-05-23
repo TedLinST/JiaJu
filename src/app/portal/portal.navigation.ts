@@ -249,8 +249,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('furniture-standard');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('furniture-standard');
   }
 
   /**
