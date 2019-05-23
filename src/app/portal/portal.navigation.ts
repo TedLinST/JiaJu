@@ -229,8 +229,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('apply-exhibitors');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('apply-exhibitors');
   }
 
   /**
@@ -240,8 +239,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('government');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('government');
   }
 
   /**
