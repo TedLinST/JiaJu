@@ -1,0 +1,9 @@
+<div class="key-box" [class.key-box-border-top]="isTopBorder"
+  [ngStyle]="boxStyles">
+  <div class="header">
+    {{title}}
+  </div>
+  <div class="body">
+    <ng-content></ng-content>
+  </div>
+</div>

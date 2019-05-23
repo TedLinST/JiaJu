@@ -1,0 +1,42 @@
+key-box {
+  display: block;
+
+  &+key-box {
+    margin-top: 20px;
+  }
+}
+
+.key-box {
+
+  border: 1px solid #b8b8b8;
+
+  &.key-box-border-top {
+    border-top: 5px solid #b2b2b2;
+  }
+
+
+
+  .header {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 12px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #b8b8b8;
+    color: #212121;
+  }
+
+  .body {
+    padding: 6px 12px;
+    color: #7b7b7b;
+    font-size: 16px;
+  }
+
+  .key-box-label {
+    margin-bottom: 4px;
+
+    &.key-box-label-inline {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+}

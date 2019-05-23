@@ -8,6 +8,7 @@ import { VerticalMenuModule } from './vertical-menu/vertical-menu.module';
 import { DotTitleModule } from './dot-title/dot-title.module';
 import { MenuTypeModule } from './menu-type/menu-type.module';
 import { ButtonSortModule } from './button-sort/button-sort.module';
+import { BoxModule } from './box/box.module';
 
 @NgModule({
   exports: [
@@ -19,7 +20,8 @@ import { ButtonSortModule } from './button-sort/button-sort.module';
     VerticalMenuModule,
     DotTitleModule,
     MenuTypeModule,
-    ButtonSortModule
+    ButtonSortModule,
+    BoxModule
   ]
 })
 export class NgKeyModule { }

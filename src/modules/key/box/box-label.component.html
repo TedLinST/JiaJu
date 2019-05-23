@@ -1,0 +1,14 @@
+<div class="key-box-label" [class.key-box-label-inline]="isBoxLabelInline"
+  [ngStyle]="boxLabelStyle">
+  <ng-template [ngIf]="!!label">
+    <span class="label">
+      {{label}}
+      <ng-template [ngIf]="!!colon">
+        ：
+      </ng-template>
+    </span>
+  </ng-template>
+  <span class="value">
+    {{value}}
+  </span>
+</div>
