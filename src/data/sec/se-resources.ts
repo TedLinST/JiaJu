@@ -75,80 +75,80 @@ export const DataSEResourcesHandler = {
   LIST_DATA: [
     {
       id: 1,
-      MingCheng: 'X资源名称',
-      ZhuYingYeWu: '主营业务',
+      MingCheng: '中南林业科技大学',
+      ZhuYingYeWu: '木材科学与工程、林业工程、艺术设计、工业设计',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 2,
-      MingCheng: 'XX资源名称',
-      ZhuYingYeWu: '主营业务',
+      MingCheng: '南京林业大学',
+      ZhuYingYeWu: '林学、林业工程、',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 3,
-      MingCheng: 'XXX资源名称',
-      ZhuYingYeWu: '主营业务',
+      MingCheng: '北京林业大学',
+      ZhuYingYeWu: '林业工程、',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 4,
-      MingCheng: 'XXXX资源名称',
-      ZhuYingYeWu: '主营业务',
+      MingCheng: '东北林业大学',
+      ZhuYingYeWu: '林学, 林业工程，生态学, 植物学',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 5,
-      MingCheng: 'XXXXX资源名称',
-      ZhuYingYeWu: '主营业务',
+      MingCheng: '福建农林大学',
+      ZhuYingYeWu: '林学、林业工程',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 6,
-      MingCheng: 'XXXXXX资源名称',
-      ZhuYingYeWu: '主营业务主营业务主营业务主营业务主营业务主营业务主营业务主营业务主营业务主营业务主营业务主营业务',
+      MingCheng: '浙江农林大学',
+      ZhuYingYeWu: '林学、林业工程',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 7,
-      MingCheng: 'XXXXXXX资源名称',
-      ZhuYingYeWu: '主营业务',
+      MingCheng: '西南林业大学',
+      ZhuYingYeWu: '木材科学与技术、',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 8,
-      MingCheng: 'XXXXXXXX资源名称',
-      ZhuYingYeWu: '主营业务主营业务主营业务',
+      MingCheng: '北京工业大学',
+      ZhuYingYeWu: '艺术设计',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 9,
-      MingCheng: 'XXXXXXXXX资源名称',
-      ZhuYingYeWu: '主营业务主营业务主营业务主营业务主营业务',
+      MingCheng: '顺德职业技术学院',
+      ZhuYingYeWu: '雕刻艺术与家具设计、家具设计与制造、工业设计、',
       JiBie: '科研就级别',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'
     },
     {
       id: 10,
-      MingCheng: '资源名称X',
-      ZhuYingYeWu: '主营业务',
+      MingCheng: '中央美术学院',
+      ZhuYingYeWu: '工业设计',
       JiBie: '高校',
       RiQi: '2019-05-14',
       src: 'assets/imgs/se-resources/ziyuan.jpg'

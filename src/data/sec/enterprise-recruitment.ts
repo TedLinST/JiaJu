@@ -13,38 +13,38 @@ export const DataEnterpriseRecruitmentHandler = {
     data0: [
       {
         id: '1',
-        QiYeMingCheng: 'X企业名称',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '宜家(中国)投资有限公司',
+        ZhaoPinBiaoTi: '宜家长沙卖场招聘会',
+        src: 'assets/imgs/enterprise-recruitment/logo-1.jpg',
       },
       {
         id: '2',
-        QiYeMingCheng: 'XX企业名称',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '美克国际家居用品股份有限公司',
+        ZhaoPinBiaoTi: '2019年校园巡回招聘会',
+        src: 'assets/imgs/enterprise-recruitment/logo-2.jpg',
       },
       {
         id: '3',
-        QiYeMingCheng: 'XXX企业名称',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '宜华生活科技股份有限公司',
+        ZhaoPinBiaoTi: '2019年校园招聘会',
+        src: 'assets/imgs/enterprise-recruitment/logo-3.jpg',
       },
       {
         id: '4',
-        QiYeMingCheng: 'XXXX企业名称',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '西安健威凯利家具有限公司',
+        ZhaoPinBiaoTi: '2019年新店筹备招聘',
+        src: 'assets/imgs/enterprise-recruitment/logo-4.jpg',
       },
       {
         id: '5',
-        QiYeMingCheng: 'XXXXX企业名称',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '太原市名峰家具有限公司',
+        ZhaoPinBiaoTi: '销售后勤人员招聘',
+        src: 'assets/imgs/enterprise-recruitment/logo-5.jpg',
       },
       {
         id: '6',
-        QiYeMingCheng: 'XXXXXX企业名称',
-        ZhaoPinBiaoTi: '招聘标题',
+        QiYeMingCheng: '湖南励鑫隆办公家具有限公司',
+        ZhaoPinBiaoTi: '门店销售人员招聘',
         src: 'assets/imgs/enterprise-recruitment/logo.jpg',
       }
     ],
@@ -99,69 +99,69 @@ export const DataEnterpriseRecruitmentHandler = {
     data0: [
       {
         id: '1',
-        ZhiWei: '产品经理X',
+        ZhiWei: '资深销售人员招聘',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
-        GongSiMingCheng: '北京奇思奇益管理咨询有限公司',
-        GongSiXingZhi: '民营',
-        GongSiGuiMo: '100-200人'
+        GongSiMingCheng: '大连飞马文仪家具有限公司',
+        GongSiXingZhi: '合资',
+        GongSiGuiMo: '100-499'
       },
       {
         id: '2',
-        ZhiWei: '产品经理XX',
+        ZhiWei: '外贸人员专场招聘',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
-        GongSiMingCheng: '北京奇思奇益管理咨询有限公司',
+        GongSiMingCheng: '霸州市星光家具有限公司',
         GongSiXingZhi: '民营',
-        GongSiGuiMo: '100-200人'
+        GongSiGuiMo: '100-499'
       },
       {
         id: '3',
-        ZhiWei: '产品经理XXX',
+        ZhiWei: '车间高级技术人员招聘会',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
-        GongSiMingCheng: '北京奇思奇益管理咨询有限公司',
+        GongSiMingCheng: '青岛西德汉姆家具有限公司',
         GongSiXingZhi: '民营',
-        GongSiGuiMo: '100-200人'
+        GongSiGuiMo: '20-99'
       },
       {
         id: '4',
-        ZhiWei: '产品经理XXXX',
+        ZhiWei: '部门负责人专场招聘',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
-        GongSiMingCheng: '北京奇思奇益管理咨询有限公司',
+        GongSiMingCheng: '喜临门家具股份有限公司',
         GongSiXingZhi: '民营',
-        GongSiGuiMo: '100-200人'
+        GongSiGuiMo: '1000-9999'
       },
       {
         id: '5',
-        ZhiWei: '产品经理XXXXX',
+        ZhiWei: '家具编辑人员招聘',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
-        GongSiMingCheng: '北京奇思奇益管理咨询有限公司',
-        GongSiXingZhi: '民营',
-        GongSiGuiMo: '100-200人'
+        GongSiMingCheng: '山东省家具协会',
+        GongSiXingZhi: '社会团体',
+        GongSiGuiMo: '20人以下'
       },
       {
         id: '6',
-        ZhiWei: '产品经理XXXXXX',
+        ZhiWei: '专业技术人员招聘',
         XinShui: '10K-20K',
         DiDian: '汕头',
         JingYan: '3-5年',
         XueWei: '本科',
-        GongSiMingCheng: '北京奇思奇益管理咨询有限公司',
+        GongSiMingCheng: '四川米兰办公家具有限公司',
         GongSiXingZhi: '民营',
-        GongSiGuiMo: '100-200人'
+        GongSiGuiMo: '20人以下'
       }
     ],
     data1: [
@@ -245,39 +245,39 @@ export const DataEnterpriseRecruitmentHandler = {
     data0: [
       {
         id: '1',
-        QiYeMingCheng: '企业名称X',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '美克国际家居用品股份有限公司',
+        ZhaoPinBiaoTi: '2019年校园巡回招聘会',
+        src: 'assets/imgs/enterprise-recruitment/specialist-1.jpg',
       },
       {
         id: '2',
-        QiYeMingCheng: '企业名称XX',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '宜华生活科技股份有限公司',
+        ZhaoPinBiaoTi: '2019年校园招聘会',
+        src: 'assets/imgs/enterprise-recruitment/specialist-2.jpg',
       },
       {
         id: '3',
-        QiYeMingCheng: '企业名称XXX',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '青岛西德汉姆家具有限公司',
+        ZhaoPinBiaoTi: '车间高级技术人员招聘会',
+        src: 'assets/imgs/enterprise-recruitment/specialist-3.jpg',
       },
       {
         id: '4',
-        QiYeMingCheng: '企业名称XXXX',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '四川米兰办公家具有限公司',
+        ZhaoPinBiaoTi: '专业技术人员招聘',
+        src: 'assets/imgs/enterprise-recruitment/specialist-4.jpg',
       },
       {
         id: '5',
-        QiYeMingCheng: '企业名称XXXXX',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '创喜邦盛家居有限公司',
+        ZhaoPinBiaoTi: '专业技术人员招聘',
+        src: 'assets/imgs/enterprise-recruitment/specialist-5.jpg',
       },
       {
         id: '6',
-        QiYeMingCheng: '企业名称XXXXXX',
-        ZhaoPinBiaoTi: '招聘标题',
-        src: 'assets/imgs/enterprise-recruitment/logo.jpg',
+        QiYeMingCheng: '天津美维信息技术有限公司',
+        ZhaoPinBiaoTi: '家居互联网销售专场招聘',
+        src: 'assets/imgs/enterprise-recruitment/specialist-6.jpg',
       }
     ],
     data1: [
