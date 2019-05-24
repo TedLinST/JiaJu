@@ -12,6 +12,10 @@
     text-align: right;
   }
 
+  &.key-item-mask-center {
+    text-align: center;
+  }
+
   .key-item-mask-body {
     background-color: rgba($color: #000000, $alpha: 0.5);
     color: #fff;
@@ -51,8 +55,8 @@
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;

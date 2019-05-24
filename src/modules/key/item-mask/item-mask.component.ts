@@ -9,6 +9,9 @@ export class ItemMaskComponent implements OnInit {
   // 文字在左
   @Input() isTextLeft = false;
 
+  // 文字居中
+  @Input() isTextCenter = false;
+
   // 文字在右
   @Input() isTextRight = false;
 
