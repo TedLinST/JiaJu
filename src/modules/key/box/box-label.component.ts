@@ -18,6 +18,9 @@ export class BoxLabelComponent implements OnInit {
   // 值
   @Input() value: any;
 
+  // 值样式
+  @Input() boxValueStyle: any;
+
   // 冒号
   @Input() colon: boolean = true;
 

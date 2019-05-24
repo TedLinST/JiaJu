@@ -6,6 +6,17 @@ key-box {
   }
 }
 
+.key-box-label {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 3px;
+
+  &.key-box-label-inline {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
 .key-box {
 
   border: 1px solid #b8b8b8;
@@ -13,8 +24,6 @@ key-box {
   &.key-box-border-top {
     border-top: 5px solid #b2b2b2;
   }
-
-
 
   .header {
     font-size: 20px;
