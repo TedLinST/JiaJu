@@ -161,9 +161,9 @@ export const DataFinanceHandler = {
     ]
   },
 
-  // 找项目
+  // 选项目
   FP: {
-    title: '找项目',
+    title: '选项目',
     enTitle: 'FIND A PROJECT',
     data: [
       {
