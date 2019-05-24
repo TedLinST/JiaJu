@@ -1,0 +1,170 @@
+<div class="finance">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeTitle="金融服务" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        金融服务
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 融资服务 -->
+  <key-item-chunk [enTitle]="dataHandler.FS.enTitle"
+    [title]="dataHandler.FS.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="FS-style">
+          <div class="z-row">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.FS.data"
+              let-index="index">
+              <div class="z-col z-col-6">
+                <span class="value">{{item.value}}</span>
+                <span class="unit">{{item.unit}}</span>
+                <div class="title">{{item.title}}</div>
+              </div>
+            </ng-template>
+          </div>
+
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 线下融资活动 -->
+  <key-item-chunk [enTitle]="dataHandler.OA.enTitle"
+    [title]="dataHandler.OA.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openOfflineFinancing()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.OA.data"
+            let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-margin-3" style="height: 395px;">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label labelTitle="标题" [label]="item.BiaoTi">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="地区" [label]="item.DiQu">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="时间" [label]="item.ShiJian">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 金融资讯 -->
+  <key-item-chunk [enTitle]="dataHandler.FI.enTitle"
+    [title]="dataHandler.FI.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="z-row FI-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FI.data"
+            let-index="index">
+            <div class="z-col z-col-2">
+              <div class="label singleTextBeyondHide">
+                <span class="time">{{item.date}}</span>
+                {{item.title}}
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 找资金 -->
+  <key-item-chunk [enTitle]="dataHandler.LFF.enTitle"
+    [title]="dataHandler.LFF.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openFindingFunds()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.LFF.data"
+            let-index="index">
+            <div nz-col nzSpan="8">
+              <div class="item-box item-box-margin-3">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isMaskPaved]="true">
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.enTitle">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 找项目 -->
+  <key-item-chunk [enTitle]="dataHandler.FP.enTitle"
+    [title]="dataHandler.FP.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true" [showItemNumber]="5"
+        (clickMore)="portalNav.openSelectedItems()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FP.data"
+            let-index="index">
+            <div nz-col nzSpan="4">
+              <div class="item-box item-box-margin-3">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isMaskPaved]="true">
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.enTitle">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 金融大黄页 -->
+  <key-item-chunk [enTitle]="dataHandler.FRP.enTitle"
+    [title]="dataHandler.FRP.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="z-row FRP-style">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FRP.data"
+            let-index="index">
+            <div class="z-col z-col-4">
+              <div class="label singleTextBeyondHide">
+                {{item.title}}
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

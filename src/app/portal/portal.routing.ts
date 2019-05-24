@@ -28,7 +28,7 @@ export const PortalRoutes = [
     { path: 'government', loadChildren: '../project/is/government/government.module#GovernmentModule' }, // 政府服务
     { path: 'furniture-standard', loadChildren: '../project/is/furniture-standard/furniture-standard.module#FurnitureStandardModule' }, // 家具国家标准
     { path: 'patent-service', loadChildren: '../project/is/patent-service/patent-service.module#PatentServiceModule' }, // 专利服务
-    // { path: 'finance', loadChildren: '../project/is/finance/finance.module#FinanceModule' }, // 金融服务
+    { path: 'finance', loadChildren: '../project/is/finance/finance.module#FinanceModule' }, // 金融服务
     // { path: 'finding-funds', loadChildren: '../project/is/finding-funds/finding-funds.module#FindingFundsModule' }, // 找资金
     // { path: 'selected-items', loadChildren: '../project/is/selected-items/selected-items.module#SelectedItemsModule' }, // 选项目
     // { path: 'offline-financing', loadChildren: '../project/is/offline-financing/offline-financing.module#OfflineFinancingModule' }, // 线下融资活动
