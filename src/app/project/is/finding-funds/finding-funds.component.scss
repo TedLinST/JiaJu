@@ -1,0 +1,68 @@
+.finding-funds {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  .filter-row {
+    margin-top: 10px;
+
+    .search {
+      float: right;
+      width: 350px;
+    }
+  }
+
+  .list {
+    margin-top: 10px;
+
+    .body {
+      border: 1px solid #d7d8d8;
+      padding: 15px 20px;
+
+      .item {
+        position: relative;
+        border-bottom: 1px dashed #8a8a8a;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+
+        &:last-child {
+          border-bottom: 0px;
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+        }
+
+        .title {
+          font-size: 19px;
+          font-weight: 600;
+          color: #222;
+          margin-bottom: 8px;
+        }
+
+        .dete {
+          position: absolute;
+          top: 5px;
+          right: 10px;
+        }
+
+        .btn {
+          position: absolute;
+          bottom: 15px;
+          right: 10px;
+
+          button {
+            background-color: #d3b661;
+            border-color: #d3b661;
+          }
+        }
+      }
+    }
+
+    .footer {
+      .pagination {
+        margin-top: 15px;
+        text-align: right;
+      }
+    }
+  }
+}

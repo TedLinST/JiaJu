@@ -279,8 +279,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('finding-funds');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('finding-funds');
   }
 
   /**
