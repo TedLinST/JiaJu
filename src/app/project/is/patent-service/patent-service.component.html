@@ -1,0 +1,122 @@
+<div class="patent-service">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="专利服务" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openExhibition()">政府服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        专利服务
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <div class="sub-banner">
+      <a [href]="dataHandler.SB.link" target="_blank">
+        <img [src]="dataHandler.SB.src">
+        <key-item-mask [isTextCenter]="true">
+          <key-item-mask-label [label]="dataHandler.SB.title">
+          </key-item-mask-label>
+        </key-item-mask>
+      </a>
+    </div>
+  </div>
+
+  <!-- 专利政策与解读 -->
+  <key-item-chunk [enTitle]="dataHandler.PPI.enTitle"
+    [title]="dataHandler.PPI.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="PPI-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">专利相关政策</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.PPI.data0"
+                    let-index="index">
+                    <div class="label singleTextBeyondHide">{{item.title}}</div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="box">
+                <div class="header">政策解读</div>
+                <div class="body">
+                  <ng-template ngFor let-item [ngForOf]="dataHandler.PPI.data1"
+                    let-index="index">
+                    <div class="label singleTextBeyondHide">{{item.title}}</div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 办事指南 -->
+  <key-item-chunk [enTitle]="dataHandler.HG.enTitle"
+    [title]="dataHandler.HG.title">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.HG.data"
+            let-index="index">
+            <div nz-col nzSpan="6">
+              <div class="item-box item-box-margin-5"
+                style="height: 306px;margin-bottom: 10px;">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 专利代理机构 -->
+  <key-item-chunk [enTitle]="dataHandler.PA.enTitle"
+    [title]="dataHandler.PA.title">
+    <div body>
+      <key-item-chunk-body [showItemNumber]="5">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PA.data"
+            let-index="index">
+            <div nz-col nzSpan="4">
+              <div class="item-box item-box-margin-3"
+                style="height: auto;margin-bottom: 6px;">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

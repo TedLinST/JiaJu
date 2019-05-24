@@ -259,8 +259,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('patent-service');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('patent-service');
   }
 
   /**
@@ -270,8 +269,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('finance');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('finance');
   }
 
   /**
