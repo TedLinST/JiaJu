@@ -1,0 +1,130 @@
+<div class="selected-items">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="找项目" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFinance()">金融服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        找项目
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <key-item-chunk title="找项目" marginTop="20" enTitle="SELECTED PROJECT">
+    <div body>
+      <key-item-chunk-body>
+        <!-- 条件选择区 -->
+        <key-dot-title title="条件选择区"></key-dot-title>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
+          let-index="index">
+          <key-menu-type [title]="item.title" [data]="item.data"
+            (clickType)="onClickType($event)"></key-menu-type>
+        </ng-template>
+        <!-- 过滤 -->
+        <div class="filter-row">
+          <key-button-sort label="按融资资金"
+            [active]="btnSortActiveMap['RongZiZiJin']"
+            (clickChange)="onClickButtonSortChange($event,'RongZiZiJin')">
+          </key-button-sort>
+          <key-button-sort label="按更新日期"
+            [active]="btnSortActiveMap['GengXinRiQi']"
+            (clickChange)="onClickButtonSortChange($event,'GengXinRiQi')">
+          </key-button-sort>
+          <div class="search">
+            <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+              <input type="text" nz-input placeholder="请输入项目名称、所属行业、融资方式"
+                [(ngModel)]="searchValue" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+              <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+                <i nz-icon type="search"></i></button>
+            </ng-template>
+          </div>
+        </div>
+        <!-- 列表数据 -->
+        <div *ngIf="listData != null && listData.length > 0">
+          <div class="list">
+            <div class="body">
+              <ng-template ngFor let-item [ngForOf]="listData"
+                let-index="index">
+                <div class="item">
+                  <div class="dete">
+                    {{item.GengXinRiQi}}
+                  </div>
+                  <div class="btn">
+                    <button nz-button nzType="primary"
+                      (click)="onInterview(item)">约谈项目方</button>
+                  </div>
+                  <div class="z-row" style="width: 1000px;">
+                    <div class="z-col z-col-1">
+                      <div class="title singleTextBeyondHide">
+                        {{item.XiangMuBiaoTi}}
+                      </div>
+                    </div>
+                    <div class="z-col z-col-1">
+                      <key-box-label label="融资资金" [value]="item.RongZiZiJin"
+                        [boxValueStyle]="{'color':'#a68e09','fontSize.px':'20','fontWeight':'600'}">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="所在地区" [value]="item.SuoZaiDiQu">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="所属行业" [value]="item.SuoShuHangYe">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="融资方式" [value]="item.RongZiFangShi">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="联系人" [value]="item.LianXiRen">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-2">
+                      <key-box-label label="单位名称"
+                        [value]="item.DanWeiMingCheng">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="留言数" [value]="item.LiuYanShu">
+                      </key-box-label>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+            <div class="footer">
+              <div class="pagination">
+                <nz-pagination [(nzPageIndex)]="activePagaIndex"
+                  [nzTotal]="total" [nzShowTotal]="rangeTemplate"
+                  [nzPageSize]="pageSize"
+                  (nzPageIndexChange)="onPageIndexChange($event)">
+                </nz-pagination>
+                <ng-template #rangeTemplate let-range="range" let-total>
+                  显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!(listData != null && listData.length > 0)">
+          <nz-empty></nz-empty>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+</div>

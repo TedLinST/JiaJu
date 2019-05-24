@@ -289,8 +289,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('selected-items');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('selected-items');
   }
 
   /**
