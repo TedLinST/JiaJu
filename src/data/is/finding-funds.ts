@@ -62,7 +62,10 @@ export const DataFindingFundsHandler = {
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
       TouDiShu: '10',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      YaoQiuGaiShu:'...',
+      TouZiAnLie:'...',
+      QiTaBeiZhu:'...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目200万元',
@@ -79,7 +82,10 @@ export const DataFindingFundsHandler = {
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
       TouDiShu: '10',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      YaoQiuGaiShu:'...',
+      TouZiAnLie:'...',
+      QiTaBeiZhu:'...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目300万元',
@@ -96,7 +102,10 @@ export const DataFindingFundsHandler = {
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
       TouDiShu: '10',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      YaoQiuGaiShu:'...',
+      TouZiAnLie:'...',
+      QiTaBeiZhu:'...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目400万元',
@@ -113,7 +122,10 @@ export const DataFindingFundsHandler = {
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
       TouDiShu: '10',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      YaoQiuGaiShu:'...',
+      TouZiAnLie:'...',
+      QiTaBeiZhu:'...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目500万元',
@@ -130,7 +142,10 @@ export const DataFindingFundsHandler = {
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
       TouDiShu: '10',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      YaoQiuGaiShu:'...',
+      TouZiAnLie:'...',
+      QiTaBeiZhu:'...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目200万元',
@@ -147,7 +162,10 @@ export const DataFindingFundsHandler = {
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
       TouDiShu: '10',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      YaoQiuGaiShu:'...',
+      TouZiAnLie:'...',
+      QiTaBeiZhu:'...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目200万元',
@@ -164,7 +182,10 @@ export const DataFindingFundsHandler = {
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
       TouDiShu: '10',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      YaoQiuGaiShu:'...',
+      TouZiAnLie:'...',
+      QiTaBeiZhu:'...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目200万元',
@@ -181,7 +202,10 @@ export const DataFindingFundsHandler = {
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
       TouDiShu: '10',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      YaoQiuGaiShu:'...',
+      TouZiAnLie:'...',
+      QiTaBeiZhu:'...',
     }
   ]
 }

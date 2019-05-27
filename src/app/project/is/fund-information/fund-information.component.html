@@ -97,13 +97,13 @@
               </div>
             </div>
             <key-box title="投资要求概述">
-              <div style="min-height: 120px;"></div>
+              <div style="min-height: 120px;" [innerHTML]="infoParams?.YaoQiuGaiShu"></div>
             </key-box>
             <key-box title="投资案列">
-              <div style="min-height: 120px;"></div>
+              <div style="min-height: 120px;" [innerHTML]="infoParams?.TouZiAnLie"></div>
             </key-box>
             <key-box title="其他备注">
-              <div style="min-height: 80px;"></div>
+              <div style="min-height: 80px;" [innerHTML]="infoParams?.QiTaBeiZhu"></div>
             </key-box>
 
             <div *ngIf="listData != null && listData.length > 0">
