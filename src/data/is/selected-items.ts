@@ -56,7 +56,10 @@ export const DataSelectedItemsHandler = {
       LianXiRen: '...',
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      GongSiJieShao: '...',
+      XiangMuGaiShu: '...',
+      XiangMuYouShi: '...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目200万元',
@@ -67,7 +70,10 @@ export const DataSelectedItemsHandler = {
       LianXiRen: '...',
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      GongSiJieShao: '...',
+      XiangMuGaiShu: '...',
+      XiangMuYouShi: '...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目300万元',
@@ -78,7 +84,10 @@ export const DataSelectedItemsHandler = {
       LianXiRen: '...',
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      GongSiJieShao: '...',
+      XiangMuGaiShu: '...',
+      XiangMuYouShi: '...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目400万元',
@@ -89,7 +98,10 @@ export const DataSelectedItemsHandler = {
       LianXiRen: '...',
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      GongSiJieShao: '...',
+      XiangMuGaiShu: '...',
+      XiangMuYouShi: '...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目500万元',
@@ -100,7 +112,10 @@ export const DataSelectedItemsHandler = {
       LianXiRen: '...',
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      GongSiJieShao: '...',
+      XiangMuGaiShu: '...',
+      XiangMuYouShi: '...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目600万元',
@@ -111,7 +126,10 @@ export const DataSelectedItemsHandler = {
       LianXiRen: '...',
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      GongSiJieShao: '...',
+      XiangMuGaiShu: '...',
+      XiangMuYouShi: '...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目700万元',
@@ -122,7 +140,10 @@ export const DataSelectedItemsHandler = {
       LianXiRen: '...',
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      GongSiJieShao: '...',
+      XiangMuGaiShu: '...',
+      XiangMuYouShi: '...',
     },
     {
       XiangMuBiaoTi: 'XXXX项目800万元',
@@ -133,7 +154,10 @@ export const DataSelectedItemsHandler = {
       LianXiRen: '...',
       DanWeiMingCheng: '...',
       LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24'
+      GengXinRiQi: '2019-05-24',
+      GongSiJieShao: '...',
+      XiangMuGaiShu: '...',
+      XiangMuYouShi: '...',
     }
   ]
 }

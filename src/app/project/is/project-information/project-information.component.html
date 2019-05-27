@@ -1,7 +1,7 @@
-<div class="fund-information">
+<div class="project-information">
   <!-- 横幅 -->
   <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
-    activeSubTitle="资金信息详细" (clickMenu)="onClickBannerMenu($event)">
+    activeSubTitle="项目信息详细" (clickMenu)="onClickBannerMenu($event)">
   </is-banner-menu>
 
   <div class="body">
@@ -17,10 +17,10 @@
         <a (click)="portalNav.openFinance()">金融服务</a>
       </nz-breadcrumb-item>
       <nz-breadcrumb-item>
-        <a (click)="portalNav.openFindingFunds()">找资金</a>
+        <a (click)="portalNav.openSelectedItems()">选项目</a>
       </nz-breadcrumb-item>
       <nz-breadcrumb-item>
-        资金信息详细
+        项目信息详细
       </nz-breadcrumb-item>
     </nz-breadcrumb>
   </div>
@@ -29,60 +29,38 @@
     [enTitle]="dataHandler.enTitle">
     <div body>
       <key-item-chunk-body>
-        <div class="style-FI">
-          <key-dot-title title="资金基本信息"></key-dot-title>
+        <div class="style-PI">
+          <key-dot-title title="项目基本信息"></key-dot-title>
           <div class="title">
             {{infoParams?.XiangMuBiaoTi}}
             <span>
               <samp>更新日期：{{infoParams?.GengXinRiQi}}</samp>
-              <samp>投递数：{{infoParams?.TouDiShu}}</samp>
             </span>
           </div>
           <div class="info">
             <div class="z-row">
               <div class="z-col z-col-5">
-                <key-box-label label="资金类型" [value]="infoParams?.ZiJinLeiXing"
+                <key-box-label label="融资资金" [value]="infoParams?.RongZiZiJin"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
               <div class="z-col z-col-5">
-                <key-box-label label="投资行业" [value]="infoParams?.TouZiHangYe"
+                <key-box-label label="融资方式" [value]="infoParams?.RongZiFangShi"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
               <div class="z-col z-col-5">
-                <key-box-label label="投资类型" [value]="infoParams?.TouZiLeiXing"
+                <key-box-label label="所在地区" [value]="infoParams?.SuoZaiDiQu"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
               <div class="z-col z-col-5">
-                <key-box-label label="投资资金" [value]="infoParams?.TouZiZiJin"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
-              </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="投资地区" [value]="infoParams?.TouZiDiQu"
+                <key-box-label label="所属行业" [value]="infoParams?.SuoShuHangYe"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
             </div>
             <div class="z-row">
-              <div class="z-col z-col-5">
-                <key-box-label label="投资阶段" [value]="infoParams?.TouZiJieDuan"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
-              </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="风控要求" [value]="infoParams?.FengKongYaoQiu"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
-              </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="最低回报要求"
-                  [value]="infoParams?.ZuiDiHuiBaoYaoQiu"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
-              </div>
               <div class="z-col z-col-5">
                 <key-box-label label="联系人" [value]="infoParams?.LianXiRen"
                   [isBoxLabelInline]="true">
@@ -94,18 +72,24 @@
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
+              <div class="z-col z-col-5">
+                <key-box-label label="留言数" [value]="infoParams?.LiuYanShu"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
             </div>
           </div>
-          <key-box title="投资要求概述">
+          <key-box title="公司介绍">
             <div style="min-height: 120px;"
-              [innerHTML]="infoParams?.YaoQiuGaiShu"></div>
+              [innerHTML]="infoParams?.GongSiJieShao"></div>
           </key-box>
-          <key-box title="投资案列">
+          <key-box title="项目概述">
             <div style="min-height: 120px;"
-              [innerHTML]="infoParams?.TouZiAnLie"></div>
+              [innerHTML]="infoParams?.XiangMuGaiShu"></div>
           </key-box>
-          <key-box title="其他备注">
-            <div style="min-height: 80px;" [innerHTML]="infoParams?.QiTaBeiZhu">
+          <key-box title="项目优势">
+            <div style="min-height: 80px;"
+              [innerHTML]="infoParams?.XiangMuYouShi">
             </div>
           </key-box>
 
@@ -195,5 +179,4 @@
       </key-item-chunk-body>
     </div>
   </key-item-chunk>
-
 </div>
