@@ -32,7 +32,7 @@ export const PortalRoutes = [
     { path: 'finding-funds', loadChildren: '../project/is/finding-funds/finding-funds.module#FindingFundsModule' }, // 找资金
     { path: 'selected-items', loadChildren: '../project/is/selected-items/selected-items.module#SelectedItemsModule' }, // 选项目
     { path: 'offline-financing', loadChildren: '../project/is/offline-financing/offline-financing.module#OfflineFinancingModule' }, // 线下融资活动
-    // { path: 'fund-information', loadChildren: '../project/is/fund-information/fund-information.module#FundInformationModule' }, // 资金信息详细
+    { path: 'fund-information', loadChildren: '../project/is/fund-information/fund-information.module#FundInformationModule' }, // 资金信息详细
     // { path: 'project-information', loadChildren: '../project/is/project-information/project-information.module#ProjectInformationModule' }, // 项目信息详细
     // { path: 'furniture-delivery', loadChildren: '../project/is/furniture-delivery/furniture-delivery.module#FurnitureDeliveryModule' }, // 家具送装
     // { path: 'delivery-order', loadChildren: '../project/is/delivery-order/delivery-order.module#DeliveryOrderModule' }, // 送装下单

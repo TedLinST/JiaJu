@@ -140,6 +140,14 @@ export class FindingFundsComponent implements OnInit {
   }
 
   /**
+   * 资金项目
+   * @param item 
+   */
+  onClickItem(item: any) {
+    this.portalNav.openFundInformation(item);
+  }
+
+  /**
    * 投资项目
    */
   onInvestment(item: any) {

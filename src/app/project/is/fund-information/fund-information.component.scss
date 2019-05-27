@@ -1,0 +1,128 @@
+.fund-information {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  .style-FI {
+    >.title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 3px;
+
+      span {
+        float: right;
+
+        samp {
+          display: inline-block;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    >.info {
+      margin-bottom: 20px;
+      border: 1px solid #d9d9d9;
+      padding: 10px 20px;
+    }
+
+    .message {
+      margin-top: 20px;
+      border-top: 5px solid #ffc5c5;
+      background-color: #f8f8f8;
+
+      .box {
+        padding: 10px 20px;
+
+        .header {
+          color: #222;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .body {
+          position: relative;
+          font-size: 15px;
+          color: #7b7b7b;
+
+          .item {
+            margin-bottom: 10px;
+            padding-left: 15px;
+
+            .img {
+              float: left;
+              width: 120px;
+              height: 120px;
+              line-height: 120px;
+              text-align: center;
+
+              img {
+                max-width: 100%;
+                border-radius: 50%;
+              }
+            }
+
+            .info {
+              width: 400px;
+              float: left;
+              padding-left: 20px;
+              padding-top: 15px;
+
+              .label {
+                margin-bottom: 4px;
+              }
+            }
+
+            .liuyan {
+              width: 620px;
+              padding-top: 15px;
+              height: 122px;
+              overflow: hidden;
+              float: left;
+              background-color: #e5e5e5;
+              padding: 10px 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .pagination {
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    .user-message {
+      width: 1200px;
+      margin: 20px auto 0px;
+      padding: 15px;
+      border: 1px solid #bcbcbc;
+
+      .header {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ececec;
+        background-color: #f8f8f8;
+        font-size: 20px;
+        color: #664b62;
+      }
+
+      .body {
+        padding: 10px 0px;
+
+        .btn-div {
+          margin-top: 20px;
+          width: 100%;
+          text-align: center;
+
+          .btn {
+            min-width: 180px;
+            background-color: #d3b661;
+            border-color: #d0b156;
+          }
+        }
+      }
+    }
+  }
+}

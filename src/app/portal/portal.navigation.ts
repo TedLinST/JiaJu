@@ -283,6 +283,17 @@ export class PortalNavigation {
   }
 
   /**
+   * 综合服务 - 金融服务 - 资金信息详细
+   */
+  openFundInformation(info: any, event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    let itemInfo: any = JSON.stringify(info);
+    this.router.navigate(['fund-information'], { queryParams: { itemInfo: itemInfo } });
+  }
+
+  /**
    * 综合服务 - 金融服务 - 选项目
    */
   openSelectedItems(event?: any) {
@@ -300,17 +311,6 @@ export class PortalNavigation {
       event.stopPropagation();
     }
     this.router.navigateByUrl('offline-financing');
-  }
-
-  /**
-   * 综合服务 - 金融服务 - 资金信息详细
-   */
-  openFundInformation(event?: any) {
-    if (!!event) {
-      event.stopPropagation();
-    }
-    // this.router.navigateByUrl('fund-information');
-    this.navigateDeveloping();
   }
 
   /**

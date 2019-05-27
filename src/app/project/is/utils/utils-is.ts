@@ -54,14 +54,14 @@ export class UtilsIs {
           // 线下融资活动
           portalNav.openOfflineFinancing();
           break;
-        case '3-4':
+        /* case '3-4':
           // 资金信息详细
           portalNav.openFundInformation();
           break;
         case '3-5':
           // 项目信息详细
           portalNav.openProjectInformation();
-          break;
+          break; */
         case '4':
           // 家具送装
           portalNav.openFurnitureDelivery();
