@@ -121,10 +121,11 @@ export class ProjectInformationComponent implements OnInit {
       return;
     }
     if (this.dataHandler.data != null && this.dataHandler.data.length > 0) {
-      let item = this.dataHandler.data[0];
+      let item = Utils.clone(this.dataHandler.data[0]);
       item.YiXiangZiJin = this.bean.YiXiangZiJin;
       item.LiuYanXinXi = this.bean.LiuYanXinXi;
       this.listData.unshift(item);
+      this.dataHandler.data.unshift(item);
       this.total = this.total + 1;
       this.notification.create(
         'success',

@@ -151,6 +151,35 @@ export class Utils {
     }
 
     /**
+     * 克隆对象
+     * @param obj 克隆的对象
+     * @returns {any} 返回克隆的对象
+     */
+    public static clone(obj: any) {
+        let o: any;
+        if (typeof obj == "object") {
+            if (obj === null) {
+                o = null;
+            } else {
+                if (obj instanceof Array) {
+                    o = [];
+                    for (let i = 0, len = obj.length; i < len; i++) {
+                        o.push(Utils.clone(obj[i]));
+                    }
+                } else {
+                    o = {};
+                    for (let j in obj) {
+                        o[j] = Utils.clone(obj[j]);
+                    }
+                }
+            }
+        } else {
+            o = obj;
+        }
+        return o;
+    }
+
+    /**
      * 格式化成两位数的数字
      */
     public static formatNumber = (n: number) => {

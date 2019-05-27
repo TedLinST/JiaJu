@@ -109,11 +109,12 @@
             </div>
           </key-box>
 
-          <div *ngIf="listData != null && listData.length > 0">
-            <div class="message">
-              <div class="box">
-                <div class="header">用户留言信息</div>
-                <div class="body">
+
+          <div class="message">
+            <div class="box">
+              <div class="header">用户留言信息</div>
+              <div class="body">
+                <div *ngIf="listData != null && listData.length > 0">
                   <ng-template ngFor let-item [ngForOf]="listData"
                     let-index="index">
                     <div class="item">
@@ -136,23 +137,23 @@
                       <div class="clearfix"></div>
                     </div>
                   </ng-template>
+                  <div class="pagination">
+                    <nz-pagination [(nzPageIndex)]="activePagaIndex"
+                      [nzTotal]="total" [nzShowTotal]="rangeTemplate"
+                      [nzPageSize]="pageSize"
+                      (nzPageIndexChange)="onPageIndexChange($event)">
+                    </nz-pagination>
+                    <ng-template #rangeTemplate let-range="range" let-total>
+                      显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+                    </ng-template>
+                  </div>
+                </div>
+                <div *ngIf="!(listData != null && listData.length > 0)">
+                  <nz-empty></nz-empty>
                 </div>
               </div>
             </div>
-            <div class="pagination">
-              <nz-pagination [(nzPageIndex)]="activePagaIndex" [nzTotal]="total"
-                [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
-                (nzPageIndexChange)="onPageIndexChange($event)">
-              </nz-pagination>
-              <ng-template #rangeTemplate let-range="range" let-total>
-                显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
-              </ng-template>
-            </div>
           </div>
-          <div *ngIf="!(listData != null && listData.length > 0)">
-            <nz-empty></nz-empty>
-          </div>
-
           <div class="user-message">
             <div class="header">
               用户留言

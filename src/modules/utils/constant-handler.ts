@@ -134,6 +134,9 @@ export class ConstantHandler {
   // 综合服务 - 横幅图片
   public static CH_IS_BANNER_SRC = 'assets/imgs/integrated-services/banner.jpg';
 
+  // 综合服务 - 家具送装 - 横幅图片
+  public static CH_IS_BANNER_2_SRC = 'assets/imgs/furniture-delivery/banner.jpg';
+
   // 综合服务 - 横幅菜单
   public static CH_IS_BANNER_MENU = [
     {
