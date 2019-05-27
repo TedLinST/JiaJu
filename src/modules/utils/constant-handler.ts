@@ -183,7 +183,7 @@ export class ConstantHandler {
         {
           id: '3-3',
           title: '线下融资活动',
-        },
+        }/* ,
         {
           id: '3-4',
           title: '资金信息详细',
@@ -191,7 +191,7 @@ export class ConstantHandler {
         {
           id: '3-5',
           title: '项目信息详细',
-        }
+        } */
       ]
     },
     {

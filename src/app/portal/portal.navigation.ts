@@ -299,8 +299,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('offline-financing');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('offline-financing');
   }
 
   /**
