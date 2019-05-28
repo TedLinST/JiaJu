@@ -171,7 +171,7 @@ export class DeliveryOrderComponent implements OnInit {
     this.notification.create(
       'success',
       '提示',
-      '提交成功！',
+      '提交订单成功！',
     );
     this.bean = {};
   }
