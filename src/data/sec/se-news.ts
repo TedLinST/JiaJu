@@ -6,73 +6,73 @@ export const DataSENewsHandler = {
   LIST_DATA: [
     {
       id: '1',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '领路教育携手中南林业科技大学共建校企合作 设立“领路班”',
+      JianJie: '12月21日下午，领路教育与中南林业科技大学校企合作签约暨授牌仪式在中南林业科技大学知语楼红楼隆重举行。',
+      FaBuShiJian: '2019年1月3日 ',
+      src: 'assets/imgs/se-news/Journalism-1.jpg'
     },
     {
       id: '2',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '圣奥与中南林业科技大学签署校企合作协议，携手培养家具人才',
+      JianJie: '3月24日，圣奥集团—中南林业科技大学校企合作签约暨“圣奥班”开班仪式在中南林业科技大学隆重举行。此次校企合作是圣奥管理学院秉承倪良正董事长对人才发展的指导精神，按照圣奥集团人才培养战略规划，而具体落实的举措。',
+      FaBuShiJian: '2018年3月30日',
+      src: 'assets/imgs/se-news/Journalism-2.jpg'
     },
     {
       id: '3',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '校企合作人才培养 南京林业大学——常州创意产业基地 产学研项目对接活动成功举办',
+      JianJie: '为满足基地企业建设需求，吸纳高素质人才；为加强高校与常州创意产业基地合作，对接、引进和转化高校创新创意资源，拓展合作深度和广度，共谋创新发展，12月8日上午，南京林业大学——常州创意产业基地产学研项目对接活动在南林大厦会议室举行。南京林业大学副校长张金池、常州市新北区委常委、副区长赵晶、常州市创意产业基地党工委副书记周华军、常州市创意产业基地管委会副主任许柯娜等领导出席。',
+      FaBuShiJian: '2017年12月8日',
+      src: 'assets/imgs/se-news/Journalism-3.jpg'
     },
     {
       id: '4',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '中国林业集团与北京林业大学签订校企合作协议',
+      JianJie: '10月15日，在中国林业集团公司党委书记、董事长宋权礼和北京林业大学校长安黎哲的见证下，中林集团和北京林业大学就业实习实践基地签约仪式在京举行。此举意味着集团公司人才强企战略走向深入，并由此揭开了2019年应届毕业生招聘工作的序幕。集团公司党委副书记、董事刘连军出席签约仪式。',
+      FaBuShiJian: '2018年10月17日',
+      src: 'assets/imgs/se-news/Journalism-4.jpg'
     },
     {
       id: '5',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '南京华洲新材料与南京林业大学校企合作共建科研基地',
+      JianJie: '12月8号上午,南京华洲新材料有限公司与南京林业大学理学院就加强企业与高校合作,科研教学,实习实践基地等达成共识,并签订了相关协议。南京林业大学理学院院院长朱丽珺、副院长蒋华松、副书记金刚、办公室主任石坤龙、化学与材料系专业主任李文卓,南京华洲新材料有限公司董事长徐强、总经理邢华忠、销售部经理朱爱根,技术部经理陶远贤等参加了签字授牌仪式。',
+      FaBuShiJian: '2015年12月9日',
+      src: 'assets/imgs/se-news/Journalism-5.jpg'
     },
     {
       id: '6',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '北京电影学院（黑龙江）培训中心与东北林业大学签订校企合作',
+      JianJie: '2017年12月15日，北京电影学院（黑龙江）培训中心与东北林业大学签订校企合作项目书，建立校企合作模式。',
+      FaBuShiJian: '2017年12月25日',
+      src: 'assets/imgs/se-news/Journalism-6.jpg'
     },
     {
       id: '7',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '德夫曼与白云学院交流会圆满成功',
+      JianJie: '早在2018年，德夫曼衣柜与白云学院就展开了关于校企合作的可行性，先是组织了第一批师生到厂参观考察，还有德夫曼赞助举办了营销策划大赛。2019年4月12日，白云学院第二批师生实地参观考察德夫曼衣柜。这次为了尽快落实校企合作项目，白云学院教研室全体老师亲赴德夫曼实地考察调研。',
+      FaBuShiJian: '2019年4月22日',
+      src: 'assets/imgs/se-news/Journalism-7.jpg'
     },
     {
       id: '8',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '皮阿诺与华南农业大学再谱合作新篇章',
+      JianJie: '华南农业大学材料与能源学院胡传双院长、学院教授王清文老师以及皮阿诺产品研发中心总监杨建伟先生、总裁办主任王夙文先生以及董事长秘书王翀女士等校企代表出席了本次仪式并作重要讲话。',
+      FaBuShiJian: '2018年6月25日',
+      src: 'assets/imgs/se-news/Journalism-8.jpg'
     },
     {
       id: '9',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '科凡定制与北滘职业技术学院牵手 共育人才',
+      JianJie: '7月3日，科凡定制与北滘职业技术学院牵手合作，正式宣告科凡品牌在人才梯队建设、团队素质打造方面，再度迈出崭新的一步，共建人才育成。',
+      FaBuShiJian: '2017年7月27日',
+      src: 'assets/imgs/se-news/Journalism-9.jpg'
     },
     {
       id: '10',
-      BiaoTi: '新闻标题',
-      JianJie: '新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介新闻简介',
-      FaBuShiJian: '2019-05-14 15:14',
-      src: 'assets/imgs/se-news/xinwen-1.jpg'
+      BiaoTi: '顶固公司校企合作专场交流会圆满成功',
+      JianJie: '近日，顶固招聘组到南宁职业技术学院进行校企合作交流。当天上午应邀参加学校2017届毕业生毕业典礼,毕业典礼在庄严的国歌中拉开帷幕,张宁东校长做了题为《三年南职人 一生南职情》的致辞。面对即将走向社会的毕业生，校长语重心长送上嘱咐和希望。看着一个个洋溢着青春笑脸的学子，虽然已毕业六年小编还是很有感触。',
+      FaBuShiJian: '2017年7月7日',
+      src: 'assets/imgs/se-news/Journalism-10.jpg'
     }
   ]
 };
