@@ -43,7 +43,6 @@ export class ServiceIntroductionComponent implements OnInit {
     UtilsIs.clickBannerMenu(this.portalNav, menu);
   }
 
-
   /**
    * 费用计算
    * @param type 

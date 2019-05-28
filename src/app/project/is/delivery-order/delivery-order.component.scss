@@ -1,0 +1,114 @@
+.delivery-order {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  .box-style {
+    border: 1px solid #c0c0c0;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    .header {
+      border-bottom: 1px solid #1e257b;
+      font-size: 16px;
+      color: #222;
+      text-align: center;
+      padding-bottom: 3px;
+    }
+
+    .body {
+      color: #606060;
+      padding: 10px 5px;
+
+      .list {
+
+        .tools {
+          .icon {
+            padding: 8px;
+            font-size: 18px;
+
+            &.icon1 {
+              &:hover {
+                color: #38a636;
+              }
+            }
+
+            &.icon2 {
+              &:hover {
+                color: #f00;
+              }
+            }
+          }
+        }
+
+        .item {
+
+          &.item-center {
+            text-align: center;
+          }
+
+          &.active {
+            background-color: #f5f5f5;
+          }
+
+          margin-bottom: 4px;
+
+          .col_1 {
+            float: left;
+            width: 200px;
+            padding: 5px;
+          }
+
+          .col_2 {
+            float: left;
+            width: 200px;
+            padding: 5px;
+          }
+
+          .col_3 {
+            float: left;
+            width: 90px;
+            padding: 5px;
+          }
+
+          .col_4 {
+            float: left;
+            width: 90px;
+            padding: 5px;
+          }
+
+          .col_5 {
+            float: left;
+            width: 90px;
+            padding: 5px;
+          }
+
+          .col_6 {
+            float: left;
+            width: 200px;
+            padding: 5px;
+          }
+
+          .col_7 {
+            float: left;
+            width: 290px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-div {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+    .btn {
+      min-width: 240px;
+      background-color: #0073ff;
+      border-color: #0073ff;
+    }
+  }
+}

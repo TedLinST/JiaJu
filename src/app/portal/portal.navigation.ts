@@ -341,8 +341,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('delivery-order');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('delivery-order');
   }
 
   /**
@@ -362,8 +361,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('master-joined');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('master-joined');
   }
 
   /**
@@ -373,8 +371,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('merchant-opening');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('merchant-opening');
   }
 
   /**

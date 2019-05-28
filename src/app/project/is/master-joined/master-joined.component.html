@@ -1,0 +1,117 @@
+<div class="master-joined">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="师傅加入" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureDelivery()">家具送装</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        师傅加入
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 师傅加入 -->
+  <key-item-chunk [title]="dataHandler.title" marginTop="20"
+    [enTitle]="dataHandler.enTitle">
+    <div body>
+      <key-item-chunk-body>
+        <div class="mj-style">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              <div class="img-box">
+                <img [src]="dataHandler.src">
+              </div>
+            </div>
+            <div class="z-col z-col-2">
+              <div class="text-box" [innerHTML]="dataHandler.content">
+              </div>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 加入申请单 -->
+  <div class="apply">
+    <div class="header">
+      加入申请表单
+    </div>
+    <div class="body">
+      <form nz-form [nzLayout]="'inline'" (ngSubmit)="submitForm()">
+        <div nz-row [nzGutter]="24">
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">姓名
+              </nz-form-label>
+              <nz-form-control>
+                <input nz-input name="XingMing" style="width: 430px;"
+                  [(ngModel)]="bean.XingMing" />
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;"> 电话
+              </nz-form-label>
+              <nz-form-control>
+                <input nz-input name="DianHua" style="width: 430px;"
+                  [(ngModel)]="bean.DianHua" />
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+        <div nz-row [nzGutter]="24">
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">城市
+              </nz-form-label>
+              <nz-form-control>
+                <input nz-input name="ChengShi" style="width: 430px;"
+                  [(ngModel)]="bean.ChengShi" />
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div nz-col [nzSpan]="12">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;"> 服务类别
+              </nz-form-label>
+              <nz-form-control>
+                <input nz-input name="FuWuLeiBie" style="width: 430px;"
+                  [(ngModel)]="bean.FuWuLeiBie" />
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+        <div nz-row [nzGutter]="24">
+          <div nz-col [nzSpan]="24">
+            <nz-form-item nzFlex>
+              <nz-form-label style="width: 120px;">留言
+              </nz-form-label>
+              <nz-form-control>
+                <textarea nz-input name="LiuYan" rows="6" style="width: 1026px;"
+                  [(ngModel)]="bean.LiuYan"></textarea>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+        <div class="btn-div">
+          <button class="btn" nz-button nzType="primary">提交</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

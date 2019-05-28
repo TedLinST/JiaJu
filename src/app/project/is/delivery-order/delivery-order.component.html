@@ -1,0 +1,315 @@
+<div class="delivery-order">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="送装下单" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureDelivery()">家具送装</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        送装下单
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <form nz-form [nzLayout]="'inline'" (ngSubmit)="submitForm()">
+      <!-- 收发货信息 -->
+      <div class="box-style">
+        <div class="header">收发货信息</div>
+        <div class="body">
+          <div class="z-row">
+            <div class="z-col z-col-2">
+              自动识别发货人信息
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">发货人
+                </nz-form-label>
+                <nz-form-control>
+                  <input nz-input name="FaHuoRen" style="width: 430px;"
+                    [(ngModel)]="bean.FaHuoRen" />
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">联系电话
+                </nz-form-label>
+                <nz-form-control>
+                  <input nz-input name="FaHuoRenDianHua" style="width: 430px;"
+                    [(ngModel)]="bean.FaHuoRenDianHua" />
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">寄件地址
+                </nz-form-label>
+                <nz-form-control>
+                  <nz-select nzAllowClear="true" name="JiJianDiZhi1"
+                    style="width: 137px;margin-right: 10px;"
+                    [(ngModel)]="bean.JiJianDiZhi1"
+                    (ngModelChange)="onSelectProvince(bean.JiJianDiZhi1,1)">
+                    <ng-template ngFor let-item [ngForOf]="provinceList"
+                      let-index="index">
+                      <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                      </nz-option>
+                    </ng-template>
+                  </nz-select>
+                  <nz-select nzAllowClear="true" name="JiJianDiZhi2"
+                    style="width: 137px;margin-right: 10px;"
+                    [(ngModel)]="bean.JiJianDiZhi2"
+                    (ngModelChange)="onSelectCity(bean.JiJianDiZhi2,1)">
+                    <ng-template ngFor let-item [ngForOf]="cityData1"
+                      let-index="index">
+                      <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                      </nz-option>
+                    </ng-template>
+                  </nz-select>
+                  <nz-select nzAllowClear="true" name="JiJianDiZhi3"
+                    style="width: 136px;" [(ngModel)]="bean.JiJianDiZhi3">
+                    <ng-template ngFor let-item [ngForOf]="districtData1"
+                      let-index="index">
+                      <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                      </nz-option>
+                    </ng-template>
+                  </nz-select>
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">具体地址
+                </nz-form-label>
+                <nz-form-control>
+                  <input nz-input name="JuTiJiJianDiZhi" style="width: 430px;"
+                    [(ngModel)]="bean.JuTiJiJianDiZhi" />
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+            <div class="z-col z-col-2">
+              自动识别收货人信息
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">收货人
+                </nz-form-label>
+                <nz-form-control>
+                  <input nz-input name="ShouHuoRen" style="width: 430px;"
+                    [(ngModel)]="bean.ShouHuoRen" />
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">联系电话
+                </nz-form-label>
+                <nz-form-control>
+                  <input nz-input name="ShouHuoRenDianHua" style="width: 430px;"
+                    [(ngModel)]="bean.ShouHuoRenDianHua" />
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">收货地址
+                </nz-form-label>
+                <nz-form-control>
+                  <nz-select nzAllowClear="true" name="ShouJianDiZhi1"
+                    style="width: 137px;margin-right: 10px;"
+                    [(ngModel)]="bean.ShouJianDiZhi1"
+                    (ngModelChange)="onSelectProvince(bean.ShouJianDiZhi1,2)">
+                    <ng-template ngFor let-item [ngForOf]="provinceList"
+                      let-index="index">
+                      <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                      </nz-option>
+                    </ng-template>
+                  </nz-select>
+                  <nz-select nzAllowClear="true" name="ShouJianDiZhi2"
+                    style="width: 137px;margin-right: 10px;"
+                    [(ngModel)]="bean.ShouJianDiZhi2"
+                    (ngModelChange)="onSelectCity(bean.ShouJianDiZhi2,2)">
+                    <ng-template ngFor let-item [ngForOf]="cityData2"
+                      let-index="index">
+                      <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                      </nz-option>
+                    </ng-template>
+                  </nz-select>
+                  <nz-select nzAllowClear="true" name="ShouJianDiZhi3"
+                    style="width: 136px;" [(ngModel)]="bean.ShouJianDiZhi3">
+                    <ng-template ngFor let-item [ngForOf]="districtData2"
+                      let-index="index">
+                      <nz-option [nzValue]="item.id" [nzLabel]="item.text">
+                      </nz-option>
+                    </ng-template>
+                  </nz-select>
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">具体地址
+                </nz-form-label>
+                <nz-form-control>
+                  <input nz-input name="ShouJianJuTiDiZhi" style="width: 430px;"
+                    [(ngModel)]="bean.ShouJianJuTiDiZhi" />
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 货物信息 -->
+      <div class="box-style">
+        <div class="header">货物信息</div>
+        <div class="body">
+          <div class="list">
+            <div class="item item-center">
+              <div class="col_1">产品型号</div>
+              <div class="col_2">产品名称</div>
+              <div class="col_3">数量</div>
+              <div class="col_4">体积</div>
+              <div class="col_5">重量</div>
+              <div class="col_6">材质</div>
+              <div class="col_7">备注</div>
+              <div class="clearfix"></div>
+            </div>
+            <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+              <div class="item" [class.active]="item == activeItem"
+                (click)="activeItem = item">
+                <div class="col_1">
+                  <input nz-input name="ChanPinLeiXing" style="width: 100%;"
+                    [(ngModel)]="item.ChanPinLeiXing" />
+                </div>
+                <div class="col_2">
+                  <input nz-input name="ChanPinMingCheng" style="width: 100%;"
+                    [(ngModel)]="item.ChanPinMingCheng" />
+                </div>
+                <div class="col_3">
+                  <input nz-input name="ShuLiang" style="width: 100%;"
+                    [(ngModel)]="item.ShuLiang" />
+                </div>
+                <div class="col_4">
+                  <input nz-input name="TiJi" style="width: 100%;"
+                    [(ngModel)]="item.TiJi" />
+                </div>
+                <div class="col_5">
+                  <input nz-input name="ZhongLiang" style="width: 100%;"
+                    [(ngModel)]="item.ZhongLiang" />
+                </div>
+                <div class="col_6">
+                  <input nz-input name="CaiZhi" style="width: 100%;"
+                    [(ngModel)]="item.CaiZhi" />
+                </div>
+                <div class="col_7">
+                  <input nz-input name="BeiZhu" style="width: 100%;"
+                    [(ngModel)]="item.BeiZhu" />
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </ng-template>
+            <div class="tools">
+              <span class="icon icon1" (click)="onAdd()">
+                <i class="fa fa-plus-circle"></i>
+              </span>
+              <span *ngIf="!!activeItem" class="icon icon2"
+                (click)="onDelete()">
+                <i class="fa fa-trash-o"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 服务选择 -->
+      <div class="box-style">
+        <div class="header">服务选择</div>
+        <div class="body">
+          <nz-form-item nzFlex>
+            <nz-form-label style="width: 120px;">付款方式
+            </nz-form-label>
+            <nz-form-control>
+              <nz-radio-group [(ngModel)]="bean.FuKuanFangShi"
+                name="FuKuanFangShi">
+                <label nz-radio nzValue="寄付">寄付</label>
+                <label nz-radio nzValue="到付">到付</label>
+                <label nz-radio nzValue="定期结算">定期结算</label>
+              </nz-radio-group>
+            </nz-form-control>
+          </nz-form-item>
+          <br>
+          <nz-form-item nzFlex>
+            <nz-form-label style="width: 120px;">保价服务
+            </nz-form-label>
+            <nz-form-control>
+              <nz-radio-group [(ngModel)]="bean.BaoJiaFuWu" name="BaoJiaFuWu">
+                <label nz-radio nzValue="是">是</label>
+                <label nz-radio nzValue="否">否</label>
+              </nz-radio-group>
+            </nz-form-control>
+          </nz-form-item>
+          <br>
+          <nz-form-item nzFlex>
+            <nz-form-label style="width: 120px;">上门提货
+            </nz-form-label>
+            <nz-form-control>
+              <nz-radio-group [(ngModel)]="bean.ShangMenTiHuo"
+                name="ShangMenTiHuo">
+                <label nz-radio nzValue="是">是</label>
+                <label nz-radio nzValue="否">否</label>
+              </nz-radio-group>
+            </nz-form-control>
+          </nz-form-item>
+          <br>
+          <nz-form-item nzFlex>
+            <nz-form-label style="width: 120px;">单据回收
+            </nz-form-label>
+            <nz-form-control>
+              <nz-radio-group [(ngModel)]="bean.DanJuHuiShou"
+                name="DanJuHuiShou">
+                <label nz-radio nzValue="是">是</label>
+                <label nz-radio nzValue="否">否</label>
+              </nz-radio-group>
+            </nz-form-control>
+          </nz-form-item>
+          <br>
+          <nz-form-item nzFlex>
+            <nz-form-label style="width: 120px;">安全包装
+            </nz-form-label>
+            <nz-form-control>
+              <nz-radio-group [(ngModel)]="bean.AnQuanBaoZhuang"
+                name="AnQuanBaoZhuang">
+                <label nz-radio nzValue="木架">木架</label>
+                <label nz-radio nzValue="编织袋">编织袋</label>
+                <label nz-radio nzValue="纸箱">纸箱</label>
+                <label nz-radio nzValue="木箱">木箱</label>
+                <label nz-radio nzValue="其他">其他</label>
+                <label nz-radio nzValue="不需要">不需要</label>
+              </nz-radio-group>
+            </nz-form-control>
+          </nz-form-item>
+          <br>
+          <nz-form-item nzFlex>
+            <nz-form-label style="width: 120px;">运输方式
+            </nz-form-label>
+            <nz-form-control>
+              <nz-radio-group [(ngModel)]="bean.YunShuFangShi"
+                name="YunShuFangShi">
+                <label nz-radio nzValue="整车">整车</label>
+                <label nz-radio nzValue="零担">零担</label>
+                <label nz-radio nzValue="空运">空运</label>
+                <label nz-radio nzValue="航运">航运</label>
+              </nz-radio-group>
+            </nz-form-control>
+          </nz-form-item>
+          <br>
+          <nz-form-item nzFlex>
+            <nz-form-label style="width: 120px;">备注
+            </nz-form-label>
+            <nz-form-control>
+              <textarea nz-input name="BeiZhu" rows="6" style="width: 1026px;"
+                [(ngModel)]="bean.BeiZhu"></textarea>
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+      </div>
+
+      <div class="btn-div">
+        <button class="btn" nz-button nzType="primary">提交订单</button>
+      </div>
+
+    </form>
+  </div>
+</div>
