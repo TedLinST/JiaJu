@@ -352,8 +352,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('service-introduction');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('service-introduction');
   }
 
   /**

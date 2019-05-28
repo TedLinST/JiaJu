@@ -23,7 +23,8 @@
   <key-item-chunk [title]="dataHandler.SI.title" marginTop="20"
     [enTitle]="dataHandler.SI.enTitle">
     <div body>
-      <key-item-chunk-body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openServiceIntroduction()">
         <div class="SI-style">
           <img [src]="dataHandler.SI.info.src">
           <div class="chunk">
@@ -36,10 +37,11 @@
   </key-item-chunk>
 
   <!-- 服务下单 -->
-  <key-item-chunk [title]="dataHandler.SO.title" marginTop="20"
+  <key-item-chunk [title]="dataHandler.SO.title"
     [enTitle]="dataHandler.SO.enTitle">
     <div body>
-      <key-item-chunk-body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openDeliveryOrder()">
         <div class="SO-style">
           <img [src]="dataHandler.SO.info.src">
           <div class="chunk">
@@ -60,10 +62,11 @@
   </key-item-chunk>
 
   <!-- 安装师傅加入 -->
-  <key-item-chunk [title]="dataHandler.IJ.title" marginTop="20"
+  <key-item-chunk [title]="dataHandler.IJ.title"
     [enTitle]="dataHandler.IJ.enTitle">
     <div body>
-      <key-item-chunk-body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openMasterJoined()">
         <div class="IJ-style">
           <img [src]="dataHandler.IJ.info.src">
           <div class="chunk">
@@ -80,10 +83,11 @@
   </key-item-chunk>
 
   <!-- 商家开通 -->
-  <key-item-chunk [title]="dataHandler.BO.title" marginTop="20"
+  <key-item-chunk [title]="dataHandler.BO.title"
     [enTitle]="dataHandler.BO.enTitle">
     <div body>
-      <key-item-chunk-body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openMerchantOpening()">
         <div class="BO-style">
           <img [src]="dataHandler.BO.info.src">
           <div class="chunk">
@@ -109,7 +113,7 @@
   </key-item-chunk>
 
   <!-- 订单查询 -->
-  <key-item-chunk [title]="dataHandler.OT.title" marginTop="20"
+  <key-item-chunk [title]="dataHandler.OT.title"
     [enTitle]="dataHandler.OT.enTitle">
     <div body>
       <key-item-chunk-body>

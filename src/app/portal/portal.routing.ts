@@ -36,7 +36,7 @@ export const PortalRoutes = [
     { path: 'project-information', loadChildren: '../project/is/project-information/project-information.module#ProjectInformationModule' }, // 项目信息详细
     { path: 'furniture-delivery', loadChildren: '../project/is/furniture-delivery/furniture-delivery.module#FurnitureDeliveryModule' }, // 家具送装
     // { path: 'delivery-order', loadChildren: '../project/is/delivery-order/delivery-order.module#DeliveryOrderModule' }, // 送装下单
-    // { path: 'service-introduction', loadChildren: '../project/is/service-introduction/service-introduction.module#ServiceIntroductionModule' }, // 服务介绍
+    { path: 'service-introduction', loadChildren: '../project/is/service-introduction/service-introduction.module#ServiceIntroductionModule' }, // 服务介绍
     // { path: 'master-joined', loadChildren: '../project/is/master-joined/master-joined.module#MasterJoinedModule' }, // 师傅加入
     // { path: 'merchant-opening', loadChildren: '../project/is/merchant-opening/merchant-opening.module#MerchantOpeningModule' }, // 商家开通
     { path: 'material-equipment', loadChildren: '../project/me/material-equipment/material-equipment.module#MaterialEquipmentModule' }, // 原辅材料机械设备服务
