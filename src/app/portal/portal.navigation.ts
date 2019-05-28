@@ -362,8 +362,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('master-joined');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('master-joined');
   }
 
   /**
