@@ -283,6 +283,17 @@ export class PortalNavigation {
   }
 
   /**
+   * 综合服务 - 金融服务 - 资金信息详细
+   */
+  openFundInformation(info: any, event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    let itemInfo: any = JSON.stringify(info);
+    this.router.navigate(['fund-information'], { queryParams: { itemInfo: itemInfo } });
+  }
+
+  /**
    * 综合服务 - 金融服务 - 选项目
    */
   openSelectedItems(event?: any) {
@@ -293,36 +304,24 @@ export class PortalNavigation {
   }
 
   /**
+   * 综合服务 - 金融服务 - 项目信息详细
+   */
+  openProjectInformation(info: any, event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    let itemInfo: any = JSON.stringify(info);
+    this.router.navigate(['project-information'], { queryParams: { itemInfo: itemInfo } });
+  }
+
+  /**
    * 综合服务 - 金融服务 - 线下融资活动
    */
   openOfflineFinancing(event?: any) {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('offline-financing');
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 综合服务 - 金融服务 - 资金信息详细
-   */
-  openFundInformation(event?: any) {
-    if (!!event) {
-      event.stopPropagation();
-    }
-    // this.router.navigateByUrl('fund-information');
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 综合服务 - 金融服务 - 项目信息详细
-   */
-  openProjectInformation(event?: any) {
-    if (!!event) {
-      event.stopPropagation();
-    }
-    // this.router.navigateByUrl('project-information');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('offline-financing');
   }
 
   /**
@@ -332,8 +331,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('furniture-delivery');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('furniture-delivery');
   }
 
   /**
@@ -354,8 +352,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('service-introduction');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('service-introduction');
   }
 
   /**

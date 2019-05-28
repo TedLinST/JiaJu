@@ -134,6 +134,9 @@ export class ConstantHandler {
   // 综合服务 - 横幅图片
   public static CH_IS_BANNER_SRC = 'assets/imgs/integrated-services/banner.jpg';
 
+  // 综合服务 - 家具送装 - 横幅图片
+  public static CH_IS_BANNER_2_SRC = 'assets/imgs/furniture-delivery/banner.jpg';
+
   // 综合服务 - 横幅菜单
   public static CH_IS_BANNER_MENU = [
     {
@@ -183,7 +186,7 @@ export class ConstantHandler {
         {
           id: '3-3',
           title: '线下融资活动',
-        },
+        }/* ,
         {
           id: '3-4',
           title: '资金信息详细',
@@ -191,7 +194,7 @@ export class ConstantHandler {
         {
           id: '3-5',
           title: '项目信息详细',
-        }
+        } */
       ]
     },
     {

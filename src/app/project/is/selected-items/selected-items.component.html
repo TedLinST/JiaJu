@@ -69,8 +69,9 @@
                   </div>
                   <div class="z-row" style="width: 1000px;">
                     <div class="z-col z-col-1">
-                      <div class="title singleTextBeyondHide">
-                        {{item.XiangMuBiaoTi}}
+                      <div class="title singleTextBeyondHide"
+                        (click)="onClickItem(item)">
+                        <a>{{item.XiangMuBiaoTi}}</a>
                       </div>
                     </div>
                     <div class="z-col z-col-1">

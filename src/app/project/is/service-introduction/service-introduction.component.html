@@ -1,0 +1,230 @@
+<div class="service-introduction">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="服务介绍" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureDelivery()">家具送装</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        服务介绍
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 运输服务 -->
+  <key-item-chunk [title]="dataHandler.SS.title" marginTop="20"
+    [enTitle]="dataHandler.SS.enTitle">
+    <div body>
+      <key-item-chunk-body>
+        <div class="SS-style">
+          <img [src]="dataHandler.SS.info0.src">
+          <div class="chunk">
+            <div class="words">
+              <div class="title">{{dataHandler.SS.info0.title}}</div>
+              <div class="content">{{dataHandler.SS.info0.content}}</div>
+            </div>
+            <div class="z-row">
+              <ng-template ngFor let-item [ngForOf]="dataHandler.SS.data0"
+                let-index="index">
+                <div class="z-col z-col-3">
+                  <div class="item">
+                    {{item.qty}}<br>{{item.title}}
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="btn1" nz-button nzType="primary"
+            (click)="onCalculation(1)">费用计算</button>
+          <button class="btn2" nz-button nzType="primary"
+            (click)="onOrder(1)">我要下单</button>
+        </div>
+        <div class="SS-style" style="margin-top: 20px;">
+          <img [src]="dataHandler.SS.info1.src">
+          <div class="chunk">
+            <div class="words">
+              <div class="title">{{dataHandler.SS.info1.title}}</div>
+              <div class="content">{{dataHandler.SS.info1.content}}</div>
+            </div>
+            <div class="z-row">
+              <ng-template ngFor let-item [ngForOf]="dataHandler.SS.data1"
+                let-index="index">
+                <div *ngIf="index < 3" class="z-col z-col-3"
+                  style="margin-bottom: 20px;">
+                  <div class="item">
+                    {{item.qty}}<br>{{item.title}}
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+            <div class="z-row">
+              <div class="z-col z-col-2">
+                <div class="item" style="margin-left: 160px;">
+                  {{dataHandler.SS.data1[3].qty}}
+                  <br>
+                  {{dataHandler.SS.data1[3].title}}
+                </div>
+              </div>
+              <div class="z-col z-col-2">
+                <div class="item" style="margin-right: 160px;">
+                  {{dataHandler.SS.data1[4].qty}}
+                  <br>
+                  {{dataHandler.SS.data1[4].title}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="btn1" nz-button nzType="primary"
+            (click)="onCalculation(2)">费用计算</button>
+          <button class="btn2" nz-button nzType="primary"
+            (click)="onOrder(2)">我要下单</button>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 仓储服务 -->
+  <key-item-chunk [title]="dataHandler.WS.title"
+    [enTitle]="dataHandler.WS.enTitle">
+    <div body>
+      <key-item-chunk-body>
+        <div class="WS-style">
+          <img [src]="dataHandler.WS.info.src">
+          <div class="chunk">
+            <div class="words">
+              <div class="title">{{dataHandler.WS.info.title}}</div>
+              <div class="content">{{dataHandler.WS.info.content}}</div>
+            </div>
+            <div class="z-row">
+              <ng-template ngFor let-item [ngForOf]="dataHandler.WS.data"
+                let-index="index">
+                <div class="z-col z-col-3">
+                  <div class="item" style="padding-top: 20px;">
+                    {{item.qty}}<br>{{item.label1}}<br>{{item.label2}}
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="btn1" nz-button nzType="primary"
+            (click)="onCalculation(3)">费用计算</button>
+          <button class="btn2" nz-button nzType="primary"
+            (click)="onOrder(3)">我要下单</button>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 搬运服务 -->
+  <key-item-chunk [title]="dataHandler.HS.title"
+    [enTitle]="dataHandler.HS.enTitle">
+    <div body>
+      <key-item-chunk-body>
+        <div class="HS-style" style="margin-top: 20px;">
+          <img [src]="dataHandler.HS.info.src">
+          <div class="chunk">
+            <div class="words">
+              <div class="title">{{dataHandler.HS.info.title}}</div>
+              <div class="content">{{dataHandler.HS.info.content}}</div>
+            </div>
+            <div class="z-row">
+              <ng-template ngFor let-item [ngForOf]="dataHandler.HS.data"
+                let-index="index">
+                <div *ngIf="index < 3" class="z-col z-col-3"
+                  style="margin-bottom: 20px;">
+                  <div class="item">
+                    {{item.qty}}<br>{{item.title}}
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+            <div class="z-row">
+              <div class="z-col z-col-2">
+                <div class="item" style="margin-left: 160px;">
+                  {{dataHandler.HS.data[3].qty}}
+                  <br>
+                  {{dataHandler.HS.data[3].title}}
+                </div>
+              </div>
+              <div class="z-col z-col-2">
+                <div class="item" style="margin-right: 160px;">
+                  {{dataHandler.HS.data[4].qty}}
+                  <br>
+                  {{dataHandler.HS.data[4].title}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="btn1" nz-button nzType="primary"
+            (click)="onCalculation(4)">费用计算</button>
+          <button class="btn2" nz-button nzType="primary"
+            (click)="onOrder(4)">我要下单</button>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 安装服务 -->
+  <key-item-chunk [title]="dataHandler.IS.title"
+    [enTitle]="dataHandler.IS.enTitle">
+    <div body>
+      <key-item-chunk-body>
+        <div class="IS-style">
+          <img [src]="dataHandler.IS.info.src">
+          <div class="chunk">
+            <div class="words">
+              <div class="title">{{dataHandler.IS.info.title}}</div>
+              <div class="content">{{dataHandler.IS.info.content}}</div>
+              <button class="btn" nz-button nzType="primary"
+                (click)="onOrder(5)">我要下单</button>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 售后服务 -->
+  <key-item-chunk [title]="dataHandler.ASS.title"
+    [enTitle]="dataHandler.ASS.enTitle">
+    <div body>
+      <key-item-chunk-body>
+        <div class="ASS-style">
+          <img [src]="dataHandler.ASS.info.src">
+          <div class="chunk">
+            <div class="words" style="padding-left: 140px;">
+              <div class="title">{{dataHandler.ASS.info.title}}</div>
+              <div class="content">{{dataHandler.ASS.info.content}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="btn1" nz-button nzType="primary"
+            (click)="onCalculation(6)">费用计算</button>
+          <button class="btn2" nz-button nzType="primary"
+            (click)="onOrder(6)">我要下单</button>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

@@ -1,0 +1,131 @@
+<div class="furniture-delivery">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeTitle="家具送装" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        家具送装
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 服务介绍 -->
+  <key-item-chunk [title]="dataHandler.SI.title" marginTop="20"
+    [enTitle]="dataHandler.SI.enTitle">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openServiceIntroduction()">
+        <div class="SI-style">
+          <img [src]="dataHandler.SI.info.src">
+          <div class="chunk">
+            <div class="title">{{dataHandler.SI.info.title}}</div>
+            <div class="content">{{dataHandler.SI.info.content}}</div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 服务下单 -->
+  <key-item-chunk [title]="dataHandler.SO.title"
+    [enTitle]="dataHandler.SO.enTitle">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openDeliveryOrder()">
+        <div class="SO-style">
+          <img [src]="dataHandler.SO.info.src">
+          <div class="chunk">
+            <div class="title title-min-center">{{dataHandler.SO.info.title}}
+            </div>
+            <div class="z-row">
+              <ng-template ngFor let-item [ngForOf]="dataHandler.SO.data"
+                let-index="index">
+                <div class="z-col z-col-5">
+                  <div class="item">{{item.title}}</div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 安装师傅加入 -->
+  <key-item-chunk [title]="dataHandler.IJ.title"
+    [enTitle]="dataHandler.IJ.enTitle">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openMasterJoined()">
+        <div class="IJ-style">
+          <img [src]="dataHandler.IJ.info.src">
+          <div class="chunk">
+            <div class="title">{{dataHandler.IJ.info.title}}</div>
+            <div class="content">{{dataHandler.IJ.info.content}}</div>
+            <div class="btn-div">
+              <button class="btn" nz-button nzSize="large"
+                nzType="primary">我要加入</button>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 商家开通 -->
+  <key-item-chunk [title]="dataHandler.BO.title"
+    [enTitle]="dataHandler.BO.enTitle">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openMerchantOpening()">
+        <div class="BO-style">
+          <img [src]="dataHandler.BO.info.src">
+          <div class="chunk">
+            <div class="z-row">
+              <ng-template ngFor let-item [ngForOf]="dataHandler.BO.data"
+                let-index="index">
+                <div class="z-col z-col-6">
+                  <div class="item">
+                    <img [src]="item.src">
+                    {{item.title}}
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+            <div class="btn-div">
+              <button class="btn" nz-button nzSize="large"
+                nzType="primary">我要加入</button>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 订单查询 -->
+  <key-item-chunk [title]="dataHandler.OT.title"
+    [enTitle]="dataHandler.OT.enTitle">
+    <div body>
+      <key-item-chunk-body>
+        <div class="OT-style">
+          <img [src]="dataHandler.OT.info.src">
+          <div class="chunk">
+            <div class="title">{{dataHandler.OT.info.title}}</div>
+            <div class="content">{{dataHandler.OT.info.content}}</div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

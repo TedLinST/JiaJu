@@ -1,0 +1,185 @@
+<div class="project-information">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="项目信息详细" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFinance()">金融服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openSelectedItems()">选项目</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        项目信息详细
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <key-item-chunk [title]="dataHandler.title" marginTop="20"
+    [enTitle]="dataHandler.enTitle">
+    <div body>
+      <key-item-chunk-body>
+        <div class="style-PI">
+          <key-dot-title title="项目基本信息"></key-dot-title>
+          <div class="title">
+            {{infoParams?.XiangMuBiaoTi}}
+            <span>
+              <samp>更新日期：{{infoParams?.GengXinRiQi}}</samp>
+            </span>
+          </div>
+          <div class="info">
+            <div class="z-row">
+              <div class="z-col z-col-5">
+                <key-box-label label="融资资金" [value]="infoParams?.RongZiZiJin"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+              <div class="z-col z-col-5">
+                <key-box-label label="融资方式" [value]="infoParams?.RongZiFangShi"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+              <div class="z-col z-col-5">
+                <key-box-label label="所在地区" [value]="infoParams?.SuoZaiDiQu"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+              <div class="z-col z-col-5">
+                <key-box-label label="所属行业" [value]="infoParams?.SuoShuHangYe"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+            </div>
+            <div class="z-row">
+              <div class="z-col z-col-5">
+                <key-box-label label="联系人" [value]="infoParams?.LianXiRen"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+              <div class="z-col z-col-5">
+                <key-box-label label="单位名称"
+                  [value]="infoParams?.DanWeiMingCheng"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+              <div class="z-col z-col-5">
+                <key-box-label label="留言数" [value]="infoParams?.LiuYanShu"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+            </div>
+          </div>
+          <key-box title="公司介绍">
+            <div style="min-height: 120px;"
+              [innerHTML]="infoParams?.GongSiJieShao"></div>
+          </key-box>
+          <key-box title="项目概述">
+            <div style="min-height: 120px;"
+              [innerHTML]="infoParams?.XiangMuGaiShu"></div>
+          </key-box>
+          <key-box title="项目优势">
+            <div style="min-height: 80px;"
+              [innerHTML]="infoParams?.XiangMuYouShi">
+            </div>
+          </key-box>
+
+
+          <div class="message">
+            <div class="box">
+              <div class="header">用户留言信息</div>
+              <div class="body">
+                <div *ngIf="listData != null && listData.length > 0">
+                  <ng-template ngFor let-item [ngForOf]="listData"
+                    let-index="index">
+                    <div class="item">
+                      <div class="img">
+                        <img [src]="item.src">
+                      </div>
+                      <div class="info">
+                        <div class="label singleTextBeyondHide">
+                          用户名：{{item.YongHuMing}}</div>
+                        <div class="label singleTextBeyondHide">
+                          单位名称：{{item.DanWeiMingCheng}}</div>
+                        <div class="label singleTextBeyondHide">
+                          所在地区：{{item.SuoZaiDiQu}}</div>
+                        <div class="label singleTextBeyondHide">
+                          意向资金：{{item.YiXiangZiJin}}</div>
+                      </div>
+                      <div class="liuyan">
+                        留言信息：{{item.LiuYanXinXi}}
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </ng-template>
+
+                  <div class="pagination">
+                    <nz-pagination [(nzPageIndex)]="activePagaIndex"
+                      [nzTotal]="total" [nzShowTotal]="rangeTemplate"
+                      [nzPageSize]="pageSize"
+                      (nzPageIndexChange)="onPageIndexChange($event)">
+                    </nz-pagination>
+                    <ng-template #rangeTemplate let-range="range" let-total>
+                      显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+                    </ng-template>
+                  </div>
+                </div>
+                <div *ngIf="!(listData != null && listData.length > 0)">
+                  <nz-empty></nz-empty>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-message">
+            <div class="header">
+              用户留言
+            </div>
+            <div class="body">
+              <form nz-form [nzLayout]="'inline'" (ngSubmit)="submitForm()">
+                <div nz-row [nzGutter]="24">
+                  <div nz-col [nzSpan]="12">
+                    <nz-form-item nzFlex>
+                      <nz-form-label style="width: 120px;">意向资金
+                      </nz-form-label>
+                      <nz-form-control>
+                        <input nz-input name="YiXiangZiJin"
+                          style="width: 430px;"
+                          [(ngModel)]="bean.YiXiangZiJin" />
+                      </nz-form-control>
+                    </nz-form-item>
+                  </div>
+                </div>
+                <div nz-row [nzGutter]="24">
+                  <div nz-col [nzSpan]="12">
+                    <nz-form-item nzFlex>
+                      <nz-form-label style="width: 120px;">留言信息
+                      </nz-form-label>
+                      <nz-form-control>
+                        <textarea nz-input name="LiuYanXinXi"
+                          style="width: 430px;"
+                          [(ngModel)]="bean.LiuYanXinXi"></textarea>
+                      </nz-form-control>
+                    </nz-form-item>
+                  </div>
+                </div>
+                <div class="btn-div">
+                  <button class="btn" nz-button nzType="primary">发布</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+</div>

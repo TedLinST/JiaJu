@@ -140,6 +140,14 @@ export class SelectedItemsComponent implements OnInit {
   }
 
   /**
+   * 项目
+   * @param item 
+   */
+  onClickItem(item: any) {
+    this.portalNav.openProjectInformation(item);
+  }
+
+  /**
    * 约谈项目方
    */
   onInterview(item: any) {
