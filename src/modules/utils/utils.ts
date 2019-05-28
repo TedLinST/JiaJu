@@ -180,11 +180,41 @@ export class Utils {
     }
 
     /**
+     * 删除数组中，指定的对象
+     * @param array 数组
+     * @param removeEl 指定对象
+     */
+    public static arrayRemove(array: any[], removeEl: any) {
+        if (array == null || removeEl == null) {
+            return;
+        }
+        if (Array.isArray(removeEl)) {
+            for (let j = 0, jlen = removeEl.length; j < jlen; j++) {
+                for (let i = 0, ilen = array.length; i < ilen; i++) {
+                    if (array[i] === removeEl[j]) {
+                        array.splice(i, 1);
+                        break;
+                    }
+                }
+            }
+        } else {
+            for (let i = 0, len = array.length; i < len; i++) {
+                if (array[i] === removeEl) {
+                    array.splice(i, 1);
+                    return;
+                }
+            }
+        }
+    }
+
+    /**
      * 格式化成两位数的数字
      */
     public static formatNumber = (n: number) => {
         const str = n.toString();
         return str[1] ? str : '0' + str;
     }
+
+
 
 }
