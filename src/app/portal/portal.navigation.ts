@@ -372,8 +372,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('merchant-opening');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('merchant-opening');
   }
 
   /**
