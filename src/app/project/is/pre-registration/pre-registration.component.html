@@ -1,0 +1,260 @@
+<div class="pre-registration">
+  <!-- 横幅 -->
+  <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
+    activeSubTitle="预登记详细" (clickMenu)="onClickBannerMenu($event)">
+  </is-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openIntegratedServices()">综合服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openExhibition()">展会服务</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        预登记详细
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 预登记详细 -->
+  <key-item-chunk [enTitle]="dataHandler.enTitle" [title]="dataHandler.title">
+    <div body>
+      <key-item-chunk-body>
+        <div class="process">
+          <div class="item" [class.active]="activeItemNumber == 1">
+            <div class="dot">1</div>
+            <div class="text">名片上传</div>
+          </div>
+          <div class="item item-icon">
+            <i class="fa fa-long-arrow-right"></i>
+          </div>
+          <div class="item" [class.active]="activeItemNumber == 2">
+            <div class="dot">2</div>
+            <div class="text">完善信息</div>
+          </div>
+          <div class="item item-icon">
+            <i class="fa fa-long-arrow-right"></i>
+          </div>
+          <div class="item" [class.active]="activeItemNumber == 3">
+            <div class="dot">3</div>
+            <div class="text">预登记完成</div>
+          </div>
+          <!-- <div class="item item-icon">
+            <i class="fa fa-long-arrow-right"></i>
+          </div>
+          <div class="item" [class.active]="activeItemNumber == 4">
+            <div class="dot">4</div>
+            <div class="text">邀请好友</div>
+          </div> -->
+          <div class="clearfix"></div>
+        </div>
+      </key-item-chunk-body>
+      <key-item-chunk-body *ngIf="activeItemNumber == 1">
+        <div class="box-style">
+          <div class="header">
+            上传名片登记
+          </div>
+          <div class="body">
+            <div class="img-div">
+              <img [src]="cardUrl">
+            </div>
+            <div class="btn-div">
+              <nz-upload [nzAccept]="'image/*'" nzAction="/uplod"
+                nzName="avatar" [nzShowUploadList]="false"
+                [nzBeforeUpload]="beforeUpload"
+                (nzChange)="handleChange($event)">
+                <button class="btn" nz-button nzType="primary">选择名片</button>
+              </nz-upload>
+              <button class="btn" nz-button nzType="primary"
+                (click)="onNextStep(2)">确认上传</button>
+              <button class="btn" nz-button nzType="primary"
+                (click)="onNextStep(2,false)">跳过上传名片</button>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+      <key-item-chunk-body *ngIf="activeItemNumber == 2">
+        <div class="box-style">
+          <div class="header">
+            请填写个人基本信息
+          </div>
+          <div class="body">
+            <form nz-form [nzLayout]="'inline'">
+              <div class="z-row">
+                <nz-form-item nzFlex>
+                  <nz-form-label style="width: 120px;">姓名
+                  </nz-form-label>
+                  <nz-form-control>
+                    <input nz-input name="XingMing" style="width: 1015px;;"
+                      [(ngModel)]="bean.XingMing" />
+                  </nz-form-control>
+                </nz-form-item>
+              </div>
+              <div class="z-row">
+                <div class="z-col z-col-2">
+                  <nz-form-item nzFlex>
+                    <nz-form-label style="width: 120px;">性别
+                    </nz-form-label>
+                    <nz-form-control>
+                      <input nz-input name="XingBie" style="width: 430px;"
+                        [(ngModel)]="bean.XingBie" />
+                    </nz-form-control>
+                  </nz-form-item>
+                </div>
+                <div class="z-col z-col-2">
+                  <nz-form-item nzFlex>
+                    <nz-form-label style="width: 120px;">年龄
+                    </nz-form-label>
+                    <nz-form-control>
+                      <input nz-input name="NianLing" style="width: 430px;"
+                        [(ngModel)]="bean.NianLing" />
+                    </nz-form-control>
+                  </nz-form-item>
+                </div>
+              </div>
+              <div class="z-row">
+                <div class="z-col z-col-2">
+                  <nz-form-item nzFlex>
+                    <nz-form-label style="width: 120px;">手机号
+                    </nz-form-label>
+                    <nz-form-control>
+                      <input nz-input name="ShouJiHaoMa" style="width: 430px;"
+                        [(ngModel)]="bean.ShouJiHaoMa" />
+                    </nz-form-control>
+                  </nz-form-item>
+                </div>
+                <div class="z-col z-col-2">
+                  <nz-form-item nzFlex>
+                    <nz-form-label style="width: 120px;">电子邮箱
+                    </nz-form-label>
+                    <nz-form-control>
+                      <input nz-input name="DianZiYouXiang"
+                        style="width: 430px;"
+                        [(ngModel)]="bean.DianZiYouXiang" />
+                    </nz-form-control>
+                  </nz-form-item>
+                </div>
+              </div>
+              <div class="z-row">
+                <nz-form-item nzFlex>
+                  <nz-form-label style="width: 120px;">公司名称
+                  </nz-form-label>
+                  <nz-form-control>
+                    <input nz-input name="GongSiMingCheng"
+                      style="width: 1015px;"
+                      [(ngModel)]="bean.GongSiMingCheng" />
+                  </nz-form-control>
+                </nz-form-item>
+              </div>
+              <div class="z-row">
+                <div class="z-col z-col-2">
+                  <nz-form-item nzFlex>
+                    <nz-form-label style="width: 120px;">部门职业
+                    </nz-form-label>
+                    <nz-form-control>
+                      <input nz-input name="BuMenZhiYe" style="width: 430px;"
+                        [(ngModel)]="bean.BuMenZhiYe" />
+                    </nz-form-control>
+                  </nz-form-item>
+                </div>
+                <div class="z-col z-col-2">
+                  <nz-form-item nzFlex>
+                    <nz-form-label style="width: 120px;">专业角色
+                    </nz-form-label>
+                    <nz-form-control>
+                      <input nz-input name="ZhuanYeJueSe" style="width: 430px;"
+                        [(ngModel)]="bean.ZhuanYeJueSe" />
+                    </nz-form-control>
+                  </nz-form-item>
+                </div>
+              </div>
+              <div class="z-row">
+                <div class="z-col z-col-2">
+                  <nz-form-item nzFlex>
+                    <nz-form-label style="width: 120px;">地区
+                    </nz-form-label>
+                    <nz-form-control>
+                      <input nz-input name="DiQu" style="width: 430px;"
+                        [(ngModel)]="bean.DiQu" />
+                    </nz-form-control>
+                  </nz-form-item>
+                </div>
+                <div class="z-col z-col-2">
+                  <nz-form-item nzFlex>
+                    <nz-form-label style="width: 120px;">城市
+                    </nz-form-label>
+                    <nz-form-control>
+                      <input nz-input name="ChengShi" style="width: 430px;"
+                        [(ngModel)]="bean.ChengShi" />
+                    </nz-form-control>
+                  </nz-form-item>
+                </div>
+              </div>
+              <div class="z-row">
+                <nz-form-item nzFlex>
+                  <nz-form-label style="width: 120px;">详细地址
+                  </nz-form-label>
+                  <nz-form-control>
+                    <input nz-input name="XiangXiDiZhi" style="width: 1015px;"
+                      [(ngModel)]="bean.XiangXiDiZhi" />
+                  </nz-form-control>
+                </nz-form-item>
+              </div>
+
+            </form>
+            <div class="btn-div">
+              <button class="btn" nz-button nzType="primary"
+                (click)="onPreviousStep(1)">返回</button>
+              <button class="btn" nz-button nzType="primary"
+                (click)="onNextStep(3)">提交</button>
+            </div>
+          </div>
+        </div>
+      </key-item-chunk-body>
+      <key-item-chunk-body *ngIf="activeItemNumber == 3">
+        <div class="box-style">
+          <div class="body">
+            <div
+              style="margin: 20px auto 15px; width: 70%;background-color: #f5f5f5;padding: 15px 20px;">
+              <key-box-label label="名称" [value]="bean?.XingMing">
+              </key-box-label>
+              <key-box-label label="性别" [value]="bean?.XingBie"></key-box-label>
+              <key-box-label label="年龄" [value]="bean?.NianLing">
+              </key-box-label>
+              <key-box-label label="手机号" [value]="bean?.ShouJiHaoMa">
+              </key-box-label>
+              <key-box-label label="电子邮箱" [value]="bean?.DianZiYouXiang">
+              </key-box-label>
+              <key-box-label label="公司名称" [value]="bean?.GongSiMingCheng">
+              </key-box-label>
+              <key-box-label label="部门职业" [value]="bean?.BuMenZhiYe">
+              </key-box-label>
+              <key-box-label label="专业角色" [value]="bean?.ZhuanYeJueSe">
+              </key-box-label>
+              <key-box-label label="地区" [value]="bean?.DiQu"></key-box-label>
+              <key-box-label label="城市" [value]="bean?.ChengShi">
+              </key-box-label>
+              <key-box-label label="详细地址" [value]="bean?.XiangXiDiZhi">
+              </key-box-label>
+            </div>
+            <div class="btn-div">
+              <button class="btn" nz-button nzType="primary"
+                (click)="onPreviousStep(1,true)">再次登记</button>
+            </div>
+          </div>
+        </div>
+
+      </key-item-chunk-body>
+      <!-- <key-item-chunk-body *ngIf="activeItemNumber == 4">
+
+      </key-item-chunk-body> -->
+    </div>
+  </key-item-chunk>
+
+</div>

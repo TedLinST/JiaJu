@@ -218,8 +218,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('pre-registration');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('pre-registration');
   }
 
   /**
