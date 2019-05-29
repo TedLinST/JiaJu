@@ -1,0 +1,125 @@
+<div class="commodity">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
+    activeTitle="商品" (clickMenu)="onClickBannerMenu($event)">
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureMall()">家具商城</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        商品
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <!-- 条件选择区 -->
+    <key-dot-title title="条件选择区"></key-dot-title>
+    <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
+      let-index="index">
+      <key-menu-type [title]="item.title" [data]="item.data"
+        (clickType)="onClickType($event)"></key-menu-type>
+    </ng-template>
+
+    <!-- 过滤 -->
+    <div class="filter-row">
+      <key-button-sort label="按价格" [active]="btnSortActiveMap['JiaGe']"
+        (clickChange)="onClickButtonSortChange($event,'JiaGe')">
+      </key-button-sort>
+      <key-button-sort label="月成交" [active]="btnSortActiveMap['YueChengJiao']"
+        (clickChange)="onClickButtonSortChange($event,'YueChengJiao')">
+      </key-button-sort>
+      <key-button-sort label="评价" [active]="btnSortActiveMap['PingJia']"
+        (clickChange)="onClickButtonSortChange($event,'PingJia')">
+      </key-button-sort>
+      <div class="search">
+        <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+          <input type="text" nz-input placeholder="请输入商品标题、品牌、店铺"
+            [(ngModel)]="searchValue" />
+        </nz-input-group>
+        <ng-template #suffixIconButton>
+          <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+            <i nz-icon type="search"></i></button>
+        </ng-template>
+      </div>
+    </div>
+
+    <!-- 列表数据 -->
+    <div *ngIf="listData != null && listData.length > 0">
+      <div class="list">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+            <div nz-col nzSpan="6">
+              <div class="key-item-box item-box-margin-3"
+                style="height: 461px; margin-bottom: 6px;"
+                (click)="portalNav.openCommodityDetails(item.$event)">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="JiaGe">{{item.JiaGe}}</div>
+                  <div class="label">
+                    <span class="BiaoTi">
+                      {{item.BiaoTi}}
+                    </span>
+                    <span class="PinPai">
+                      {{item.PinPai}}
+                    </span>
+                  </div>
+                  <div class="label">
+                    <span class="PinLei">
+                      {{item.PinLei}}
+                    </span>
+                    <span class="ChanDi">
+                      {{item.ChanDi}}
+                    </span>
+                  </div>
+                  <div class="label">
+                    <span class="DianPu">
+                      {{item.DianPu}}
+                    </span>
+                    <span class="GuiGe">
+                      {{item.GuiGe}}
+                    </span>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="z-row">
+                    <div class="z-col z-col-2"
+                      style="border-right: 1px solid #e3e2e3">
+                      月成交
+                      <span class="YueChengJiao">{{item.YueChengJiao}}</span>
+                    </div>
+                    <div class="z-col z-col-2">
+                      评价
+                      <span class="PingJia">{{item.PingJia}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+        <div class="pagination">
+          <nz-pagination [(nzPageIndex)]="activePagaIndex" [nzTotal]="total"
+            [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
+            (nzPageIndexChange)="onPageIndexChange($event)">
+          </nz-pagination>
+          <ng-template #rangeTemplate let-range="range" let-total>
+            显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+          </ng-template>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!(listData != null && listData.length > 0)">
+      <nz-empty></nz-empty>
+    </div>
+
+
+  </div>
+</div>

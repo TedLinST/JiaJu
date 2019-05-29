@@ -1,0 +1,82 @@
+.commodity {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+
+    .filter-row {
+      .search {
+        float: right;
+        width: 350px;
+      }
+
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .list {
+      .pagination {
+        margin-top: 15px;
+        text-align: right;
+      }
+
+      .key-item-box {
+        border: 1px solid #e3e2e3;
+        padding: 5px 0px 0px 0px;
+
+        .body {
+          .JiaGe {
+            font-size: 22px;
+            font-weight: 600;
+            color: #ff0036;
+          }
+
+          .label {
+            margin-bottom: 4px;
+
+            span {
+              display: inline-block;
+              min-width: 120px;
+              margin-right: 10px;
+
+              &.BiaoTi,
+              &.PinPai,
+              &.ChanDi,
+              &.GuiGe {
+                color: #222;
+              }
+
+              &.PinLei {
+                color: #848484;
+              }
+
+              &.DianPu {
+                color: #6c5b5b;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        .footer {
+          border-top: 1px solid #e3e2e3;
+          padding: 0px;
+
+          .z-col {
+            text-align: center;
+            color: #6c5b5b;
+            font-size: 16px;
+            padding: 7px 5px;
+
+            .YueChengJiao {
+              color: #913d3d;
+            }
+
+            .PingJia {
+              color: #13b191;
+            }
+          }
+        }
+      }
+    }
+  }
+}

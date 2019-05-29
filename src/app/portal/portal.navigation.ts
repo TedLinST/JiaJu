@@ -504,8 +504,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('commodity');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('commodity');
   }
 
   /**
