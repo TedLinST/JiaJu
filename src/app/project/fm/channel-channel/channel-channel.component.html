@@ -1,0 +1,124 @@
+<div class="channel-channel">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
+    activeTitle="众筹频道" (clickMenu)="onClickBannerMenu($event)">
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureMall()">家具商城</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        众筹频道
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 众筹频道 -->
+  <key-item-chunk [enTitle]="dataHandler.CRC.enTitle"
+    [title]="dataHandler.CRC.title" [menuData]="dataHandler.CRC.menuData"
+    (switchIndexChange)="currentIndexCRC = $event">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item
+            [ngForOf]="dataHandler.CRC['data' + currentIndexCRC]"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 286px;">
+              <div class="key-item-box item-box-margin-13">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+
+        <div class="info">
+          <div class="item">
+            <div class="dot">
+              玩转<br>众筹
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">01 发现</div>
+            <div class="text">怦然心动的项目</div>
+          </div>
+          <div class="item">
+            <div class="title">02 下单</div>
+            <div class="text">支持产品生产</div>
+          </div>
+          <div class="item">
+            <div class="title">03 等待</div>
+            <div class="text">项目众筹成功</div>
+          </div>
+          <div class="item">
+            <div class="title">04 抢先</div>
+            <div class="text">拿到创意新品</div>
+          </div>
+        </div>
+
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 众筹案例 -->
+  <key-item-chunk [enTitle]="dataHandler.CC.enTitle"
+    [title]="dataHandler.CC.title">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.CC.data"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 286px;">
+              <div class="key-item-box item-box-margin-13">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 热门项目 -->
+  <key-item-chunk [enTitle]="dataHandler.PI.enTitle"
+    [title]="dataHandler.PI.title">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PI.data"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 18px;">
+              <div class="key-item-box item-box-margin-13">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

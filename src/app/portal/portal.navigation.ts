@@ -474,8 +474,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('channel-channel');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('channel-channel');
   }
 
   /**
