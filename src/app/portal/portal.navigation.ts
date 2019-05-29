@@ -484,8 +484,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('brand');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('brand');
   }
 
   /**

@@ -1,0 +1,71 @@
+<div class="brand">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
+    activeTitle="品牌" (clickMenu)="onClickBannerMenu($event)">
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureMall()">家具商城</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        品牌
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 品牌推荐 -->
+  <key-item-chunk [enTitle]="dataHandler.BR.enTitle"
+    [title]="dataHandler.BR.title">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
+              <div class="key-item-box item-box-margin-13">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 精选品牌 -->
+  <key-item-chunk [enTitle]="dataHandler.FB.enTitle"
+    [title]="dataHandler.FB.title">
+    <div body>
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FB.data"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
+              <div class="key-item-box item-box-margin-13">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask>
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+</div>
