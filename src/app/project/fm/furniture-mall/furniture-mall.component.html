@@ -34,34 +34,6 @@
     </div>
   </div>
 
-  <!-- 家具团购 -->
-  <key-item-chunk [enTitle]="dataHandler.FGP.enTitle"
-    [title]="dataHandler.FGP.title">
-    <div body>
-      <key-item-chunk-body [isMore]="true"
-        (clickMore)="portalNav.openGroupBuying()">
-        <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.FGP.data"
-            let-index="index">
-            <div nz-col nzSpan="6" style="height: 286px;">
-              <div class="key-item-box item-box-margin-5">
-                <div class="header">
-                  <img [src]="item.src">
-                  <key-item-mask [isTextLeft]="true">
-                    <key-item-mask-label [label]="item.title">
-                    </key-item-mask-label>
-                    <key-item-mask-label [label]="item.price">
-                    </key-item-mask-label>
-                  </key-item-mask>
-                </div>
-              </div>
-            </div>
-          </ng-template>
-        </div>
-      </key-item-chunk-body>
-    </div>
-  </key-item-chunk>
-
   <!-- 众筹频道 -->
   <key-item-chunk [enTitle]="dataHandler.CC.enTitle"
     [title]="dataHandler.CC.title">
@@ -99,6 +71,34 @@
         <key-carousel [data]="dataHandler.ETB.data" nzSpan="6" nzSpanNumber="4"
           [maskMode]="true" [rowArray]="[0,1]">
         </key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 家具团购 -->
+  <key-item-chunk [enTitle]="dataHandler.FGP.enTitle"
+    [title]="dataHandler.FGP.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openGroupBuying()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FGP.data"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 286px;">
+              <div class="key-item-box item-box-margin-5">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.price">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>

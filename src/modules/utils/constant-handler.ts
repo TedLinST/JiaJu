@@ -228,19 +228,19 @@ export class ConstantHandler {
   public static CH_FM_BANNER_MENU = [
     {
       id: '1',
-      title: '商品'
+      title: '众筹频道'
     },
     {
       id: '2',
-      title: '团购'
-    },
-    {
-      id: '3',
       title: '品牌'
     },
     {
+      id: '3',
+      title: '团购'
+    },
+    {
       id: '4',
-      title: '众筹频道'
+      title: '商品'
     },
     {
       id: '5',

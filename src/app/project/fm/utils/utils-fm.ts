@@ -11,20 +11,21 @@ export class UtilsFm {
     if (!!menu) {
       switch (menu.id) {
         case '1':
-          // 商品
-          portalNav.openCommodity();
+          // 众筹频道
+          portalNav.openChannelChannel();
           break;
         case '2':
+          // 品牌
+          portalNav.openBrand();
+
+          break;
+        case '3':
           // 团购
           portalNav.openGroupBuying();
           break;
-        case '3':
-          // 品牌
-          portalNav.openBrand();
-          break;
         case '4':
-          // 众筹频道
-          portalNav.openChannelChannel();
+          // 商品
+          portalNav.openCommodity();
           break;
         case '5':
           // 商家店铺

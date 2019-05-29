@@ -468,6 +468,39 @@ export class PortalNavigation {
   }
 
   /**
+   * 家具商城 - 众筹频道
+   */
+  openChannelChannel(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('channel-channel');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 品牌
+   */
+  openBrand(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('brand');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 团购
+   */
+  openGroupBuying(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('group-buying');
+    this.navigateDeveloping();
+  }
+
+  /**
    * 家具商城 - 商品
    */
   openCommodity(event?: any) {
@@ -487,39 +520,6 @@ export class PortalNavigation {
     }
     let itemInfo: any = JSON.stringify(info);
     this.router.navigate(['commodity-details'], { queryParams: { itemInfo: itemInfo } });
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 家具商城 - 团购
-   */
-  openGroupBuying(event?: any) {
-    if (!!event) {
-      event.stopPropagation();
-    }
-    // this.router.navigateByUrl('group-buying');
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 家具商城 - 品牌
-   */
-  openBrand(event?: any) {
-    if (!!event) {
-      event.stopPropagation();
-    }
-    // this.router.navigateByUrl('brand');
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 家具商城 - 众筹频道
-   */
-  openChannelChannel(event?: any) {
-    if (!!event) {
-      event.stopPropagation();
-    }
-    // this.router.navigateByUrl('channel-channel');
     this.navigateDeveloping();
   }
 

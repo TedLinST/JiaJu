@@ -57,11 +57,11 @@ export const PortalRoutes = [
     { path: 'equipment-purchase', loadChildren: '../project/me/equipment-purchase/equipment-purchase.module#EquipmentPurchaseModule' }, // 机械设备求购
     /* 家具商城系统模块 */
     { path: 'furniture-mall', loadChildren: '../project/fm/furniture-mall/furniture-mall.module#FurnitureMallModule' }, // 家具商城
+    // { path: 'channel-channel', loadChildren: '../project/fm/channel-channel/channel-channel.module#ChannelChannelModule' }, // 众筹频道    
+    // { path: 'brand', loadChildren: '../project/fm/brand/brand.module#BrandModule' }, // 品牌
+    // { path: 'group-buying', loadChildren: '../project/fm/group-buying/group-buying.module#GroupBuyingModule' }, // 团购
     // { path: 'commodity', loadChildren: '../project/fm/commodity/commodity.module#CommodityModule' }, // 商品
     // { path: 'commodity-details', loadChildren: '../project/fm/commodity-details/commodity-details.module#CommodityDetailsModule' }, // 商品详细
-    // { path: 'group-buying', loadChildren: '../project/fm/group-buying/group-buying.module#GroupBuyingModule' }, // 团购
-    // { path: 'brand', loadChildren: '../project/fm/brand/brand.module#BrandModule' }, // 品牌
-    // { path: 'channel-channel', loadChildren: '../project/fm/channel-channel/channel-channel.module#ChannelChannelModule' }, // 众筹频道
     // { path: 'shop', loadChildren: '../project/fm/shop/shop.module#ShopModule' }, // 商家店铺
     // { path: 'shop-details', loadChildren: '../project/fm/shop-details/shop-details.module#ShopDetailsModule' }, // 商家店铺详细
     // { path: 'shop-merchandise', loadChildren: '../project/fm/shop-merchandise/shop-merchandise.module#ShopMerchandiseModule' }, // 商家店铺商品

@@ -20,34 +20,6 @@ export const DataFurnitureMallHandler = {
     }
   ],
 
-  // 家具团购
-  FGP: {
-    title: '家具团购',
-    enTitle: 'FURNITURE GROUP PURCHASE',
-    data: [
-      {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
-      },
-      {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
-      },
-      {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
-      },
-      {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
-      }
-    ]
-  },
-
   // 众筹频道
   CC: {
     title: '众筹频道',
@@ -150,6 +122,34 @@ export const DataFurnitureMallHandler = {
             src: 'assets/imgs/furniture-mall/pinpai-4.jpg'
           }
         ]
+      }
+    ]
+  },
+
+  // 家具团购
+  FGP: {
+    title: '家具团购',
+    enTitle: 'FURNITURE GROUP PURCHASE',
+    data: [
+      {
+        title: '商品标题',
+        price: '￥ 8000',
+        src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+      },
+      {
+        title: '商品标题',
+        price: '￥ 8000',
+        src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
+      },
+      {
+        title: '商品标题',
+        price: '￥ 8000',
+        src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+      },
+      {
+        title: '商品标题',
+        price: '￥ 8000',
+        src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
       }
     ]
   },
