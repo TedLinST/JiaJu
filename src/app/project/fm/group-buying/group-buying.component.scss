@@ -1,0 +1,32 @@
+.group-buying {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+
+    .filter-row {
+      .search {
+        float: right;
+        width: 350px;
+      }
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .pagination {
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    .btn-div {
+      width: 100%;
+      text-align: center;
+
+      .btn {
+        min-width: 100px;
+        background-color: #d3b661;
+        border-color: #d0b156;
+        margin: 10px;
+      }
+    }
+  }
+}

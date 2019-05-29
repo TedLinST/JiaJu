@@ -494,8 +494,7 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('group-buying');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('group-buying');
   }
 
   /**

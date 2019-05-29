@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
-import { DataEquipmentMartHandler } from 'src/data/me/equipment-mart';
+import { DataGroupBuyingHandler } from 'src/data/fm/group-buying';
+import { UtilsFm } from '../utils/utils-fm';
 import { Utils } from 'src/modules/utils/utils';
-import { UtilsMe } from '../utils/utils-me';
-import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 
 @Component({
-  selector: 'app-equipment-mart',
-  templateUrl: './equipment-mart.component.html',
-  styleUrls: ['./equipment-mart.component.scss']
+  selector: 'app-group-buying',
+  templateUrl: './group-buying.component.html',
+  styleUrls: ['./group-buying.component.scss']
 })
-export class EquipmentMartComponent implements OnInit {
+export class GroupBuyingComponent implements OnInit {
 
   // 横幅图片
-  CH_ME_EQUIPMENT_BANNER_SRC: any;
+  CH_FM_BANNER_SRC: any;
 
   // 横幅菜单
-  CH_ME_BANNER_MENU: KeyVerticalMenuEvent[];
+  CH_FM_BANNER_MENU: KeyVerticalMenuEvent[];
 
   // 门户导航
   portalNav: any;
@@ -30,7 +30,7 @@ export class EquipmentMartComponent implements OnInit {
   listData: any[] = [];
 
   // 一页大小
-  pageSize = 10;
+  pageSize = 9;
 
   // 总数据
   total: number = 0;
@@ -43,18 +43,20 @@ export class EquipmentMartComponent implements OnInit {
 
   // 按钮排序激活
   btnSortActiveMap: any = {
-    price: 0,
-    qty: 0
+    JiaGe: 0,
+    YiBaoMingShuLiang: 0,
+    ZongShuLiang: 0
   };
+
 
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
   }
 
   ngOnInit() {
-    this.CH_ME_EQUIPMENT_BANNER_SRC = ConstantHandler.CH_ME_EQUIPMENT_BANNER_SRC;
-    this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
-    this.dataHandler = DataEquipmentMartHandler;
+    this.CH_FM_BANNER_SRC = ConstantHandler.CH_FM_BANNER_SRC;
+    this.CH_FM_BANNER_MENU = ConstantHandler.CH_FM_BANNER_MENU;
+    this.dataHandler = DataGroupBuyingHandler;
     this.total = this.dataHandler.LIST_DATA.length;
     this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
   }
@@ -64,7 +66,7 @@ export class EquipmentMartComponent implements OnInit {
    * @param menu 
    */
   onClickBannerMenu(menu: KeyVerticalMenuEvent) {
-    UtilsMe.clickBannerMenu(this.portalNav, menu);
+    UtilsFm.clickBannerMenu(this.portalNav, menu);
   }
 
   /**
@@ -94,13 +96,14 @@ export class EquipmentMartComponent implements OnInit {
   }
 
   /**
-   * 点击按钮进行排序
-   * @param event 
-   */
+  * 点击按钮进行排序
+  * @param event 
+  */
   onClickButtonSortChange(event: any, id: any) {
     this.btnSortActiveMap = {
-      price: 0,
-      qty: 0
+      JiaGe: 0,
+      YiBaoMingShuLiang: 0,
+      ZongShuLiang: 0
     };
     this.btnSortActiveMap[id] = event;
     this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
@@ -113,26 +116,20 @@ export class EquipmentMartComponent implements OnInit {
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.title) {
-          let text = '' + row.title;
+        if (row.ChanPinBiaoTi) {
+          let text = '' + row.ChanPinBiaoTi;
           if (text.match(regExp)) {
             return true;
           }
         }
-        if (row.equipmentType) {
-          let text = '' + row.equipmentType;
+        if (row.PinPai) {
+          let text = '' + row.PinPai;
           if (text.match(regExp)) {
             return true;
           }
         }
-        if (row.equipmentVolumes) {
-          let text = '' + row.equipmentVolumes;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-        if (row.location) {
-          let text = '' + row.location;
+        if (row.DianPu) {
+          let text = '' + row.DianPu;
           if (text.match(regExp)) {
             return true;
           }
@@ -145,14 +142,6 @@ export class EquipmentMartComponent implements OnInit {
   }
 
   /**
-   * 加购
-   * @param id 
-   */
-  onPurchase(id: any) {
-    this.navigateDeveloping();
-  }
-
-  /**
    * 收藏
    * @param id 
    */
@@ -161,10 +150,10 @@ export class EquipmentMartComponent implements OnInit {
   }
 
   /**
-   * 联系方式
+   * 加购
    * @param id 
    */
-  onTel(id: any) {
+  onAddPurchase(id: any) {
     this.navigateDeveloping();
   }
 
@@ -174,5 +163,4 @@ export class EquipmentMartComponent implements OnInit {
   navigateDeveloping() {
     this.router.navigateByUrl('developing');
   }
-
 }
