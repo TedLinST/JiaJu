@@ -1,0 +1,7 @@
+<div class="fm-banner-menu" [class.min-banner]="isMinBanner">
+  <img class="bg" [src]="srcUrl">
+  <key-vertical-menu *ngIf="isMenu" [data]="dataMenu" (clickMenu)="onClickMenu($event)"
+    [activeTitle]="activeTitle" [activeSubTitle]="activeSubTitle"
+    [styles]="{'position':'absolute','top':'0px','left':'6%'}">
+  </key-vertical-menu>
+</div>

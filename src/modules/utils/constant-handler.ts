@@ -220,4 +220,41 @@ export class ConstantHandler {
       ]
     }
   ];
+
+  // 家具商城 - 横幅图片
+  public static CH_FM_BANNER_SRC = 'assets/imgs/furniture-mall/banner.jpg';
+
+  // 家具商城 - 横幅菜单
+  public static CH_FM_BANNER_MENU = [
+    {
+      id: '1',
+      title: '商品'
+    },
+    {
+      id: '2',
+      title: '团购'
+    },
+    {
+      id: '3',
+      title: '品牌'
+    },
+    {
+      id: '4',
+      title: '众筹频道'
+    },
+    {
+      id: '5',
+      title: '商家店铺'
+    },
+    {
+      id: '6',
+      title: '购物车'
+    },
+    {
+      id: '7',
+      title: '结算'
+    }
+  ];
+
 }
+

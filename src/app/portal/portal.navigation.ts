@@ -464,6 +464,117 @@ export class PortalNavigation {
    * 家具商城
    */
   openFurnitureMall(event?: any) {
+    this.router.navigateByUrl('furniture-mall');
+  }
+
+  /**
+   * 家具商城 - 商品
+   */
+  openCommodity(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('commodity');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 商品 - 详情
+   */
+  openCommodityDetails(info: any, event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    let itemInfo: any = JSON.stringify(info);
+    this.router.navigate(['commodity-details'], { queryParams: { itemInfo: itemInfo } });
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 团购
+   */
+  openGroupBuying(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('group-buying');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 品牌
+   */
+  openBrand(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('brand');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 众筹频道
+   */
+  openChannelChannel(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('channel-channel');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 商家店铺
+   */
+  openShop(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('shop');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 商家店铺 - 详细
+   */
+  openShopDetails(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('shop-details');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 商家店铺 - 商品
+   */
+  openShopMerchandise(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('shop-merchandise');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 购物车
+   */
+  openShoppingCart(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('shopping-cart');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 家具商城 - 结算
+   */
+  openStatements(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('statements');
     this.navigateDeveloping();
   }
 

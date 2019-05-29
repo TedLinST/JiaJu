@@ -1,0 +1,146 @@
+<div class="furniture-mall">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        家居商城
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <!-- 众筹 -->
+    <div nz-row style="margin-top: 30px;">
+      <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE"
+        let-index="index">
+        <div nz-col nzSpan="6" style="height: 286px;">
+          <div class="key-item-box item-box-margin-13" (click)="openType(item)">
+            <div class="header">
+              <img [src]="item.src">
+              <key-item-mask>
+                <key-item-mask-label [label]="item.title">
+                </key-item-mask-label>
+              </key-item-mask>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+
+  <!-- 家具团购 -->
+  <key-item-chunk [enTitle]="dataHandler.FGP.enTitle"
+    [title]="dataHandler.FGP.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openGroupBuying()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FGP.data"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 286px;">
+              <div class="key-item-box item-box-margin-5">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.price">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 众筹频道 -->
+  <key-item-chunk [enTitle]="dataHandler.CC.enTitle"
+    [title]="dataHandler.CC.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openChannelChannel()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.CC.data"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 162px;">
+              <div class="key-item-box item-box-margin-3">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.price">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 入驻品牌 -->
+  <key-item-chunk [enTitle]="dataHandler.ETB.enTitle"
+    [title]="dataHandler.ETB.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openChannelChannel()">
+        <key-carousel [data]="dataHandler.ETB.data" nzSpan="6" nzSpanNumber="4"
+          [maskMode]="true" [rowArray]="[0,1]">
+        </key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 网红店铺 -->
+  <key-item-chunk [enTitle]="dataHandler.NRS.enTitle"
+    [title]="dataHandler.NRS.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true" (clickMore)="portalNav.openShop()">
+        <key-carousel [data]="dataHandler.NRS.data" nzSpan="5" nzSpanNumber="5"
+          [maskMode]="true" [rowArray]="[0,1]">
+        </key-carousel>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 商品推荐 -->
+  <key-item-chunk [enTitle]="dataHandler.PF.enTitle"
+    [title]="dataHandler.PF.title">
+    <div body>
+      <key-item-chunk-body [isMore]="true"
+        (clickMore)="portalNav.openCommodity()">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PF.data"
+            let-index="index">
+            <div nz-col nzSpan="6" style="height: 288px; margin-bottom: 12px;">
+              <div class="key-item-box item-box-margin-13">
+                <div class="header">
+                  <img [src]="item.src">
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label [label]="item.title">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.price">
+                    </key-item-mask-label>
+                  </key-item-mask>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

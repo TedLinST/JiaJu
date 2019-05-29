@@ -19,6 +19,9 @@ export class CarouselComponent implements OnInit {
   // 显示多少个
   @Input() nzSpan = 3;
 
+  // 显示多少个（具体数）
+  @Input() nzSpanNumber: number = 8;
+
   // 间隔
   @Input() space = 3;
 

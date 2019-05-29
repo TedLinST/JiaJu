@@ -55,7 +55,8 @@
               <li (click)="portalNav.openProjectInformation($event)">项目信息详细</li> -->
             </ul>
           </li>
-          <li class="arrow" (click)="portalNav.openFurnitureDelivery($event)">家具送装
+          <li class="arrow" (click)="portalNav.openFurnitureDelivery($event)">
+            家具送装
             <ul class="three-menu-ul">
               <li (click)="portalNav.openDeliveryOrder($event)">送装下单</li>
               <li (click)="portalNav.openServiceIntroduction($event)">服务介绍</li>
@@ -84,7 +85,18 @@
           <li (click)="portalNav.openEquipmentPurchase($event)">机械设备求购</li>
         </ul>
       </li>
-      <li (click)="portalNav.openFurnitureMall($event)">家具商城</li>
+      <li (click)="portalNav.openFurnitureMall($event)">
+        家具商城
+        <ul class="sub-menu-ul">
+          <li (click)="portalNav.openCommodity($event)">商品</li>
+          <li (click)="portalNav.openGroupBuying($event)">团购</li>
+          <li (click)="portalNav.openBrand($event)">品牌</li>
+          <li (click)="portalNav.openChannelChannel($event)">众筹频道</li>
+          <li (click)="portalNav.openShop($event)">商家店铺</li>
+          <li (click)="portalNav.openShoppingCart($event)">购物车</li>
+          <li (click)="portalNav.openStatements($event)">结算</li>
+        </ul>
+      </li>
     </ul>
   </div>
   <!-- <div class="user-info flex flex-no-shrink">

@@ -199,6 +199,14 @@
           margin: 0 12px;
         }
 
+        &.item-box-margin-13 {
+          margin: 0 13px;
+        }
+      
+        &.item-box-margin-14 {
+          margin: 0 14px;
+        }
+
         &.item-box-margin-15 {
           margin: 0 15px;
         }
@@ -214,7 +222,7 @@
           text-align: center;
 
           img {
-            width: 100%;
+            max-width: 100%;
           }
         }
 

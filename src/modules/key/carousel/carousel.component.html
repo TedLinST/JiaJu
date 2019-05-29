@@ -6,7 +6,9 @@
           [style.marginBottom.px]="(rowArray != null && rowArray.length > 1) ? (space * 2):'0px'">
           <ng-template ngFor let-subData [ngForOf]="item.data"
             let-index="index">
-            <div nz-col [nzSpan]="nzSpan">
+            <div
+              *ngIf="(rowArray != null && rowArray.length > 1) ? (index < (rowIndex + 1) * nzSpanNumber) && (index >= rowIndex * nzSpanNumber) : true"
+              nz-col [nzSpan]="nzSpan">
               <div class="carousel-box carousel-box-margin-{{space}}"
                 (click)="onClick(subData)">
                 <div class="header">

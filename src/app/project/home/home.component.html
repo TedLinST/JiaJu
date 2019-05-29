@@ -375,13 +375,13 @@
     <div body>
       <!-- 推荐商品 -->
       <key-item-chunk-body *ngIf="currentIndexFM == 0" [isMore]="true"
-        [showItemNumber]="5" (clickMore)="onClickMoreFM0()">
+        [showItemNumber]="5" (clickMore)="portalNav.openCommodity()">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data0"
             let-index="index">
             <div nz-col nzSpan="4" style="height: 397px;margin-bottom: 6px;">
               <div class="item-box item-box-margin-3"
-                (click)="openCommodityDetails(item.id)">
+                (click)="portalNav.openCommodityDetails(item)">
                 <div class="header">
                   <img [src]="item.src">
                   <key-item-mask isTextLeft="true">
@@ -400,10 +400,10 @@
       </key-item-chunk-body>
       <!-- 团购 -->
       <key-item-chunk-body *ngIf="currentIndexFM == 1" [isMore]="true"
-        (clickMore)="onClickMoreFM1()">
+        (clickMore)="portalNav.openGroupBuying()">
         <div class="FM1-style">
           <div class="left"
-            (click)="openGroupBuyingDetails(dataHandler.FM.data1[0].id)">
+            (click)="portalNav.openCommodityDetails(dataHandler.FM.data1[0])">
             <img [src]="dataHandler.FM.data1[0].src">
             <key-item-mask>
               <key-item-mask-label [label]="dataHandler.FM.data1[0].title">
@@ -417,7 +417,7 @@
               <div *ngIf="index > 0" nz-col nzSpan="8"
                 style="height: 394px;margin-bottom: 12px;">
                 <div class="item-box item-box-margin-8"
-                  (click)="openGroupBuyingDetails(item.id)">
+                  (click)="portalNav.openCommodityDetails(item)">
                   <div class="header">
                     <img [src]="item.src">
                     <key-item-mask isTextLeft="true">
@@ -434,7 +434,7 @@
       </key-item-chunk-body>
       <!-- 品牌 -->
       <key-item-chunk-body *ngIf="currentIndexFM == 2" [isMore]="true"
-        [isMaxItem]="true" (clickMore)="onClickMoreFM2()">
+        [isMaxItem]="true" (clickMore)="portalNav.openBrand()">
         <div class="FM2-style">
           <div class="body">
             <div class="max-logo">
@@ -442,16 +442,17 @@
                 LOGO
               </div>
             </div>
-            <key-carousel [data]="dataHandler.FM.data2" nzSpan="5"
+            <key-carousel [data]="dataHandler.FM.data2" nzSpan="5" nzSpanNumber="5"
               [rowArray]="[0,1]" (clickItemIndex)="openBrandDetails($event)">
             </key-carousel>
           </div>
         </div>
       </key-item-chunk-body>
       <!-- 众筹频道 -->
-      <key-item-chunk-body *ngIf="currentIndexFM == 3">
+      <key-item-chunk-body *ngIf="currentIndexFM == 3" [isMore]="true"
+        (clickMore)="portalNav.openChannelChannel()">
         <div class="FM3-style">
-          <div class="searchFM3">
+          <!-- <div class="searchFM3">
             <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
               <input type="text" nz-input placeholder="请输入项目名称"
                 [(ngModel)]="searchValueFM3" />
@@ -464,7 +465,7 @@
           </div>
           <div class="btnFM3">
             <button nz-button nzType="primary">发布资金</button>
-          </div>
+          </div> -->
           <div *ngIf="FMdata3 != null && FMdata3.length > 0">
             <div nz-row>
               <ng-template ngFor let-item [ngForOf]="FMdata3" let-index="index">

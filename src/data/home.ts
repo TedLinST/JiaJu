@@ -820,12 +820,52 @@ export const DataHomeHandler = {
           {
             id: 5,
             src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 1,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 2,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 3,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 4,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 5,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
           }
         ]
       },
       {
         id: 2,
         data: [
+          {
+            id: 1,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 2,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 3,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 4,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
+          {
+            id: 5,
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+          },
           {
             id: 1,
             src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'

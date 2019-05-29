@@ -84,27 +84,6 @@ export class HomeComponent implements OnInit, AfterContentInit {
   }
 
   /**
-   * 推荐商品 - 更多
-   */
-  onClickMoreFM0() {
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 团购 - 更多
-   */
-  onClickMoreFM1() {
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 品牌 - 更多
-   */
-  onClickMoreFM2() {
-    this.navigateDeveloping();
-  }
-
-  /**
    * 打开产品设计资料库详情页
    * @param id 
    */
@@ -197,22 +176,6 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openMechanicsEquipmentDetails(id: any) {
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 商品详情页
-   * @param id 
-   */
-  openCommodityDetails(id: any) {
-    this.navigateDeveloping();
-  }
-
-  /**
-   * 团购详情页
-   * @param id 
-   */
-  openGroupBuyingDetails(id: any) {
     this.navigateDeveloping();
   }
 
