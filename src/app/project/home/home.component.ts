@@ -84,13 +84,6 @@ export class HomeComponent implements OnInit, AfterContentInit {
   }
 
   /**
-   * 金融服务 - 更多
-   */
-  onClickMoreIS2() {
-    this.navigateDeveloping();
-  }
-
-  /**
    * 推荐商品 - 更多
    */
   onClickMoreFM0() {
@@ -250,6 +243,9 @@ export class HomeComponent implements OnInit, AfterContentInit {
     } else if (id == 4) {
       // 校企合作服务 - 有困难找专家
       this.portalNav.openSeekExpert();
+    } else if (id == 5) {
+      // 综合服务 - 展会服务
+      this.portalNav.openExhibition();
     } else if (id == 6) {
       // 原辅材料机械设备服务 - 原辅材料商城
       this.portalNav.openMaterialMart();

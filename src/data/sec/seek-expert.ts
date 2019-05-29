@@ -119,54 +119,6 @@ export const DataSeekExpertHandler = {
       SuoZaiDi: '专家所在地',
       DanWei: '工作单位',
       src: 'assets/imgs/seek-expert/expert-12.jpg'
-    },
-    {
-      id: '13',
-      TouXian: '专家头衔',
-      LingYu: '专业领域',
-      SuoZaiDi: '专家所在地',
-      DanWei: '工作单位',
-      src: 'assets/imgs/seek-expert/zhuanjia-1.jpg'
-    },
-    {
-      id: '14',
-      TouXian: '专家头衔',
-      LingYu: '专业领域',
-      SuoZaiDi: '专家所在地',
-      DanWei: '工作单位',
-      src: 'assets/imgs/seek-expert/zhuanjia-2.jpg'
-    },
-    {
-      id: '15',
-      TouXian: '专家头衔',
-      LingYu: '专业领域',
-      SuoZaiDi: '专家所在地',
-      DanWei: '工作单位',
-      src: 'assets/imgs/seek-expert/zhuanjia-3.jpg'
-    },
-    {
-      id: '16',
-      TouXian: '专家头衔',
-      LingYu: '专业领域',
-      SuoZaiDi: '专家所在地',
-      DanWei: '工作单位',
-      src: 'assets/imgs/seek-expert/zhuanjia-4.jpg'
-    },
-    {
-      id: '17',
-      TouXian: '专家头衔',
-      LingYu: '专业领域',
-      SuoZaiDi: '专家所在地',
-      DanWei: '工作单位',
-      src: 'assets/imgs/seek-expert/zhuanjia-5.jpg'
-    },
-    {
-      id: '18',
-      TouXian: '专家头衔',
-      LingYu: '专业领域',
-      SuoZaiDi: '专家所在地',
-      DanWei: '工作单位',
-      src: 'assets/imgs/seek-expert/zhuanjia-6.jpg'
     }
   ]
 };

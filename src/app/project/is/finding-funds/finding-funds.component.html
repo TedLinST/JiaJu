@@ -44,8 +44,8 @@
           </key-button-sort>
           <div class="search">
             <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-              <input type="text" nz-input placeholder="请输入项目名称、投资行业、
-              投资类型" [(ngModel)]="searchValue" />
+              <input type="text" nz-input placeholder="请输入项目名称、投资行业、投资类型"
+                [(ngModel)]="searchValue" />
             </nz-input-group>
             <ng-template #suffixIconButton>
               <button nz-button nzType="primary" nzSearch (click)="onSearch()">

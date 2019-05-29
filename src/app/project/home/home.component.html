@@ -224,7 +224,8 @@
     (switchIndexChange)="currentIndexIS = $event">
     <div body>
       <!-- 展会服务 -->
-      <key-item-chunk-body *ngIf="currentIndexIS == 0" [isMaxItem]="true">
+      <key-item-chunk-body *ngIf="currentIndexIS == 0" [isMaxItem]="true"
+        [isMore]="true" (clickMore)="portalNav.openExhibition()">
         <div class="IS0-style">
           <div class="top-title">
             <div class="title">简约风展会区 共筑家具之美</div>
@@ -232,13 +233,15 @@
           </div>
           <div class="key-item-chunk-body-max-content">
             <key-carousel [data]="dataHandler.IS.data0" nzSpan="6"
-              [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
+              [maskMode]="true"
+              (clickItemIndex)="openExhibitionDetails($event)">
             </key-carousel>
           </div>
         </div>
       </key-item-chunk-body>
       <!-- 政府服务 -->
-      <key-item-chunk-body *ngIf="currentIndexIS == 1" [isMaxItem]="true">
+      <key-item-chunk-body *ngIf="currentIndexIS == 1" [isMaxItem]="true"
+        [isMore]="true" (clickMore)="portalNav.openGovernment()">
         <div class="IS1-style">
           <div class="top-title">
             <div class="title">政府服务</div>
@@ -246,15 +249,15 @@
           </div>
           <div class="key-item-chunk-body-max-content">
             <key-carousel [data]="dataHandler.IS.data1" nzSpan="6"
-              [maskMode]="true" (clickItemIndex)="openGovernmentDetails($event)">
+              [maskMode]="true"
+              (clickItemIndex)="openGovernmentDetails($event)">
             </key-carousel>
           </div>
         </div>
       </key-item-chunk-body>
-      <!-- 金融服务 -->
+      <!-- 金融服务 [isMoreAlignSelect]="true" -->
       <key-item-chunk-body *ngIf="currentIndexIS == 2" [showItemNumber]="5"
-        [isMoreAlignSelect]="true" [isMore]="true"
-        (clickMore)="onClickMoreIS2()">
+        [isMore]="true" (clickMore)="portalNav.openFinance()">
         <!-- <div class="selectIS2" style="margin-bottom: 10px">
           <nz-select nzAllowClear="true" style="width: 300px;"
             nzPlaceHolder="请选择项目" [(ngModel)]="selectValueIS2"

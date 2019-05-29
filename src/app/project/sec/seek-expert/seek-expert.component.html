@@ -1,7 +1,7 @@
 <div class="seek-expert">
   <!-- 横幅 -->
-  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU" activeTitle='有困难找专家'
-    (clickMenu)="onClickBannerMenu($event)">
+  <sec-banner-menu [srcUrl]="CH_SEC_BANNER_SRC" [dataMenu]="CH_SEC_BANNER_MENU"
+    activeTitle='有困难找专家' (clickMenu)="onClickBannerMenu($event)">
   </sec-banner-menu>
 
   <div class="body">
@@ -34,18 +34,24 @@
           <!-- 列表数据 -->
           <div *ngIf="listData != null && listData.length > 0">
             <div nz-row>
-              <ng-template ngFor let-item [ngForOf]="dataHandler.LIST_DATA"
+              <ng-template ngFor let-item [ngForOf]="listData"
                 let-index="index">
-                <div nz-col nzSpan="4" style="height: 354px;margin-bottom: 2px;">
+                <div nz-col nzSpan="4"
+                  style="height: 354px;margin-bottom: 2px;">
                   <div class="item-box item-box-bg item-box-margin-1">
                     <div class="header">
                       <img [src]="item.src">
                     </div>
                     <div class="body">
-                      <div class="label singleTextBeyondHide">{{item.TouXian}}</div>
-                      <div class="label singleTextBeyondHide">{{item.LingYu}}</div>
-                      <div class="label singleTextBeyondHide">{{item.SuoZaiDi}}</div>
-                      <div class="label singleTextBeyondHide">{{item.DanWei}}</div>
+                      <div class="label singleTextBeyondHide">{{item.TouXian}}
+                      </div>
+                      <div class="label" style="height: 63px;overflow: hidden;">
+                        {{item.LingYu}}
+                      </div>
+                      <!-- <div class="label singleTextBeyondHide">{{item.SuoZaiDi}}
+                      </div>
+                      <div class="label singleTextBeyondHide">{{item.DanWei}}
+                      </div> -->
                       <div>
                         <button class="btn" nz-button nzType="primary"
                           nzSize="small"
