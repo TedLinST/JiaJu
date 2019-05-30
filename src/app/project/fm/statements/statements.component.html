@@ -1,0 +1,186 @@
+<div class="statements">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
+    activeTitle="结算" (clickMenu)="onClickBannerMenu($event)">
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureMall()">家具商城</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        结算
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <!-- 收货地址 -->
+    <div class="dz">
+      <div class="title">
+        确认收货地址
+        <span class="right" (click)="onGuanLi()">
+          管理收货地址
+        </span>
+      </div>
+      <div class="list">
+        <nz-radio-group [(ngModel)]="activeItem" style="width:100%;">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.DZ"
+            let-index="index">
+            <div class="item" [class.active]="activeItem == item">
+              <span class="span1">
+                <ng-template [ngIf]="activeItem == item">
+                  寄送至
+                </ng-template>
+              </span>
+              <label nz-radio [nzValue]="item">
+                {{item.DiZhi}}
+                {{item.XiangXiDiZhi}}
+                ({{item.ShouHuoRen}} 收)
+                {{item.ShouJiHaoMa}}
+              </label>
+              <span class="span2" (click)="onViewDz(item)">
+                <ng-template [ngIf]="activeItem == item">
+                  修改该地址
+                </ng-template>
+              </span>
+            </div>
+          </ng-template>
+        </nz-radio-group>
+      </div>
+    </div>
+
+    <!-- 订单信息 -->
+    <div class="dd">
+      <div class="title">
+        确认订单信息
+      </div>
+      <div class="list">
+        <div class="row-header">
+          <div class="col col-1">
+            商品信息
+          </div>
+          <div class="col col-2">
+          </div>
+          <div class="col col-3">
+          </div>
+          <div class="col col-4">
+            单价
+          </div>
+          <div class="col col-5">
+            数量
+          </div>
+          <div class="col col-6">
+            优惠方式
+          </div>
+          <div class="col col-7">
+            小计
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+          <div class="item">
+            <div class="col col-1">
+              <img [src]="item.src">
+            </div>
+            <div class="col col-2">
+              {{item.MingCheng}}
+            </div>
+            <div class="col col-3">
+              <div>
+                颜色分类：{{item.YanSeFenLei}}
+              </div>
+              <div>
+                安装方式：{{item.AnZhuangFangShi}}
+              </div>
+            </div>
+            <div class="col col-4">
+              <b style="color: #222;">￥{{item.DanJia}}</b>
+            </div>
+            <div class="col col-5">
+              {{item.ShuLiang}}
+            </div>
+            <div class="col col-6">
+              无优惠
+            </div>
+            <div class="col col-7">
+              <b style="color: #ff5a25">￥{{item.JinE}}</b>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </ng-template>
+      </div>
+      <div class="message">
+        <div class="z-row">
+          <form nz-form [nzLayout]="'inline'">
+            <div class="z-col z-col-2">
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">给卖家留言
+                </nz-form-label>
+                <nz-form-control>
+                  <textarea style="margin-top: 8px;width: 430px;" nz-input
+                    name="YiXiangZiJin" rows="4"
+                    [(ngModel)]="bean.YiXiangZiJin"></textarea>
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+            <div class="z-col z-col-2">
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">运送方式
+                </nz-form-label>
+                <nz-form-control>
+                  普通配送 XX物流 免邮
+                  <span style="color: #ff5a25;margin-left: 40px">0.0</span>
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">发货时间
+                </nz-form-label>
+                <nz-form-control>
+                  卖家承若订单在买家付款后，订单合并7天内发货
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item nzFlex>
+                <nz-form-label style="width: 120px;">运费险
+                </nz-form-label>
+                <nz-form-control>
+                  <label nz-checkbox name="YunFeiXian"
+                    [(ngModel)]="bean.YunFeiXian">确认收货前退货可赔付11元</label>
+                  <span style="color: #ff5a25;margin-left: 40px">1.5</span>
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+          </form>
+        </div>
+        <div class="z-row">
+          <div class="hj">
+            店铺合计（含运费）<span style="color: #ff5a25">￥{{settlementPrice}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 结算单 -->
+    <div class="js"></div>
+
+    <!-- 提交订单 -->
+    <div class="tjdd">
+      <div class="box">
+        实付款： <span style="color: #ff5a25">￥{{settlementPrice}}</span>
+        <br>
+        寄送至： <span>{{activeItem.DiZhi}} {{activeItem.XiangXiDiZhi}}</span>
+        <br>
+        收货人： <span>{{activeItem.ShouHuoRen}}</span>
+      </div>
+      <div class="dh">
+        <span class="fh" (click)="onReturn()">返回购物车</span>
+        <span class="tj" (click)="onSubmit()">提交订单</span>
+      </div>
+
+    </div>
+
+  </div>
+</div>

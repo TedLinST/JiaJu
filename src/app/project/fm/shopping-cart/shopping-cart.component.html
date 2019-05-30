@@ -42,7 +42,7 @@
             {{settlementPrice}}
           </span>
           <span class="settlement" [class.active]="settlementPrice > 0"
-            (click)="settlementPrice > 0 ? portalNav.openStatements(listData) : ''">
+            (click)="settlementPrice > 0 ? openStatements() : ''">
             结算
           </span>
         </div>
@@ -131,7 +131,7 @@
             {{settlementPrice}}
           </span>
           <span class="settlement" [class.active]="settlementPrice > 0"
-            (click)="settlementPrice > 0 ? portalNav.openStatements(listData) : ''">
+            (click)="settlementPrice > 0 ? openStatements() : ''">
             结算
           </span>
         </div>

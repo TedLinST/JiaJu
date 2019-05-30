@@ -568,10 +568,8 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // let itemInfo: any = JSON.stringify(info);
-    // this.router.navigate(['commodity-details'], { queryParams: { itemInfo: itemInfo } });
-    // this.router.navigateByUrl('statements');
-    this.navigateDeveloping();
+    let itemInfo: any = JSON.stringify(info);
+    this.router.navigate(['statements'], { queryParams: { itemInfo: itemInfo } });
   }
 
   /**

@@ -35,10 +35,10 @@ export class UtilsFm {
           // 购物车
           portalNav.openShoppingCart();
           break;
-        case '7':
+        /* case '7':
           // 结算
           portalNav.openStatements();
-          break;
+          break; */
       }
     }
   }

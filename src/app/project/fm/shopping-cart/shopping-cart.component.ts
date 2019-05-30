@@ -104,6 +104,19 @@ export class ShoppingCartComponent implements OnInit {
     Utils.arrayRemove(this.listData, item);
   }
 
+  /**
+   * 跳转
+   */
+  openStatements() {
+    let listData = [];
+    this.listData.forEach((item: any) => {
+      if (item.checked) {
+        listData.push(item);
+      }
+    });
+    this.portalNav.openStatements(listData);
+  }
+
   updateAllChecked(): void {
     this.indeterminate = false;
     if (this.allChecked) {

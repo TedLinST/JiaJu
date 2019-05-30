@@ -249,11 +249,11 @@ export class ConstantHandler {
     {
       id: '6',
       title: '购物车'
-    },
+    }/* ,
     {
       id: '7',
       title: '结算'
-    }
+    } */
   ];
 
 }
