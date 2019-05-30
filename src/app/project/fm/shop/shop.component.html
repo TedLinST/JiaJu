@@ -1,0 +1,138 @@
+<div class="shop">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
+    activeTitle="商家店铺" (clickMenu)="onClickBannerMenu($event)">
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureMall()">家具商城</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        商家店铺
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <key-item-chunk enTitle="MERCHANT STORE" title="商家店铺">
+    <div body>
+      <key-item-chunk-body>
+        <!-- 条件选择区 -->
+        <key-dot-title title="条件选择区"></key-dot-title>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
+          let-index="index">
+          <key-menu-type [title]="item.title" [data]="item.data"
+            (clickType)="onClickType($event)"></key-menu-type>
+        </ng-template>
+
+        <!-- 过滤 -->
+        <div class="filter-row">
+          <key-button-sort label="按销量" [active]="btnSortActiveMap['XiaoLiang']"
+            (clickChange)="onClickButtonSortChange($event,'XiaoLiang')">
+          </key-button-sort>
+          <key-button-sort label="按商品总数"
+            [active]="btnSortActiveMap['ShangPinZongShu']"
+            (clickChange)="onClickButtonSortChange($event,'ShangPinZongShu')">
+          </key-button-sort>
+          <key-button-sort label="按等级"
+            [active]="btnSortActiveMap['ShangJiaDengJi']"
+            (clickChange)="onClickButtonSortChange($event,'ShangJiaDengJi')">
+          </key-button-sort>
+          <div class="search">
+            <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+              <input type="text" nz-input placeholder="请输入店铺名称、商品名称"
+                [(ngModel)]="searchValue" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+              <button nz-button nzType="primary" nzSearch (click)="onSearch()">
+                <i nz-icon type="search"></i></button>
+            </ng-template>
+          </div>
+        </div>
+
+        <!-- 列表数据 -->
+        <div *ngIf="listData != null && listData.length > 0">
+          <div class="list">
+            <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+              <div class="item">
+                <div class="info">
+                  <img [src]="item.src">
+                  <div class="label singleTextBeyondHide">
+                    {{item.DianPuMingCheng}}</div>
+                  <div class="label singleTextBeyondHide" style="color: #222;">
+                    {{item.id}}</div>
+                  <div class="label singleTextBeyondHide">销量：<span
+                      style="color: #913d3d;">{{item.XiaoLiang}}</span></div>
+                  <div class="label singleTextBeyondHide">商品总数：<span
+                      style="color: #913d3d;">{{item.ShangPinZongShu}}</span>
+                  </div>
+                  <div class="label singleTextBeyondHide">商家等级：<span
+                      style="color: #13b191;">{{item.ShangJiaDengJi}}</span>
+                  </div>
+                </div>
+                <div class="goods">
+                  <ng-template ngFor let-itemGoods [ngForOf]="item.data"
+                    let-index="index">
+                    <div class="itemGoods">
+                      <div class="key-item-box item-box-bg item-box-margin-1"
+                        style="width: 195px;height: 304px; margin-bottom: 2px;">
+                        <div class="header">
+                          <img [src]="itemGoods.src">
+                          <key-item-mask [isTextLeft]="true">
+                            <key-item-mask-label labelTitle="品牌"
+                              [label]="itemGoods.PinPai">
+                            </key-item-mask-label>
+                            <key-item-mask-label labelTitle="产地"
+                              [label]="itemGoods.ChanDi">
+                            </key-item-mask-label>
+                            <key-item-mask-label labelTitle="规格"
+                              [label]="itemGoods.GuiGe"></key-item-mask-label>
+                            <key-item-mask-label labelTitle="已售数量"
+                              [label]="itemGoods.YiShouShuLiang">
+                            </key-item-mask-label>
+                            <key-item-mask-label labelTitle="评价数量"
+                              [label]="itemGoods.PingJia">
+                            </key-item-mask-label>
+                          </key-item-mask>
+                        </div>
+                        <div class="body">
+                          <div class="JiaGe singleTextBeyondHide">
+                            {{itemGoods.JiaGe}}</div>
+                          <div class="BiaoTi singleTextBeyondHide">
+                            {{itemGoods.BiaoTi}}</div>
+                          <div class="PinLei singleTextBeyondHide">
+                            {{itemGoods.PinLei}}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </ng-template>
+            <div class="pagination">
+              <nz-pagination [(nzPageIndex)]="activePagaIndex" [nzTotal]="total"
+                [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
+                (nzPageIndexChange)="onPageIndexChange($event)">
+              </nz-pagination>
+              <ng-template #rangeTemplate let-range="range" let-total>
+                显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条
+              </ng-template>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!(listData != null && listData.length > 0)">
+          <nz-empty></nz-empty>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+
+</div>

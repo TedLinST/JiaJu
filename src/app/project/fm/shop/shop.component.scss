@@ -1,0 +1,81 @@
+.shop {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  .filter-row {
+    .search {
+      float: right;
+      width: 350px;
+    }
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .list {
+    .pagination {
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    .item {
+      margin-bottom: 8px;
+      border: 1px solid #e3e2e3;
+
+      .info {
+        float: left;
+        width: 198px;
+        padding: 10px 15px;
+
+        img {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 20px;
+          margin-top: 15px;
+        }
+
+        .label {
+          margin-bottom: 5px;
+          font-size: 16px;
+          color: #6c5b5b;
+
+          span{
+            font-weight: 600;
+          }
+        }
+
+      }
+
+      .goods {
+        float: left;
+        width: 998px;
+        padding: 5px;
+        border-left: 1px solid #e3e2e3;
+
+        .itemGoods {
+          position: relative;
+          display: inline-block;
+
+          .body {
+            .JiaGe {
+              font-size: 22px;
+              font-weight: 600;
+              color: #ff0036;
+            }
+
+            .BiaoTi {
+              color: #222;
+              margin-bottom: 2px;
+            }
+
+            .PinLei {
+              color: #848484;
+            }
+          }
+        }
+      }
+    }
+  }
+}
