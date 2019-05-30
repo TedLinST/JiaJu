@@ -558,17 +558,18 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('shopping-cart');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('shopping-cart');
   }
 
   /**
    * 家具商城 - 结算
    */
-  openStatements(event?: any) {
+  openStatements(info: any, event?: any) {
     if (!!event) {
       event.stopPropagation();
     }
+    // let itemInfo: any = JSON.stringify(info);
+    // this.router.navigate(['commodity-details'], { queryParams: { itemInfo: itemInfo } });
     // this.router.navigateByUrl('statements');
     this.navigateDeveloping();
   }

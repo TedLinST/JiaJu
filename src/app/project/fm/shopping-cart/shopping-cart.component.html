@@ -1,0 +1,143 @@
+<div class="shopping-cart">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
+    activeTitle="购物车" (clickMenu)="onClickBannerMenu($event)">
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureMall()">家具商城</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        购物车
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <div class="list">
+      <div class="header">
+        <div class="item" [class.active]="activeItemNumber == 1"
+          (click)="toggleItem(1)">
+          全部商品
+          <span>12</span>
+        </div>
+        <div class="item" [class.active]="activeItemNumber == 2"
+          (click)="toggleItem(2)">
+          降价商品
+          <span>1</span>
+        </div>
+        <div class="item" [class.active]="activeItemNumber == 3"
+          (click)="toggleItem(3)">
+          库存紧张
+          <span>3</span>
+        </div>
+
+        <div class="item-right">
+          已选商品（不含运费）
+          <span style="color: #ff723f">
+            {{settlementPrice}}
+          </span>
+          <span class="settlement" [class.active]="settlementPrice > 0"
+            (click)="settlementPrice > 0 ? portalNav.openStatements(listData) : ''">
+            结算
+          </span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="title">
+          <div class="col col-1">
+            <label nz-checkbox [(ngModel)]="allChecked"
+              (ngModelChange)="updateAllChecked()"
+              [nzIndeterminate]="indeterminate">
+              全选
+            </label>
+          </div>
+          <div class="col col-2">
+            商品信息
+          </div>
+          <div class="col col-3">
+
+          </div>
+          <div class="col col-4">
+            单价
+          </div>
+          <div class="col col-5">
+            数量
+          </div>
+          <div class="col col-6">
+            金额
+          </div>
+          <div class="col col-7">
+            操作
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
+          <div class="item">
+            <div class="col col-1">
+              <label nz-checkbox [(ngModel)]="item.checked"
+                (ngModelChange)="updateSingleChecked()">
+              </label>
+              <img [src]="item.src">
+            </div>
+            <div class="col col-2">
+              {{item.MingCheng}}
+            </div>
+            <div class="col col-3">
+              <div>
+                颜色分类：{{item.YanSeFenLei}}
+              </div>
+              <div>
+                安装方式：{{item.AnZhuangFangShi}}
+              </div>
+            </div>
+            <div class="col col-4">
+              <b style="color: #222;">￥{{item.DanJia}}</b>
+            </div>
+            <div class="col col-5">
+              <nz-input-number style="width:80%;" [(ngModel)]="item.ShuLiang"
+                [nzMin]="1" [nzStep]="1"
+                (ngModelChange)="onChangShuLiang(item,$event)">
+              </nz-input-number>
+            </div>
+            <div class="col col-6">
+              <b style="color: #ff5a25">￥{{item.JinE}}</b>
+            </div>
+            <div class="col col-7">
+              <div class="label" (click)="onFavorites(item)">
+                移入收藏夹
+              </div>
+              <div class="label" (click)="onDelete(item)">
+                删除
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </ng-template>
+      </div>
+      <div *ngIf="listData != null && listData.length > 0" class="footer">
+        <label nz-checkbox [(ngModel)]="allChecked"
+          (ngModelChange)="updateAllChecked()"
+          [nzIndeterminate]="indeterminate">
+          全选
+        </label>
+        <div class="item-right">
+          已选商品（不含运费）
+          <span style="color: #ff723f">
+            {{settlementPrice}}
+          </span>
+          <span class="settlement" [class.active]="settlementPrice > 0"
+            (click)="settlementPrice > 0 ? portalNav.openStatements(listData) : ''">
+            结算
+          </span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+  </div>
+</div>

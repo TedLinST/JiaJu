@@ -1,0 +1,149 @@
+.shopping-cart {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+
+    .list {
+      .header {
+        border-bottom: 3px solid #ececec;
+
+        .item {
+          display: inline-block;
+          padding: 5px 20px;
+          font-size: 20px;
+          font-weight: 600;
+          color: #5d5d5d;
+          border-bottom: 3px solid #ececec;
+          margin-bottom: -3px;
+
+          span {
+            color: #ff723f;
+            display: inline-block;
+            padding: 0px 2px;
+          }
+
+          &.active {
+            color: #ff723f;
+            border-bottom-color: #ff723f;
+          }
+        }
+
+        .item-right {
+          float: right;
+          padding: 5px 20px;
+          font-size: 17px;
+          color: #5d5d5d;
+
+          .settlement {
+            padding: 2px 20px;
+            margin-left: 15px;
+            background-color: #aaaaaa;
+            color: #fff;
+            margin-bottom: -2px;
+
+            &.active {
+              background-color: #ff723f;
+            }
+          }
+        }
+      }
+
+      .body {
+        padding-top: 20px;
+
+        .col {
+          padding: 8px;
+          float: left;
+        }
+
+        .col-1 {
+          width: 150px;
+
+          img {
+            width: 81px;
+            height: 81px;
+            margin-left: 10px;
+          }
+        }
+
+        .col-2 {
+          width: 300px;
+        }
+
+        .col-3 {
+          width: 220px;
+        }
+
+        .col-4 {
+          width: 100px;
+        }
+
+        .col-5 {
+          width: 210px;
+        }
+
+        .col-6 {
+          width: 100px;
+        }
+
+        .col-7 {
+          width: 100px;
+
+          .label {
+            margin-bottom: 3px;
+            &:hover {
+              color: #1890ff;
+            }
+          }
+        }
+
+        .title {
+          margin-bottom: 5px;
+        }
+
+        .item {
+          border-left: 1px solid #b5b5b5;
+          border-right: 1px solid #b5b5b5;
+          border-top: 1px solid #b5b5b5;
+          padding: 5px;
+
+
+
+          &:last-child {
+            border-bottom: 1px solid #b5b5b5;
+          }
+
+          &:hover {
+            background-color: #f5f5f5;
+          }
+        }
+
+      }
+
+      .footer {
+        border-bottom: 1px solid #b5b5b5;
+        border-left: 1px solid #b5b5b5;
+        border-right: 1px solid #b5b5b5;
+        background-color: #f0f0f0;
+        color: #444;
+        padding: 10px 15px;
+
+        .item-right {
+          float: right;
+          font-size: 14px;
+
+          .settlement {
+            padding: 3px 20px;
+            margin-left: 14px;
+            background-color: #aaaaaa;
+            color: #fff;
+
+            &.active {
+              background-color: #ff723f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
