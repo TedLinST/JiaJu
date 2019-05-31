@@ -77,11 +77,16 @@
                   <div class="label singleTextBeyondHide">商家等级：<span
                       style="color: #13b191;">{{item.ShangJiaDengJi}}</span>
                   </div>
+                  <div class="label singleTextBeyondHide"
+                    style="font-size: 15px;"
+                    (click)="portalNav.openShopMerchandise(item,$event)">
+                    <a>MORE+</a>
+                  </div>
                 </div>
                 <div class="goods">
                   <ng-template ngFor let-itemGoods [ngForOf]="item.data"
                     let-index="index">
-                    <div class="itemGoods">
+                    <div *ngIf="index < 5" class="itemGoods">
                       <div class="key-item-box item-box-bg item-box-margin-1"
                         style="width: 195px;height: 304px; margin-bottom: 2px;">
                         <div class="header">

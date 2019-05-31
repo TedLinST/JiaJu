@@ -40,7 +40,7 @@
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="itemInfo.data"
             let-index="index">
-            <div nz-col nzSpan="4">
+            <div *ngIf="index < 5" nz-col nzSpan="4">
               <div class="key-item-box item-box-margin-1"
                 style="height: 318px; margin-bottom: 2px;"
                 (click)="portalNav.openShopMerchandise(item,$event)">
@@ -73,7 +73,7 @@
     <div body class="box-style">
       <key-item-chunk-body>
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.PS.data"
+          <ng-template ngFor let-item [ngForOf]="itemInfo.data"
             let-index="index">
             <div nz-col nzSpan="6">
               <div class="key-item-box item-box-margin-13"
