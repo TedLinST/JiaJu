@@ -43,7 +43,7 @@ export class CommodityComponent implements OnInit {
 
   // 按钮排序激活
   btnSortActiveMap: any = {
-    JiaGe: 0,
+    DanJia: 0,
     YueChengJiao: 0,
     PingJia: 0
   };
@@ -101,7 +101,7 @@ export class CommodityComponent implements OnInit {
   */
   onClickButtonSortChange(event: any, id: any) {
     this.btnSortActiveMap = {
-      JiaGe: 0,
+      DanJia: 0,
       YueChengJiao: 0,
       PingJia: 0
     };
@@ -116,8 +116,8 @@ export class CommodityComponent implements OnInit {
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.BiaoTi) {
-          let text = '' + row.BiaoTi;
+        if (row.MingCheng) {
+          let text = '' + row.MingCheng;
           if (text.match(regExp)) {
             return true;
           }

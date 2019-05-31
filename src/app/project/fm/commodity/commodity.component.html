@@ -28,8 +28,8 @@
 
     <!-- 过滤 -->
     <div class="filter-row">
-      <key-button-sort label="按价格" [active]="btnSortActiveMap['JiaGe']"
-        (clickChange)="onClickButtonSortChange($event,'JiaGe')">
+      <key-button-sort label="按价格" [active]="btnSortActiveMap['DanJia']"
+        (clickChange)="onClickButtonSortChange($event,'DanJia')">
       </key-button-sort>
       <key-button-sort label="月成交" [active]="btnSortActiveMap['YueChengJiao']"
         (clickChange)="onClickButtonSortChange($event,'YueChengJiao')">
@@ -57,15 +57,15 @@
             <div nz-col nzSpan="6">
               <div class="key-item-box item-box-margin-3"
                 style="height: 461px; margin-bottom: 6px;"
-                (click)="portalNav.openCommodityDetails(item.$event)">
+                (click)="portalNav.openCommodityDetails(item,$event)">
                 <div class="header">
                   <img [src]="item.src">
                 </div>
                 <div class="body">
-                  <div class="JiaGe">{{item.JiaGe}}</div>
+                  <div class="DanJia">￥{{item.DanJia}}</div>
                   <div class="label">
-                    <span class="BiaoTi">
-                      {{item.BiaoTi}}
+                    <span class="MingCheng">
+                      {{item.MingCheng}}
                     </span>
                     <span class="PinPai">
                       {{item.PinPai}}

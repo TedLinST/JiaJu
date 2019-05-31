@@ -1,0 +1,235 @@
+<div class="commodity-details">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
+    (clickMenu)="onClickBannerMenu($event)">
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureMall()">家具商城</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openCommodity()">商品</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        商品详情
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+    <div class="header">
+      <div class="z-row">
+        <div class="z-col z-col-2 left">
+          <div class="max-box">
+            <img [src]="itemInfo.src">
+          </div>
+          <div class="min-box">
+            <div class="item" [class.active]="itemActiveIndex == 1"
+              (click)="itemActiveIndex = 1">
+              <img [src]="itemInfo.src">
+            </div>
+            <div class="item" [class.active]="itemActiveIndex == 2"
+              (click)="itemActiveIndex = 2">
+              <img [src]="itemInfo.src">
+            </div>
+            <div class="item" [class.active]="itemActiveIndex == 3"
+              (click)="itemActiveIndex = 3">
+              <img [src]="itemInfo.src">
+            </div>
+            <div class="item" [class.active]="itemActiveIndex == 4"
+              (click)="itemActiveIndex = 4">
+              <img [src]="itemInfo.src">
+            </div>
+            <div class="item" [class.active]="itemActiveIndex == 5"
+              (click)="itemActiveIndex = 5">
+              <img [src]="itemInfo.src">
+            </div>
+          </div>
+        </div>
+        <div class="z-col z-col-2 right">
+          <div class="title">{{itemInfo.MingCheng}}</div>
+          <div class="PinLei">{{itemInfo.PinLei}}</div>
+          <div class="label">品牌：{{itemInfo.PinPai}}</div>
+          <div class="label">规格：{{itemInfo.GuiGe}}</div>
+          <div class="label">产地：{{itemInfo.ChanDi}}</div>
+          <div class="DanJia">￥{{itemInfo.DanJia}}</div>
+          <div class="label" style="margin-bottom: 7px;">配送：XXX省 XXX市 至 XXX省
+            XXX市</div>
+          <div class="label">
+            款式选择：
+            <span [class.active]="activeIndex0 == 1" (click)="activeIndex0 = 1">
+              某款
+            </span>
+            <span [class.active]="activeIndex0 == 2" (click)="activeIndex0 = 2">
+              某款
+            </span>
+          </div>
+          <div class="label">
+            颜色选择：
+            <span [class.active]="activeIndex1 == 1" (click)="activeIndex1 = 1">
+              某颜色
+            </span>
+            <span [class.active]="activeIndex1 == 2" (click)="activeIndex1 = 2">
+              某颜色
+            </span>
+            <span [class.active]="activeIndex1 == 3" (click)="activeIndex1 = 3">
+              某颜色
+            </span>
+          </div>
+          <div class="label">
+            服务选择：
+            <span [class.active]="activeIndex2 == 1" (click)="activeIndex2 = 1">
+              自提
+            </span>
+            <span [class.active]="activeIndex2 == 2" (click)="activeIndex2 = 2">
+              配送
+            </span>
+            <span [class.active]="activeIndex2 == 3" (click)="activeIndex2 = 3">
+              搬运
+            </span>
+            <span [class.active]="activeIndex2 == 4" (click)="activeIndex2 = 4">
+              安装
+            </span>
+            <span [class.active]="activeIndex2 == 5" (click)="activeIndex2 = 5">
+              延保
+            </span>
+          </div>
+          <div class="btn-div">
+            <button class="btn btn1" nz-button nzType="primary"
+              (click)="onCollection()">收藏</button>
+            <button class="btn btn2" nz-button nzType="primary"
+              (click)="onAddPurchase()">购买</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="left">
+        <div class="top">
+          {{itemInfo.DianPu}}
+        </div>
+        <div class="body">
+          <div class="img-box">
+            <img src="assets/imgs/commodity-details/logo.jpg">
+          </div>
+          <div class="biaoQian">
+            <div class="item">
+              进店逛逛
+            </div>
+            <div class="item" (click)="onCollection()">
+              收藏店铺
+            </div>
+          </div>
+          <div class="label">
+            店铺得分
+          </div>
+          <div class="label">
+            描述：4.9
+          </div>
+          <div class="label">
+            服务：4.9
+          </div>
+          <div class="label">
+            物流：4.9
+          </div>
+
+          <div class="kf">
+            <br>
+            <key-dot-title title="售前客服"
+              [styles]="{'color':'#fff','fontSize.px':'15'}">
+            </key-dot-title>
+            <div class="z-row">
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服1</div>
+              </div>
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服2</div>
+              </div>
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服3</div>
+              </div>
+            </div>
+            <div class="z-row">
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服4</div>
+              </div>
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服5</div>
+              </div>
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服6</div>
+              </div>
+            </div>
+            <br>
+            <key-dot-title title="售后客服"
+              [styles]="{'color':'#fff','fontSize.px':'15'}">
+            </key-dot-title>
+            <div class="z-row">
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服1</div>
+              </div>
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服2</div>
+              </div>
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服3</div>
+              </div>
+            </div>
+            <div class="z-row">
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服4</div>
+              </div>
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服5</div>
+              </div>
+              <div class="z-col z-col-3">
+                <img src="assets/imgs/commodity-details/kf.jpg">
+                <div>客服6</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="right">
+        <div class="header">
+          <div class="item" [class.active]="activeIndex == 1"
+            (click)="activeIndex = 1">
+            图片详情
+          </div>
+          <div class="item" [class.active]="activeIndex == 2"
+            (click)="activeIndex = 2">
+            累计评论（10）
+          </div>
+        </div>
+        <div class="body">
+          <ng-template [ngIf]="activeIndex == 1">
+            <img src="assets/imgs/commodity-details/xq.jpg"
+              style="max-width: 100%">
+          </ng-template>
+          <ng-template [ngIf]="activeIndex == 2">
+            <img src="assets/imgs/commodity-details/pl.jpg"
+              style="max-width: 100%">
+          </ng-template>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>

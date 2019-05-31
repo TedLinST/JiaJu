@@ -516,7 +516,6 @@ export class PortalNavigation {
     }
     let itemInfo: any = JSON.stringify(info);
     this.router.navigate(['commodity-details'], { queryParams: { itemInfo: itemInfo } });
-    this.navigateDeveloping();
   }
 
   /**

@@ -1,0 +1,235 @@
+.commodity-details {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+
+    .header {
+      margin-bottom: 15px;
+
+      .left {
+        width: 415px !important;
+
+
+        .max-box {
+          text-align: center;
+          border: 1px solid #a2a2a1;
+          height: 415px;
+          line-height: 415px;
+          overflow: hidden;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .min-box {
+          margin-top: 10px;
+
+          .item {
+            display: inline-block;
+            width: 73px;
+            height: 73px;
+            margin-right: 12px;
+            overflow: hidden;
+            padding: 1px;
+            text-align: center;
+            border: 1px solid transparent;
+
+            &:hover,
+            &.active {
+              border-color: #059c50;
+            }
+
+            &:last-child {
+              margin-right: 0px;
+            }
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .right {
+        width: calc(100% - 415px) !important;
+        padding: 10px 20px;
+
+        .title {
+          font-size: 19px;
+          font-weight: 600;
+          margin-bottom: 5px;
+          color: #000;
+        }
+
+        .PinLei {
+          color: #333333;
+          padding-bottom: 10px;
+          border-bottom: 1px dashed #555;
+          margin-bottom: 8px;
+          font-size: 15px;
+        }
+
+        .label {
+          color: #222;
+          margin-bottom: 3px;
+          padding-left: 2px;
+
+          span {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 4px 20px;
+            border: 1px solid #e3e2e3;
+            color: #333;
+            margin-bottom: 6px;
+
+            &:hover,
+            &.active {
+              border-color: #059c50;
+            }
+          }
+        }
+
+        .DanJia {
+          margin: 10px 0px;
+          padding: 8px;
+          background-color: #e6f5eb;
+          color: #ff0036;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .btn-div {
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+
+          .btn {
+            min-width: 120px;
+            margin: 0px 10px;
+          }
+
+          .btn1 {
+            background-color: #3c311b;
+            border-color: #3c311b;
+          }
+
+          .btn2 {
+            background-color: #f49e6d;
+            border-color: #f49e6d;
+          }
+        }
+      }
+    }
+
+    .body {
+
+      .left {
+        float: left;
+        width: 190px;
+        background-color: #33323a;
+        margin-right: 10px;
+        height: 100%;
+
+        .top {
+          text-align: center;
+          background-color: #29282e;
+          padding: 10px 10px 40px 10px;
+          color: #fff;
+          font-size: 20px;
+        }
+
+        .body {
+          position: relative;
+          padding-top: 110px;
+
+          .img-box {
+            position: absolute;
+            top: -30px;
+            left: 45px;
+            width: 110px;
+            height: 110px;
+            border: 1px solid #059b50;
+            padding: 2px;
+            border-radius: 50%;
+
+            img {
+              width: 100%;
+              border-radius: 50%;
+            }
+          }
+
+          .biaoQian {
+            padding: 5px 20px;
+
+            .item {
+              text-align: center;
+              color: #fff;
+              border: 1px solid #059b50;
+              border-radius: 5px;
+              padding: 4px 10px;
+              margin-bottom: 15px;
+              font-size: 15px;
+            }
+          }
+
+          .label {
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 4px;
+          }
+
+          .kf {
+            padding: 0px 20px;
+
+            .z-row {
+              margin-bottom: 10px;
+
+              .z-col {
+                img {
+                  width: 35px;
+                  height: 35px;
+                }
+
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+      }
+
+      .right {
+        float: left;
+        border: 1px solid #e3e2e3;
+        width: calc(100% - 200px);
+
+        .header {
+
+          border-bottom: 1px solid #e3e2e3;
+
+          .item {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #848c82;
+            border-right: 1px solid #e3e2e3;
+            border-top: 2px solid transparent;
+            margin-top: -2px;
+
+            &.active {
+              color: #6aa454;
+              border-top: 2px solid #6aa454;
+            }
+          }
+        }
+
+        .body{
+          
+        }
+      }
+    }
+  }
+}

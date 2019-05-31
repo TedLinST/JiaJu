@@ -25,8 +25,8 @@ export const DataCommodityHandler = {
   // 列表数据
   LIST_DATA: [
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -37,8 +37,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -49,8 +49,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -61,8 +61,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -73,8 +73,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -85,8 +85,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -97,8 +97,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -109,8 +109,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -121,8 +121,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -133,8 +133,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -145,8 +145,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -157,8 +157,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -169,8 +169,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -181,8 +181,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -193,8 +193,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -205,8 +205,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -217,8 +217,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -229,8 +229,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -241,8 +241,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -253,8 +253,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -265,8 +265,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -277,8 +277,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -289,8 +289,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -301,8 +301,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -313,8 +313,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -325,8 +325,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -337,8 +337,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -349,8 +349,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -361,8 +361,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -373,8 +373,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -385,8 +385,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -397,8 +397,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -409,8 +409,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -421,8 +421,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
@@ -433,8 +433,8 @@ export const DataCommodityHandler = {
       src: 'assets/imgs/commodity/shangpin.jpg'
     },
     {
-      JiaGe: '￥2900',
-      BiaoTi: '梳妆台书桌',
+      DanJia: '2900', ShuLiang: '1', JinE: '2900', YanSeFenLei: 'XX', AnZhuangFangShi: 'XXX',
+      MingCheng: '梳妆台书桌',
       PinPai: '品牌',
       PinLei: '一体卧室现代',
       ChanDi: '产地',
