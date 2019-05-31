@@ -61,9 +61,12 @@
             <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
               <div class="item">
                 <div class="info">
-                  <img [src]="item.src">
+                  <img [src]="item.src"
+                    (click)="portalNav.openShopDetails(item)">
                   <div class="label singleTextBeyondHide">
-                    {{item.DianPuMingCheng}}</div>
+                    <a (click)="portalNav.openShopDetails(item)">
+                      {{item.DianPuMingCheng}}</a>
+                  </div>
                   <div class="label singleTextBeyondHide" style="color: #222;">
                     {{item.id}}</div>
                   <div class="label singleTextBeyondHide">销量：<span
@@ -101,10 +104,10 @@
                           </key-item-mask>
                         </div>
                         <div class="body">
-                          <div class="JiaGe singleTextBeyondHide">
-                            {{itemGoods.JiaGe}}</div>
-                          <div class="BiaoTi singleTextBeyondHide">
-                            {{itemGoods.BiaoTi}}</div>
+                          <div class="DanJia singleTextBeyondHide">
+                            {{itemGoods.DanJia}}</div>
+                          <div class="MingCheng singleTextBeyondHide">
+                            {{itemGoods.MingCheng}}</div>
                           <div class="PinLei singleTextBeyondHide">
                             {{itemGoods.PinLei}}</div>
                         </div>

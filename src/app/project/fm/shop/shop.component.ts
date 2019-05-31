@@ -122,8 +122,8 @@ export class ShopComponent implements OnInit {
             return true;
           }
         }
-        if (row.BiaoTi) {
-          let text = '' + row.BiaoTi;
+        if (row.MingCheng) {
+          let text = '' + row.MingCheng;
           if (text.match(regExp)) {
             return true;
           }

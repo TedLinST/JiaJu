@@ -531,18 +531,18 @@ export class PortalNavigation {
   /**
    * 家具商城 - 商家店铺 - 详细
    */
-  openShopDetails(event?: any) {
+  openShopDetails(info: any, event?: any) {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('shop-details');
-    this.navigateDeveloping();
+    let itemInfo: any = JSON.stringify(info);
+    this.router.navigate(['shop-details'], { queryParams: { itemInfo: itemInfo } });
   }
 
   /**
    * 家具商城 - 商家店铺 - 商品
    */
-  openShopMerchandise(event?: any) {
+  openShopMerchandise(info: any, event?: any) {
     if (!!event) {
       event.stopPropagation();
     }

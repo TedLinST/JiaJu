@@ -63,7 +63,7 @@ export const PortalRoutes = [
     { path: 'commodity', loadChildren: '../project/fm/commodity/commodity.module#CommodityModule' }, // 商品
     { path: 'commodity-details', loadChildren: '../project/fm/commodity-details/commodity-details.module#CommodityDetailsModule' }, // 商品详细
     { path: 'shop', loadChildren: '../project/fm/shop/shop.module#ShopModule' }, // 商家店铺
-    // { path: 'shop-details', loadChildren: '../project/fm/shop-details/shop-details.module#ShopDetailsModule' }, // 商家店铺详细
+    { path: 'shop-details', loadChildren: '../project/fm/shop-details/shop-details.module#ShopDetailsModule' }, // 商家店铺详细
     // { path: 'shop-merchandise', loadChildren: '../project/fm/shop-merchandise/shop-merchandise.module#ShopMerchandiseModule' }, // 商家店铺商品
     { path: 'shopping-cart', loadChildren: '../project/fm/shopping-cart/shopping-cart.module#ShoppingCartModule' }, // 购物车
     { path: 'statements', loadChildren: '../project/fm/statements/statements.module#StatementsModule' }, // 结算

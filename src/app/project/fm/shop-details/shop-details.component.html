@@ -1,0 +1,148 @@
+<div class="shop-details">
+  <!-- 横幅 -->
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC_2" [isMenu]="false">
+    <div class="info">
+      <img [src]="itemInfo.src">
+      <div class="text-box">
+        <div class="label DianPuMingCheng">{{itemInfo.DianPuMingCheng}}</div>
+        <div class="label">店铺得分</div>
+        <div class="label">
+          <span>描述：4.9</span>
+          <span>服务：4.9</span>
+          <span>物流：4.9</span></div>
+      </div>
+    </div>
+  </fm-banner-menu>
+
+  <div class="body">
+    <!-- 面包屑 -->
+    <nz-breadcrumb class="breadcrumb" nzSeparator='>'>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.onHome()">首页</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openFurnitureMall()">家具商城</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        <a (click)="portalNav.openShop()">商家店铺</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item>
+        商家店铺详情
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+
+  <!-- 推荐商品 -->
+  <key-item-chunk [enTitle]="dataHandler.RP.enTitle"
+    [title]="dataHandler.RP.title">
+    <div body class="box-style">
+      <key-item-chunk-body [showItemNumber]="5">
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="itemInfo.data"
+            let-index="index">
+            <div nz-col nzSpan="4">
+              <div class="key-item-box item-box-margin-1"
+                style="height: 318px; margin-bottom: 2px;"
+                (click)="portalNav.openShopMerchandise(item,$event)">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="DanJia">￥{{item.DanJia}}</div>
+                  <div class="label MingCheng">
+                    {{item.MingCheng}}
+                  </div>
+                  <div class="label PinLei">
+                    {{item.PinLei}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+        <div class="img-box">
+          <img [src]="dataHandler.RP.src">
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 商品展示 -->
+  <key-item-chunk [enTitle]="dataHandler.PS.enTitle"
+    [title]="dataHandler.PS.title">
+    <div body class="box-style">
+      <key-item-chunk-body>
+        <div nz-row>
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PS.data"
+            let-index="index">
+            <div nz-col nzSpan="6">
+              <div class="key-item-box item-box-margin-13"
+                style="height: 318px; margin-bottom: 20px;"
+                (click)="portalNav.openShopMerchandise(item,$event)">
+                <div class="header">
+                  <img [src]="item.src">
+                </div>
+                <div class="body">
+                  <div class="DanJia">￥{{item.DanJia}}</div>
+                  <div class="label MingCheng">
+                    {{item.MingCheng}}
+                  </div>
+                  <div class="label PinLei">
+                    {{item.PinLei}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 客服区域 -->
+  <key-item-chunk [enTitle]="dataHandler.CSA.enTitle"
+    [title]="dataHandler.CSA.title">
+    <div body class="CSA-style">
+      <key-item-chunk-body>
+        <key-dot-title title="售前客服"></key-dot-title>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.CSA.data0"
+          let-index="index">
+          <div class="item">
+            <img [src]="item.src">
+            <div class="label">{{item.title}}</div>
+          </div>
+        </ng-template>
+        <key-dot-title title="售后客服">
+        </key-dot-title>
+        <ng-template ngFor let-item [ngForOf]="dataHandler.CSA.data1"
+          let-index="index">
+          <div class="item">
+            <img [src]="item.src">
+            <div class="label">{{item.title}}</div>
+          </div>
+        </ng-template>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+  <!-- 客服区域 -->
+  <key-item-chunk [enTitle]="dataHandler.L.enTitle"
+    [title]="dataHandler.L.title">
+    <div body class="L-style">
+      <key-item-chunk-body>
+        <div class="z-row">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.L.data"
+            let-index="index">
+            <div class="z-col z-col-4">
+              <div class="label"><span><samp
+                    class="dot"></samp></span>地址标题：{{item.title}}</div>
+              <div class="label"><span></span>链接地址：<a [href]="item.link"
+                  target="_blank">{{item.link}}</a></div>
+            </div>
+          </ng-template>
+        </div>
+      </key-item-chunk-body>
+    </div>
+  </key-item-chunk>
+
+</div>

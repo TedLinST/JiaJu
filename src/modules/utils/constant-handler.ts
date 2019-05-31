@@ -224,6 +224,9 @@ export class ConstantHandler {
   // 家具商城 - 横幅图片
   public static CH_FM_BANNER_SRC = 'assets/imgs/furniture-mall/banner.jpg';
 
+  // 家具商城 - 横幅图片2
+  public static CH_FM_BANNER_SRC_2 = 'assets/imgs/shop-details/banner2.jpg';
+
   // 家具商城 - 横幅菜单
   public static CH_FM_BANNER_MENU = [
     {
