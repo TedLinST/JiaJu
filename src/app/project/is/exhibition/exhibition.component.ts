@@ -50,7 +50,8 @@ export class ExhibitionComponent implements OnInit {
    * @param id 
    */
   openExhibitionDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("展会服务详情页");
+    // this.navigateDeveloping();
   }
 
   /**

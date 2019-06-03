@@ -86,7 +86,8 @@ export class DesignersGardenComponent implements OnInit {
    * @param id 
    */
   openDesignersGardenDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("打开优秀设计师详情页");
+    // this.navigateDeveloping();
   }
 
   /**

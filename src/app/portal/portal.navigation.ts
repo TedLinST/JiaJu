@@ -100,7 +100,7 @@ export class PortalNavigation {
       event.stopPropagation();
     }
     // this.router.navigateByUrl('material-shopping');
-    this.navigateDeveloping();
+    // this.navigateDeveloping();
   }
 
   /**
@@ -151,7 +151,7 @@ export class PortalNavigation {
       event.stopPropagation();
     }
     // this.router.navigateByUrl('timber-auction');
-    this.navigateDeveloping();
+    // this.navigateDeveloping();
   }
 
   /**
