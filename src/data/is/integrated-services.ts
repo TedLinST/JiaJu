@@ -341,66 +341,66 @@ export const DataIntegratedServicesHandler = {
       QiYe: [
         {
           id: '1',
-          title: '专利企业名称1',
-          src: 'assets/imgs/integrated-services/qiye-1.jpg'
+          title: '国家知识产权局',
+          src: 'assets/imgs/integrated-services/zhuanli-1.jpg'
         },
         {
           id: '2',
-          title: '专利企业名称2',
+          title: '办事指南',
           src: 'assets/imgs/integrated-services/qiye-2.jpg'
         }
       ],
       ZhengCe: [
         {
           id: '1',
-          title: '政策标题名称',
+          title: '《中国知识产权保护与营商环境新进展报告（2018）》发布',
           time: '2019-05-22'
         },
         {
           id: '2',
-          title: '政策标题名称',
+          title: '知识产权强国战略纲要制定专家咨询委员会第一次全体会议召开',
           time: '2019-05-22'
         },
         {
           id: '3',
-          title: '政策标题名称',
+          title: '国家知识产权局会同国家林业和草原局联合检查2019年中国北京世园会知识产权保护工作',
           time: '2019-05-22'
         },
         {
           id: '4',
-          title: '政策标题名称',
+          title: '《专利代理师资格考试办法》自6月1日起施行',
           time: '2019-05-22'
         },
         {
           id: '5',
-          title: '政策标题名称',
+          title: '76.88分！2018年知识产权保护社会满意度稳中有升',
           time: '2019-05-22'
         },
         {
           id: '6',
-          title: '政策标题名称',
+          title: '京津冀知识产权服务品牌机构签订合作协议',
           time: '2019-05-22'
         },
-        {
-          id: '7',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '8',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '9',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '10',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        }
+        // {
+        //   id: '7',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '8',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '9',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '10',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // }
       ]
     },
     // 税务服务
@@ -408,66 +408,66 @@ export const DataIntegratedServicesHandler = {
       QiYe: [
         {
           id: '1',
-          title: '税务企业名称1',
-          src: 'assets/imgs/integrated-services/qiye-1.jpg'
+          title: '国家税务总局',
+          src: 'assets/imgs/integrated-services/shuiwu-1.jpg'
         },
         {
           id: '2',
-          title: '税务企业名称2',
+          title: '办事指南',
           src: 'assets/imgs/integrated-services/qiye-2.jpg'
         }
       ],
       ZhengCe: [
         {
           id: '1',
-          title: '政策标题名称',
+          title: '中国减税降费效应显现 企业信心增强',
           time: '2019-05-22'
         },
         {
           id: '2',
-          title: '政策标题名称',
+          title: '减税降费宣传的新“打开模式”',
           time: '2019-05-22'
         },
         {
           id: '3',
-          title: '政策标题名称',
+          title: '新政落地有声 企业轻装上阵',
           time: '2019-05-22'
         },
         {
           id: '4',
-          title: '政策标题名称',
+          title: '五月征期：政策利好叠加 税费缴纳便捷',
           time: '2019-05-22'
         },
         {
           id: '5',
-          title: '政策标题名称',
+          title: '减税降费协同共治 区长县长都来听“税课”',
           time: '2019-05-22'
         },
         {
           id: '6',
-          title: '政策标题名称',
+          title: '税收营商环境更趋公平透明',
           time: '2019-05-22'
         },
-        {
-          id: '7',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '8',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '9',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '10',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        }
+        // {
+        //   id: '7',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '8',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '9',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '10',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // }
       ]
     },
     // 环保服务
@@ -475,66 +475,66 @@ export const DataIntegratedServicesHandler = {
       QiYe: [
         {
           id: '1',
-          title: '环保企业名称1',
-          src: 'assets/imgs/integrated-services/qiye-1.jpg'
+          title: '生态环境部',
+          src: 'assets/imgs/integrated-services/huanbao-1.jpg'
         },
         {
           id: '2',
-          title: '环保企业名称2',
+          title: '办事指南',
           src: 'assets/imgs/integrated-services/qiye-2.jpg'
         }
       ],
       ZhengCe: [
         {
           id: '1',
-          title: '政策标题名称',
+          title: '国务院关于建立完善守信联合激励和失信联合惩戒制度加快推进社会',
           time: '2019-05-22'
         },
         {
           id: '2',
-          title: '政策标题名称',
+          title: '诚信建设的指导意见',
           time: '2019-05-22'
         },
         {
           id: '3',
-          title: '政策标题名称',
+          title: '关于加强企业环境信用体系建设的指导意见',
           time: '2019-05-22'
         },
         {
           id: '4',
-          title: '政策标题名称',
+          title: '国务院办公厅关于社会信用体系建设的若干意见',
           time: '2019-05-22'
         },
         {
           id: '5',
-          title: '政策标题名称',
+          title: '部分工业行业淘汰落后生产工艺装备和产品指导目录（2010年本）中华人民共和国环境影响评价法',
           time: '2019-05-22'
         },
         {
           id: '6',
-          title: '政策标题名称',
+          title: '国务院办公厅关于印发“无废城市”建设试点工作方案的通知',
           time: '2019-05-22'
         },
-        {
-          id: '7',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '8',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '9',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '10',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        }
+        // {
+        //   id: '7',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '8',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '9',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '10',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // }
       ]
     },
     // 工商服务
@@ -542,66 +542,66 @@ export const DataIntegratedServicesHandler = {
       QiYe: [
         {
           id: '1',
-          title: '工商企业名称1',
-          src: 'assets/imgs/integrated-services/qiye-1.jpg'
+          title: '国家市场监督管理总局',
+          src: 'assets/imgs/integrated-services/gongshang-1.jpg'
         },
         {
           id: '2',
-          title: '工商企业名称2',
+          title: '办事指南',
           src: 'assets/imgs/integrated-services/qiye-2.jpg'
         }
       ],
       ZhengCe: [
         {
           id: '1',
-          title: '工商政策标题名称',
+          title: '2018年前三季度市场环境形势分析报告',
           time: '2019-05-22'
         },
         {
           id: '2',
-          title: '工商政策标题名称',
+          title: '市场监管总局关于明确免予办理强制性产品认证工作要求的通知',
           time: '2019-05-22'
         },
         {
           id: '3',
-          title: '工商政策标题名称',
+          title: '市场监管总局关于加强认证监管工作的通知',
           time: '2019-05-22'
         },
         {
           id: '4',
-          title: '政策标题名称',
+          title: '市场监管总局关于《市场监督管理投诉与举报处理办法（征求意见稿）》公开征求意见的公告',
           time: '2019-05-22'
         },
         {
           id: '5',
-          title: '工商政策标题名称',
+          title: '市场监管总局关于发布《绿色产品标识使用管理办法》的公告',
           time: '2019-05-22'
         },
         {
           id: '6',
-          title: '政策标题名称',
+          title: '“铁拳”出击 严厉打击侵犯知识产权违法行为',
           time: '2019-05-22'
         },
-        {
-          id: '7',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '8',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '9',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        },
-        {
-          id: '10',
-          title: '政策标题名称',
-          time: '2019-05-22'
-        }
+        // {
+        //   id: '7',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '8',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '9',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // },
+        // {
+        //   id: '10',
+        //   title: '政策标题名称',
+        //   time: '2019-05-22'
+        // }
       ]
     }
   },
@@ -618,17 +618,17 @@ export const DataIntegratedServicesHandler = {
     data0: [
       {
         id: 1,
-        title: '资金区标题1',
+        title: 'VC',
         src: 'assets/imgs/integrated-services/rongzi-1.jpg'
       },
       {
         id: 2,
-        title: '资金区标题2',
+        title: 'PE',
         src: 'assets/imgs/integrated-services/rongzi-2.jpg'
       },
       {
         id: 3,
-        title: '资金区标题3',
+        title: '早期',
         src: 'assets/imgs/integrated-services/rongzi-3.jpg'
       }
     ],
@@ -636,17 +636,17 @@ export const DataIntegratedServicesHandler = {
     data1: [
       {
         id: 1,
-        title: '项目区标题1',
+        title: '家具原材料',
         src: 'assets/imgs/integrated-services/rongzi-1.jpg'
       },
       {
         id: 2,
-        title: '项目区标题2',
+        title: '家具生产制造',
         src: 'assets/imgs/integrated-services/rongzi-2.jpg'
       },
       {
         id: 3,
-        title: '项目区标题3',
+        title: '家具销售',
         src: 'assets/imgs/integrated-services/rongzi-3.jpg'
       }
     ]
