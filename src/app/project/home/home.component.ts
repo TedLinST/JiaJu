@@ -96,7 +96,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openDesignersGardenDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("打开设计师园地详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -104,7 +105,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openSoftwareIntegrationDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("打开设计软件集成详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -112,7 +114,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openSchoolProjectDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("打开学校项目详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -120,7 +123,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openEnterpriseNeedsDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("打开企业需求详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -128,7 +132,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openSeekExpertDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("有困难找专家详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -136,7 +141,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openExhibitionDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("展会服务详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -144,7 +150,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openGovernmentDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("政府服务详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -152,7 +159,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openFinanceDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("金融服务详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -160,7 +168,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openLogistics(id: any) {
-    this.navigateDeveloping();
+    console.log("物流售后服务页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -168,7 +177,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openWoodShoppingDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("木材团购详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -176,7 +186,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openMechanicsEquipmentDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("机械设备页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -184,7 +195,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openBrandDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("品牌详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -192,7 +204,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
    * @param id 
    */
   openChannelChannelDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("众筹频道详情页");
+    // this.navigateDeveloping();
   }
 
   /**

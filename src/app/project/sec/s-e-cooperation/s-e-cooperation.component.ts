@@ -62,7 +62,8 @@ export class SECooperationComponent implements OnInit {
    * @param id 
    */
   openSchoolProjectDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("打开学校项目详情");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -70,7 +71,8 @@ export class SECooperationComponent implements OnInit {
    * @param id 
    */
   openEnterpriseNeedsDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("打开企业需求详情");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -78,28 +80,32 @@ export class SECooperationComponent implements OnInit {
    * @param id 
    */
   openSeResourcesDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("校企资源详情");
+    // this.navigateDeveloping();
   }
 
   /**
    * 校企招聘预告详情
    */
   openEnterpriseRecruitmentNoticeDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("校企招聘预告详情");
+    // this.navigateDeveloping();
   }
 
   /**
    * 校企招聘详情
    */
   openEnterpriseRecruitmentDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("校企招聘详情");
+    // this.navigateDeveloping();
   }
 
   /**
    * 有困难找专家详情
    */
   openSeekExpertDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("有困难找专家详情");
+    // this.navigateDeveloping();
   }
 
   /**
