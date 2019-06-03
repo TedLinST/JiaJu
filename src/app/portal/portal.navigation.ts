@@ -546,8 +546,8 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('shop-merchandise');
-    this.navigateDeveloping();
+    let itemInfo: any = JSON.stringify(info);
+    this.router.navigate(['shop-merchandise'], { queryParams: { itemInfo: itemInfo } });
   }
 
   /**

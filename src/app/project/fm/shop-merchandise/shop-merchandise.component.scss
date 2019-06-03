@@ -1,0 +1,123 @@
+.shop-merchandise {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+  }
+
+  .info {
+    position: absolute;
+    top: calc((100% - 280px) / 2);
+    left: 18%;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px dashed #494b4d;
+    padding: 35px 6px 0px;
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+
+    .text-box {
+
+      .DianPuMingCheng {
+        font-size: 16px;
+        color: #6c5b5b;
+        font-weight: 600;
+        margin-top: 8px;
+        margin-bottom: 10px;
+      }
+
+      .label {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 6px;
+
+        span {
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+
+  .filter-row {
+    .search {
+      float: right;
+      width: 350px;
+    }
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .list {
+    .pagination {
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    .key-item-box {
+      border: 1px solid #e3e2e3;
+      padding: 5px 0px 0px 0px;
+
+      .body {
+        .DanJia {
+          font-size: 22px;
+          font-weight: 600;
+          color: #ff0036;
+        }
+
+        .label {
+          margin-bottom: 4px;
+
+          span {
+            display: inline-block;
+            min-width: 120px;
+            margin-right: 10px;
+
+            &.MingCheng,
+            &.PinPai,
+            &.ChanDi,
+            &.GuiGe {
+              color: #222;
+            }
+
+            &.PinLei {
+              color: #848484;
+            }
+
+            &.DianPu {
+              color: #6c5b5b;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .footer {
+        border-top: 1px solid #e3e2e3;
+        padding: 0px;
+
+        .z-col {
+          text-align: center;
+          color: #6c5b5b;
+          font-size: 16px;
+          padding: 7px 5px;
+
+          .YueChengJiao {
+            color: #913d3d;
+          }
+
+          .PingJia {
+            color: #13b191;
+          }
+        }
+      }
+    }
+  }
+
+}
