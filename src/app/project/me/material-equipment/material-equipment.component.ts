@@ -41,7 +41,8 @@ export class MaterialEquipmentComponent implements OnInit {
    * @param id 
    */
   openMaterialMartDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("原辅材料商城详情");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -49,7 +50,8 @@ export class MaterialEquipmentComponent implements OnInit {
    * @param id 
    */
   openmMaterialShoppingDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("原辅材料团购详情");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -57,7 +59,8 @@ export class MaterialEquipmentComponent implements OnInit {
    * @param id 
    */
   openMaterialPurchaseDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("原辅材料求购详情");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -65,7 +68,8 @@ export class MaterialEquipmentComponent implements OnInit {
    * @param id 
    */
   openMaterialSupplierDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("原辅材料供应商详情");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -73,7 +77,8 @@ export class MaterialEquipmentComponent implements OnInit {
    * @param id 
    */
   openTimberAuctionDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("木材拍卖行详情");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -81,7 +86,8 @@ export class MaterialEquipmentComponent implements OnInit {
    * @param id 
    */
   openEquipmentMartDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("机械设备商城详情");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -89,7 +95,8 @@ export class MaterialEquipmentComponent implements OnInit {
    * @param id 
    */
   openEquipmentSupplierDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("机械设备供应商");
+    // this.navigateDeveloping();
   }
 
   /**
