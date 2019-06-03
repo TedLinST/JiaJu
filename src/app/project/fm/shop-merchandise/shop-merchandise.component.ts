@@ -62,6 +62,9 @@ export class ShopMerchandiseComponent implements OnInit {
       if (this.itemInfo.data != null && this.itemInfo.data.length > 0) {
         this.total = this.itemInfo.data.length;
         this.handleListDataPagination(this.itemInfo.data, this.activePagaIndex);
+      } else {
+        this.total = 1;
+        this.handleListDataPagination([this.itemInfo], this.activePagaIndex);
       }
     }
   }
