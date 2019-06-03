@@ -12,183 +12,270 @@ export const DataIntegratedServicesHandler = {
     ],
     // 国内展会
     data0: [
-      {
+      { //国内展会-国际名家具（东莞）展览会
         id: 1,
         data: [
           {
             id: 1,
-            title: '123',
+            title: '一直想请您来，这样的名家具展是您期待的样子吗？',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+            src: 'assets/imgs/integrated-services/GNzhanhui-1.jpg'
           },
           {
             id: 2,
-            title: '123',
+            title: '泛家居行业的渠道裂变，从这个大咖顶级饭局开始？',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+            src: 'assets/imgs/integrated-services/GNzhanhui-2.jpg'
           },
           {
             id: 3,
-            title: '123',
+            title: '设计选材 | 流行是暂时的，风格是永恒的',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+            src: 'assets/imgs/integrated-services/GNzhanhui-3.jpg'
           },
           {
             id: 4,
-            title: '123',
+            title: '把五星级酒店装修转化为家居场景，你喜欢吗？',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+            src: 'assets/imgs/integrated-services/GNzhanhui-4.jpg'
           }
         ]
       },
-      {
+      { //国内展会-中国(广州)国际家具博览会
         id: 2,
         data: [
           {
             id: 1,
-            title: '123',
+            title: 'CIFF二期开幕 | 来办公环境展看CIFF Design',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+            src: 'assets/imgs/integrated-services/GNzhanhui-5.jpg'
           },
           {
             id: 2,
-            title: '123',
+            title: 'CIFF二期开幕 | 来设备配料展看中国制造的未来！',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+            src: 'assets/imgs/integrated-services/GNzhanhui-6.jpg'
           },
           {
             id: 3,
-            title: '123',
+            title: '新物种、新设计、新商业！第43届CIFF圆满闭幕，刷新我的美好新体验！',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+            src: 'assets/imgs/integrated-services/GNzhanhui-7.jpg'
           },
           {
             id: 4,
-            title: '123',
+            title: '大咖齐聚，颜值爆表，人气火热|第43届中国家博会（广州）开幕盛况',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+            src: 'assets/imgs/integrated-services/GNzhanhui-8.jpg'
+          }
+        ]
+      },
+      { //国内展会-深圳国际家具展
+        id: 3,
+        data: [
+          {
+            id: 1,
+            title: '青年设计师创想汇：给你一场超级的思想脑爆',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/GNzhanhui-9.jpg'
+          },
+          {
+            id: 2,
+            title: '给设计以更靓丽的色彩——金堂奖全国女设计师联盟来了！',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/GNzhanhui-10.jpg'
+          },
+          {
+            id: 3,
+            title: '中国青年设计师创想峰会拉开帷幕，系列活动引爆设计新势力',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/GNzhanhui-11.jpg'
+          },
+          {
+            id: 4,
+            title: '当广州遇上深圳，设计界的华山论道就在中国青年设计师创想峰会',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/GNzhanhui-12.jpg'
           }
         ]
       }
     ],
     // 国外展会
     data1: [
-      {
+      { //国外展会-德国科隆展
         id: 1,
         data: [
           {
             id: 1,
-            title: '456',
+            title: 'Das Haus',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+            src: 'assets/imgs/integrated-services/GWzhanhui-1.jpg'
           },
           {
             id: 2,
-            title: '456',
+            title: 'Trend Atmospheres',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+            src: 'assets/imgs/integrated-services/GWzhanhui-2.jpg'
           },
           {
             id: 3,
-            title: '456',
+            title: '100 years bauhaus - work in Progress',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+            src: 'assets/imgs/integrated-services/GWzhanhui-3.jpg'
           },
           {
             id: 4,
-            title: '456',
+            title: 'Touch by imm cologne - E-Commerce Forum supported by OTTO.de',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+            src: 'assets/imgs/integrated-services/GWzhanhui-4.jpg'
           }
         ]
       },
-      {
+      { //国外展会-米兰国际家具展
         id: 2,
         data: [
           {
             id: 1,
-            title: '456',
+            title: 'The 58th edition of the Salone del Mobile.Milano has drawn to a close',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+            src: 'assets/imgs/integrated-services/GWzhanhui-5.jpg'
           },
           {
             id: 2,
-            title: '456',
+            title: 'AQUA. Leonardo’s Vision',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+            src: 'assets/imgs/integrated-services/GWzhanhui-6.jpg'
           },
           {
             id: 3,
-            title: '456',
+            title: 'DE-SIGN. The art of Italian design before and after Leonardo',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+            src: 'assets/imgs/integrated-services/GWzhanhui-7.jpg'
           },
           {
             id: 4,
-            title: '456',
+            title: 'Mario Bellini is granted Salone del Mobile.Milano Special Award',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+            src: 'assets/imgs/integrated-services/GWzhanhui-8.jpg'
+          }
+        ]
+      },
+      {//国外展会-
+        id: 3,
+        data: [
+          {
+            id: 1,
+            title: "Can't-Miss Brands at High Point Spring 2019",
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/GWzhanhui-9.jpg'
+          },
+          {
+            id: 2,
+            title: 'UNAPOLOGETIC',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/GWzhanhui-10.jpg'
+          },
+          {
+            id: 3,
+            title: 'Well Being',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/GWzhanhui-11.jpg'
+          },
+          {
+            id: 4,
+            title: 'Essentialism',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/GWzhanhui-12.jpg'
           }
         ]
       }
     ],
     // 专门性展会
     data2: [
-      {
+      { //专门性展会-成都国际家具工业展览会
         id: 1,
         data: [
           {
             id: 1,
-            title: '789',
+            title: '成都家具展国际合作再升级，一场与时尚潮流、国际KOL的偶遇',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+            src: 'assets/imgs/integrated-services/ZMzhanhui-1.jpg'
           },
           {
             id: 2,
-            title: '789',
+            title: 'CR9市占比14.34%，定制家居的未来爆发点在哪里？',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+            src: 'assets/imgs/integrated-services/ZMzhanhui-2.jpg'
           },
           {
             id: 3,
-            title: '789',
+            title: '成都国际家居设计奖简章',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+            src: 'assets/imgs/integrated-services/ZMzhanhui-3.jpg'
           },
           {
             id: 4,
-            title: '789',
+            title: '成都国际家具展展商分布',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+            src: 'assets/imgs/integrated-services/ZMzhanhui-4.jpg'
           }
         ]
       },
-      {
+      { //专门性展会-青岛国际家具展
         id: 2,
         data: [
           {
             id: 1,
-            title: '789',
+            title: '中国家具行业北方第一展，红岛新展馆，惊艳亮相！',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-1.jpg'
+            src: 'assets/imgs/integrated-services/ZMzhanhui-5.jpg'
           },
           {
             id: 2,
-            title: '789',
+            title: '青岛展倒计时ING | 这份攻略必须收藏！',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-2.jpg'
+            src: 'assets/imgs/integrated-services/ZMzhanhui-6.jpg'
           },
           {
             id: 3,
-            title: '789',
+            title: '“大”不一样的青岛展，5月16日，红岛新展馆，盛装启幕！',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-3.jpg'
+            src: 'assets/imgs/integrated-services/ZMzhanhui-7.jpg'
           },
           {
             id: 4,
-            title: '789',
+            title: '青岛国际家具展 | 全球高品质木工机械大展来了！',
             content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-            src: 'assets/imgs/integrated-services/zhengfu-4.jpg'
+            src: 'assets/imgs/integrated-services/ZMzhanhui-8.jpg'
+          }
+        ]
+      },
+      { //专门性展会-苏州家博会
+        id: 3,
+        data: [
+          {
+            id: 1,
+            title: '世界级寝居文化引领者爱慕米思，正式签约第11届苏州家具展',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/ZMzhanhui-9.jpg'
+          },
+          {
+            id: 2,
+            title: '源于英国，融入东方 | 香港阿密达高端寝具强势来袭',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/ZMzhanhui-10.jpg'
+          },
+          {
+            id: 3,
+            title: '组团预登记赢取4680元豪华双人游！考验家具圈人脉的时刻到了',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/ZMzhanhui-11.jpg'
+          },
+          {
+            id: 4,
+            title: 'TCH丨舒适家意式极简系列强势来袭，邀您相约第11届苏州家',
+            content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            src: 'assets/imgs/integrated-services/ZMzhanhui-12.jpg'
           }
         ]
       }
