@@ -48,7 +48,8 @@ export class FurnitureFairComponent implements OnInit {
    * @param id 
    */
   openEDEIDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("展会详细介绍与展会资讯详情页");
+    // this.navigateDeveloping();
   }
 
   /**

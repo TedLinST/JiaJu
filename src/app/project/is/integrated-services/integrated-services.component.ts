@@ -75,7 +75,8 @@ export class IntegratedServicesComponent implements OnInit {
    * @param id 
    */
   openFinanceDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("金融服务详情页");
+    // this.navigateDeveloping();
   }
 
   /**
@@ -83,7 +84,8 @@ export class IntegratedServicesComponent implements OnInit {
    * @param id 
    */
   openFurnitureDeliveryDetails(id: any) {
-    this.navigateDeveloping();
+    console.log("物流售后服务详情页");
+    // this.navigateDeveloping();
   }
 
   /**
