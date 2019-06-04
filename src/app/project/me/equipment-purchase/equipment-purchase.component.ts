@@ -208,7 +208,11 @@ export class EquipmentPurchaseComponent implements OnInit {
    * @param id 
    */
   onCollection(id: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏成功！',
+    );
   }
 
   /**

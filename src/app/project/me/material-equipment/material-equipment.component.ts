@@ -3,6 +3,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { DataMaterialEquipmentHandler } from 'src/data/me/material-equipment';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-material-equipment',
@@ -20,7 +21,7 @@ export class MaterialEquipmentComponent implements OnInit {
   // 数据助手
   dataHandler: any;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -112,7 +113,11 @@ export class MaterialEquipmentComponent implements OnInit {
    * @param id 
    */
   onCollection(id: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏成功！',
+    );
   }
 
   /**

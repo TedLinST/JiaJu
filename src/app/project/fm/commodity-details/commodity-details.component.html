@@ -112,10 +112,10 @@
             {{itemInfo.DianPuMingCheng}}
           </div>
           <div class="biaoQian">
-            <div class="item">
+            <div class="item" (click)="portalNav.openShop()">
               进店逛逛
             </div>
-            <div class="item" (click)="onCollection()">
+            <div class="item" [class.active]="activeCollection" (click)="onCollectionDf()">
               收藏店铺
             </div>
           </div>

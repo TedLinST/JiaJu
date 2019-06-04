@@ -6,6 +6,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataFindingFundsHandler } from 'src/data/is/finding-funds';
 import { UtilsIs } from '../utils/utils-is';
 import { Utils } from 'src/modules/utils/utils';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-finding-funds',
@@ -47,7 +48,7 @@ export class FindingFundsComponent implements OnInit {
     GengXinRiQi: 0
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -151,7 +152,11 @@ export class FindingFundsComponent implements OnInit {
    * 投资项目
    */
   onInvestment(item: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏项目成功！',
+    );
   }
 
   /**

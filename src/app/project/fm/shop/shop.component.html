@@ -35,17 +35,13 @@
           <key-button-sort label="按销量" [active]="btnSortActiveMap['XiaoLiang']"
             (clickChange)="onClickButtonSortChange($event,'XiaoLiang')">
           </key-button-sort>
-          <key-button-sort label="按商品总数"
-            [active]="btnSortActiveMap['ShangPinZongShu']"
-            (clickChange)="onClickButtonSortChange($event,'ShangPinZongShu')">
-          </key-button-sort>
           <key-button-sort label="按等级"
             [active]="btnSortActiveMap['DengJi']"
             (clickChange)="onClickButtonSortChange($event,'DengJi')">
           </key-button-sort>
           <div class="search">
             <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-              <input type="text" nz-input placeholder="请输入店铺名称、商品名称"
+              <input type="text" nz-input placeholder="请输入店铺名称"
                 [(ngModel)]="searchValue" />
             </nz-input-group>
             <ng-template #suffixIconButton>

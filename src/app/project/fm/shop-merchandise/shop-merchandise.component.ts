@@ -114,16 +114,16 @@ export class ShopMerchandiseComponent implements OnInit {
       PingJiaShuLiang: 0
     };
     this.btnSortActiveMap[id] = event;
-    this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
+    this.listData = Utils.arrayKeySort(this.itemInfo.data, id, event, true);
     this.onSearch();
   }
 
   // 搜索
   onSearch() {
     this.activePagaIndex = 1
-    if (this.dataHandler.LIST_DATA && this.searchValue != null) {
+    if (this.itemInfo.data && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
+      let listData = this.itemInfo.data.filter((row: any) => {
         if (row.ShangPinMingCheng) {
           let text = '' + row.ShangPinMingCheng;
           if (text.match(regExp)) {
@@ -145,7 +145,7 @@ export class ShopMerchandiseComponent implements OnInit {
       });
       this.handleListDataPagination(listData, this.activePagaIndex);
     } else {
-      this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
+      this.handleListDataPagination(this.itemInfo.data, this.activePagaIndex);
     }
   }
 

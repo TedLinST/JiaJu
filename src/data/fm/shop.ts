@@ -28,7 +28,7 @@ export const DataShopHandler = {
     {
       DianPuID: 'TB001',
       DianPuMingCheng: '汕头家具旗舰店',
-      XiaoLiang: 600,
+      XiaoLiang: 800,
       DengJi: 'LV6',
       MiaoShuPingFen: 4.7,
       FuWuPingFen: 4.8,
@@ -126,7 +126,7 @@ export const DataShopHandler = {
       DianPuID: 'TB002',
       DianPuMingCheng: '揭阳家具旗舰店',
       XiaoLiang: 600,
-      DengJi: 'LV6',
+      DengJi: 'LV5',
       MiaoShuPingFen: 4.9,
       FuWuPingFen: 4.8,
       WuLiuPingFen: 4.7,
@@ -171,8 +171,8 @@ export const DataShopHandler = {
     {
       DianPuID: 'TB003',
       DianPuMingCheng: '潮州家具旗舰店',
-      XiaoLiang: 600,
-      DengJi: 'LV6',
+      XiaoLiang: 700,
+      DengJi: 'LV4',
       MiaoShuPingFen: 4.4,
       FuWuPingFen: 4.5,
       WuLiuPingFen: 4.7,

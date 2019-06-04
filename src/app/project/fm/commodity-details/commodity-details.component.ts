@@ -5,6 +5,7 @@ import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataCommodityDetailsHandler } from 'src/data/fm/commodity-details';
 import { UtilsFm } from '../utils/utils-fm';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-commodity-details',
@@ -43,7 +44,9 @@ export class CommodityDetailsComponent implements OnInit {
 
   activeIndex: number = 1;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  activeCollection: boolean = false;
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -89,7 +92,26 @@ export class CommodityDetailsComponent implements OnInit {
    * @param id 
    */
   onCollection(id?: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏成功！',
+    );
+  }
+
+  /**
+   * 收藏店铺
+   * @param id 
+   */
+  onCollectionDf(id?: any) {
+    this.activeCollection = !this.activeCollection;
+    if (this.activeCollection) {
+      this.notification.create(
+        'success',
+        '提示',
+        '收藏店铺成功！',
+      );
+    }
   }
 
   /**

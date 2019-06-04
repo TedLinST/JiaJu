@@ -6,6 +6,7 @@ import { DataFurnitureRawShoppingHandler } from 'src/data/me/furniture-raw-shopp
 import { Utils } from 'src/modules/utils/utils';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 import { UtilsMe } from '../utils/utils-me';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-furniture-raw-shopping',
@@ -46,7 +47,7 @@ export class FurnitureRawShoppingComponent implements OnInit {
     qty: 0
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -152,7 +153,11 @@ export class FurnitureRawShoppingComponent implements OnInit {
    * @param id 
    */
   onCollection(id: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏成功！',
+    );
   }
 
   /**
