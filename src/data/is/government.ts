@@ -6,19 +6,19 @@ export const DataGovernmentHandler = {
     enTitle: 'POLICY INFORMATION AREA',
     data: [
       {
-        title: '资讯标题XXXXX',
+        title: '增值税下调给企业带来的助力',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: 'XXXX资讯标题',
+        title: '打击知识产权违法整治力度再度升级',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '资讯标题',
+        title: '国家重拳出击，坚决遏制企业污染行为死灰复燃',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
@@ -75,100 +75,100 @@ export const DataGovernmentHandler = {
     // ISO 国际标准
     data0: [
       {
-        title: 'ISO 国际标准标题'
+        title: 'ISO 7171:1988 Furniture — Storage units — Determination of stability'
       },
       {
-        title: 'ISO 国际标准标题'
+        title: 'ISO 4211:1979 Furniture — Assessment of surface resistance to cold liquids'
       },
       {
-        title: 'ISO 国际标准标题'
+        title: 'ISO 7172:1988 Furniture — Tables — Determination of stability'
       },
       {
-        title: 'ISO 国际标准标题'
+        title: 'ISO 7170:1993 Furniture - Storage units - Determination of strength and durability	'
       },
       {
-        title: '我的标题'
+        title: "ISO 9221-1:2015 Furniture - Children's high chairs- Part 1:Safety requirement"
       },
       {
-        title: 'ISO 国际标准标题'
+        title: "ISO 9221-2:2015 Furniture - Children's high chairs- Part 2:Test methods"
       },
       {
-        title: '我的标题'
+        title: "ISO 9221-1:1992 Furniture — Children's high chairsPart 1:Safety requirements"
       },
       {
-        title: '我的标题'
+        title: 'ISO 22879:2016 Castors and wheels - Requirements for castors for furniture'
       },
       {
-        title: '我的标题'
+        title: 'ISO 3055:1985 Kitchen equipment — Coordinating sizes'
       },
       {
-        title: '我的标题'
+        title: 'ISO 5731:1978 Kitchen equipment - Limit of size'
       }
     ],
     // GB 中国国家标准
     data1: [
       {
-        title: 'GB中国国家标准标题'
+        title: 'GB/T 16799-2018	家具用皮革'
       },
       {
-        title: 'GB中国国家标准标题'
+        title: 'GB/T 36599-2018电子商务交易产品信息描述 家具'
       },
       {
-        title: 'GB中国国家标准标题'
+        title: 'GB/T 36022-2018木家具中氨释放量试验方法'
       },
       {
-        title: '我的标题'
+        title: 'GB/T 36021-2018家具中重金属锑、砷、钡、硒、六价铬的评定方法'
       },
       {
-        title: 'GB中国国家标准标题'
+        title: 'GB 28481-2012塑料家具中有害物质限量'
       },
       {
-        title: '我的标题'
+        title: 'GB 28007-2011儿童家具通用技术条件'
       },
       {
-        title: '我的标题'
+        title: 'GB 28008-2011玻璃家具安全技术要求'
       },
       {
-        title: 'GB中国国家标准标题'
+        title: 'GB 24977-2010卫浴家具'
       },
       {
-        title: '我的标题'
+        title: 'GB 24820-2009实验室家具通用技术条件'
       },
       {
-        title: 'GB中国国家标准标题'
+        title: 'GB 28478-2012户外休闲家具安全性能要求 桌椅类产品 '
       }
     ],
     // 行业标准
     data2: [
       {
-        title: '行业标准'
+        title: 'QB/T 1093-2013  家具实木胶接件剪切强度的测定'
       },
       {
-        title: '行业标准'
+        title: 'QB/T 1094-2013  家具实木胶接件耐水性的测定'
       },
       {
-        title: '行业标准'
+        title: 'QB/T 1241-2013  家具五金  家具拉手安装尺寸'
       },
       {
-        title: '行业标准'
+        title: 'QB/T 1242-1991  家具五金  杯状暗铰链安装尺寸'
       },
       {
-        title: '行业标准'
+        title: 'QB/T 1338-2012  家具制图'
       },
       {
-        title: '行业标准'
+        title: 'QB/T 1951.1-2010 木家具  质量检验及质量评定'
       },
       {
-        title: '行业标准'
+        title: 'QB/T 1951.2-2013 金属家具  质量检验及质量评定'
       },
       {
-        title: '行业标准'
+        title: 'QB/T 2189-2013  家具五金  杯状暗铰链'
       },
       {
-        title: '行业标准'
+        title: 'QB/T 2454-2013  家具五金  抽屉导轨  '
       },
       {
-        title: '行业标准'
+        title: 'QB/T 3658-1999   木家具  公差与配合'
       }
     ]
   },
@@ -180,12 +180,12 @@ export const DataGovernmentHandler = {
     // 国家专利局
     data0: [
       {
-        title: '名称',
+        title: '国家知识产权局',
         link: 'www.baidu.com',
         src: 'assets/imgs/government/zhuanli-1.jpg'
       },
       {
-        title: '名称',
+        title: '办事指南',
         link: 'www.baidu.com',
         src: 'assets/imgs/government/zhuanli-2.jpg'
       }
@@ -193,43 +193,27 @@ export const DataGovernmentHandler = {
     // 专利政策
     data1: [
       {
-        title: '我是一个标题',
+        title: '《中国知识产权保护与营商环境新进展报告（2018）》发布',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '知识产权强国战略纲要制定专家咨询委员会第一次全体会议召开',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '国家知识产权局会同国家林业和草原局联合检查2019年中国北京世园会知识产权保护工作',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '《专利代理师资格考试办法》自6月1日起施行',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '76.88分！2018年知识产权保护社会满意度稳中有升',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
+        title: '京津冀知识产权服务品牌机构签订合作协议',
         date: '2019-05-23'
       }
     ]
@@ -242,12 +226,12 @@ export const DataGovernmentHandler = {
     // 国家专税务局
     data0: [
       {
-        title: '名称',
+        title: '国家税务总局',
         link: 'www.baidu.com',
-        src: 'assets/imgs/government/zhuanli-1.jpg'
+        src: 'assets/imgs/government/shuiwu-1.jpg'
       },
       {
-        title: '名称',
+        title: '办事指南',
         link: 'www.baidu.com',
         src: 'assets/imgs/government/zhuanli-2.jpg'
       }
@@ -255,43 +239,27 @@ export const DataGovernmentHandler = {
     // 税务政策
     data1: [
       {
-        title: '我是一个标题',
+        title: '中国减税降费效应显现 企业信心增强',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '减税降费宣传的新“打开模式”',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '新政落地有声 企业轻装上阵',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '五月征期：政策利好叠加 税费缴纳便捷',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '减税降费协同共治 区长县长都来听“税课”',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
+        title: '税收营商环境更趋公平透明',
         date: '2019-05-23'
       }
     ]
@@ -304,12 +272,12 @@ export const DataGovernmentHandler = {
     // 环保服务企业
     data0: [
       {
-        title: '名称',
+        title: '生态环境部',
         link: 'www.baidu.com',
-        src: 'assets/imgs/government/zhuanli-1.jpg'
+        src: 'assets/imgs/government/huanbao-1.jpg'
       },
       {
-        title: '名称',
+        title: '办事指南',
         link: 'www.baidu.com',
         src: 'assets/imgs/government/zhuanli-2.jpg'
       }
@@ -317,43 +285,27 @@ export const DataGovernmentHandler = {
     // 国家环保政策
     data1: [
       {
-        title: '我是一个标题',
+        title: '国务院关于建立完善守信联合激励和失信联合惩戒制度加快推进社会诚信建设的指导意见',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '关于加强企业环境信用体系建设的指导意见',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '国务院办公厅关于社会信用体系建设的若干意见',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '部分工业行业淘汰落后生产工艺装备和产品指导目录（2010年本）',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '中华人民共和国环境影响评价法',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
+        title: '国务院办公厅关于印发“无废城市”建设试点工作方案的通知',
         date: '2019-05-23'
       }
     ]
@@ -366,12 +318,12 @@ export const DataGovernmentHandler = {
     // 各地工商局
     data0: [
       {
-        title: '名称',
+        title: '国家市场监督管理总局',
         link: 'www.baidu.com',
-        src: 'assets/imgs/government/zhuanli-1.jpg'
+        src: 'assets/imgs/government/gongshang-1.jpg'
       },
       {
-        title: '名称',
+        title: '办事指南',
         link: 'www.baidu.com',
         src: 'assets/imgs/government/zhuanli-2.jpg'
       }
@@ -379,43 +331,27 @@ export const DataGovernmentHandler = {
     // 工商政策
     data1: [
       {
-        title: '我是一个标题',
+        title: '2018年前三季度市场环境形势分析报告',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '市场监管总局关于明确免予办理强制性产品认证工作要求的通知',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '市场监管总局关于加强认证监管工作的通知',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '市场监管总局关于《市场监督管理投诉与举报处理办法（征求意见稿）》公开征求意见的公告',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
+        title: '市场监管总局关于发布《绿色产品标识使用管理办法》的公告',
         date: '2019-05-23'
       },
       {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
-        date: '2019-05-23'
-      },
-      {
-        title: '我是一个标题',
+        title: '“铁拳”出击 严厉打击侵犯知识产权违法行为',
         date: '2019-05-23'
       }
     ]
