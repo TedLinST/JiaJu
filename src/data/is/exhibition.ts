@@ -9,53 +9,78 @@ export const DataExhibitionHandler = {
     subTtile: '德国科隆展',
     subEnTtile: 'COLOGNE, GERMANY',
     data: [
-      {
+      { //国外展会-德国科隆展
         id: 1,
         data: [
           {
             id: 1,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-1.jpg'
+            title: 'Das Haus',
+            src: 'assets/imgs/exhibition/GWzhanhui-1.jpg'
           },
           {
             id: 2,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-2.jpg'
+            title: 'Trend Atmospheres',
+            src: 'assets/imgs/exhibition/GWzhanhui-2.jpg'
           },
           {
             id: 3,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-3.jpg'
+            title: '100 years bauhaus - work in Progress',
+            src: 'assets/imgs/exhibition/GWzhanhui-3.jpg'
           },
           {
             id: 4,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-4.jpg'
+            title: 'Touch by imm cologne - E-Commerce Forum supported by OTTO.de',
+            src: 'assets/imgs/exhibition/GWzhanhui-4.jpg'
           }
         ]
       },
-      {
+      { //国外展会-米兰国际家具展
         id: 2,
         data: [
           {
             id: 1,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-1.jpg'
+            title: 'The 58th edition of the Salone del Mobile.Milano has drawn to a close',
+            src: 'assets/imgs/exhibition/GWzhanhui-5.jpg'
           },
           {
             id: 2,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-2.jpg'
+            title: 'AQUA. Leonardo’s Vision',
+            src: 'assets/imgs/exhibition/GWzhanhui-6.jpg'
           },
           {
             id: 3,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-3.jpg'
+            title: 'DE-SIGN. The art of Italian design before and after Leonardo',
+            src: 'assets/imgs/exhibition/GWzhanhui-7.jpg'
           },
           {
             id: 4,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-4.jpg'
+            title: 'Mario Bellini is granted Salone del Mobile.Milano Special Award',
+            src: 'assets/imgs/exhibition/GWzhanhui-8.jpg'
+          }
+        ]
+      },
+      {//国外展会-
+        id: 3,
+        data: [
+          {
+            id: 1,
+            title: "Can't-Miss Brands at High Point Spring 2019",
+            src: 'assets/imgs/exhibition/GWzhanhui-9.jpg'
+          },
+          {
+            id: 2,
+            title: 'UNAPOLOGETIC',
+            src: 'assets/imgs/exhibition/GWzhanhui-10.jpg'
+          },
+          {
+            id: 3,
+            title: 'Well Being',
+            src: 'assets/imgs/exhibition/GWzhanhui-11.jpg'
+          },
+          {
+            id: 4,
+            title: 'Essentialism',
+            src: 'assets/imgs/exhibition/GWzhanhui-12.jpg'
           }
         ]
       }
@@ -69,53 +94,78 @@ export const DataExhibitionHandler = {
     subTtile: '中国国际家具博览会',
     subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
     data: [
-      {
+      { //国内展会-国际名家具（东莞）展览会
         id: 1,
         data: [
           {
             id: 1,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-1.jpg'
+            title: '一直想请您来，这样的名家具展是您期待的样子吗？',
+            src: 'assets/imgs/exhibition/GNzhanhui-1.jpg'
           },
           {
             id: 2,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-2.jpg'
+            title: '泛家居行业的渠道裂变，从这个大咖顶级饭局开始？',
+            src: 'assets/imgs/exhibition/GNzhanhui-2.jpg'
           },
           {
             id: 3,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-3.jpg'
+            title: '设计选材 | 流行是暂时的，风格是永恒的',
+            src: 'assets/imgs/exhibition/GNzhanhui-3.jpg'
           },
           {
             id: 4,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-4.jpg'
+            title: '把五星级酒店装修转化为家居场景，你喜欢吗？',
+            src: 'assets/imgs/exhibition/GNzhanhui-4.jpg'
           }
         ]
       },
-      {
+      { //国内展会-中国(广州)国际家具博览会
         id: 2,
         data: [
           {
             id: 1,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-1.jpg'
+            title: 'CIFF二期开幕 | 来办公环境展看CIFF Design',
+            src: 'assets/imgs/exhibition/GNzhanhui-5.jpg'
           },
           {
             id: 2,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-2.jpg'
+            title: 'CIFF二期开幕 | 来设备配料展看中国制造的未来！',
+            src: 'assets/imgs/exhibition/GNzhanhui-6.jpg'
           },
           {
             id: 3,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-3.jpg'
+            title: '新物种、新设计、新商业！第43届CIFF圆满闭幕，刷新我的美好新体验！',
+            src: 'assets/imgs/exhibition/GNzhanhui-7.jpg'
           },
           {
             id: 4,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-4.jpg'
+            title: '大咖齐聚，颜值爆表，人气火热|第43届中国家博会（广州）开幕盛况',
+            src: 'assets/imgs/exhibition/GNzhanhui-8.jpg'
+          }
+        ]
+      },
+      { //国内展会-深圳国际家具展
+        id: 3,
+        data: [
+          {
+            id: 1,
+            title: '青年设计师创想汇：给你一场超级的思想脑爆',
+            src: 'assets/imgs/exhibition/GNzhanhui-9.jpg'
+          },
+          {
+            id: 2,
+            title: '给设计以更靓丽的色彩——金堂奖全国女设计师联盟来了！',
+            src: 'assets/imgs/exhibition/GNzhanhui-10.jpg'
+          },
+          {
+            id: 3,
+            title: '中国青年设计师创想峰会拉开帷幕，系列活动引爆设计新势力',
+            src: 'assets/imgs/exhibition/GNzhanhui-11.jpg'
+          },
+          {
+            id: 4,
+            title: '当广州遇上深圳，设计界的华山论道就在中国青年设计师创想峰会',
+            src: 'assets/imgs/exhibition/GNzhanhui-12.jpg'
           }
         ]
       }
@@ -129,53 +179,78 @@ export const DataExhibitionHandler = {
     subTtile: '中国建博会（定制家具）',
     subEnTtile: 'CHINA CONSTRUCTION EXPO (CUSTOM FURNITURE)',
     data: [
-      {
+      { //专门性展会-成都国际家具工业展览会
         id: 1,
         data: [
           {
             id: 1,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-1.jpg'
+            title: '成都家具展国际合作再升级，一场与时尚潮流、国际KOL的偶遇',
+            src: 'assets/imgs/exhibition/ZMzhanhui-1.jpg'
           },
           {
             id: 2,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-2.jpg'
+            title: 'CR9市占比14.34%，定制家居的未来爆发点在哪里？',
+            src: 'assets/imgs/exhibition/ZMzhanhui-2.jpg'
           },
           {
             id: 3,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-3.jpg'
+            title: '成都国际家居设计奖简章',
+            src: 'assets/imgs/exhibition/ZMzhanhui-3.jpg'
           },
           {
             id: 4,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-4.jpg'
+            title: '成都国际家具展展商分布',
+            src: 'assets/imgs/exhibition/ZMzhanhui-4.jpg'
           }
         ]
       },
-      {
+      { //专门性展会-青岛国际家具展
         id: 2,
         data: [
           {
             id: 1,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-1.jpg'
+            title: '中国家具行业北方第一展，红岛新展馆，惊艳亮相！',
+            src: 'assets/imgs/exhibition/ZMzhanhui-5.jpg'
           },
           {
             id: 2,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-2.jpg'
+            title: '青岛展倒计时ING | 这份攻略必须收藏！',
+            src: 'assets/imgs/exhibition/ZMzhanhui-6.jpg'
           },
           {
             id: 3,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-3.jpg'
+            title: '“大”不一样的青岛展，5月16日，红岛新展馆，盛装启幕！',
+            src: 'assets/imgs/exhibition/ZMzhanhui-7.jpg'
           },
           {
             id: 4,
-            title: '123',
-            src: 'assets/imgs/exhibition/zhanhui-4.jpg'
+            title: '青岛国际家具展 | 全球高品质木工机械大展来了！',
+            src: 'assets/imgs/exhibition/ZMzhanhui-8.jpg'
+          }
+        ]
+      },
+      { //专门性展会-苏州家博会
+        id: 3,
+        data: [
+          {
+            id: 1,
+            title: '世界级寝居文化引领者爱慕米思，正式签约第11届苏州家具展',
+            src: 'assets/imgs/exhibition/ZMzhanhui-9.jpg'
+          },
+          {
+            id: 2,
+            title: '源于英国，融入东方 | 香港阿密达高端寝具强势来袭',
+            src: 'assets/imgs/exhibition/ZMzhanhui-10.jpg'
+          },
+          {
+            id: 3,
+            title: '组团预登记赢取4680元豪华双人游！考验家具圈人脉的时刻到了',
+            src: 'assets/imgs/exhibition/ZMzhanhui-11.jpg'
+          },
+          {
+            id: 4,
+            title: 'TCH丨舒适家意式极简系列强势来袭，邀您相约第11届苏州家',
+            src: 'assets/imgs/exhibition/ZMzhanhui-12.jpg'
           }
         ]
       }
@@ -202,168 +277,392 @@ export const DataExhibitionHandler = {
     ],
     // 1月
     data0: [
-      {
-        date: "1日 周三",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "4日 周六",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "5日 周日",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "8日 周三",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "11日 周三",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "14日 周六",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "1日 周三",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "1日 周三",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "1日 周三",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      },
-      {
-        date: "1日 周三",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      }
+      // {
+      //   date: "1日 周三",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "4日 周六",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "5日 周日",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "8日 周三",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "11日 周三",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "14日 周六",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "1日 周三",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "1日 周三",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "1日 周三",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // },
+      // {
+      //   date: "1日 周三",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // }
     ],
     // 2月
     data1: [
-      {
-        date: "2日 XX",
-        data: [
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          }
-        ]
-      }
+      // {
+      //   date: "2日 XX",
+      //   data: [
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     },
+      //     {
+      //       title: 'XXXX展会标题',
+      //       time: '08:30 - 22:00'
+      //     }
+      //   ]
+      // }
     ],
     // 3月
     data2: [
       {
-        date: "3日 XX",
+        date: "1日 周五",
         data: [
           {
-            title: 'XXXX展会标题',
-            time: '08:30 - 22:00'
-          },
-          {
-            title: 'XXXX展会标题',
+            title: '第25届郑州中博定制家居木工机械展',
             time: '08:30 - 22:00'
           }
         ]
-      }
+      },
+      {
+        date: "2日 周六",
+        data: [
+          {
+            title: '第25届郑州中博定制家居木工机械展',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date: "3日 周日",
+        data: [
+          {
+            title: '第25届郑州中博定制家居木工机械展',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date: "15日 周五",
+        data: [
+          {
+            title: '第十八届中国国际门业展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title: '第六届中国国际集成定制家居展览会',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date: "16日 周六",
+        data: [
+          {
+            title: '第十八届中国国际门业展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title: '第六届中国国际集成定制家居展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第41届国际名家具（东莞）展览会',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date: "17日 周日",
+        data: [
+          {
+            title: '第十八届中国国际门业展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title: '第六届中国国际集成定制家居展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第41届国际名家具（东莞）展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title: '第37届国际龙家具展览会暨37届国际龙家具材料展览会',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date: "18日 周一",
+        data: [
+          {
+            title: '第十八届中国国际门业展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title: '第六届中国国际集成定制家居展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第41届国际名家具（东莞）展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title: '第37届国际龙家具展览会暨37届国际龙家具材料展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第43届中国（广州）国际家具博览会(一期)',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date: "19日 周二",
+        data: [
+          {
+            title:'第41届国际名家具（东莞）展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title: '第37届国际龙家具展览会暨37届国际龙家具材料展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第43届中国（广州）国际家具博览会(一期)',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'深圳时尚家居设计周暨34届深圳国际家具展',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date: "20日 周三",
+        data: [
+          {
+            title:'第41届国际名家具（东莞）展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title: '第37届国际龙家具展览会暨37届国际龙家具材料展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第43届中国（广州）国际家具博览会(一期)',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'深圳时尚家居设计周暨34届深圳国际家具展',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date:"21日 周四",
+        data:[
+          {
+            title:'第43届中国（广州）国际家具博览会(一期)',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'深圳时尚家居设计周暨34届深圳国际家具展',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date:"22日 周五",
+        data:[
+          {
+            title:'深圳时尚家居设计周暨34届深圳国际家具展',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date:'26日 周二',
+        data:[
+          {
+            title:'2019中国建博会（上海）',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第九届中国（广州）定制家居展览会',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date:'27日 周三',
+        data:[
+          {
+            title:'2019中国建博会（上海）',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第九届中国（广州）定制家居展览会',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date:"28日 周四",
+        data:[
+          {
+            title:'2019中国建博会（上海）',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第九届中国（广州）定制家居展览会',
+            time: '08:30 - 22:00'
+          },
+          {
+            title:'第43届中国（广州）国际家具博览会(二期)',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date:"29日 周五",
+        data:[
+          {
+            title:'第43届中国（广州）国际家具博览会(二期)',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date:"30日 周六",
+        data:[
+          {
+            title:'第43届中国（广州）国际家具博览会(二期)',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
+      {
+        date:"31日 周日",
+        data:[
+          {
+            title:'第43届中国（广州）国际家具博览会(二期)',
+            time: '08:30 - 22:00'
+          }
+        ]
+      },
     ],
     // 4月
     data3: [
