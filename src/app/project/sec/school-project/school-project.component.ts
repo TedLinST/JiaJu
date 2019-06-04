@@ -6,6 +6,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataSchoolProjectHandler } from 'src/data/sec/school-project';
 import { UtilsSec } from '../utils/utils-sec';
 import { Utils } from 'src/modules/utils/utils';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-school-project',
@@ -47,7 +48,7 @@ export class SchoolProjectComponent implements OnInit {
     FaBuShiJian: 0
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -132,7 +133,11 @@ export class SchoolProjectComponent implements OnInit {
    * @param id 
    */
   onCollection(id: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏项目成功！',
+    );
   }
 
   /**

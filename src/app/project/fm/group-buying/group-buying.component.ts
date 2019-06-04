@@ -6,6 +6,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataGroupBuyingHandler } from 'src/data/fm/group-buying';
 import { UtilsFm } from '../utils/utils-fm';
 import { Utils } from 'src/modules/utils/utils';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-group-buying',
@@ -49,7 +50,7 @@ export class GroupBuyingComponent implements OnInit {
   };
 
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -146,7 +147,11 @@ export class GroupBuyingComponent implements OnInit {
    * @param id 
    */
   onCollection(id: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏成功！',
+    );
   }
 
   /**

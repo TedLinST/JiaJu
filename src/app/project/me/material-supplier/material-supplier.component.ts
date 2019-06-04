@@ -6,6 +6,7 @@ import { DataMaterialSupplierHandler } from 'src/data/me/material-supplier';
 import { Utils } from 'src/modules/utils/utils';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 import { UtilsMe } from '../utils/utils-me';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-material-supplier',
@@ -40,7 +41,7 @@ export class MaterialSupplierComponent implements OnInit {
   // 搜索文本
   searchValue: any;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -138,7 +139,11 @@ export class MaterialSupplierComponent implements OnInit {
    * @param id 
    */
   onCollection(id: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏成功！',
+    );
   }
 
   /**

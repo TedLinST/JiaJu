@@ -6,6 +6,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataWoodShoppingHandler } from 'src/data/me/wood-shopping';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 import { UtilsMe } from '../utils/utils-me';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-wood-shopping',
@@ -47,7 +48,7 @@ export class WoodShoppingComponent implements OnInit {
     qty: 0
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -144,7 +145,11 @@ export class WoodShoppingComponent implements OnInit {
    * @param id 
    */
   onCollection(id: any) {
-    this.navigateDeveloping();
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏成功！',
+    );
   }
 
   /**
