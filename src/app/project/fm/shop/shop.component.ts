@@ -44,7 +44,6 @@ export class ShopComponent implements OnInit {
   // 按钮排序激活
   btnSortActiveMap: any = {
     XiaoLiang: 0,
-    ShangPinZongShu: 0,
     DengJi: 0
   };
 
@@ -102,7 +101,6 @@ export class ShopComponent implements OnInit {
   onClickButtonSortChange(event: any, id: any) {
     this.btnSortActiveMap = {
       XiaoLiang: 0,
-      ShangPinZongShu: 0,
       DengJi: 0
     };
     this.btnSortActiveMap[id] = event;
@@ -118,12 +116,6 @@ export class ShopComponent implements OnInit {
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
         if (row.DianPuMingCheng) {
           let text = '' + row.DianPuMingCheng;
-          if (text.match(regExp)) {
-            return true;
-          }
-        }
-        if (row.ShangPinMingCheng) {
-          let text = '' + row.ShangPinMingCheng;
           if (text.match(regExp)) {
             return true;
           }

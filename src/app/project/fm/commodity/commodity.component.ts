@@ -30,6 +30,9 @@ export class CommodityComponent implements OnInit {
   // 店铺数据助手
   dataShopHandler: any;
 
+  // 全部列表数据
+  allListData: any[] = [];
+
   // 列表数据
   listData: any[] = [];
 
@@ -75,6 +78,7 @@ export class CommodityComponent implements OnInit {
           data.push(item);
         }
       }
+      this.allListData = data;
       this.total = data.length;
       this.handleListDataPagination(data, this.activePagaIndex);
     }
@@ -126,16 +130,16 @@ export class CommodityComponent implements OnInit {
       PingJiaShuLiang: 0
     };
     this.btnSortActiveMap[id] = event;
-    this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
+    this.listData = Utils.arrayKeySort(this.allListData, id, event, true);
     this.onSearch();
   }
 
   // 搜索
   onSearch() {
     this.activePagaIndex = 1
-    if (this.dataHandler.LIST_DATA && this.searchValue != null) {
+    if (this.allListData && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
-      let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
+      let listData = this.allListData.filter((row: any) => {
         if (row.ShangPinMingCheng) {
           let text = '' + row.ShangPinMingCheng;
           if (text.match(regExp)) {
@@ -157,7 +161,7 @@ export class CommodityComponent implements OnInit {
       });
       this.handleListDataPagination(listData, this.activePagaIndex);
     } else {
-      this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
+      this.handleListDataPagination(this.allListData, this.activePagaIndex);
     }
   }
 

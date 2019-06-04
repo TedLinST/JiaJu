@@ -84,9 +84,9 @@ export class Utils {
             let value2 = key ? data2[key] : "";
             let result: any = null;
             // 转数字类型
-            if (isNumber) {
-                value1 = parseFloat(value1);
-                value2 = parseFloat(value2);
+            if (isNumber && typeof value1 == "string" && typeof value2 == "string") {
+                value1 = value1.replace(/[^0-9]/ig, "");
+                value2 = value2.replace(/[^0-9]/ig, "");
             }
             if (typeof value1 == "string" && typeof value2 == "string") {
                 result = value1.localeCompare(value2);
