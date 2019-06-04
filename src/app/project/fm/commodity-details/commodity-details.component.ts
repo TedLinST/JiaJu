@@ -25,6 +25,15 @@ export class CommodityDetailsComponent implements OnInit {
   // 数据助手
   dataHandler: any;
 
+  // 款式分类
+  CH_KuanShiFenLei: any;
+
+  // 颜色分类
+  CH_YanSeFenLei: any;
+
+  // 安装方式
+  CH_AnZhuangFangShi: any;
+
   itemInfo: any;
 
   itemActiveIndex: number = 1;
@@ -41,6 +50,9 @@ export class CommodityDetailsComponent implements OnInit {
   ngOnInit() {
     this.CH_FM_BANNER_SRC = ConstantHandler.CH_FM_BANNER_SRC;
     this.CH_FM_BANNER_MENU = ConstantHandler.CH_FM_BANNER_MENU;
+    this.CH_KuanShiFenLei = ConstantHandler.CH_KuanShiFenLei;
+    this.CH_YanSeFenLei = ConstantHandler.CH_YanSeFenLei;
+    this.CH_AnZhuangFangShi = ConstantHandler.CH_AnZhuangFangShi;
     this.dataHandler = DataCommodityDetailsHandler;
 
     // 获取参数

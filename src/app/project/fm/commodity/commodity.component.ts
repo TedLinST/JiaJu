@@ -6,6 +6,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataCommodityHandler } from 'src/data/fm/commodity';
 import { UtilsFm } from '../utils/utils-fm';
 import { Utils } from 'src/modules/utils/utils';
+import { DataShopHandler } from 'src/data/fm/shop';
 
 @Component({
   selector: 'app-commodity',
@@ -26,6 +27,9 @@ export class CommodityComponent implements OnInit {
   // 数据助手
   dataHandler: any;
 
+  // 店铺数据助手
+  dataShopHandler: any;
+
   // 列表数据
   listData: any[] = [];
 
@@ -44,8 +48,8 @@ export class CommodityComponent implements OnInit {
   // 按钮排序激活
   btnSortActiveMap: any = {
     DanJia: 0,
-    YueChengJiao: 0,
-    PingJia: 0
+    ChengJiaoShuLiang: 0,
+    PingJiaShuLiang: 0
   };
 
 
@@ -57,8 +61,24 @@ export class CommodityComponent implements OnInit {
     this.CH_FM_BANNER_SRC = ConstantHandler.CH_FM_BANNER_SRC;
     this.CH_FM_BANNER_MENU = ConstantHandler.CH_FM_BANNER_MENU;
     this.dataHandler = DataCommodityHandler;
-    this.total = this.dataHandler.LIST_DATA.length;
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
+    this.dataShopHandler = DataShopHandler;
+    if (this.dataShopHandler.LIST_DATA != null && this.dataShopHandler.LIST_DATA.length > 0) {
+      let data: any[] = [];
+      for (let i = 0; i < this.dataShopHandler.LIST_DATA.length; i++) {
+        for (let j = 0; j < this.dataShopHandler.LIST_DATA[i].data.length; j++) {
+          let item = Utils.clone(this.dataShopHandler.LIST_DATA[i].data[j]);
+          for (let key in this.dataShopHandler.LIST_DATA[i]) {
+            if (key != 'data') {
+              item[key] = this.dataShopHandler.LIST_DATA[i][key];
+            }
+          }
+          data.push(item);
+        }
+      }
+      this.total = data.length;
+      this.handleListDataPagination(data, this.activePagaIndex);
+    }
+
   }
 
   /**
@@ -102,8 +122,8 @@ export class CommodityComponent implements OnInit {
   onClickButtonSortChange(event: any, id: any) {
     this.btnSortActiveMap = {
       DanJia: 0,
-      YueChengJiao: 0,
-      PingJia: 0
+      ChengJiaoShuLiang: 0,
+      PingJiaShuLiang: 0
     };
     this.btnSortActiveMap[id] = event;
     this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
@@ -116,8 +136,8 @@ export class CommodityComponent implements OnInit {
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.MingCheng) {
-          let text = '' + row.MingCheng;
+        if (row.ShangPinMingCheng) {
+          let text = '' + row.ShangPinMingCheng;
           if (text.match(regExp)) {
             return true;
           }
@@ -128,8 +148,8 @@ export class CommodityComponent implements OnInit {
             return true;
           }
         }
-        if (row.DianPu) {
-          let text = '' + row.DianPu;
+        if (row.DianPuMingCheng) {
+          let text = '' + row.DianPuMingCheng;
           if (text.match(regExp)) {
             return true;
           }

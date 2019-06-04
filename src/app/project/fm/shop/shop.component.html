@@ -40,8 +40,8 @@
             (clickChange)="onClickButtonSortChange($event,'ShangPinZongShu')">
           </key-button-sort>
           <key-button-sort label="按等级"
-            [active]="btnSortActiveMap['ShangJiaDengJi']"
-            (clickChange)="onClickButtonSortChange($event,'ShangJiaDengJi')">
+            [active]="btnSortActiveMap['DengJi']"
+            (clickChange)="onClickButtonSortChange($event,'DengJi')">
           </key-button-sort>
           <div class="search">
             <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
@@ -61,21 +61,21 @@
             <ng-template ngFor let-item [ngForOf]="listData" let-index="index">
               <div class="item">
                 <div class="info">
-                  <img [src]="item.src"
+                  <img [src]="item.dfSrc"
                     (click)="portalNav.openShopDetails(item)">
                   <div class="label singleTextBeyondHide">
                     <a (click)="portalNav.openShopDetails(item)">
                       {{item.DianPuMingCheng}}</a>
                   </div>
                   <div class="label singleTextBeyondHide" style="color: #222;">
-                    {{item.id}}</div>
+                    {{item.DianPuID}}</div>
                   <div class="label singleTextBeyondHide">销量：<span
-                      style="color: #913d3d;">{{item.XiaoLiang}}</span></div>
+                      style="color: #913d3d;">{{item.XiaoLiang}}笔</span></div>
                   <div class="label singleTextBeyondHide">商品总数：<span
-                      style="color: #913d3d;">{{item.ShangPinZongShu}}</span>
+                      style="color: #913d3d;">{{item.data.length}}</span>
                   </div>
                   <div class="label singleTextBeyondHide">商家等级：<span
-                      style="color: #13b191;">{{item.ShangJiaDengJi}}</span>
+                      style="color: #13b191;">{{item.DengJi}}</span>
                   </div>
                   <div class="label singleTextBeyondHide"
                     style="font-size: 15px;"
@@ -101,18 +101,18 @@
                             <key-item-mask-label labelTitle="规格"
                               [label]="itemGoods.GuiGe"></key-item-mask-label>
                             <key-item-mask-label labelTitle="已售数量"
-                              [label]="itemGoods.YiShouShuLiang">
+                              [label]="itemGoods.ChengJiaoShuLiang">
                             </key-item-mask-label>
                             <key-item-mask-label labelTitle="评价数量"
-                              [label]="itemGoods.PingJia">
+                              [label]="itemGoods.PingJiaShuLiang">
                             </key-item-mask-label>
                           </key-item-mask>
                         </div>
                         <div class="body">
                           <div class="DanJia singleTextBeyondHide">
                             ￥{{itemGoods.DanJia}}</div>
-                          <div class="MingCheng singleTextBeyondHide">
-                            {{itemGoods.MingCheng}}</div>
+                          <div class="ShangPinMingCheng singleTextBeyondHide">
+                            {{itemGoods.ShangPinMingCheng}}</div>
                           <div class="PinLei singleTextBeyondHide">
                             {{itemGoods.PinLei}}</div>
                         </div>

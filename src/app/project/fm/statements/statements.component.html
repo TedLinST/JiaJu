@@ -87,14 +87,35 @@
               <img [src]="item.src">
             </div>
             <div class="col col-2">
-              {{item.MingCheng}}
+              {{item.ShangPinMingCheng}}
             </div>
             <div class="col col-3">
               <div>
-                颜色分类：{{item.YanSeFenLei}}
+                款式分类：
+                <ng-template ngFor let-itemCh [ngForOf]="CH_KuanShiFenLei"
+                  let-index="index">
+                  <ng-template [ngIf]="itemCh.id == item.KuanShiFenLei">
+                    {{itemCh.text}}
+                  </ng-template>
+                </ng-template>
               </div>
               <div>
-                安装方式：{{item.AnZhuangFangShi}}
+                颜色分类：
+                <ng-template ngFor let-itemCh [ngForOf]="CH_YanSeFenLei"
+                  let-index="index">
+                  <ng-template [ngIf]="itemCh.id == item.YanSeFenLei">
+                    {{itemCh.text}}
+                  </ng-template>
+                </ng-template>
+              </div>
+              <div>
+                安装方式：
+                <ng-template ngFor let-itemCh [ngForOf]="CH_AnZhuangFangShi"
+                  let-index="index">
+                  <ng-template [ngIf]="itemCh.id == item.AnZhuangFangShi">
+                    {{itemCh.text}}
+                  </ng-template>
+                </ng-template>
               </div>
             </div>
             <div class="col col-4">
@@ -107,7 +128,9 @@
               无优惠
             </div>
             <div class="col col-7">
-              <b style="color: #ff5a25">￥{{item.JinE}}</b>
+              <b style="color: #ff5a25">
+                ￥{{item.DanJia * item.ShuLiang}}
+              </b>
             </div>
             <div class="clearfix"></div>
           </div>

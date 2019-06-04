@@ -2,14 +2,14 @@
   <!-- 横幅 -->
   <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC_2" [isMenu]="false">
     <div class="info">
-      <img [src]="itemInfo.src">
+      <img [src]="itemInfo.dfSrc">
       <div class="text-box">
         <div class="label DianPuMingCheng">{{itemInfo.DianPuMingCheng}}</div>
         <div class="label">店铺得分</div>
         <div class="label">
-          <span>描述：4.9</span>
-          <span>服务：4.9</span>
-          <span>物流：4.9</span></div>
+          <span>描述：{{itemInfo.MiaoShuPingFen}}</span>
+          <span>服务：{{itemInfo.FuWuPingFen}}</span>
+          <span>物流：{{itemInfo.WuLiuPingFen}}</span></div>
       </div>
     </div>
   </fm-banner-menu>
@@ -42,15 +42,15 @@
             let-index="index">
             <div *ngIf="index < 5" nz-col nzSpan="4">
               <div class="key-item-box item-box-margin-1"
-                style="height: 318px; margin-bottom: 2px;"
-                (click)="portalNav.openCommodityDetails(item,$event)">
+                style="height: 361px; margin-bottom: 2px;"
+                (click)="openCommodityDetails(item,$event)">
                 <div class="header">
                   <img [src]="item.src">
                 </div>
                 <div class="body">
                   <div class="DanJia">￥{{item.DanJia}}</div>
-                  <div class="label MingCheng">
-                    {{item.MingCheng}}
+                  <div class="label ShangPinMingCheng">
+                    {{item.ShangPinMingCheng}}
                   </div>
                   <div class="label PinLei">
                     {{item.PinLei}}
@@ -77,15 +77,15 @@
             let-index="index">
             <div nz-col nzSpan="6">
               <div class="key-item-box item-box-margin-13"
-                style="height: 318px; margin-bottom: 20px;"
-                (click)="portalNav.openCommodityDetails(item,$event)">
+                style="height: 397px; margin-bottom: 20px;"
+                (click)="openCommodityDetails(item,$event)">
                 <div class="header">
                   <img [src]="item.src">
                 </div>
                 <div class="body">
                   <div class="DanJia">￥{{item.DanJia}}</div>
-                  <div class="label MingCheng">
-                    {{item.MingCheng}}
+                  <div class="label ShangPinMingCheng">
+                    {{item.ShangPinMingCheng}}
                   </div>
                   <div class="label PinLei">
                     {{item.PinLei}}

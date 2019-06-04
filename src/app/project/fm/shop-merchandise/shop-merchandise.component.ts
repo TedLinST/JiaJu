@@ -43,8 +43,8 @@ export class ShopMerchandiseComponent implements OnInit {
   // 按钮排序激活
   btnSortActiveMap: any = {
     DanJia: 0,
-    YueChengJiao: 0,
-    PingJia: 0
+    ChengJiaoShuLiang: 0,
+    PingJiaShuLiang: 0
   };
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
@@ -110,8 +110,8 @@ export class ShopMerchandiseComponent implements OnInit {
   onClickButtonSortChange(event: any, id: any) {
     this.btnSortActiveMap = {
       DanJia: 0,
-      YueChengJiao: 0,
-      PingJia: 0
+      ChengJiaoShuLiang: 0,
+      PingJiaShuLiang: 0
     };
     this.btnSortActiveMap[id] = event;
     this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
@@ -124,8 +124,8 @@ export class ShopMerchandiseComponent implements OnInit {
     if (this.dataHandler.LIST_DATA && this.searchValue != null) {
       const regExp = new RegExp(Utils.escapeRegexp(this.searchValue), 'ig');
       let listData = this.dataHandler.LIST_DATA.filter((row: any) => {
-        if (row.MingCheng) {
-          let text = '' + row.MingCheng;
+        if (row.ShangPinMingCheng) {
+          let text = '' + row.ShangPinMingCheng;
           if (text.match(regExp)) {
             return true;
           }
@@ -163,4 +163,13 @@ export class ShopMerchandiseComponent implements OnInit {
     return value;
   }
 
+  openCommodityDetails(item: any, event: any) {
+    let itemInfo = Utils.clone(item);
+    for (let key in this.itemInfo) {
+      if (key != 'data') {
+        itemInfo[key] = this.itemInfo[key];
+      }
+    }
+    this.portalNav.openCommodityDetails(itemInfo, event);
+  }
 }

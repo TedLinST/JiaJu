@@ -2,14 +2,14 @@
   <!-- 横幅 -->
   <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC_2" [isMenu]="false">
     <div class="info">
-      <img [src]="itemInfo.src">
+      <img [src]="itemInfo.dfSrc">
       <div class="text-box">
         <div class="label DianPuMingCheng">{{itemInfo.DianPuMingCheng}}</div>
         <div class="label">店铺得分</div>
         <div class="label">
-          <span>描述：4.9</span>
-          <span>服务：4.9</span>
-          <span>物流：4.9</span></div>
+          <span>描述：{{itemInfo.MiaoShuPingFen}}</span>
+          <span>服务：{{itemInfo.FuWuPingFen}}</span>
+          <span>物流：{{itemInfo.WuLiuPingFen}}</span></div>
       </div>
     </div>
   </fm-banner-menu>
@@ -51,11 +51,11 @@
             (clickChange)="onClickButtonSortChange($event,'DanJia')">
           </key-button-sort>
           <key-button-sort label="月成交"
-            [active]="btnSortActiveMap['YueChengJiao']"
-            (clickChange)="onClickButtonSortChange($event,'YueChengJiao')">
+            [active]="btnSortActiveMap['ChengJiaoShuLiang']"
+            (clickChange)="onClickButtonSortChange($event,'ChengJiaoShuLiang')">
           </key-button-sort>
-          <key-button-sort label="评价" [active]="btnSortActiveMap['PingJia']"
-            (clickChange)="onClickButtonSortChange($event,'PingJia')">
+          <key-button-sort label="评价" [active]="btnSortActiveMap['PingJiaShuLiang']"
+            (clickChange)="onClickButtonSortChange($event,'PingJiaShuLiang')">
           </key-button-sort>
           <div class="search">
             <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
@@ -77,8 +77,8 @@
                 let-index="index">
                 <div nz-col nzSpan="4">
                   <div class="key-item-box item-box-margin-3"
-                    style="height: 377px; margin-bottom: 6px;"
-                    (click)="portalNav.openCommodityDetails(item,$event)">
+                    style="height: 352px; margin-bottom: 6px;"
+                    (click)="openCommodityDetails(item,$event)">
                     <div class="header">
                       <img [src]="item.src">
                       <key-item-mask [isTextLeft]="true">
@@ -93,18 +93,13 @@
                     <div class="body">
                       <div class="DanJia">￥{{item.DanJia}}</div>
                       <div class="label">
-                        <span class="MingCheng">
-                          {{item.MingCheng}}
+                        <span class="ShangPinMingCheng">
+                          {{item.ShangPinMingCheng}}
                         </span>
                       </div>
                       <div class="label">
                         <span class="PinLei">
                           {{item.PinLei}}
-                        </span>
-                      </div>
-                      <div class="label">
-                        <span class="DianPu">
-                          {{item.DianPu}}
                         </span>
                       </div>
                     </div>
@@ -114,11 +109,11 @@
                           style="border-right: 1px solid #e3e2e3">
                           月成交
                           <span
-                            class="YueChengJiao">{{item.YueChengJiao}}</span>
+                            class="ChengJiaoShuLiang">{{item.ChengJiaoShuLiang}}</span>
                         </div>
                         <div class="z-col z-col-2">
                           评价
-                          <span class="PingJia">{{item.PingJia}}</span>
+                          <span class="PingJiaShuLiang">{{item.PingJiaShuLiang}}</span>
                         </div>
                       </div>
                     </div>

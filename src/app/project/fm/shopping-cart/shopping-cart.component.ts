@@ -26,6 +26,15 @@ export class ShoppingCartComponent implements OnInit {
   // 数据助手
   dataHandler: any;
 
+  // 款式分类
+  CH_KuanShiFenLei: any;
+
+  // 颜色分类
+  CH_YanSeFenLei: any;
+
+  // 安装方式
+  CH_AnZhuangFangShi: any;
+
   activeItemNumber: number = 1;
 
   settlementPrice: number = 0.0;
@@ -43,6 +52,9 @@ export class ShoppingCartComponent implements OnInit {
   ngOnInit() {
     this.CH_FM_BANNER_SRC = ConstantHandler.CH_FM_BANNER_SRC;
     this.CH_FM_BANNER_MENU = ConstantHandler.CH_FM_BANNER_MENU;
+    this.CH_KuanShiFenLei = ConstantHandler.CH_KuanShiFenLei;
+    this.CH_YanSeFenLei = ConstantHandler.CH_YanSeFenLei;
+    this.CH_AnZhuangFangShi = ConstantHandler.CH_AnZhuangFangShi;
     this.dataHandler = DataShoppingCartHandler;
     this.toggleItem(1);
   }
@@ -75,14 +87,10 @@ export class ShoppingCartComponent implements OnInit {
    * @param ShuLiang 
    */
   onChangShuLiang(item: any, ShuLiang: number) {
-    if (ShuLiang > 0 && item.DanJia > 0) {
-      item.JinE = item.DanJia * ShuLiang;
-    }
-
     let settlementPrice = 0;
     this.listData.forEach((item) => {
-      if (item.checked && item.JinE > 0) {
-        settlementPrice = settlementPrice + parseFloat(item.JinE);
+      if (item.checked && ((item.ShuLiang * item.DanJia) > 0)) {
+        settlementPrice = settlementPrice + (item.ShuLiang * item.DanJia);
       }
     });
     this.settlementPrice = settlementPrice;
@@ -128,8 +136,8 @@ export class ShoppingCartComponent implements OnInit {
       });
       let settlementPrice = 0;
       this.listData.forEach((item) => {
-        if (item.JinE > 0) {
-          settlementPrice = settlementPrice + parseFloat(item.JinE);
+        if ((item.ShuLiang * item.DanJia) > 0) {
+          settlementPrice = settlementPrice + (item.ShuLiang * item.DanJia);
         }
       });
       this.settlementPrice = settlementPrice;
@@ -157,8 +165,8 @@ export class ShoppingCartComponent implements OnInit {
 
     let settlementPrice = 0;
     this.listData.forEach((item) => {
-      if (item.checked && item.JinE > 0) {
-        settlementPrice = settlementPrice + parseFloat(item.JinE);
+      if (item.checked && (item.ShuLiang * item.DanJia) > 0) {
+        settlementPrice = settlementPrice + (item.ShuLiang * item.DanJia);
       }
     });
     this.settlementPrice = settlementPrice;

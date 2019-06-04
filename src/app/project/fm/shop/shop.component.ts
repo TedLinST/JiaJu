@@ -45,7 +45,7 @@ export class ShopComponent implements OnInit {
   btnSortActiveMap: any = {
     XiaoLiang: 0,
     ShangPinZongShu: 0,
-    ShangJiaDengJi: 0
+    DengJi: 0
   };
 
 
@@ -103,7 +103,7 @@ export class ShopComponent implements OnInit {
     this.btnSortActiveMap = {
       XiaoLiang: 0,
       ShangPinZongShu: 0,
-      ShangJiaDengJi: 0
+      DengJi: 0
     };
     this.btnSortActiveMap[id] = event;
     this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event, true);
@@ -122,8 +122,8 @@ export class ShopComponent implements OnInit {
             return true;
           }
         }
-        if (row.MingCheng) {
-          let text = '' + row.MingCheng;
+        if (row.ShangPinMingCheng) {
+          let text = '' + row.ShangPinMingCheng;
           if (text.match(regExp)) {
             return true;
           }

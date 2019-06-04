@@ -31,11 +31,11 @@
       <key-button-sort label="按价格" [active]="btnSortActiveMap['DanJia']"
         (clickChange)="onClickButtonSortChange($event,'DanJia')">
       </key-button-sort>
-      <key-button-sort label="月成交" [active]="btnSortActiveMap['YueChengJiao']"
-        (clickChange)="onClickButtonSortChange($event,'YueChengJiao')">
+      <key-button-sort label="月成交" [active]="btnSortActiveMap['ChengJiaoShuLiang']"
+        (clickChange)="onClickButtonSortChange($event,'ChengJiaoShuLiang')">
       </key-button-sort>
-      <key-button-sort label="评价" [active]="btnSortActiveMap['PingJia']"
-        (clickChange)="onClickButtonSortChange($event,'PingJia')">
+      <key-button-sort label="评价" [active]="btnSortActiveMap['PingJiaShuLiang']"
+        (clickChange)="onClickButtonSortChange($event,'PingJiaShuLiang')">
       </key-button-sort>
       <div class="search">
         <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
@@ -64,8 +64,8 @@
                 <div class="body">
                   <div class="DanJia">￥{{item.DanJia}}</div>
                   <div class="label">
-                    <span class="MingCheng">
-                      {{item.MingCheng}}
+                    <span class="ShangPinMingCheng">
+                      {{item.ShangPinMingCheng}}
                     </span>
                     <span class="PinPai">
                       {{item.PinPai}}
@@ -80,8 +80,8 @@
                     </span>
                   </div>
                   <div class="label">
-                    <span class="DianPu">
-                      {{item.DianPu}}
+                    <span class="DianPuMingCheng">
+                      {{item.DianPuMingCheng}}
                     </span>
                     <span class="GuiGe">
                       {{item.GuiGe}}
@@ -93,11 +93,11 @@
                     <div class="z-col z-col-2"
                       style="border-right: 1px solid #e3e2e3">
                       月成交
-                      <span class="YueChengJiao">{{item.YueChengJiao}}</span>
+                      <span class="ChengJiaoShuLiang">{{item.ChengJiaoShuLiang}}</span>
                     </div>
                     <div class="z-col z-col-2">
                       评价
-                      <span class="PingJia">{{item.PingJia}}</span>
+                      <span class="PingJiaShuLiang">{{item.PingJiaShuLiang}}</span>
                     </div>
                   </div>
                 </div>

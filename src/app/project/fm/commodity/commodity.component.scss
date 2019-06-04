@@ -38,7 +38,7 @@
               min-width: 120px;
               margin-right: 10px;
 
-              &.MingCheng,
+              &.ShangPinMingCheng,
               &.PinPai,
               &.ChanDi,
               &.GuiGe {
@@ -49,7 +49,7 @@
                 color: #848484;
               }
 
-              &.DianPu {
+              &.DianPuMingCheng {
                 color: #6c5b5b;
                 text-decoration: underline;
               }
@@ -67,11 +67,11 @@
             font-size: 16px;
             padding: 7px 5px;
 
-            .YueChengJiao {
+            .ChengJiaoShuLiang {
               color: #913d3d;
             }
 
-            .PingJia {
+            .PingJiaShuLiang {
               color: #13b191;
             }
           }

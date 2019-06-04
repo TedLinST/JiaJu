@@ -51,52 +51,43 @@
           </div>
         </div>
         <div class="z-col z-col-2 right">
-          <div class="title">{{itemInfo.MingCheng}}</div>
+          <div class="title">{{itemInfo.ShangPinMingCheng}}</div>
           <div class="PinLei">{{itemInfo.PinLei}}</div>
           <div class="label">品牌：{{itemInfo.PinPai}}</div>
           <div class="label">规格：{{itemInfo.GuiGe}}</div>
           <div class="label">产地：{{itemInfo.ChanDi}}</div>
           <div class="DanJia">￥{{itemInfo.DanJia}}</div>
-          <div class="label" style="margin-bottom: 7px;">配送：XXX省 XXX市 至 XXX省
-            XXX市</div>
+          <!-- <div class="label" style="margin-bottom: 7px;">配送：XXX省 XXX市 至 XXX省
+            XXX市</div> -->
           <div class="label">
             款式选择：
-            <span [class.active]="activeIndex0 == 1" (click)="activeIndex0 = 1">
-              某款
-            </span>
-            <span [class.active]="activeIndex0 == 2" (click)="activeIndex0 = 2">
-              某款
-            </span>
+            <ng-template ngFor let-item [ngForOf]="CH_KuanShiFenLei"
+              let-index="index">
+              <span [class.active]="itemInfo.KuanShiFenLei == item.id"
+                (click)="itemInfo.KuanShiFenLei = item.id">
+                {{item.text}}
+              </span>
+            </ng-template>
           </div>
           <div class="label">
             颜色选择：
-            <span [class.active]="activeIndex1 == 1" (click)="activeIndex1 = 1">
-              某颜色
-            </span>
-            <span [class.active]="activeIndex1 == 2" (click)="activeIndex1 = 2">
-              某颜色
-            </span>
-            <span [class.active]="activeIndex1 == 3" (click)="activeIndex1 = 3">
-              某颜色
-            </span>
+            <ng-template ngFor let-item [ngForOf]="CH_YanSeFenLei"
+              let-index="index">
+              <span [class.active]="itemInfo.YanSeFenLei == item.id"
+                (click)="itemInfo.YanSeFenLei = item.id">
+                {{item.text}}
+              </span>
+            </ng-template>
           </div>
           <div class="label">
             服务选择：
-            <span [class.active]="activeIndex2 == 1" (click)="activeIndex2 = 1">
-              自提
-            </span>
-            <span [class.active]="activeIndex2 == 2" (click)="activeIndex2 = 2">
-              配送
-            </span>
-            <span [class.active]="activeIndex2 == 3" (click)="activeIndex2 = 3">
-              搬运
-            </span>
-            <span [class.active]="activeIndex2 == 4" (click)="activeIndex2 = 4">
-              安装
-            </span>
-            <span [class.active]="activeIndex2 == 5" (click)="activeIndex2 = 5">
-              延保
-            </span>
+            <ng-template ngFor let-item [ngForOf]="CH_AnZhuangFangShi"
+              let-index="index">
+              <span [class.active]="itemInfo.AnZhuangFangShi == item.id"
+                (click)="itemInfo.AnZhuangFangShi = item.id">
+                {{item.text}}
+              </span>
+            </ng-template>
           </div>
           <div class="btn-div">
             <button class="btn btn1" nz-button nzType="primary"
@@ -115,7 +106,10 @@
         </div>
         <div class="body">
           <div class="img-box">
-            <img src="assets/imgs/commodity-details/logo.jpg">
+            <img [src]="itemInfo.dfSrc">
+          </div>
+          <div class="label" style="margin-bottom: 15px;">
+            {{itemInfo.DianPuMingCheng}}
           </div>
           <div class="biaoQian">
             <div class="item">
@@ -129,15 +123,14 @@
             店铺得分
           </div>
           <div class="label">
-            描述：4.9
+            描述：{{itemInfo.MiaoShuPingFen}}
           </div>
           <div class="label">
-            服务：4.9
+            服务：{{itemInfo.FuWuPingFen}}
           </div>
           <div class="label">
-            物流：4.9
+            物流：{{itemInfo.WuLiuPingFen}}
           </div>
-
           <div class="kf">
             <br>
             <key-dot-title title="售前客服"
@@ -145,29 +138,29 @@
             </key-dot-title>
             <div class="z-row">
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服1</div>
               </div>
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服2</div>
               </div>
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服3</div>
               </div>
             </div>
             <div class="z-row">
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服4</div>
               </div>
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服5</div>
               </div>
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服6</div>
               </div>
             </div>
@@ -177,29 +170,29 @@
             </key-dot-title>
             <div class="z-row">
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服1</div>
               </div>
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服2</div>
               </div>
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服3</div>
               </div>
             </div>
             <div class="z-row">
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服4</div>
               </div>
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服5</div>
               </div>
               <div class="z-col z-col-3">
-                <img src="assets/imgs/commodity-details/kf.jpg">
+                <img src="assets/imgs/shop/kf.jpg">
                 <div>客服6</div>
               </div>
             </div>
@@ -220,12 +213,16 @@
         </div>
         <div class="body">
           <ng-template [ngIf]="activeIndex == 1">
-            <img src="assets/imgs/commodity-details/xq.jpg"
-              style="max-width: 100%">
+            <ng-template ngFor let-item [ngForOf]="itemInfo.TuPianXiangQing"
+              let-index="index">
+              <img [src]="item.src" style="max-width: 100%">
+            </ng-template>
           </ng-template>
           <ng-template [ngIf]="activeIndex == 2">
-            <img src="assets/imgs/commodity-details/pl.jpg"
-              style="max-width: 100%">
+            <ng-template ngFor let-item [ngForOf]="itemInfo.LeiJiPingLun"
+              let-index="index">
+              <img [src]="item.src" style="max-width: 100%">
+            </ng-template>
           </ng-template>
         </div>
       </div>

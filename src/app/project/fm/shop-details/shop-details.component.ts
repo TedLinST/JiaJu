@@ -5,6 +5,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataShopDetailsHandler } from 'src/data/fm/shop-details';
 import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
 import { UtilsFm } from '../utils/utils-fm';
+import { Utils } from 'src/modules/utils/utils';
 
 @Component({
   selector: 'app-shop-details',
@@ -59,6 +60,16 @@ export class ShopDetailsComponent implements OnInit {
       value = queryParams[paramsName];
     });
     return value;
+  }
+
+  openCommodityDetails(item: any, event: any) {
+    let itemInfo = Utils.clone(item);
+    for (let key in this.itemInfo) {
+      if (key != 'data') {
+        itemInfo[key] = this.itemInfo[key];
+      }
+    }
+    this.portalNav.openCommodityDetails(itemInfo, event);
   }
 
 }

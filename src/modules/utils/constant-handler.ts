@@ -14,6 +14,32 @@ export class ConstantHandler {
     { id: '博士研究生', text: '博士研究生' }
   ];
 
+  // 款式分类
+  public static CH_KuanShiFenLei = [
+    { id: 1, text: '款式1' },
+    { id: 2, text: '款式2' },
+  ];
+
+  // 颜色分类
+  public static CH_YanSeFenLei = [
+    { id: 1, text: '红色' },
+    { id: 2, text: '橙色' },
+    { id: 3, text: '黄色' },
+    { id: 4, text: '绿色' },
+    { id: 5, text: '青色' },
+    { id: 6, text: '蓝色' },
+    { id: 7, text: '紫色' },
+  ];
+
+  // 安装方式
+  public static CH_AnZhuangFangShi = [
+    { id: 1, text: '配送' },
+    { id: 2, text: '自提' },
+    { id: 3, text: '搬运' },
+    { id: 4, text: '安装' },
+    { id: 5, text: '延保' }
+  ];
+
   // 产品设计开发服务 - 横幅图片
   public static CH_PD_BANNER_SRC = 'assets/imgs/product-design/toubu-1.jpg';
 
