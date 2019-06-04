@@ -42,10 +42,15 @@
         padding: 8px 12px;
         background-color: #f1f1f1;
         color: #555;
+        min-height: 145px;
 
         .label {
           margin-bottom: 3px;
           font-size: 15px;
+
+          .title{
+            padding-right: 20px;
+          }
 
           .time {
             float: right;

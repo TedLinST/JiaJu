@@ -83,7 +83,7 @@
           <ng-template ngFor let-item
             [ngForOf]="dataHandler.EC['data' + currentIndexEC]"
             let-index="index">
-            <div class="z-col z-col-4">
+            <div class="z-col z-col-3">
               <div class="box">
                 <div class="header">
                   {{item.date}}
@@ -92,8 +92,11 @@
                   <ng-template ngFor let-subItem [ngForOf]="item.data"
                     let-index="index">
                     <div class="label">
-                      {{subItem.title}}
                       <span class="time">{{subItem.time}}</span>
+                      <div class="title singleTextBeyondHide"
+                        [title]="subItem.title">
+                        {{subItem.title}}
+                      </div>
                     </div>
                   </ng-template>
                 </div>
