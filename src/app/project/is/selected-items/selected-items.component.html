@@ -65,43 +65,52 @@
                   </div>
                   <div class="btn">
                     <button nz-button nzType="primary"
-                      (click)="onInterview(item)">约谈项目方</button>
+                      (click)="onInvestment(item)">收藏</button>
                   </div>
                   <div class="z-row" style="width: 1000px;">
                     <div class="z-col z-col-1">
                       <div class="title singleTextBeyondHide"
                         (click)="onClickItem(item)">
-                        <a>{{item.XiangMuBiaoTi}}</a>
+                        <a>{{item.XiangMuMingCheng}}</a>
                       </div>
                     </div>
                     <div class="z-col z-col-1">
-                      <key-box-label label="融资资金" [value]="item.RongZiZiJin"
+                      <key-box-label label="资金需求" [value]="item.ZiJinXuQiu"
                         [boxValueStyle]="{'color':'#a68e09','fontSize.px':'20','fontWeight':'600'}">
                       </key-box-label>
                     </div>
-                    <div class="z-col z-col-3">
-                      <key-box-label label="所在地区" [value]="item.SuoZaiDiQu">
+                    <div class="z-col z-col-1">
+                      <key-box-label label="项目说明"
+                        [value]="item.XiangMuShuoMing">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
-                      <key-box-label label="所属行业" [value]="item.SuoShuHangYe">
+                      <key-box-label label="项目领域" [value]="item.XiangMuLingYu">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
-                      <key-box-label label="融资方式" [value]="item.RongZiFangShi">
+                      <key-box-label label="项目阶段" [value]="item.XiangMuJieDuan">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
-                      <key-box-label label="联系人" [value]="item.LianXiRen">
-                      </key-box-label>
-                    </div>
-                    <div class="z-col z-col-2">
-                      <key-box-label label="单位名称"
-                        [value]="item.DanWeiMingCheng">
+                      <key-box-label label="资金性质" [value]="item.ZiJinXingZhi">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
-                      <key-box-label label="留言数" [value]="item.LiuYanShu">
+                      <key-box-label label="资金来源" [value]="item.ZiJinLaiYuan">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="经营地址" [value]="item.JingYingDiZhi">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="项目发起结构/发起人"
+                        [value]="item.XiangMuFaQiJieGou_FaQiRen">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="收藏数" [value]="item.ShouCangShu">
                       </key-box-label>
                     </div>
                   </div>

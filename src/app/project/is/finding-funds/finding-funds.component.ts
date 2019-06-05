@@ -149,13 +149,27 @@ export class FindingFundsComponent implements OnInit {
   }
 
   /**
-   * 投资项目
+   * 收藏项目
    */
   onInvestment(item: any) {
+    item.ShouCangShu = item.ShouCangShu + 1;
     this.notification.create(
       'success',
       '提示',
       '收藏项目成功！',
+    );
+  }
+
+  /**
+   * 投资项目
+   * @param item 
+   */
+  onDelivery(item: any) {
+    item.TouDiShu = item.TouDiShu + 1;
+    this.notification.create(
+      'success',
+      '提示',
+      '投资项目成功！',
     );
   }
 

@@ -34,63 +34,55 @@
           <div class="title">
             {{infoParams?.XiangMuBiaoTi}}
             <span>
-              <samp>更新日期：{{infoParams?.GengXinRiQi}}</samp>
-              <samp>投递数：{{infoParams?.TouDiShu}}</samp>
+              <samp>更新日期：{{infoParams?.FaBuShiJian}}</samp>
             </span>
           </div>
           <div class="info">
             <div class="z-row">
-              <div class="z-col z-col-5">
-                <key-box-label label="资金类型" [value]="infoParams?.ZiJinLeiXing"
+              <div class="z-col z-col-4">
+                <key-box-label label="资金规模" [value]="infoParams?.ZiJinGuiMo"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="投资行业" [value]="infoParams?.TouZiHangYe"
+              <div class="z-col z-col-4">
+                <key-box-label label="投资领域" [value]="infoParams?.TouZiLingYu"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="投资类型" [value]="infoParams?.TouZiLeiXing"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
-              </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="投资资金" [value]="infoParams?.TouZiZiJin"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
-              </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="投资地区" [value]="infoParams?.TouZiDiQu"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
-              </div>
-            </div>
-            <div class="z-row">
-              <div class="z-col z-col-5">
+              <div class="z-col z-col-4">
                 <key-box-label label="投资阶段" [value]="infoParams?.TouZiJieDuan"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="风控要求" [value]="infoParams?.FengKongYaoQiu"
+              <div class="z-col z-col-4">
+                <key-box-label label="资金性质" [value]="infoParams?.ZiJinXingZhi"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="最低回报要求"
-                  [value]="infoParams?.ZuiDiHuiBaoYaoQiu"
+              <div class="z-col z-col-4">
+                <key-box-label label="资金来源" [value]="infoParams?.ZiJinLaiYuan"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="联系人" [value]="infoParams?.LianXiRen"
+              <div class="z-col z-col-4">
+                <key-box-label label="投资机构/个人名称"
+                  [value]="infoParams?.TouZiJiGou_GeRenMingCheng"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
-              <div class="z-col z-col-5">
-                <key-box-label label="单位名称"
-                  [value]="infoParams?.DanWeiMingCheng"
+              <div class="z-col z-col-4">
+                <key-box-label label="投递数" [value]="infoParams?.TouDiShu"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+              <div class="z-col z-col-4">
+                <key-box-label label="收藏数" [value]="infoParams?.ShouCangShu"
+                  [isBoxLabelInline]="true">
+                </key-box-label>
+              </div>
+              <div class="z-col z-col-4">
+                <key-box-label label="已投资项目"
+                  [value]="infoParams?.YiTouZiXiangMu"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>

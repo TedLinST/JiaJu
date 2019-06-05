@@ -61,11 +61,13 @@
                 let-index="index">
                 <div class="item">
                   <div class="dete">
-                    {{item.GengXinRiQi}}
+                    {{item.FaBuShiJian}}
                   </div>
                   <div class="btn">
                     <button nz-button nzType="primary"
                       (click)="onInvestment(item)">收藏项目</button>
+                    <button nz-button nzType="primary"
+                      (click)="onDelivery(item)">投递项目</button>
                   </div>
                   <div class="z-row" style="width: 1000px;">
                     <div class="z-col z-col-1">
@@ -75,28 +77,12 @@
                       </div>
                     </div>
                     <div class="z-col z-col-1">
-                      <key-box-label label="投资资金" [value]="item.TouZiZiJin"
+                      <key-box-label label="资金规模" [value]="item.ZiJinGuiMo"
                         [boxValueStyle]="{'color':'#a68e09','fontSize.px':'20','fontWeight':'600'}">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
-                      <key-box-label label="投资方式" [value]="item.TouZiFangShi">
-                      </key-box-label>
-                    </div>
-                    <div class="z-col z-col-3">
-                      <key-box-label label="资金类型" [value]="item.ZiJinLeiXing">
-                      </key-box-label>
-                    </div>
-                    <div class="z-col z-col-3">
-                      <key-box-label label="投资地区" [value]="item.TouZiDiQu">
-                      </key-box-label>
-                    </div>
-                    <div class="z-col z-col-3">
-                      <key-box-label label="投资行业" [value]="item.TouZiHangYe">
-                      </key-box-label>
-                    </div>
-                    <div class="z-col z-col-3">
-                      <key-box-label label="投资类型" [value]="item.TouZiLeiXing">
+                      <key-box-label label="投资领域" [value]="item.TouZiLingYu">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
@@ -104,29 +90,29 @@
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
-                      <key-box-label label="风控要求" [value]="item.FengKongYaoQiu">
-                      </key-box-label>
-                    </div>
-                    <div class="z-col z-col-2">
-                      <key-box-label label="最低回报要求"
-                        [value]="item.ZuiDiHuiBaoYaoQiu">
+                      <key-box-label label="资金性质" [value]="item.ZiJinXingZhi">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
-                      <key-box-label label="联系人" [value]="item.LianXiRen">
+                      <key-box-label label="资金来源" [value]="item.ZiJinLaiYuan">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-2">
-                      <key-box-label label="单位名称"
-                        [value]="item.DanWeiMingCheng">
-                      </key-box-label>
-                    </div>
-                    <div class="z-col z-col-3">
-                      <key-box-label label="留言数" [value]="item.LiuYanShu">
+                      <key-box-label label="投资机构/个人名称"
+                        [value]="item.TouZiJiGou_GeRenMingCheng">
                       </key-box-label>
                     </div>
                     <div class="z-col z-col-3">
                       <key-box-label label="投递数" [value]="item.TouDiShu">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-3">
+                      <key-box-label label="收藏数" [value]="item.ShouCangShu">
+                      </key-box-label>
+                    </div>
+                    <div class="z-col z-col-4">
+                      <key-box-label label="已投资项目"
+                        [value]="item.YiTouZiXiangMu">
                       </key-box-label>
                     </div>
                   </div>

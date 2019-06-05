@@ -1,5 +1,14 @@
 $PROTAL_HEADER_HEIGHT: 80px;
+$PROTAL_HEADER_HEIGHT_MIN: 50px;
 $MENU_A_HOVER_COLOR:#84c486;
+
+.protal-header-auxiliary {
+  height: $PROTAL_HEADER_HEIGHT;
+
+  &.protal-header-auxiliary {
+    height: $PROTAL_HEADER_HEIGHT_MIN;
+  }
+}
 
 .protal-header {
   height: $PROTAL_HEADER_HEIGHT;
@@ -152,6 +161,34 @@ $MENU_A_HOVER_COLOR:#84c486;
 
       &:hover {
         color: $MENU_A_HOVER_COLOR;
+      }
+    }
+  }
+
+  &.protal-header-min {
+    height: $PROTAL_HEADER_HEIGHT_MIN;
+
+    // logo
+    .logo {
+      a {
+        samp {
+          display: none;
+        }
+      }
+    }
+
+    // 菜单
+    .menu {
+      line-height: $PROTAL_HEADER_HEIGHT_MIN;
+
+      .menu-ul {
+        >li {
+
+          // 二级菜单
+          .sub-menu-ul {
+            top: 42px;
+          }
+        }
       }
     }
   }

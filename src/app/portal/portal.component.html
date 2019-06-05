@@ -1,15 +1,16 @@
 <div>
-    <div class="header">
+    <div id="portal-header-box" class="header">
         <protal-header></protal-header>
     </div>
     <div class="body">
         <router-outlet></router-outlet>
     </div>
-    <div class="footer">
+    <div id="portal-footer-box" class="footer">
         <protal-footer></protal-footer>
     </div>
-    
-    <nz-back-top class="scroll-bar" [nzTemplate]="tpl" [nzVisibilityHeight]="100">
+
+    <nz-back-top class="scroll-bar" [nzTemplate]="tpl"
+        [nzVisibilityHeight]="100">
         <ng-template #tpl>
             <div class="scroll-bar-inner">
                 <div class="item" (click)="onQQ($event)"></div>

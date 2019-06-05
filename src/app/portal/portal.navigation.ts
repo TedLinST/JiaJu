@@ -72,7 +72,7 @@ export class PortalNavigation {
    * 管理系统
    */
   openEnterpriseResource(event?: any) {
-    this.navigateDeveloping();
+    this.router.navigateByUrl('enterprise-resource');
   }
 
   /**

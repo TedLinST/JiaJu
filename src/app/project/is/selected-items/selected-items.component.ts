@@ -6,6 +6,7 @@ import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataSelectedItemsHandler } from 'src/data/is/selected-items';
 import { UtilsIs } from '../utils/utils-is';
 import { Utils } from 'src/modules/utils/utils';
+import { NzNotificationService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-selected-items',
@@ -47,7 +48,7 @@ export class SelectedItemsComponent implements OnInit {
     GengXinRiQi: 0
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private notification: NzNotificationService) {
     this.portalNav = new PortalNavigation(router);
   }
 
@@ -148,10 +149,15 @@ export class SelectedItemsComponent implements OnInit {
   }
 
   /**
-   * 约谈项目方
+   * 收藏项目
    */
-  onInterview(item: any) {
-    this.navigateDeveloping();
+  onInvestment(item: any) {
+    item.ShouCangShu = item.ShouCangShu + 1;
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏项目成功！',
+    );
   }
 
   /**

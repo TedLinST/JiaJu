@@ -8,7 +8,7 @@ export const PortalRoutes = [
     { path: 'designers-garden', loadChildren: '../project/pd/designers-garden/designers-garden.module#DesignersGardenModule' }, // 设计师园地
     { path: 'software-integration', loadChildren: '../project/pd/software-integration/software-integration.module#SoftwareIntegrationModule' }, // 设计软件集成
     /* 企业资源管理系统系统模块 */
-    // { path: 'enterprise-resource', loadChildren: '../project/er/enterprise-resource/enterprise-resource.module#EnterpriseResourceModule' }, // 企业资源管理系统
+    { path: 'enterprise-resource', loadChildren: '../project/er/enterprise-resource/enterprise-resource.module#EnterpriseResourceModule' }, // 企业资源管理系统
     // { path: 'organization', loadChildren: '../project/er/organization/organization.module#OrganizationModule' }, // 组织管理
     // { path: 'sale', loadChildren: '../project/er/sale/sale.module#SaleModule' }, // 销售管理
     // { path: 'development', loadChildren: '../project/er/development/development.module#DevelopmentModule' }, // 开发管理
