@@ -6,75 +6,75 @@ export const DataGovernmentHandler = {
     enTitle: 'POLICY INFORMATION AREA',
     data1: [
       {
-        title: '轮播图1',
-        src: 'assets/imgs/government/zhuanli-2.jpg'
+        title: '增值税下调给企业带来的助力',
+        src: 'assets/imgs/government/lunbo-1.jpg'
       },
       {
-        title: '轮播图2',
-        src: 'assets/imgs/government/zhuanli-2.jpg'
+        title: '打击知识产权违法整治力度再度升级',
+        src: 'assets/imgs/government/lunbo-2.jpg'
       },
       {
-        title: '轮播图3',
-        src: 'assets/imgs/government/zhuanli-2.jpg'
+        title: '国家重拳出击，坚决遏制企业污染行为死灰复燃',
+        src: 'assets/imgs/government/lunbo-3.jpg'
       }
     ],
     data2: [
       {
-        title: '增值税下调给企业带来的助力',
+        title: '家具行业六项新政策正式出台',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '打击知识产权违法整治力度再度升级',
+        title: '2018年家居行业政策与法律法规 回顾2018你知道多少',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '国家重拳出击，坚决遏制企业污染行为死灰复燃',
+        title: '国家又发文要大力发展智慧家庭、智能家居行业',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '资讯标XXXXX题',
+        title: '2018家居行业鼓励政策三大看点',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '资XXX讯标题',
+        title: '家居行业整体稳中渐长,看清这些趋势才能找到未来新方向',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '资讯标题',
+        title: '定制厨柜行业监管体制及主要政策',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '资讯标题XX',
+        title: '2019年中国家居制造行业分析报告——行业竞争格局与未来趋势研究',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '资讯标题',
+        title: '产业用地新政出台 2018年全国产业用地情况分析（附图表）',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: '资讯标题XXX',
+        title: '中国家居业高质量发展措施推进会——中国家居品牌日系列活动在京成功举办',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',
       },
       {
-        title: 'XXXX资讯标题',
+        title: '顺应国家政策 尚百年实现传统家居的“绿色升级”前景无限',
         content: '资讯内容',
         date: '2019-05-23',
         src: '',

@@ -326,16 +326,16 @@ export const DataIntegratedServicesHandler = {
     // 展会详情介绍
     data4: [
       {
-        title: '轮播图1',
-        src: 'assets/imgs/integrated-services/ZMzhanhui-12.jpg'
+        title: '美国高点家具展的发展历程',
+        src: 'assets/imgs/integrated-services/lunbo-1.jpg'
       },
       {
-        title: '轮播图2',
-        src: 'assets/imgs/integrated-services/ZMzhanhui-12.jpg'
+        title: '米兰归来|只谈“色”计，2019家居色彩设计沙龙交流会',
+        src: 'assets/imgs/integrated-services/lunbo-2.jpg'
       },
       {
-        title: '轮播图3',
-        src: 'assets/imgs/integrated-services/ZMzhanhui-12.jpg'
+        title: '2019青岛国际家具展：春诺『阅界』新中式，定义时尚生活',
+        src: 'assets/imgs/integrated-services/lunbo-3.jpg'
       }
     ]
   },
