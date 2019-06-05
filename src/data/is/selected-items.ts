@@ -5,41 +5,133 @@ export const DataSelectedItemsHandler = {
   TYPE_FILTER: [
     {
       id: '1',
-      title: '条件一',
+      title: '项目领域',
       data: [
         {
           id: '1',
-          label: '条件1.1'
+          label: '家具材料'
         },
         {
           id: '2',
-          label: '条件1.2'
+          label: '家具制造'
         },
         {
           id: '3',
-          label: '条件1.3'
+          label: '家居营销'
+        },
+        {
+          id:'4',
+          label:'家居互联网'
+        },
+        {
+          id:'5',
+          label:'其他'
         }
       ]
     },
     {
-      id: '1',
-      title: '条件二',
+      id: '2',
+      title: '项目阶段',
       data: [
         {
           id: '1',
-          label: '条件2.1'
+          label: '初创期'
         },
         {
           id: '2',
-          label: '条件2.2'
+          label: '成熟期'
         },
         {
           id: '3',
-          label: '条件2.3'
+          label: '扩张期'
         },
         {
           id: '4',
-          label: '条件2.4'
+          label: 'PIPE'
+        }
+      ]
+    },
+    {
+      id: '3',
+      title: '资金性质',
+      data: [
+        {
+          id: '1',
+          label: 'VC'
+        },
+        {
+          id: '2',
+          label: 'PE'
+        },
+        {
+          id: '3',
+          label: '天使'
+        },
+        {
+          id: '4',
+          label: '个人'
+        }
+      ]
+    },
+    {
+      id: '4',
+      title: '资金来源',
+      data: [
+        {
+          id: '1',
+          label: '国内'
+        },
+        {
+          id: '2',
+          label: '外资'
+        },
+        {
+          id: '3',
+          label: '合资'
+        }
+      ]
+    },
+    {
+      id: '5',
+      title: '经营地址',
+      data: [
+        {
+          id: '1',
+          label: '广东'
+        },
+        {
+          id: '2',
+          label: '湖南'
+        },
+        {
+          id: '3',
+          label: '上海'
+        },
+        {
+          id: '4',
+          label: ''
+        }
+      ]
+    },
+    {
+      id: '6',
+      title: '资金需求',
+      data: [
+        {
+          id: '1',
+          label: '10万以下'
+        },
+        {
+          id: '2',
+          label: '10万-50万'
+        },
+        {
+          id: '3',
+          label: '50万-100万'
+        },
+        {
+          id: '4',
+          label: '100万以上'
         }
       ]
     },
@@ -48,7 +140,7 @@ export const DataSelectedItemsHandler = {
   // 列表数据
   LIST_DATA: [
     {
-      XiangMuBiaoTi: 'XXXX项目100万元',
+      XiangMuBiaoTi: '应用于变形家具的新兴五金件研发',
       RongZiZiJin: '100万',
       SuoZaiDiQu: '黑龙江',
       SuoShuHangYe: '旅游',
@@ -62,7 +154,7 @@ export const DataSelectedItemsHandler = {
       XiangMuYouShi: '...',
     },
     {
-      XiangMuBiaoTi: 'XXXX项目200万元',
+      XiangMuBiaoTi: '长沙代理科美滋实木家具产品',
       RongZiZiJin: '200万',
       SuoZaiDiQu: '黑龙江',
       SuoShuHangYe: '旅游',
@@ -76,7 +168,7 @@ export const DataSelectedItemsHandler = {
       XiangMuYouShi: '...',
     },
     {
-      XiangMuBiaoTi: 'XXXX项目300万元',
+      XiangMuBiaoTi: '中型家具工厂扩大生产需要融资200万元',
       RongZiZiJin: '300万',
       SuoZaiDiQu: '黑龙江',
       SuoShuHangYe: '旅游',
@@ -90,64 +182,8 @@ export const DataSelectedItemsHandler = {
       XiangMuYouShi: '...',
     },
     {
-      XiangMuBiaoTi: 'XXXX项目400万元',
+      XiangMuBiaoTi: '家具卖场引流系统大规模应用',
       RongZiZiJin: '400万',
-      SuoZaiDiQu: '黑龙江',
-      SuoShuHangYe: '旅游',
-      RongZiFangShi: '股权融资',
-      LianXiRen: '...',
-      DanWeiMingCheng: '...',
-      LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24',
-      GongSiJieShao: '...',
-      XiangMuGaiShu: '...',
-      XiangMuYouShi: '...',
-    },
-    {
-      XiangMuBiaoTi: 'XXXX项目500万元',
-      RongZiZiJin: '500万',
-      SuoZaiDiQu: '黑龙江',
-      SuoShuHangYe: '旅游',
-      RongZiFangShi: '股权融资',
-      LianXiRen: '...',
-      DanWeiMingCheng: '...',
-      LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24',
-      GongSiJieShao: '...',
-      XiangMuGaiShu: '...',
-      XiangMuYouShi: '...',
-    },
-    {
-      XiangMuBiaoTi: 'XXXX项目600万元',
-      RongZiZiJin: '600万',
-      SuoZaiDiQu: '黑龙江',
-      SuoShuHangYe: '旅游',
-      RongZiFangShi: '股权融资',
-      LianXiRen: '...',
-      DanWeiMingCheng: '...',
-      LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24',
-      GongSiJieShao: '...',
-      XiangMuGaiShu: '...',
-      XiangMuYouShi: '...',
-    },
-    {
-      XiangMuBiaoTi: 'XXXX项目700万元',
-      RongZiZiJin: '700万',
-      SuoZaiDiQu: '黑龙江',
-      SuoShuHangYe: '旅游',
-      RongZiFangShi: '股权融资',
-      LianXiRen: '...',
-      DanWeiMingCheng: '...',
-      LiuYanShu: '100',
-      GengXinRiQi: '2019-05-24',
-      GongSiJieShao: '...',
-      XiangMuGaiShu: '...',
-      XiangMuYouShi: '...',
-    },
-    {
-      XiangMuBiaoTi: 'XXXX项目800万元',
-      RongZiZiJin: '800万',
       SuoZaiDiQu: '黑龙江',
       SuoShuHangYe: '旅游',
       RongZiFangShi: '股权融资',
