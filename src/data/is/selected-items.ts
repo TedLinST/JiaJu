@@ -137,13 +137,23 @@ export const DataSelectedItemsHandler = {
     },
   ],
 
+  /**
+   * 列表格式
+   * 项目名称：
+   * 项目领域：                           项目阶段：
+   * 资金性质：                           资金来源：
+   * 资金需求：                           经营地址：
+   * 项目说明：
+   * 项目发起机构/发起人：                  收藏数：
+   * 
+   * */
   // 列表数据
   LIST_DATA: [
     {
       XiangMuBiaoTi: '应用于变形家具的新兴五金件研发',
-      RongZiZiJin: '100万',
-      SuoZaiDiQu: '黑龙江',
-      SuoShuHangYe: '旅游',
+      RongZiZiJin: '40万',
+      SuoZaiDiQu: '广东东莞',
+      SuoShuHangYe: '家具材料',
       RongZiFangShi: '股权融资',
       LianXiRen: '...',
       DanWeiMingCheng: '...',
@@ -155,9 +165,9 @@ export const DataSelectedItemsHandler = {
     },
     {
       XiangMuBiaoTi: '长沙代理科美滋实木家具产品',
-      RongZiZiJin: '200万',
-      SuoZaiDiQu: '黑龙江',
-      SuoShuHangYe: '旅游',
+      RongZiZiJin: '20万',
+      SuoZaiDiQu: '湖南长沙',
+      SuoShuHangYe: '家具销售',
       RongZiFangShi: '股权融资',
       LianXiRen: '...',
       DanWeiMingCheng: '...',
@@ -169,9 +179,9 @@ export const DataSelectedItemsHandler = {
     },
     {
       XiangMuBiaoTi: '中型家具工厂扩大生产需要融资200万元',
-      RongZiZiJin: '300万',
-      SuoZaiDiQu: '黑龙江',
-      SuoShuHangYe: '旅游',
+      RongZiZiJin: '200万',
+      SuoZaiDiQu: '湖南益阳',
+      SuoShuHangYe: '家具生产',
       RongZiFangShi: '股权融资',
       LianXiRen: '...',
       DanWeiMingCheng: '...',
@@ -183,9 +193,9 @@ export const DataSelectedItemsHandler = {
     },
     {
       XiangMuBiaoTi: '家具卖场引流系统大规模应用',
-      RongZiZiJin: '400万',
-      SuoZaiDiQu: '黑龙江',
-      SuoShuHangYe: '旅游',
+      RongZiZiJin: '60万',
+      SuoZaiDiQu: '上海松江',
+      SuoShuHangYe: '家居互联网',
       RongZiFangShi: '股权融资',
       LianXiRen: '...',
       DanWeiMingCheng: '...',
