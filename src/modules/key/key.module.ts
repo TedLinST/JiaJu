@@ -9,6 +9,7 @@ import { DotTitleModule } from './dot-title/dot-title.module';
 import { MenuTypeModule } from './menu-type/menu-type.module';
 import { ButtonSortModule } from './button-sort/button-sort.module';
 import { BoxModule } from './box/box.module';
+import { KeyImgLazyloadModule } from './img-lazyload/img-lazyload.module';
 
 @NgModule({
   exports: [
@@ -21,7 +22,8 @@ import { BoxModule } from './box/box.module';
     DotTitleModule,
     MenuTypeModule,
     ButtonSortModule,
-    BoxModule
+    BoxModule,
+    KeyImgLazyloadModule
   ]
 })
 export class NgKeyModule { }
