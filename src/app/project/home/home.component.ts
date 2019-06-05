@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterContentInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataHomeHandler } from '../../../data/home';
 import { KeyCarouselLabelEvent } from 'src/modules/key/carousel/carousel-label.event';

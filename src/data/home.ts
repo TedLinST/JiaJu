@@ -484,7 +484,7 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: '《家具中有害物质检测》等278项国家标准公布',
-            src: 'assets/imgs/home/zongHeFuWu/GNzhanhui-1.jpg'
+            src: 'assets/imgs/home/zongHeFuWu/zhanhui-1.jpg'
           },
           {
             id: 2,
