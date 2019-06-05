@@ -49,9 +49,17 @@
             <div class="z-col z-col-2">
               <div class="box">
                 <div class="header">展会详情介绍</div>
-                <div class="body">
-                  <div class="title">{{currentTitleES}}</div>
-                  <div>{{currentContentES}}</div>
+                <div class="body" style="padding: 2px;">
+                  <nz-carousel nzAutoPlay [nzDots]="false">
+                    <div nz-carousel-content
+                      *ngFor="let item of dataHandler.ES.data4">
+                      <img [src]="item.src">
+                      <key-item-mask [isTextLeft]="true">
+                        <key-item-mask-label [label]="item.title">
+                        </key-item-mask-label>
+                      </key-item-mask>
+                    </div>
+                  </nz-carousel>
                 </div>
               </div>
             </div>

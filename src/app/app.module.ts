@@ -25,7 +25,7 @@ registerLocaleData(zh);
     AppComponent
   ],
   providers: [
-     { provide: NZ_I18N, useValue: zh_CN }
+    { provide: NZ_I18N, useValue: zh_CN }
   ],
   bootstrap: [AppComponent]
 })

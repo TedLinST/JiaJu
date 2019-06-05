@@ -29,9 +29,6 @@ export class IntegratedServicesComponent implements OnInit {
   currentIndexGS: number = 0;
   currentIndexFS: number = 0;
 
-  currentTitleES: any;
-  currentContentES: any
-
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
   }
@@ -40,9 +37,6 @@ export class IntegratedServicesComponent implements OnInit {
     this.CH_IS_BANNER_SRC = ConstantHandler.CH_IS_BANNER_SRC;
     this.CH_IS_BANNER_MENU = ConstantHandler.CH_IS_BANNER_MENU;
     this.dataHandler = DataIntegratedServicesHandler;
-    if (this.dataHandler && this.dataHandler.ES && this.dataHandler.ES.data0) {
-      this.setItemInfoES(this.dataHandler.ES.data0[0].data[0]);
-    }
   }
 
   /**
@@ -54,20 +48,12 @@ export class IntegratedServicesComponent implements OnInit {
   }
 
   /**
-   * 设置展会详情介绍
-   * @param item 
-   */
-  setItemInfoES(item: any) {
-    this.currentTitleES = item.title;
-    this.currentContentES = item.content;
-  }
-
-  /**
    * 展会服务详情页
    * @param id 
    */
   openExhibitionDetails(item: any) {
-    this.setItemInfoES(item);
+    console.log("展会服务详情页");
+    // this.navigateDeveloping();
   }
 
   /**

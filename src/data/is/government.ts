@@ -4,7 +4,21 @@ export const DataGovernmentHandler = {
   PIA: {
     title: '政策资讯区',
     enTitle: 'POLICY INFORMATION AREA',
-    data: [
+    data1: [
+      {
+        title: '轮播图1',
+        src: 'assets/imgs/government/zhuanli-2.jpg'
+      },
+      {
+        title: '轮播图2',
+        src: 'assets/imgs/government/zhuanli-2.jpg'
+      },
+      {
+        title: '轮播图3',
+        src: 'assets/imgs/government/zhuanli-2.jpg'
+      }
+    ],
+    data2: [
       {
         title: '增值税下调给企业带来的助力',
         content: '资讯内容',

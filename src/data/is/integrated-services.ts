@@ -280,7 +280,6 @@ export const DataIntegratedServicesHandler = {
         ]
       }
     ],
-
     // 展会资讯
     data3: [
       {
@@ -322,6 +321,21 @@ export const DataIntegratedServicesHandler = {
         id: '8',
         title: '注定与工业风捆绑？金属感还能这样诠释',
         time: '2019-05-22'
+      }
+    ],
+    // 展会详情介绍
+    data4: [
+      {
+        title: '轮播图1',
+        src: 'assets/imgs/integrated-services/ZMzhanhui-12.jpg'
+      },
+      {
+        title: '轮播图2',
+        src: 'assets/imgs/integrated-services/ZMzhanhui-12.jpg'
+      },
+      {
+        title: '轮播图3',
+        src: 'assets/imgs/integrated-services/ZMzhanhui-12.jpg'
       }
     ]
   },
