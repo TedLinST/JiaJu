@@ -2,22 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EnterpriseResourceComponent } from './enterprise-resource.component';
 import { RouterModule } from '@angular/router';
-import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { NgKeyModule } from 'src/modules/key/key.module';
+import { EnterpriseResourceRoutes } from './enterprise-resource.routing';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild([
       {
-        path: '', component: EnterpriseResourceComponent,
+        path: '',
+        component: EnterpriseResourceComponent,
+        children: EnterpriseResourceRoutes
       }
     ]),
-    NgZorroAntdModule,
-    NgKeyModule
   ],
   declarations: [
     EnterpriseResourceComponent
+  ],
+  providers: [
   ]
 })
 export class EnterpriseResourceModule { }
