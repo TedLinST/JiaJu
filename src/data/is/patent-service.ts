@@ -120,7 +120,7 @@ export const DataPatentServiceHandler = {
     ]
   },
 
-  // 专利代理机构  -> 工商代理机构
+  //  工商代理机构
   PA: {
     title: '工商代理机构',
     enTitle: 'PATENT AGENCY',
