@@ -1,4 +1,4 @@
-// 综合服务 - 政府服务 - 专利服务数据助手
+// 综合服务 - 政府服务 - 工商服务数据助手
 export const DataPatentServiceHandler = {
 
   // 子横幅

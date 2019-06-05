@@ -252,7 +252,7 @@ export class PortalNavigation {
   }
 
   /**
-   * 综合服务 - 政府服务 - 专利服务
+   * 综合服务 - 政府服务 - 工商服务
    */
   openPatentService(event?: any) {
     if (!!event) {

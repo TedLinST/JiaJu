@@ -187,9 +187,9 @@ export const DataGovernmentHandler = {
     ]
   },
 
-  // 专利服务区
+  // 工商服务区
   PSA: {
-    title: '专利服务区',
+    title: '工商服务区',
     enTitle: 'PATENT SERVICE AREA',
     // 国家专利局
     data0: [
@@ -325,9 +325,9 @@ export const DataGovernmentHandler = {
     ]
   },
 
-  // 专利服务区
+  // 工商服务区
   BSA: {
-    title: '专利服务区',
+    title: '工商服务区',
     enTitle: 'BUSINESS SERVICE AREA',
     // 各地工商局
     data0: [

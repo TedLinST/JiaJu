@@ -35,7 +35,7 @@ export class UtilsIs {
           portalNav.openFurnitureStandard();
           break;
         case '2-2':
-          // 专利服务
+          // 工商服务
           portalNav.openPatentService();
           break;
         case '3':
