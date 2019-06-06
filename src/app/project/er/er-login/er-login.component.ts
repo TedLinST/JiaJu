@@ -1,14 +1,24 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
+import { PortalNavigation } from 'src/app/portal/portal.navigation';
 
 @Component({
-  selector: 'app-enterprise-resource',
-  templateUrl: './enterprise-resource.component.html',
-  styleUrls: ['./enterprise-resource.component.scss']
+  selector: 'app-er-login',
+  templateUrl: './er-login.component.html',
+  styleUrls: ['./er-login.component.scss']
 })
-export class EnterpriseResourceComponent implements OnInit {
+export class ErLoginComponent implements OnInit {
 
+  // 门户导航
+  portalNav: any;
 
-  constructor(private el: ElementRef) { }
+  bean: any = {};
+
+  hasError: boolean = false;
+
+  constructor(private router: Router, private el: ElementRef) {
+    this.portalNav = new PortalNavigation(router);
+  }
 
   ngOnInit() {
     this.addProtalStyle();
@@ -70,8 +80,20 @@ export class EnterpriseResourceComponent implements OnInit {
         portalHeaderHeight = portalHeaderEl.clientHeight;
       }
       let height = document.body.clientHeight - portalHeaderHeight;
-      this.el.nativeElement.querySelector('.enterprise-resource').style.height = height + 'px';
+      this.el.nativeElement.querySelector('.er-login').style.height = height + 'px';
     }, 10);
+  }
+
+  /**
+   * 用户登录
+   */
+  onLogin() {
+    if (this.bean.username == "admin" && this.bean.password == "admin") {
+      this.hasError = false;
+      this.portalNav.openEr();
+    } else {
+      this.hasError = true;
+    }
   }
 
 }

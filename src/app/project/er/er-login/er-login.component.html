@@ -1,0 +1,29 @@
+<div class="er-login">
+  <div class="login-box">
+    <div class="header">
+      <div class="title">企业资源管理系统</div>
+      <div class="enTitle">Enterprise Resource Management System</div>
+    </div>
+    <div>
+      <span class="input-icon">
+        <input type="text" name="username" [(ngModel)]="bean.username">
+        <samp>
+          <i class="fa fa-user"></i>
+          <strong>用户名：</strong>
+        </samp>
+      </span>
+      <span class="input-icon">
+        <input type="password" name="password" [(ngModel)]="bean.password">
+        <samp>
+          <i class="fa fa-lock"></i>
+          <strong>密 码：</strong>
+        </samp>
+      </span>
+      <span class="btn-login" (click)="onLogin()">login 登录</span>
+      <div class="clearfix"></div>
+    </div>
+    <div *ngIf="hasError" class="error-info">
+      <span>登录失败，请重新检查用户名密码!</span>
+    </div>
+  </div>
+</div>
