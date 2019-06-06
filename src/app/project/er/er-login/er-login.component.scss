@@ -9,8 +9,8 @@
     position: absolute;
     left: 50%;
     top: 25%;
-    width: 60%;
-    margin-left: -30%;
+    width: 1000px;
+    margin-left: -500px;
     text-align: center;
 
     .header {
@@ -29,9 +29,9 @@
 
     .input-icon {
       position: relative;
-      display: inline-block;
-      padding: 0px 15px;
-      width: 100%;
+      padding: 0px 10px;
+      width: 360px;
+      float: left;
 
       input {
         width: 100%;
@@ -42,8 +42,48 @@
         font-weight: bold;
         color: #000;
         border: 1px solid #006dd2;
-        padding: 0px 15px;
+        padding: 0px 15px 0px 98px;
       }
+
+      samp {
+        position: absolute;
+        top: 0px;
+        left: 28px;
+        height: 40px;
+        line-height: 44px;
+        display: inline-block;
+
+        i {
+          font-size: 18px;
+          margin-right: 10px;
+        }
+
+        strong {
+          font-size: 14px;
+        }
+
+      }
+    }
+
+    .btn-login {
+      float: left;
+      margin-left: 10px;
+      width: 140px;
+      height: 40px;
+      line-height: 38px;
+      border-radius: 4px;
+      background-color: #FCB117;
+      color: #fff;
+      border: 1px solid #FCB117;
+      font-size: 14px;
+    }
+
+    .error-info {
+      text-align: left;
+      color: red;
+      font-size: 14px;
+      padding-top: 8px;
+      padding-left: 12px;
     }
   }
 }

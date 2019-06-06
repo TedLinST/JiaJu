@@ -1,6 +1,5 @@
 export const EnterpriseResourceRoutes = [
   { path: 'er-home', loadChildren: '../er-home/er-home.module#ErHomeModule' }, // 企业资源管理系统首页
-  { path: 'er-login', loadChildren: '../er-login/er-login.module#ErLoginModule' }, // 企业资源管理系统登录
 
   // { path: 'hr-organization-structure', loadChildren: '../hr/organization-structure/organization-structure.module#OrganizationStructureModule' }, // 组织结构管理
   // { path: 'sale-sales-analysis', loadChildren: '../sale/sales-analysis/sales-analysis.module#SalesAnalysisModule' }, // 款式销售分析表
@@ -26,6 +25,6 @@ export const EnterpriseResourceRoutes = [
   // { path: 'prod-input-output', loadChildren: '../prod/input-output/input-output.module#InputOutputModule' }, // 投入产出分析
 
   // 路由重定向
-  { path: '', loadChildren: '../er-login/er-login.module#ErLoginModule' },
-  { path: '**', loadChildren: '../er-login/er-login.module#ErLoginModule' }
+  { path: '', loadChildren: '../er-home/er-home.module#ErHomeModule' },
+  { path: '**', loadChildren: '../er-home/er-home.module#ErHomeModule' }
 ]

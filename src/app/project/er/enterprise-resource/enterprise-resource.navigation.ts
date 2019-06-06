@@ -2,7 +2,7 @@ import { Router } from '@angular/router';
 
 export class EnterpriseResourceNavigation {
 
-  private baseUrl: any = "enterprise-resource/";
+  private baseUrl: any = "er/";
 
   constructor(private router: Router) {
     // 滚动条回到顶部
@@ -17,11 +17,5 @@ export class EnterpriseResourceNavigation {
   onHome(event?: any) {
     this.router.navigateByUrl(this.baseUrl + 'er-home');
   }
-
-  // 登录
-  onLogin(event?: any) {
-    this.router.navigateByUrl(this.baseUrl + 'er-login');
-  }
-
 
 }

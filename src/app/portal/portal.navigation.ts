@@ -69,10 +69,17 @@ export class PortalNavigation {
   }
 
   /**
+   * 管理系统登录
+   */
+  openErLogin(event?: any) {
+    this.router.navigateByUrl('er-login');
+  }
+
+  /**
    * 管理系统
    */
-  openEnterpriseResource(event?: any) {
-    this.router.navigateByUrl('enterprise-resource');
+  openEr(event?: any) {
+    this.router.navigateByUrl('er');
   }
 
   /**

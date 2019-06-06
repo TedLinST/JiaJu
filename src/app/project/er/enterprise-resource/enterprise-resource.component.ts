@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-enterprise-resource',
@@ -8,17 +8,21 @@ import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/co
 export class EnterpriseResourceComponent implements OnInit {
 
 
-  constructor(private el: ElementRef, private renderer2: Renderer2) { }
+  constructor(private el: ElementRef) { }
 
   ngOnInit() {
-    this.handleProtalStyle();
+    this.addProtalStyle();
     this.setHeight();
   }
 
+  ngOnDestroy() {
+    this.removeProtalStyle();
+  }
+
   /**
-   * 处理门户样式
+   * 添加门户样式
    */
-  handleProtalStyle() {
+  addProtalStyle() {
     let portalFooterEl = document.getElementById("portal-footer-box");
     if (!!portalFooterEl) {
       portalFooterEl.style.display = "none";
@@ -32,6 +36,26 @@ export class EnterpriseResourceComponent implements OnInit {
     let protalHeaderAuxiliaryEl = document.getElementById("protal-header-auxiliary");
     if (!!protalHeaderAuxiliaryEl) {
       protalHeaderAuxiliaryEl.classList.add("protal-header-auxiliary");
+    }
+  }
+
+  /**
+   * 移除门户样式
+   */
+  removeProtalStyle() {
+    let portalFooterEl = document.getElementById("portal-footer-box");
+    if (!!portalFooterEl) {
+      portalFooterEl.style.display = "block";
+    }
+
+    let portalHeaderEl = document.getElementById("protal-header");
+    if (!!portalHeaderEl) {
+      portalHeaderEl.classList.remove("protal-header-min");
+    }
+
+    let protalHeaderAuxiliaryEl = document.getElementById("protal-header-auxiliary");
+    if (!!protalHeaderAuxiliaryEl) {
+      protalHeaderAuxiliaryEl.classList.remove("protal-header-auxiliary");
     }
   }
 
