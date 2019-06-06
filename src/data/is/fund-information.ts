@@ -1,4 +1,4 @@
-// 综合服务 - 金融服务 - 资金信息详细数据助手
+// 综合服务 - 金融服务 - 详细数据助手
 export const DataFundInformationHandler = {
   title: '资金信息详细',
   enTitle: 'FUND INFORMATION DETAIL PAGE',
