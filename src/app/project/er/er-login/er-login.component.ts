@@ -45,7 +45,7 @@ export class ErLoginComponent implements OnInit {
 
     let protalHeaderAuxiliaryEl = document.getElementById("protal-header-auxiliary");
     if (!!protalHeaderAuxiliaryEl) {
-      protalHeaderAuxiliaryEl.classList.add("protal-header-auxiliary");
+      protalHeaderAuxiliaryEl.classList.add("protal-header-auxiliary-min");
     }
   }
 
@@ -65,7 +65,7 @@ export class ErLoginComponent implements OnInit {
 
     let protalHeaderAuxiliaryEl = document.getElementById("protal-header-auxiliary");
     if (!!protalHeaderAuxiliaryEl) {
-      protalHeaderAuxiliaryEl.classList.remove("protal-header-auxiliary");
+      protalHeaderAuxiliaryEl.classList.remove("protal-header-auxiliary-min");
     }
   }
 
