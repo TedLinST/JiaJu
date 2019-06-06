@@ -1,7 +1,7 @@
 export const EnterpriseResourceRoutes = [
   { path: 'er-home', loadChildren: '../er-home/er-home.module#ErHomeModule' }, // 企业资源管理系统首页
 
-  // { path: 'hr-organization-structure', loadChildren: '../hr/organization-structure/organization-structure.module#OrganizationStructureModule' }, // 组织结构管理
+  { path: 'hr-organization-structure', loadChildren: '../hr/organization-structure/organization-structure.module#OrganizationStructureModule' }, // 组织结构管理
   // { path: 'sale-sales-analysis', loadChildren: '../sale/sales-analysis/sales-analysis.module#SalesAnalysisModule' }, // 款式销售分析表
   // { path: 'sale-commodity-planning-control', loadChildren: '../sale/commodity-planning-control/commodity-planning-control.module#CommodityPlanningControlModule' }, // 商品计划管控表
   // { path: 'sale-sales-order-details', loadChildren: '../sale/sales-order-details/sales-order-details.module#SalesOrderDetailsModule' }, // 销售下单明细表

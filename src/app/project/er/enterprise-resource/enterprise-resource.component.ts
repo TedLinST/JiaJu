@@ -2,6 +2,7 @@ import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 import { Utils } from 'src/modules/utils/utils';
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
+import { EnterpriseResourceNavigation } from './enterprise-resource.navigation';
 
 @Component({
   selector: 'app-enterprise-resource',
@@ -13,10 +14,14 @@ export class EnterpriseResourceComponent implements OnInit {
   // 门户导航
   portalNav: any;
 
+  // 企业资源管理系统导航
+  erNav: any;
+
   isCollapsed = false;
 
   constructor(private router: Router, private el: ElementRef) {
     this.portalNav = new PortalNavigation(router);
+    this.erNav = new EnterpriseResourceNavigation(router);
   }
 
   ngOnInit() {

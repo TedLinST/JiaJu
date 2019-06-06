@@ -16,7 +16,8 @@
               <span>组织管理</span>
             </span>
             <ul>
-              <li nz-menu-item>组织结构管理</li>
+              <li nz-menu-item
+                (click)="erNav.openHrOrganizationStructure($event)">组织结构管理</li>
               <li nz-submenu>
                 <span title>权限分配表</span>
                 <ul>
@@ -239,10 +240,12 @@
         </ul>
       </div>
       <div class="btn flex flex-no-shrink">
-        <button class="flex flex-grow-1" nz-button [nzType]="'primary'" (click)="toggleCollapsed()">
+        <button class="flex flex-grow-1" nz-button [nzType]="'primary'"
+          (click)="toggleCollapsed()">
           <i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
         </button>
-        <button *ngIf="!isCollapsed" class="flex flex-grow-1" nz-button [nzType]="'danger'" (click)="onLoginOut()">
+        <button *ngIf="!isCollapsed" class="flex flex-grow-1" nz-button
+          [nzType]="'danger'" (click)="onLoginOut()">
           退出
         </button>
       </div>
