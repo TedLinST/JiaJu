@@ -1,6 +1,258 @@
 <div class="enterprise-resource">
   <div class="user-info">
-    
+    <span (click)="onUserInfo()">
+      <img src="assets/imgs/er/user.png">
+      管理员
+    </span>
   </div>
-  <router-outlet></router-outlet>
+  <div class="flex flex-h flex-grow-1 er">
+    <div class="flex flex-v flex-no-shrink sidebar">
+      <div class="menu flex flex-grow-1">
+        <ul nz-menu [nzMode]="'inline'" nzTheme="light"
+          [nzInlineCollapsed]="isCollapsed">
+          <li nz-submenu>
+            <span title>
+              <i nz-icon type="team"></i>
+              <span>组织管理</span>
+            </span>
+            <ul>
+              <li nz-menu-item>组织结构管理</li>
+              <li nz-submenu>
+                <span title>权限分配表</span>
+                <ul>
+                  <li nz-menu-item>岗位权限分配表</li>
+                  <li nz-menu-item>员工权限分配表</li>
+                </ul>
+              </li>
+              <li nz-menu-item>岗位信息表</li>
+            </ul>
+          </li>
+          <li nz-submenu>
+            <span title>
+              <i nz-icon type="red-envelope"></i>
+              <span>销售管理</span>
+            </span>
+            <ul>
+              <li nz-submenu>
+                <span title>市场调研</span>
+                <ul>
+                  <li nz-menu-item>款式销量评级设置</li>
+                  <li nz-menu-item>款式分析表</li>
+                  <li nz-menu-item>款式销售分析表</li>
+                  <li nz-menu-item>区域销售分析表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>销售下单</span>
+                <ul>
+                  <li nz-menu-item>销售下单表</li>
+                  <li nz-menu-item>销售订单合同</li>
+                  <li nz-menu-item>商品计划管控表</li>
+                  <li nz-menu-item>销售下单明细表</li>
+                  <li nz-menu-item>销售下单汇总表</li>
+                  <li nz-menu-item>订单汇总下达表</li>
+                  <li nz-menu-item>销售发货</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>商品入库</span>
+                <ul>
+                  <li nz-menu-item>商品入库单</li>
+                  <li nz-menu-item>商品入库单明细表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>商品出库</span>
+                <ul>
+                  <li nz-menu-item>商品出库单</li>
+                  <li nz-menu-item>商品出库单明细</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>商品库存</span>
+                <ul>
+                  <li nz-menu-item>商品库销汇总表</li>
+                  <li nz-menu-item>销售订单库存明细表</li>
+                  <li nz-menu-item>款号库存汇总表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>店面调拨</span>
+                <ul>
+                  <li nz-menu-item>商品调拨分析表</li>
+                  <li nz-menu-item>商品调拨通知单</li>
+                  <li nz-menu-item>商品调拨出库单</li>
+                  <li nz-menu-item>商品调拨入库单</li>
+                  <li nz-menu-item>商品调拨汇总表</li>
+                </ul>
+              </li>
+              <li nz-menu-item>售后管理</li>
+              <li nz-submenu>
+                <span title>商品退货</span>
+                <ul>
+                  <li nz-menu-item>商品退货申请单</li>
+                  <li nz-menu-item>商品退货入库单</li>
+                  <li nz-menu-item>商品退货汇总记录表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>销售结算</span>
+                <ul>
+                  <li nz-menu-item>销售统计报表</li>
+                  <li nz-menu-item>销售单位结算表</li>
+                  <li nz-menu-item>销售单位资金回款表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>市场管理</span>
+                <ul>
+                  <li nz-menu-item>市场销售日报表</li>
+                  <li nz-menu-item>市场销售周报表</li>
+                  <li nz-menu-item>市场销售月报表</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li nz-submenu>
+            <span title>
+              <i nz-icon type="profile"></i>
+              <span>开发管理</span>
+            </span>
+            <ul>
+              <li nz-submenu>
+                <span title>开发计划管控</span>
+                <ul>
+                  <li nz-menu-item>开发计划排单规则</li>
+                  <li nz-menu-item>设计开发计划管控表</li>
+                  <li nz-menu-item>设计开发完成进度汇总表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>设计开发</span>
+                <ul>
+                  <li nz-menu-item>设计开发任务进度表</li>
+                  <li nz-menu-item>样品材料用量表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>设计材料申购入库</span>
+                <ul>
+                  <li nz-menu-item>设计材料采购进度表</li>
+                  <li nz-menu-item>开发材料入库单</li>
+                  <li nz-menu-item>设计材料出库单</li>
+                </ul>
+              </li>
+              <li nz-menu-item>样品款式工序工时工价表</li>
+            </ul>
+          </li>
+          <li nz-submenu>
+            <span title>
+              <i nz-icon type="carry-out"></i>
+              <span>生产管理</span>
+            </span>
+            <ul>
+              <li nz-submenu>
+                <span title>采购管理系统</span>
+                <ul>
+                  <li nz-menu-item>订单材料用量明细表</li>
+                  <li nz-menu-item>材料采购需求明细表</li>
+                  <li nz-menu-item>采购订单跟踪表</li>
+                  <li nz-menu-item>采购订单合同表</li>
+                  <li nz-menu-item>采购付款申请表</li>
+                  <li nz-menu-item>采购结算资金跟踪表</li>
+                  <li nz-menu-item>采购资金月报表</li>
+                  <li nz-menu-item>材料检验报告表</li>
+                  <li nz-menu-item>配件检验报告表</li>
+                  <li nz-menu-item>不合格材料处理申请</li>
+                  <li nz-menu-item>供应商不合格材料处理报告</li>
+                  <li nz-menu-item>不合格材料统计</li>
+                  <li nz-menu-item>生产材料入库单</li>
+                  <li nz-menu-item>材料入库明细列表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>生产计划系统</span>
+                <ul>
+                  <li nz-menu-item>生产计划管控表</li>
+                  <li nz-menu-item>生产计划排单规则</li>
+                  <li nz-menu-item>生产车间指令单</li>
+                  <li nz-menu-item>任务分派单</li>
+                  <li nz-menu-item>工序任务单</li>
+                  <li nz-menu-item>生产班组任务完成进度表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>物料控制系统</span>
+                <ul>
+                  <li nz-menu-item>生产领料通知单</li>
+                  <li nz-menu-item>材料出库单</li>
+                  <li nz-menu-item>补料申请</li>
+                  <li nz-menu-item>补料出库单</li>
+                  <li nz-menu-item>材料出库明细列表</li>
+                  <li nz-menu-item>材料退库单</li>
+                  <li nz-menu-item>材料退库明细列表</li>
+                  <li nz-menu-item>材料库存明细表</li>
+                  <li nz-menu-item>材料库存汇总表</li>
+                  <li nz-menu-item>材料消耗分析表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>工时工价系统</span>
+                <ul>
+                  <li nz-menu-item>部件类型表</li>
+                  <li nz-menu-item>部位信息表</li>
+                  <li nz-menu-item>工艺表</li>
+                  <li nz-menu-item>工序工时工价表</li>
+                </ul>
+              </li>
+              <li nz-submenu>
+                <span title>投入产出系统</span>
+                <ul>
+                  <li nz-menu-item>款式销售分析表</li>
+                  <li nz-menu-item>区域销售分析表</li>
+                  <li nz-menu-item>销售统计报表</li>
+                  <li nz-menu-item>销售单位结算表</li>
+                  <li nz-menu-item>销售单位资金回款表</li>
+                  <li nz-menu-item>市场销售日报表</li>
+                  <li nz-menu-item>市场销售周报表</li>
+                  <li nz-menu-item>市场销售月报表</li>
+                  <li nz-menu-item>订单生产实际成本汇总表</li>
+                  <li nz-menu-item>生产完成月报表</li>
+                  <li nz-menu-item>商品库销汇总表</li>
+                  <li nz-menu-item>现金流曲线图</li>
+                  <li nz-menu-item>供应商报销汇总</li>
+                  <li nz-menu-item>材料报销汇总</li>
+                  <li nz-menu-item>费用报销汇总</li>
+                  <li nz-menu-item>成品库存分析</li>
+                  <li nz-menu-item>投入产出分析</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li nz-menu-item nz-tooltip nzPlacement="right"
+            [nzTitle]="isCollapsed ? '系统设置' : ''">
+            <span title>
+              <i nz-icon type="setting"></i>
+              <span>系统设置</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="btn flex flex-no-shrink">
+        <button class="flex flex-grow-1" nz-button [nzType]="'primary'" (click)="toggleCollapsed()">
+          <i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+        </button>
+        <button *ngIf="!isCollapsed" class="flex flex-grow-1" nz-button [nzType]="'danger'" (click)="onLoginOut()">
+          退出
+        </button>
+      </div>
+    </div>
+    <div class="flex flex-v flex-grow-1 content">
+      <!-- 主体内容 -->
+      <div #contentBody id="content-body"
+        class="flex flex-v flex-grow-1 content-body">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
 </div>

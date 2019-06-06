@@ -1,3 +1,57 @@
 .enterprise-resource {
+  position: relative;
   width: 100%;
+
+  .user-info {
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    z-index: 99999;
+    color: #fff;
+    padding: 10px 20px;
+
+    span {
+      display: inline-block;
+      height: 50px;
+
+      img {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .er {
+    width: 100%;
+    height: 100%;
+
+    .sidebar {
+      height: 100%;
+
+      >.btn {
+        padding: 4px;
+        border-top: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+
+        button{
+          width: 100%;
+          margin: 0px 2px;
+        }
+      }
+
+      >.menu {
+        overflow-y: auto;
+      }
+    }
+
+    .content {
+      background-color: #f5f5f5;
+      padding: 15px;
+
+      .content-body {}
+    }
+  }
 }

@@ -208,13 +208,83 @@ export class Utils {
     }
 
     /**
+     * 删除左右两端的空格
+     * @param str
+     */
+    public static trim(str: any) {
+        return str.replace(/(^\s*)|(\s*$)/g, "");
+    }
+
+    /**
+     * 删除左边的空格 TODO: 待验证
+     * @param str
+     */
+    public static ltrim(str) {
+        return str.replace(/(^\s*)/g, "");
+    }
+
+    /**
+     * 删除右边的空格 TODO: 待验证
+     * @param str
+     */
+    public static rtrim(str) {
+        return str.replace(/(\s*$)/g, "");
+    }
+
+    /**
+     * 设置 Cookie
+     * @param name 名称
+     * @param value 值
+     * @param days 天数
+     */
+    public static setCookie(name: any, value: any, days?: number) {
+        let date = new Date();
+        if (!!days) {
+            // 设置过期时间
+            date.setDate(date.getDate() + days);
+            document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + date;
+        } else {
+            document.cookie = name + "=" + encodeURIComponent(value);
+        }
+    }
+
+    /**
+     * 获取 Cookie
+     * @param name 名称
+     * @returns {any}
+     */
+    public static getCookie(name: any) {
+        let cookie: any = document.cookie;
+        if (!!cookie) {
+            let cookieArray: any[] = cookie.split(";");
+            if (cookieArray != null && cookieArray.length > 0) {
+                for (let i = 0, len = cookieArray.length; i < len; i++) {
+                    let nameKeyArray: any[] = cookieArray[i].split("=");
+                    let key: any = Utils.trim(nameKeyArray[0]);
+                    if (key === name) {
+                        let getName: any = decodeURIComponent(nameKeyArray[1]);
+                        return getName;
+                    }
+                }
+            }
+        }
+        return "";
+    }
+
+    /**
+     * 删除 Cookie
+     * @param name 名称
+     */
+    public static removeCookie(name: any) {
+        Utils.setCookie(name, "1", -1);
+    }
+
+    /**
      * 格式化成两位数的数字
      */
     public static formatNumber = (n: number) => {
         const str = n.toString();
         return str[1] ? str : '0' + str;
     }
-
-
 
 }

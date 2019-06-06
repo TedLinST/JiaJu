@@ -1,4 +1,7 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
+import { Utils } from 'src/modules/utils/utils';
+import { Router } from '@angular/router';
+import { PortalNavigation } from 'src/app/portal/portal.navigation';
 
 @Component({
   selector: 'app-enterprise-resource',
@@ -7,8 +10,14 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 })
 export class EnterpriseResourceComponent implements OnInit {
 
+  // 门户导航
+  portalNav: any;
 
-  constructor(private el: ElementRef) { }
+  isCollapsed = false;
+
+  constructor(private router: Router, private el: ElementRef) {
+    this.portalNav = new PortalNavigation(router);
+  }
 
   ngOnInit() {
     this.addProtalStyle();
@@ -72,6 +81,33 @@ export class EnterpriseResourceComponent implements OnInit {
       let height = document.body.clientHeight - portalHeaderHeight;
       this.el.nativeElement.querySelector('.enterprise-resource').style.height = height + 'px';
     }, 10);
+  }
+
+  onUserInfo() {
+
+  }
+
+  /**
+   * 切换菜单
+   */
+  toggleCollapsed(): void {
+    this.isCollapsed = !this.isCollapsed;
+  }
+
+  /**
+   * 退出登录
+   */
+  onLoginOut() {
+    Utils.removeCookie("loginTime");
+    this.portalNav.openErLogin();
+  }
+
+  /**
+   * 浏览器窗口大小发生改变执行
+   */
+  @HostListener("window:resize", ["$event"])
+  public onResize(event: any) {
+    this.setHeight();
   }
 
 }

@@ -1,6 +1,7 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
+import { Utils } from 'src/modules/utils/utils';
 
 @Component({
   selector: 'app-er-login',
@@ -23,6 +24,7 @@ export class ErLoginComponent implements OnInit {
   ngOnInit() {
     this.addProtalStyle();
     this.setHeight();
+    this.hasUserLogin();
   }
 
   ngOnDestroy() {
@@ -90,10 +92,38 @@ export class ErLoginComponent implements OnInit {
   onLogin() {
     if (this.bean.username == "admin" && this.bean.password == "admin") {
       this.hasError = false;
+      // 0.042 大约一个小时
+      let date: any = new Date();
+      let dateParse = Date.parse(date);
+      Utils.setCookie("loginTime", dateParse, 0.042 * 3);
       this.portalNav.openEr();
     } else {
       this.hasError = true;
     }
+  }
+
+  /**
+   * 判断用户是否登录
+   */
+  hasUserLogin() {
+    // 获取用户登录信息
+    let date: any = new Date();
+    let dateParse = Date.parse(date);
+    let loginTime: number = Utils.getCookie("loginTime");
+    let hour: number = 3000 * 60 * 60;
+    if (loginTime) {
+      if (dateParse - loginTime < hour) {
+        this.portalNav.openEr();
+      }
+    }
+  }
+
+  /**
+   * 浏览器窗口大小发生改变执行
+   */
+  @HostListener("window:resize", ["$event"])
+  public onResize(event: any) {
+    this.setHeight();
   }
 
 }

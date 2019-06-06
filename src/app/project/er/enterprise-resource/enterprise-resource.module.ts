@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { EnterpriseResourceComponent } from './enterprise-resource.component';
 import { RouterModule } from '@angular/router';
 import { EnterpriseResourceRoutes } from './enterprise-resource.routing';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { EnterpriseResourceRoutes } from './enterprise-resource.routing';
         children: EnterpriseResourceRoutes
       }
     ]),
+    NgZorroAntdModule
   ],
   declarations: [
     EnterpriseResourceComponent
