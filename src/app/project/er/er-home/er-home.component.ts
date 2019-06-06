@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-er-home',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./er-home.component.scss']
 })
 export class ErHomeComponent implements OnInit {
+
+  @HostBinding("class.key-flex-component-v") flex: boolean = true;
 
   constructor() { }
 
