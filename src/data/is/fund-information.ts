@@ -26,46 +26,6 @@ export const DataFundInformationHandler = {
       YiXiangZiJin: '100万',
       LiuYanXinXi: '买买买买买买买买买买买买买买买买买买买买买买买买买买买买买买',
       src: 'assets/imgs/fund-information/1.jpg',
-    },
-    {
-      YongHuMing: 'Admin',
-      DanWeiMingCheng: 'XXXXX',
-      SuoZaiDiQu: '汕头',
-      YiXiangZiJin: '100万',
-      LiuYanXinXi: '买买买买买买买买买买买买买买买买买买买买买买买买买买买买买买',
-      src: 'assets/imgs/fund-information/1.jpg',
-    },
-    {
-      YongHuMing: 'Admin',
-      DanWeiMingCheng: 'XXXXX',
-      SuoZaiDiQu: '汕头',
-      YiXiangZiJin: '100万',
-      LiuYanXinXi: '买买买买买买买买买买买买买买买买买买买买买买买买买买买买买买',
-      src: 'assets/imgs/fund-information/1.jpg',
-    },
-    {
-      YongHuMing: 'Admin',
-      DanWeiMingCheng: 'XXXXX',
-      SuoZaiDiQu: '汕头',
-      YiXiangZiJin: '100万',
-      LiuYanXinXi: '买买买买买买买买买买买买买买买买买买买买买买买买买买买买买买',
-      src: 'assets/imgs/fund-information/1.jpg',
-    },
-    {
-      YongHuMing: 'Admin',
-      DanWeiMingCheng: 'XXXXX',
-      SuoZaiDiQu: '汕头',
-      YiXiangZiJin: '100万',
-      LiuYanXinXi: '买买买买买买买买买买买买买买买买买买买买买买买买买买买买买买',
-      src: 'assets/imgs/fund-information/1.jpg',
-    },
-    {
-      YongHuMing: 'Admin',
-      DanWeiMingCheng: 'XXXXX',
-      SuoZaiDiQu: '汕头',
-      YiXiangZiJin: '100万',
-      LiuYanXinXi: '买买买买买买买买买买买买买买买买买买买买买买买买买买买买买买',
-      src: 'assets/imgs/fund-information/1.jpg',
     }
   ]
 }
