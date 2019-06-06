@@ -103,6 +103,18 @@ export class FundInformationComponent implements OnInit {
     return value;
   }
 
+  /**
+   * 收藏项目
+   */
+  onInvestment(item: any) {
+    item.ShouCangShu = item.ShouCangShu + 1;
+    this.notification.create(
+      'success',
+      '提示',
+      '收藏项目成功！',
+    );
+  }
+
   submitForm() {
     if (!!!this.bean.YiXiangZiJin) {
       this.notification.create(

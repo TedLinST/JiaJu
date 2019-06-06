@@ -34,13 +34,21 @@
           <div class="title">
             {{infoParams?.XiangMuBiaoTi}}
             <span>
-              <samp>更新日期：{{infoParams?.FaBuShiJian}}</samp>
+              <samp>收藏数：{{infoParams?.ShouCangShu}}</samp>
+            </span>
+            <span>
+              <samp>浏览数：{{infoParams?.LiuLanShu}}</samp>
+            </span>
+            <span>
+              <samp>发布时间：{{infoParams?.FaBuShiJian}}</samp>
             </span>
           </div>
           <div class="info">
             <div class="z-row">
+
               <div class="z-col z-col-4">
-                <key-box-label label="资金规模" [value]="infoParams?.ZiJinGuiMo"
+                <key-box-label label="资金主体"
+                  [value]="infoParams?.TouZiJiGou_GeRenMingCheng"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
@@ -65,26 +73,20 @@
                 </key-box-label>
               </div>
               <div class="z-col z-col-4">
-                <key-box-label label="投资机构/个人名称"
-                  [value]="infoParams?.TouZiJiGou_GeRenMingCheng"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
-              </div>
-              <div class="z-col z-col-4">
                 <key-box-label label="投递数" [value]="infoParams?.TouDiShu"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
               <div class="z-col z-col-4">
-                <key-box-label label="收藏数" [value]="infoParams?.ShouCangShu"
+                <key-box-label label="已投资项目" [value]="infoParams?.YiTouZiXiangMu"
                   [isBoxLabelInline]="true">
                 </key-box-label>
               </div>
               <div class="z-col z-col-4">
-                <key-box-label label="已投资项目"
-                  [value]="infoParams?.YiTouZiXiangMu"
-                  [isBoxLabelInline]="true">
-                </key-box-label>
+                <div class="btn">
+                  <button nz-button nzType="primary" nzSize="small"
+                    (click)="onInvestment(infoParams)">收藏项目</button>
+                </div>
               </div>
             </div>
           </div>

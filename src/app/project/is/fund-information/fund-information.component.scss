@@ -13,6 +13,7 @@
 
       span {
         float: right;
+        font-weight: 500;
 
         samp {
           display: inline-block;
@@ -25,6 +26,18 @@
       margin-bottom: 20px;
       border: 1px solid #d9d9d9;
       padding: 10px 20px;
+
+      .btn {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+        button {
+          background-color: #d3b661;
+          border-color: #d3b661;
+          margin: 0px 5px;
+        }
+      }
     }
 
     .message {
