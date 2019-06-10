@@ -1,0 +1,5 @@
+<div class="key-flex key-flex-h" [class.has-error]="error">
+  <label *ngIf="!!label" class="heading input-group-addon" [style.width]="labelWidth?labelWidth:'auto'">{{label}}</label>
+  <ng-content></ng-content>
+</div>
+<span class="errorMessage key-flex-no-shrink" *ngIf="error">{{errorMsg(error)}}</span>

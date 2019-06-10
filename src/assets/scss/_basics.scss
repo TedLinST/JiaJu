@@ -1,4 +1,6 @@
 @charset "UTF-8";
+// 分裂线颜色
+$SPLIT_LINE_COLOR: #337AB7;
 
 .box-h {
   width: 100%;
@@ -86,4 +88,109 @@
 // 文本靠右
 .text-left {
   text-align: right !important;
+}
+
+
+// ====左面板====
+.key-left-panel-xs {
+  width: 150px;
+}
+
+.key-left-panel-sm {
+  width: 200px;
+}
+
+.key-left-panel {
+  width: 248px;
+}
+
+.key-left-panel-md {
+  width: 300px;
+}
+
+.key-left-panel-lg {
+  width: 350px;
+}
+
+// ====右面板====
+.key-right-panel-xs {
+  width: 150px;
+}
+
+.key-right-panel-sm {
+  width: 200px;
+}
+
+.key-right-panel {
+  width: 248px;
+}
+
+.key-right-panel-md {
+  width: 300px;
+}
+
+.key-right-panel-lg {
+  width: 350px;
+}
+
+// ====上面板====
+.key-top-panel-xs {
+  height: 150px;
+}
+
+.key-top-panel-sm {
+  height: 200px;
+}
+
+.key-top-panel {
+  height: 248px;
+}
+
+.key-top-panel-md {
+  height: 350px;
+}
+
+.key-top-panel-lg {
+  height: 450px;
+}
+
+// ====下面板====
+.key-bottom-panel-xs {
+  height: 150px;
+}
+
+.key-bottom-panel-sm {
+  height: 200px;
+}
+
+.key-bottom-panel {
+  height: 248px;
+}
+
+.key-bottom-panel-md {
+  height: 350px;
+}
+
+.key-bottom-panel-lg {
+  height: 450px;
+}
+
+// 左分裂线
+.key-left-split-line {
+  border-left: 2px solid $SPLIT_LINE_COLOR !important;
+}
+
+// 右分裂线
+.key-right-split-line {
+  border-right: 2px solid $SPLIT_LINE_COLOR !important;
+}
+
+// 上分裂线
+.key-top-split-line {
+  border-top: 2px solid $SPLIT_LINE_COLOR !important;
+}
+
+// 下分裂线
+.key-bottom-split-line {
+  border-bottom: 2px solid $SPLIT_LINE_COLOR !important;
 }

@@ -1,0 +1,30 @@
+<div class="key-flex key-flex-v key-flex-no-shrink key-panel-borders key-panel-basics {{_splitLineType}} key-box-v {{_panelClass}}"
+  [class.key-flex-no-shrink]="!widthAdaption" [class.key-flex-grow-1]="widthAdaption"
+  [style.width]="widthAdaption?('100%'):(panelWidth + 'px')">
+  <div class="panel-title key-flex key-flex-h key-flex-no-shrink" style="overflow: hidden;">
+    <div class="heading singleTextBeyondHide key-flex-grow-1" [title]="heading">
+      <div style="line-height: 25px; height: 25px; overflow: hidden;">
+        {{heading}}
+      </div>
+    </div>
+    <div class="tools key-flex-no-shrink">
+      <button *ngIf="!canExpandAllBtn" title="全部闭合" class="key-btn key-btn-default key-btn-sm"
+        (click)="collapseAll()">
+        <i class="fa fa-toggle-right"></i>
+      </button>
+      <button *ngIf="canExpandAllBtn" title="全部展开" class="key-btn key-btn-default key-btn-sm"
+        (click)="expandAll()">
+        <i class="fa fa-toggle-down"></i>
+      </button>
+      <button *ngIf="canRefresh" title="刷新" class="key-btn key-btn-default key-btn-sm"
+        (click)="onRefresh()">
+        <i class="fa fa-refresh"></i>
+      </button>
+    </div>
+  </div>
+  <div class="panel-body key-flex  key-flex-v key-flex-grow-1">
+    <key-tree [idField]="idField" [displayField]="displayField" [hrefField]="hrefField"
+      [selectLeaf]="selectLeaf" [autoExpended]="autoExpended" [parentTree]="parentTree"
+      [data]="data" (rowSelect)="rowSelect($event)"></key-tree>
+  </div>
+</div>

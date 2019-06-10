@@ -1,3 +1,5 @@
+import { KeyTreeNode } from '../admin-key/tree/tree-node';
+
 export class Utils {
 
     /**
@@ -9,11 +11,85 @@ export class Utils {
     }
 
     /**
+     * 判断值是否为空
+     * @param obj
+     * @returns {boolean}
+     */
+    public static isPresent(obj: any) {
+        return obj !== undefined && obj !== null;
+    }
+
+    /**
+     * 将值转变成布尔类型
+     * @param value
+     * @returns {boolean}
+     */
+    public static toBoolean(value: any): boolean {
+        switch (value) {
+            case "":
+                return true;
+            case "false":
+            case "0":
+                return false;
+            default:
+                return !!value;
+        }
+    }
+
+    /**
      * 判断对象是否为日期对象
-     * @param value 
+     * @param value
+     * @returns {boolean}
      */
     public static isDate(value: any) {
-        return Object.prototype.toString.call(value) === '[object Date]';
+        return toString.call(value) === "[object Date]";
+    }
+
+    /**
+     * 判断是否为对象
+     * @param value
+     * @returns {boolean}
+     */
+    public static isObject(value: any) {
+        return toString.call(value) === "[object Object]";
+    }
+
+    /**
+     * 判断是否为数组
+     * @param value
+     * @returns {boolean}
+     */
+    public static isArray(value: any) {
+        return toString.call(value) === "[object Array]";
+    }
+
+    /**
+     * 判断是否为字符串
+     * @param value
+     * @returns {boolean}
+     */
+    public static isString(value: any) {
+        return toString.call(value) === "[object String]";
+    }
+
+    /**
+     * 判断是否为数字
+     * @param value
+     * @returns {boolean}
+     */
+    public static isNumber(value: any) {
+        return toString.call(value) === "[object Number]";
+    }
+
+    /**
+     * 判断是否为空值
+     * @param value 值
+     * @param allowEmptyString 是否允许空字符串，默认 false
+     * @returns {boolean}
+     */
+    static isEmpty(value: any, allowEmptyString = false) {
+        return (value === null) || (value === undefined) ||
+            (!allowEmptyString ? value === "" : false) || (Utils.isArray(value) && value.length === 0);
     }
 
     /**
@@ -208,6 +284,53 @@ export class Utils {
     }
 
     /**
+     * 在数组中指定位置插入对象
+     * @param array 数组
+     * @param index 插入位置
+     * @param item 值
+     */
+    public static arrayInsert(array: any[], index: number, item: any) {
+        array.splice(index, 0, item);
+    }
+
+    /**
+     * 复制对象，将obj中对应值赋予target
+     * @param target 目标
+     * @param obj 要复制的值
+     * @param defaults 默认值对象
+     * @returns {any} 复制后的对象
+     */
+    public static copy(target: any, obj: any, defaults?: any) {
+        if (defaults) {
+            Utils.copy(target, defaults);
+        }
+        if (target && obj && typeof obj === "object") {
+            let i: any;
+            for (i in target) {
+                target[i] = obj[i];
+            }
+            for (i in obj) {
+                target[i] = obj[i];
+            }
+        }
+        return target;
+    }
+
+    /**
+     * 数据源追加标志字段
+     * @param data 数据源
+     * @param field 字段名称
+     */
+    public static applySignField(data: any[], field: string) {
+        if (data != null && data.length > 0) {
+            for (let i = 0, len = data.length; i < len; i++) {
+                data[i][field] = (i + 1);
+            }
+        }
+        return data;
+    }
+
+    /**
      * 删除左右两端的空格
      * @param str
      */
@@ -277,6 +400,106 @@ export class Utils {
      */
     public static removeCookie(name: any) {
         Utils.setCookie(name, "1", -1);
+    }
+
+    /**
+     * 递归获取所有的树节点
+     * @param data
+     * @returns {KeyTreeNode[]}
+     */
+    public static getAllTreeNode(data: KeyTreeNode[]): KeyTreeNode[] {
+        let nodes: KeyTreeNode[] = [];
+        if (!!data) {
+            let node: KeyTreeNode;
+            for (let i = 0, len = data.length; i < len; i++) {
+                node = data[i];
+                nodes.push(node);
+                if (node.children && node.children.length > 0) {
+                    nodes = nodes.concat(Utils.getAllTreeNode(node.children));
+                }
+            }
+        }
+        return nodes;
+    }
+
+    /**
+     * KeyTreeNode 全部展开
+     * @param data
+     */
+    public static expandAll(data: KeyTreeNode[]) {
+        if (data && data.length > 0) {
+            data.forEach((node) => {
+                node.expanded = true;
+                if (!node.leaf) {
+                    this.expandAll(node.children);
+                }
+            });
+        }
+    }
+
+    /**
+     * KeyTreeNode 全部闭合
+     * @param data
+     */
+    static collapseAll(data: KeyTreeNode[]) {
+        if (data && data.length > 0) {
+            data.forEach((node) => {
+                node.expanded = false;
+                if (!node.leaf) {
+                    this.collapseAll(node.children);
+                }
+            });
+        }
+    }
+
+    /**
+     * 将列表数据源转成树形结构
+     * @param config {
+     *      data: 数据源,
+     *      idField: (可选)id列，默认值'id',
+     *      pidField: (可选)父id列，默认值'pid',,
+     *      expanded: (可选)展开所有节点，默认 false,
+     *      firstExpanded: (可选)展开第一层节点，默认 false
+     * }
+     * @returns {KeyTreeNode[]}
+     */
+    public static listToTreeData(config: {
+        data: any[], idField?:
+        string, pidField?: string, expanded?: boolean, firstExpanded?: boolean
+    }) {
+        let dataTree: KeyTreeNode[] = [];
+        let datasource = config.data;
+        let idField = config.idField || "id";
+        let pidField = config.pidField || "pid";
+        let expanded = config.expanded || false;
+        let firstExpanded = config.firstExpanded || false;
+        if (datasource) {
+            let dataMap: { [key: string]: KeyTreeNode } = {};
+            let dataArray: KeyTreeNode[] = [];
+            let row: any;
+            let node: KeyTreeNode;
+            let pNode: KeyTreeNode;
+            for (let i = 0, len = datasource.length; i < len; i++) {
+                row = datasource[i];
+                node = dataMap[String(row[idField])] = new KeyTreeNode(row, row[idField], row[pidField]);
+                node.expanded = expanded;
+                dataArray.push(node);
+            }
+            for (let i = 0, len = dataArray.length; i < len; i++) {
+                node = dataArray[i];
+                pNode = dataMap[String(node.pid)];
+                if (pNode) {
+                    node.parent = pNode;
+                    pNode.children.push(node);
+                } else {
+                    dataTree.push(node);
+                    if (!expanded && firstExpanded) {
+                        node.expanded = firstExpanded;
+                    }
+                }
+            }
+        }
+        return dataTree;
     }
 
     /**

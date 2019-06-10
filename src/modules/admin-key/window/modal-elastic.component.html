@@ -1,0 +1,60 @@
+<div tabindex="-1" (keyup.esc)="closeModal()" [class.key-show]="open"
+  [class.key-hide]="!open">
+
+  <div #modal class="modal key-modal key-modal-elastic" [id]="modalId"
+    [style.left]="left" [style.right]="right" [style.top]="top" [style.bottom]="bottom"
+    [class.modal-default]="convenientToolGroupHeader" [class.mouseMove]="canMouseMove"
+    [class.key-show]="open">
+    <div class="modal-dialog" [class.modal-lg]="largest" [class.modal-sm]="smallest"
+      [style.width]="width">
+      <div class="modal-content">
+        <div class="modal-header key-user-select-none">
+          <div *ngIf="canMouseMove" class="modal-header-move" (mousemove)="onModalMouseMove($event)"
+            (mouseup)="onModalMouseUp($event)" (mousedown)="onModalMouseDown($event)"></div>
+          <button class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+            &times;
+          </button>
+          <div class="modal-tool">
+            <ng-content select="[toolBtn]"></ng-content>
+          </div>
+          <h4 class="modal-title">{{header}}</h4>
+          <ng-content select="[tagline]"></ng-content>
+        </div>
+        <div class="modal-body key-flex key-flex-v">
+          <ng-content select="[body]"></ng-content>
+        </div>
+        <div class="modal-footer key-user-select-none" *ngIf="!hiddenFooter">
+          <ng-content select="[footer]"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div #modal class="modal key-modal modal-dialog" [id]="modalId"
+    [class.modal-default]="convenientToolGroupHeader" [class.mouseMove]="canMouseMove"
+    [class.key-show]="open" [class.modal-lg]="largest" [class.modal-sm]="smallest">
+    <div #modalDialog>
+      <div class="modal-content">
+        <div class="modal-header key-user-select-none">
+          <div *ngIf="canMouseMove" class="modal-header-move" (mousemove)="onModalMouseMove($event)"
+            (mouseup)="onModalMouseUp($event)" (mousedown)="onModalMouseDown($event)"></div>
+          <button class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+            &times;
+          </button>
+          <div class="modal-tool">
+            <ng-content select="[toolBtn]"></ng-content>
+          </div>
+          <h4 class="modal-title">{{header}}</h4>
+          <ng-content select="[tagline]"></ng-content>
+        </div>
+        <div class="modal-body key-flex key-flex-v">
+          <ng-content select="[body]"></ng-content>
+        </div>
+        <div class="modal-footer key-user-select-none" *ngIf="!hiddenFooter">
+          <ng-content select="[footer]"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>

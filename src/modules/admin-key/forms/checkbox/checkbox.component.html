@@ -1,0 +1,6 @@
+<label class="key-checkbox">
+  <input #cb type="checkbox" [id]="id" [checked]="checked" [name]="name" [disabled]="disabled"
+          (click)="onClick($event,cb,true)">
+  <span class="key-checkbox-box"></span>
+  <span class="key-checkbox-label"><ng-content></ng-content></span>
+</label>

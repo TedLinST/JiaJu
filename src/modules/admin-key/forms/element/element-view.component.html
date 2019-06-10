@@ -1,0 +1,25 @@
+<div class="key-flex key-flex-h key-element-view" [class.has-underline]="underlineClass">
+  <label class="view-control-label key-flex-no-shrink key-user-select-none"
+    [style.width]="labelWidth+'px'">
+    {{label}}
+    <ng-template [ngIf]="colon">:</ng-template>
+  </label>
+  <div class="key-flex key-flex-h key-flex-grow-1" style="width: 10px">
+    <div class="key-flex key-flex-no-shrink key-box-h" style="overflow-x: auto">
+      <ng-template [ngIf]="value && !innerHTML">
+        <div class="view-control-value key-elip" [title]="value">
+          {{value}}
+        </div>
+      </ng-template>
+      <ng-template [ngIf]="!value && !innerHTML">
+        <div class="view-control-template">
+          <ng-content></ng-content>
+        </div>
+      </ng-template>
+      <ng-template [ngIf]="innerHTML">
+        <div #innerHTML class="view-control-template box-h">
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

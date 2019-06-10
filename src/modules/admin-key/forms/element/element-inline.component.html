@@ -1,0 +1,9 @@
+<div class="form-group key-flex key-flex-h">
+  <label *ngIf="!hideLabel" class="control-label key-flex-no-shrink" [style.width]="labelWidth+'px'"
+         [class.errorMessage]="error">{{label}}</label>
+  <div class="key-flex key-flex-v key-flex-grow-1">
+    <div class="input-group form-inline key-flex key-flex-grow-1">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

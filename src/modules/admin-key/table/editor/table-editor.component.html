@@ -1,0 +1,37 @@
+<i class="fa fa-edit"></i>
+
+<!--输入框-->
+<input #inputEl class="form-control input-sm" [style.display]="editorType != 'combobox'?'block':'none'"
+       [type]="editorType"
+       [(ngModel)]="value"
+       [formControl]="formControl"
+       [placeholder]="placeholder"
+       [attr.title]="errorMessage"
+       (blur)="onBlur()"
+       (click)="onClick($event,editor.clickEventStopPropagation)"
+       (change)="(realTime ? onChange($event) : undefined);onChangeCustomFunction()"
+       [style.textAlign]="editor.align"
+       [attr.minLength]="editor.minLength"
+       [attr.maxLength]="editor.maxLength"
+       [attr.step]="editor.step"
+       [attr.min]="editor.min"
+       [attr.max]="editor.max"
+       [attr.required]="editor.required">
+       
+<!--下拉框-->
+<select #comboboxEl class="form-control input-sm" [style.display]="editorType == 'combobox'?'block':'none'"
+        [(ngModel)]="value"
+        [formControl]="formControl"
+        [attr.title]="errorMessage"
+        (blur)="onBlur()"
+        (click)="onClick($event,editor.clickEventStopPropagation)"
+        (change)="realTime ? onChange($event) : undefined"
+        [style.textAlign]="editor.align"
+        [required]="editor.required">
+  <!--当不是必填时，显示提示信息-->
+  <option *ngIf="!editor.required" selected value>{{placeholder}}</option>
+  <ng-template ngFor let-item [ngForOf]="comboboxData"  let-index="index">
+    <option [value]="item.id">{{item.text}}</option>
+  </ng-template>
+</select>
+

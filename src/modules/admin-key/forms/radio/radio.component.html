@@ -1,0 +1,5 @@
+<label class="key-radio">
+  <input #cb type="radio" [id]="id" [name]="name" [checked]="checked" (click)="onClick($event)">
+  <span class="key-radio-box"></span>
+  <span class="key-radio-label"><ng-content></ng-content></span>
+</label>

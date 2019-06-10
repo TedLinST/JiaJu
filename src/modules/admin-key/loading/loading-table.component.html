@@ -1,0 +1,13 @@
+<div *ngIf="isLoading" class="key-loading-table key-flex key-box-h key-box-v"
+  [title]="heading" [style.left]="maskZindexLeft + 'px'" [style.top]="maskZindexTop + 'px'">
+  <div class="key-loading-table-dialog key-flex key-flex-v key-flex-grow-1 key-flex-h-center key-flex-v-center">
+    <div class="key-loading-table-content">
+      <i class="fa fa-3x fa-spinner fa-pulse"></i>
+      <label class="title">{{heading}}</label>
+    </div>
+  </div>
+  <!-- 遮罩层 -->
+  <div tabindex="0">
+    <div class="key-loading-table-backdrop key-box-h key-box-v"></div>
+  </div>
+</div>

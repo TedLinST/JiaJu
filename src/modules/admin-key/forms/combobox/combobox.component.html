@@ -1,0 +1,67 @@
+<div #inputDiv class="key-combobox" [ngClass]="{'input-group':!toBoolean(readonly)}"
+  [keyDocumentClick]="clickedOutside">
+  <ng-template [ngIf]="hasPicture && !!urlValue">
+    <!-- 图片 -->
+    <div class="input-group-btn picture-preview">
+      <img #img [src]="urlValue" class="img">
+      <div class="picture-preview-max">
+        <div class="key-flex key-flex-v-center key-flex-h-center key-box-h key-box-v">
+          <img #img [src]="urlValue" style="max-width: 100%;max-height: 100%;">
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <!-- 文本 -->
+  <input #input type="text" class="form-control" autocomplete="off" [id]="id"
+    [value]="textValue" [name]="name" [title]="textValue?textValue:''"
+    [placeholder]="placeholder" [readOnly]="toBoolean(readonly)" (keypress)="onKeyPress($event)"
+    (keydown)="onKeyDown($event)" (keyup)="onKeyUp($event)" (focus)="showOptions()">
+  <div class="input-group-btn key-dowpdown" [ngClass]="{'open':isShowMenu(),'key-hide':toBoolean(readonly)}"
+    style="position:initial">
+    <!--删除按钮-->
+    <button *ngIf="hasDeleteBtn()" type="button" class="key-btn key-btn-default"
+      tabindex="-1" title="删除" (click)="selectOption(null)">
+      <i class="fa fa-remove"></i>
+    </button>
+    <!--刷新-->
+    <button *ngIf="hasRefreshBtn" type="button" class="key-btn key-btn-default"
+      tabindex="-1" title="刷新" (click)="refresh()">
+      <i class="fa fa-refresh"></i>
+    </button>
+    <!--下拉按钮-->
+    <button type="button" class="key-btn key-btn-default dropdown-toggle"
+      tabindex="-1" (click)="input.focus()">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <!--下拉列表框-->
+    <ul #menuUl class="dropdown-menu dropdown-menu-right" style="width:100%">
+      <ng-template ngFor let-option [ngForOf]="toGroupOption(options)" let-i="index">
+        <!--组选项-->
+        <ng-template [ngIf]="option.dummy">
+          <li *ngIf="i != 0" role="separator" class="divider" (click)="input.focus()"></li>
+          <li class="dropdown-header" (click)="input.focus()">{{option.text}}</li>
+        </ng-template>
+        <!--选项-->
+        <ng-template [ngIf]="!option.dummy  && !hasPicture">
+          <li class="ck-dropdown-options" [ngClass]="{'active':isActive(option),'group':!!groupField}"
+            (mouseenter)="active(option)" (click)="clickOption(option);hideOptions();">
+            {{option.text}}
+          </li>
+        </ng-template>
+
+        <!-- 图片选项 -->
+        <ng-template [ngIf]="!option.dummy  && hasPicture">
+          <li class="ck-dropdown-options" [ngClass]="{'active':isActive(option),'group':!!groupField}"
+            (mouseenter)="active(option)" (click)="clickOption(option);hideOptions();">
+            <div class="key-flex key-flex-v key-flex-v-center key-flex-h-center"
+              [style.width]="pictureWidth" [style.height]="pictureHeight" style="display: inline-block;padding: 5px;">
+              <img [src]="option.url" style="max-width: 100%;max-height: 100%;">
+            </div>
+            {{option.text}}
+          </li>
+        </ng-template>
+
+      </ng-template>
+    </ul>
+  </div>
+</div>

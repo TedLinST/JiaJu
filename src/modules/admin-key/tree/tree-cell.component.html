@@ -1,0 +1,2 @@
+<ng-template *ngIf="tree.displayTpl" [ngTemplateOutlet]="tree.displayTpl" [ngTemplateOutletContext]="context"></ng-template>
+<span *ngIf="!tree.displayTpl">{{value}}</span>

@@ -1,0 +1,19 @@
+<div class="key-btn-group key-margin-left-5"
+     [keyDocumentClick]="hasSubButtons()?clickedOutside:null"
+     [ngClass]="classes"
+     [class.dropup]="dropUp && hasSubButtons()"
+     [class.dropdown]="!dropUp && hasSubButtons()"
+     [class.open]="open">
+  <button type="button" class="key-btn key-btn-{{type}} dropdown-toggle"
+          (click)="defaultClick($event)" [disabled]="disabled">
+    <ng-template [ngIf]="icon">
+      <span class="fa fa-{{icon}}" [style.color]="iconColor" [ngClass]="iconColorClass"></span>
+    </ng-template>
+    <ng-template [ngIf]="label">
+      <span [style.paddingLeft]="icon?'.5rem':'0'">{{label}}</span>
+    </ng-template>
+  </button>
+  <ul #menuEl *ngIf="hasSubButtons()" class="dropdown-menu" [ngClass]="{'dropdown-menu-right':dropRight}">
+    <ng-content></ng-content>
+  </ul>
+</div>

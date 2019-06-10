@@ -1,0 +1,28 @@
+<ul #treeUI class="key-tree" *ngIf="data">
+  <li *ngFor="let node of data;let index='index'">
+    <div>
+      <div *ngIf="!node.leaf" 
+        class="folding fa fa-lg" 
+        (click)="node.toggle()" 
+        [class.node-expanded]="node.expanded" 
+        [class.node-collapsed]="!node.expanded">
+      </div>
+      <div *ngIf="node.leaf" class="folding node-leaf"></div>
+      <!-- [href]="getHrefValue(node)" -->
+      <a [id]="node.nodeId" class="node-value" [class.node-selected]="isSelected(node)" 
+        (click)="handleRowClick($event,node)">
+        <key-tree-cell [tree]="tree" 
+        [value]="getDisplayValue(node)" 
+        [index]="index" [row]="node.data"></key-tree-cell>
+      </a>
+    </div>
+
+    <ng-template [ngIf]="!node.leaf && node.expanded">
+      <key-tree [parentTree]="tree" [data]="node.children" 
+      [idField]="idField" [displayField]="displayField" 
+      [hrefField]="hrefField"
+        [autoExpended]="autoExpended" [position]="false">
+      </key-tree>
+    </ng-template>
+  </li>
+</ul>
