@@ -26,6 +26,22 @@
       margin-bottom: 20px;
       border: 1px solid #d9d9d9;
       padding: 10px 20px;
+
+      .left {
+        float: left;
+        width: 85%;
+      }
+
+      .right {
+        float: left;
+        width: 15%;
+
+        img {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+
     }
 
     .message {

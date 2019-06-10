@@ -139,7 +139,6 @@ export const DataSelectedItemsHandler = {
 
   // 列表数据
   LIST_DATA: [
-
     {
       XiangMuMingCheng: '应用于变形家具的新兴五金件研发',
       XiangMuLingYu: '家具材料',
@@ -151,7 +150,12 @@ export const DataSelectedItemsHandler = {
       XiangMuShuoMing: '为解决本公司变形家具外采五金件难以达到实际使用要求，经常出现质量问题的情况，针对性研发耐久度较好的五金产品。',
       XiangMuFaQiJieGou_FaQiRen: '东莞市多维尚书家居有限公司',
       ShouCangShu: 53,
+      LiuLanShu: 53,
       GengXinRiQi: '2019-05-24',
+      FaQiRen: '...',
+      ZhiWei: '...',
+      SuoZaiDi: '...',
+      FaQiRen_SRC: 'assets/imgs/government/zhuanli-1.jpg',
       GongSiJieShao: '...',
       XiangMuGaiShu: '...',
       XiangMuYouShi: '...'
@@ -168,6 +172,7 @@ export const DataSelectedItemsHandler = {
       XiangMuShuoMing: '本人计划在长沙代理马来西亚实木家具科美滋系列产品，有多年家具销售经验，寻合伙人。',
       XiangMuFaQiJieGou_FaQiRen: '张先生',
       ShouCangShu: 11,
+      LiuLanShu: 11,
       GengXinRiQi: '2019-05-24',
       GongSiJieShao: '...',
       XiangMuGaiShu: '...',
@@ -184,6 +189,7 @@ export const DataSelectedItemsHandler = {
       XiangMuShuoMing: '本公司以竹材为主要原材料，目前已经研发出多种不同的竹集成材，主要应用于室内家具的生产，现进入量产阶段，需要进行融资。',
       XiangMuFaQiJieGou_FaQiRen: '湖南桃花江竹材股份有限公司',
       ShouCangShu: 25,
+      LiuLanShu: 25,
       GengXinRiQi: '2019-05-24',
       GongSiJieShao: '...',
       XiangMuGaiShu: '...',
@@ -200,6 +206,7 @@ export const DataSelectedItemsHandler = {
       XiangMuShuoMing: '本公司根据家具市场的实际需求研发了一套富有创造力的引流系统并在3家家居卖场已经试点成功，为支持产品的铺开需要进一步融资60万元。',
       XiangMuFaQiJieGou_FaQiRen: '上海贾宋科技开发有限公司',
       ShouCangShu: 15,
+      LiuLanShu: 15,
       GengXinRiQi: '2019-05-24',
       GongSiJieShao: '...',
       XiangMuGaiShu: '...',
