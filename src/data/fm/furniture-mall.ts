@@ -53,48 +53,56 @@ export const DataFurnitureMallHandler = {
         id: '1',
         data: [
           {
-            title: 'LOGO',
+            title: '索菲亚',
             src: 'assets/imgs/furniture-mall/pinpai-1.jpg'
           },
           {
-            title: 'LOGO',
+            title: '尚品宅配',
             src: 'assets/imgs/furniture-mall/pinpai-2.jpg'
           },
           {
-            title: 'LOGO',
+            title: '欧派',
             src: 'assets/imgs/furniture-mall/pinpai-3.jpg'
           },
           {
-            title: 'LOGO',
+            title: '曲美',
             src: 'assets/imgs/furniture-mall/pinpai-4.jpg'
           },
           {
-            title: 'LOGO',
+            title: '全友',
             src: 'assets/imgs/furniture-mall/pinpai-3.jpg'
           },
           {
-            title: 'LOGO',
+            title: '美克美家',
             src: 'assets/imgs/furniture-mall/pinpai-4.jpg'
           },
           {
-            title: 'LOGO',
+            title: '红苹果',
             src: 'assets/imgs/furniture-mall/pinpai-1.jpg'
           },
           {
-            title: 'LOGO',
+            title: '顾家',
             src: 'assets/imgs/furniture-mall/pinpai-2.jpg'
           },
+          // {
+          //   title: '仁豪',
+          //   src: 'assets/imgs/furniture-mall/pinpai-1.jpg'
+          // },
+          // {
+          //   title: '皇朝',
+          //   src: 'assets/imgs/furniture-mall/pinpai-2.jpg'
+          // },
         ]
       },
       {
         id: '2',
         data: [
           {
-            title: 'LOGO',
+            title: '仁豪',
             src: 'assets/imgs/furniture-mall/pinpai-1.jpg'
           },
           {
-            title: 'LOGO',
+            title: '皇朝',
             src: 'assets/imgs/furniture-mall/pinpai-2.jpg'
           },
           {
@@ -163,35 +171,35 @@ export const DataFurnitureMallHandler = {
         id: '1',
         data: [
           {
-            title: '店铺名称',
+            title: '林氏木业官方旗舰店',
             src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
           },
           {
-            title: '店铺名称',
+            title: '全友家居旗舰店',
             src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
           },
           {
-            title: '店铺名称',
+            title: '顾家家居旗舰店',
             src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
           },
           {
-            title: '店铺名称',
+            title: '慕斯寝具华晨专卖店',
             src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
           },
           {
-            title: '店铺名称',
+            title: '索菲亚官方旗舰店',
             src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
           },
           {
-            title: '店铺名称',
+            title: 'Harbor House专卖店',
             src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
           },
           {
-            title: '店铺名称',
+            title: '掌上明珠线上直销店',
             src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
           },
           {
-            title: '店铺名称',
+            title: '尚品宅配官方旗舰店',
             src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
           },
           {
@@ -199,56 +207,56 @@ export const DataFurnitureMallHandler = {
             src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
           },
           {
-            title: '店铺名称',
+            title: '芝华仕头等舱沙发专卖店',
             src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
           }
         ]
       },
-      {
-        id: '2',
-        data: [
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
-          }
-        ]
-      }
+      // {
+      //   id: '2',
+      //   data: [
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
+      //     },
+      //     {
+      //       title: '店铺名称',
+      //       src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
+      //     }
+      //   ]
+      // }
     ]
   },
 
