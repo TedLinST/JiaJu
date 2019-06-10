@@ -28,28 +28,28 @@ export const DataFurnitureMallHandler = {
       {
         id: '1',
         data: [
-          {
+          { //最新众筹项目滚动
             ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
             ChanPinPinLei: '儿童产品',
             ChanPinJiaGe: 4380,
             src: 'assets/imgs/furniture-mall/zhongchou-1.jpg'
           },
-          {
-            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
-            ChanPinPinLei: '儿童产品',
-            ChanPinJiaGe: 4380,
+          { //最新众筹项目滚动
+            ChanPinBiaoTi: '【设计师独白】原创徽派新中式，为新中式家具助力！',
+            ChanPinPinLei: '书椅',
+            ChanPinJiaGe: 999,
             src: 'assets/imgs/furniture-mall/zhongchou-2.jpg'
           },
-          {
-            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+          { //最新众筹项目滚动
+            ChanPinBiaoTi: '忠于孩子的设计-可爱环保儿童家具',
             ChanPinPinLei: '儿童产品',
-            ChanPinJiaGe: 4380,
+            ChanPinJiaGe: 599,
             src: 'assets/imgs/furniture-mall/zhongchou-3.jpg'
           },
-          {
-            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
-            ChanPinPinLei: '儿童产品',
-            ChanPinJiaGe: 4380,
+          { //最新众筹项目滚动
+            ChanPinBiaoTi: '传承明式传统工艺 榫卯结构 缅甸花梨方凳',
+            ChanPinPinLei: '餐椅',
+            ChanPinJiaGe: 2300,
             src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
           },
         ]
@@ -57,49 +57,23 @@ export const DataFurnitureMallHandler = {
       {
         id: '2',
         data: [
-          {
-            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
-            ChanPinPinLei: '儿童产品',
-            ChanPinJiaGe: 4380,
-            src: 'assets/imgs/furniture-mall/zhongchou-1.jpg'
+          { //热门众筹
+            ChanPinBiaoTi: '铜师傅 铜木主义 塞尚卧室家具',
+            ChanPinPinLei: '床',
+            ChanPinJiaGe: 6699,
+            // 众筹完成率：168%
+            src: 'assets/imgs/furniture-mall/zhongchou-5.jpg'
           },
-          {
-            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
-            ChanPinPinLei: '儿童产品',
-            ChanPinJiaGe: 4380,
-            src: 'assets/imgs/furniture-mall/zhongchou-2.jpg'
-          },
-          {
-            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
-            ChanPinPinLei: '儿童产品',
-            ChanPinJiaGe: 4380,
-            src: 'assets/imgs/furniture-mall/zhongchou-3.jpg'
-          },
-          {
-            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
-            ChanPinPinLei: '儿童产品',
-            ChanPinJiaGe: 4380,
-            src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
-          },
+          { //热门众筹
+            ChanPinBiaoTi: '一张可以鲜活空间的高颜值茶台',
+            ChanPinPinLei: '茶几',
+            ChanPinJiaGe: 3999,
+            // 众筹完成率：89%
+            src: 'assets/imgs/furniture-mall/zhongchou-6.jpg'
+          }
         ]
       },
 
-      // {
-      //   title: '标题',
-      //   src: 'assets/imgs/furniture-mall/zhongchou-1.jpg'
-      // },
-      // {
-      //   title: '标题',
-      //   src: 'assets/imgs/furniture-mall/zhongchou-2.jpg'
-      // },
-      // {
-      //   title: '标题',
-      //   src: 'assets/imgs/furniture-mall/zhongchou-3.jpg'
-      // },
-      // {
-      //   title: '标题',
-      //   src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
-      // }
     ]
   },
 
@@ -129,67 +103,43 @@ export const DataFurnitureMallHandler = {
           },
           {
             title: '全友',
-            src: 'assets/imgs/furniture-mall/pinpai-3.jpg'
+            src: 'assets/imgs/furniture-mall/pinpai-5.jpg'
           },
           {
             title: '美克美家',
-            src: 'assets/imgs/furniture-mall/pinpai-4.jpg'
+            src: 'assets/imgs/furniture-mall/pinpai-6.jpg'
           },
           {
             title: '红苹果',
-            src: 'assets/imgs/furniture-mall/pinpai-1.jpg'
+            src: 'assets/imgs/furniture-mall/pinpai-7.jpg'
           },
           {
             title: '顾家',
-            src: 'assets/imgs/furniture-mall/pinpai-2.jpg'
+            src: 'assets/imgs/furniture-mall/pinpai-8.jpg'
           },
-          // {
-          //   title: '仁豪',
-          //   src: 'assets/imgs/furniture-mall/pinpai-1.jpg'
-          // },
-          // {
-          //   title: '皇朝',
-          //   src: 'assets/imgs/furniture-mall/pinpai-2.jpg'
-          // },
-        ]
-      },
-      {
-        id: '2',
-        data: [
           {
             title: '仁豪',
-            src: 'assets/imgs/furniture-mall/pinpai-1.jpg'
+            src: 'assets/imgs/furniture-mall/pinpai-9.jpg'
           },
           {
             title: '皇朝',
-            src: 'assets/imgs/furniture-mall/pinpai-2.jpg'
+            src: 'assets/imgs/furniture-mall/pinpai-10.jpg'
           },
-          {
-            title: 'LOGO',
-            src: 'assets/imgs/furniture-mall/pinpai-3.jpg'
-          },
-          {
-            title: 'LOGO',
-            src: 'assets/imgs/furniture-mall/pinpai-4.jpg'
-          },
-          {
-            title: 'LOGO',
-            src: 'assets/imgs/furniture-mall/pinpai-1.jpg'
-          },
-          {
-            title: 'LOGO',
-            src: 'assets/imgs/furniture-mall/pinpai-2.jpg'
-          },
-          {
-            title: 'LOGO',
-            src: 'assets/imgs/furniture-mall/pinpai-3.jpg'
-          },
-          {
-            title: 'LOGO',
-            src: 'assets/imgs/furniture-mall/pinpai-4.jpg'
-          }
         ]
-      }
+      },
+      // {
+      //   id: '2',
+      //   data: [
+      //     {
+      //       title: '仁豪',
+      //       src: 'assets/imgs/furniture-mall/pinpai-9.jpg'
+      //     },
+      //     {
+      //       title: '皇朝',
+      //       src: 'assets/imgs/furniture-mall/pinpai-10.jpg'
+      //     }
+      //   ]
+      // }
     ]
   },
 
@@ -201,59 +151,54 @@ export const DataFurnitureMallHandler = {
       {
         id: '1',
         data: [
-          {
+          { //热门团购滚动
             ChanPinPinLei: '沙发',
             PinPai: '林氏木业',
             JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-1.jpg'
+          },
+          { //热门团购滚动
+            ChanPinPinLei: '电视柜',
+            PinPai: '段氏木业',
+            JiaGe: 398,
             src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
           },
-          {
-            ChanPinPinLei: '沙发',
-            PinPai: '林氏木业',
-            JiaGe: 3540,
-            src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+          { //热门团购滚动
+            ChanPinPinLei: '床头柜',
+            PinPai: '源氏木语',
+            JiaGe: 400,
+            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
           },
-          {
-            ChanPinPinLei: '沙发',
-            PinPai: '林氏木业',
+          { //热门团购
+            ChanPinPinLei: '床',
+            PinPai: '3339',
             JiaGe: 3540,
-            src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
-          },
-          {
-            ChanPinPinLei: '沙发',
-            PinPai: '林氏木业',
-            JiaGe: 3540,
-            src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+            src: 'assets/imgs/furniture-mall/tuangou-4.jpg'
           },
         ]
       },
       {
         id: '2',
         data: [
-          {
+          { //热门团购
+            ChanPinPinLei: '茶几',
+            PinPai: '林氏木业',
+            JiaGe: 250,
+            src: 'assets/imgs/furniture-mall/tuangou-5.jpg'
+          },
+          { //热门团购
             ChanPinPinLei: '沙发',
             PinPai: '林氏木业',
-            JiaGe: 3540,
-            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
+            JiaGe: 999,
+            src: 'assets/imgs/furniture-mall/tuangou-6.jpg'
           },
-          {
-            ChanPinPinLei: '沙发',
-            PinPai: '林氏木业',
-            JiaGe: 3540,
-            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
+          { //热门团购
+            ChanPinPinLei: '床头柜',
+            PinPai: '源氏木语',
+            JiaGe: 1080,
+            src: 'assets/imgs/furniture-mall/tuangou-7.jpg'
           },
-          {
-            ChanPinPinLei: '沙发',
-            PinPai: '林氏木业',
-            JiaGe: 3540,
-            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
-          },
-          {
-            ChanPinPinLei: '沙发',
-            PinPai: '林氏木业',
-            JiaGe: 3540,
-            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
-          },
+          
         ]
       }
     ]
@@ -289,71 +234,27 @@ export const DataFurnitureMallHandler = {
           },
           {
             title: 'Harbor House专卖店',
-            src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
+            src: 'assets/imgs/furniture-mall/dianpu-6.jpg',
           },
           {
-            title: '掌上明珠线上直销店',
-            src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
+            title: '曲美家居旗舰店',
+            src: 'assets/imgs/furniture-mall/dianpu-7.jpg',
+          },
+          {
+            title: '掌上明珠线上直销',
+            src: 'assets/imgs/furniture-mall/dianpu-8.jpg',
           },
           {
             title: '尚品宅配官方旗舰店',
-            src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
-          },
-          {
-            title: '店铺名称',
-            src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
+            src: 'assets/imgs/furniture-mall/dianpu-9.jpg',
           },
           {
             title: '芝华仕头等舱沙发专卖店',
-            src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
+            src: 'assets/imgs/furniture-mall/dianpu-10.jpg',
           }
         ]
       },
-      // {
-      //   id: '2',
-      //   data: [
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-1.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-2.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-3.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-4.jpg',
-      //     },
-      //     {
-      //       title: '店铺名称',
-      //       src: 'assets/imgs/furniture-mall/dianpu-5.jpg',
-      //     }
-      //   ]
-      // }
+      
     ]
   },
 
