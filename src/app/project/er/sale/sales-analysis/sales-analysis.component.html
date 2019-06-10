@@ -1,0 +1,174 @@
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table title="款式分析表" [data]="listData" [canRefreshBtn]="false"
+    [(selection)]="selection" style="width:10px;">
+    <div header>
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="add()">增加</button>
+        <button class="key-btn key-btn-default" (click)="view()"
+          [disabled]="!!!selection">修改</button>
+        <button class="key-btn key-btn-default" (click)="delete()"
+          [disabled]="!!!selection">删除</button>
+      </div>
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="openExamine()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">审核</button>
+        <button class="key-btn key-btn-default" (click)="openApproval()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenPiRen)">审批</button>
+      </div>
+    </div>
+    <key-table-column heading="单据编号" width="120" key="DanJuBianHao" sortable>
+    </key-table-column>
+    <key-table-column heading="年度" width="100" key="NianDu" sortable>
+    </key-table-column>
+    <key-table-column heading="季度" width="100" key="JiDu" sortable>
+    </key-table-column>
+    <key-table-column heading="销售分类" width="120" key="XiaoShouFenLei" sortable>
+    </key-table-column>
+    <key-table-column heading="制表人" width="100" key="ZhiBiaoRen" sortable>
+    </key-table-column>
+    <key-table-column heading="制表日期" width="100" key="ZhiBiaoRiQi" sortable>
+    </key-table-column>
+    <key-table-column heading="审核" align="center">
+      <key-table-column heading="审核状态" width="100" key="ShenHeZhuangTai"
+        sortable>
+      </key-table-column>
+      <key-table-column heading="审核人" width="100" key="ShenHeRen" sortable>
+      </key-table-column>
+      <key-table-column heading="审核日期" width="100" key="ShenHeRiQi" sortable>
+      </key-table-column>
+    </key-table-column>
+    <key-table-column heading="审批" align="center">
+      <key-table-column heading="审批状态" width="100" key="ShenPiZhuangTai"
+        sortable>
+      </key-table-column>
+      <key-table-column heading="审批人" width="100" key="ShenPiRen" sortable>
+      </key-table-column>
+      <key-table-column heading="审批日期" width="100" key="ShenPiRiQi" sortable>
+      </key-table-column>
+    </key-table-column>
+  </key-table>
+</div>
+
+<key-modal *ngIf="beanState" header="款式分析信息" [open]="true"
+  class="key-modal-basis" (close)="cancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="单据编号" [error]="bean_DanJuBianHao.errors">
+          <input #bean_DanJuBianHao="ngModel" type="text" class="form-control"
+            name="bean.DanJuBianHao" [(ngModel)]="bean.DanJuBianHao" required>
+        </key-form-element>
+        <key-form-element label="年度" [error]="bean_NianDu.errors">
+          <input #bean_NianDu="ngModel" type="text" class="form-control"
+            name="bean.NianDu" [(ngModel)]="bean.NianDu" required>
+        </key-form-element>
+        <key-form-element label="季度" [error]="bean_JiDu.errors">
+          <input #bean_JiDu="ngModel" type="text" class="form-control"
+            name="bean.JiDu" [(ngModel)]="bean.JiDu" required>
+        </key-form-element>
+        <key-form-element label="销售分类" [error]="bean_XiaoShouFenLei.errors">
+          <input #bean_XiaoShouFenLei="ngModel" type="text" class="form-control"
+            name="bean.XiaoShouFenLei" [(ngModel)]="bean.XiaoShouFenLei"
+            required>
+        </key-form-element>
+        <key-form-element label="制表人" [error]="bean_ZhiBiaoRen.errors">
+          <input #bean_ZhiBiaoRen="ngModel" type="text" class="form-control"
+            name="bean.ZhiBiaoRen" [(ngModel)]="bean.ZhiBiaoRen" required>
+        </key-form-element>
+        <key-form-element label="制表日期" [error]="bean_ZhiBiaoRiQi.errors">
+          <input #bean_ZhiBiaoRiQi="ngModel" type="date" class="form-control"
+            name="bean.ZhiBiaoRiQi" [(ngModel)]="bean.ZhiBiaoRiQi" required>
+        </key-form-element>
+        <!-- <key-form-element label="审核状态" [error]="bean_ShenHeZhuangTai.errors">
+          <input #bean_ShenHeZhuangTai="ngModel" type="text"
+            class="form-control" name="bean.ShenHeZhuangTai"
+            [(ngModel)]="bean.ShenHeZhuangTai">
+        </key-form-element>
+        <key-form-element label="审核人" [error]="bean_ShenHeRen.errors">
+          <input #bean_ShenHeRen="ngModel" type="text" class="form-control"
+            name="bean.ShenHeRen" [(ngModel)]="bean.ShenHeRen">
+        </key-form-element>
+        <key-form-element label="审核日期" [error]="bean_ShenHeRiQi.errors">
+          <input #bean_ShenHeRiQi="ngModel" type="date" class="form-control"
+            name="bean.ShenHeRiQi" [(ngModel)]="bean.ShenHeRiQi">
+        </key-form-element>
+        <key-form-element label="审批状态" [error]="bean_ShenPiZhuangTai.errors">
+          <input #bean_ShenPiZhuangTai="ngModel" type="text"
+            class="form-control" name="bean.ShenPiZhuangTai"
+            [(ngModel)]="bean.ShenPiZhuangTai">
+        </key-form-element>
+        <key-form-element label="审批人" [error]="bean_ShenPiRen.errors">
+          <input #bean_ShenPiRen="ngModel" type="text" class="form-control"
+            name="bean.ShenPiRen" [(ngModel)]="bean.ShenPiRen">
+        </key-form-element>
+        <key-form-element label="审批日期" [error]="bean_ShenPiRiQi.errors">
+          <input #bean_ShenPiRiQi="ngModel" type="date" class="form-control"
+            name="bean.ShenPiRiQi" [(ngModel)]="bean.ShenPiRiQi">
+        </key-form-element> -->
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default" (click)="cancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()"
+      [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>
+
+<key-modal *ngIf="examineState" header="审核" [open]="true"
+  class="key-modal-basis" (close)="examineCancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="审核状态" [error]="bean_ShenHeZhuangTai.errors">
+          <input #bean_ShenHeZhuangTai="ngModel" type="text"
+            class="form-control" name="bean.ShenHeZhuangTai"
+            [(ngModel)]="bean.ShenHeZhuangTai" required>
+        </key-form-element>
+        <key-form-element label="审核人" [error]="bean_ShenHeRen.errors">
+          <input #bean_ShenHeRen="ngModel" type="text" class="form-control"
+            name="bean.ShenHeRen" [(ngModel)]="bean.ShenHeRen" required>
+        </key-form-element>
+        <key-form-element label="审核日期" [error]="bean_ShenHeRiQi.errors">
+          <input #bean_ShenHeRiQi="ngModel" type="date" class="form-control"
+            name="bean.ShenHeRiQi" [(ngModel)]="bean.ShenHeRiQi" required>
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default"
+      (click)="examineCancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()"
+      [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>
+
+<key-modal *ngIf="approvalState" header="审批" [open]="true"
+  class="key-modal-basis" (close)="approvalCancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="审批状态" [error]="bean_ShenPiZhuangTai.errors">
+          <input #bean_ShenPiZhuangTai="ngModel" type="text"
+            class="form-control" name="bean.ShenPiZhuangTai"
+            [(ngModel)]="bean.ShenPiZhuangTai" required>
+        </key-form-element>
+        <key-form-element label="审批人" [error]="bean_ShenPiRen.errors">
+          <input #bean_ShenPiRen="ngModel" type="text" class="form-control"
+            name="bean.ShenPiRen" [(ngModel)]="bean.ShenPiRen" required>
+        </key-form-element>
+        <key-form-element label="审批日期" [error]="bean_ShenPiRiQi.errors">
+          <input #bean_ShenPiRiQi="ngModel" type="date" class="form-control"
+            name="bean.ShenPiRiQi" [(ngModel)]="bean.ShenPiRiQi" required>
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default"
+      (click)="approvalCancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()"
+      [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>
