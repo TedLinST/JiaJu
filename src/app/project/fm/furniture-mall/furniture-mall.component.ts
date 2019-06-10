@@ -25,6 +25,36 @@ export class FurnitureMallComponent implements OnInit {
   // 数据助手
   dataHandler: any;
 
+  maskLabelArray: any[] = [
+    {
+      title: "产品品类",
+      key: 'ChanPinPinLei'
+    },
+    {
+      title: "品牌",
+      key: 'PinPai'
+    },
+    {
+      title: "价格",
+      key: 'JiaGe'
+    }
+  ];
+
+  maskLabelArrayCC: any[] = [
+    {
+      title: "产品标题",
+      key: 'ChanPinBiaoTi'
+    },
+    {
+      title: "产品品类",
+      key: 'ChanPinPinLei'
+    },
+    {
+      title: "产品价格",
+      key: 'ChanPinJiaGe'
+    }
+  ];
+
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
   }

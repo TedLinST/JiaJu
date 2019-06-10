@@ -26,21 +26,80 @@ export const DataFurnitureMallHandler = {
     enTitle: 'CROWDFUNDING CHANNEL',
     data: [
       {
-        title: '标题',
-        src: 'assets/imgs/furniture-mall/zhongchou-1.jpg'
+        id: '1',
+        data: [
+          {
+            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+            ChanPinPinLei: '儿童产品',
+            ChanPinJiaGe: 4380,
+            src: 'assets/imgs/furniture-mall/zhongchou-1.jpg'
+          },
+          {
+            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+            ChanPinPinLei: '儿童产品',
+            ChanPinJiaGe: 4380,
+            src: 'assets/imgs/furniture-mall/zhongchou-2.jpg'
+          },
+          {
+            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+            ChanPinPinLei: '儿童产品',
+            ChanPinJiaGe: 4380,
+            src: 'assets/imgs/furniture-mall/zhongchou-3.jpg'
+          },
+          {
+            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+            ChanPinPinLei: '儿童产品',
+            ChanPinJiaGe: 4380,
+            src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
+          },
+        ]
       },
       {
-        title: '标题',
-        src: 'assets/imgs/furniture-mall/zhongchou-2.jpg'
+        id: '2',
+        data: [
+          {
+            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+            ChanPinPinLei: '儿童产品',
+            ChanPinJiaGe: 4380,
+            src: 'assets/imgs/furniture-mall/zhongchou-1.jpg'
+          },
+          {
+            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+            ChanPinPinLei: '儿童产品',
+            ChanPinJiaGe: 4380,
+            src: 'assets/imgs/furniture-mall/zhongchou-2.jpg'
+          },
+          {
+            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+            ChanPinPinLei: '儿童产品',
+            ChanPinJiaGe: 4380,
+            src: 'assets/imgs/furniture-mall/zhongchou-3.jpg'
+          },
+          {
+            ChanPinBiaoTi: '忠于孩子的设计 - 小鬼当家小弧度儿童家具',
+            ChanPinPinLei: '儿童产品',
+            ChanPinJiaGe: 4380,
+            src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
+          },
+        ]
       },
-      {
-        title: '标题',
-        src: 'assets/imgs/furniture-mall/zhongchou-3.jpg'
-      },
-      {
-        title: '标题',
-        src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
-      }
+
+      // {
+      //   title: '标题',
+      //   src: 'assets/imgs/furniture-mall/zhongchou-1.jpg'
+      // },
+      // {
+      //   title: '标题',
+      //   src: 'assets/imgs/furniture-mall/zhongchou-2.jpg'
+      // },
+      // {
+      //   title: '标题',
+      //   src: 'assets/imgs/furniture-mall/zhongchou-3.jpg'
+      // },
+      // {
+      //   title: '标题',
+      //   src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
+      // }
     ]
   },
 
@@ -132,24 +191,62 @@ export const DataFurnitureMallHandler = {
     enTitle: 'FURNITURE GROUP PURCHASE',
     data: [
       {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+        id: '1',
+        data: [
+          {
+            ChanPinPinLei: '沙发',
+            PinPai: '林氏木业',
+            JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+          },
+          {
+            ChanPinPinLei: '沙发',
+            PinPai: '林氏木业',
+            JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+          },
+          {
+            ChanPinPinLei: '沙发',
+            PinPai: '林氏木业',
+            JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+          },
+          {
+            ChanPinPinLei: '沙发',
+            PinPai: '林氏木业',
+            JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
+          },
+        ]
       },
       {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
-      },
-      {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/tuangou-2.jpg'
-      },
-      {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
+        id: '2',
+        data: [
+          {
+            ChanPinPinLei: '沙发',
+            PinPai: '林氏木业',
+            JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
+          },
+          {
+            ChanPinPinLei: '沙发',
+            PinPai: '林氏木业',
+            JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
+          },
+          {
+            ChanPinPinLei: '沙发',
+            PinPai: '林氏木业',
+            JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
+          },
+          {
+            ChanPinPinLei: '沙发',
+            PinPai: '林氏木业',
+            JiaGe: 3540,
+            src: 'assets/imgs/furniture-mall/tuangou-3.jpg'
+          },
+        ]
       }
     ]
   },

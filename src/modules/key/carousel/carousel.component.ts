@@ -28,11 +28,14 @@ export class CarouselComponent implements OnInit {
   // 主体背景
   @Input() isBodyBg = true;
 
-  // 字段数组 {label:'',key:'',unit:''}
+  // 字段数组 {title:'',key:'',unit:''}
   @Input() labelArray: KeyCarouselLabelEvent[] = [];
 
   // 遮罩模式
   @Input() maskMode = false;
+
+  // 遮罩模式下，显示字段[{title:"label1",key:"label2"}]
+  @Input() maskLabelArray: any[] = [];
 
   // 行数
   @Input() rowArray = [0];
