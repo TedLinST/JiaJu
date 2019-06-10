@@ -152,7 +152,6 @@ export const DataSelectedItemsHandler = {
       ShouCangShu: 53,
       LiuLanShu: 53,
       GengXinRiQi: '2019-05-24',
-      FaQiRen: '...',
       ZhiWei: '...',
       SuoZaiDi: '...',
       FaQiRen_SRC: 'assets/imgs/government/zhuanli-1.jpg',
@@ -160,7 +159,6 @@ export const DataSelectedItemsHandler = {
       XiangMuGaiShu: '...',
       XiangMuYouShi: '...'
     },
-
     {
       XiangMuMingCheng: '长沙代理科美滋实木家具产品',
       XiangMuLingYu: '家具销售',
