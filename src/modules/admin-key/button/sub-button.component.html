@@ -1,0 +1,16 @@
+<li [keyDocumentClick]="hasSubButtons()?clickedOutside:null"
+    [class.dropdown-submenu]="hasSubButtons()"
+    [class.open]="open"
+    [ngClass]="classes">
+  <a (click)="defaultClick($event)" draggable="false" title="">
+    <ng-template [ngIf]="icon">
+      <i class="fa fa-{{icon}}" [style.color]="iconColor" [ngClass]="iconColorClass"></i>
+    </ng-template>
+    <ng-template [ngIf]="label">
+      <span [style.paddingLeft]="icon?'.5rem':'0'" [class.text-disabled]="disabled">{{label}}</span>
+    </ng-template>
+  </a>
+  <ul *ngIf="hasSubButtons()" class="dropdown-menu">
+    <ng-content></ng-content>
+  </ul>
+</li>

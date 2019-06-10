@@ -1,0 +1,7 @@
+<div class="form-group key-flex key-flex-h" [class.has-error]="error">
+  <label class="control-label key-flex-no-shrink key-user-select-none" [style.width]="labelWidth+'px'">{{label}}</label>
+  <div class="key-flex key-flex-v key-flex-grow-1">
+    <ng-content></ng-content>
+    <span class="errorMessage key-flex-no-shrink key-user-select-none" *ngIf="error">{{errorMsg(error)}}</span>
+  </div>
+</div>

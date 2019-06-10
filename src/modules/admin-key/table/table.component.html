@@ -1,0 +1,175 @@
+<div title="" class="key-flex-grow-1 key-flex key-flex-v key-table"
+  [class.key-max-panel]="maxmizingMode">
+  <!--顶部工具栏-->
+  <div *ngIf="!headerHidden" class="key-flex key-flex-h key-flex-no-shrink key-user-select-none top-toolbar">
+    <!--标题-->
+    <div *ngIf="title" class="title-text key-flex-no-shrink">{{title}}</div>
+    <!--自定义工具栏-->
+    <div class="key-flex-grow-1" [style.textAlign]="title?'right':'left'" style="padding-right: 5px;">
+      <ng-content select="[header]"></ng-content>
+    </div>
+    <!--基本工具栏-->
+    <div *ngIf="!toolsHidden" class="key-flex-no-shrink" style="text-align: right;">
+      <div *ngIf="!toolsReduce" class="key-btn-group">
+        <!--全屏显示按钮-->
+        <!-- <button *ngIf="canMaxmizing" type="button" class="key-btn key-btn-default"
+          title="全屏显示" (click)="toggleMaxmizingMode()" [class.key-btn-primary]="maxmizingMode">
+          <span class="fa fa-arrows-alt"></span>
+        </button> -->
+        <!--多选模式按钮-->
+        <button *ngIf="canMultipleSelect" type="button" class="key-btn key-btn-default"
+          title="多选模式" (click)="toggleSelectionMode()" [class.key-btn-primary]="multipleSelectionMode">
+          <span class="fa fa-list"></span>
+        </button>
+        <!--全选模式组-->
+        <ng-template [ngIf]="canSelectAll && isRowSelectModel() && multipleSelectionMode">
+          <button type="button" class="key-btn key-btn-default" title="全部选中"
+            (click)="selectAll()">
+            <span class="fa fa-check-square-o"></span>
+          </button>
+          <button type="button" class="key-btn key-btn-default" title="取消全选"
+            (click)="unselectAll()">
+            <span class="fa fa-square-o"></span>
+          </button>
+        </ng-template>
+        <!--编辑模式按钮-->
+        <button *ngIf="hasEditorBtn" type="button" title="编辑模式" class="key-btn key-btn-default"
+          (click)="toggleEditor()" [class.key-btn-primary]="isEditing">
+          <span class="fa fa-pencil"></span>
+        </button>
+        <!--高级筛选按钮-->
+        <button *ngIf="hasFilterBtn" type="button" title="高级筛选" class="key-btn key-btn-default"
+          (click)="toggleQuery()" [class.key-btn-primary]="isQuery">
+          <span class="fa fa-filter"></span>
+        </button>
+        <!--刷新按钮-->
+        <button *ngIf="canRefreshBtn" type="button" title="刷新按钮" class="key-btn key-btn-default"
+          (click)="onRefresh()">
+          <span class="fa fa-refresh"></span>
+        </button>
+      </div>
+      <!--工具箱按钮-->
+      <key-button icon="cog" dropRight="true" [dropUp]="dropUp" title="工具箱">
+        <!--显示精减工具-->
+        <ng-template [ngIf]="toolsReduce">
+          <key-sub-button *ngIf="canMaxmizing" icon="arrows-alt"
+            [iconColorClass]="maxmizingMode?'text-primary':''" label="全屏显示"
+            (clickEvent)="toggleMaxmizingMode()"></key-sub-button>
+          <key-sub-button *ngIf="canMultipleSelect" icon="list"
+            [iconColorClass]="multipleSelectionMode?'text-primary':''" label="多选模式"
+            (clickEvent)="toggleSelectionMode()"></key-sub-button>
+          <ng-template [ngIf]="canSelectAll && isRowSelectModel() && multipleSelectionMode">
+            <key-sub-button icon="check-square-o" label="全部选中" (clickEvent)="selectAll()"></key-sub-button>
+            <key-sub-button icon="square-o" label="取消全选" (clickEvent)="unselectAll()"></key-sub-button>
+          </ng-template>
+          <key-sub-button *ngIf="hasEditorBtn" icon="pencil" [iconColorClass]="isEditing?'key-text-primary':''"
+            label="编辑模式" (clickEvent)="toggleEditor()"></key-sub-button>
+          <key-sub-button *ngIf="hasFilterBtn" icon="filter" [iconColorClass]="isQuery?'key-text-primary':''"
+            label="高级筛选" (clickEvent)="toggleQuery()"></key-sub-button>
+          <key-sub-button *ngIf="canRefreshBtn" icon="refresh" label="刷新"
+            (clickEvent)="onRefresh()"></key-sub-button>
+        </ng-template>
+        <!--列控制（四级）-->
+        <key-sub-button icon="check-square-o" label="列控制">
+          <!--一级-->
+          <ng-template ngFor let-colsss [ngForOf]="columnsOriginal">
+            <key-sub-button [icon]="colsss.childColumns? 'table' : colsss.hidden?'square-o':'check-square-o'"
+              [label]="colsss.heading" (click)="toggleColumnHidden(colsss)">
+              <ng-template [ngIf]="colsss.childColumns">
+                <key-sub-button-header>{{colsss.heading}}</key-sub-button-header>
+                <key-sub-button-line [styles]="{'margin-top': '3px;'}"></key-sub-button-line>
+                <!--二级-->
+                <ng-template ngFor let-colss [ngForOf]="colsss.childColumns">
+                  <key-sub-button [icon]="colss.childColumns? 'table' :colss.hidden?'square-o':'check-square-o'"
+                    [label]="colss.heading" (click)="toggleColumnHidden(colss)">
+                    <ng-template [ngIf]="colss.childColumns">
+                      <key-sub-button-header>{{colss.heading}}</key-sub-button-header>
+                      <key-sub-button-line [styles]="{'margin-top': '3px;'}"></key-sub-button-line>
+                      <!--三级-->
+                      <ng-template ngFor let-cols [ngForOf]="colss.childColumns">
+                        <key-sub-button [icon]="cols.childColumns? 'table' :cols.hidden?'square-o':'check-square-o'"
+                          [label]="cols.heading" (click)="toggleColumnHidden(cols)">
+                          <ng-template [ngIf]="cols.childColumns">
+                            <key-sub-button-header>{{cols.heading}}</key-sub-button-header>
+                            <key-sub-button-line [styles]="{'margin-top': '3px;'}"></key-sub-button-line>
+                            <!--四级-->
+                            <ng-template ngFor let-col [ngForOf]="cols.childColumns">
+                              <key-sub-button [icon]="col.hidden?'square-o':'check-square-o'"
+                                [label]="col.heading" (click)="toggleColumnHidden(col)">
+                              </key-sub-button>
+                            </ng-template>
+                          </ng-template>
+                        </key-sub-button>
+                      </ng-template>
+                    </ng-template>
+                  </key-sub-button>
+                </ng-template>
+              </ng-template>
+            </key-sub-button>
+          </ng-template>
+        </key-sub-button>
+      </key-button>
+    </div>
+  </div>
+  <!--主体表格-->
+  <div class="key-flex-grow-1 key-flex key-flex-h" style="position: relative;">
+    <ng-template [ngIf]="!customMode">
+      <key-table-inner #rightTable [selectModel]="selectModel" [idField]="idField"
+        [columnsFormat]="columnsFormat" [columnsBottomFormat]="columnsBottomFormat"
+        [data]="dataToRender" [selection]="selection" [summary]="summary"
+        [editingRealTime]="editingRealTime" [headerLevel]="headerLevel"
+        [hasEmptyColumn]="hasEmptyColumn" [updateEmptyColumn]="updateEmptyColumn"
+        [hasSerialNumber]="(columnsBottomFormat.length > 0)?hasSerialNumber:false"
+        [paginator]="paginator" [pageStartRow]="pageStartRow" [loadingSwitch]="loadingSwitch"
+        (sortChange)="onColumnSort($event)" (cellClick)="selectEnable?onCellClick($event):''"></key-table-inner>
+    </ng-template>
+    <!-- 自定义模式 -->
+    <ng-template [ngIf]="customMode">
+      <ng-content select="[customMode]"></ng-content>
+    </ng-template>
+
+    <!--高级查询-->
+    <div class="key-flex key-flex-v key-filter-container key-flex-no-shrink "
+      [class.key-hide]="!isQuery">
+      <div class="key-btn-group key-filter-header">
+        <div class="key-btn-group">
+          <button type="button" class="key-btn key-btn-default key-btn-fluid"
+            (click)="filterData()">筛选</button>
+        </div>
+        <div class="key-btn-group">
+          <button type="button" class="key-btn key-btn-default key-btn-fluid"
+            (click)="filterCancel()">取消</button>
+        </div>
+      </div>
+      <div class="key-flex-grow-1 key-filter-body">
+        <ng-template ngFor let-col [ngForOf]="columnsBottomFormat">
+          <key-table-filter *ngIf="col.filter" [column]="col" [filter]="col.filter"></key-table-filter>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <!--底部分页栏-->
+  <div class="key-flex key-flex-h key-flex-no-shrink toolbar key-user-select-none"
+    *ngIf="paginator">
+    <div class="key-flex key-flex-h key-flex-grow-1" style="height: 34px;">
+      <!--分页信息-->
+      <div class="key-flex-grow-1 key-margin-right-5">
+        <h5 style="line-height: 32px;">
+          <ng-template [ngIf]="totalRecords">
+            显示 {{pageStartRow+1}} - {{pageStartRow+pageSize > totalRecords ?
+            totalRecords : pageStartRow+pageSize}}
+            条，共 {{totalRecords}} 条
+          </ng-template>
+          <ng-template [ngIf]="!totalRecords">
+            无数据
+          </ng-template>
+        </h5>
+      </div>
+      <!--分页控件-->
+      <key-paginator [(ngModel)]="pageCurrent" [totalItems]="totalRecords"
+        [pageSize]="pageSize" [canRefresh]="canPageRefresh" (pageChanged)="onPageChanged($event)"
+        (refresh)="onPageRefresh($event)">
+      </key-paginator>
+    </div>
+  </div>
+</div>

@@ -13,9 +13,15 @@
                 (click)="onClick(subData)">
                 <div class="header">
                   <img [src]="subData.src">
-                  <key-item-mask *ngIf="maskMode">
+                  <key-item-mask *ngIf="maskMode"
+                    [isTextLeft]="maskLabelArray != null && maskLabelArray.length > 0 ? true : false">
                     <key-item-mask-label [label]="subData.title">
                     </key-item-mask-label>
+                    <ng-template ngFor let-maskLabel [ngForOf]="maskLabelArray">
+                      <key-item-mask-label [labelTitle]="maskLabel.title"
+                        [label]="subData[maskLabel.key]">
+                      </key-item-mask-label>
+                    </ng-template>
                   </key-item-mask>
                 </div>
                 <div *ngIf="!maskMode" class="body" [ngStyle]="bodyStyle"

@@ -1,0 +1,93 @@
+<div tabindex="-1" (keyup.esc)="closeModal()" class="key-modal-prompt" [class.key-show]="open" [class.key-hide]="!open">
+  <div #modalPrompt class="modal" [id]="modalPromptId" [class.mouseMove]="canMouseMove"
+    [class.key-show]="open">
+    <div #modalDialog class="modal-dialog" [class.modal-prompt-lg]="largest" [class.modal-prompt-sm]="smallest">
+      <div class="modal-content" [class.type-info]="type == 'info'" [class.type-warning]="type == 'warning'"
+        [class.type-danger]="type == 'danger'">
+        <!--拖动功能-->
+        <ng-template [ngIf]="canMouseMove">
+          <div class="modal-header key-user-select-none" (mousemove)="onModalMouseMove($event)" (mouseup)="onModalMouseUp($event)"
+            (mousedown)="onModalMouseDown($event)">
+            <button class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+              &times;
+            </button>
+            <h4 class="modal-title">{{header}}</h4>
+          </div>
+        </ng-template>
+        <ng-template [ngIf]="!canMouseMove">
+          <div class="modal-header key-user-select-none">
+            <button class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+              &times;
+            </button>
+            <h4 class="modal-title">{{header}}</h4>
+          </div>
+        </ng-template>
+        <div class="modal-body key-flex key-flex-h">
+          <ng-template [ngIf]="!bodyPrompt">
+            <!--图标-->
+            <div class="key-flex key-flex-v key-flex-no-shrink prompt-icon">
+              <i class="fa fa-3x" [class.fa-check-circle]="type == 'primary'" [class.fa-info-circle]="type == 'info'"
+                [class.fa-warning]="type == 'warning'" [class.fa-times-circle]="type == 'danger'"></i>
+            </div>
+            <!--文本-->
+            <div class="key-flex key-flex-v key-flex-grow-1 prompt-message">
+              <p *ngIf="messageHeader">{{messageHeader}}</p>
+              <div class="text-{{textAlign}}">
+                <div [innerHTML]="message"></div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template [ngIf]="bodyPrompt">
+            <ng-content select="[body]"></ng-content>
+          </ng-template>
+        </div>
+        <div class="modal-footer key-user-select-none" *ngIf="!hiddenFooter">
+          <ng-content select="[footer]"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div tabindex="0">
+    <div #modalBackdrop class="modal-backdrop in" style="position: absolute;opacity: 0.4"></div>
+  </div>
+</div>
+
+<!--例子-->
+<!--<div>
+  <button class="btn btn-primary" (click)="onPrimary()">成功</button>
+  <button class="btn btn-info" (click)="onInfo()">提示</button>
+  <button class="btn btn-warning" (click)="onWarning()">警告</button>
+  <button class="btn btn-danger" (click)="onDanger()">危险</button>
+</div>
+
+<key-modal-prompt header="成功" type="primary" [largest]="true" [open]="primaryState" (close)="cancelPrimary()"
+                 message="是否进行下一步操作">
+  <div footer class="key-flex key-flex-h key-flex-grow-1">
+    <button class="btn btn-primary key-flex key-flex-grow-1" (click)="cancelPrimary()">确定</button>
+  </div>
+</key-modal-prompt>
+
+<key-modal-prompt header="提示" type="info" class="" [smallest]="true" [open]="infoState" (close)="cancelInfo()"
+                 message="是否进行下一步操作">
+  <div footer class="key-flex key-flex-h key-flex-grow-1">
+    <button class="btn btn-info key-flex key-flex-grow-1" (click)="cancelInfo()">确定</button>
+    <button class="btn btn-default key-flex key-flex-grow-1" (click)="cancelInfo()">取消</button>
+  </div>
+</key-modal-prompt>
+
+<key-modal-prompt header="警告" type="warning" class="" [open]="warningState" (close)="cancelWarning()"
+                 message="是否进行下一步操作">
+  <div footer class="key-flex key-flex-h key-flex-grow-1">
+    <button class="btn btn-warning key-flex key-flex-grow-1" (click)="cancelWarning()">确定</button>
+    <button class="btn btn-default key-flex key-flex-grow-1" (click)="cancelWarning()">取消</button>
+  </div>
+</key-modal-prompt>
+
+<key-modal-prompt header="危险" type="danger" class="" [open]="dangerState" (close)="cancelDanger()"
+                 messageHeader="确定删除"
+                 message="该删除操作可能会影响后面的操作流程！">
+  <div footer class="key-flex key-flex-h key-flex-grow-1">
+    <button class="btn btn-danger key-flex key-flex-grow-1" (click)="cancelDanger()">确定</button>
+    <button class="btn btn-default key-flex key-flex-grow-1" (click)="cancelDanger()">取消</button>
+  </div>
+</key-modal-prompt>-->

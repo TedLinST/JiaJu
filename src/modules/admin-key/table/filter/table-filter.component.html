@@ -1,0 +1,58 @@
+<div class="key-panel" [class.shrink]="!open">
+  <!--标题-->
+  <div class="panel-heading">
+    <div class="filter-heading" title="{{column.fullHeading}}" (click)="toogle()"> {{column.fullHeading}}</div>
+    <div class="filter-tool">
+      <a *ngIf="canReset()" class="fa fa-repeat fa-lg" (click)="reset()" title="重置"></a>
+      <a class="fa fa-trash fa-lg" (click)="clear()" title="清空"></a>
+      <a class="fa fa-lg"
+         [class.fa-angle-double-down]="open"
+         [class.fa-angle-double-up]="!open" (click)="toogle()" [title]="open?'展开':'收拢'"></a>
+    </div>
+    <div class="key-clear"></div>
+  </div>
+  <!--展开后内容-->
+  <div class="filter panel-body">
+    <!--第一个筛选条件-->
+    <div class="input-group">
+      <!--条件符号-->
+      <span class="input-group-btn">
+          <button class="key-btn key-btn-default"
+                  (click)="onFirstConditionClick()">{{sign[firstConditionIndex].text}}</button>
+      </span>
+      <!--条件内容，类型（combobox、data、number、text）-->
+      <input *ngIf="filterType != 'combobox'" class="form-control" [type]="filterType"
+             [max]="filterType == 'date'?'9999-12-31': filterType == 'month'?'9999-12':''"
+             [(ngModel)]="firstConditionValue">
+      <key-combobox *ngIf="filterType == 'combobox'" [(ngModel)]="firstConditionValue"
+                   [data]="filter.data"
+                   [idField]="filter.idField"
+                   [textField]="filter.textField"
+                   [groupField]="filter.groupField"></key-combobox>
+    </div>
+    <!--中间条件符号（与、或）-->
+    <div class="key-btn-group key-btn-group-justified">
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default key-btn-sm key-btn-fluid" (click)="onMiddleConditionClick()">{{middleCondition == 1 ? '与' :
+          '或'}}
+        </button>
+      </div>
+    </div>
+    <!--第二个筛选条件-->
+    <div class="input-group">
+      <!--条件符号-->
+      <span class="input-group-btn">
+          <button class="key-btn key-btn-default" (click)="onSecondConditionClick()">{{sign[secondConditionIndex].text}}</button>
+      </span>
+      <!--条件内容，类型（combobox、data、number、text）-->
+      <input *ngIf="filterType != 'combobox'" class="form-control" [type]="filterType"
+             [max]="filterType == 'date'?'9999-12-31':filterType == 'month'?'9999-12':''"
+             [(ngModel)]="secondConditionValue">
+      <key-combobox *ngIf="filterType == 'combobox'" [(ngModel)]="secondConditionValue"
+                   [data]="filter.data"
+                   [idField]="filter.idField"
+                   [textField]="filter.textField"
+                   [groupField]="filter.groupField"></key-combobox>
+    </div>
+  </div>
+</div>

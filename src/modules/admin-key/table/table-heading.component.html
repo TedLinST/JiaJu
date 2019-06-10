@@ -1,0 +1,11 @@
+<div class="key-elip" (click)="sortable && !hideSort ? sortChange() : null">
+  <!--编辑图标-->
+  <i *ngIf="editing" class="fa fa-pencil"></i>
+  <!--筛选图标-->
+  <i *ngIf="filtering" class="fa fa-filter"></i>
+  <!--说明图标-->
+  <i *ngIf="explain" class="fa fa-question-circle-o explainColor" [title]="explain"></i>
+  {{heading}}
+  <!--排序图标-->
+  <i *ngIf="sortable && !hideSort" class="fa fa-sort" [class.fa-sort-up]="sortOrder === 'asc'" [class.fa-sort-down]="sortOrder === 'desc'"></i>
+</div>

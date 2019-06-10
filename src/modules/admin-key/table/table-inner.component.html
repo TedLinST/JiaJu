@@ -1,0 +1,132 @@
+<!--头部 - 表格-->
+<div #headerTable class="header-table key-user-select-none">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <!--表格尺寸 - 列项宽度 => table-layout: fixed 布局，取决于第一行 tr 中的 td 的宽度（表头对齐于表体）-->
+      <tr class="tableRuler">
+        <!--序号宽度-->
+        <th *ngIf="hasSerialNumber" class="serialNumberCol"></th>
+        <!--列项宽度-->
+        <ng-template ngFor let-col [ngForOf]="columnsBottomFormat"
+          [ngForTrackBy]="columnTrackBy" let-colIndex="index">
+          <th [style.width]="col.width+'px'"></th>
+        </ng-template>
+        <!--填充空白列-->
+        <th *ngIf="hasEmptyColumn"></th>
+      </tr>
+      <!--输出列项-->
+      <ng-template ngFor let-columns [ngForOf]="columnsFormat" [ngForTrackBy]="columnTrackBy"
+        let-index="index">
+        <tr>
+          <!--序号列项-->
+          <th *ngIf="hasSerialNumber && index == 0" class="serialNumberCol"
+            [rowSpan]="headerLevel+1"></th>
+          <!--列项内容-->
+          <ng-template ngFor let-col [ngForOf]="columns" [ngForTrackBy]="columnTrackBy">
+            <th class="key-text-{{col.align}}" [colSpan]="getSpanCol(col)"
+              [rowSpan]="col.rowSpan" [ngClass]="col.headerClass" [style.width]="col.width+'px'"
+              [style.height]="getColumnHeight(col)+'px'">
+              <!--列项头标题-->
+              <key-table-heading [column]="col" (sort)="onColumnSort(col, $event)"
+                [editable]="editable"></key-table-heading>
+              <!--列项拖动功能-->
+              <div class="split" (mousemove)="onResizeColumn($event)" (mouseup)="onStopResizeColumn($event)"
+                (mousedown)="onStartResizeColumn($event,col)"></div>
+            </th>
+          </ng-template>
+          <!--当需要填充空白列，隐藏列项或者拖动列项时，用于实时更新界面-->
+          <th *ngIf="hasEmptyColumn && index == 0 && updateEmptyColumn" class="emptyColumn"
+            [rowSpan]="headerLevel+1"></th>
+        </tr>
+      </ng-template>
+    </thead>
+  </table>
+</div>
+
+<!--主体 - 表格-->
+<div #bodyTable class="key-flex-grow-1 body-table" style="min-height: auto;">
+  <table #bodyTableBody class="table table-bordered table-hover">
+    <thead>
+      <!--表格尺寸 - 列项宽度 => table-layout: fixed 布局，取决于第一行 tr 中的 td 的宽度（表头对齐于表体）-->
+      <tr class="tableRuler">
+        <!--序号宽度-->
+        <th *ngIf="hasSerialNumber" class="serialNumberCol"></th>
+        <!--列项宽度-->
+        <ng-template ngFor let-col [ngForOf]="columnsBottomFormat"
+          [ngForTrackBy]="columnTrackBy" let-colIndex="index">
+          <th [style.width]="col.width+'px'"></th>
+        </ng-template>
+        <!--填充空白列-->
+        <th *ngIf="hasEmptyColumn"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-template ngFor let-row [ngForOf]="data" [ngForTrackBy]="dataTrackBy"
+        let-i="index">
+        <tr [class.active]="isRowSelected(row)">
+          <!--序号-->
+          <td *ngIf="hasSerialNumber" class="serialNumberCol key-user-select-none">
+            <ng-template [ngIf]="!paginator">{{i+1}}</ng-template>
+            <!--有分页时，序号不清零-->
+            <ng-template [ngIf]="paginator">{{pageStartRow+i+1}}</ng-template>
+          </td>
+          <ng-template ngFor let-col [ngForOf]="columnsBottomFormat"
+            [ngForTrackBy]="columnTrackBy" let-colFirst="first">
+            <td [ngClass]="col.cellClass" [ngStyle]="col.style" class="key-text-{{col.align}}"
+              (click)="onCellClick($event, row, col)">
+              <!--列项单元格编辑控件-->
+              <key-table-editor *ngIf="editable && col.editor && col.editing"
+                [realTime]="editingRealTime" [column]="col" [editor]="col.editor"
+                [row]="row" [value]="row[col.key]"></key-table-editor>
+              <ng-template [ngIf]="!(editable && col.editor && col.editing)">
+                <!--列项单元格控件（列项有模板时才创建控件）-->
+                <key-table-cell *ngIf="col.cellTpl" [column]="col" [row]="row"
+                  [index]="i" [value]="row[col.key]"></key-table-cell>
+                <ng-template [ngIf]="!col.cellTpl">
+                  <span *ngIf="!!row[col.key]" [title]="row[col.key]">{{row[col.key]}}</span>
+                  <span *ngIf="!!!row[col.key]">&nbsp;</span>
+                </ng-template>
+              </ng-template>
+            </td>
+          </ng-template>
+          <!--当需要填充空白列，隐藏列项或者拖动列项时，用于实时更新界面-->
+          <td *ngIf="hasEmptyColumn && updateEmptyColumn" class="emptyColumn"></td>
+        </tr>
+      </ng-template>
+    </tbody>
+  </table>
+</div>
+
+<div #footerTable class="footer-table">
+  <table *ngIf="summary" class="table table-bordered table-hover">
+    <tfoot>
+      <tr *ngFor="let row of summary; let i = index; trackBy:dataTrackBy">
+        <!--序号列项-->
+        <td *ngIf="hasSerialNumber" class="serialNumberCol"></td>
+        <!--列项内容-->
+        <ng-template ngFor let-col [ngForOf]="columnsBottomFormat"
+          [ngForTrackBy]="columnTrackBy" let-colIndex="index">
+          <td [ngClass]="col.cellClass" class="key-text-{{col.align}}"
+            [style.width]="col.width+'px'">
+            <ng-template [ngIf]="!(editable && col.editor && col.editing)">
+              <!--列项单元格控件（列项有模板时才创建控件）-->
+              <key-table-cell *ngIf="col.cellTpl" [column]="col" [row]="row"
+                [index]="i" [value]="row[col.key]" [summaryRow]="i+1"></key-table-cell>
+              <ng-template [ngIf]="!col.cellTpl">
+                <span *ngIf="!!row[col.key]" [title]="row[col.key]">{{row[col.key]}}</span>
+                <span *ngIf="!!!row[col.key]">&nbsp;</span>
+              </ng-template>
+              
+            </ng-template>
+          </td>
+        </ng-template>
+        <!--填充空白列列项-->
+        <td *ngIf="hasEmptyColumn" class="emptyColumn"></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<!--加载中信息-->
+<key-loading-table *ngIf="!lockTable && loadingSwitch" [isLoading]="true"
+  [maskZindexLeft]="tableLoadMaskZindexLeft" [maskZindexTop]="tableLoadMaskZindexTop" ></key-loading-table>
