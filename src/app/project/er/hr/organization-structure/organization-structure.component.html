@@ -1,3 +1,130 @@
-<p>
-  hr-organization-structure works!
-</p>
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <ck-tree-panel [data]="treeData" displayField="name" heading="组织信息"
+    [canRefresh]="false" panelClass="panel"
+    (rowSelectChange)="onTreeRowSelect($event)">
+  </ck-tree-panel>
+
+  <key-table-split title="部门员工信息" [data]="listData" [canRefreshBtn]="false"
+    [(selection)]="selection" style="width:10px;">
+    <div header>
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="add()">增加</button>
+        <button class="key-btn key-btn-default" (click)="view()"
+          [disabled]="!!!selection">修改</button>
+        <button class="key-btn key-btn-default" (click)="delete()"
+          [disabled]="!!!selection">删除</button>
+      </div>
+    </div>
+    <key-table-column heading="员工编号" width="100" key="YuanGongBianHao" sortable>
+    </key-table-column>
+    <key-table-column heading="员工名称" width="100" key="YuanGongXingMing"
+      sortable>
+    </key-table-column>
+    <key-table-column heading="所属部门" width="120" key="SuoShuBuMen" sortable>
+    </key-table-column>
+    <key-table-column heading="岗位名称" width="120" key="GangWeiMingCheng"
+      sortable>
+    </key-table-column>
+    <key-table-column heading="入职时间" width="100" key="RuZhiShiJian" sortable>
+    </key-table-column>
+    <key-table-column heading="在职状况" width="100" key="ZaiZhiZhuangTai" sortable>
+    </key-table-column>
+    <key-table-column heading="出生年月" width="100" key="ChuShengNianYue" sortable>
+    </key-table-column>
+    <key-table-column heading="籍贯" width="100" key="JiGuan" sortable>
+    </key-table-column>
+    <key-table-column heading="婚姻状况" width="100" key="HunYinZhuangKuang"
+      sortable>
+    </key-table-column>
+    <key-table-column heading="性别" width="80" key="XingBie" sortable>
+    </key-table-column>
+    <key-table-column heading="联系电话" width="120" key="LianXiDianHua" sortable>
+    </key-table-column>
+    <key-table-column heading="联系地址" width="200" key="LianXiDiZhi" sortable>
+    </key-table-column>
+    <key-table-column heading="身份证号码" width="100" key="ShenFenZhengHaoMa"
+      sortable>
+    </key-table-column>
+    <key-table-column heading="个人简介" width="300" key="GeRenJianJie" sortable>
+    </key-table-column>
+  </key-table-split>
+</div>
+
+<key-modal *ngIf="beanState" header="部门员工信息" [open]="true"
+  class="key-modal-basis" (close)="cancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="员工编号" [error]="bean_YuanGongBianHao.errors">
+          <input #bean_YuanGongBianHao="ngModel" type="text"
+            class="form-control" name="bean.YuanGongBianHao"
+            [(ngModel)]="bean.YuanGongBianHao" required>
+        </key-form-element>
+        <key-form-element label="员工名称" [error]="bean_YuanGongXingMing.errors">
+          <input #bean_YuanGongXingMing="ngModel" type="text"
+            class="form-control" name="bean.YuanGongXingMing"
+            [(ngModel)]="bean.YuanGongXingMing" required>
+        </key-form-element>
+        <key-form-element label="所属部门" [error]="bean_SuoShuBuMen.errors">
+          <input #bean_SuoShuBuMen="ngModel" type="text" class="form-control"
+            name="bean.SuoShuBuMen" [(ngModel)]="bean.SuoShuBuMen" required>
+        </key-form-element>
+        <key-form-element label="岗位名称" [error]="bean_GangWeiMingCheng.errors">
+          <input #bean_GangWeiMingCheng="ngModel" type="text"
+            class="form-control" name="bean.GangWeiMingCheng"
+            [(ngModel)]="bean.GangWeiMingCheng" required>
+        </key-form-element>
+        <key-form-element label="入职时间" [error]="bean_RuZhiShiJian.errors">
+          <input #bean_RuZhiShiJian="ngModel" type="date" class="form-control"
+            name="bean.RuZhiShiJian" [(ngModel)]="bean.RuZhiShiJian">
+        </key-form-element>
+        <key-form-element label="在职状况" [error]="bean_ZaiZhiZhuangTai.errors">
+          <input #bean_ZaiZhiZhuangTai="ngModel" type="text"
+            class="form-control" name="bean.ZaiZhiZhuangTai"
+            [(ngModel)]="bean.ZaiZhiZhuangTai">
+        </key-form-element>
+        <key-form-element label="出生年月" [error]="bean_ChuShengNianYue.errors">
+          <input #bean_ChuShengNianYue="ngModel" type="month"
+            class="form-control" name="bean.ChuShengNianYue"
+            [(ngModel)]="bean.ChuShengNianYue">
+        </key-form-element>
+        <key-form-element label="籍贯" [error]="bean_JiGuan.errors">
+          <input #bean_JiGuan="ngModel" type="text" class="form-control"
+            name="bean.JiGuan" [(ngModel)]="bean.JiGuan">
+        </key-form-element>
+        <key-form-element label="婚姻状况" [error]="bean_HunYinZhuangKuang.errors">
+          <input #bean_HunYinZhuangKuang="ngModel" type="text"
+            class="form-control" name="bean.HunYinZhuangKuang"
+            [(ngModel)]="bean.HunYinZhuangKuang">
+        </key-form-element>
+        <key-form-element label="性别" [error]="bean_XingBie.errors">
+          <input #bean_XingBie="ngModel" type="text" class="form-control"
+            name="bean.XingBie" [(ngModel)]="bean.XingBie">
+        </key-form-element>
+        <key-form-element label="联系电话" [error]="bean_LianXiDianHua.errors">
+          <input #bean_LianXiDianHua="ngModel" type="text" class="form-control"
+            name="bean.LianXiDianHua" [(ngModel)]="bean.LianXiDianHua">
+        </key-form-element>
+        <key-form-element label="联系地址" [error]="bean_LianXiDiZhi.errors">
+          <input #bean_LianXiDiZhi="ngModel" type="text" class="form-control"
+            name="bean.LianXiDiZhi" [(ngModel)]="bean.LianXiDiZhi">
+        </key-form-element>
+        <key-form-element label="身份证号码" [error]="bean_ShenFenZhengHaoMa.errors">
+          <input #bean_ShenFenZhengHaoMa="ngModel" type="text"
+            class="form-control" name="bean.ShenFenZhengHaoMa"
+            [(ngModel)]="bean.ShenFenZhengHaoMa">
+        </key-form-element>
+        <key-form-element label="个人简介" [error]="bean_GeRenJianJie.errors">
+          <textarea #bean_GeRenJianJie="ngModel" class="form-control"
+            name="bean.GeRenJianJie" [(ngModel)]="bean.GeRenJianJie"
+            rows="3"></textarea>
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default" (click)="cancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()"
+      [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>

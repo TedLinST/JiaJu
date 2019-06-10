@@ -3,6 +3,7 @@ import { Utils } from 'src/modules/utils/utils';
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { EnterpriseResourceNavigation } from './enterprise-resource.navigation';
+import { DataEnterpriseResourceHandler } from 'src/data/er/enterprise-resource';
 
 @Component({
   selector: 'app-enterprise-resource',
@@ -17,6 +18,9 @@ export class EnterpriseResourceComponent implements OnInit {
   // 企业资源管理系统导航
   erNav: any;
 
+  // 数据助手
+  dataHandler: any;
+
   isCollapsed = false;
 
   constructor(private router: Router, private el: ElementRef) {
@@ -27,6 +31,7 @@ export class EnterpriseResourceComponent implements OnInit {
   ngOnInit() {
     this.addProtalStyle();
     this.setHeight();
+    this.dataHandler = DataEnterpriseResourceHandler;
   }
 
   ngOnDestroy() {
