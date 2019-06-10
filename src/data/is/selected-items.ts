@@ -148,16 +148,16 @@ export const DataSelectedItemsHandler = {
       ZiJinXuQiu: '40万',
       JingYingDiZhi: '广东东莞',
       XiangMuShuoMing: '为解决本公司变形家具外采五金件难以达到实际使用要求，经常出现质量问题的情况，针对性研发耐久度较好的五金产品。',
-      XiangMuFaQiJieGou_FaQiRen: '东莞市多维尚书家居有限公司',
+      XiangMuFaQiJieGou_FaQiRen: '高国斌',
       ShouCangShu: 53,
       LiuLanShu: 53,
       GengXinRiQi: '2019-05-24',
-      ZhiWei: '...',
-      SuoZaiDi: '...',
-      FaQiRen_SRC: 'assets/imgs/government/zhuanli-1.jpg',
-      GongSiJieShao: '...',
-      XiangMuGaiShu: '...',
-      XiangMuYouShi: '...'
+      ZhiWei: '东莞多维尚书家具有限公司CEO',
+      SuoZaiDi: '广东东莞',
+      FaQiRen_SRC: 'assets/imgs/selected-items/faqiren-1.jpg',
+      GongSiJieShao: '东莞多维尚书家居有限公司是国内变形家具实力品牌，宜华生活科技股份有限公司（股票代码：600978）控股子公司，是率先把 “变形家具”概念带进国内的创意家居品牌，颠覆传统家具的设计理念，使家具功能由单一性向多元化转变，通过家具改变空间，提升居家空间利用率，为用户创造更多空间。',
+      XiangMuGaiShu: '为解决本公司变形家具外采五金件难以达到实际使用要求，经常出现质量问题的情况，针对性研发耐久度较好的五金产品。',
+      XiangMuYouShi: '能够大幅提升本公司产品的使用寿命和体验感，同时可以为其他变形家具企业提供五金零部件解决方案。参与本项目可获得未来该五金件10年内销售收益的30%。'
     },
     {
       XiangMuMingCheng: '长沙代理科美滋实木家具产品',
