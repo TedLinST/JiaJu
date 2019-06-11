@@ -5,9 +5,9 @@
       <div class="key-btn-group">
         <button class="key-btn key-btn-default" (click)="add()">增加</button>
         <button class="key-btn key-btn-default" (click)="view()"
-          [disabled]="!!!selection">修改</button>
+          [disabled]="!(!!selection && !(!!selection?.row?.ShenHeRen || !!selection?.row?.ShenPiRen))">修改</button>
         <button class="key-btn key-btn-default" (click)="delete()"
-          [disabled]="!!!selection">删除</button>
+          [disabled]="!(!!selection && !(!!selection?.row?.ShenHeRen || !!selection?.row?.ShenPiRen))">删除</button>
       </div>
       <div class="key-btn-group">
         <button class="key-btn key-btn-default" (click)="openExamine()"
