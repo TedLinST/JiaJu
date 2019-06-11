@@ -1,0 +1,61 @@
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table-split title="销售下单明细表" [data]="listData" [canRefreshBtn]="false"
+    [(selection)]="selection" style="width:10px;">
+    <div header>
+    </div>
+    <key-table-column heading="单据编号" width="140" key="DanJuBianHao" sortable>
+    </key-table-column>
+    <key-table-column heading="下单时间" width="100" key="XiaDanShiJian" sortable>
+    </key-table-column>
+    <key-table-column heading="订单类型" width="100" key="DingDanLeiXing" sortable>
+    </key-table-column>
+    <key-table-column heading="销售单位" width="120" key="XiaoShouDanWei" sortable>
+    </key-table-column>
+    <key-table-column heading="季度" width="90" key="JiDu" sortable>
+    </key-table-column>
+    <key-table-column heading="波段" width="120" key="BoDuan" sortable>
+    </key-table-column>
+    <key-table-column heading="系列" width="100" key="XiLie" sortable>
+    </key-table-column>
+    <key-table-column heading="款号" width="130" key="KuanHao" sortable>
+    </key-table-column>
+    <key-table-column heading="款式" width="130" key="KuanShi" sortable>
+    </key-table-column>
+    <key-table-column heading="颜色" width="100" key="YanSe" sortable>
+    </key-table-column>
+    <key-table-column heading="下单数量" align="center">
+      <key-table-column heading="2XS" width="70" key="2XS" sortable>
+      </key-table-column>
+      <key-table-column heading="XS" width="70" key="XS" sortable>
+      </key-table-column>
+      <key-table-column heading="S" width="70" key="S" sortable>
+      </key-table-column>
+      <key-table-column heading="M" width="70" key="M" sortable>
+      </key-table-column>
+      <key-table-column heading="L" width="70" key="L" sortable>
+      </key-table-column>
+      <key-table-column heading="XL" width="70" key="XL" sortable>
+      </key-table-column>
+      <key-table-column heading="2XL" width="70" key="2XL" sortable>
+      </key-table-column>
+      <key-table-column heading="3XL" width="70" key="3XL" sortable>
+      </key-table-column>
+    </key-table-column>
+    <key-table-column heading="合计数量" width="100" key="HeJiShuLiang" sortable>
+      <ng-template let-value let-row="row">
+        {{ row['2XS'] + row.XS + row.S + row.M + row.L + row.XL + row['2XL'] + row['3XL']}}
+      </ng-template>
+    </key-table-column>
+    <key-table-column heading="价格类型" width="100" key="JiaGeLeiXing" sortable>
+    </key-table-column>
+    <key-table-column heading="下单单价" width="100" key="XiaDanDanJia" sortable>
+    </key-table-column>
+    <key-table-column heading="下单金额" width="100" key="XiaDanJinE" sortable>
+      <ng-template let-value let-row="row">
+        {{ (row['2XS'] + row.XS + row.S + row.M + row.L + row.XL + row['2XL'] + row['3XL']) * row.XiaDanDanJia}}
+      </ng-template>
+    </key-table-column>
+    <key-table-column heading="要求货期" width="100" key="YaoQiuHuoQi" sortable>
+    </key-table-column>
+  </key-table-split>
+</div>

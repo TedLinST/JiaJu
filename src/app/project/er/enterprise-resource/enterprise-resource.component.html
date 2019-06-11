@@ -49,8 +49,12 @@
                 <ul>
                   <li nz-menu-item>销售下单表</li>
                   <li nz-menu-item>销售订单合同</li>
-                  <li nz-menu-item>商品计划管控表</li>
-                  <li nz-menu-item>销售下单明细表</li>
+                  <li nz-menu-item
+                    (click)="erNav.openSaleCommodityPlanningControl($event)">
+                    商品计划管控表</li>
+                  <li nz-menu-item
+                    (click)="erNav.openSaleSalesOrderDetails($event)">销售下单明细表
+                  </li>
                   <li nz-menu-item>销售下单汇总表</li>
                   <li nz-menu-item>订单汇总下达表</li>
                   <li nz-menu-item>销售发货</li>
