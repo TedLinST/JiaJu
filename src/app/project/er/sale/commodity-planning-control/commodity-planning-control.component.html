@@ -1,0 +1,118 @@
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table-split title="商品计划管控表" [data]="listData" [canRefreshBtn]="false"
+    [(selection)]="selection" style="width:10px;">
+    <div header>
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="add()">增加</button>
+        <button class="key-btn key-btn-default" (click)="view()"
+          [disabled]="!!!selection">修改</button>
+        <button class="key-btn key-btn-default" (click)="delete()"
+          [disabled]="!!!selection">删除</button>
+      </div>
+    </div>
+    <key-table-column heading="单据编号" width="140" key="DanJuBianHao" sortable>
+    </key-table-column>
+    <key-table-column heading="订单编号" width="140" key="DingDanBianHao" sortable>
+    </key-table-column>
+    <key-table-column heading="销售单位名称" width="120" key="XiaoShouDanWeiMingCheng"
+      sortable>
+    </key-table-column>
+    <key-table-column heading="年度" width="90" key="NianDu" sortable>
+    </key-table-column>
+    <key-table-column heading="季度" width="90" key="JiDu" sortable>
+    </key-table-column>
+    <key-table-column heading="波段" width="120" key="BoDuan" sortable>
+    </key-table-column>
+    <key-table-column heading="系列" width="100" key="XiLie" sortable>
+    </key-table-column>
+    <key-table-column heading="款号" width="130" key="KuanHao" sortable>
+    </key-table-column>
+    <key-table-column heading="款式" width="130" key="KuanShi" sortable>
+    </key-table-column>
+    <key-table-column heading="下单数量" width="100" key="XiaDanShuLiang" sortable>
+    </key-table-column>
+    <key-table-column heading="订单汇总下达生产" align="center">
+      <key-table-column heading="计划完成" width="90" key="JiHuaWanCheng0" sortable>
+      </key-table-column>
+      <key-table-column heading="实际完成" width="90" key="ShiJiWanCheng0" sortable>
+      </key-table-column>
+    </key-table-column>
+    <key-table-column heading="投产" align="center">
+      <key-table-column heading="计划完成" width="90" key="JiHuaWanCheng1" sortable>
+      </key-table-column>
+      <key-table-column heading="实际完成" width="90" key="ShiJiWanCheng1" sortable>
+      </key-table-column>
+    </key-table-column>
+    <key-table-column heading="入库" align="center">
+      <key-table-column heading="计划完成" width="90" key="JiHuaWanCheng2" sortable>
+      </key-table-column>
+      <key-table-column heading="实际完成" width="90" key="ShiJiWanCheng2" sortable>
+      </key-table-column>
+    </key-table-column>
+    <key-table-column heading="配送" align="center">
+      <key-table-column heading="计划完成" width="90" key="JiHuaWanCheng3" sortable>
+      </key-table-column>
+      <key-table-column heading="实际完成" width="90" key="ShiJiWanCheng3" sortable>
+      </key-table-column>
+    </key-table-column>
+  </key-table-split>
+</div>
+
+<key-modal *ngIf="beanState" header="商品计划管控信息" [open]="true"
+  class="key-modal-basis" (close)="cancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="单据编号" [error]="bean_DanJuBianHao.errors">
+          <input #bean_DanJuBianHao="ngModel" type="text" class="form-control"
+            name="bean.DanJuBianHao" [(ngModel)]="bean.DanJuBianHao" required>
+        </key-form-element>
+        <key-form-element label="订单编号" [error]="bean_DingDanBianHao.errors">
+          <input #bean_DingDanBianHao="ngModel" type="text" class="form-control"
+            name="bean.DingDanBianHao" [(ngModel)]="bean.DingDanBianHao"
+            required>
+        </key-form-element>
+        <key-form-element label="销售单位名称"
+          [error]="bean_XiaoShouDanWeiMingCheng.errors">
+          <input #bean_XiaoShouDanWeiMingCheng="ngModel" type="text"
+            class="form-control" name="bean.XiaoShouDanWeiMingCheng"
+            [(ngModel)]="bean.XiaoShouDanWeiMingCheng">
+        </key-form-element>
+        <key-form-element label="年度" [error]="bean_NianDu.errors">
+          <input #bean_NianDu="ngModel" type="text" class="form-control"
+            name="bean.NianDu" [(ngModel)]="bean.NianDu">
+        </key-form-element>
+        <key-form-element label="季度" [error]="bean_JiDu.errors">
+          <input #bean_JiDu="ngModel" type="text" class="form-control"
+            name="bean.JiDu" [(ngModel)]="bean.JiDu">
+        </key-form-element>
+        <key-form-element label="波段" [error]="bean_BoDuan.errors">
+          <input #bean_BoDuan="ngModel" type="text" class="form-control"
+            name="bean.BoDuan" [(ngModel)]="bean.BoDuan">
+        </key-form-element>
+        <key-form-element label="系列" [error]="bean_XiLie.errors">
+          <input #bean_XiLie="ngModel" type="text" class="form-control"
+            name="bean.XiLie" [(ngModel)]="bean.XiLie">
+        </key-form-element>
+        <key-form-element label="款号" [error]="bean_KuanHao.errors">
+          <input #bean_KuanHao="ngModel" type="text" class="form-control"
+            name="bean.KuanHao" [(ngModel)]="bean.KuanHao">
+        </key-form-element>
+        <key-form-element label="款式" [error]="bean_KuanShi.errors">
+          <input #bean_KuanShi="ngModel" type="text" class="form-control"
+            name="bean.KuanShi" [(ngModel)]="bean.KuanShi">
+        </key-form-element>
+        <key-form-element label="下单数量" [error]="bean_XiaDanShuLiang.errors">
+          <input #bean_XiaDanShuLiang="ngModel" type="number"
+            class="form-control" name="bean.XiaDanShuLiang"
+            [(ngModel)]="bean.XiaDanShuLiang">
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default" (click)="cancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()"
+      [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>
