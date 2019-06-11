@@ -25,7 +25,7 @@ export class ChannelChannelComponent implements OnInit {
   // 数据助手
   dataHandler: any;
 
-  currentIndexCRC: number = 0;
+  currentIndexCRC: number = -1;
 
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);

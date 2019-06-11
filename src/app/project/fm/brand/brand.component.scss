@@ -3,4 +3,17 @@
     width: 1200px;
     margin: 20px auto 0px;
   }
+
+  .BR-style {
+    .title {
+      padding-left: 15px;
+      margin-bottom: 8px;
+      font-size: 17px;
+      font-weight: 600;
+
+      i {
+        margin: 0px 8px;
+      }
+    }
+  }
 }
