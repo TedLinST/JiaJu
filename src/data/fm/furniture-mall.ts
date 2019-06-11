@@ -346,19 +346,6 @@ export const DataFurnitureMallHandler = {
         price:'￥ 1700',
         src:'assets/imgs/furniture-mall/shangpin-20.jpg'
       },
-
-
-
-
-
-
-
-
-
-
-
-
-
     ]
   }
 }
