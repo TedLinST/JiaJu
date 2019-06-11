@@ -276,16 +276,89 @@ export const DataFurnitureMallHandler = {
         price: '￥ 1250',
         src: 'assets/imgs/furniture-mall/shangpin-6.jpg'
       },
+      // {
+      //   title: '源氏木语全实木床头柜北欧卧室橡木收纳柜现代简约带锁床边小柜子',
+      //   price: '￥ 900',
+      //   src: 'assets/imgs/furniture-mall/shangpin-7.jpg'
+      // },
+      // {
+      //   title: '源氏木语纯实木床头柜床边柜原木橡木斗柜抽屉柜北欧简约卧室家具',
+      //   price: '￥ 870',
+      //   src: 'assets/imgs/furniture-mall/shangpin-8.jpg'
+      // },
+      // {
+      //   title:'源氏木语纯实木简约现代原木床头柜卧室床边柜白橡木柜子储物家具',
+      //   price:'￥ 820',
+      //   src:'assets/imgs/furniture-mall/shangpin-9.jpg'
+      // },
+      // {
+      //   title:'源氏木语全实木床头柜北欧卧室带锁储物柜现代简约橡木床边收纳柜',
+      //   price:'￥ 750',
+      //   src:'assets/imgs/furniture-mall/shangpin-10.jpg'
+      // },
+      // {
+      //   title:'源氏木语纯实木餐桌全白橡木餐台饭桌环保餐桌椅组合餐厅',
+      //   price:'￥ 1680',
+      //   src:'assets/imgs/furniture-mall/shangpin-11.jpg'
+      // },
+      // {
+      //   title:'源氏木语纯实木餐桌北欧简约饭桌北美白橡木桌椅组合环保餐厅家具',
+      //   price:'￥ 1395',
+      //   src:'assets/imgs/furniture-mall/shangpin-12.jpg'
+      // },
+      // {
+      //   title:'源氏木语纯实木伸缩餐桌北欧橡木餐桌椅组合现代简约折叠家用饭桌',
+      //   price:'￥ 2100',
+      //   src:'assets/imgs/furniture-mall/shangpin-13.jpg'
+      // },
       {
-        title: '源氏木语全实木床头柜北欧卧室橡木收纳柜现代简约带锁床边小柜子',
-        price: '￥ 900',
-        src: 'assets/imgs/furniture-mall/shangpin-7.jpg'
+        title:'源氏木语纯全实木餐桌椅组合北欧现代简约白橡木',
+        price:'￥ 1870',
+        src:'assets/imgs/furniture-mall/shangpin-14.jpg'
       },
       {
-        title: '源氏木语纯实木床头柜床边柜原木橡木斗柜抽屉柜北欧简约卧室家具',
-        price: '￥ 870',
-        src: 'assets/imgs/furniture-mall/shangpin-8.jpg'
-      }
+        title:'源氏木语实木餐桌可伸缩饭台北欧橡木圆桌小户型折叠桌子餐厅家具',
+        price:'￥ 3000',
+        src:'assets/imgs/furniture-mall/shangpin-15.jpg'
+      },
+      {
+        title:'源氏木语全实木餐桌黑胡桃木饭桌家用长方形桌椅组合北欧简约桌子',
+        price:'￥ 2880',
+        src:'assets/imgs/furniture-mall/shangpin-16.jpg'
+      },
+      {
+        title:'源氏木语实木餐桌北欧简约橡木饭桌小户型餐桌',
+        price:'￥ 1512',
+        src:'assets/imgs/furniture-mall/shangpin-17.jpg'
+      },
+      // {
+      //   title:'源氏木语实木餐桌白橡木餐桌椅组合北欧简约饭桌餐厅家用吃饭桌子',
+      //   price:'￥ 1400',
+      //   src:'assets/imgs/furniture-mall/shangpin-18.jpg'
+      // },
+      {
+        title:'源氏木语纯实木餐桌北欧简约餐台饭桌全白橡木餐桌椅组合餐厅家具',
+        price:'￥ 1325',
+        src:'assets/imgs/furniture-mall/shangpin-19.jpg'
+      },
+      {
+        title:'源氏木语全实木圆桌白橡木餐桌现代简约餐桌椅组合小户型家用饭桌',
+        price:'￥ 1700',
+        src:'assets/imgs/furniture-mall/shangpin-20.jpg'
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
     ]
   }
 }
