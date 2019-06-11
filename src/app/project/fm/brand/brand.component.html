@@ -24,21 +24,125 @@
     [title]="dataHandler.BR.title">
     <div body>
       <key-item-chunk-body>
-        <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data"
-            let-index="index">
-            <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
-              <div class="key-item-box item-box-margin-13">
-                <div class="header">
-                  <img [src]="item.src">
-                  <key-item-mask>
-                    <key-item-mask-label [label]="item.title">
-                    </key-item-mask-label>
-                  </key-item-mask>
+        <!-- 主营业务 -->
+        <div class="BR-style">
+          <div class="title">
+            主营业务 <i class="fa fa-angle-double-right"></i>
+            <nz-select style="width: 120px;" nzAllowClear
+              [(ngModel)]="selectedValue0" (ngModelChange)="onSelectChange0()">
+              <ng-template ngFor let-item [ngForOf]="selectDatArray"
+                let-index="index">
+                <nz-option [nzValue]="item.value" [nzLabel]="item.label">
+                </nz-option>
+              </ng-template>
+            </nz-select>
+          </div>
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data0"
+              let-index="index">
+              <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
+                <div class="key-item-box item-box-margin-13">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask>
+                      <key-item-mask-label [label]="item.title">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
                 </div>
               </div>
-            </div>
-          </ng-template>
+            </ng-template>
+          </div>
+        </div>
+        <!-- 主营风格 -->
+        <div class="BR-style">
+          <div class="title">
+            主营风格 <i class="fa fa-angle-double-right"></i>
+            <nz-select style="width: 120px;" nzAllowClear
+              [(ngModel)]="selectedValue1" (ngModelChange)="onSelectChange1()">
+              <ng-template ngFor let-item [ngForOf]="selectDatArray"
+                let-index="index">
+                <nz-option [nzValue]="item.value" [nzLabel]="item.label">
+                </nz-option>
+              </ng-template>
+            </nz-select>
+          </div>
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data1"
+              let-index="index">
+              <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
+                <div class="key-item-box item-box-margin-13">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask>
+                      <key-item-mask-label [label]="item.title">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+        <!-- 主营地区 -->
+        <div class="BR-style">
+          <div class="title">
+            主营地区 <i class="fa fa-angle-double-right"></i>
+            <nz-select style="width: 120px;" nzAllowClear
+              [(ngModel)]="selectedValue2" (ngModelChange)="onSelectChange2()">
+              <ng-template ngFor let-item [ngForOf]="selectDatArray"
+                let-index="index">
+                <nz-option [nzValue]="item.value" [nzLabel]="item.label">
+                </nz-option>
+              </ng-template>
+            </nz-select>
+          </div>
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data2"
+              let-index="index">
+              <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
+                <div class="key-item-box item-box-margin-13">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask>
+                      <key-item-mask-label [label]="item.title">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+        <!-- 产品来源 -->
+        <div class="BR-style">
+          <div class="title">
+            产品来源 <i class="fa fa-angle-double-right"></i>
+            <nz-select style="width: 120px;" nzAllowClear
+              [(ngModel)]="selectedValue3" (ngModelChange)="onSelectChange3()">
+              <ng-template ngFor let-item [ngForOf]="selectDatArray"
+                let-index="index">
+                <nz-option [nzValue]="item.value" [nzLabel]="item.label">
+                </nz-option>
+              </ng-template>
+            </nz-select>
+          </div>
+          <div nz-row>
+            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data3"
+              let-index="index">
+              <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
+                <div class="key-item-box item-box-margin-13">
+                  <div class="header">
+                    <img [src]="item.src">
+                    <key-item-mask>
+                      <key-item-mask-label [label]="item.title">
+                      </key-item-mask-label>
+                    </key-item-mask>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
         </div>
       </key-item-chunk-body>
     </div>

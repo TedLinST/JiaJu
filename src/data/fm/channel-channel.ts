@@ -10,16 +10,19 @@ export const DataChannelChannelHandler = {
       { title: '学生作品' },
       { title: '设计竞赛' },
     ],
+    data: [
+      {
+        src: 'assets/imgs/channel-channel/lunbo.jpg'
+      },
+      {
+        src: 'assets/imgs/channel-channel/lunbo.jpg'
+      },
+      {
+        src: 'assets/imgs/channel-channel/lunbo.jpg'
+      }
+    ],
     // 原创设计
     data0: [
-      {
-        title: '原创设计',
-        src: 'assets/imgs/channel-channel/tuangou-2.jpg'
-      },
-      {
-        title: '原创设计',
-        src: 'assets/imgs/channel-channel/tuangou-3.jpg'
-      },
       {
         title: '原创设计',
         src: 'assets/imgs/channel-channel/tuangou-2.jpg'
@@ -31,14 +34,6 @@ export const DataChannelChannelHandler = {
     ],
     // 智能家居
     data1: [
-      {
-        title: '智能家居',
-        src: 'assets/imgs/channel-channel/tuangou-2.jpg'
-      },
-      {
-        title: '智能家居',
-        src: 'assets/imgs/channel-channel/tuangou-3.jpg'
-      },
       {
         title: '智能家居',
         src: 'assets/imgs/channel-channel/tuangou-2.jpg'
@@ -58,25 +53,9 @@ export const DataChannelChannelHandler = {
         title: '学生作品',
         src: 'assets/imgs/channel-channel/tuangou-3.jpg'
       },
-      {
-        title: '学生作品',
-        src: 'assets/imgs/channel-channel/tuangou-2.jpg'
-      },
-      {
-        title: '学生作品',
-        src: 'assets/imgs/channel-channel/tuangou-3.jpg'
-      }
     ],
     // 设计竞赛
     data3: [
-      {
-        title: '设计竞赛',
-        src: 'assets/imgs/channel-channel/tuangou-2.jpg'
-      },
-      {
-        title: '设计竞赛',
-        src: 'assets/imgs/channel-channel/tuangou-3.jpg'
-      },
       {
         title: '设计竞赛',
         src: 'assets/imgs/channel-channel/tuangou-2.jpg'

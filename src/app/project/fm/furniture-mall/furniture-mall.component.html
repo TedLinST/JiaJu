@@ -40,9 +40,50 @@
     <div body>
       <key-item-chunk-body [isMore]="true"
         (clickMore)="portalNav.openGroupBuying()">
-        <key-carousel [data]="dataHandler.FGP.data" nzSpan="6" [maskMode]="true"
-          [maskLabelArray]="maskLabelArray">
-        </key-carousel>
+        <div class="z-row">
+          <div class="z-col z-col-2">
+            <nz-carousel nzAutoPlay>
+              <div nz-carousel-content
+                *ngFor="let item of dataHandler.FGP.data0">
+                <img [src]="item.src">
+                <key-item-mask [isTextLeft]="true">
+                  <key-item-mask-label labelTitle="产品品类"
+                    [label]="item.ChanPinPinLei">
+                  </key-item-mask-label>
+                  <key-item-mask-label labelTitle="品牌" [label]="item.PinPai">
+                  </key-item-mask-label>
+                  <key-item-mask-label labelTitle="价格" [label]="item.JiaGe">
+                  </key-item-mask-label>
+                </key-item-mask>
+              </div>
+            </nz-carousel>
+          </div>
+          <div class="z-col z-col-2">
+            <div nz-row>
+              <ng-template ngFor let-item [ngForOf]="dataHandler.FGP.data1"
+                let-index="index">
+                <div nz-col nzSpan="12" style="height: 288px;">
+                  <div class="key-item-box item-box-margin-13">
+                    <div class="header">
+                      <img [src]="item.src">
+                      <key-item-mask [isTextLeft]="true">
+                        <key-item-mask-label labelTitle="产品品类"
+                          [label]="item.ChanPinPinLei">
+                        </key-item-mask-label>
+                        <key-item-mask-label labelTitle="品牌"
+                          [label]="item.PinPai">
+                        </key-item-mask-label>
+                        <key-item-mask-label labelTitle="价格"
+                          [label]="item.JiaGe">
+                        </key-item-mask-label>
+                      </key-item-mask>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>
@@ -53,9 +94,55 @@
     <div body>
       <key-item-chunk-body [isMore]="true"
         (clickMore)="portalNav.openChannelChannel()">
-        <key-carousel [data]="dataHandler.CC.data" nzSpan="6" [maskMode]="true"
-          [maskLabelArray]="maskLabelArrayCC">
-        </key-carousel>
+        <div class="z-row">
+          <div class="z-col z-col-2">
+            <nz-carousel nzAutoPlay>
+              <div nz-carousel-content
+                *ngFor="let item of dataHandler.CC.data0">
+                <img [src]="item.src">
+                <key-item-mask [isTextLeft]="true">
+                  <key-item-mask-label labelTitle="产品标题"
+                    [label]="item.ChanPinBiaoTi">
+                  </key-item-mask-label>
+                  <key-item-mask-label labelTitle="产品品类"
+                    [label]="item.ChanPinPinLei">
+                  </key-item-mask-label>
+                  <key-item-mask-label labelTitle="产品价格"
+                    [label]="item.ChanPinJiaGe">
+                  </key-item-mask-label>
+                </key-item-mask>
+              </div>
+            </nz-carousel>
+          </div>
+          <div class="z-col z-col-2">
+            <div nz-row>
+              <ng-template ngFor let-item [ngForOf]="dataHandler.CC.data1"
+                let-index="index">
+                <div nz-col nzSpan="12" style="height: 288px;">
+                  <div class="key-item-box item-box-margin-13">
+                    <div class="header">
+                      <img [src]="item.src">
+                      <key-item-mask [isTextLeft]="true">
+                        <key-item-mask-label labelTitle="产品标题"
+                          [label]="item.ChanPinBiaoTi">
+                        </key-item-mask-label>
+                        <key-item-mask-label labelTitle="产品品类"
+                          [label]="item.ChanPinPinLei">
+                        </key-item-mask-label>
+                        <key-item-mask-label labelTitle="产品价格"
+                          [label]="item.ChanPinJiaGe">
+                        </key-item-mask-label>
+                        <key-item-mask-label labelTitle="众筹完成率"
+                          [label]="item.ZhongChouWanChengLu">
+                        </key-item-mask-label>
+                      </key-item-mask>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>
@@ -66,7 +153,7 @@
     <div body>
       <key-item-chunk-body [isMore]="true"
         (clickMore)="portalNav.openChannelChannel()">
-        <key-carousel [data]="dataHandler.ETB.data" nzSpan="6" nzSpanNumber="4"
+        <key-carousel [data]="dataHandler.ETB.data" nzSpan="5" nzSpanNumber="5"
           [maskMode]="true" [rowArray]="[0,1]">
         </key-carousel>
       </key-item-chunk-body>

@@ -5,6 +5,7 @@ import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { DataBrandHandler } from 'src/data/fm/brand';
 import { UtilsFm } from '../utils/utils-fm';
+import { Utils } from 'src/modules/utils/utils';
 
 @Component({
   selector: 'app-brand',
@@ -27,6 +28,26 @@ export class BrandComponent implements OnInit {
 
   currentIndexCRC: number = 0;
 
+  selectDatArray: any[] = [
+    {
+      label: "全部",
+      value: "全部"
+    },
+    {
+      label: "主流",
+      value: "主流"
+    },
+    {
+      label: "热门",
+      value: "热门"
+    },
+  ];
+
+  selectedValue0 = "全部";
+  selectedValue1 = "全部";
+  selectedValue2 = "全部";
+  selectedValue3 = "全部";
+
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
   }
@@ -45,4 +66,19 @@ export class BrandComponent implements OnInit {
     UtilsFm.clickBannerMenu(this.portalNav, menu);
   }
 
+  onSelectChange0() {
+    this.dataHandler.BR.data0 = Utils.arrayRandomSort(this.dataHandler.BR.data0)
+  }
+
+  onSelectChange1() {
+    this.dataHandler.BR.data1 = Utils.arrayRandomSort(this.dataHandler.BR.data1)
+  }
+
+  onSelectChange2() {
+    this.dataHandler.BR.data2 = Utils.arrayRandomSort(this.dataHandler.BR.data2)
+  }
+
+  onSelectChange3() {
+    this.dataHandler.BR.data3 = Utils.arrayRandomSort(this.dataHandler.BR.data3)
+  }
 }
