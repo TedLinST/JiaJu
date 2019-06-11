@@ -264,44 +264,44 @@ export const DataFurnitureMallHandler = {
     enTitle: 'PRODUCTS FEATURED',
     data: [
       {
-        title: '商品标题',
-        price: '￥ 8000',
+        title: '源氏木语实木双抽床头柜白橡木北欧简约现代卧室迷你小柜子床边柜',
+        price: '￥ 830',
         src: 'assets/imgs/furniture-mall/shangpin-1.jpg'
       },
       {
-        title: '商品标题',
-        price: '￥ 8000',
+        title: '源氏木语全实木床头柜黑胡桃木两抽小柜子木蜡油环保时尚小斗柜 ',
+        price: '￥ 1440',
         src: 'assets/imgs/furniture-mall/shangpin-2.jpg'
       },
       {
-        title: '商品标题',
-        price: '￥ 8000',
+        title: '源氏木语实木儿童床头柜北欧橡木经济型收纳柜子现代简约卧室家具',
+        price: '￥ 780',
         src: 'assets/imgs/furniture-mall/shangpin-3.jpg'
       },
       {
-        title: '商品标题',
-        price: '￥ 8000',
+        title: '源氏木语实木床头柜北欧水曲柳收纳储物柜子现代简约卧室新品家具',
+        price: '￥ 660',
         src: 'assets/imgs/furniture-mall/shangpin-4.jpg'
       },
       {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/shangpin-1.jpg'
+        title: '源氏木语纯实木床头柜白橡木床边柜两抽柜北欧简约整装储物柜卧室',
+        price: '￥ 920',
+        src: 'assets/imgs/furniture-mall/shangpin-5.jpg'
       },
       {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/shangpin-2.jpg'
+        title: '源氏木语全实木床头柜现代简约黑胡桃木床边收纳柜北欧',
+        price: '￥ 1250',
+        src: 'assets/imgs/furniture-mall/shangpin-6.jpg'
       },
       {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/shangpin-3.jpg'
+        title: '源氏木语全实木床头柜北欧卧室橡木收纳柜现代简约带锁床边小柜子',
+        price: '￥ 900',
+        src: 'assets/imgs/furniture-mall/shangpin-7.jpg'
       },
       {
-        title: '商品标题',
-        price: '￥ 8000',
-        src: 'assets/imgs/furniture-mall/shangpin-4.jpg'
+        title: '源氏木语纯实木床头柜床边柜原木橡木斗柜抽屉柜北欧简约卧室家具',
+        price: '￥ 870',
+        src: 'assets/imgs/furniture-mall/shangpin-8.jpg'
       }
     ]
   }
