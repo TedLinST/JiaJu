@@ -103,6 +103,8 @@ export class CommodityComponent implements OnInit {
     this.total = data.length;
   }
 
+
+  
   /**
    * 页码改变
    */
