@@ -108,7 +108,7 @@ export class CommodityComponent implements OnInit {
    */
   onPageIndexChange(event: any) {
     this.activePagaIndex = event;
-    this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
+    this.handleListDataPagination(this.allListData, this.activePagaIndex);
   }
 
   /**
