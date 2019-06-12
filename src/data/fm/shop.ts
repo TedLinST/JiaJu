@@ -33,7 +33,7 @@ export const DataShopHandler = {
       MiaoShuPingFen: 4.7,
       FuWuPingFen: 4.8,
       WuLiuPingFen: 4.9,
-      dfSrc: 'assets/imgs/shop/logo.jpg',
+      dfSrc: 'assets/imgs/furniture-mall/dianpu-1.jpg',
       data: [
         {
           ShangPinMingCheng:  '林氏木业北欧简约现代沙发床小户型布艺沙发三人客厅',
