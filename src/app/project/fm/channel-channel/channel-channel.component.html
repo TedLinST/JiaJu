@@ -94,8 +94,27 @@
               <div class="key-item-box item-box-margin-13">
                 <div class="header">
                   <img [src]="item.src">
-                  <key-item-mask>
-                    <key-item-mask-label [label]="item.title">
+                      <div class="r-h-g">
+                        <div class="r-g">
+                          <!-- 已完成 -->
+                          <span >
+                              {{item.ShiFouWanCheng}}
+                          </span>
+                        </div>
+                      </div>
+
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label labelTitle="产品标题"
+                      [label]="item.ChanPinBiaoTi">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="产品品类"
+                      [label]="item.ChanPinPinLei">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="产品价格"
+                      [label]="item.ChanPinJiaGe">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="众筹完成率"
+                      [label]="item.ZhongChouWanChengLu">
                     </key-item-mask-label>
                   </key-item-mask>
                 </div>
@@ -119,8 +138,19 @@
               <div class="key-item-box item-box-margin-13">
                 <div class="header">
                   <img [src]="item.src">
-                  <key-item-mask>
-                    <key-item-mask-label [label]="item.title">
+                  <key-item-mask [isTextLeft]="true">
+
+                    <key-item-mask-label labelTitle="产品标题"
+                      [label]="item.ChanPinBiaoTi">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="品牌"
+                      [label]="item.PinPai">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="产品品类"
+                      [label]="item.ChanPinPinLei">
+                    </key-item-mask-label>
+                    <key-item-mask-label labelTitle="产品价格"
+                      [label]="item.ChanPinJiaGe">
                     </key-item-mask-label>
                   </key-item-mask>
                 </div>

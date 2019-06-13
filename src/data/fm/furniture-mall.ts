@@ -43,12 +43,12 @@ export const DataFurnitureMallHandler = {
         ChanPinJiaGe: 599,
         src: 'assets/imgs/furniture-mall/zhongchou-3.jpg'
       },
-      {
-        ChanPinBiaoTi: '传承明式传统工艺 榫卯结构 缅甸花梨方凳',
-        ChanPinPinLei: '餐椅',
-        ChanPinJiaGe: 2300,
-        src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
-      }
+      // {
+      //   ChanPinBiaoTi: '传承明式传统工艺 榫卯结构 缅甸花梨方凳',
+      //   ChanPinPinLei: '餐椅',
+      //   ChanPinJiaGe: 2300,
+      //   src: 'assets/imgs/furniture-mall/zhongchou-4.jpg'
+      // }
     ],
     data1: [
       {
