@@ -1,7 +1,7 @@
 <div class="channel-channel">
   <!-- 横幅 -->
-  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
-    activeTitle="众筹频道" (clickMenu)="onClickBannerMenu($event)">
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU" activeTitle="众筹频道"
+    (clickMenu)="onClickBannerMenu($event)">
   </fm-banner-menu>
 
   <div class="body">
@@ -20,31 +20,43 @@
   </div>
 
   <!-- 众筹频道 -->
-  <key-item-chunk [enTitle]="dataHandler.CRC.enTitle" [currentIndex]="currentIndexCRC"
-    [title]="dataHandler.CRC.title" [menuData]="dataHandler.CRC.menuData"
-    (switchIndexChange)="currentIndexCRC = $event;portalNav.navigateDeveloping()">
+  <key-item-chunk [enTitle]="dataHandler.CRC.enTitle" [currentIndex]="currentIndexCRC" [title]="dataHandler.CRC.title"
+    [menuData]="dataHandler.CRC.menuData" (switchIndexChange)="currentIndexCRC = $event;portalNav.navigateDeveloping()">
     <div body>
       <key-item-chunk-body>
+
         <div class="z-row">
           <div class="z-col z-col-2">
             <nz-carousel nzAutoPlay>
-              <div nz-carousel-content
-                *ngFor="let item of dataHandler.CRC.data">
+              <div nz-carousel-content *ngFor="let item of dataHandler.CRC.data0">
                 <img [src]="item.src">
+                <key-item-mask [isTextLeft]="true">
+                  <key-item-mask-label labelTitle="产品标题" [label]="item.ChanPinBiaoTi">
+                  </key-item-mask-label>
+                  <key-item-mask-label labelTitle="产品品类" [label]="item.ChanPinPinLei">
+                  </key-item-mask-label>
+                  <key-item-mask-label labelTitle="产品价格" [label]="item.ChanPinJiaGe">
+                  </key-item-mask-label>
+                </key-item-mask>
               </div>
             </nz-carousel>
           </div>
           <div class="z-col z-col-2">
             <div nz-row>
               <!-- [ngForOf]="dataHandler.CRC['data' + currentIndexCRC]" -->
-              <ng-template ngFor let-item [ngForOf]="dataHandler.CRC.data0"
-                let-index="index">
+              <ng-template ngFor let-item [ngForOf]="dataHandler.CRC.data1" let-index="index">
                 <div nz-col nzSpan="12" style="height: 288px;">
                   <div class="key-item-box item-box-margin-13">
                     <div class="header">
                       <img [src]="item.src">
-                      <key-item-mask>
-                        <key-item-mask-label [label]="item.title">
+                      <key-item-mask [isTextLeft]="true">
+                        <key-item-mask-label labelTitle="产品标题" [label]="item.ChanPinBiaoTi">
+                        </key-item-mask-label>
+                        <key-item-mask-label labelTitle="产品品类" [label]="item.ChanPinPinLei">
+                        </key-item-mask-label>
+                        <key-item-mask-label labelTitle="产品价格" [label]="item.ChanPinJiaGe">
+                        </key-item-mask-label>
+                        <key-item-mask-label labelTitle="众筹完成率" [label]="item.ZhongChouWanChengLu">
                         </key-item-mask-label>
                       </key-item-mask>
                     </div>
@@ -83,38 +95,32 @@
   </key-item-chunk>
 
   <!-- 众筹案例 -->
-  <key-item-chunk [enTitle]="dataHandler.CC.enTitle"
-    [title]="dataHandler.CC.title">
+  <key-item-chunk [enTitle]="dataHandler.CC.enTitle" [title]="dataHandler.CC.title">
     <div body>
       <key-item-chunk-body>
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.CC.data"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.CC.data" let-index="index">
             <div nz-col nzSpan="6" style="height: 286px;">
               <div class="key-item-box item-box-margin-13">
                 <div class="header">
                   <img [src]="item.src">
-                      <div class="r-h-g">
-                        <div class="r-g">
-                          <!-- 已完成 -->
-                          <span >
-                              {{item.ShiFouWanCheng}}
-                          </span>
-                        </div>
-                      </div>
+                  <div *ngIf="item.ShiFouWanCheng == '已完成'" class="r-h-g">
+                    <div class="r-g">
+                      <!-- 已完成 -->
+                      <span>
+                        {{item.ShiFouWanCheng}}
+                      </span>
+                    </div>
+                  </div>
 
                   <key-item-mask [isTextLeft]="true">
-                    <key-item-mask-label labelTitle="产品标题"
-                      [label]="item.ChanPinBiaoTi">
+                    <key-item-mask-label labelTitle="产品标题" [label]="item.ChanPinBiaoTi">
                     </key-item-mask-label>
-                    <key-item-mask-label labelTitle="产品品类"
-                      [label]="item.ChanPinPinLei">
+                    <key-item-mask-label labelTitle="产品品类" [label]="item.ChanPinPinLei">
                     </key-item-mask-label>
-                    <key-item-mask-label labelTitle="产品价格"
-                      [label]="item.ChanPinJiaGe">
+                    <key-item-mask-label labelTitle="产品价格" [label]="item.ChanPinJiaGe">
                     </key-item-mask-label>
-                    <key-item-mask-label labelTitle="众筹完成率"
-                      [label]="item.ZhongChouWanChengLu">
+                    <key-item-mask-label labelTitle="众筹完成率" [label]="item.ZhongChouWanChengLu">
                     </key-item-mask-label>
                   </key-item-mask>
                 </div>
@@ -127,30 +133,24 @@
   </key-item-chunk>
 
   <!-- 热门项目 -->
-  <key-item-chunk [enTitle]="dataHandler.PI.enTitle"
-    [title]="dataHandler.PI.title">
+  <key-item-chunk [enTitle]="dataHandler.PI.enTitle" [title]="dataHandler.PI.title">
     <div body>
       <key-item-chunk-body>
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.PI.data"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PI.data" let-index="index">
             <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 18px;">
               <div class="key-item-box item-box-margin-13">
                 <div class="header">
                   <img [src]="item.src">
                   <key-item-mask [isTextLeft]="true">
 
-                    <key-item-mask-label labelTitle="产品标题"
-                      [label]="item.ChanPinBiaoTi">
+                    <key-item-mask-label labelTitle="产品标题" [label]="item.ChanPinBiaoTi">
                     </key-item-mask-label>
-                    <key-item-mask-label labelTitle="品牌"
-                      [label]="item.PinPai">
+                    <key-item-mask-label labelTitle="品牌" [label]="item.PinPai">
                     </key-item-mask-label>
-                    <key-item-mask-label labelTitle="产品品类"
-                      [label]="item.ChanPinPinLei">
+                    <key-item-mask-label labelTitle="产品品类" [label]="item.ChanPinPinLei">
                     </key-item-mask-label>
-                    <key-item-mask-label labelTitle="产品价格"
-                      [label]="item.ChanPinJiaGe">
+                    <key-item-mask-label labelTitle="产品价格" [label]="item.ChanPinJiaGe">
                     </key-item-mask-label>
                   </key-item-mask>
                 </div>

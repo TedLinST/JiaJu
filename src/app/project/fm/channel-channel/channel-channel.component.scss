@@ -1,5 +1,5 @@
 .channel-channel {
-  >.body {
+  > .body {
     width: 1200px;
     margin: 20px auto 0px;
   }
@@ -11,7 +11,7 @@
       display: inline-block;
       padding: 10px 30px;
 
-      .dot{
+      .dot {
         border-radius: 50%;
         font-size: 20px;
         color: #47d572;
@@ -33,36 +33,35 @@
 
       .text {
         font-size: 20px;
-        color: #8b8b8b
+        color: #8b8b8b;
       }
     }
   }
 
-  
-.r-h-g {
+  .r-h-g {
     width: 85px;
     height: 88px;
     overflow: hidden;
     position: absolute;
     top: -3px;
-    right: -3px;
+    right: 1px;
   }
 
   .r-g {
     font: bold 15px Sans-Serif;
-	color: #333;
-	text-align: center;
-	text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
-	-webkit-transform: rotate(45deg);
-	position: relative;
-	padding: 7px 0;
-	left: -5px;
-	top: 15px;
-	width: 120px;
-	background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
-}
+    color: #333;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-image: -webkit-linear-gradient(top, #bfdc7a, #8ebf45);
+  }
 
-  .r-g:before, 
+  .r-g:before,
   .r-g:after {
     content: "";
     border-top: 3px solid #6e8900;
@@ -70,7 +69,6 @@
     border-right: 3px solid transparent;
     position: absolute;
     bottom: -3px;
-    
   }
 
   .r-g:before {
