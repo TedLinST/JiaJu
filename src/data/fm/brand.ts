@@ -302,71 +302,71 @@ export const DataBrandHandler = {
       },
       {
         title: '尚品宅配',
-        src: 'assets/imgs/brand/pinpai-2.jpg'
+        src: 'assets/imgs/brand/JXpinpai-2.jpg'
       },
       {
         title: '林氏木业',
-        src: 'assets/imgs/brand/pinpai-3.jpg'
+        src: 'assets/imgs/brand/JXpinpai-4.jpg'
       },
       {
         title: '欧派',
-        src: 'assets/imgs/brand/pinpai-4.jpg'
+        src: 'assets/imgs/brand/JXpinpai-5.jpg'
       },
       {
         title: '曲美家居',
-        src: 'assets/imgs/brand/pinpai-5.jpg'
+        src: 'assets/imgs/brand/JXpinpai-6.jpg'
       },
       {
         title: '全友家居',
-        src: 'assets/imgs/brand/pinpai-6.jpg'
+        src: 'assets/imgs/brand/JXpinpai-7.jpg'
       },
       {
         title: '美克美家',
-        src: 'assets/imgs/brand/pinpai-7.jpg'
+        src: 'assets/imgs/brand/JXpinpai-8.jpg'
       },
       {
         title: '红苹果家具',
-        src: 'assets/imgs/brand/pinpai-8.jpg'
+        src: 'assets/imgs/brand/JXpinpai-9.jpg'
       },
       {
         title: '顾家家居',
-        src: 'assets/imgs/brand/pinpai-9.jpg'
+        src: 'assets/imgs/brand/JXpinpai-10.jpg'
       },
       {
         title: '仁豪家居',
-        src: 'assets/imgs/brand/pinpai-10.jpg'
+        src: 'assets/imgs/brand/JXpinpai-11.jpg'
       },
       {
         title: '童话森林',
-        src: 'assets/imgs/brand/pinpai-11.jpg'
+        src: 'assets/imgs/brand/JXpinpai-12.jpg'
       },
       {
         title: '长江家具',
-        src: 'assets/imgs/brand/pinpai-12.jpg'
+        src: 'assets/imgs/brand/JXpinpai-13.jpg'
       },
       {
         title: '左右沙发',
-        src: 'assets/imgs/brand/pinpai-13.jpg'
+        src: 'assets/imgs/brand/JXpinpai-14.jpg'
       },
       {
         title: '爱依瑞斯',
-        src: 'assets/imgs/brand/pinpai-14.jpg'
+        src: 'assets/imgs/brand/JXpinpai-15.jpg'
       },
       {
         title: '南洋胡氏',
-        src: 'assets/imgs/brand/pinpai-15.jpg'
+        src: 'assets/imgs/brand/JXpinpai-17.jpg'
       },
       {
         title: '皇朝家私',
-        src: 'assets/imgs/brand/pinpai-16.jpg'
+        src: 'assets/imgs/brand/JXpinpai-18.jpg'
       },
       {
         title: '华日家具',
-        src: 'assets/imgs/brand/pinpai-17.jpg'
+        src: 'assets/imgs/brand/JXpinpai-19.jpg'
       },
       {
         title: '博洛尼',
-        src: 'assets/imgs/brand/pinpai-18.jpg'
+        src: 'assets/imgs/brand/JXpinpai-20.jpg'
       },
     ]
   }
