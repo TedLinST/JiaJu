@@ -1,15 +1,15 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { UtilsTableMarkForCheck } from 'src/modules/utils/table-mark-for-check';
+import { DataDevSampleProcessHoursWagesHandler } from 'src/data/er/dev/sample-process-hours-wages';
 import { Utils } from 'src/modules/utils/utils';
-import { DataDevDesignProgressSummaryHandler } from 'src/data/er/dev/design-progress-summary';
 import { IdCounter } from 'src/modules/utils/id-counter';
 
 @Component({
-  selector: 'app-design-progress-summary',
-  templateUrl: './design-progress-summary.component.html',
-  styleUrls: ['./design-progress-summary.component.scss']
+  selector: 'app-sample-process-hours-wages',
+  templateUrl: './sample-process-hours-wages.component.html',
+  styleUrls: ['./sample-process-hours-wages.component.scss']
 })
-export class DesignProgressSummaryComponent extends UtilsTableMarkForCheck implements OnInit {
+export class SampleProcessHoursWagesComponent extends UtilsTableMarkForCheck implements OnInit {
 
   @HostBinding("class.key-flex-component-v") flex: boolean = true;
 
@@ -25,12 +25,16 @@ export class DesignProgressSummaryComponent extends UtilsTableMarkForCheck imple
 
   beanState: boolean = false;
 
+  examineState: boolean = false;
+
+  approvalState: boolean = false;
+
   constructor() {
     super();
   }
 
   ngOnInit() {
-    this.dataHandler = DataDevDesignProgressSummaryHandler;
+    this.dataHandler = DataDevSampleProcessHoursWagesHandler;
     this.listData = Utils.applySignField(this.dataHandler.listData, 'id');
   }
 
@@ -56,6 +60,8 @@ export class DesignProgressSummaryComponent extends UtilsTableMarkForCheck imple
       Utils.arrayInsert(this.listData, 0, this.bean);
     }
     this.cancel();
+    this.examineCancel();
+    this.approvalCancel();
     this.tableComponentMarkForCheck();
   }
 
@@ -72,6 +78,31 @@ export class DesignProgressSummaryComponent extends UtilsTableMarkForCheck imple
       this.selection = null;
       Utils.arrayRemove(this.listData, selection);
       this.tableComponentMarkForCheck();
+    }
+  }
+
+
+  examineCancel() {
+    this.examineState = false;
+    this.bean = null;
+  }
+
+  openExamine() {
+    if (this.selection) {
+      this.bean = Utils.clone(this.selection.row);
+      this.examineState = true;
+    }
+  }
+
+  approvalCancel() {
+    this.approvalState = false;
+    this.bean = null;
+  }
+
+  openApproval() {
+    if (this.selection) {
+      this.bean = Utils.clone(this.selection.row);
+      this.approvalState = true;
     }
   }
 

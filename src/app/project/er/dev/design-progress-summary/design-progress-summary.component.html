@@ -1,1 +1,56 @@
-设计开发完成进度汇总表
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table title="设计开发完成进度汇总表" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection"
+    style="width: 10px;">
+    <div header>
+      <!-- <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="add()">增加</button>
+        <button class="key-btn key-btn-default" (click)="view()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">修改</button>
+        <button class="key-btn key-btn-default" (click)="delete()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">删除</button>
+      </div> -->
+    </div>
+    <key-table-column heading="年度" width="100" key="NianDu" sortable>
+    </key-table-column>
+    <key-table-column heading="季度" width="100" key="JiDu" sortable>
+    </key-table-column>
+    <key-table-column heading="合计" align="center">
+      <key-table-column heading="波段数量" width="100" key="BoDuanShuLiang" sortable>
+      </key-table-column>
+      <key-table-column heading="计划开发款数" width="120" key="JiHuaKaiFaKuanShu" sortable>
+      </key-table-column>
+      <key-table-column heading="款式颜色数量" width="120" key="KuanShiYanSeShuLiang" sortable>
+      </key-table-column>
+      <key-table-column heading="已开发完成款数" width="120" key="YiKaiFaWanChengKuanShu" sortable>
+      </key-table-column>
+      <key-table-column heading="完成比列" width="120" key="WanChengBiLi" sortable>
+        <ng-template let-value>
+          <div>
+            {{value | number:'1.2-2'}}
+          </div>
+        </ng-template>
+      </key-table-column>
+      <key-table-column heading="未开发完成款数" width="120" key="WeiKaiFaWanChengKuanShu" sortable>
+      </key-table-column>
+      <key-table-column heading="未完成比列" width="120" key="WeiWanChengBiLi" sortable>
+        <ng-template let-value>
+          <div>
+            {{value | number:'1.2-2'}}
+          </div>
+        </ng-template>
+      </key-table-column>
+      <key-table-column heading="超期款数" width="120" key="ChaoQiKuanShu" sortable>
+      </key-table-column>
+      <key-table-column heading="超期比列" width="120" key="ChaoQiBiLi" sortable>
+        <ng-template let-value>
+          <div>
+            {{value | number:'1.2-2'}}
+          </div>
+        </ng-template>
+      </key-table-column>
+    </key-table-column>
+  </key-table>
+  <!-- <div class="key-flex key-flex-v key-flex-no-shrink key-top-split-line key-top-panel">
+
+  </div> -->
+</div>

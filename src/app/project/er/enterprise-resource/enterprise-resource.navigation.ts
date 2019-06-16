@@ -78,4 +78,15 @@ export class EnterpriseResourceNavigation {
     this.router.navigateByUrl(this.baseUrl + 'dev-design-progress-summary');
   }
 
+  /**
+   * 样品款式工序工时工价表
+   */
+  openDevSampleProcessHoursWages(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'dev-sample-process-hours-wages');
+  }
+
+
 }
