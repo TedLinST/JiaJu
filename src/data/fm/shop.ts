@@ -1,10 +1,25 @@
+import { BoxLabelComponent } from 'src/modules/key/box/box-label.component';
 
 // 家具商城 - 商家店铺数据助手
 export const DataShopHandler = {
   // 条件选择区
   TYPE_FILTER: [
     {
-      id: '1',
+      id:'1',
+      title:'店铺类型',
+      data:[
+       {
+         id:'1',
+         label:'官方旗舰店'
+       },
+       {
+        id:'2',
+        label:'授权专卖店'
+      },
+      ]
+    },
+    {
+      id: '2',
       title: '产品品类',
       data: [
         {
@@ -72,7 +87,133 @@ export const DataShopHandler = {
           label:'儿童产品'
         },
       ]
-    }
+    },
+    {
+      id:'3',
+      title:'所在空间',
+      data:[
+       {
+         id:'1',
+         label:'客厅'
+       },
+       {
+        id:'2',
+        label:'餐厅'
+      },
+      {
+        id:'3',
+        label:'书房'
+      },
+      {
+        id:'4',
+        label:'卧室'
+      },
+      {
+        id:'5',
+        label:'厨卫'
+      },
+      {
+        id:'6',
+        label:'其他配套'
+      },
+      ]
+    },
+    {
+      id:'4',
+      title:'产品风格',
+      data:[
+        {
+          id:'1',
+          label:'现代中式'
+        },
+        {
+          id:'2',
+          label:'新中式'
+        },
+        {
+          id:'3',
+          label:'传统中式'
+        },
+        {
+          id:'4',
+          label:'经典美式'
+        },
+        {
+          id:'5',
+          label:'简美'
+        },
+        {
+          id:'6',
+          label:'美式乡村'
+        },
+        {
+          id:'7',
+          label:'意式'
+        },
+        {
+          id:'8',
+          label:'古典欧式'
+        },
+        {
+          id:'9',
+          label:'地中海'
+        },
+        {
+          id:'10',
+          label:'北欧'
+        },
+        {
+          id:'11',
+          label:'现代'
+        },
+      ]
+    },
+    {
+      id:'5',
+      title:'产品类型',
+      data:[
+        {
+          id:'1',
+          label:'实木家具'
+        },
+        {
+          id:'2',
+          label:'板式家具'
+        },
+        {
+          id:'3',
+          label:'定制家具'
+        },
+        {
+          id:'4',
+          label:'古典红木'
+        },
+        {
+          id:'5',
+          label:'办公家具'
+        },
+        {
+          id:'6',
+          label:'户外家具'
+        },
+        {
+          id:'7',
+          label:'金属家具'
+        },
+        {
+          id:'8',
+          label:'塑料家具'
+        },
+        {
+          id:'9',
+          label:'软体家具'
+        },
+        {
+          id:'10',
+          label:'床垫'
+        },
+      ]
+    },
   ],
 
   // 列表数据
@@ -1134,6 +1275,18 @@ export const DataShopHandler = {
         },
       ]
     },
-    
+    {
+      DianPuID: 'TB004',
+      DianPuMingCheng: '缅因森林 美国原材 中国匠心',
+      XiaoLiang: 700,
+      DengJi: 'LV4',
+      MiaoShuPingFen: 4.4,
+      FuWuPingFen: 4.5,
+      WuLiuPingFen: 4.7,
+      dfSrc: 'assets/imgs/shop/logo.jpg',
+      data:[
+
+      ]
+    }
   ]
 }
