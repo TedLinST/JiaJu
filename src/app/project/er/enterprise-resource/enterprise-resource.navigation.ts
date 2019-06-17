@@ -88,5 +88,16 @@ export class EnterpriseResourceNavigation {
     this.router.navigateByUrl(this.baseUrl + 'dev-sample-process-hours-wages');
   }
 
+  /**
+   * 采购订单跟踪表
+   */
+  openProdPurchasingOrderTracking(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-purchasing-order-tracking');
+  }
+
+
 
 }

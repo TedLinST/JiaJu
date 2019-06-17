@@ -1,0 +1,13 @@
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table title="采购订单跟踪表" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection" style="width: 10px;">
+    <div header>
+      <!-- <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="add()">增加</button>
+        <button class="key-btn key-btn-default" (click)="view()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">修改</button>
+        <button class="key-btn key-btn-default" (click)="delete()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">删除</button>
+      </div> -->
+    </div>
+  </key-table>
+</div>

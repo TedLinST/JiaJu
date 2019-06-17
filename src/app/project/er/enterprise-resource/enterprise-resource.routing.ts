@@ -7,7 +7,7 @@ export const EnterpriseResourceRoutes = [
   { path: 'sale-after-sales-management', loadChildren: '../sale/after-sales-management/after-sales-management.module#AfterSalesManagementModule' }, // 售后管理
   { path: 'dev-design-progress-summary', loadChildren: '../dev/design-progress-summary/design-progress-summary.module#DesignProgressSummaryModule' }, // 设计开发完成进度汇总表
   { path: 'dev-sample-process-hours-wages', loadChildren: '../dev/sample-process-hours-wages/sample-process-hours-wages.module#SampleProcessHoursWagesModule' }, // 样品款式工序工时工价表
-  // { path: 'prod-purchasing-order-tracking', loadChildren: '../prod/purchasing-order-tracking/purchasing-order-tracking.module#PurchasingOrderTrackingModule' }, // 采购订单跟踪表
+  { path: 'prod-purchasing-order-tracking', loadChildren: '../prod/purchasing-order-tracking/purchasing-order-tracking.module#PurchasingOrderTrackingModule' }, // 采购订单跟踪表
   // { path: 'prod-production-planning-control', loadChildren: '../prod/production-planning-control/production-planning-control.module#ProductionPlanningControlModule' }, // 生产计划管控表
   // { path: 'prod-scheduling-rules', loadChildren: '../prod/scheduling-rules/scheduling-rules.module#SchedulingRulesModule' }, // 生产计划排单规则
   // { path: 'prod-process-task-sheet', loadChildren: '../prod/process-task-sheet/process-task-sheet.module#ProcessTaskSheetModule' }, // 工序任务单
