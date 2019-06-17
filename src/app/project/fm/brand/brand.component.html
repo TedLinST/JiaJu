@@ -1,7 +1,7 @@
 <div class="brand">
   <!-- 横幅 -->
-  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
-    activeTitle="品牌" (clickMenu)="onClickBannerMenu($event)">
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU" activeTitle="品牌"
+    (clickMenu)="onClickBannerMenu($event)">
   </fm-banner-menu>
 
   <div class="body">
@@ -20,26 +20,25 @@
   </div>
 
   <!-- 品牌推荐 -->
-  <key-item-chunk [enTitle]="dataHandler.BR.enTitle"
-    [title]="dataHandler.BR.title">
+  <key-item-chunk [enTitle]="dataHandler.BR.enTitle" [title]="dataHandler.BR.title">
     <div body>
       <key-item-chunk-body>
         <!-- 主营业务 -->
         <div class="BR-style">
           <div class="title">
             主营业务 <i class="fa fa-angle-double-right"></i>
-            <nz-select style="width: 120px;" nzAllowClear
-              [(ngModel)]="selectedValue0" (ngModelChange)="onSelectChange0()">
-              <ng-template ngFor let-item [ngForOf]="selectDatArray"
-                let-index="index">
+            <nz-select style="width: 120px;" nzAllowClear [(ngModel)]="selectedValue0"
+              (ngModelChange)="onSelectChange0()">
+              <nz-option [nzValue]="'主营业务'" [nzLabel]="'主营业务'">
+              </nz-option>
+              <ng-template ngFor let-item [ngForOf]="selectDatArray" let-index="index">
                 <nz-option [nzValue]="item.value" [nzLabel]="item.label">
                 </nz-option>
               </ng-template>
             </nz-select>
           </div>
           <div nz-row>
-            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data0"
-              let-index="index">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data0" let-index="index">
               <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
                 <div class="key-item-box item-box-margin-13">
                   <div class="header">
@@ -58,18 +57,18 @@
         <div class="BR-style">
           <div class="title">
             主营风格 <i class="fa fa-angle-double-right"></i>
-            <nz-select style="width: 120px;" nzAllowClear
-              [(ngModel)]="selectedValue1" (ngModelChange)="onSelectChange1()">
-              <ng-template ngFor let-item [ngForOf]="selectDatArray"
-                let-index="index">
+            <nz-select style="width: 120px;" nzAllowClear [(ngModel)]="selectedValue1"
+              (ngModelChange)="onSelectChange1()">
+              <nz-option [nzValue]="'主营风格'" [nzLabel]="'主营风格'">
+              </nz-option>
+              <ng-template ngFor let-item [ngForOf]="selectDatArray" let-index="index">
                 <nz-option [nzValue]="item.value" [nzLabel]="item.label">
                 </nz-option>
               </ng-template>
             </nz-select>
           </div>
           <div nz-row>
-            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data1"
-              let-index="index">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data1" let-index="index">
               <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
                 <div class="key-item-box item-box-margin-13">
                   <div class="header">
@@ -88,18 +87,18 @@
         <div class="BR-style">
           <div class="title">
             主营地区 <i class="fa fa-angle-double-right"></i>
-            <nz-select style="width: 120px;" nzAllowClear
-              [(ngModel)]="selectedValue2" (ngModelChange)="onSelectChange2()">
-              <ng-template ngFor let-item [ngForOf]="selectDatArray"
-                let-index="index">
+            <nz-select style="width: 120px;" nzAllowClear [(ngModel)]="selectedValue2"
+              (ngModelChange)="onSelectChange2()">
+              <nz-option [nzValue]="'主营地区'" [nzLabel]="'主营地区'">
+              </nz-option>
+              <ng-template ngFor let-item [ngForOf]="selectDatArray" let-index="index">
                 <nz-option [nzValue]="item.value" [nzLabel]="item.label">
                 </nz-option>
               </ng-template>
             </nz-select>
           </div>
           <div nz-row>
-            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data2"
-              let-index="index">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data2" let-index="index">
               <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
                 <div class="key-item-box item-box-margin-13">
                   <div class="header">
@@ -118,18 +117,18 @@
         <div class="BR-style">
           <div class="title">
             产品来源 <i class="fa fa-angle-double-right"></i>
-            <nz-select style="width: 120px;" nzAllowClear
-              [(ngModel)]="selectedValue3" (ngModelChange)="onSelectChange3()">
-              <ng-template ngFor let-item [ngForOf]="selectDatArray"
-                let-index="index">
+            <nz-select style="width: 120px;" nzAllowClear [(ngModel)]="selectedValue3"
+              (ngModelChange)="onSelectChange3()">
+              <nz-option [nzValue]="'产品来源'" [nzLabel]="'产品来源'">
+              </nz-option>
+              <ng-template ngFor let-item [ngForOf]="selectDatArray" let-index="index">
                 <nz-option [nzValue]="item.value" [nzLabel]="item.label">
                 </nz-option>
               </ng-template>
             </nz-select>
           </div>
           <div nz-row>
-            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data3"
-              let-index="index">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.BR.data3" let-index="index">
               <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
                 <div class="key-item-box item-box-margin-13">
                   <div class="header">
@@ -149,13 +148,11 @@
   </key-item-chunk>
 
   <!-- 精选品牌 -->
-  <key-item-chunk [enTitle]="dataHandler.FB.enTitle"
-    [title]="dataHandler.FB.title">
+  <key-item-chunk [enTitle]="dataHandler.FB.enTitle" [title]="dataHandler.FB.title">
     <div body>
       <key-item-chunk-body>
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.FB.data"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FB.data" let-index="index">
             <div nz-col nzSpan="6" style="height: 286px;margin-bottom: 20px;">
               <div class="key-item-box item-box-margin-13">
                 <div class="header">

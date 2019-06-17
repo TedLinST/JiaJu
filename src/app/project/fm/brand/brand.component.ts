@@ -30,23 +30,51 @@ export class BrandComponent implements OnInit {
 
   selectDatArray: any[] = [
     {
-      label: "全部",
-      value: "全部"
+      label: "实木家具",
+      value: "实木家具"
     },
     {
-      label: "主流",
-      value: "主流"
+      label: "板式家具",
+      value: "板式家具"
     },
     {
-      label: "热门",
-      value: "热门"
+      label: "定制家具",
+      value: "定制家具"
+    },
+    {
+      label: "古典红木",
+      value: "古典红木"
+    },
+    {
+      label: "办公家具",
+      value: "办公家具"
+    },
+    {
+      label: "户外家具",
+      value: "户外家具"
+    },
+    {
+      label: "金属家具",
+      value: "金属家具"
+    },
+    {
+      label: "塑料家具",
+      value: "塑料家具"
+    },
+    {
+      label: "软体家具",
+      value: "软体家具"
+    },
+    {
+      label: "床垫",
+      value: "床垫"
     },
   ];
 
-  selectedValue0 = "全部";
-  selectedValue1 = "全部";
-  selectedValue2 = "全部";
-  selectedValue3 = "全部";
+  selectedValue0 = "主营业务";
+  selectedValue1 = "主营风格";
+  selectedValue2 = "主营地区";
+  selectedValue3 = "产品来源";
 
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
