@@ -4,6 +4,7 @@ export const DataBrandHandler = {
   BR: {
     title: '品牌推荐',
     enTitle: 'BRAND RECOMMENDATION',
+   
     // 主营业务 - 实木家具
     data0: [
       {
@@ -41,38 +42,38 @@ export const DataBrandHandler = {
     ],
     // 主营业务 - 板式家具
     // data0: [
-    //   {
-    //     title: '双虎',
-    //     src: 'assets/imgs/brand/01BSpinpai-1.jpg'
-    //   },
-    //   {
-    //     title: '好莱客',
-    //     src: 'assets/imgs/brand/01BSpinpai-2.jpg'
-    //   },
-    //   {
-    //     title: '意风',
-    //     src: 'assets/imgs/brand/01BSpinpai-3.jpg'
-    //   },
-    //   {
-    //     title: 'KD',
-    //     src: 'assets/imgs/brand/01BSpinpai-4.jpg'
-    //   },
-    //   {
-    //     title: '楷模',
-    //     src: 'assets/imgs/brand/01BSpinpai-5.jpg'
-    //   },
-    //   {
-    //     title: '雅梦娜-RH',
-    //     src: 'assets/imgs/brand/01BSpinpai-6.jpg'
-    //   },
-    //   {
-    //     title: '多维尚书',
-    //     src: 'assets/imgs/brand/01BSpinpai-7.jpg'
-    //   },
-    //   {
-    //     title: '永和轩',
-    //     src: 'assets/imgs/brand/01BSpinpai-8.jpg'
-    //   },
+      // {
+      //   title: '双虎',
+      //   src: 'assets/imgs/brand/01BSpinpai-1.jpg'
+      // },
+      // {
+      //   title: '好莱客',
+      //   src: 'assets/imgs/brand/01BSpinpai-2.jpg'
+      // },
+      // {
+      //   title: '意风',
+      //   src: 'assets/imgs/brand/01BSpinpai-3.jpg'
+      // },
+      // {
+      //   title: 'KD',
+      //   src: 'assets/imgs/brand/01BSpinpai-4.jpg'
+      // },
+      // {
+      //   title: '楷模',
+      //   src: 'assets/imgs/brand/01BSpinpai-5.jpg'
+      // },
+      // {
+      //   title: '雅梦娜-RH',
+      //   src: 'assets/imgs/brand/01BSpinpai-6.jpg'
+      // },
+      // {
+      //   title: '多维尚书',
+      //   src: 'assets/imgs/brand/01BSpinpai-7.jpg'
+      // },
+      // {
+      //   title: '永和轩',
+      //   src: 'assets/imgs/brand/01BSpinpai-8.jpg'
+      // },
     // ],
     
     // 主营风格 - 现代中式
@@ -252,7 +253,7 @@ export const DataBrandHandler = {
         title: '优梵艺术',
         src: 'assets/imgs/brand/04GCpinpai-8.jpg'
       }
-    ]
+    ],
 
     // 产品来源 - 进口
     // data3: [
@@ -290,7 +291,7 @@ export const DataBrandHandler = {
     //   }
     // ]
   },
-
+  
   // 精选品牌
   FB: {
     title: '精选品牌',

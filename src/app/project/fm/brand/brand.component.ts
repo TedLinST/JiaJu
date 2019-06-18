@@ -28,7 +28,7 @@ export class BrandComponent implements OnInit {
 
   currentIndexCRC: number = 0;
 
-  selectDatArray: any[] = [
+  selectDatArray0: any[] = [
     {
       label: "实木家具",
       value: "实木家具"
@@ -37,44 +37,46 @@ export class BrandComponent implements OnInit {
       label: "板式家具",
       value: "板式家具"
     },
+    
+  ];
+  selectDatArray1: any[] = [
     {
-      label: "定制家具",
-      value: "定制家具"
+      label: "现代中式",
+      value: "现代中式"
     },
     {
-      label: "古典红木",
-      value: "古典红木"
+      label: "新中式",
+      value: "新中式"
+    },
+    
+  ];
+  selectDatArray2: any[] = [
+    {
+      label: "华南",
+      value: "华南"
     },
     {
-      label: "办公家具",
-      value: "办公家具"
+      label: "华东",
+      value: "华东"
+    },
+    
+  ];
+  selectDatArray: any[] = [
+    {
+      label: "国产",
+      value: "国产"
     },
     {
-      label: "户外家具",
-      value: "户外家具"
+      label: "进口",
+      value: "进口"
     },
-    {
-      label: "金属家具",
-      value: "金属家具"
-    },
-    {
-      label: "塑料家具",
-      value: "塑料家具"
-    },
-    {
-      label: "软体家具",
-      value: "软体家具"
-    },
-    {
-      label: "床垫",
-      value: "床垫"
-    },
+    
   ];
 
-  selectedValue0 = "主营业务";
-  selectedValue1 = "主营风格";
-  selectedValue2 = "主营地区";
-  selectedValue3 = "产品来源";
+  selectedValue0 = "实木家具";
+  selectedValue1 = "现代中式";
+  selectedValue2 = "华南";
+  selectedValue3 = "国产";
 
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);

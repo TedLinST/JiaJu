@@ -29,9 +29,9 @@
             主营业务 <i class="fa fa-angle-double-right"></i>
             <nz-select style="width: 120px;" nzAllowClear [(ngModel)]="selectedValue0"
               (ngModelChange)="onSelectChange0()">
-              <nz-option [nzValue]="'主营业务'" [nzLabel]="'主营业务'">
+              <nz-option [nzValue]="'主营业务'" >
               </nz-option>
-              <ng-template ngFor let-item [ngForOf]="selectDatArray" let-index="index">
+              <ng-template ngFor let-item [ngForOf]="selectDatArray0" let-index="index">
                 <nz-option [nzValue]="item.value" [nzLabel]="item.label">
                 </nz-option>
               </ng-template>
@@ -59,9 +59,9 @@
             主营风格 <i class="fa fa-angle-double-right"></i>
             <nz-select style="width: 120px;" nzAllowClear [(ngModel)]="selectedValue1"
               (ngModelChange)="onSelectChange1()">
-              <nz-option [nzValue]="'主营风格'" [nzLabel]="'主营风格'">
+              <nz-option [nzValue]="'主营风格'" >
               </nz-option>
-              <ng-template ngFor let-item [ngForOf]="selectDatArray" let-index="index">
+              <ng-template ngFor let-item [ngForOf]="selectDatArray1" let-index="index">
                 <nz-option [nzValue]="item.value" [nzLabel]="item.label">
                 </nz-option>
               </ng-template>
@@ -89,9 +89,9 @@
             主营地区 <i class="fa fa-angle-double-right"></i>
             <nz-select style="width: 120px;" nzAllowClear [(ngModel)]="selectedValue2"
               (ngModelChange)="onSelectChange2()">
-              <nz-option [nzValue]="'主营地区'" [nzLabel]="'主营地区'">
+              <nz-option [nzValue]="'主营地区'" >
               </nz-option>
-              <ng-template ngFor let-item [ngForOf]="selectDatArray" let-index="index">
+              <ng-template ngFor let-item [ngForOf]="selectDatArray2" let-index="index">
                 <nz-option [nzValue]="item.value" [nzLabel]="item.label">
                 </nz-option>
               </ng-template>
@@ -119,9 +119,9 @@
             产品来源 <i class="fa fa-angle-double-right"></i>
             <nz-select style="width: 120px;" nzAllowClear [(ngModel)]="selectedValue3"
               (ngModelChange)="onSelectChange3()">
-              <nz-option [nzValue]="'产品来源'" [nzLabel]="'产品来源'">
+              <nz-option [nzValue]="'产品来源'" >
               </nz-option>
-              <ng-template ngFor let-item [ngForOf]="selectDatArray" let-index="index">
+              <ng-template ngFor let-item [ngForOf]="selectDatArray3" let-index="index">
                 <nz-option [nzValue]="item.value" [nzLabel]="item.label">
                 </nz-option>
               </ng-template>
