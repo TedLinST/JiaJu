@@ -1,13 +1,18 @@
 <div class="key-flex-grow-1 key-flex key-flex-h">
   <key-table title="采购订单跟踪表" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection" style="width: 10px;">
     <div header>
-      <!-- <div class="key-btn-group">
-        <button class="key-btn key-btn-default" (click)="add()">增加</button>
-        <button class="key-btn key-btn-default" (click)="view()"
-          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">修改</button>
-        <button class="key-btn key-btn-default" (click)="delete()"
-          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">删除</button>
-      </div> -->
     </div>
+    <key-table-column heading="单据编号" width="140" key="DanJuBianHao" sortable>
+    </key-table-column>
+    <key-table-column heading="供应商名称" width="140" key="GongYingShangMingCheng" sortable>
+    </key-table-column>
+    <key-table-column heading="采购日期" width="100" key="CaiGouRiQi" sortable>
+    </key-table-column>
+    <key-table-column heading="要求到货日期" width="120" key="YaoQiuDaoHuoRiQi" sortable>
+    </key-table-column>
+    <key-table-column heading="制表人" width="100" key="ZhiBiaoRen" sortable>
+    </key-table-column>
+    <key-table-column heading="制表日期" width="100" key="ZhiBiaoRiQi" sortable>
+    </key-table-column>
   </key-table>
 </div>

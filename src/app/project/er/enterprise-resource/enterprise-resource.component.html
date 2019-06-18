@@ -8,16 +8,14 @@
   <div class="flex flex-h flex-grow-1 er">
     <div class="flex flex-v flex-no-shrink sidebar">
       <div class="menu flex flex-grow-1">
-        <ul nz-menu [nzMode]="'inline'" nzTheme="light"
-          [nzInlineCollapsed]="isCollapsed">
+        <ul nz-menu [nzMode]="'inline'" nzTheme="light" [nzInlineCollapsed]="isCollapsed">
           <li nz-submenu>
             <span title>
               <i nz-icon type="team"></i>
               <span>组织管理</span>
             </span>
             <ul>
-              <li nz-menu-item
-                (click)="erNav.openHrOrganizationStructure($event)">组织结构管理</li>
+              <li nz-menu-item (click)="erNav.openHrOrganizationStructure($event)">组织结构管理</li>
               <li nz-submenu>
                 <span title>权限分配表</span>
                 <ul>
@@ -38,8 +36,7 @@
                 <span title>市场调研</span>
                 <ul>
                   <li nz-menu-item>款式销量评级设置</li>
-                  <li nz-menu-item
-                    (click)="erNav.openSaleSalesAnalysis($event)">款式分析表</li>
+                  <li nz-menu-item (click)="erNav.openSaleSalesAnalysis($event)">款式分析表</li>
                   <li nz-menu-item>款式销售分析表</li>
                   <li nz-menu-item>区域销售分析表</li>
                 </ul>
@@ -49,11 +46,9 @@
                 <ul>
                   <li nz-menu-item>销售下单表</li>
                   <li nz-menu-item>销售订单合同</li>
-                  <li nz-menu-item
-                    (click)="erNav.openSaleCommodityPlanningControl($event)">
+                  <li nz-menu-item (click)="erNav.openSaleCommodityPlanningControl($event)">
                     商品计划管控表</li>
-                  <li nz-menu-item
-                    (click)="erNav.openSaleSalesOrderDetails($event)">销售下单明细表
+                  <li nz-menu-item (click)="erNav.openSaleSalesOrderDetails($event)">销售下单明细表
                   </li>
                   <li nz-menu-item>销售下单汇总表</li>
                   <li nz-menu-item>订单汇总下达表</li>
@@ -92,8 +87,7 @@
                   <li nz-menu-item>商品调拨汇总表</li>
                 </ul>
               </li>
-              <li nz-menu-item
-                (click)="erNav.openSaleAfterSalesManagement($event)">售后管理</li>
+              <li nz-menu-item (click)="erNav.openSaleAfterSalesManagement($event)">售后管理</li>
               <li nz-submenu>
                 <span title>商品退货</span>
                 <ul>
@@ -180,7 +174,7 @@
               <li nz-submenu>
                 <span title>生产计划系统</span>
                 <ul>
-                  <li nz-menu-item>生产计划管控表</li>
+                  <li nz-menu-item (click)="erNav.openProdProductionPlanningControl($event)">生产计划管控表</li>
                   <li nz-menu-item>生产计划排单规则</li>
                   <li nz-menu-item>生产车间指令单</li>
                   <li nz-menu-item>任务分派单</li>
@@ -236,8 +230,7 @@
               </li>
             </ul>
           </li>
-          <li nz-menu-item nz-tooltip nzPlacement="right"
-            [nzTitle]="isCollapsed ? '系统设置' : ''">
+          <li nz-menu-item nz-tooltip nzPlacement="right" [nzTitle]="isCollapsed ? '系统设置' : ''">
             <span title>
               <i nz-icon type="setting"></i>
               <span>系统设置</span>
@@ -246,20 +239,17 @@
         </ul>
       </div>
       <div class="btn flex flex-no-shrink">
-        <button class="flex flex-grow-1" nz-button [nzType]="'primary'"
-          (click)="toggleCollapsed()">
+        <button class="flex flex-grow-1" nz-button [nzType]="'primary'" (click)="toggleCollapsed()">
           <i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
         </button>
-        <button *ngIf="!isCollapsed" class="flex flex-grow-1" nz-button
-          [nzType]="'danger'" (click)="onLoginOut()">
+        <button *ngIf="!isCollapsed" class="flex flex-grow-1" nz-button [nzType]="'danger'" (click)="onLoginOut()">
           退出
         </button>
       </div>
     </div>
     <div class="flex flex-v flex-grow-1 content">
       <!-- 主体内容 -->
-      <div #contentBody id="content-body"
-        class="flex flex-v flex-grow-1 content-body">
+      <div #contentBody id="content-body" class="flex flex-v flex-grow-1 content-body">
         <router-outlet></router-outlet>
       </div>
     </div>

@@ -99,5 +99,15 @@ export class EnterpriseResourceNavigation {
   }
 
 
+  /**
+   * 生产计划管控表
+   */
+  openProdProductionPlanningControl(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-production-planning-control');
+  }
+
 
 }
