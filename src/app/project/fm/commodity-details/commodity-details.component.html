@@ -1,7 +1,6 @@
 <div class="commodity-details">
   <!-- 横幅 -->
-  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU"
-    (clickMenu)="onClickBannerMenu($event)">
+  <fm-banner-menu [srcUrl]="CH_FM_BANNER_SRC" [dataMenu]="CH_FM_BANNER_MENU" (clickMenu)="onClickBannerMenu($event)">
   </fm-banner-menu>
 
   <div class="body">
@@ -28,24 +27,19 @@
             <img [src]="itemInfo.src">
           </div>
           <div class="min-box">
-            <div class="item" [class.active]="itemActiveIndex == 1"
-              (click)="itemActiveIndex = 1">
+            <div class="item" [class.active]="itemActiveIndex == 1" (click)="itemActiveIndex = 1">
               <img [src]="itemInfo.src">
             </div>
-            <div class="item" [class.active]="itemActiveIndex == 2"
-              (click)="itemActiveIndex = 2">
+            <div class="item" [class.active]="itemActiveIndex == 2" (click)="itemActiveIndex = 2">
               <img [src]="itemInfo.src">
             </div>
-            <div class="item" [class.active]="itemActiveIndex == 3"
-              (click)="itemActiveIndex = 3">
+            <div class="item" [class.active]="itemActiveIndex == 3" (click)="itemActiveIndex = 3">
               <img [src]="itemInfo.src">
             </div>
-            <div class="item" [class.active]="itemActiveIndex == 4"
-              (click)="itemActiveIndex = 4">
+            <div class="item" [class.active]="itemActiveIndex == 4" (click)="itemActiveIndex = 4">
               <img [src]="itemInfo.src">
             </div>
-            <div class="item" [class.active]="itemActiveIndex == 5"
-              (click)="itemActiveIndex = 5">
+            <div class="item" [class.active]="itemActiveIndex == 5" (click)="itemActiveIndex = 5">
               <img [src]="itemInfo.src">
             </div>
           </div>
@@ -61,39 +55,31 @@
             XXX市</div> -->
           <div class="label">
             款式选择：
-            <ng-template ngFor let-item [ngForOf]="CH_KuanShiFenLei"
-              let-index="index">
-              <span [class.active]="itemInfo.KuanShiFenLei == item.id"
-                (click)="itemInfo.KuanShiFenLei = item.id">
+            <ng-template ngFor let-item [ngForOf]="CH_KuanShiFenLei" let-index="index">
+              <span [class.active]="itemInfo.KuanShiFenLei == item.id" (click)="itemInfo.KuanShiFenLei = item.id">
                 {{item.text}}
               </span>
             </ng-template>
           </div>
           <div class="label">
             颜色选择：
-            <ng-template ngFor let-item [ngForOf]="CH_YanSeFenLei"
-              let-index="index">
-              <span [class.active]="itemInfo.YanSeFenLei == item.id"
-                (click)="itemInfo.YanSeFenLei = item.id">
+            <ng-template ngFor let-item [ngForOf]="CH_YanSeFenLei" let-index="index">
+              <span [class.active]="itemInfo.YanSeFenLei == item.id" (click)="itemInfo.YanSeFenLei = item.id">
                 {{item.text}}
               </span>
             </ng-template>
           </div>
           <div class="label">
             服务选择：
-            <ng-template ngFor let-item [ngForOf]="CH_AnZhuangFangShi"
-              let-index="index">
-              <span [class.active]="itemInfo.AnZhuangFangShi == item.id"
-                (click)="itemInfo.AnZhuangFangShi = item.id">
+            <ng-template ngFor let-item [ngForOf]="CH_AnZhuangFangShi" let-index="index">
+              <span [class.active]="itemInfo.AnZhuangFangShi == item.id" (click)="itemInfo.AnZhuangFangShi = item.id">
                 {{item.text}}
               </span>
             </ng-template>
           </div>
           <div class="btn-div">
-            <button class="btn btn1" nz-button nzType="primary"
-              (click)="onCollection()">收藏</button>
-            <button class="btn btn2" nz-button nzType="primary"
-              (click)="onAddPurchase()">购买</button>
+            <button class="btn btn1" nz-button nzType="primary" (click)="onCollection()">收藏</button>
+            <button class="btn btn2" nz-button nzType="primary" (click)="onAddPurchase()">购买</button>
           </div>
         </div>
       </div>
@@ -133,8 +119,7 @@
           </div>
           <div class="kf">
             <br>
-            <key-dot-title title="售前客服"
-              [styles]="{'color':'#fff','fontSize.px':'15'}">
+            <key-dot-title title="售前客服" [styles]="{'color':'#fff','fontSize.px':'15'}">
             </key-dot-title>
             <div class="z-row">
               <div class="z-col z-col-3">
@@ -165,8 +150,7 @@
               </div>
             </div>
             <br>
-            <key-dot-title title="售后客服"
-              [styles]="{'color':'#fff','fontSize.px':'15'}">
+            <key-dot-title title="售后客服" [styles]="{'color':'#fff','fontSize.px':'15'}">
             </key-dot-title>
             <div class="z-row">
               <div class="z-col z-col-3">
@@ -202,28 +186,35 @@
       </div>
       <div class="right">
         <div class="header">
-          <div class="item" [class.active]="activeIndex == 1"
-            (click)="activeIndex = 1">
+          <div class="item" [class.active]="activeIndex == 1" (click)="activeIndex = 1">
             图片详情
           </div>
-          <div class="item" [class.active]="activeIndex == 2"
-            (click)="activeIndex = 2">
+          <div class="item" [class.active]="activeIndex == 2" (click)="activeIndex = 2">
             累计评论（10）
           </div>
         </div>
         <div class="body">
           <ng-template [ngIf]="activeIndex == 1">
-            <ng-template ngFor let-item [ngForOf]="itemInfo.TuPianXiangQing"
-              let-index="index">
+            <ng-template ngFor let-item [ngForOf]="itemInfo.TuPianXiangQing" let-index="index">
               <img [src]="item.src" style="max-width: 100%">
             </ng-template>
           </ng-template>
           <ng-template [ngIf]="activeIndex == 2">
-            <ng-template ngFor let-item [ngForOf]="itemInfo.LeiJiPingLun"
-              let-index="index">
-              <img [src]="item.src" style="max-width: 100%">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.data" let-index="index">
+              <div class="item-msg">
+                <div class="img">
+                  <img [src]="item.src">
+                </div>
+                <div class="info">
+                  <div class="label singleTextBeyondHide">
+                    {{item.YongHuMing}}</div>
+                </div>
+                <div class="liuyan">
+                  留言信息：{{item.LeiJiPingLun}}
+                </div>
+                <div class="clearfix"></div>
+              </div>
             </ng-template>
-           
           </ng-template>
         </div>
       </div>

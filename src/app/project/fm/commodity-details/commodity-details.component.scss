@@ -1,5 +1,5 @@
 .commodity-details {
-  >.body {
+  > .body {
     width: 1200px;
     margin: 20px auto 0px;
 
@@ -8,7 +8,6 @@
 
       .left {
         width: 415px !important;
-
 
         .max-box {
           text-align: center;
@@ -123,7 +122,6 @@
     }
 
     .body {
-
       .left {
         float: left;
         width: 190px;
@@ -203,7 +201,6 @@
             }
           }
         }
-
       }
 
       .right {
@@ -212,7 +209,6 @@
         width: calc(100% - 200px);
 
         .header {
-
           border-bottom: 1px solid #e3e2e3;
 
           .item {
@@ -230,7 +226,46 @@
           }
         }
 
-        .body {}
+        .body {
+          .item-msg {
+            margin: 0px 10px 10px 10px;
+            padding: 5px 5px 10px 15px;
+            border-bottom: 1px solid #ccc;
+
+            .img {
+              float: left;
+              width: 100px;
+              height: 100px;
+              line-height: 100px;
+              text-align: center;
+
+              img {
+                max-width: 100%;
+                border-radius: 50%;
+              }
+            }
+
+            .info {
+              width: 140px;
+              float: left;
+              padding-left: 20px;
+              padding-top: 35px;
+
+              .label {
+                margin-bottom: 4px;
+              }
+            }
+
+            .liuyan {
+              width: 680px;
+              padding-top: 15px;
+              height: 122px;
+              overflow: hidden;
+              float: left;
+              padding: 10px 15px;
+            }
+          }
+        }
       }
     }
   }
