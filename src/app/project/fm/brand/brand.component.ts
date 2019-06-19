@@ -61,7 +61,7 @@ export class BrandComponent implements OnInit {
     },
     
   ];
-  selectDatArray: any[] = [
+  selectDatArray3: any[] = [
     {
       label: "国产",
       value: "国产"
