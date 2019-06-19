@@ -109,5 +109,15 @@ export class EnterpriseResourceNavigation {
     this.router.navigateByUrl(this.baseUrl + 'prod-production-planning-control');
   }
 
+  /**
+   * 生产计划排单规则
+   */
+  openProdSchedulingRules(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-scheduling-rules');
+  }
+
 
 }
