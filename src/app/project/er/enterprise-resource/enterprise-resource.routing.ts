@@ -10,7 +10,7 @@ export const EnterpriseResourceRoutes = [
   { path: 'prod-purchasing-order-tracking', loadChildren: '../prod/purchasing-order-tracking/purchasing-order-tracking.module#PurchasingOrderTrackingModule' }, // 采购订单跟踪表
   { path: 'prod-production-planning-control', loadChildren: '../prod/production-planning-control/production-planning-control.module#ProductionPlanningControlModule' }, // 生产计划管控表
   { path: 'prod-scheduling-rules', loadChildren: '../prod/scheduling-rules/scheduling-rules.module#SchedulingRulesModule' }, // 生产计划排单规则
-  // { path: 'prod-process-task-sheet', loadChildren: '../prod/process-task-sheet/process-task-sheet.module#ProcessTaskSheetModule' }, // 工序任务单
+  { path: 'prod-process-task-sheet', loadChildren: '../prod/process-task-sheet/process-task-sheet.module#ProcessTaskSheetModule' }, // 工序任务单
   // { path: 'prod-team-task-schedule', loadChildren: '../prod/team-task-schedule/team-task-schedule.module#TeamTaskScheduleModule' }, // 生产班组任务完成进度表
   // { path: 'prod-material-release-list', loadChildren: '../prod/material-release-list/material-release-list.module#MaterialReleaseListModule' }, // 材料出库单
   // { path: 'prod-material-consumption-analysis', loadChildren: '../prod/material-consumption-analysis/material-consumption-analysis.module#MaterialConsumptionAnalysisModule' }, // 材料消耗分析表

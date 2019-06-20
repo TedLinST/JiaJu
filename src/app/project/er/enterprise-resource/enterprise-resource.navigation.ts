@@ -119,5 +119,15 @@ export class EnterpriseResourceNavigation {
     this.router.navigateByUrl(this.baseUrl + 'prod-scheduling-rules');
   }
 
+  /**
+   * 工序任务单
+   */
+  openProdProcessTaskSheet(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-process-task-sheet');
+  }
+  
 
 }
