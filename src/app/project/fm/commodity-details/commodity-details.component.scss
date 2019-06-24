@@ -227,6 +227,38 @@
         }
 
         .body {
+          .item-info {
+            width: 1000px;
+            margin: 20px auto;
+            
+            .itemInfo {
+              border: 1px solid #DFDFDF;
+              padding:40px;
+
+              .itemInfo-title {
+                color: #999999;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+
+              .itemInfoList span {
+                display: block;
+                width: 220px;
+                float: left;
+                padding: 8px 0px;
+                color: #666666;
+              }
+            }
+            
+            .itemInfo-img img {
+              float: left;
+              display: block;
+              width: 1000px;
+              margin:20px 0px;
+            }
+            
+          }
+          
           .item-msg {
             margin: 0px 10px 10px 10px;
             padding: 5px 5px 10px 15px;
@@ -269,7 +301,9 @@
               padding: 10px 15px;
             }
           }
+
         }
+
       }
     }
   }

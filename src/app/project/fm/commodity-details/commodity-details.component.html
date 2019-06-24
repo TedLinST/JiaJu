@@ -30,7 +30,7 @@
             <div class="item" [class.active]="itemActiveIndex == 1" (click)="itemActiveIndex = 1">
               <img [src]="itemInfo.src">
             </div>
-            <div class="item" [class.active]="itemActiveIndex == 2" (click)="itemActiveIndex = 2">
+            <!-- <div class="item" [class.active]="itemActiveIndex == 2" (click)="itemActiveIndex = 2">
               <img [src]="itemInfo.src">
             </div>
             <div class="item" [class.active]="itemActiveIndex == 3" (click)="itemActiveIndex = 3">
@@ -41,7 +41,7 @@
             </div>
             <div class="item" [class.active]="itemActiveIndex == 5" (click)="itemActiveIndex = 5">
               <img [src]="itemInfo.src">
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="z-col z-col-2 right">
@@ -190,14 +190,38 @@
             图片详情
           </div>
           <div class="item" [class.active]="activeIndex == 2" (click)="activeIndex = 2">
-            累计评论（10）
+            累计评论（5）
           </div>
         </div>
         <div class="body">
           <ng-template [ngIf]="activeIndex == 1">
-            <ng-template ngFor let-item [ngForOf]="itemInfo.TuPianXiangQing" let-index="index">
-              <img [src]="item.src" style="max-width: 100%">
-            </ng-template>
+              <ng-template ngFor let-item [ngForOf]="itemInfo.TuPianXiangQing" let-index="index">
+                <!-- <img [src]="item.src" style="max-width: 100%"> -->
+              <div class="item-info" style="display: block;">
+                  <div class="itemInfo">
+                    <div class="itemInfo-title">产品参数：</div>
+                    <div class="itemInfoList">
+                      <span>品牌:  {{itemInfo.PinPai}} </span>
+                      <span>产品品类： {{itemInfo.PinLei}} </span>
+                      <span>材质成分：木</span>
+                      <span>产品类型:  {{itemInfo.ChanPinleixing}}</span>
+                      <span> 规格尺寸：
+                        <div *ngIf="itemInfo.GuiGe == '规格';else GuiGe" > </div> 
+                        <ng-template #GuiGe>{{itemInfo.GuiGe}}</ng-template>
+                      </span>
+                      <span>风格：{{itemInfo.ChanPinFengGei}}</span>
+                      <span>适用人数： 组合</span>
+                      <span>是否定制: 是 </span>
+                      <span>结构工艺： 木质工艺</span>
+                      <span>产地：{{itemInfo.ChanDi}}</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="itemInfo-img">
+                    <img [src]="itemInfo.src" >
+                  </div>
+              </div>
+              </ng-template>
           </ng-template>
           <ng-template [ngIf]="activeIndex == 2">
             <ng-template ngFor let-item [ngForOf]="dataHandler.data" let-index="index">
