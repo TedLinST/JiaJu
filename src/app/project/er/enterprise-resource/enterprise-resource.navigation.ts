@@ -128,6 +128,36 @@ export class EnterpriseResourceNavigation {
     }
     this.router.navigateByUrl(this.baseUrl + 'prod-process-task-sheet');
   }
-  
+
+  /**
+   * 生产班组任务完成进度表
+   */
+  openProdTeamTaskSchedule(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-team-task-schedule');
+  }
+
+  /**
+   * 材料出库单
+   */
+  openProdMaterialReleaseList(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-material-release-list');
+  }
+
+  /**
+   * 材料消耗分析表
+   */
+  openProdMaterialConsumptionAnalysis(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-material-consumption-analysis');
+  }
+
 
 }

@@ -1,5 +1,5 @@
 <div class="key-flex-grow-1 key-flex key-flex-h">
-  <key-table title="售后服务信息表" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection" style="width:10px;">
+  <key-table title="材料出库单" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection" style="width:10px;">
     <div header>
       <div class="key-btn-group">
         <button class="key-btn key-btn-default" (click)="add()">增加</button>
@@ -15,17 +15,21 @@
     </div>
     <key-table-column heading="单据编号" width="140" key="DanJuBianHao" sortable>
     </key-table-column>
-    <key-table-column heading="销售订单编号" width="130" key="XiaoShouDingDanBianHao" sortable>
+    <key-table-column heading="发料仓库名称" width="140" key="FaLiaoCangKuMingCheng" sortable>
     </key-table-column>
-    <key-table-column heading="销售单位名称" width="120" key="XiaoShouDanWeiMingCheng" sortable>
+    <key-table-column heading="出库日期" width="100" key="ChuKuRiQi" sortable>
     </key-table-column>
-    <key-table-column heading="销售日期" width="100" key="XiaoShouRiQi" sortable>
+    <key-table-column heading="领料单位名称" width="130" key="LingLiaoDanWeiMingCheng" sortable>
     </key-table-column>
-    <key-table-column heading="售后日期" width="100" key="ShouHouRiQi" sortable>
+    <key-table-column heading="生产订单编号" width="130" key="ShengChanDingDanBianHao" sortable>
     </key-table-column>
-    <key-table-column heading="要求完成日期" width="120" key="YaoQiuWanChengRiQi" sortable>
+    <key-table-column heading="款号" width="130" key="KuanHao" sortable>
     </key-table-column>
-    <key-table-column heading="实际完成日期" width="120" key="ShiJiWanChengRiQi" sortable>
+    <key-table-column heading="款式" width="130" key="KuanShi" sortable>
+    </key-table-column>
+    <key-table-column heading="制表人" width="100" key="ZhiBiaoRen" sortable>
+    </key-table-column>
+    <key-table-column heading="制表日期" width="100" key="ZhiBiaoRiQi" sortable>
     </key-table-column>
     <key-table-column heading="审核状态" width="100" key="ShenHeZhuangTai" sortable>
     </key-table-column>
@@ -36,7 +40,7 @@
   </key-table>
 </div>
 
-<key-modal *ngIf="beanState" header="售后服务信息信息" [open]="true" class="key-modal-basis" (close)="cancel()">
+<key-modal *ngIf="beanState" header="材料出库单信息" [open]="true" class="key-modal-basis" (close)="cancel()">
   <div body>
     <form class="key-row" #formDemo="ngForm">
       <div class="key-col-12">
@@ -44,29 +48,37 @@
           <input #bean_DanJuBianHao="ngModel" type="text" class="form-control" name="bean.DanJuBianHao"
             [(ngModel)]="bean.DanJuBianHao" required>
         </key-form-element>
-        <key-form-element label="销售订单编号" [error]="bean_XiaoShouDingDanBianHao.errors">
-          <input #bean_XiaoShouDingDanBianHao="ngModel" type="text" class="form-control"
-            name="bean.XiaoShouDingDanBianHao" [(ngModel)]="bean.XiaoShouDingDanBianHao" required>
+        <key-form-element label="发料仓库名称" [error]="bean_FaLiaoCangKuMingCheng.errors">
+          <input #bean_FaLiaoCangKuMingCheng="ngModel" type="text" class="form-control"
+            name="bean.FaLiaoCangKuMingCheng" [(ngModel)]="bean.FaLiaoCangKuMingCheng" required>
         </key-form-element>
-        <key-form-element label="销售单位名称" [error]="bean_XiaoShouDanWeiMingCheng.errors">
-          <input #bean_XiaoShouDanWeiMingCheng="ngModel" type="text" class="form-control"
-            name="bean.XiaoShouDanWeiMingCheng" [(ngModel)]="bean.XiaoShouDanWeiMingCheng">
+        <key-form-element label="出库日期" [error]="bean_ChuKuRiQi.errors">
+          <input #bean_ChuKuRiQi="ngModel" type="date" class="form-control" name="bean.ChuKuRiQi"
+            [(ngModel)]="bean.ChuKuRiQi" required>
         </key-form-element>
-        <key-form-element label="销售日期" [error]="bean_XiaoShouRiQi.errors">
-          <input #bean_XiaoShouRiQi="ngModel" type="date" class="form-control" name="bean.XiaoShouRiQi"
-            [(ngModel)]="bean.XiaoShouRiQi">
+        <key-form-element label="领料单位名称" [error]="bean_LingLiaoDanWeiMingCheng.errors">
+          <input #bean_LingLiaoDanWeiMingCheng="ngModel" type="text" class="form-control"
+            name="bean.LingLiaoDanWeiMingCheng" [(ngModel)]="bean.LingLiaoDanWeiMingCheng" required>
         </key-form-element>
-        <key-form-element label="售后日期" [error]="bean_ShouHouRiQi.errors">
-          <input #bean_ShouHouRiQi="ngModel" type="date" class="form-control" name="bean.ShouHouRiQi"
-            [(ngModel)]="bean.ShouHouRiQi">
+        <key-form-element label="生产订单编号" [error]="bean_ShengChanDingDanBianHao.errors">
+          <input #bean_ShengChanDingDanBianHao="ngModel" type="text" class="form-control"
+            name="bean.ShengChanDingDanBianHao" [(ngModel)]="bean.ShengChanDingDanBianHao" required>
         </key-form-element>
-        <key-form-element label="要求完成日期" [error]="bean_YaoQiuWanChengRiQi.errors">
-          <input #bean_YaoQiuWanChengRiQi="ngModel" type="date" class="form-control" name="bean.YaoQiuWanChengRiQi"
-            [(ngModel)]="bean.YaoQiuWanChengRiQi">
+        <key-form-element label="款号" [error]="bean_KuanHao.errors">
+          <input #bean_KuanHao="ngModel" type="text" class="form-control" name="bean.KuanHao"
+            [(ngModel)]="bean.KuanHao">
         </key-form-element>
-        <key-form-element label="实际完成日期" [error]="bean_ShiJiWanChengRiQi.errors">
-          <input #bean_ShiJiWanChengRiQi="ngModel" type="date" class="form-control" name="bean.ShiJiWanChengRiQi"
-            [(ngModel)]="bean.ShiJiWanChengRiQi">
+        <key-form-element label="款式" [error]="bean_KuanShi.errors">
+          <input #bean_KuanShi="ngModel" type="text" class="form-control" name="bean.KuanShi"
+            [(ngModel)]="bean.KuanShi">
+        </key-form-element>
+        <key-form-element label="制表人" [error]="bean_ZhiBiaoRen.errors">
+          <input #bean_ZhiBiaoRen="ngModel" type="text" class="form-control" name="bean.ZhiBiaoRen"
+            [(ngModel)]="bean.ZhiBiaoRen">
+        </key-form-element>
+        <key-form-element label="制表日期" [error]="bean_ZhiBiaoRiQi.errors">
+          <input #bean_ZhiBiaoRiQi="ngModel" type="date" class="form-control" name="bean.ZhiBiaoRiQi"
+            [(ngModel)]="bean.ZhiBiaoRiQi">
         </key-form-element>
       </div>
     </form>

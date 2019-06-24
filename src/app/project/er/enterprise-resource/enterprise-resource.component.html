@@ -179,14 +179,14 @@
                   <li nz-menu-item>生产车间指令单</li>
                   <li nz-menu-item>任务分派单</li>
                   <li nz-menu-item (click)="erNav.openProdProcessTaskSheet($event)">工序任务单</li>
-                  <li nz-menu-item>生产班组任务完成进度表</li>
+                  <li nz-menu-item (click)="erNav.openProdTeamTaskSchedule($event)">生产班组任务完成进度表</li>
                 </ul>
               </li>
               <li nz-submenu>
                 <span title>物料控制系统</span>
                 <ul>
                   <li nz-menu-item>生产领料通知单</li>
-                  <li nz-menu-item>材料出库单</li>
+                  <li nz-menu-item (click)="erNav.openProdMaterialReleaseList($event)">材料出库单</li>
                   <li nz-menu-item>补料申请</li>
                   <li nz-menu-item>补料出库单</li>
                   <li nz-menu-item>材料出库明细列表</li>
@@ -194,7 +194,7 @@
                   <li nz-menu-item>材料退库明细列表</li>
                   <li nz-menu-item>材料库存明细表</li>
                   <li nz-menu-item>材料库存汇总表</li>
-                  <li nz-menu-item>材料消耗分析表</li>
+                  <li nz-menu-item (click)="erNav.openProdMaterialConsumptionAnalysis($event)">材料消耗分析表</li>
                 </ul>
               </li>
               <li nz-submenu>
