@@ -207,32 +207,32 @@
                   <div class="itemInfo">
                     <div class="itemInfo-title">产品参数：</div>
                     <div class="itemInfoList">
-                      <span>品牌:  {{itemInfo.PinPai}} </span>
-                      <span>型号：BA3A###</span>
-                      <span>风格：{{itemInfo.ChanPinFengGei}}</span>
-                      <span>产品品类： {{itemInfo.PinLei}} </span>
-                      <span>材质成分：木</span>
-                      <span>产品类型:  {{itemInfo.ChanPinleixing}}</span>
-                      <span> 规格尺寸：
+                      <span [title]="itemInfo.PinPai">品牌:  {{itemInfo.PinPai}} </span>
+                      <span title="BA3A###">型号：BA3A###</span>
+                      <span [title]="itemInfo.ChanPinFengGei">风格：{{itemInfo.ChanPinFengGei}}</span>
+                      <span [title]="itemInfo.PinLei">产品品类： {{itemInfo.PinLei}} </span>
+                      <span title="木">材质成分：木</span>
+                      <span [title]="itemInfo.ChanPinleixing">产品类型:  {{itemInfo.ChanPinleixing}}</span>
+                      <span [title]="itemInfo.GuiGe"> 规格尺寸：
                         <div class="guige" style="text-align: left">
                           <div *ngIf="itemInfo.GuiGe == '规格';else GuiGe" > </div> 
                           <ng-template #GuiGe>{{itemInfo.GuiGe}}</ng-template>
                         </div>
                       </span>
-                      <span>适用人数： 组合</span>
-                      <span>是否定制: 是 </span>
-                      <span>是否可预售：是</span>
-                      <span>家具结构：框架结构</span>
-                      <span>结构工艺： 木质工艺</span>
-                      <span>产地：{{itemInfo.ChanDi}}</span>
-                      <span>出租车是否可运输：否</span>
-                      <span>设计元素：大师设计</span>
-                      <span>款式定位：经济型</span>
-                      <span>安装说明详情：提供安装说明书</span>
+                      <span title="组合">适用人数： 组合</span>
+                      <span title="是">是否定制: 是 </span>
+                      <span title="是">是否可预售：是</span>
+                      <span title="框架结构">家具结构：框架结构</span>
+                      <span title="木质工艺">结构工艺： 木质工艺</span>
+                      <span [title]="itemInfo.ChanDi">产地：{{itemInfo.ChanDi}}</span>
+                      <span title="否">出租车是否可运输：否</span>
+                      <span title="大师设计">设计元素：大师设计</span>
+                      <span title="经济型">款式定位：经济型</span>
+                      <span title="提供安装说明书">安装说明详情：提供安装说明书</span>
                       <div class="clearfix"></div>
                       <div class="info">
-                        <span><b>不支持</b>售中未使用退款</span>
-                        <span><b>支持</b>过期自动退款（退款比例：100%）</span>
+                        <span title="不支持售中未使用退款"><b>不支持</b>售中未使用退款</span>
+                        <span title="支持过期自动退款（退款比例：100%）"><b>支持</b>过期自动退款（退款比例：100%）</span>
                       </div>
                     </div>
                     <div class="clearfix"></div>

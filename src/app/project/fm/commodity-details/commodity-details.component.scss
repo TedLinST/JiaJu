@@ -257,17 +257,26 @@
 
                 span {
                   display: block;
-                  width: 260px;
+                  width: 280px;
                   float: left;
-                  padding: 8px 0px;
-                  
+                  padding: 5px 3px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+
+                span:hover{
+                  // width: auto;
+                  display: block;
+                  overflow: visible;
+                  text-overflow: inherit;
                 }
                 .info{
                   padding: 20px 0px;
                   display: block;
 
                   b{
-                    padding-right: 10px;
+                    padding-right: 6px;
                   }
                 }
               }
