@@ -218,10 +218,10 @@
                       <span title="木">材质成分：木</span>
                       <span [title]="itemInfo.ChanPinleixing">产品类型:  {{itemInfo.ChanPinleixing}}</span>
                       <span [title]="itemInfo.GuiGe"> 规格尺寸：
-                        <div class="guige" style="text-align: left">
+                        <!-- <div class="guige" style="text-align: left"> -->
                           <div *ngIf="itemInfo.GuiGe == '规格';else GuiGe" > </div> 
                           <ng-template #GuiGe>{{itemInfo.GuiGe}}</ng-template>
-                        </div>
+                        <!-- </div> -->
                       </span>
                       <span title="组合">适用人数： 组合</span>
                       <span title="是">是否定制: 是 </span>
