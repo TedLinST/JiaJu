@@ -200,9 +200,9 @@
               <li nz-submenu>
                 <span title>工时工价系统</span>
                 <ul>
-                  <li nz-menu-item>部件类型表</li>
-                  <li nz-menu-item>部位信息表</li>
-                  <li nz-menu-item>工艺表</li>
+                  <li nz-menu-item (click)="erNav.openProdComponentType($event)">部件类型表</li>
+                  <li nz-menu-item (click)="erNav.openProdLocationInformation($event)">部位信息表</li>
+                  <li nz-menu-item (click)="erNav.openProdProcessSheet($event)">工艺表</li>
                   <li nz-menu-item>工序工时工价表</li>
                 </ul>
               </li>
