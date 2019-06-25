@@ -78,7 +78,9 @@
                       </div>
                       <div class="z-col z-col-3" style="text-align: right">
                         <span class="GuiGe">
-                          {{item.GuiGe}}
+                            <div *ngIf="item.GuiGe == '规格';else GuiGe" > </div> 
+                            <ng-template #GuiGe>{{item.GuiGe}}</ng-template>
+                          <!-- {{item.GuiGe}} -->
                         </span>
                       </div>
                     </div>
