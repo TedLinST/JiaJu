@@ -87,7 +87,14 @@
               border-color: #059c50;
             }
           }
+
+          .info{
+            color: #666666;
+            font-size: 12px;
+            padding: 4px 75px;
+          }
         }
+        
 
         .DanJia {
           margin: 10px 0px;
@@ -231,30 +238,66 @@
             width: 1000px;
             margin: 20px auto;
             
+            
             .itemInfo {
-              border: 1px solid #DFDFDF;
-              padding:40px;
-
+              border-bottom: 1px solid #DFDFDF;
+              padding:10px 40px 5px;
+              // font-size: 12px;
+              font-family: Arial;
+            
               .itemInfo-title {
                 color: #999999;
                 font-weight: bold;
                 margin-bottom: 10px;
               }
 
-              .itemInfoList span {
-                display: block;
-                width: 220px;
-                float: left;
-                padding: 8px 0px;
+              .itemInfoList{
+                padding:0px 20px;
                 color: #666666;
+
+                span {
+                  display: block;
+                  width: 260px;
+                  float: left;
+                  padding: 8px 0px;
+                  
+                }
+                .info{
+                  padding: 20px 0px;
+                  display: block;
+
+                  b{
+                    padding-right: 10px;
+                  }
+                }
               }
             }
             
             .itemInfo-img img {
-              float: left;
+              // float: left;
               display: block;
-              width: 1000px;
-              margin:20px 0px;
+              width: 950px;
+              margin:20px;
+            }
+
+            .service{
+              border: 1px solid #DFDFDF;
+              padding:40px;
+
+              .title{
+                color: #080808;
+                font-weight: bold;
+                margin-bottom: 10px;
+                font-size: 20px;
+              }
+
+              .info{
+                padding: 8px 0px;
+                color: #666666;
+                font-size: 20px;
+                font-weight: bold;
+                // margin-bottom: 10px;
+              }
             }
             
           }
