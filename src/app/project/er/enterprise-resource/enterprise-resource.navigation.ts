@@ -159,5 +159,35 @@ export class EnterpriseResourceNavigation {
     this.router.navigateByUrl(this.baseUrl + 'prod-material-consumption-analysis');
   }
 
+  /**
+   * 部件类型表
+   */
+  openProdComponentType(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-component-type');
+  }
+
+  /**
+   * 部位信息表
+   */
+  openProdLocationInformation(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-location-information');
+  }
+
+  /**
+   * 工艺表
+   */
+  openProdProcessSheet(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-process-sheet');
+  }
+  
 
 }

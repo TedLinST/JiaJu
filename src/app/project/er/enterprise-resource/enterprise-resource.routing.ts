@@ -14,9 +14,9 @@ export const EnterpriseResourceRoutes = [
   { path: 'prod-team-task-schedule', loadChildren: '../prod/team-task-schedule/team-task-schedule.module#TeamTaskScheduleModule' }, // 生产班组任务完成进度表
   { path: 'prod-material-release-list', loadChildren: '../prod/material-release-list/material-release-list.module#MaterialReleaseListModule' }, // 材料出库单
   { path: 'prod-material-consumption-analysis', loadChildren: '../prod/material-consumption-analysis/material-consumption-analysis.module#MaterialConsumptionAnalysisModule' }, // 材料消耗分析表
-  // { path: 'prod-component-type', loadChildren: '../prod/component-type/component-type.module#ComponentTypeModule' }, // 部件类型表
-  // { path: 'prod-location-information', loadChildren: '../prod/location-information/location-information.module#LocationInformationModule' }, // 部位信息表
-  // { path: 'prod-process-sheet', loadChildren: '../prod/process-sheet/process-sheet.module#ProcessSheetModule' }, // 工艺表
+  { path: 'prod-component-type', loadChildren: '../prod/component-type/component-type.module#ComponentTypeModule' }, // 部件类型表
+  { path: 'prod-location-information', loadChildren: '../prod/location-information/location-information.module#LocationInformationModule' }, // 部位信息表
+  { path: 'prod-process-sheet', loadChildren: '../prod/process-sheet/process-sheet.module#ProcessSheetModule' }, // 工艺表
   // { path: 'prod-process-hours-wages', loadChildren: '../prod/process-hours-wages/process-hours-wages.module#ProcessHoursWagesModule' }, // 工序工时工价表
   // { path: 'prod-summary-production-costs', loadChildren: '../prod/summary-production-costs/summary-production-costs.module#SummaryProductionCostsModule' }, // 订单生产实际成本汇总表
   // { path: 'prod-cash-flow-graph', loadChildren: '../prod/cash-flow-graph/cash-flow-graph.module#CashFlowGraphModule' }, // 现金流曲线图

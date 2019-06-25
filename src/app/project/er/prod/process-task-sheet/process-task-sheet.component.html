@@ -8,9 +8,6 @@
         <button class="key-btn key-btn-default" (click)="delete()" [disabled]="!!!selection">删除</button>
       </div>
     </div>
-
-
-
     <key-table-column heading="单据编号" width="140" key="DanJuBianHao" sortable>
     </key-table-column>
     <key-table-column heading="任务分派单号" width="130" key="RenWuFenPaiDanHao" sortable>
@@ -88,11 +85,6 @@
           <input #bean_JiHuaWanChengRiQi="ngModel" type="date" class="form-control" name="bean.JiHuaWanChengRiQi"
             [(ngModel)]="bean.JiHuaWanChengRiQi">
         </key-form-element>
-
-
-
-
-
       </div>
     </form>
   </div>

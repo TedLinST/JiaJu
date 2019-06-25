@@ -1,0 +1,17 @@
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table title="款式选择列表" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection"
+    (dataSelect)="onRowSelect($event)" (dataUnselect)="onRowUnselect()" style="width:10px;">
+    <key-table-column heading="分类" width="140" key="FenLei" sortable>
+    </key-table-column>
+    <key-table-column heading="品类" width="140" key="PinLei" sortable>
+    </key-table-column>
+    <key-table-column heading="款式" width="140" key="KuanShi" sortable>
+    </key-table-column>
+  </key-table>
+  <div class="key-flex key-flex-v key-flex-no-shrink key-left-split-line key-left-panel" style="width: 400px">
+    <key-tree-table title="款式部件树" [data]="listDataTree" [canRefreshBtn]="false" [(selection)]="selectionTree">
+      <key-table-column heading="部件名称" key="BuJianMingCheng" sortable>
+      </key-table-column>
+    </key-tree-table>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <div class="key-flex key-flex-v key-flex-no-shrink key-right-split-line key-left-panel" style="width: 470px">
+    <key-table title="款式信息选择列表" [data]="listData2" [canRefreshBtn]="false" [(selection)]="selection2"
+      (dataSelect)="onRowSelect($event)" (dataUnselect)="onRowUnselect()">
+      <key-table-column heading="分类" width="140" key="FenLei" sortable>
+      </key-table-column>
+      <key-table-column heading="品类" width="140" key="PinLei" sortable>
+      </key-table-column>
+      <key-table-column heading="款式" width="140" key="KuanShi" sortable>
+      </key-table-column>
+    </key-table>
+  </div>
+  <key-table title="款式部位编辑列表" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection" style="width:10px;">
+    <div header>
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="add()" [disabled]="!!!selection2">增加</button>
+        <button class="key-btn key-btn-default" (click)="view()" [disabled]="!!!selection">修改</button>
+        <button class="key-btn key-btn-default" (click)="delete()" [disabled]="!!!selection">删除</button>
+      </div>
+    </div>
+    <key-table-column heading="部件名称" key="BuJianMingCheng" width="120" sortable>
+    </key-table-column>
+    <key-table-column heading="部位" key="BuWei" width="120" sortable>
+    </key-table-column>
+    <key-table-column heading="度量方法" key="DuLiangFangFa" width="120" sortable>
+    </key-table-column>
+    <key-table-column heading="备注" key="BeiZhu" width="120" sortable>
+    </key-table-column>
+  </key-table>
+</div>
+
+<key-modal *ngIf="beanState" header="款式部位编辑信息" [open]="true" class="key-modal-basis" (close)="cancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="部件名称" [error]="bean_BuJianMingCheng.errors">
+          <input #bean_BuJianMingCheng="ngModel" type="text" class="form-control" name="bean.BuJianMingCheng"
+            [(ngModel)]="bean.BuJianMingCheng" required>
+        </key-form-element>
+        <key-form-element label="部位" [error]="bean_BuWei.errors">
+          <input #bean_BuWei="ngModel" type="text" class="form-control" name="bean.BuWei" [(ngModel)]="bean.BuWei"
+            required>
+        </key-form-element>
+        <key-form-element label="度量方法" [error]="bean_DuLiangFangFa.errors">
+          <input #bean_DuLiangFangFa="ngModel" type="text" class="form-control" name="bean.DuLiangFangFa"
+            [(ngModel)]="bean.DuLiangFangFa" required>
+        </key-form-element>
+        <key-form-element label="备注" [error]="bean_BeiZhu.errors">
+          <textarea #bean_BeiZhu="ngModel" rows="3" type="text" class="form-control" name="bean.BeiZhu"
+            [(ngModel)]="bean.BeiZhu"></textarea>
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default" (click)="cancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()" [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>

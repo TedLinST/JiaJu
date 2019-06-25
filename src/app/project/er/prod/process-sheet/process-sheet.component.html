@@ -1,0 +1,52 @@
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table-split title="工艺表" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection" style="width:10px;">
+    <div header>
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="add()">增加</button>
+        <button class="key-btn key-btn-default" (click)="view()" [disabled]="!!!selection">修改</button>
+        <button class="key-btn key-btn-default" (click)="delete()" [disabled]="!!!selection">删除</button>
+      </div>
+    </div>
+    <key-table-column heading="类别" width="120" key="LeiBie" sortable>
+    </key-table-column>
+    <key-table-column heading="工艺" width="140" key="GongYi" sortable>
+    </key-table-column>
+    <key-table-column heading="子工艺" width="140" key="ZiGongYi" sortable>
+    </key-table-column>
+    <key-table-column heading="备注" width="240" key="BeiZhu" sortable>
+    </key-table-column>
+    <key-table-column heading="创建时间" width="160" key="ChuangJianShiJian" sortable>
+    </key-table-column>
+    <key-table-column heading="更新时间" width="160" key="GengXinShiJian" sortable>
+    </key-table-column>
+  </key-table-split>
+</div>
+
+<key-modal *ngIf="beanState" header="工艺信息" [open]="true" class="key-modal-basis" (close)="cancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="类别" [error]="bean_LeiBie.errors">
+          <input #bean_LeiBie="ngModel" type="text" class="form-control" name="bean.LeiBie" [(ngModel)]="bean.LeiBie"
+            required>
+        </key-form-element>
+        <key-form-element label="工艺" [error]="bean_GongYi.errors">
+          <input #bean_GongYi="ngModel" type="text" class="form-control" name="bean.GongYi" [(ngModel)]="bean.GongYi"
+            required>
+        </key-form-element>
+        <key-form-element label="子工艺" [error]="bean_ZiGongYi.errors">
+          <input #bean_ZiGongYi="ngModel" type="text" class="form-control" name="bean.ZiGongYi"
+            [(ngModel)]="bean.ZiGongYi" required>
+        </key-form-element>
+        <key-form-element label="备注" [error]="bean_BeiZhu.errors">
+          <textarea #bean_BeiZhu="ngModel" type="text" rows="3" class="form-control" name="bean.BeiZhu"
+            [(ngModel)]="bean.BeiZhu"></textarea>
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default" (click)="cancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()" [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>
