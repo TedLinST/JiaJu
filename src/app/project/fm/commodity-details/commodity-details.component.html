@@ -48,7 +48,11 @@
           <div class="title">{{itemInfo.ShangPinMingCheng}}</div>
           <div class="PinLei">{{itemInfo.PinLei}}</div>
           <div class="label">品牌：{{itemInfo.PinPai}}</div>
-          <div class="label">规格：{{itemInfo.GuiGe}}</div>
+          <div class="label">规格：
+            <!-- {{itemInfo.GuiGe}} -->
+              <div *ngIf="itemInfo.GuiGe == '规格';else GuiGe" > </div> 
+              <ng-template #GuiGe>{{itemInfo.GuiGe}}</ng-template>
+          </div>
           <div class="label">产地：{{itemInfo.ChanDi}}</div>
           <div class="DanJia">￥{{itemInfo.DanJia}}</div>
           <!-- <div class="label" style="margin-bottom: 7px;">配送：XXX省 XXX市 至 XXX省
