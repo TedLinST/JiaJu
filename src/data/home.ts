@@ -102,49 +102,49 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: 'Dieter Rams',
-            number: 1,
+            number: '德国工业设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 2,
             title: 'YRJO KUKKAPURO',
-            number: 2,
+            number: '瑞典家具设计大师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 3,
             title: 'はらけんや(原研哉)',
-            number: 3,
+            number: '无印良品艺术总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 4,
             title: '朱小杰',
-            number: 4,
+            number: '温州澳珀家具公司董事长',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           },
           {
             id: 5,
             title: '侯正光',
-            number: 5,
+            number: '上海木码设计机构创办人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-5.jpg'
           },
           {
             id: 6,
             title: '赖亚楠',
-            number: 6,
+            number: 'DOMO nature创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-6.jpg'
           },
           {
             id: 7,
             title: '温浩',
-            number: 7,
+            number: '高尚家具品牌创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-7.jpg'
           },
           {
             id: 8,
             title: '石大宇',
-            number: 8,
+            number: '清庭设计中心创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-8.jpg'
           }
         ]
@@ -155,49 +155,49 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: '张雷',
-            number: 1,
+            number: '品物流形设计总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-9.jpg'
           },
           {
             id: 2,
             title: '于历战',
-            number: 2,
+            number: '清华美院家具设计带头人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-10.jpg'
           },
           {
             id: 3,
             title: '吕永忠',
-            number: 3,
+            number: '半木品牌创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-11.jpg'
           },
           {
             id: 4,
             title: '周宸宸',
-            number: 4,
+            number: 'Frank Chou 设计工作室创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-12.jpg'
           },
           {
             id: 5,
             title: 'Dieter Rams',
-            number: 5,
+            number: '德国工业设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 6,
             title: 'YRJO KUKKAPURO',
-            number: 6,
+            number: '瑞典家具设计大师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 7,
             title: 'はらけんや(原研哉)',
-            number: 7,
+            number: '无印良品艺术总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 8,
             title: '朱小杰',
-            number: 8,
+            number: '温州澳珀家具公司董事长',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           }
         ]
@@ -208,25 +208,25 @@ export const DataHomeHandler = {
       {
         id: 1,
         title: '酷家乐',
-        number: 420,
+        number: 'VR智能室内设计平台',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-1.jpg'
       },
       {
         id: 2,
         title: '圆方',
-        number: 2500,
+        number: '整体家居解决方案服务商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-2.jpg'
       },
       {
         id: 3,
         title: '造易',
-        number: 100,
+        number: '定制家具信息化解决方案提供商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-3.jpg'
       },
       {
         id: 4,
         title: '三维家',
-        number: 7800,
+        number: '家居行业前后端软件技术服务提供商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-4.jpg'
       }
     ]
@@ -334,38 +334,38 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: '李坚院士',
-            text: '主要研究方向：木材科学及相关学科',
+            text: '木材科学及相关学科　　　　　　　　',
             src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia1.jpg'
           },
           {
             id: 2,
-            title: '吕建雄教授',
-            text: '主要研究方向：木材物理与干燥、木材保护与改性',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia2.jpg'
+            title: '向仕龙教授',
+            text: '木材加工及人造板工艺、植物基复合材料及装饰材料',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia7.jpg'
           },
           {
             id: 3,
-            title: '吴义强教授',
-            text: '主要研究方向：木材科学、生物质复合材料',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia3.jpg'
+            title: '吕建雄教授',
+            text: '木材物理与干燥、木材保护与改性',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia2.jpg'
           },
           {
             id: 4,
-            title: '吴智慧教授',
-            text: '主要研究方向：木材加工、家具与木制品设计和制造',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
+            title: '吴义强教授',
+            text: '木材科学、生物质复合材料　　　　',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia3.jpg'
           },
           {
             id: 5,
-            title: '李贤军教授',
-            text: '主要研究方向：木材干燥、木材功能性改良',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5.jpg'
+            title: '吴智慧教授',
+            text: '木材加工、家具与木制品设计和制造',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
           },
           {
             id: 6,
-            title: '陈礼辉教授',
-            text: '主要研究方向：植物资源化学与新材料的研究',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia6.jpg'
+            title: '李贤军教授',
+            text: '木材干燥、木材功能性改良　　　　　',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5.jpg'
           }
         ]
       },
@@ -374,39 +374,39 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '李坚院士',
-            text: '主要研究方向：木材科学及相关学科',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia1.jpg'
+            title: '陈礼辉教授',
+            text: '植物资源化学与新材料的研究',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia6.jpg'
           },
           {
             id: 2,
-            title: '吕建雄教授',
-            text: '主要研究方向：木材物理与干燥、木材保护与改性',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia2.jpg'
+            title: '李新功教授',
+            text: '人造板工艺与装备、生物质复合材料、家具工程',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia8.jpg'
           },
           {
             id: 3,
-            title: '吴义强教授',
-            text: '主要研究方向：木材科学、生物质复合材料',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia3.jpg'
+            title: '孙德林教授',
+            text: '家具设计与制造技术、家具材料与木质陶瓷材料',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia9.jpg'
           },
           {
             id: 4,
-            title: '吴智慧教授',
-            text: '主要研究方向：木材加工、家具与木制品设计和制造',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
+            title: '袁光明教授',
+            text: '木材功能性改良；木竹基复合材料',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia10.jpg'
           },
           {
             id: 5,
-            title: '李贤军教授',
-            text: '主要研究方向：木材干燥、木材功能性改良',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5.jpg'
+            title: '陈桂华教授',
+            text: '生物质复合材料、人造板工艺',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia11.jpg'
           },
           {
             id: 6,
-            title: '陈礼辉教授',
-            text: '主要研究方向：植物资源化学与新材料的研究',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia6.jpg'
+            title: '吴智慧教授',
+            text: '木材加工、家具与木制品设计和制造',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
           }
         ]
       }
@@ -484,7 +484,7 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: '《家具中有害物质检测》等278项国家标准公布',
-            src: 'assets/imgs/home/zongHeFuWu/zhanhui-1.jpg'
+            src: 'assets/imgs/home/zongHeFuWu/zhengfu-1.jpg'
           },
           {
             id: 2,
@@ -591,48 +591,52 @@ export const DataHomeHandler = {
         id: 1,
         type: '板材',
         title: '陕西云杉优质木材板材烘干木材55毫米',
+        subtitle: '云杉',
         address: '陕西宝鸡',
         specs: '55毫米等厚不等宽',
-        code: '12345671',
-        people: '国财',
+        code: '2019年7月1日',
+        people: '25',
         price: '1500元/m³',
-        status: '在售',
+        status: '100',
         src: 'assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/mucai-1.jpg'
       },
       {
         id: 2,
         type: '木皮',
         title: '杨木木皮漂白各种厚度和杨木原色科技木面皮各种厚度',
+        subtitle: '杨木',
         address: '山东临沂',
         specs: '4×8尺',
-        code: '12345672',
-        people: '裕民',
+        code: '2019年10月1日',
+        people: '0',
         price: '20元/m³',
-        status: '在售',
+        status: '5000',
         src: 'assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/mucai-2.jpg'
       },
       {
         id: 3,
         type: '皮革',
         title: '麻布纹皮革面料软包硬包背景墙装饰布料沙发家具座椅PU皮料人造革',
+        subtitle: '麻纹皮革',
         address: '浙江金华',
         specs: '宽幅1380mm，厚度0.6mm',
-        code: '12345673',
-        people: '浙材',
+        code: '2019年11月21日',
+        people: '3',
         price: '22.8元/m',
-        status: '在售',
+        status: '200',
         src: 'assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/mucai-3.jpg'
       },
       {
         id: 4,
         type: '五金及配件',
         title: '汇泰龙304不锈钢阻尼液压缓冲铰链橱柜衣柜门配件飞机合页一只价',
+        subtitle: '液压缓冲铰链',
         address: '广东佛山',
         specs: '直弯/全盖/全遮',
-        code: '12345674',
-        people: '广贸',
+        code: '2019年10月15日',
+        people: '55',
         price: '16.8元/个',
-        status: '在售',
+        status: '3000',
         src: 'assets/imgs/home/yuanFuCaiLiaoJiXieSheBeiFuWu/mucai-4.jpg'
       }
     ],

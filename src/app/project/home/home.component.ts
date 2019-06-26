@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
       key: 'title',
     },
     {
-      label: '工作年龄',
+      label: '头衔',
       key: 'number',
     }
   ];

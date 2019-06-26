@@ -116,9 +116,7 @@
                 </div>
                 <div class="body">
                   <div class="label">{{item.title}}</div>
-                  <div class="label">
-                    <i class="fa fa-eye"></i>{{item.number}}
-                  </div>
+                  <div class="label">{{item.number}}</div>
                 </div>
               </div>
             </div>
@@ -227,7 +225,7 @@
         [isMore]="true" (clickMore)="portalNav.openExhibition()">
         <div class="IS0-style">
           <div class="top-title">
-            <div class="title">简约风展会区 共筑家具之美</div>
+            <div class="title">探寻家具发展趋势 把握时代发展脉络</div>
             <div class="EnTitle">EXHIBITION AREA</div>
           </div>
           <div class="key-item-chunk-body-max-content">
@@ -289,8 +287,7 @@
           <img [imgLazyload]="'assets/imgs/home/zongHeFuWu/wuliu.jpg'">
           <key-item-mask [isTextLeft]="true">
             <key-item-mask-label [isTextBeyondHide]="false"
-              label="平台是一家专注整体定制家居安装服务落地,集量尺设计、物流仓储、安装售后为一体，经历11年发展的服务 公司。在国家大众创业、万众创新、互联网的时代变革下，家居安装第三方服务品牌左右手应运而生，2015年正式注册成立。
-            在行业内首创S2B2C模式,在引进高端信息化团队的推动下，通过移动互联网技术连接家居建材企业、商户、用 户和安装工人，并为客户制定6D服务体系：精英客服、精致设计、精准安装、精心维护、精良品质、精诚物流。同时按照客户的个性化需求为客户打造最理想的个性化定制深度服务，为用户提供务实可靠的线上 线下一站式家居安装服务体验，最终成为行业平台模式的领导者，并以专注安装服务落地为基础，在共享经济模式的浪潮下为解决全国最后一公里家居安装服务落地难题提供了最佳解决方案。">
+              label="　　平台针对家具物流售后提供专业化服务，集运输服务、仓储服务、配送服务、搬运服务、安装服务、售后服务于一体，在国家大众创业、万众创新的大潮及互联网的时代变革下，借助移动互联网技术手段，充分发挥平台优势，率先架设生产厂家、经销商家、服务从业者和消费者之间的桥梁，在高端信息化团队的推动下，为客户制定6D服务体系：精英客服、精致设计、精准安装、精心维护、精良品质、精诚物流。同时按照客户的个性化需求为客户打造最理想的个性化定制深度服务，为用户提供务实可靠的线上-线下一站式服务体验。">
             </key-item-mask-label>
           </key-item-mask>
         </div>
@@ -316,19 +313,19 @@
                   <img [imgLazyload]="item.src">
                 </div>
                 <div class="body">
-                  <div class="label">类型：{{item.type}}</div>
                   <div class="label" style="height: 42px;overflow: hidden;">
-                    名称：{{item.title}}</div>
-                  <div class="label">产地：{{item.address}}</div>
+                    {{item.title}}</div>
+                  <div class="label">
+                    <span>{{item.subtitle}}</span>
+                    <span style="font-size: 150%;color: red">{{item.price}}</span>
+                  </div>
+                  <div class="label">
+                      <span>{{item.type}}</span>
+                      <span>{{item.address}}</span>
+                  </div>
                   <div class="label">规格：{{item.specs}}</div>
-                  <div class="label">
-                    <span>团号：{{item.code}}</span>
-                    <span>团长：{{item.people}}</span>
-                  </div>
-                  <div class="label">
-                    <span>价格：{{item.price}}</span>
-                    <span>状态：{{item.status}}</span>
-                  </div>
+                  <div class="label">截止时间：{{item.code}}</div>
+                  <div class="label">已报名/总数量：{{item.people}}/{{item.status}}</div>
                 </div>
               </div>
             </div>
