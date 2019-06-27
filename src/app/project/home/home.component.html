@@ -139,8 +139,14 @@
             (click)="openSchoolProjectDetails(dataHandler.SEC.data0[0].id)">
             <img [imgLazyload]="dataHandler.SEC.data0[0].src">
             <key-item-mask>
-              <key-item-mask-label [label]="dataHandler.SEC.data0[0].title">
+              <key-item-mask-label [label]="dataHandler.SEC.data0[0].BiaoTi">
               </key-item-mask-label>
+              <div class="subtitle">
+                <key-item-mask-label [label]="dataHandler.SEC.data0[0].JiBie">
+                </key-item-mask-label>
+                <key-item-mask-label [label]="dataHandler.SEC.data0[0].FaBuShiJian">
+                </key-item-mask-label>
+              </div>
             </key-item-mask>
           </div>
           <div class="right"
@@ -153,9 +159,15 @@
                   (click)="openSchoolProjectDetails(item.id)">
                   <div class="header">
                     <img [imgLazyload]="item.src">
-                    <key-item-mask>
-                      <key-item-mask-label [label]="item.title">
-                      </key-item-mask-label>
+                    <key-item-mask [isTextLeft]="true">
+                        <key-item-mask-label [label]="item.BiaoTi">
+                        </key-item-mask-label>
+                        <div class="subtitle">
+                          <key-item-mask-label [label]="item.JiBie">
+                          </key-item-mask-label>
+                          <key-item-mask-label [label]="item.FaBuShiJian">
+                          </key-item-mask-label>
+                        </div>
                     </key-item-mask>
                   </div>
                 </div>
@@ -176,8 +188,10 @@
                 (click)="openEnterpriseNeedsDetails(item.id)">
                 <div class="header">
                   <img [imgLazyload]="item.src">
-                  <key-item-mask>
-                    <key-item-mask-label [label]="item.title">
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label [label]="item.BiaoTi">
+                    </key-item-mask-label>
+                    <key-item-mask-label [label]="item.FaBuShiJian">
                     </key-item-mask-label>
                   </key-item-mask>
                 </div>
@@ -345,16 +359,16 @@
                   <img [imgLazyload]="item.src">
                 </div>
                 <div class="body">
-                  <div class="label">产品名称：{{item.title}}</div>
-                  <div class="label">产品说明：{{item.explain}}</div>
+                  <div class="label">{{item.title}}</div>
                   <div class="label">
-                    <span>发布日期：{{item.date}}</span>
                     <span>所在地：{{item.address}}</span>
+                    <span>发布日期：{{item.date}}</span>
                   </div>
                   <div class="label">
-                    <span>价格：{{item.price}}</span>
                     <span>联系：{{item.tel}}</span>
+                    <span style="font-size: 150%;color: red">{{item.price}}</span>
                   </div>
+                  <div class="label">{{item.explain}}</div>
                 </div>
               </div>
             </div>

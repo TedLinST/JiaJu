@@ -246,37 +246,51 @@ export const DataHomeHandler = {
     data0: [
       {
         id: 1,
-        title: '人造板节能环保制造技术研究与示范',
+        BiaoTi: '人造板节能环保制造技术研究与示范',
+        JiBie: '国家科技支撑计划',
+        FaBuShiJian: '中南林业科技大学',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-1.jpg'
       },
       {
         id: 2,
-        title: '环境友好型秸秆板家具制造技术推广',
+        BiaoTi: '环境友好型秸秆板家具制造技术推广',
+        JiBie: '国家林业局科技推广项目',
+        FaBuShiJian: '南京林业大学',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-2.jpg'
       },
       {
         id: 3,
-        title: '《木纹立体打印装饰制品技术要求》行业标准制定',
+        BiaoTi: '《木纹立体打印装饰制品技术要求》行业标准制定',
+        JiBie: '十三五重大研发专项课题',
+        FaBuShiJian: '南京林业大学',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-3.jpg'
       },
       {
         id: 4,
-        title: '木竹纤维柔性装饰材料制造关键技术研究',
+        BiaoTi: '木竹纤维柔性装饰材料制造关键技术研究',
+        JiBie: '国家林业公益性行业专项',
+        FaBuShiJian: '中南林业科技大学',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-4.jpg'
       },
       {
         id: 5,
-        title: '中国传统家具艺术数据库的研究',
+        BiaoTi: '中国传统家具艺术数据库的研究',
+        JiBie: '中南林业科技大学',
+        FaBuShiJian: '',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-5.jpg'
       },
       {
         id: 6,
-        title: '现代中式家具的开发与工业化生产方式研究',
+        BiaoTi: '现代中式家具的开发与工业化生产方式研究',
+        JiBie: '中南林业科技大学',
+        FaBuShiJian: '',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-6.jpg'
       },
       {
         id: 7,
-        title: '家具生命周期评价（LCA）的研究',
+        BiaoTi: '家具生命周期评价（LCA）的研究',
+        JiBie: '中南林业科技大学',
+        FaBuShiJian: '',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/xuexiao-7.jpg'
       }
     ],
@@ -284,27 +298,32 @@ export const DataHomeHandler = {
     data1: [
       {
         id: 1,
-        title: '小户型实木家具设计方案创新',
+        BiaoTi: '小户型实木家具设计方案创新',
+        FaBuShiJian: '万科企业股份有限公司',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-1.jpg'
       },
       {
         id: 2,
-        title: '精装住宅室内家具产品设计',
+        BiaoTi: '精装住宅室内家具产品设计',
+        FaBuShiJian: '深圳家具协会住宅研究院',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-2.jpg'
       },
       {
         id: 3,
-        title: '非洲树种奥古曼的硬度改良探索',
+        BiaoTi: '非洲树种奥古曼的硬度改良探索',
+        FaBuShiJian: '宜华生活科技股份有限公司',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-3.jpg'
       },
       {
         id: 4,
-        title: '家具独立门店新型引流集客方式的研究',
+        BiaoTi: '家具独立门店新型引流集客方式的研究',
+        FaBuShiJian: '曲美家居集团股份有限公司',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-4.jpg'
       },
       {
         id: 5,
-        title: '家具电商供应链成本控制方案探索',
+        BiaoTi: '家具电商供应链成本控制方案探索',
+        FaBuShiJian: '佛山市阿里顺林家具有限公司',
         src: 'assets/imgs/home/xiaoQiHeZuoFuWu/qiyexuqiu-5.jpg'
       }
     ],
@@ -670,7 +689,7 @@ export const DataHomeHandler = {
     title: '家具商城',
     enTitle: 'FURNITURE MALL',
     menuData: [
-      { title: ' 推荐商品' },
+      { title: ' 榜单产品' },
       { title: '团购' },
       { title: '品牌' },
       { title: '众筹频道' }
