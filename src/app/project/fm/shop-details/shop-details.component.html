@@ -42,14 +42,14 @@
             let-index="index">
             <div *ngIf="index < 5" nz-col nzSpan="4">
               <div class="key-item-box item-box-margin-1"
-                style="height: 361px; margin-bottom: 2px;"
+                style="height: 343px; margin-bottom: 2px;"
                 (click)="openCommodityDetails(item,$event)">
                 <div class="header">
                   <img [src]="item.src">
                 </div>
                 <div class="body">
                   <div class="DanJia">￥{{item.DanJia}}</div>
-                  <div class="label ShangPinMingCheng">
+                  <div class="label ShangPinMingCheng singleTextBeyondHide">
                     {{item.ShangPinMingCheng}}
                   </div>
                   <div class="label PinLei">
