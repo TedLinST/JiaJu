@@ -4,19 +4,19 @@ export const DataFurnitureMallHandler = {
   TYPE: [
     {
       title: '团购频道',
-      src: 'assets/imgs/furniture-mall/pindao-1.jpg'
+      src: 'assets/imgs/furniture-mall/logo-1.png'
     },
     {
       title: '众筹频道',
-      src: 'assets/imgs/furniture-mall/pindao-2.jpg'
+      src: 'assets/imgs/furniture-mall/logo-2.png'
     },
     {
       title: '品牌频道',
-      src: 'assets/imgs/furniture-mall/pindao-3.jpg'
+      src: 'assets/imgs/furniture-mall/logo-3.png'
     },
     {
       title: '店铺频道',
-      src: 'assets/imgs/furniture-mall/pindao-4.jpg'
+      src: 'assets/imgs/furniture-mall/logo-4.png'
     }
   ],
 

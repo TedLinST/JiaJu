@@ -3,4 +3,11 @@
     width: 1200px;
     margin: 20px auto 0px;
   }
+
+  .key-item-box-no{
+    border-width: 0px !important;
+    :hover{
+      border-width: 0px !important;
+    }
+  }
 }
