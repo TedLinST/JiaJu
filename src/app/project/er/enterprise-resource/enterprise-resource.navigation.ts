@@ -188,6 +188,26 @@ export class EnterpriseResourceNavigation {
     }
     this.router.navigateByUrl(this.baseUrl + 'prod-process-sheet');
   }
-  
+
+  /**
+   * 工序工时工价表
+   */
+  openProdProcessHoursWages(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-process-hours-wages');
+  }
+
+  /**
+   * 订单生产实际成本汇总表
+   */
+  openProdSummaryProductionCosts(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-summary-production-costs');
+  }
+
 
 }

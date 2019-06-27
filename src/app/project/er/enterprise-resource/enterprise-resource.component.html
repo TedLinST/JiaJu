@@ -203,7 +203,7 @@
                   <li nz-menu-item (click)="erNav.openProdComponentType($event)">部件类型表</li>
                   <li nz-menu-item (click)="erNav.openProdLocationInformation($event)">部位信息表</li>
                   <li nz-menu-item (click)="erNav.openProdProcessSheet($event)">工艺表</li>
-                  <li nz-menu-item>工序工时工价表</li>
+                  <li nz-menu-item (click)="erNav.openProdProcessHoursWages($event)">工序工时工价表</li>
                 </ul>
               </li>
               <li nz-submenu>
@@ -217,7 +217,7 @@
                   <li nz-menu-item>市场销售日报表</li>
                   <li nz-menu-item>市场销售周报表</li>
                   <li nz-menu-item>市场销售月报表</li>
-                  <li nz-menu-item>订单生产实际成本汇总表</li>
+                  <li nz-menu-item (click)="erNav.openProdSummaryProductionCosts($event)">订单生产实际成本汇总表</li>
                   <li nz-menu-item>生产完成月报表</li>
                   <li nz-menu-item>商品库销汇总表</li>
                   <li nz-menu-item>现金流曲线图</li>

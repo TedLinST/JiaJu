@@ -1,0 +1,184 @@
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table title="订单生产实际成本汇总表" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection"
+    style="width: 10px;">
+    <div header>
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="add()">增加</button>
+        <button class="key-btn key-btn-default" (click)="view()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">修改</button>
+        <button class="key-btn key-btn-default" (click)="delete()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">删除</button>
+      </div>
+      <div class="key-btn-group">
+        <button class="key-btn key-btn-default" (click)="openExamine()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenHeRen)">审核</button>
+        <button class="key-btn key-btn-default" (click)="openApproval()"
+          [disabled]="!(!!selection && !!!selection?.row?.ShenPiRen)">审批</button>
+      </div>
+    </div>
+    <key-table-column heading="单据编号" width="140" key="DanJuBianHao" sortable>
+    </key-table-column>
+    <key-table-column heading="订单编号" width="140" key="DingDanBianHao" sortable>
+    </key-table-column>
+    <key-table-column heading="订单数量" width="100" key="DingDanShuLiang" sortable>
+    </key-table-column>
+    <key-table-column heading="入库数量" width="100" key="RuKuShuLiang" sortable>
+    </key-table-column>
+    <key-table-column heading="款号" width="100" key="KuanHao" sortable>
+    </key-table-column>
+    <key-table-column heading="款式" width="100" key="KuanShi" sortable>
+    </key-table-column>
+    <key-table-column heading="成本" align="center">
+      <key-table-column heading="材料成本" width="100" key="CaiLiaoChengBen" sortable>
+      </key-table-column>
+      <key-table-column heading="人工成本" width="100" key="RenGongChengBen" sortable>
+      </key-table-column>
+      <key-table-column heading="特殊工艺成本" width="130" key="TeShuGongYiChengBen" sortable>
+      </key-table-column>
+      <key-table-column heading="管理成本" width="100" key="GuanLiChengBen" sortable>
+      </key-table-column>
+      <key-table-column heading="制造成本" width="100" key="ZhiZaoChengBen" sortable>
+      </key-table-column>
+      <key-table-column heading="合计成本" width="100" key="" sortable>
+        <ng-template let-row="row">
+          {{row.CaiLiaoChengBen + row.RenGongChengBen + row.TeShuGongYiChengBen + row.GuanLiChengBen + row.ZhiZaoChengBen}}
+        </ng-template>
+      </key-table-column>
+    </key-table-column>
+    <key-table-column heading="制表人" width="100" key="ZhiBiaoRen" sortable>
+    </key-table-column>
+    <key-table-column heading="制表日期" width="100" key="ZhiBiaoRiQi" sortable>
+    </key-table-column>
+    <key-table-column heading="审核" align="center">
+      <key-table-column heading="审核状态" width="100" key="ShenHeZhuangTai" sortable>
+      </key-table-column>
+      <key-table-column heading="审核人" width="100" key="ShenHeRen" sortable>
+      </key-table-column>
+      <key-table-column heading="审核日期" width="100" key="ShenHeRiQi" sortable>
+      </key-table-column>
+    </key-table-column>
+    <key-table-column heading="审批" align="center">
+      <key-table-column heading="审批状态" width="100" key="ShenPiZhuangTai" sortable>
+      </key-table-column>
+      <key-table-column heading="审批人" width="100" key="ShenPiRen" sortable>
+      </key-table-column>
+      <key-table-column heading="审判日期" width="100" key="ShenPiRiQi" sortable>
+      </key-table-column>
+    </key-table-column>
+  </key-table>
+</div>
+
+<key-modal *ngIf="beanState" header="订单生产实际成本汇总信息" [open]="true" class="key-modal-basis" (close)="cancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="单据编号" [error]="bean_DanJuBianHao.errors">
+          <input #bean_DanJuBianHao="ngModel" type="text" class="form-control" name="bean.DanJuBianHao"
+            [(ngModel)]="bean.DanJuBianHao" required>
+        </key-form-element>
+        <key-form-element label="订单编号" [error]="bean_DingDanBianHao.errors">
+          <input #bean_DingDanBianHao="ngModel" type="text" class="form-control" name="bean.DingDanBianHao"
+            [(ngModel)]="bean.DingDanBianHao" required>
+        </key-form-element>
+        <key-form-element label="订单数量" [error]="bean_DingDanShuLiang.errors">
+          <input #bean_DingDanShuLiang="ngModel" type="text" class="form-control" name="bean.DingDanShuLiang"
+            [(ngModel)]="bean.DingDanShuLiang" required>
+        </key-form-element>
+        <key-form-element label="入库数量" [error]="bean_RuKuShuLiang.errors">
+          <input #bean_RuKuShuLiang="ngModel" type="text" class="form-control" name="bean.RuKuShuLiang"
+            [(ngModel)]="bean.RuKuShuLiang" required>
+        </key-form-element>
+        <key-form-element label="款号" [error]="bean_KuanHao.errors">
+          <input #bean_KuanHao="ngModel" type="text" class="form-control" name="bean.KuanHao" [(ngModel)]="bean.KuanHao"
+            required>
+        </key-form-element>
+        <key-form-element label="款式" [error]="bean_KuanShi.errors">
+          <input #bean_KuanShi="ngModel" type="text" class="form-control" name="bean.KuanShi"
+            [(ngModel)]="bean.KuanShi">
+        </key-form-element>
+        <key-form-element label="材料成本" [error]="bean_CaiLiaoChengBen.errors">
+          <input #bean_CaiLiaoChengBen="ngModel" type="number" class="form-control" name="bean.CaiLiaoChengBen"
+            [(ngModel)]="bean.CaiLiaoChengBen">
+        </key-form-element>
+        <key-form-element label="人工成本" [error]="bean_RenGongChengBen.errors">
+          <input #bean_RenGongChengBen="ngModel" type="number" class="form-control" name="bean.RenGongChengBen"
+            [(ngModel)]="bean.RenGongChengBen">
+        </key-form-element>
+        <key-form-element label="特殊工艺成本" [error]="bean_TeShuGongYiChengBen.errors">
+          <input #bean_TeShuGongYiChengBen="ngModel" type="number" class="form-control" name="bean.TeShuGongYiChengBen"
+            [(ngModel)]="bean.TeShuGongYiChengBen">
+        </key-form-element>
+        <key-form-element label="管理成本" [error]="bean_GuanLiChengBen.errors">
+          <input #bean_GuanLiChengBen="ngModel" type="number" class="form-control" name="bean.GuanLiChengBen"
+            [(ngModel)]="bean.GuanLiChengBen">
+        </key-form-element>
+        <key-form-element label="制造成本" [error]="bean_ZhiZaoChengBen.errors">
+          <input #bean_ZhiZaoChengBen="ngModel" type="number" class="form-control" name="bean.ZhiZaoChengBen"
+            [(ngModel)]="bean.ZhiZaoChengBen">
+        </key-form-element>
+        <key-form-element label="制表人" [error]="bean_ZhiBiaoRen.errors">
+          <input #bean_ZhiBiaoRen="ngModel" type="text" class="form-control" name="bean.ZhiBiaoRen"
+            [(ngModel)]="bean.ZhiBiaoRen">
+        </key-form-element>
+        <key-form-element label="制表日期" [error]="bean_ZhiBiaoRiQi.errors">
+          <input #bean_ZhiBiaoRiQi="ngModel" type="date" class="form-control" name="bean.ZhiBiaoRiQi"
+            [(ngModel)]="bean.ZhiBiaoRiQi">
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default" (click)="cancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()" [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>
+
+<key-modal *ngIf="examineState" header="审核" [open]="true" class="key-modal-basis" (close)="examineCancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="审核状态" [error]="bean_ShenHeZhuangTai.errors">
+          <input #bean_ShenHeZhuangTai="ngModel" type="text" class="form-control" name="bean.ShenHeZhuangTai"
+            [(ngModel)]="bean.ShenHeZhuangTai" required>
+        </key-form-element>
+        <key-form-element label="审核人" [error]="bean_ShenHeRen.errors">
+          <input #bean_ShenHeRen="ngModel" type="text" class="form-control" name="bean.ShenHeRen"
+            [(ngModel)]="bean.ShenHeRen" required>
+        </key-form-element>
+        <key-form-element label="审核日期" [error]="bean_ShenHeRiQi.errors">
+          <input #bean_ShenHeRiQi="ngModel" type="date" class="form-control" name="bean.ShenHeRiQi"
+            [(ngModel)]="bean.ShenHeRiQi" required>
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default" (click)="examineCancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()" [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>
+
+<key-modal *ngIf="approvalState" header="审批" [open]="true" class="key-modal-basis" (close)="approvalCancel()">
+  <div body>
+    <form class="key-row" #formDemo="ngForm">
+      <div class="key-col-12">
+        <key-form-element label="审批状态" [error]="bean_ShenPiZhuangTai.errors">
+          <input #bean_ShenPiZhuangTai="ngModel" type="text" class="form-control" name="bean.ShenPiZhuangTai"
+            [(ngModel)]="bean.ShenPiZhuangTai" required>
+        </key-form-element>
+        <key-form-element label="审批人" [error]="bean_ShenPiRen.errors">
+          <input #bean_ShenPiRen="ngModel" type="text" class="form-control" name="bean.ShenPiRen"
+            [(ngModel)]="bean.ShenPiRen" required>
+        </key-form-element>
+        <key-form-element label="审批日期" [error]="bean_ShenPiRiQi.errors">
+          <input #bean_ShenPiRiQi="ngModel" type="date" class="form-control" name="bean.ShenPiRiQi"
+            [(ngModel)]="bean.ShenPiRiQi" required>
+        </key-form-element>
+      </div>
+    </form>
+  </div>
+  <div footer>
+    <button class="key-btn key-btn-default" (click)="approvalCancel()">关闭</button>
+    <button class="key-btn key-btn-default" (click)="save()" [disabled]="!formDemo.form.valid">保存</button>
+  </div>
+</key-modal>
