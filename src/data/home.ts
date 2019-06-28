@@ -698,72 +698,72 @@ export const DataHomeHandler = {
     data0: [
       {
         id: 1,
-        title: '商品名称1',
+        title: '源氏木语实木双抽床头柜白橡木北欧简约现代卧室迷你小柜子床边柜',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '830 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-1.jpg'
       },
       {
         id: 2,
-        title: '商品名称2',
+        title: '源氏木语全实木床头柜黑胡桃木两抽小柜子木蜡油环保时尚小斗柜',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '1440 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-2.jpg'
       },
       {
         id: 3,
-        title: '商品名称3',
+        title: '源氏木语实木儿童床头柜北欧橡木经济型收纳柜子现代简约卧室家具',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '780 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-3.jpg'
       },
       {
         id: 4,
-        title: '商品名称4',
+        title: '源氏木语实木床头柜北欧水曲柳收纳储物柜子现代简约卧室新品家具',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '660 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-4.jpg'
       },
       {
         id: 5,
-        title: '商品名称5',
+        title: '源氏木语纯实木床头柜白橡木床边柜两抽柜北欧简约整装储物柜卧室',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '920 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-5.jpg'
       },
       {
         id: 6,
-        title: '商品名称6',
+        title: '源氏木语全实木床头柜现代简约黑胡桃木床边收纳柜北欧',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '1250 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-6.jpg'
       },
       {
         id: 7,
-        title: '商品名称7',
+        title: '源氏木语全实木床头柜北欧卧室橡木收纳柜现代简约带锁床边小柜子',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '900 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-7.jpg'
       },
       {
         id: 8,
-        title: '商品名称8',
+        title: '源氏木语纯实木床头柜床边柜原木橡木斗柜抽屉柜北欧简约卧室家具',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '870 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-8.jpg'
       },
       {
         id: 9,
-        title: '商品名称9',
+        title: '源氏木语纯实木简约现代原木床头柜卧室床边柜白橡木柜子储物家具',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '820 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-9.jpg'
       },
       {
         id: 10,
-        title: '商品名称10',
+        title: '源氏木语全实木床头柜北欧卧室带锁储物柜现代简约橡木床边收纳柜',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '750 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-10.jpg'
       }
     ],
@@ -771,51 +771,51 @@ export const DataHomeHandler = {
     data1: [
       {
         id: 1,
-        title: '团购商品名称1',
+        title: '红木酒柜客厅实木家具花梨木玻璃展示柜刺猬紫檀餐厅仿古红酒柜',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '5800 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-1.jpg'
       },
       {
         id: 2,
-        title: '团购商品名称2',
+        title: '沙发',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '3540 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-2.jpg'
       },
       {
         id: 3,
-        title: '团购商品名称3',
+        title: '电视柜',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '398 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-3.jpg'
       },
       {
         id: 4,
-        title: '团购商品名称4',
+        title: '床头柜',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '400 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-4.jpg'
       },
       {
         id: 5,
-        title: '团购商品名称5',
+        title: '茶几',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '250 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-5.jpg'
       },
       {
         id: 6,
-        title: '团购商品名称6',
+        title: '沙发',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '999 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-6.jpg'
       },
       {
         id: 7,
-        title: '团购商品名称7',
+        title: '床头柜',
         link: 'www.baidu.com',
-        price: '2000 RMB',
+        price: '1080 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-7.jpg'
       }
     ],
@@ -830,39 +830,39 @@ export const DataHomeHandler = {
           },
           {
             id: 2,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo2.jpg'
           },
           {
             id: 3,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo3.jpg'
           },
           {
             id: 4,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo4.jpg'
           },
           {
             id: 5,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo5.jpg'
           },
           {
             id: 1,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo6.jpg'
           },
           {
             id: 2,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo7.jpg'
           },
           {
             id: 3,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo8.jpg'
           },
           {
             id: 4,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo9.jpg'
           },
           {
             id: 5,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo10.jpg'
           }
         ]
       },
@@ -875,39 +875,39 @@ export const DataHomeHandler = {
           },
           {
             id: 2,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo2.jpg'
           },
           {
             id: 3,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo3.jpg'
           },
           {
             id: 4,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo4.jpg'
           },
           {
             id: 5,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo5.jpg'
           },
           {
             id: 1,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo6.jpg'
           },
           {
             id: 2,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo7.jpg'
           },
           {
             id: 3,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo8.jpg'
           },
           {
             id: 4,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo9.jpg'
           },
           {
             id: 5,
-            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo.jpg'
+            src: 'assets/imgs/home/jiaJuShangCheng/pipai-logo10.jpg'
           }
         ]
       }
@@ -916,38 +916,38 @@ export const DataHomeHandler = {
     data3: [
       {
         id: 1,
-        title: '天使投资1',
-        subTitle: 'Angel investment',
+        title: '忠于孩子的设计-小鬼当家小弧度儿童家具',
+        subTitle: '儿童产品',
         src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-1.jpg'
       },
       {
         id: 2,
-        title: '天使投资2',
-        subTitle: 'Angel investment',
+        title: '原创徽派新中式，为新中式家具助力',
+        subTitle: '书椅',
         src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-2.jpg'
       },
       {
         id: 3,
-        title: '天使投资3',
-        subTitle: 'Angel investment',
+        title: '忠于孩子的设计-可爱环保儿童家具',
+        subTitle: '儿童产品',
         src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-3.jpg'
       },
       {
         id: 4,
-        title: '天使投资4',
-        subTitle: 'Angel investment',
+        title: '传承明式传统工艺榫卯结构 缅甸花梨方凳',
+        subTitle: '餐椅',
         src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-1.jpg'
       },
       {
         id: 5,
-        title: '天使投资5',
-        subTitle: 'Angel investment',
+        title: '铜师傅 铜木主义 塞尚卧室家具',
+        subTitle: '床',
         src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-2.jpg'
       },
       {
         id: 6,
-        title: '天使投资6',
-        subTitle: 'Angel investment',
+        title: '一张可以鲜活空间的高颜值茶台',
+        subTitle: '茶几',
         src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-3.jpg'
       }
     ]

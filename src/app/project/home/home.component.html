@@ -396,10 +396,12 @@
                   <key-item-mask isTextLeft="true">
                     <key-item-mask-label [label]="item.title">
                     </key-item-mask-label>
-                    <key-item-mask-label labelTitle="链接" [label]="item.link">
+                    <!--key-item-mask-label labelTitle="链接" [label]="item.link">
+                    </key-item-mask-label-->
+                    <span style="font-size: 150%;color: red">
+                    <key-item-mask-label [label]="item.price">
                     </key-item-mask-label>
-                    <key-item-mask-label labelTitle="价格" [label]="item.price">
-                    </key-item-mask-label>
+                    </span>
                   </key-item-mask>
                 </div>
               </div>
@@ -447,7 +449,7 @@
           <div class="body">
             <div class="max-logo">
               <div class="text">
-                LOGO
+                品牌
               </div>
             </div>
             <key-carousel [data]="dataHandler.FM.data2" nzSpan="5"
