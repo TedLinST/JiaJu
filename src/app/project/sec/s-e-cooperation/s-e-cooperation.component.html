@@ -261,12 +261,13 @@
             </div>
           </ng-template>
         </div>
+        <key-dot-title title="近期讲座预告"></key-dot-title>
         <div class="lecture">
           <ng-template ngFor let-item [ngForOf]="dataHandler.IF.data1"
             let-index="index">
             <div class="label">
               <a class="singleTextBeyondHide">
-                NO.{{index+1}} {{item.BiaoTi}}</a>
+                {{item.BiaoTi}}</a>
             </div>
           </ng-template>
           <div class="clearfix"></div>
@@ -320,6 +321,10 @@
                 style="height: 299px;margin-bottom: 16px;">
                 <div class="header">
                   <img [src]="item.src">
+                  <key-item-mask [isTextLeft]="true">
+                    <key-item-mask-label [label]="item.BiaoTi">
+                    </key-item-mask-label>
+                  </key-item-mask>
                 </div>
               </div>
             </div>
@@ -327,7 +332,7 @@
         </div>
         <div style="padding: 0px 5px;">
           <key-carousel [data]="dataHandler.SE.data1" nzSpan="4" space="1"
-            [bodyStyle]="{'height':'126px'}" [labelArray]="labelArray"
+            [bodyStyle]="{'height':'90px'}" [labelArray]="labelArray"
             (clickItemIndex)="openSeekExpertDetails($event)"></key-carousel>
         </div>
       </key-item-chunk-body>

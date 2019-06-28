@@ -30,9 +30,8 @@ export class SECooperationComponent implements OnInit {
   currentIndexFD: number = 0;
 
   labelArray: KeyCarouselLabelEvent[] = [
-    { key: 'MingCheng' },
-    { key: 'ZhiCheng' },
-    { key: 'ZhuanYe' }
+    { key: 'title' },
+    { key: 'text' }
   ];
 
   senActiveItem: any;

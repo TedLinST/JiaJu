@@ -5,7 +5,71 @@ export const DataDesignDatabaseHandler = {
   TYPE_FILTER: [
     {
       id: '1',
-      title: '品牌类型',
+      title: '类型',
+      data: [
+        {
+          id: '1',
+          label: '柜类'
+        },
+        {
+          id: '2',
+          label: '椅凳类'
+        },
+        {
+          id: '3',
+          label: '床类'
+        },
+        {
+          id: '4',
+          label: '桌几类'
+        }
+      ]
+    },
+    {
+      id: '2',
+      title: '家具材料',
+      data: [
+        {
+          id: '1',
+          label: '天然材料'
+        },
+        {
+          id: '2',
+          label: '人造板材'
+        },
+        {
+          id: '3',
+          label: '竹藤材'
+        },
+        {
+          id: '4',
+          label: '金属材料'
+        },
+        {
+          id: '5',
+          label: '玻璃'
+        },
+        {
+          id: '6',
+          label: '高分子材料'
+        },
+        {
+          id: '7',
+          label: '纺织品'
+        },
+        {
+          id: '8',
+          label: '皮革'
+        },
+        {
+          id: '9',
+          label: '石材'
+        }
+      ]
+    },
+    {
+      id: '3',
+      title: '家具品牌',
       data: [
         {
           id: '1',
@@ -22,7 +86,7 @@ export const DataDesignDatabaseHandler = {
       ]
     },
     {
-      id: '2',
+      id: '4',
       title: '使用场所',
       data: [
         {
@@ -36,24 +100,6 @@ export const DataDesignDatabaseHandler = {
         {
           id: '3',
           label: '户外家具'
-        }
-      ]
-    },
-    {
-      id: '5',
-      title: '类型',
-      data: [
-        {
-          id: '1',
-          label: '柜类'
-        },
-        {
-          id: '2',
-          label: '椅凳类'
-        },
-        {
-          id: '3',
-          label: '床类'
         }
       ]
     }

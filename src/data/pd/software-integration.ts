@@ -151,7 +151,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 1,
       title: '酷家乐',
-      // test:'VR智能室内设计平台',//简介
+      subtitle:'VR智能室内设计平台',//简介
       date: '2019-05-06',
       number: 420,
       src: 'assets/imgs/software-integration/ruanjian-1.jpg'
@@ -159,7 +159,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 2,
       title: '爱福窝',
-      // test:'国内领先的家装云设计软件服务商',//简介
+      subtitle:'国内领先的家装云设计软件服务商',//简介
       date: '2019-05-06',
       number: 2500,
       src: 'assets/imgs/software-integration/ruanjian-2.jpg'
@@ -167,7 +167,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 3,
       title: 'WoodNET',
-      // test:'准确根据客户需求进行展示和呈现的软件',//简介
+      subtitle:'准确根据客户需求进行展示和呈现的软件',//简介
       date: '2019-05-06',
       number: 100,
       src: 'assets/imgs/software-integration/ruanjian-3.jpg'
@@ -175,7 +175,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 4,
       title: '三维家',
-      // test:'高效便捷的家居设计与家具设计软件',
+      subtitle:'高效便捷的家居设计与家具设计软件',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-4.jpg'
@@ -183,7 +183,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 5,
       title: '圆方',
-      // test:'整体家居解决方案服务商',
+      subtitle:'整体家居解决方案服务商',
       date: '2019-05-06',
       number: 420,
       src: 'assets/imgs/software-integration/ruanjian-5.jpg'
@@ -191,7 +191,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 6,
       title: '造易',
-      // test:'定制家具信息化解决方案提供商',
+      subtitle:'定制家具信息化解决方案提供商',
       date: '2019-05-06',
       number: 2500,
       src: 'assets/imgs/software-integration/ruanjian-6.jpg'
@@ -199,7 +199,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 7,
       title: '三维家',
-      // test:'家居行业前后端软件技术服务提供商',
+      subtitle:'家居行业前后端软件技术服务提供商',
       date: '2019-05-06',
       number: 100,
       src: 'assets/imgs/software-integration/ruanjian-7.jpg'
@@ -207,7 +207,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 8,
       title: '豪迈WCC',
-      // test:'快速处理设计产品并提供完整数据流的软件',
+      subtitle:'快速处理设计产品并提供完整数据流的软件',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-8.jpg'
@@ -215,7 +215,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 9,
       title: 'UG',
-      // test:'交互式CAD/CAM系统',
+      subtitle:'交互式CAD/CAM系统',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-9.jpg'
@@ -223,7 +223,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 10,
       title: 'TopSolid',
-      // test:'为木工行业打造的数字化加工生产软件',
+      subtitle:'为木工行业打造的数字化加工生产软件',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-10.jpg'
@@ -231,7 +231,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 11,
       title: 'Rhino',
-      // test:'强大的专业3D造型软件',
+      subtitle:'强大的专业3D造型软件',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-11.jpg'
@@ -239,7 +239,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 12,
       title: 'Solidworks',
-      // test:'专业的机械设计软件视窗产品',
+      subtitle:'专业的机械设计软件视窗产品',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-12.jpg'
@@ -247,7 +247,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 13,
       title: '3Dmax',
-      // test:'三维动画渲染和制作软件',
+      subtitle:'三维动画渲染和制作软件',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-13.jpg'
@@ -255,7 +255,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 14,
       title: 'AutoCAD',
-      // test:'自动计算机辅助设计软件',
+      subtitle:'自动计算机辅助设计软件',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-14.jpg'
@@ -263,7 +263,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 15,
       title: 'Adobe Photoshop',
-      // test:'位图图像处理软件',
+      subtitle:'位图图像处理软件',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-15.jpg'
@@ -271,7 +271,7 @@ export const DataSoftwareIntegrationHandler = {
     {
       id: 16,
       title: 'ThinkDesign',
-      // test:'极具竞争力的3D辅助产品设计软件',
+      subtitle:'极具竞争力的3D辅助产品设计软件',
       date: '2019-05-06',
       number: 7800,
       src: 'assets/imgs/software-integration/ruanjian-16.jpg'
