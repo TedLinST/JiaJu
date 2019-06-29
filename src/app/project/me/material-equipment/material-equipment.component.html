@@ -32,15 +32,15 @@
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.MM.data"
             let-index="index">
-            <div nz-col nzSpan="4" style="height: 242px;margin-bottom: 6px;">
-              <div class="item-box item-box-margin-3"
+            <div nz-col nzSpan="4" style="height: 100px;margin-bottom: 6px;">
+              <div class="item-box item-box-no-border item-box-margin-5"
                 (click)="openMaterialMartDetails(item.id)">
                 <div class="header">
                   <img [src]="item.src">
-                  <key-item-mask>
+                  <!-- <key-item-mask>
                     <key-item-mask-label [label]="item.title">
                     </key-item-mask-label>
-                  </key-item-mask>
+                  </key-item-mask> -->
                 </div>
               </div>
             </div>

@@ -39,6 +39,13 @@
     }
   }
 
+  .item-box-no-border {
+    border-width: 0px !important;
+    &:hover {
+      border-width: 0px !important;
+    }
+  }
+
   // 机械设备求购
   .EP-list {
     width: 1200px;

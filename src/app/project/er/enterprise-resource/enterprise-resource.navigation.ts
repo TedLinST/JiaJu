@@ -209,5 +209,16 @@ export class EnterpriseResourceNavigation {
     this.router.navigateByUrl(this.baseUrl + 'prod-summary-production-costs');
   }
 
+  /**
+   * 投入产出分析
+   */
+  openProdInputOutput(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-input-output');
+  }
+
+
 
 }

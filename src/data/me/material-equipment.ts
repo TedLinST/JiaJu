@@ -9,77 +9,79 @@ export const DataMaterialEquipmentHandler = {
       {
         id: 1,
         title: '天然木材',
-        src: 'assets/imgs/raw-material/material-1.jpg'
+        // src: 'assets/imgs/raw-material/material-1.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-1.png'
+
       },
       {
         id: 2,
         title: '人造板材',
-        src: 'assets/imgs/raw-material/material-2.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-2.png'
       },
       {
         id: 3,
         title: '金属材料',
-        src: 'assets/imgs/raw-material/material-3.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-11.png'
       },
       {
         id: 4,
         title: '高分子材料',
-        src: 'assets/imgs/raw-material/material-4.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-3.png'
       },
       {
         id: 5,
         title: '竹藤材料',
-        src: 'assets/imgs/raw-material/material-5.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-4.png'
       },
       {
         id: 6,
         title: '玻璃',
-        src: 'assets/imgs/raw-material/material-6.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-10.png'
       },
       {
         id: 7,
         title: '纺织品',
-        src: 'assets/imgs/raw-material/material-7.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-13.png'
       },
       {
         id: 8,
         title: '皮革',
-        src: 'assets/imgs/raw-material/material-8.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-7.png'
       },
       {
         id: 9,
         title: '石材',
-        src: 'assets/imgs/raw-material/material-9.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-15.png'
       },
       {
         id: 10,
         title: '涂料',
-        src: 'assets/imgs/raw-material/material-10.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-6.png'
       },
       {
         id: 11,
         title: '胶黏剂',
-        src: 'assets/imgs/raw-material/material-11.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-9.png'
       },
       {
         id: 12,
         title: '五金及配件',
-        src: 'assets/imgs/raw-material/material-12.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-12.png'
       },
       {
         id: 13,
         title: '电子元器件',
-        src: 'assets/imgs/raw-material/material-13.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-14.png'
       },
       {
         id: 14,
         title: '填充材料',
-        src: 'assets/imgs/raw-material/material-14.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-8.png'
       },
       {
         id: 15,
         title: '其他原辅材料',
-        src: 'assets/imgs/raw-material/material-15.jpg'
+        src: 'assets/imgs/material-equipment/key-logo-5.png'
       }
     ]
   },
