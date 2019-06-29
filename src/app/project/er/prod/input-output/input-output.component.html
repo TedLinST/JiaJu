@@ -1,3 +1,170 @@
-<p>
-  input-output works!
-</p>
+<div class="key-flex-grow-1 key-flex key-flex-h">
+  <key-table title="投入产出分析" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection"
+    (dataSelect)="onRowSelect($event)" (dataUnselect)="onRowUnselect()" style="width: 10px;">
+    <key-table-column heading="类型" width="100" key="LeiXing" sortable>
+    </key-table-column>
+    <key-table-column heading="一级分类" width="100" key="YiJiFenLei" sortable>
+    </key-table-column>
+    <key-table-column heading="二级分类" width="100" key="ErJiFenLei" sortable>
+    </key-table-column>
+    <key-table-column heading="金额(元)" width="100" key="JinE" sortable>
+    </key-table-column>
+    <key-table-column heading="比重(%)" width="100" key="BiZhong" sortable>
+    </key-table-column>
+  </key-table>
+  <div class="key-flex key-flex-v key-flex-no-shrink key-left-split-line" style="width: 50%">
+    <div style="height: 50%;margin-bottom: 0px;overflow-y: auto">
+      <table class="table">
+        <tr>
+          <th colspan="3" style="text-align: center;">
+            成品入库投入产出
+          </th>
+        </tr>
+        <tr>
+          <th>
+            项目
+          </th>
+          <th>
+            金额(元)
+          </th>
+          <th>
+            比重(%)
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Σ现金支出
+          </td>
+          <td>{{RuKuData.JinE1}}</td>
+          <td>{{RuKuData.BiZhong1}}</td>
+        </tr>
+        <tr>
+          <td>
+            Σ折旧
+          </td>
+          <td>{{RuKuData.JinE2}}</td>
+          <td>{{RuKuData.BiZhong2}}</td>
+        </tr>
+        <tr>
+          <td>
+            Σ总投入 = Σ现金支出 + Σ折旧
+          </td>
+          <td>{{RuKuData.JinE3}}</td>
+          <td>{{RuKuData.BiZhong3}}</td>
+        </tr>
+        <tr>
+          <td>
+            成品入库产值
+          </td>
+          <td>{{RuKuData.JinE4}}</td>
+          <td>{{RuKuData.BiZhong4}}</td>
+        </tr>
+        <tr>
+          <td>
+            劳务收入
+          </td>
+          <td>{{RuKuData.JinE5}}</td>
+          <td>{{RuKuData.BiZhong5}}</td>
+        </tr>
+        <tr>
+          <td>
+            Σ产出成果 = 成品入库产值 + 劳务收入
+          </td>
+          <td>{{RuKuData.JinE6}}</td>
+          <td>{{RuKuData.BiZhong6}}</td>
+        </tr>
+        <tr>
+          <td>
+            投入产出 = Σ产出成果 - Σ总投入
+          </td>
+          <td>{{RuKuData.JinE7}}</td>
+          <td>{{RuKuData.BiZhong7}}</td>
+        </tr>
+        <tr>
+          <td>
+            投入产出率 = 投入产出 ÷ Σ总投入
+          </td>
+          <td></td>
+          <td>{{RuKuData.BiZhong8}}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="key-top-split-line" style="height: 50%;margin-bottom: 0px;overflow-y: auto">
+      <table class="table">
+        <tr>
+          <th colspan="3" style="text-align: center;">
+            成品出货投入产出
+          </th>
+        </tr>
+        <tr>
+          <th>
+            项目
+          </th>
+          <th>
+            金额(元)
+          </th>
+          <th>
+            比重(%)
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Σ现金支出
+          </td>
+          <td>{{ChuKuData.JinE1}}</td>
+          <td>{{ChuKuData.BiZhong1}}</td>
+        </tr>
+        <tr>
+          <td>
+            Σ折旧
+          </td>
+          <td>{{ChuKuData.JinE2}}</td>
+          <td>{{ChuKuData.BiZhong2}}</td>
+        </tr>
+        <tr>
+          <td>
+            Σ总投入 = Σ现金支出 + Σ折旧
+          </td>
+          <td>{{ChuKuData.JinE3}}</td>
+          <td>{{ChuKuData.BiZhong3}}</td>
+        </tr>
+        <tr>
+          <td>
+            成品入库产值
+          </td>
+          <td>{{ChuKuData.JinE4}}</td>
+          <td>{{ChuKuData.BiZhong4}}</td>
+        </tr>
+        <tr>
+          <td>
+            劳务收入
+          </td>
+          <td>{{ChuKuData.JinE5}}</td>
+          <td>{{ChuKuData.BiZhong5}}</td>
+        </tr>
+        <tr>
+          <td>
+            Σ产出成果 = 成品入库产值 + 劳务收入
+          </td>
+          <td>{{ChuKuData.JinE6}}</td>
+          <td>{{ChuKuData.BiZhong6}}</td>
+        </tr>
+        <tr>
+          <td>
+            投入产出 = Σ产出成果 - Σ总投入
+          </td>
+          <td>{{ChuKuData.JinE7}}</td>
+          <td>{{ChuKuData.BiZhong7}}</td>
+        </tr>
+        <tr>
+          <td>
+            投入产出率 = 投入产出 ÷ Σ总投入
+          </td>
+          <td></td>
+          <td>{{ChuKuData.BiZhong8}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>
