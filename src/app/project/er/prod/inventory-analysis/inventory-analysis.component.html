@@ -1,0 +1,56 @@
+<div class="key-flex-grow-1 key-flex key-flex-v" style="width: 10px;">
+  <key-table-split title="成品库存分析" [data]="listData" [canRefreshBtn]="false" [(selection)]="selection"
+    (dataSelect)="onRowSelect($event)" (dataUnselect)="onRowUnselect()">
+    <key-table-column heading="产品分类" width="100" key="ChanPinFenLei" lock="true" sortable>
+    </key-table-column>
+    <key-table-column heading="产品编码" width="100" key="ChanPinBianMa" lock="true" sortable>
+    </key-table-column>
+    <key-table-column heading="产品名称" width="100" key="ChanPinMingCheng" lock="true" sortable>
+    </key-table-column>
+    <key-table-column heading="产品型号" width="100" key="ChanPinXingHao" lock="true" sortable>
+    </key-table-column>
+    <key-table-column heading="产品单位" width="100" key="ChanPinDanWei" sortable>
+    </key-table-column>
+    <key-table-column heading="产品单价" width="100" key="ChanPinDanJia" sortable>
+    </key-table-column>
+    <key-table-column heading="初期库存" width="100" key="ChuQiKuCun" sortable>
+    </key-table-column>
+    <key-table-column heading="期间入库" width="100" key="QiJianRuKu" sortable>
+    </key-table-column>
+    <key-table-column heading="期间出库" width="100" key="QiJianChuKu" sortable>
+    </key-table-column>
+    <key-table-column heading="期末库存" width="100" key="QiMoKuCun" sortable>
+    </key-table-column>
+    <key-table-column heading="库存金额" width="100" key="KuCunJinE" sortable>
+    </key-table-column>
+    <key-table-column heading="最低批量" width="100" key="ZuiDiPiLiang" sortable>
+    </key-table-column>
+    <key-table-column heading="最高库存" width="100" key="ZuiGaoKuCun" sortable>
+    </key-table-column>
+    <key-table-column heading="最低库存" width="100" key="ZuiDiKuCun" sortable>
+    </key-table-column>
+  </key-table-split>
+  <div class="key-flex key-flex-v key-flex-no-shrink key-top-split-line" style="height: 40%">
+    <key-table title="成品出入库" [data]="subListData" [canRefreshBtn]="false" [paginator]="false"
+      [(selection)]="selectionSub">
+      <key-table-column heading="日期" width="100" key="RiQi" sortable>
+      </key-table-column>
+      <key-table-column heading="入库数量" width="100" key="RuKuShuLiang" sortable>
+      </key-table-column>
+      <key-table-column heading="出库数量" width="100" key="ChuKuShuLiang" sortable>
+      </key-table-column>
+      <key-table-column heading="生产批号" width="100" key="ShengChanPiHao" sortable>
+      </key-table-column>
+      <key-table-column heading="投产日期" width="100" key="TouChanRiQi" sortable>
+      </key-table-column>
+      <key-table-column heading="类别" width="100" key="LeiBie" sortable>
+      </key-table-column>
+      <key-table-column heading="定制" width="100" key="DingZhi" sortable>
+      </key-table-column>
+      <key-table-column heading="生产数量" width="100" key="ShengChanShuLiang" sortable>
+      </key-table-column>
+      <key-table-column heading="当天库存" width="100" key="DangTianKuCun" sortable>
+      </key-table-column>
+    </key-table>
+  </div>
+</div>

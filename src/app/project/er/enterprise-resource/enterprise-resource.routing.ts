@@ -20,7 +20,7 @@ export const EnterpriseResourceRoutes = [
   { path: 'prod-process-hours-wages', loadChildren: '../prod/process-hours-wages/process-hours-wages.module#ProcessHoursWagesModule' }, // 工序工时工价表
   { path: 'prod-summary-production-costs', loadChildren: '../prod/summary-production-costs/summary-production-costs.module#SummaryProductionCostsModule' }, // 订单生产实际成本汇总表
   // { path: 'prod-cash-flow-graph', loadChildren: '../prod/cash-flow-graph/cash-flow-graph.module#CashFlowGraphModule' }, // 现金流曲线图
-  // { path: 'prod-inventory-analysis', loadChildren: '../prod/inventory-analysis/inventory-analysis.module#InventoryAnalysisModule' }, // 成品库存分析
+  { path: 'prod-inventory-analysis', loadChildren: '../prod/inventory-analysis/inventory-analysis.module#InventoryAnalysisModule' }, // 成品库存分析
   { path: 'prod-input-output', loadChildren: '../prod/input-output/input-output.module#InputOutputModule' }, // 投入产出分析
 
   // 路由重定向

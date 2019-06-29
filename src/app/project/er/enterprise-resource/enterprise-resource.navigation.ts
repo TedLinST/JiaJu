@@ -210,6 +210,16 @@ export class EnterpriseResourceNavigation {
   }
 
   /**
+   * 成品库存分析
+   */
+  openProdInventoryAnalysis(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-inventory-analysis');
+  }
+
+  /**
    * 投入产出分析
    */
   openProdInputOutput(event?: any) {
@@ -218,7 +228,5 @@ export class EnterpriseResourceNavigation {
     }
     this.router.navigateByUrl(this.baseUrl + 'prod-input-output');
   }
-
-
 
 }
