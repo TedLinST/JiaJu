@@ -1,0 +1,12 @@
+<div>
+  <div>
+    <nz-select nzAllowClear="true" name="option" [(ngModel)]="option" (ngModelChange)="onSelectOption()">
+      <nz-option nzValue="2019" nzLabel="2019"></nz-option>
+      <nz-option nzValue="2018" nzLabel="2018"></nz-option>
+      <nz-option nzValue="2017" nzLabel="2017"></nz-option>
+      <nz-option nzValue="2016" nzLabel="2016"></nz-option>
+    </nz-select>
+  </div>
+  <div echarts [options]="chartBaseOption" (chartInit)="onChartInit($event)">
+  </div>
+</div>

@@ -208,6 +208,16 @@ export class EnterpriseResourceNavigation {
     }
     this.router.navigateByUrl(this.baseUrl + 'prod-summary-production-costs');
   }
+  
+  /**
+   * 现金流曲线图
+   */
+  openProdCashFlowGraph(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    this.router.navigateByUrl(this.baseUrl + 'prod-cash-flow-graph');
+  }
 
   /**
    * 成品库存分析
