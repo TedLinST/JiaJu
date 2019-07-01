@@ -331,17 +331,26 @@ export const DataHomeHandler = {
     data2: [
       {
         id: 1,
-        title: '互动讲堂标题1',
+        title: '中国古典家具',
+        ZhuJiangRen: '',
+        ZhiWu: '',
+        state: true,
         src: 'assets/videos/home/movie0.mp4'
       },
       {
         id: 2,
         title: '互动讲堂标题2',
+        ZhuJiangRen: '',
+        ZhiWu: '',
+        state: true,
         src: 'assets/videos/home/movie1.mp4'
       },
       {
         id: 3,
         title: '互动讲堂标题3',
+        ZhuJiangRen: '',
+        ZhiWu: '',
+        state: true,
         src: 'assets/videos/home/movie2.mp4'
       }
     ],

@@ -19,20 +19,27 @@
     </nz-breadcrumb>
 
     <!-- 标题 -->
-    <key-item-chunk title="校企资源" marginTop="20"
-      enTitle="SCHOOL-ENTERPRISE RESOURCES">
+    <key-item-chunk title="校企资源" marginTop="20" enTitle="SCHOOL-ENTERPRISE RESOURCES">
     </key-item-chunk>
+
+    <div style="margin-bottom: 10px;">
+      <nz-radio-group [(ngModel)]="radioValue" (ngModelChange)="radioValueChange($event)">
+        <label nz-radio nzValue="1">高校或科研机构</label>
+        <label nz-radio nzValue="2">企业</label>
+      </nz-radio-group>
+    </div>
 
     <!-- 分类筛选 -->
     <key-dot-title title="分类筛选"></key-dot-title>
-    <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
-      let-index="index">
-      <key-menu-type [title]="item.title" [data]="item.data"
-        (clickType)="onClickType($event)"></key-menu-type>
+    <ng-template ngFor let-item [ngForOf]="dataHandler['TYPE_FILTER' + radioValue]" let-index="index">
+      <key-menu-type [title]="item.title" [data]="item.data" (clickType)="onClickType($event)"></key-menu-type>
     </ng-template>
 
     <!-- 过滤 -->
     <div class="filter-row">
+      <key-button-sort label="按热度" [active]="btnSortActiveMap['ReDu']"
+        (clickChange)="onClickButtonSortChange($event,'ReDu')">
+      </key-button-sort>
       <!-- 选择地区 -->
       <!-- <span style="margin: 0px 5px 0px 0px;">选择地区</span>
       <nz-select nzAllowClear="true" name="DiQu" [(ngModel)]="DiQu"
@@ -44,8 +51,7 @@
       </nz-select> -->
       <div class="search">
         <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-          <input type="text" nz-input placeholder="请输入资源名称"
-            [(ngModel)]="searchValue" />
+          <input type="text" nz-input placeholder="请输入资源名称" [(ngModel)]="searchValue" />
         </nz-input-group>
         <ng-template #suffixIconButton>
           <button nz-button nzType="primary" nzSearch (click)="onSearch()">
@@ -84,8 +90,7 @@
                 </span>
               </div>
               <div class="col col-4">
-                <button nz-button nzType="primary"
-                  (click)="onViewDetails(item.id)">查看详情</button>
+                <button nz-button nzType="primary" (click)="onViewDetails(item.id)">查看详情</button>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -93,9 +98,8 @@
         </div>
         <div class="footer">
           <div class="pagination">
-            <nz-pagination [(nzPageIndex)]="activePagaIndex" [nzTotal]="total"
-              [nzShowTotal]="rangeTemplate" [nzPageSize]="pageSize"
-              (nzPageIndexChange)="onPageIndexChange($event)">
+            <nz-pagination [(nzPageIndex)]="activePagaIndex" [nzTotal]="total" [nzShowTotal]="rangeTemplate"
+              [nzPageSize]="pageSize" (nzPageIndexChange)="onPageIndexChange($event)">
             </nz-pagination>
             <ng-template #rangeTemplate let-range="range" let-total>
               显示 {{ range[0] }}-{{ range[1] }} 条，共 {{ total }} 条

@@ -1,8 +1,10 @@
 <div class="key-item-mask" [class.key-item-mask-left]="isTextLeft"
   [class.key-item-mask-center]="isTextCenter"
   [class.key-item-mask-right]="isTextRight"
-  [class.item-mask-paved]="isMaskPaved">
-  <div class="key-item-mask-body">
+  [class.item-mask-paved]="isMaskPaved" 
+  [class.active]="isActive"
+  [ngStyle]="maskStyle">
+  <div class="key-item-mask-body" (click)="onMaskChange()" >
     <ng-content></ng-content>
   </div>
 </div>

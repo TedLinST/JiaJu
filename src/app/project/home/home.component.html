@@ -13,10 +13,8 @@
   </div>
 
   <!-- 企业资源管理系统 -->
-  <key-item-chunk [enTitle]="dataHandler.ER.enTitle"
-    [title]="dataHandler.ER.title" [menuData]="dataHandler.ER.menuData"
-    [currentIndex]="currentIndexER"
-    (switchIndexChange)="carouselER.goTo($event); currentIndexER = $event">
+  <key-item-chunk [enTitle]="dataHandler.ER.enTitle" [title]="dataHandler.ER.title" [menuData]="dataHandler.ER.menuData"
+    [currentIndex]="currentIndexER" (switchIndexChange)="carouselER.goTo($event); currentIndexER = $event">
     <div body>
       <key-item-chunk-body [isMaxItem]="true">
         <nz-carousel #carouselER [nzDots]="false">
@@ -27,26 +25,21 @@
           </div>
         </nz-carousel>
         <div class="key-arrow key-arrow-horizontal">
-          <i class="fa fa-angle-left left"
-            (click)="carouselER.pre();switchER(-1);"></i>
-          <i class="fa fa-angle-right right"
-            (click)="carouselER.next();switchER(1);"></i>
+          <i class="fa fa-angle-left left" (click)="carouselER.pre();switchER(-1);"></i>
+          <i class="fa fa-angle-right right" (click)="carouselER.next();switchER(1);"></i>
         </div>
       </key-item-chunk-body>
     </div>
   </key-item-chunk>
 
   <!-- 产品设计开发服务 -->
-  <key-item-chunk [enTitle]="dataHandler.PD.enTitle"
-    [title]="dataHandler.PD.title" [menuData]="dataHandler.PD.menuData"
+  <key-item-chunk [enTitle]="dataHandler.PD.enTitle" [title]="dataHandler.PD.title" [menuData]="dataHandler.PD.menuData"
     (switchIndexChange)="currentIndexPD = $event">
     <div body>
       <!-- 大数据分析 -->
-      <key-item-chunk-body *ngIf="currentIndexPD == 0" [isMore]="true"
-        (clickMore)="portalNav.openDataAnalysis()">
+      <key-item-chunk-body *ngIf="currentIndexPD == 0" [isMore]="true" (clickMore)="portalNav.openDataAnalysis()">
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data0"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data0" let-index="index">
             <div nz-col nzSpan="8">
               <div class="item-box item-box-bg item-box-margin-1">
                 <div class="header">
@@ -64,8 +57,7 @@
                   </div>
                 </div>
                 <div class="footer footer-right">
-                  <a
-                    (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
                 </div>
               </div>
             </div>
@@ -73,14 +65,11 @@
         </div>
       </key-item-chunk-body>
       <!-- 产品设计资料库 -->
-      <key-item-chunk-body *ngIf="currentIndexPD == 1" [isMore]="true"
-        (clickMore)="portalNav.openDesignDatabase()">
+      <key-item-chunk-body *ngIf="currentIndexPD == 1" [isMore]="true" (clickMore)="portalNav.openDesignDatabase()">
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data1"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data1" let-index="index">
             <div nz-col nzSpan="6">
-              <div class="item-box item-box-bg item-box-margin-10"
-                (click)="openDesignDatabaseDetails(item.id)">
+              <div class="item-box item-box-bg item-box-margin-10" (click)="openDesignDatabaseDetails(item.id)">
                 <div class="header">
                   <img [imgLazyload]="item.src">
                 </div>
@@ -97,8 +86,7 @@
         </div>
       </key-item-chunk-body>
       <!-- 设计师园地 -->
-      <key-item-chunk-body *ngIf="currentIndexPD == 2" [isMore]="true"
-        (clickMore)="portalNav.openDesignersGarden()">
+      <key-item-chunk-body *ngIf="currentIndexPD == 2" [isMore]="true" (clickMore)="portalNav.openDesignersGarden()">
         <key-carousel [data]="dataHandler.PD.data2" [labelArray]="labelArrayPD2"
           (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>
       </key-item-chunk-body>
@@ -106,11 +94,9 @@
       <key-item-chunk-body *ngIf="currentIndexPD == 3" [isMore]="true"
         (clickMore)="portalNav.openSoftwareIntegration()">
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data3"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.PD.data3" let-index="index">
             <div nz-col nzSpan="6">
-              <div class="item-box item-box-bg item-box-margin-5"
-                (click)="openSoftwareIntegrationDetails(item.id)">
+              <div class="item-box item-box-bg item-box-margin-5" (click)="openSoftwareIntegrationDetails(item.id)">
                 <div class="header">
                   <img [imgLazyload]="item.src">
                 </div>
@@ -127,16 +113,13 @@
   </key-item-chunk>
 
   <!-- 校企合作服务 -->
-  <key-item-chunk [enTitle]="dataHandler.SEC.enTitle"
-    [title]="dataHandler.SEC.title" [menuData]="dataHandler.SEC.menuData"
-    (switchIndexChange)="currentIndexSEC = $event">
+  <key-item-chunk [enTitle]="dataHandler.SEC.enTitle" [title]="dataHandler.SEC.title"
+    [menuData]="dataHandler.SEC.menuData" (switchIndexChange)="currentIndexSEC = $event">
     <div body>
       <!-- 学校项目 -->
-      <key-item-chunk-body *ngIf="currentIndexSEC == 0" [isMore]="true"
-        (clickMore)="portalNav.openSchoolProject()">
+      <key-item-chunk-body *ngIf="currentIndexSEC == 0" [isMore]="true" (clickMore)="portalNav.openSchoolProject()">
         <div class="SEC0-style">
-          <div class="left"
-            (click)="openSchoolProjectDetails(dataHandler.SEC.data0[0].id)">
+          <div class="left" (click)="openSchoolProjectDetails(dataHandler.SEC.data0[0].id)">
             <img [imgLazyload]="dataHandler.SEC.data0[0].src">
             <key-item-mask>
               <key-item-mask-label [label]="dataHandler.SEC.data0[0].BiaoTi">
@@ -149,25 +132,21 @@
               </div>
             </key-item-mask>
           </div>
-          <div class="right"
-            style="padding-left: 6px;width: calc(100% - 299px)">
-            <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data0"
-              let-index="index">
-              <div *ngIf="index > 0" nz-col nzSpan="8"
-                style="height: 182px;margin-bottom: 21px;">
-                <div class="item-box item-box-margin-3"
-                  (click)="openSchoolProjectDetails(item.id)">
+          <div class="right" style="padding-left: 6px;width: calc(100% - 299px)">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data0" let-index="index">
+              <div *ngIf="index > 0" nz-col nzSpan="8" style="height: 182px;margin-bottom: 21px;">
+                <div class="item-box item-box-margin-3" (click)="openSchoolProjectDetails(item.id)">
                   <div class="header">
                     <img [imgLazyload]="item.src">
                     <key-item-mask [isTextLeft]="true">
-                        <key-item-mask-label [label]="item.BiaoTi">
+                      <key-item-mask-label [label]="item.BiaoTi">
+                      </key-item-mask-label>
+                      <div class="subtitle">
+                        <key-item-mask-label [label]="item.JiBie">
                         </key-item-mask-label>
-                        <div class="subtitle">
-                          <key-item-mask-label [label]="item.JiBie">
-                          </key-item-mask-label>
-                          <key-item-mask-label [label]="item.FaBuShiJian">
-                          </key-item-mask-label>
-                        </div>
+                        <key-item-mask-label [label]="item.FaBuShiJian">
+                        </key-item-mask-label>
+                      </div>
                     </key-item-mask>
                   </div>
                 </div>
@@ -178,14 +157,12 @@
         </div>
       </key-item-chunk-body>
       <!-- 企业需求 -->
-      <key-item-chunk-body *ngIf="currentIndexSEC == 1" [showItemNumber]="5"
-        [isMore]="true" (clickMore)="portalNav.openEnterpriseNeeds()">
+      <key-item-chunk-body *ngIf="currentIndexSEC == 1" [showItemNumber]="5" [isMore]="true"
+        (clickMore)="portalNav.openEnterpriseNeeds()">
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data1"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data1" let-index="index">
             <div nz-col nzSpan="4">
-              <div class="item-box item-box-margin-3"
-                (click)="openEnterpriseNeedsDetails(item.id)">
+              <div class="item-box item-box-margin-3" (click)="openEnterpriseNeedsDetails(item.id)">
                 <div class="header">
                   <img [imgLazyload]="item.src">
                   <key-item-mask [isTextLeft]="true">
@@ -201,17 +178,20 @@
         </div>
       </key-item-chunk-body>
       <!-- 互动讲堂 -->
-      <key-item-chunk-body *ngIf="currentIndexSEC == 2" [isMore]="true"
-        (clickMore)="portalNav.openInteractionForum()">
+      <key-item-chunk-body *ngIf="currentIndexSEC == 2" [isMore]="true" (clickMore)="portalNav.openInteractionForum()">
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data2"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.SEC.data2" let-index="index">
             <div nz-col nzSpan="8">
               <div class="item-box item-box-margin-3">
                 <div class="header">
-                  <video [src]="item.src" controls="controls"
+                  <video [src]="item.src" controls="controls" (play)="onPlay(item)" (ended)="onEnded(item)"
                     style="width: 100%;">
                   </video>
+                  <key-item-mask *ngIf="item.state" [isMaskPaved]="true" [isActive]="true" [maskStyle]="{'height':'40%','margin-bottom':'18.5%'}">
+                    <key-item-mask-label [label]="item.title"></key-item-mask-label>
+                    <key-item-mask-label [label]="item.ZhuJiangRen"></key-item-mask-label>
+                    <key-item-mask-label [label]="item.ZhiWu"></key-item-mask-label>
+                  </key-item-mask>
                 </div>
               </div>
             </div>
@@ -219,10 +199,8 @@
         </div>
       </key-item-chunk-body>
       <!-- 有困难找专家 -->
-      <key-item-chunk-body *ngIf="currentIndexSEC == 3" [isMore]="true"
-        (clickMore)="portalNav.openSeekExpert()">
-        <key-carousel [data]="dataHandler.SEC.data3" nzSpan="4"
-          [labelArray]="labelArraySEC3"
+      <key-item-chunk-body *ngIf="currentIndexSEC == 3" [isMore]="true" (clickMore)="portalNav.openSeekExpert()">
+        <key-carousel [data]="dataHandler.SEC.data3" nzSpan="4" [labelArray]="labelArraySEC3"
           (clickItemIndex)="openSeekExpertDetails($event)">
         </key-carousel>
       </key-item-chunk-body>
@@ -230,45 +208,42 @@
   </key-item-chunk>
 
   <!-- 综合服务 -->
-  <key-item-chunk [enTitle]="dataHandler.IS.enTitle"
-    [title]="dataHandler.IS.title" [menuData]="dataHandler.IS.menuData"
+  <key-item-chunk [enTitle]="dataHandler.IS.enTitle" [title]="dataHandler.IS.title" [menuData]="dataHandler.IS.menuData"
     (switchIndexChange)="currentIndexIS = $event">
     <div body>
       <!-- 展会服务 -->
-      <key-item-chunk-body *ngIf="currentIndexIS == 0" [isMaxItem]="true"
-        [isMore]="true" (clickMore)="portalNav.openExhibition()">
+      <key-item-chunk-body *ngIf="currentIndexIS == 0" [isMaxItem]="true" [isMore]="true"
+        (clickMore)="portalNav.openExhibition()">
         <div class="IS0-style">
           <div class="top-title">
             <div class="title">探寻家具发展趋势 把握时代发展脉络</div>
             <div class="EnTitle">EXHIBITION AREA</div>
           </div>
           <div class="key-item-chunk-body-max-content">
-            <key-carousel [data]="dataHandler.IS.data0" nzSpan="6"
-              [maskMode]="true"
+            <key-carousel [data]="dataHandler.IS.data0" nzSpan="6" [maskMode]="true"
               (clickItemIndex)="openExhibitionDetails($event)">
             </key-carousel>
           </div>
         </div>
       </key-item-chunk-body>
       <!-- 政府服务 -->
-      <key-item-chunk-body *ngIf="currentIndexIS == 1" [isMaxItem]="true"
-        [isMore]="true" (clickMore)="portalNav.openGovernment()">
+      <key-item-chunk-body *ngIf="currentIndexIS == 1" [isMaxItem]="true" [isMore]="true"
+        (clickMore)="portalNav.openGovernment()">
         <div class="IS1-style">
           <div class="top-title">
             <div class="title">政府服务</div>
             <div class="EnTitle">GOVERNMENT SERVICE</div>
           </div>
           <div class="key-item-chunk-body-max-content">
-            <key-carousel [data]="dataHandler.IS.data1" nzSpan="6"
-              [maskMode]="true"
+            <key-carousel [data]="dataHandler.IS.data1" nzSpan="6" [maskMode]="true"
               (clickItemIndex)="openGovernmentDetails($event)">
             </key-carousel>
           </div>
         </div>
       </key-item-chunk-body>
       <!-- 金融服务 [isMoreAlignSelect]="true" -->
-      <key-item-chunk-body *ngIf="currentIndexIS == 2" [showItemNumber]="5"
-        [isMore]="true" (clickMore)="portalNav.openFinance()">
+      <key-item-chunk-body *ngIf="currentIndexIS == 2" [showItemNumber]="5" [isMore]="true"
+        (clickMore)="portalNav.openFinance()">
         <!-- <div class="selectIS2" style="margin-bottom: 10px">
           <nz-select nzAllowClear="true" style="width: 300px;"
             nzPlaceHolder="请选择项目" [(ngModel)]="selectValueIS2"
@@ -281,8 +256,7 @@
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="iSdata2" let-index="index">
             <div *ngIf="index < 5" nz-col nzSpan="4">
-              <div class="item-box item-box-margin-3"
-                (click)="openFinanceDetails(item.id)">
+              <div class="item-box item-box-margin-3" (click)="openFinanceDetails(item.id)">
                 <div class="header">
                   <img [imgLazyload]="item.src">
                   <key-item-mask>
@@ -310,19 +284,15 @@
   </key-item-chunk>
 
   <!-- 原辅材料机械设备服务 -->
-  <key-item-chunk [enTitle]="dataHandler.ME.enTitle"
-    [title]="dataHandler.ME.title" [menuData]="dataHandler.ME.menuData"
+  <key-item-chunk [enTitle]="dataHandler.ME.enTitle" [title]="dataHandler.ME.title" [menuData]="dataHandler.ME.menuData"
     (switchIndexChange)="currentIndexME = $event">
     <div body>
       <!-- 木材团购 -->
-      <key-item-chunk-body *ngIf="currentIndexME == 0" [isMore]="true"
-        (clickMore)="portalNav.openWoodShopping()">
+      <key-item-chunk-body *ngIf="currentIndexME == 0" [isMore]="true" (clickMore)="portalNav.openWoodShopping()">
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.ME.data0"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.ME.data0" let-index="index">
             <div nz-col nzSpan="6">
-              <div class="item-box item-box-bg item-box-margin-1"
-                (click)="openWoodShoppingDetails(item.id)">
+              <div class="item-box item-box-bg item-box-margin-1" (click)="openWoodShoppingDetails(item.id)">
                 <div class="header">
                   <img [imgLazyload]="item.src">
                 </div>
@@ -334,8 +304,8 @@
                     <span style="font-size: 150%;color: red">{{item.price}}</span>
                   </div>
                   <div class="label">
-                      <span>{{item.type}}</span>
-                      <span>{{item.address}}</span>
+                    <span>{{item.type}}</span>
+                    <span>{{item.address}}</span>
                   </div>
                   <div class="label">规格：{{item.specs}}</div>
                   <div class="label">截止时间：{{item.code}}</div>
@@ -347,14 +317,11 @@
         </div>
       </key-item-chunk-body>
       <!-- 机械设备 -->
-      <key-item-chunk-body *ngIf="currentIndexME == 1" [isMore]="true"
-        (clickMore)="portalNav.openEquipmentMart()">
+      <key-item-chunk-body *ngIf="currentIndexME == 1" [isMore]="true" (clickMore)="portalNav.openEquipmentMart()">
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.ME.data1"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.ME.data1" let-index="index">
             <div nz-col nzSpan="12">
-              <div class="item-box item-box-bg item-box-margin-1"
-                (click)="openMechanicsEquipmentDetails(item.id)">
+              <div class="item-box item-box-bg item-box-margin-1" (click)="openMechanicsEquipmentDetails(item.id)">
                 <div class="header">
                   <img [imgLazyload]="item.src">
                 </div>
@@ -379,16 +346,14 @@
   </key-item-chunk>
 
   <!-- 家具商城 -->
-  <key-item-chunk [enTitle]="dataHandler.FM.enTitle"
-    [title]="dataHandler.FM.title" [menuData]="dataHandler.FM.menuData"
+  <key-item-chunk [enTitle]="dataHandler.FM.enTitle" [title]="dataHandler.FM.title" [menuData]="dataHandler.FM.menuData"
     (switchIndexChange)="currentIndexFM = $event">
     <div body>
       <!-- 推荐商品 -->
-      <key-item-chunk-body *ngIf="currentIndexFM == 0" [isMore]="true"
-        [showItemNumber]="5" (clickMore)="portalNav.openCommodity()">
+      <key-item-chunk-body *ngIf="currentIndexFM == 0" [isMore]="true" [showItemNumber]="5"
+        (clickMore)="portalNav.openCommodity()">
         <div nz-row>
-          <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data0"
-            let-index="index">
+          <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data0" let-index="index">
             <div nz-col nzSpan="4" style="height: 397px;margin-bottom: 6px;">
               <div class="item-box item-box-margin-3">
                 <div class="header">
@@ -399,8 +364,8 @@
                     <!--key-item-mask-label labelTitle="链接" [label]="item.link">
                     </key-item-mask-label-->
                     <span style="font-size: 150%;color: red">
-                    <key-item-mask-label [label]="item.price">
-                    </key-item-mask-label>
+                      <key-item-mask-label [label]="item.price">
+                      </key-item-mask-label>
                     </span>
                   </key-item-mask>
                 </div>
@@ -410,23 +375,18 @@
         </div>
       </key-item-chunk-body>
       <!-- 团购 -->
-      <key-item-chunk-body *ngIf="currentIndexFM == 1" [isMore]="true"
-        (clickMore)="portalNav.openGroupBuying()">
+      <key-item-chunk-body *ngIf="currentIndexFM == 1" [isMore]="true" (clickMore)="portalNav.openGroupBuying()">
         <div class="FM1-style">
-          <div class="left"
-            (click)="portalNav.openCommodityDetails(dataHandler.FM.data1[0])">
+          <div class="left" (click)="portalNav.openCommodityDetails(dataHandler.FM.data1[0])">
             <img [imgLazyload]="dataHandler.FM.data1[0].src">
             <key-item-mask>
               <key-item-mask-label [label]="dataHandler.FM.data1[0].title">
               </key-item-mask-label>
             </key-item-mask>
           </div>
-          <div class="right"
-            style="padding-left: 14px;width: calc(100% - 472px)">
-            <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data1"
-              let-index="index">
-              <div *ngIf="index > 0" nz-col nzSpan="8"
-                style="height: 394px;margin-bottom: 12px;">
+          <div class="right" style="padding-left: 14px;width: calc(100% - 472px)">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data1" let-index="index">
+              <div *ngIf="index > 0" nz-col nzSpan="8" style="height: 394px;margin-bottom: 12px;">
                 <div class="item-box item-box-margin-8">
                   <div class="header">
                     <img [imgLazyload]="item.src">
@@ -443,8 +403,8 @@
         </div>
       </key-item-chunk-body>
       <!-- 品牌 -->
-      <key-item-chunk-body *ngIf="currentIndexFM == 2" [isMore]="true"
-        [isMaxItem]="true" (clickMore)="portalNav.openBrand()">
+      <key-item-chunk-body *ngIf="currentIndexFM == 2" [isMore]="true" [isMaxItem]="true"
+        (clickMore)="portalNav.openBrand()">
         <div class="FM2-style">
           <div class="body">
             <div class="max-logo">
@@ -452,16 +412,14 @@
                 品牌
               </div>
             </div>
-            <key-carousel [data]="dataHandler.FM.data2" nzSpan="5"
-              nzSpanNumber="5" [rowArray]="[0,1]"
+            <key-carousel [data]="dataHandler.FM.data2" nzSpan="5" nzSpanNumber="5" [rowArray]="[0,1]"
               (clickItemIndex)="openBrandDetails($event)">
             </key-carousel>
           </div>
         </div>
       </key-item-chunk-body>
       <!-- 众筹频道 -->
-      <key-item-chunk-body *ngIf="currentIndexFM == 3" [isMore]="true"
-        (clickMore)="portalNav.openChannelChannel()">
+      <key-item-chunk-body *ngIf="currentIndexFM == 3" [isMore]="true" (clickMore)="portalNav.openChannelChannel()">
         <div class="FM3-style">
           <!-- <div class="searchFM3">
             <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
@@ -481,8 +439,7 @@
             <div nz-row>
               <ng-template ngFor let-item [ngForOf]="FMdata3" let-index="index">
                 <div nz-col nzSpan="8" style="margin-bottom: 2px">
-                  <div class="item-box item-box-bg item-box-margin-1"
-                    (click)="openChannelChannelDetails(item.id)">
+                  <div class="item-box item-box-bg item-box-margin-1" (click)="openChannelChannelDetails(item.id)">
                     <div class="header">
                       <img [imgLazyload]="item.src">
                       <key-item-mask [isMaskPaved]="true">
@@ -506,28 +463,23 @@
   </key-item-chunk>
 
   <!-- 快速入口 -->
-  <key-item-chunk [enTitle]="dataHandler.FE.enTitle"
-    [title]="dataHandler.FE.title" [menuData]="dataHandler.FE.menuData">
+  <key-item-chunk [enTitle]="dataHandler.FE.enTitle" [title]="dataHandler.FE.title"
+    [menuData]="dataHandler.FE.menuData">
     <div body>
       <key-item-chunk-body>
 
         <div class="FE0-style">
-          <div class="left"
-            (click)="openQuickAccess(dataHandler.FE.data0[0].id)">
+          <div class="left" (click)="openQuickAccess(dataHandler.FE.data0[0].id)">
             <img [imgLazyload]="dataHandler.FE.data0[0].src">
             <key-item-mask>
               <key-item-mask-label [label]="dataHandler.FE.data0[0].title">
               </key-item-mask-label>
             </key-item-mask>
           </div>
-          <div class="right"
-            style="padding-left: 6px;width: calc(100% - 299px)">
-            <ng-template ngFor let-item [ngForOf]="dataHandler.FE.data0"
-              let-index="index">
-              <div *ngIf="index > 0" nz-col nzSpan="8"
-                style="height: 182px;margin-bottom: 21px;">
-                <div class="item-box item-box-margin-3"
-                  (click)="openQuickAccess(item.id)">
+          <div class="right" style="padding-left: 6px;width: calc(100% - 299px)">
+            <ng-template ngFor let-item [ngForOf]="dataHandler.FE.data0" let-index="index">
+              <div *ngIf="index > 0" nz-col nzSpan="8" style="height: 182px;margin-bottom: 21px;">
+                <div class="item-box item-box-margin-3" (click)="openQuickAccess(item.id)">
                   <div class="header">
                     <img [imgLazyload]="item.src">
                     <key-item-mask>

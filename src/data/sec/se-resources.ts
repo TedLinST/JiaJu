@@ -2,7 +2,7 @@
 // 校企合作服务 - 校企资源数据助手
 export const DataSEResourcesHandler = {
   // 分类筛选
-  TYPE_FILTER: [
+  TYPE_FILTER1: [
     {
       id: '1',
       title: '所在地',
@@ -60,6 +60,18 @@ export const DataSEResourcesHandler = {
           label: '条件3.1'
         }
       ]
+    }
+  ],
+  TYPE_FILTER2: [
+    {
+      id: '1',
+      title: '所在地',
+      data: [
+        {
+          id: '1',
+          label: '条件1.1'
+        }
+      ]
     },
     {
       id: '4',
@@ -111,6 +123,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '木材科学与工程、林业工程、艺术设计、工业设计',
       JiBie: '湖南长沙',
       RiQi: '1958',
+      ReDu: 9,
       src: 'assets/imgs/se-resources/ziyuan-1.jpg'
     },
     {
@@ -119,6 +132,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '林学、林业工程、木材科学与工程、工业设计',
       JiBie: '江苏南京',
       RiQi: '1902',
+      ReDu: 9.3,
       src: 'assets/imgs/se-resources/ziyuan-2.jpg'
     },
     {
@@ -127,6 +141,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '林业工程、木材科学与工程、产品设计',
       JiBie: '北京海淀',
       RiQi: '1952',
+      ReDu: 7,
       src: 'assets/imgs/se-resources/ziyuan-3.jpg'
     },
     {
@@ -135,6 +150,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '木材科学与工程, 林业工程，产品设计，高分子材料与工程',
       JiBie: '黑龙江哈尔滨',
       RiQi: '1952',
+      ReDu: 8.9,
       src: 'assets/imgs/se-resources/ziyuan-4.jpg'
     },
     {
@@ -143,6 +159,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '林学、林业工程',
       JiBie: '福建福州',
       RiQi: '1936',
+      ReDu: 7.9,
       src: 'assets/imgs/se-resources/ziyuan-5.jpg'
     },
     {
@@ -151,6 +168,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '林学、林业工程、木材科学与工程、工业设计、产品设计',
       JiBie: '浙江杭州',
       RiQi: '1958',
+      ReDu: 9.9,
       src: 'assets/imgs/se-resources/ziyuan-6.jpg'
     },
     {
@@ -159,6 +177,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '木材科学与工程、工业设计',
       JiBie: '云南昆明',
       RiQi: '1939',
+      ReDu: 8,
       src: 'assets/imgs/se-resources/ziyuan-7.jpg'
     },
     {
@@ -167,6 +186,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '艺术设计、工业设计、产品设计',
       JiBie: '北京朝阳',
       RiQi: '1960',
+      ReDu: 7,
       src: 'assets/imgs/se-resources/ziyuan-8.jpg'
     },
     {
@@ -175,6 +195,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '雕刻艺术与家具设计、家具设计与制造、工业设计',
       JiBie: '广东佛山',
       RiQi: '1999',
+      ReDu: 9,
       src: 'assets/imgs/se-resources/ziyuan-9.jpg'
     },
     {
@@ -183,13 +204,16 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '工业设计',
       JiBie: '北京朝阳',
       RiQi: '1918',
+      ReDu: 8.3,
       src: 'assets/imgs/se-resources/ziyuan-10.jpg'
-    },{
+    }, 
+    {
       id: 11,
       MingCheng: '欧派家居集团股份有限公司',
       ZhuYingYeWu: '定制家具、橱柜、衣柜',
       JiBie: '广东广州',
       RiQi: '上市公司',
+      ReDu: 6,
       src: 'assets/imgs/se-resources/ziyuan-11.jpg'
     },
     {
@@ -198,6 +222,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '定制家具、衣柜',
       JiBie: '广东增城',
       RiQi: '上市公司',
+      ReDu: 7,
       src: 'assets/imgs/se-resources/ziyuan-12.jpg'
     },
     {
@@ -206,6 +231,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '实木家具、地板',
       JiBie: '广东汕头',
       RiQi: '上市公司',
+      ReDu: 7.6,
       src: 'assets/imgs/se-resources/ziyuan-13.jpg'
     },
     {
@@ -214,6 +240,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '板式家具',
       JiBie: '四川成都',
       RiQi: '民营企业',
+      ReDu: 8.6,
       src: 'assets/imgs/se-resources/ziyuan-14.jpg'
     },
     {
@@ -222,6 +249,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '软体家具',
       JiBie: '浙江杭州',
       RiQi: '上市公司',
+      ReDu: 6.9,
       src: 'assets/imgs/se-resources/ziyuan-15.jpg'
     },
     {
@@ -230,6 +258,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '曲木家具、板式家具',
       JiBie: '北京朝阳',
       RiQi: '上市公司',
+      ReDu: 6.6,
       src: 'assets/imgs/se-resources/ziyuan-16.jpg'
     },
     {
@@ -238,6 +267,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '实木家具',
       JiBie: '河北廊坊',
       RiQi: '股份制企业',
+      ReDu: 9,
       src: 'assets/imgs/se-resources/ziyuan-17.jpg'
     },
     {
@@ -246,6 +276,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '家具销售',
       JiBie: '上海普陀',
       RiQi: '上市公司',
+      ReDu: 9,
       src: 'assets/imgs/se-resources/ziyuan-18.jpg'
     },
     {
@@ -254,6 +285,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '家具销售',
       JiBie: '北京东城',
       RiQi: '股份制企业',
+      ReDu: 9,
       src: 'assets/imgs/se-resources/ziyuan-19.jpg'
     },
     {
@@ -262,6 +294,7 @@ export const DataSEResourcesHandler = {
       ZhuYingYeWu: '变形家具',
       JiBie: '广东东莞',
       RiQi: '民营企业',
+      ReDu: 9,
       src: 'assets/imgs/se-resources/ziyuan-20.jpg'
     }
   ]

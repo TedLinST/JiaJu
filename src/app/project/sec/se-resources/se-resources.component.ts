@@ -47,6 +47,13 @@ export class SeResourcesComponent implements OnInit {
   // 搜索文本
   searchValue: any;
 
+  radioValue: any = '1';
+
+  // 按钮排序激活
+  btnSortActiveMap: any = {
+    ReDu: 0
+  };
+
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
   }
@@ -83,6 +90,19 @@ export class SeResourcesComponent implements OnInit {
   onPageIndexChange(event: any) {
     this.activePagaIndex = event;
     this.handleListDataPagination(this.dataHandler.LIST_DATA, this.activePagaIndex);
+  }
+
+  /**
+   * 点击按钮进行排序
+   * @param event 
+   */
+  onClickButtonSortChange(event: any, id: any) {
+    this.btnSortActiveMap = {
+      ReDu: 0
+    };
+    this.btnSortActiveMap[id] = event;
+    this.listData = Utils.arrayKeySort(this.dataHandler.LIST_DATA, id, event);
+    this.onSearch();
   }
 
   // 搜索
@@ -134,6 +154,10 @@ export class SeResourcesComponent implements OnInit {
    */
   navigateDeveloping() {
     this.router.navigateByUrl('developing');
+  }
+
+  radioValueChange(event) {
+
   }
 
 }
