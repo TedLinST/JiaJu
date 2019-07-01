@@ -1,7 +1,7 @@
 
 // 校企合作服务 - 企业需求数据助手
 export const DataEnterpriseNeedsHandler = {
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id: '1',

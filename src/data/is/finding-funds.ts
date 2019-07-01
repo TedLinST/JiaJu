@@ -1,7 +1,7 @@
 
 // 综合服务 - 金融服务 - 找资金数据助手
 export const DataFindingFundsHandler = {
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id: '1',

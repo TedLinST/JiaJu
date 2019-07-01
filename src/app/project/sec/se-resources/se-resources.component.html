@@ -23,8 +23,8 @@
       enTitle="SCHOOL-ENTERPRISE RESOURCES">
     </key-item-chunk>
 
-    <!-- 条件选择区 -->
-    <key-dot-title title="条件选择区"></key-dot-title>
+    <!-- 分类筛选 -->
+    <key-dot-title title="分类筛选"></key-dot-title>
     <ng-template ngFor let-item [ngForOf]="dataHandler.TYPE_FILTER"
       let-index="index">
       <key-menu-type [title]="item.title" [data]="item.data"
@@ -60,7 +60,7 @@
       <div class="list">
         <div class="header">
           <div class="col col-1">校企资源列表</div>
-          <div class="col col-2">高校或科研机构级别</div>
+          <div class="col col-2">所在地区</div>
           <div class="col col-3">操作</div>
           <div class="clearfix"></div>
         </div>

@@ -1,6 +1,6 @@
 // 原辅材料机械设备服务 - 原辅材料团购 - 木材团购数据助手
 export const DataWoodShoppingHandler = {
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id: '1',

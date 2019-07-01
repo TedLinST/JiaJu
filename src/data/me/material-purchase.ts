@@ -1,7 +1,7 @@
 
 // 原辅材料机械设备服务 - 原辅材料求购数据助手
 export const DataMaterialPurchaseHandler = {
-  // 条件选择区
+  // 分类筛选
   /* TYPE_FILTER: [
     {
       id: '1',

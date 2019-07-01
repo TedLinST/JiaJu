@@ -2,7 +2,7 @@ import { BoxLabelComponent } from 'src/modules/key/box/box-label.component';
 
 // 家具商城 - 商家店铺数据助手
 export const DataShopHandler = {
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id:'1',

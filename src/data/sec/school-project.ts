@@ -1,6 +1,6 @@
 // 校企合作服务 - 学校项目数据助手
 export const DataSchoolProjectHandler = {
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id: '1',

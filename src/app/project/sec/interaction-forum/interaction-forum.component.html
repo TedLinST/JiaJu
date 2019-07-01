@@ -36,7 +36,8 @@
               </div>
             </div>
           </ng-template>
-        </div>
+        </div>        
+        <key-dot-title title="讲坛预告"></key-dot-title>
         <ng-template ngFor let-item [ngForOf]="dataHandler.OIPLA.data1"
           let-index="index">
           <div class="item-oipla">
@@ -58,8 +59,8 @@
     [title]="dataHandler.WR.title">
     <div body>
       <key-item-chunk-body>
-        <!-- 条件选择区 -->
-        <key-dot-title title="条件选择区"></key-dot-title>
+        <!-- 分类筛选 -->
+        <key-dot-title title="分类筛选"></key-dot-title>
         <ng-template ngFor let-item [ngForOf]="dataHandler.WR.TYPE_FILTER"
           let-index="index">
           <key-menu-type [title]="item.title" [data]="item.data"

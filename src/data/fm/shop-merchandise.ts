@@ -4,7 +4,7 @@ export const DataShopMerchandiseHandler = {
   title: '商家店铺商品列表',
   enTitle: 'STORE PRODUCT LIST',
 
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id: '1',

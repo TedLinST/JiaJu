@@ -1,7 +1,7 @@
 
 // 原辅材料机械设备服务 - 原辅材料团购 - 家具辅料团购数据助手
 export const DataFurnitureRawShoppingHandler = {
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id: '1',

@@ -4,8 +4,8 @@ export const DataInteractionForumHandler = {
   
   // 在线互动入口链接区
   OIPLA: {
-    title: '在线互动入口链接区',
-    enTitle: 'ONLINE INTERACTIVE PORTAL LINK AREA',
+    title: '在线互动',
+    enTitle: 'ONLINE INTERACTIVE',
     data0: [
       {
         id: '1',
@@ -53,45 +53,69 @@ export const DataInteractionForumHandler = {
   WR: {
     title: '往期精彩回顾',
     enTitle: 'WONDERFUL REVIEW',
-    // 条件选择区
+    // 分类筛选
     TYPE_FILTER: [
       {
         id: '1',
-        title: '条件一',
+        title: '专业门类',
         data: [
           {
             id: '1',
-            label: '条件1.1'
+            label: '林产工业'
           },
           {
             id: '2',
-            label: '条件1.2'
+            label: '木材贸易'
           },
           {
             id: '3',
-            label: '条件1.3'
+            label: '木材干燥'
+          },
+          {
+            id: '4',
+            label: '家具设计'
+          },
+          {
+            id: '5',
+            label: '智能制造'
+          },
+          {
+            id: '6',
+            label: '家居供应链'
+          },
+          {
+            id: '7',
+            label: '市场营销'
+          },
+          {
+            id: '8',
+            label: '家具材料'
+          },
+          {
+            id: '9',
+            label: '互联网'
           }
         ]
       },
       {
         id: '1',
-        title: '条件二',
+        title: '互动形式',
         data: [
           {
             id: '1',
-            label: '条件2.1'
+            label: '讲座'
           },
           {
             id: '2',
-            label: '条件2.2'
+            label: '课程'
           },
           {
             id: '3',
-            label: '条件2.3'
+            label: '科普'
           },
           {
             id: '4',
-            label: '条件2.4'
+            label: '其他'
           }
         ]
       }

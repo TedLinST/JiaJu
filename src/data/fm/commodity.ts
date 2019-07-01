@@ -2,7 +2,7 @@
 export const DataCommodityHandler = {
 
   
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id: '1',

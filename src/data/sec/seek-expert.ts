@@ -1,6 +1,6 @@
 // 校企合作服务 - 有困难找专家数据助手
 export const DataSeekExpertHandler = {
-  // 条件选择区
+  // 分类筛选
   TYPE_FILTER: [
     {
       id: '1',
