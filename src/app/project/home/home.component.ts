@@ -266,13 +266,22 @@ export class HomeComponent implements OnInit, AfterContentInit {
   }
 
   onPlay(item: any) {
-    console.log("开始播放");
+    // console.log("开始播放");
     item.state = false;
   }
 
   onEnded(item: any) {
-    console.log("播放结束");
+    // console.log("播放结束");
     item.state = true;
+  }
+
+  onClickChange(item: any) {
+    item.state = false;
+    let media: any = document.getElementById(item.src);
+    if(media){
+      media.play();
+    }
+    
   }
 
 }
