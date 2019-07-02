@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { DataMaterialEquipmentHandler } from 'src/data/me/material-equipment';
 import { NzNotificationService } from 'ng-zorro-antd';
+import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-menu.event';
+import { UtilsMe } from '../utils/utils-me';
 
 @Component({
   selector: 'app-material-equipment',
@@ -13,7 +15,11 @@ import { NzNotificationService } from 'ng-zorro-antd';
 export class MaterialEquipmentComponent implements OnInit {
 
   // 横幅图片
-  CH_ME_MIN_MATERIAL_BANNER_SRC: any;
+  //CH_ME_MIN_MATERIAL_BANNER_SRC: any;
+  CH_ME_MATERIAL_BANNER_SRC: any;
+
+  // 横幅菜单
+  CH_ME_BANNER_MENU: KeyVerticalMenuEvent[];
 
   // 门户导航
   portalNav: any;
@@ -26,8 +32,18 @@ export class MaterialEquipmentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.CH_ME_MIN_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MIN_MATERIAL_BANNER_SRC;
+    //this.CH_ME_MIN_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MIN_MATERIAL_BANNER_SRC;
+    this.CH_ME_MATERIAL_BANNER_SRC = ConstantHandler.CH_ME_MATERIAL_BANNER_SRC;
+    this.CH_ME_BANNER_MENU = ConstantHandler.CH_ME_BANNER_MENU;
     this.dataHandler = DataMaterialEquipmentHandler;
+  }
+
+  /**
+   * 点击横幅菜单
+   * @param menu 
+   */
+  onClickBannerMenu(menu: KeyVerticalMenuEvent) {
+    UtilsMe.clickBannerMenu(this.portalNav, menu);
   }
 
   /**

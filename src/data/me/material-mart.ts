@@ -4,44 +4,150 @@ export const DataMaterialMartHandler = {
   TYPE_FILTER: [
     {
       id: '1',
-      title: '条件一',
+      title: '木材类型',
       data: [
         {
           id: '1',
-          label: '条件1.1'
+          label: '原木'
         },
         {
           id: '2',
-          label: '条件1.2'
+          label: '板材'
         },
         {
           id: '3',
-          label: '条件1.3'
+          label: '木方'
+        },
+        {
+          id: '4',
+          label: '木皮'
+        },
+        {
+          id: '5',
+          label: '其他'
         }
       ]
     },
     {
-      id: '1',
-      title: '条件二',
+      id: '2',
+      title: '木材种类',
       data: [
         {
           id: '1',
-          label: '条件2.1'
+          label: '柚木'
         },
         {
           id: '2',
-          label: '条件2.2'
+          label: '沙比利'
         },
         {
           id: '3',
-          label: '条件2.3'
+          label: '奥古曼'
         },
         {
           id: '4',
-          label: '条件2.4'
+          label: '菠萝格'
+        },
+        {
+          id: '5',
+          label: '桃花芯'
+        },
+        {
+          id: '6',
+          label: '黑胡桃'
+        },
+        {
+          id: '7',
+          label: '鸡翅木'
+        },
+        {
+          id: '8',
+          label: '桦木'
+        },
+        {
+          id: '9',
+          label: '红豆杉'
+        },
+        {
+          id: '10',
+          label: '橡胶木'
+        },
+        {
+          id: '11',
+          label: '奥坎'
+        },
+        {
+          id: '12',
+          label: '花梨木'
+        },
+        {
+          id: '13',
+          label: '其他'
         }
       ]
-    }
+    },
+    {
+      id: '3',
+      title: '木材产地',
+      data: [
+        {
+          id: '1',
+          label: '中国'
+        },
+        {
+          id: '2',
+          label: '加蓬'
+        },
+        {
+          id: '3',
+          label: '刚果'
+        },
+        {
+          id: '4',
+          label: '喀麦隆'
+        },
+        {
+          id: '5',
+          label: '几内亚'
+        },
+        {
+          id: '6',
+          label: '缅甸'
+        },
+        {
+          id: '7',
+          label: '泰国'
+        },
+        {
+          id: '8',
+          label: '越南'
+        },
+        {
+          id: '9',
+          label: '老挝'
+        },
+        {
+          id: '10',
+          label: '柬埔寨'
+        },
+        {
+          id: '11',
+          label: '俄罗斯'
+        },
+        {
+          id: '12',
+          label: '南美'
+        },
+        {
+          id: '13',
+          label: '北美'
+        },
+        {
+          id: '14',
+          label: '其他'
+        }
+      ]
+    },
   ],
 
   // 列表数据

@@ -4,22 +4,46 @@ export const DataSeekExpertHandler = {
   TYPE_FILTER: [
     {
       id: '1',
-      title: '条件一',
+      title: '专业门类',
       data: [
         {
           id: '1',
-          label: '条件1.1'
+          label: '林产工业'
         },
         {
           id: '2',
-          label: '条件1.2'
+          label: '木材贸易'
         },
         {
           id: '3',
-          label: '条件1.3'
+          label: '木材干燥'
+        },
+        {
+          id: '4',
+          label: '家具设计'
+        },
+        {
+          id: '5',
+          label: '智能制造'
+        },
+        {
+          id: '6',
+          label: '家居供应链'
+        },
+        {
+          id: '7',
+          label: '市场营销'
+        },
+        {
+          id: '8',
+          label: '家具材料'
+        },
+        {
+          id: '9',
+          label: '互联网'
         }
       ]
-    }
+    },
   ],
 
   // 列表数据
@@ -34,6 +58,14 @@ export const DataSeekExpertHandler = {
     },
     {
       id: '2',
+      TouXian: '向仕龙教授',
+      LingYu: '木材加工及人造板工艺、植物基复合材料及建筑装饰材料',
+      SuoZaiDi: '专家所在地',
+      DanWei: '工作单位',
+      src: 'assets/imgs/seek-expert/expert-4.jpg'
+    },
+    {
+      id: '3',
       TouXian: '吕建雄教授',
       LingYu: '木材物理与干燥、木材保护与改性',
       SuoZaiDi: '专家所在地',
@@ -41,20 +73,12 @@ export const DataSeekExpertHandler = {
       src: 'assets/imgs/seek-expert/expert-2.jpg'
     },
     {
-      id: '3',
+      id: '4',
       TouXian: '吴义强教授',
       LingYu: '木材科学、生物质复合材料、木材功能性改良',
       SuoZaiDi: '专家所在地',
       DanWei: '工作单位',
       src: 'assets/imgs/seek-expert/expert-3.jpg'
-    },
-    {
-      id: '4',
-      TouXian: '向仕龙教授',
-      LingYu: '木材加工及人造板工艺、植物基复合材料及建筑装饰材料',
-      SuoZaiDi: '专家所在地',
-      DanWei: '工作单位',
-      src: 'assets/imgs/seek-expert/expert-4.jpg'
     },
     {
       id: '5',
@@ -119,6 +143,22 @@ export const DataSeekExpertHandler = {
       SuoZaiDi: '专家所在地',
       DanWei: '工作单位',
       src: 'assets/imgs/seek-expert/expert-12.jpg'
+    },
+    {
+      id: '13',
+      TouXian: '袁光明教授',
+      LingYu: '木材功能性改良；木竹基复合材料；木竹纤维-无机纳米复合材料',
+      SuoZaiDi: '专家所在地',
+      DanWei: '工作单位',
+      src: 'assets/imgs/seek-expert/expert-13.jpg'
+    },
+    {
+      id: '14',
+      TouXian: '陈桂华教授',
+      LingYu: '生物质复合材料、人造板工艺',
+      SuoZaiDi: '专家所在地',
+      DanWei: '工作单位',
+      src: 'assets/imgs/seek-expert/expert-14.jpg'
     }
   ]
 };

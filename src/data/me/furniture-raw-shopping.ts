@@ -5,44 +5,42 @@ export const DataFurnitureRawShoppingHandler = {
   TYPE_FILTER: [
     {
       id: '1',
-      title: '条件一',
+      title: '类型',
       data: [
         {
           id: '1',
-          label: '条件1.1'
+          label: '玻璃'
         },
         {
           id: '2',
-          label: '条件1.2'
+          label: '纺织品'
         },
         {
           id: '3',
-          label: '条件1.3'
-        }
-      ]
-    },
-    {
-      id: '1',
-      title: '条件二',
-      data: [
-        {
-          id: '1',
-          label: '条件2.1'
-        },
-        {
-          id: '2',
-          label: '条件2.2'
-        },
-        {
-          id: '3',
-          label: '条件2.3'
+          label: '皮革'
         },
         {
           id: '4',
-          label: '条件2.4'
+          label: '石材'
+        },
+        {
+          id: '5',
+          label: '胶黏剂'
+        },
+        {
+          id: '6',
+          label: '五金及配件'
+        },
+        {
+          id: '7',
+          label: '电子元器件'
+        },
+        {
+          id: '8',
+          label: '填充材料'
         }
       ]
-    }
+    },
   ],
 
   // 列表数据

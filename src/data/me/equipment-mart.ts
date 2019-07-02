@@ -4,67 +4,237 @@ export const DataEquipmentMartHandler = {
   TYPE_FILTER: [
     {
       id: '1',
-      title: '条件一',
+      title: '板材制造设备',
       data: [
         {
           id: '1',
-          label: '条件1.1'
+          label: '分切机'
         },
         {
           id: '2',
-          label: '条件1.2'
+          label: '粉碎机'
         },
         {
           id: '3',
-          label: '条件1.3'
+          label: '覆面机'
+        },
+        {
+          id: '4',
+          label: '搅拌机'
+        },
+        {
+          id: '5',
+          label: '涂胶机'
+        },
+        {
+          id: '6',
+          label: '铣齿机'
+        },
+        {
+          id: '7',
+          label: '齿接机'
+        },
+        {
+          id: '8',
+          label: '拼板机'
         }
       ]
     },
     {
-      id: '1',
-      title: '条件二',
+      id: '2',
+      title: '木材加工设备',
       data: [
         {
           id: '1',
-          label: '条件2.1'
+          label: '电烫斗'
         },
         {
           id: '2',
-          label: '条件2.2'
+          label: '锯切机'
         },
         {
           id: '3',
-          label: '条件2.3'
+          label: '钻孔机'
         },
         {
           id: '4',
-          label: '条件2.4'
+          label: '砂光机'
+        },
+        {
+          id: '5',
+          label: '铣削机'
+        },
+        {
+          id: '6',
+          label: '封边机'
         }
       ]
     },
     {
       id: '3',
-      title: '条件三',
+      title: '林业机械',
       data: [
         {
           id: '1',
-          label: '条件3.1'
+          label: '叉车'
         },
         {
           id: '2',
-          label: '条件3.2'
+          label: '吊车'
         },
         {
           id: '3',
-          label: '条件3.3'
+          label: '拉木机'
         },
         {
           id: '4',
-          label: '条件3.4'
+          label: '剥皮机'
         },
         {
           id: '5',
-          label: '条件3.5'
+          label: '运输机'
+        },
+        {
+          id: '6',
+          label: '运输车'
+        },
+        {
+          id: '7',
+          label: '劈木机'
+        },
+        {
+          id: '8',
+          label: '锯木机'
+        },
+        {
+          id: '9',
+          label: '电动磨刀机'
+        }
+      ]
+    },
+    {
+      id: '4',
+      title: '包装装卸机械',
+      data: [
+        {
+          id: '1',
+          label: '打包机'
+        },
+        {
+          id: '2',
+          label: '打标机'
+        },
+        {
+          id: '3',
+          label: '喷码机'
+        },
+        {
+          id: '4',
+          label: '码垛机'
+        },
+        {
+          id: '5',
+          label: '装箱机'
+        },
+        {
+          id: '6',
+          label: '钢带捆扎'
+        },
+        {
+          id: '7',
+          label: '缠绕机'
+        }
+      ]
+    },
+    {
+      id: '5',
+      title: '木工刀具',
+      data: [
+        {
+          id: '1',
+          label: '带锯'
+        },
+        {
+          id: '2',
+          label: '圆锯'
+        },
+        {
+          id: '3',
+          label: '条锯'
+        },
+        {
+          id: '4',
+          label: '链锯'
+        },
+        {
+          id: '5',
+          label: '筒锯'
+        },
+        {
+          id: '6',
+          label: '铣刀'
+        }
+      ]
+    },
+    {
+      id: '6',
+      title: '木材机械配件',
+      data: [
+        {
+          id: '1',
+          label: '预压带'
+        },
+        {
+          id: '2',
+          label: '除尘器'
+        },
+        {
+          id: '3',
+          label: '砂轮'
+        },
+        {
+          id: '4',
+          label: '轴承'
+        },
+        {
+          id: '5',
+          label: '输送带'
+        },
+        {
+          id: '6',
+          label: '安全阀'
+        },
+        {
+          id: '7',
+          label: '电磁阀'
+        },
+        {
+          id: '8',
+          label: '锯片'
+        },
+        {
+          id: '9',
+          label: '软管'
+        },
+        {
+          id: '10',
+          label: '钻孔头'
+        },
+        {
+          id: '11',
+          label: '同步带'
+        },
+        {
+          id: '12',
+          label: '风管'
+        },
+        {
+          id: '13',
+          label: '集尘管'
+        },
+        {
+          id: '14',
+          label: '调速轮'
         }
       ]
     },
