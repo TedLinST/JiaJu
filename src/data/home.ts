@@ -331,25 +331,25 @@ export const DataHomeHandler = {
     data2: [
       {
         id: 1,
-        title: '中国古典家具',
-        ZhuJiangRen: '',
-        ZhiWu: '',
+        title: '红木家具材料',
+        ZhuJiangRen: '林金国教授',
+        ZhiWu: '福建农林大学',
         state: true,
         src: 'assets/videos/home/movie0.mp4'
       },
       {
         id: 2,
-        title: '互动讲堂标题2',
-        ZhuJiangRen: '',
-        ZhiWu: '',
+        title: '明清家具的古今加工方式',
+        ZhuJiangRen: '赵中元',
+        ZhiWu: '南京林业大学',
         state: true,
         src: 'assets/videos/home/movie1.mp4'
       },
       {
         id: 3,
-        title: '互动讲堂标题3',
-        ZhuJiangRen: '',
-        ZhiWu: '',
+        title: '中国古典家具发展概述',
+        ZhuJiangRen: '刘学莘',
+        ZhiWu: '福建农林大学',
         state: true,
         src: 'assets/videos/home/movie2.mp4'
       }

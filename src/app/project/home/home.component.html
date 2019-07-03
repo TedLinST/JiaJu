@@ -187,7 +187,7 @@
                   <video [id]="item.src" [src]="item.src" controls="controls" (play)="onPlay(item)" (ended)="onEnded(item)"
                     style="width: 100%;">
                   </video>
-                  <key-item-mask *ngIf="item.state" [isMaskPaved]="true" [isActive]="true" [maskStyle]="{'height':'40%','margin-bottom':'18.5%'}" (clickChange)="onClickChange(item)">
+                  <key-item-mask *ngIf="item.state" [isMaskPaved]="true" [isActive]="true" [maskStyle]="{'height':'40%','margin-bottom':'18.5%','font-size':'120%'}" (clickChange)="onClickChange(item)">
                     <key-item-mask-label [label]="item.title"></key-item-mask-label>
                     <key-item-mask-label [label]="item.ZhuJiangRen"></key-item-mask-label>
                     <key-item-mask-label [label]="item.ZhiWu"></key-item-mask-label>
