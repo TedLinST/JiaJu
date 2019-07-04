@@ -1,7 +1,7 @@
 <div class="home">
   <!-- 横幅 -->
   <div class="key-banner">
-    <nz-carousel>
+    <nz-carousel nzAutoPlay>
       <div nz-carousel-content *ngFor="let item of dataHandler.BANNER">
         <img class="img-bg" [imgLazyload]="item.src">
         <div class="box">

@@ -15,7 +15,7 @@ export class SecBannerMenuComponent implements OnInit {
   @Input() isMinBanner = false;
 
   // 图片 url
-  @Input() srcUrl: any = '';
+  @Input() srcUrl: any[] = [];
 
   // 显示菜单
   @Input() isMenu = true;

@@ -12,7 +12,7 @@ export class PdBannerMenuComponent implements OnInit {
   @Output() clickMenu: EventEmitter<any> = new EventEmitter<any>();
 
   // 图片 url
-  @Input() srcUrl: any = '';
+  @Input() srcUrl: any[] = [];
 
   // 显示菜单
   @Input() isMenu = true;

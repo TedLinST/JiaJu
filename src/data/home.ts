@@ -6,9 +6,21 @@ export const DataHomeHandler = {
     {
       id: 0,
       src: 'assets/imgs/home/hengFu/banner.jpg',
-      title: 'Banner',
+      title: 'Banner1',
       text: 'Banner可以作为网站页面的横幅广告，也可以作为游行活动时用的旗帜，还可以是报纸杂志上的大标题。Banner主要体现中心'
-    }
+    },
+    {
+      id: 1,
+      src: 'assets/imgs/home/hengFu/banner.jpg',
+      title: 'Banner2',
+      text: 'Banner可以作为网站页面的横幅广告，也可以作为游行活动时用的旗帜，还可以是报纸杂志上的大标题。Banner主要体现中心'
+    },
+    {
+      id: 2,
+      src: 'assets/imgs/home/hengFu/banner.jpg',
+      title: 'Banner3',
+      text: 'Banner可以作为网站页面的横幅广告，也可以作为游行活动时用的旗帜，还可以是报纸杂志上的大标题。Banner主要体现中心'
+    },
   ],
 
   // 企业资源管理系统
