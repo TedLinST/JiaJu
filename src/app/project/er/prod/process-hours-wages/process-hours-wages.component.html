@@ -15,21 +15,21 @@
           [disabled]="!(!!selection && !!!selection?.row?.ShenPiRen)">审批</button>
       </div>
     </div>
-    <key-table-column heading="单据编号" width="140" key="DanJuBianHao" sortable>
+    <key-table-column heading="生产班组" width="140" key="DanJuBianHao" sortable>
     </key-table-column>
     <key-table-column heading="款号" width="140" key="KuanHao" sortable>
     </key-table-column>
-    <key-table-column heading="年度" width="100" key="NianDu" sortable>
+    <key-table-column heading="部件名称" width="100" key="NianDu" sortable>
     </key-table-column>
-    <key-table-column heading="季度" width="100" key="JiDu" sortable>
+    <key-table-column heading="工序名称" width="100" key="JiDu" sortable>
     </key-table-column>
-    <key-table-column heading="阶段" width="100" key="BoDuan" sortable>
+    <key-table-column heading="加工设备" width="100" key="BoDuan" sortable>
     </key-table-column>
-    <key-table-column heading="系列" width="120" key="XiLie" sortable>
+    <key-table-column heading="工时" width="120" key="XiLie" sortable>
+    </key-table-column>
+    <key-table-column heading="工价" width="140" key="BanBenHao" sortable>
     </key-table-column>
     <key-table-column heading="款式" width="120" key="KuanShi" sortable>
-    </key-table-column>
-    <key-table-column heading="版本号" width="140" key="BanBenHao" sortable>
     </key-table-column>
     <key-table-column heading="审核" align="center">
       <key-table-column heading="审核状态" width="100" key="ShenHeZhuangTai" sortable>
@@ -44,7 +44,7 @@
       </key-table-column>
       <key-table-column heading="审批人" width="100" key="ShenPiRen" sortable>
       </key-table-column>
-      <key-table-column heading="审判日期" width="100" key="ShenPiRiQi" sortable>
+      <key-table-column heading="审批日期" width="100" key="ShenPiRiQi" sortable>
       </key-table-column>
     </key-table-column>
   </key-table>
@@ -54,7 +54,7 @@
   <div body>
     <form class="key-row" #formDemo="ngForm">
       <div class="key-col-12">
-        <key-form-element label="单据编号" [error]="bean_DanJuBianHao.errors">
+        <key-form-element label="生产班组" [error]="bean_DanJuBianHao.errors">
           <input #bean_DanJuBianHao="ngModel" type="text" class="form-control" name="bean.DanJuBianHao"
             [(ngModel)]="bean.DanJuBianHao" required>
         </key-form-element>
@@ -62,26 +62,26 @@
           <input #bean_KuanHao="ngModel" type="text" class="form-control" name="bean.KuanHao" [(ngModel)]="bean.KuanHao"
             required>
         </key-form-element>
-        <key-form-element label="年度" [error]="bean_NianDu.errors">
+        <key-form-element label="部件名称" [error]="bean_NianDu.errors">
           <input #bean_NianDu="ngModel" type="text" class="form-control" name="bean.NianDu" [(ngModel)]="bean.NianDu"
             required>
         </key-form-element>
-        <key-form-element label="季度" [error]="bean_JiDu.errors">
+        <key-form-element label="工序名称" [error]="bean_JiDu.errors">
           <input #bean_JiDu="ngModel" type="text" class="form-control" name="bean.JiDu" [(ngModel)]="bean.JiDu">
         </key-form-element>
-        <key-form-element label="阶段" [error]="bean_BoDuan.errors">
+        <key-form-element label="加工设备" [error]="bean_BoDuan.errors">
           <input #bean_BoDuan="ngModel" type="text" class="form-control" name="bean.BoDuan" [(ngModel)]="bean.BoDuan">
         </key-form-element>
-        <key-form-element label="系列" [error]="bean_XiLie.errors">
+        <key-form-element label="工时" [error]="bean_XiLie.errors">
           <input #bean_XiLie="ngModel" type="text" class="form-control" name="bean.XiLie" [(ngModel)]="bean.XiLie">
+        </key-form-element>
+        <key-form-element label="工价" [error]="bean_BanBenHao.errors">
+          <input #bean_BanBenHao="ngModel" type="text" class="form-control" name="bean.BanBenHao"
+            [(ngModel)]="bean.BanBenHao">
         </key-form-element>
         <key-form-element label="款式" [error]="bean_KuanShi.errors">
           <input #bean_KuanShi="ngModel" type="text" class="form-control" name="bean.KuanShi"
             [(ngModel)]="bean.KuanShi">
-        </key-form-element>
-        <key-form-element label="版本号" [error]="bean_BanBenHao.errors">
-          <input #bean_BanBenHao="ngModel" type="text" class="form-control" name="bean.BanBenHao"
-            [(ngModel)]="bean.BanBenHao">
         </key-form-element>
       </div>
     </form>

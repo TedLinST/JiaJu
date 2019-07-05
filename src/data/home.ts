@@ -11,13 +11,13 @@ export const DataHomeHandler = {
     },
     {
       id: 1,
-      src: 'assets/imgs/home/hengFu/banner.jpg',
+      src: 'assets/imgs/s-e-cooperation/banner.jpg',
       title: 'Banner2',
       text: 'Banner可以作为网站页面的横幅广告，也可以作为游行活动时用的旗帜，还可以是报纸杂志上的大标题。Banner主要体现中心'
     },
     {
       id: 2,
-      src: 'assets/imgs/home/hengFu/banner.jpg',
+      src: 'assets/imgs/equipment-mart/banner.jpg',
       title: 'Banner3',
       text: 'Banner可以作为网站页面的横幅广告，也可以作为游行活动时用的旗帜，还可以是报纸杂志上的大标题。Banner主要体现中心'
     },

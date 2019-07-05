@@ -43,8 +43,8 @@ export class ConstantHandler {
   // 产品设计开发服务 - 横幅图片
   public static CH_PD_BANNER_SRC = [
     'assets/imgs/product-design/toubu-1.jpg',
-    'assets/imgs/product-design/toubu-1.jpg',
-    'assets/imgs/product-design/toubu-1.jpg',
+    'assets/imgs/equipment-mart/banner.jpg',
+    'assets/imgs/material-supplier/top.jpg',
   ];
 
   // 产品设计开发服务 - 横幅菜单
@@ -70,22 +70,22 @@ export class ConstantHandler {
   // 原辅材料机械设备服务 - 小材料横幅图片
   public static CH_ME_MIN_MATERIAL_BANNER_SRC = [
     'assets/imgs/raw-material/top.jpg',
-    'assets/imgs/raw-material/top.jpg',
-    'assets/imgs/raw-material/top.jpg'
+    'assets/imgs/equipment-mart/banner.jpg',
+    'assets/imgs/material-supplier/top.jpg'
   ];
 
   // 原辅材料机械设备服务 - 材料横幅图片
   public static CH_ME_MATERIAL_BANNER_SRC = [
     'assets/imgs/material-supplier/top.jpg',
-    'assets/imgs/material-supplier/top.jpg',
-    'assets/imgs/material-supplier/top.jpg'
+    'assets/imgs/equipment-mart/banner.jpg',
+    'assets/imgs/product-design/toubu-1.jpg'
   ];
 
   // 原辅材料机械设备服务 - 设备横幅图片
   public static CH_ME_EQUIPMENT_BANNER_SRC = [
     'assets/imgs/equipment-mart/banner.jpg',
-    'assets/imgs/equipment-mart/banner.jpg',
-    'assets/imgs/equipment-mart/banner.jpg'
+    'assets/imgs/material-supplier/top.jpg',
+    'assets/imgs/product-design/toubu-1.jpg'
   ];
 
   // 产品设计开发服务 - 横幅菜单
@@ -137,8 +137,8 @@ export class ConstantHandler {
   // 校企合作服务 - 横幅图片
   public static CH_SEC_BANNER_SRC = [
     'assets/imgs/s-e-cooperation/banner.jpg',
-    'assets/imgs/s-e-cooperation/banner.jpg',
-    'assets/imgs/s-e-cooperation/banner.jpg'
+    'assets/imgs/material-supplier/top.jpg',
+    'assets/imgs/equipment-mart/banner.jpg'
   ];
 
   // 校企合作服务 - 横幅菜单
@@ -180,15 +180,15 @@ export class ConstantHandler {
   // 综合服务 - 横幅图片
   public static CH_IS_BANNER_SRC = [
     'assets/imgs/integrated-services/banner.jpg',
-    'assets/imgs/integrated-services/banner.jpg',
-    'assets/imgs/integrated-services/banner.jpg'
+    'assets/imgs/furniture-delivery/banner.jpg',
+    'assets/imgs/equipment-mart/banner.jpg'
   ];
 
   // 综合服务 - 家具送装 - 横幅图片
   public static CH_IS_BANNER_2_SRC = [
     'assets/imgs/furniture-delivery/banner.jpg',
-    'assets/imgs/furniture-delivery/banner.jpg',
-    'assets/imgs/furniture-delivery/banner.jpg'
+    'assets/imgs/material-supplier/top.jpg',
+    'assets/imgs/equipment-mart/banner.jpg'
   ];
 
   // 综合服务 - 横幅菜单
@@ -278,15 +278,15 @@ export class ConstantHandler {
   // 家具商城 - 横幅图片
   public static CH_FM_BANNER_SRC = [
     'assets/imgs/furniture-mall/banner.jpg',
-    'assets/imgs/furniture-mall/banner.jpg',
-    'assets/imgs/furniture-mall/banner.jpg'
+    'assets/imgs/furniture-delivery/banner.jpg',
+    'assets/imgs/material-supplier/top.jpg'
   ];
 
   // 家具商城 - 横幅图片2
   public static CH_FM_BANNER_SRC_2 = [
     'assets/imgs/shop-details/banner2.jpg',
-    'assets/imgs/shop-details/banner2.jpg',
-    'assets/imgs/shop-details/banner2.jpg'
+    'assets/imgs/material-supplier/top.jpg',
+    'assets/imgs/furniture-delivery/banner.jpg'
   ];
 
   // 家具商城 - 横幅菜单
