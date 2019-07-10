@@ -31,12 +31,12 @@ export class DesignersGardenComponent implements OnInit {
     {
       key: 'title',
     },
+    // {
+    //   label: '工作年龄',
+    //   key: 'number',
+    // },
     {
-      label: '工作年龄',
-      key: 'number',
-    },
-    {
-      label: '头衔',
+      // label: '头衔',
       key: 'rank',
     }
   ];

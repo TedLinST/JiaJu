@@ -81,28 +81,28 @@ export const DataHomeHandler = {
         id: 1,
         title: '家具参数',
         date: '2019-04-24',
-        number: 1280,
+        rank: 1280,
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-1.jpg'
       },
       {
         id: 2,
         title: '家具风格',
         date: '2019-04-25',
-        number: 2500,
+        rank: 2500,
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-2.jpg'
       },
       {
         id: 3,
         title: '家具材料',
         date: '2019-04-26',
-        number: 100,
+        rank: 100,
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-3.jpg'
       },
       {
         id: 4,
         title: '家具品牌',
         date: '2019-04-26',
-        number: 7800,
+        rank: 7800,
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-4.jpg'
       }
     ],
@@ -114,49 +114,49 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: 'Dieter Rams',
-            number: '德国工业设计师',
+            rank: '德国工业设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 2,
             title: 'YRJO KUKKAPURO',
-            number: '瑞典家具设计大师',
+            rank: '瑞典家具设计大师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 3,
             title: 'はらけんや(原研哉)',
-            number: '无印良品艺术总监',
+            rank: '无印良品艺术总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 4,
             title: '朱小杰',
-            number: '温州澳珀家具公司董事长',
+            rank: '温州澳珀家具公司董事长',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           },
           {
             id: 5,
             title: '侯正光',
-            number: '上海木码设计机构创办人',
+            rank: '上海木码设计机构创办人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-5.jpg'
           },
           {
             id: 6,
             title: '赖亚楠',
-            number: 'DOMO nature创始人',
+            rank: 'DOMO nature创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-6.jpg'
           },
           {
             id: 7,
             title: '温浩',
-            number: '高尚家具品牌创始人',
+            rank: '高尚家具品牌创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-7.jpg'
           },
           {
             id: 8,
             title: '石大宇',
-            number: '清庭设计中心创始人',
+            rank: '清庭设计中心创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-8.jpg'
           }
         ]
@@ -167,49 +167,49 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: '张雷',
-            number: '品物流形设计总监',
+            rank: '品物流形设计总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-9.jpg'
           },
           {
             id: 2,
             title: '于历战',
-            number: '清华美院家具设计带头人',
+            rank: '清华美院家具设计带头人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-10.jpg'
           },
           {
             id: 3,
             title: '吕永忠',
-            number: '半木品牌创始人',
+            rank: '半木品牌创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-11.jpg'
           },
           {
             id: 4,
             title: '周宸宸',
-            number: 'Frank Chou 设计工作室创始人',
+            rank: 'Frank Chou设计工作室创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-12.jpg'
           },
           {
             id: 5,
             title: 'Dieter Rams',
-            number: '德国工业设计师',
+            rank: '德国工业设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 6,
             title: 'YRJO KUKKAPURO',
-            number: '瑞典家具设计大师',
+            rank: '瑞典家具设计大师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 7,
             title: 'はらけんや(原研哉)',
-            number: '无印良品艺术总监',
+            rank: '无印良品艺术总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 8,
             title: '朱小杰',
-            number: '温州澳珀家具公司董事长',
+            rank: '温州澳珀家具公司董事长',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           }
         ]
@@ -220,25 +220,25 @@ export const DataHomeHandler = {
       {
         id: 1,
         title: '酷家乐',
-        number: 'VR智能室内设计平台',
+        rank: 'VR智能室内设计平台',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-1.jpg'
       },
       {
         id: 2,
         title: '圆方',
-        number: '整体家居解决方案服务商',
+        rank: '整体家居解决方案服务商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-2.jpg'
       },
       {
         id: 3,
         title: '造易',
-        number: '定制家具信息化解决方案提供商',
+        rank: '定制家具信息化解决方案提供商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-3.jpg'
       },
       {
         id: 4,
         title: '三维家',
-        number: '家居行业前后端软件技术服务提供商',
+        rank: '家居行业前后端软件技术服务提供商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-4.jpg'
       }
     ]

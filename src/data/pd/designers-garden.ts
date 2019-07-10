@@ -12,42 +12,42 @@ export const DataDesignersGardenHandler = {
             id: 1,
             title: 'Dieter Rams',
             number: 1,
-            rank: 1,
+            rank: '德国工业设计师',
             src: 'assets/imgs/designer-garden/designer-1.jpg'
           },
           {
             id: 2,
             title: 'YRJO KUKKAPURO',
             number: 2,
-            rank: 1,
+            rank: '瑞典家具设计大师',
             src: 'assets/imgs/designer-garden/designer-2.jpg'
           },
           {
             id: 3,
             title: 'はら けんや（原研哉）',
             number: 3,
-            rank: 1,
+            rank: '无印良品艺术总监',
             src: 'assets/imgs/designer-garden/designer-3.jpg'
           },
           {
             id: 4,
             title: '朱小杰',
             number: 4,
-            rank: 1,
+            rank: '温州澳珀家具公司董事长',
             src: 'assets/imgs/designer-garden/designer-4.jpg'
           },
           {
             id: 5,
             title: '侯正光',
             number: 5,
-            rank: 1,
+            rank: '上海木码设计机构创办人',
             src: 'assets/imgs/designer-garden/designer-5.jpg'
           },
           {
             id: 6,
             title: '赖亚楠',
             number: 6,
-            rank: 1,
+            rank:  'DOMO nature创始人',
             src: 'assets/imgs/designer-garden/designer-6.jpg'
           }
         ]
@@ -59,42 +59,42 @@ export const DataDesignersGardenHandler = {
             id: 1,
             title: '温浩',
             number: 1,
-            rank: 2,
+            rank: '高尚家具品牌创始人',
             src: 'assets/imgs/designer-garden/designer-7.jpg'
           },
           {
             id: 2,
             title: '石大宇',
             number: 2,
-            rank: 2,
+            rank: '清庭设计中心创始人',
             src: 'assets/imgs/designer-garden/designer-8.jpg'
           },
           {
             id: 3,
             title: '张雷',
             number: 3,
-            rank: 2,
+            rank: '品物流形设计总监',
             src: 'assets/imgs/designer-garden/designer-9.jpg'
           },
           {
             id: 4,
             title: '于历战',
             number: 4,
-            rank: 2,
+            rank: '清华美院家具设计带头人',
             src: 'assets/imgs/designer-garden/designer-10.jpg'
           },
           {
             id: 5,
             title: '吕永忠',
             number: 5,
-            rank: 2,
+            rank: '半木品牌创始人',
             src: 'assets/imgs/designer-garden/designer-11.jpg'
           },
           {
             id: 6,
             title: '周宸宸',
             number: 6,
-            rank: 2,
+            rank: 'Frank Chou设计工作室创始人',
             src: 'assets/imgs/designer-garden/designer-12.jpg'
           }
         ]

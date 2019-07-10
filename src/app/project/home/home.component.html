@@ -93,8 +93,11 @@
       </key-item-chunk-body>
       <!-- 设计师园地 -->
       <key-item-chunk-body *ngIf="currentIndexPD == 2" [isMore]="true" (clickMore)="portalNav.openDesignersGarden()">
-        <key-carousel [data]="dataHandler.PD.data2" [labelArray]="labelArrayPD2"
+        <div >
+          <key-carousel [data]="dataHandler.PD.data2" [labelArray]="labelArrayPD2"
           (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>
+        </div>
+        
       </key-item-chunk-body>
       <!-- 设计软件集成 -->
       <key-item-chunk-body *ngIf="currentIndexPD == 3" [isMore]="true"
