@@ -345,12 +345,12 @@ export const DataIntegratedServicesHandler = {
     title: '政府服务',
     enTitle: 'GOVERNMENT SERVICE',
     menuData: [
-      { title: '工商服务' },
+      { title: '专利服务' },
       { title: '税务服务' },
       { title: '环保服务' },
       { title: '工商服务' }
     ],
-    // 工商服务
+    // 专利服务
     data0: {
       QiYe: [
         {
