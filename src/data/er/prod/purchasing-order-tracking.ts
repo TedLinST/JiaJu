@@ -4,7 +4,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
   listData: [
     {
       DanJuBianHao: 'CGDD2018082501',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '佰瑞特',
       CaiGouRiQi: '2018-04-29',
       YaoQiuDaoHuoRiQi: '2018-08-17',
       ZhiBiaoRen: '王明亮',
@@ -12,7 +12,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '佰瑞特',
       CaiGouRiQi: '2018-04-13',
       YaoQiuDaoHuoRiQi: '2018-08-27',
       ZhiBiaoRen: '李晓明',
@@ -20,7 +20,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082525',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-29',
       YaoQiuDaoHuoRiQi: '2018-08-17',
       ZhiBiaoRen: '王明亮',
@@ -28,7 +28,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-13',
       YaoQiuDaoHuoRiQi: '2018-08-27',
       ZhiBiaoRen: '李晓明',
@@ -36,7 +36,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082501',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-29',
       YaoQiuDaoHuoRiQi: '2018-08-27',
       ZhiBiaoRen: '李晓明',
@@ -44,7 +44,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018042519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '佰瑞特',
       CaiGouRiQi: '2018-08-23',
       YaoQiuDaoHuoRiQi: '2018-04-15',
       ZhiBiaoRen: '王明亮',
@@ -52,7 +52,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082501',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-29',
       YaoQiuDaoHuoRiQi: '2018-08-27',
       ZhiBiaoRen: '李晓明',
@@ -60,7 +60,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082527',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-19',
       YaoQiuDaoHuoRiQi: '2018-08-27',
       ZhiBiaoRen: '李晓明',
@@ -68,7 +68,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018042501',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-08-19',
       YaoQiuDaoHuoRiQi: '2018-04-15',
       ZhiBiaoRen: '王明亮',
@@ -76,7 +76,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082501',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '佰瑞特',
       CaiGouRiQi: '2018-08-29',
       YaoQiuDaoHuoRiQi: '2018-04-17',
       ZhiBiaoRen: '王明亮',
@@ -84,7 +84,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018042519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-08-29',
       YaoQiuDaoHuoRiQi: '2018-04-27',
       ZhiBiaoRen: '李晓明',
@@ -92,7 +92,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018042525',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-08-23',
       YaoQiuDaoHuoRiQi: '2018-04-27',
       ZhiBiaoRen: '王明亮',
@@ -100,7 +100,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-23',
       YaoQiuDaoHuoRiQi: '2018-08-15',
       ZhiBiaoRen: '李晓明',
@@ -108,7 +108,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082513',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '佰瑞特',
       CaiGouRiQi: '2018-04-29',
       YaoQiuDaoHuoRiQi: '2018-08-17',
       ZhiBiaoRen: '李晓明',
@@ -116,7 +116,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082501',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-29',
       YaoQiuDaoHuoRiQi: '2018-08-17',
       ZhiBiaoRen: '李晓明',
@@ -124,7 +124,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '佰瑞特',
       CaiGouRiQi: '2018-04-23',
       YaoQiuDaoHuoRiQi: '2018-08-17',
       ZhiBiaoRen: '王明亮',
@@ -132,7 +132,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018042525',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-08-19',
       YaoQiuDaoHuoRiQi: '2018-04-27',
       ZhiBiaoRen: '李晓明',
@@ -140,7 +140,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018042501',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-23',
       YaoQiuDaoHuoRiQi: '2018-08-17',
       ZhiBiaoRen: '王明亮',
@@ -148,7 +148,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '佰瑞特',
       CaiGouRiQi: '2018-04-23',
       YaoQiuDaoHuoRiQi: '2018-08-27',
       ZhiBiaoRen: '王明亮',
@@ -156,7 +156,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-04-23',
       YaoQiuDaoHuoRiQi: '2018-08-25',
       ZhiBiaoRen: '李晓明',
@@ -164,7 +164,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018082519',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '佰瑞特',
       CaiGouRiQi: '2018-04-23',
       YaoQiuDaoHuoRiQi: '2018-04-27',
       ZhiBiaoRen: '李晓明',
@@ -172,7 +172,7 @@ export const DataProdPurchasingOrderTrackingHandler = {
     },
     {
       DanJuBianHao: 'CGDD2018042501',
-      GongYingShangMingCheng: '全球供应商',
+      GongYingShangMingCheng: '宜华',
       CaiGouRiQi: '2018-08-29',
       YaoQiuDaoHuoRiQi: '2018-04-17',
       ZhiBiaoRen: '王明亮',

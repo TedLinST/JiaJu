@@ -20,7 +20,7 @@
            row?.WeiJian + row?.RuKu}}
       </ng-template>
     </key-table-column>
-    <key-table-column heading="纸样(天)" width="100" key="ZhiYang" sortable>
+    <key-table-column heading="制图(天)" width="100" key="ZhiYang" sortable>
     </key-table-column>
     <key-table-column heading="样品(天)" width="100" key="YangPin" sortable>
     </key-table-column>
@@ -38,17 +38,17 @@
     </key-table-column>
     <key-table-column heading="产前审核(天)" width="120" key="ChanQianShenHe" sortable>
     </key-table-column>
-    <key-table-column heading="开裁(天)" width="100" key="KaiCai" sortable>
+    <key-table-column heading="开料(天)" width="100" key="KaiCai" sortable>
     </key-table-column>
-    <key-table-column heading="缝制(天)" width="100" key="FengZhi" sortable>
+    <key-table-column heading="机加(天)" width="100" key="FengZhi" sortable>
     </key-table-column>
     <key-table-column heading="初检(天)" width="100" key="ChuJian" sortable>
     </key-table-column>
-    <key-table-column heading="整烫(天)" width="100" key="ZhengTang" sortable>
+    <key-table-column heading="组装(天)" width="100" key="ZhengTang" sortable>
     </key-table-column>
     <key-table-column heading="中检(天)" width="100" key="ZhongJian" sortable>
     </key-table-column>
-    <key-table-column heading="包装(天)" width="100" key="BaoZhuang" sortable>
+    <key-table-column heading="油漆(天)" width="100" key="BaoZhuang" sortable>
     </key-table-column>
     <key-table-column heading="尾捡(天)" width="100" key="WeiJian" sortable>
     </key-table-column>
@@ -68,7 +68,7 @@
         </key-form-element>
       </div>
       <div class="key-col-6">
-        <key-form-element label="纸样" [error]="bean_ZhiYang.errors">
+        <key-form-element label="制图" [error]="bean_ZhiYang.errors">
           <input #bean_ZhiYang="ngModel" type="number" step="0.1" min="0" class="form-control" name="bean.ZhiYang"
             [(ngModel)]="bean.ZhiYang">
         </key-form-element>
@@ -106,11 +106,11 @@
           <input #bean_ChanQianShenHe="ngModel" type="number" step="0.1" min="0" class="form-control"
             name="bean.ChanQianShenHe" [(ngModel)]="bean.ChanQianShenHe">
         </key-form-element>
-        <key-form-element label="开裁" [error]="bean_KaiCai.errors">
+        <key-form-element label="开料" [error]="bean_KaiCai.errors">
           <input #bean_KaiCai="ngModel" type="number" step="0.1" min="0" class="form-control" name="bean.KaiCai"
             [(ngModel)]="bean.KaiCai">
         </key-form-element>
-        <key-form-element label="缝制" [error]="bean_FengZhi.errors">
+        <key-form-element label="机加" [error]="bean_FengZhi.errors">
           <input #bean_FengZhi="ngModel" type="number" step="0.1" min="0" class="form-control" name="bean.FengZhi"
             [(ngModel)]="bean.FengZhi">
         </key-form-element>
@@ -118,7 +118,7 @@
           <input #bean_ChuJian="ngModel" type="number" step="0.1" min="0" class="form-control" name="bean.ChuJian"
             [(ngModel)]="bean.ChuJian">
         </key-form-element>
-        <key-form-element label="整烫" [error]="bean_ZhengTang.errors">
+        <key-form-element label="组装" [error]="bean_ZhengTang.errors">
           <input #bean_ZhengTang="ngModel" type="number" step="0.1" min="0" class="form-control" name="bean.ZhengTang"
             [(ngModel)]="bean.ZhengTang">
         </key-form-element>
@@ -126,7 +126,7 @@
           <input #bean_ZhongJian="ngModel" type="number" step="0.1" min="0" class="form-control" name="bean.ZhongJian"
             [(ngModel)]="bean.ZhongJian">
         </key-form-element>
-        <key-form-element label="包装" [error]="bean_BaoZhuang.errors">
+        <key-form-element label="油漆" [error]="bean_BaoZhuang.errors">
           <input #bean_BaoZhuang="ngModel" type="number" step="0.1" min="0" class="form-control" name="bean.BaoZhuang"
             [(ngModel)]="bean.BaoZhuang">
         </key-form-element>

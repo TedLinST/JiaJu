@@ -22,28 +22,28 @@
     </key-table-column>
     <key-table-column heading="季度" width="100" key="JiDu" sortable>
     </key-table-column>
-    <key-table-column heading="销售分类" width="120" key="XiaoShouFenLei" sortable>
+    <key-table-column heading="销售单位" width="120" key="XiaoShouFenLei" sortable>
     </key-table-column>
-    <key-table-column heading="制表人" width="100" key="ZhiBiaoRen" sortable>
+    <key-table-column heading="款式" width="100" key="ZhiBiaoRen" sortable>
     </key-table-column>
-    <key-table-column heading="制表日期" width="100" key="ZhiBiaoRiQi" sortable>
+    <key-table-column heading="下单数量" width="100" key="ZhiBiaoRiQi" sortable>
     </key-table-column>
-    <key-table-column heading="审核" align="center">
-      <key-table-column heading="审核状态" width="100" key="ShenHeZhuangTai"
+    <!--<key-table-column heading="审核" align="center">-->
+      <key-table-column heading="销售数量" width="100" key="ShenHeZhuangTai"
         sortable>
       </key-table-column>
-      <key-table-column heading="审核人" width="100" key="ShenHeRen" sortable>
+      <key-table-column heading="下单排名" width="100" key="ShenHeRen" sortable>
       </key-table-column>
-      <key-table-column heading="审核日期" width="100" key="ShenHeRiQi" sortable>
+      <key-table-column heading="销售排名" width="100" key="ShenHeRiQi" sortable>
       </key-table-column>
-    </key-table-column>
-    <key-table-column heading="审批" align="center">
-      <key-table-column heading="审批状态" width="100" key="ShenPiZhuangTai"
+    <!--</key-table-column>-->
+    <key-table-column heading="品质" align="center">
+      <key-table-column heading="优" width="100" key="ShenPiZhuangTai"
         sortable>
       </key-table-column>
-      <key-table-column heading="审批人" width="100" key="ShenPiRen" sortable>
+      <key-table-column heading="良" width="100" key="ShenPiRen" sortable>
       </key-table-column>
-      <key-table-column heading="审批日期" width="100" key="ShenPiRiQi" sortable>
+      <key-table-column heading="差" width="100" key="ShenPiRiQi" sortable>
       </key-table-column>
     </key-table-column>
   </key-table>
@@ -62,21 +62,21 @@
           <input #bean_NianDu="ngModel" type="text" class="form-control"
             name="bean.NianDu" [(ngModel)]="bean.NianDu" required>
         </key-form-element>
-        <key-form-element label="季度" [error]="bean_JiDu.errors">
+        <key-form-element label="款式" [error]="bean_JiDu.errors">
           <input #bean_JiDu="ngModel" type="text" class="form-control"
             name="bean.JiDu" [(ngModel)]="bean.JiDu" required>
         </key-form-element>
-        <key-form-element label="销售分类" [error]="bean_XiaoShouFenLei.errors">
+        <key-form-element label="销售单位" [error]="bean_XiaoShouFenLei.errors">
           <input #bean_XiaoShouFenLei="ngModel" type="text" class="form-control"
             name="bean.XiaoShouFenLei" [(ngModel)]="bean.XiaoShouFenLei"
             required>
         </key-form-element>
-        <key-form-element label="制表人" [error]="bean_ZhiBiaoRen.errors">
+        <key-form-element label="下单数量" [error]="bean_ZhiBiaoRen.errors">
           <input #bean_ZhiBiaoRen="ngModel" type="text" class="form-control"
             name="bean.ZhiBiaoRen" [(ngModel)]="bean.ZhiBiaoRen" required>
         </key-form-element>
-        <key-form-element label="制表日期" [error]="bean_ZhiBiaoRiQi.errors">
-          <input #bean_ZhiBiaoRiQi="ngModel" type="date" class="form-control"
+        <key-form-element label="销售数量" [error]="bean_ZhiBiaoRiQi.errors">
+          <input #bean_ZhiBiaoRiQi="ngModel" type="text" class="form-control"
             name="bean.ZhiBiaoRiQi" [(ngModel)]="bean.ZhiBiaoRiQi" required>
         </key-form-element>
         <!-- <key-form-element label="审核状态" [error]="bean_ShenHeZhuangTai.errors">
