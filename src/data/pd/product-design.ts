@@ -54,37 +54,37 @@ export const DataProductDesignHandler = {
           {
             id: 1,
             title: 'Dieter Rams',
-            number: '德国工业设计师　　　',
+            rank: '德国工业设计师　　　',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 2,
             title: 'YRJO KUKKAPURO',
-            number: '瑞典家具设计大师　　　',
+            rank: '瑞典家具设计大师　　　',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 3,
             title: 'はらけんや(原研哉)',
-            number: '无印良品艺术总监　　　',
+            rank: '无印良品艺术总监　　　',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 4,
             title: '朱小杰',
-            number: '温州澳珀家具公司董事长',
+            rank: '温州澳珀家具公司董事长',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           },
           {
             id: 5,
             title: '侯正光',
-            number: '上海木码设计机构创办人',
+            rank: '上海木码设计机构创办人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-5.jpg'
           },
           {
             id: 6,
             title: '赖亚楠',
-            number: 'DOMO nature创始人　　',
+            rank: 'DOMO nature创始人　　',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-6.jpg'
           }
         ]
@@ -95,37 +95,37 @@ export const DataProductDesignHandler = {
           {
             id: 1,
             title: '温浩',
-            number: '高尚家具品牌创始人　　',
+            rank: '高尚家具品牌创始人　　',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-7.jpg'
           },
           {
             id: 2,
             title: '石大宇',
-            number: '清庭设计中心创始人　　',
+            rank: '清庭设计中心创始人　　',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-8.jpg'
           },
           {
             id: 3,
             title: '张雷',
-            number: '品物流形设计总监　　　',
+            rank: '品物流形设计总监　　　',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-9.jpg'
           },
           {
             id: 4,
             title: '于历战',
-            number: '清华美院家具设计带头人',
+            rank: '清华美院家具设计带头人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-10.jpg'
           },
           {
             id: 5,
             title: '吕永忠',
-            number: '半木品牌创始人　　　　',
+            rank: '半木品牌创始人　　　　',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-11.jpg'
           },
           {
             id: 6,
             title: '周宸宸',
-            number: 'Frank Chou 设计工作室创始人',
+            rank: 'Frank Chou设计工作室创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-12.jpg'
           }
         ]
@@ -139,37 +139,37 @@ export const DataProductDesignHandler = {
           {
             id: 1,
             title: '齐浩',
-            number: '造型设计师',
+            rank: '造型设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-1.jpg'
           },
           {
             id: 2,
             title: '王玉波',
-            number: '室内设计师',
+            rank: '室内设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-2.jpg'
           },
           {
             id: 3,
             title: '刘兴宝',
-            number: '结构设计师',
+            rank: '结构设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-3.jpg'
           },
           {
             id: 4,
             title: '刘磊',
-            number: '结构设计师',
+            rank: '结构设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-4.jpg'
           },
           {
             id: 5,
             title: '薛凯霖',
-            number: '结构设计师',
+            rank: '结构设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-5.jpg'
           },
           {
             id: 6,
             title: '李喆',
-            number: '造型设计师',
+            rank: '造型设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-6.jpg'
           }
         ]
@@ -180,37 +180,37 @@ export const DataProductDesignHandler = {
           {
             id: 1,
             title: '赵芳素',
-            number: '室内设计师',
+            rank: '室内设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-7.jpg'
           },
           {
             id: 2,
             title: '李录进',
-            number: '结构设计师',
+            rank: '结构设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-8.jpg'
           },
           {
             id: 3,
             title: '王思航',
-            number: '造型设计师',
+            rank: '造型设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-9.jpg'
           },
           {
             id: 1,
             title: '齐浩',
-            number: '造型设计师',
+            rank: '造型设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-1.jpg'
           },
           {
             id: 2,
             title: '王玉波',
-            number: '室内设计师',
+            rank: '室内设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-2.jpg'
           },
           {
             id: 3,
             title: '刘兴宝',
-            number: '结构设计师',
+            rank: '结构设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/xr-3.jpg'
           }
         ]

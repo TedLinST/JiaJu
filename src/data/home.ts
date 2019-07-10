@@ -81,28 +81,28 @@ export const DataHomeHandler = {
         id: 1,
         title: '家具参数',
         date: '2019-04-24',
-        number: 1280,
+        rank: 1280,
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-1.jpg'
       },
       {
         id: 2,
         title: '家具风格',
         date: '2019-04-25',
-        number: 2500,
+        rank: 2500,
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-2.jpg'
       },
       {
         id: 3,
         title: '家具材料',
         date: '2019-04-26',
-        number: 100,
+        rank: 100,
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-3.jpg'
       },
       {
         id: 4,
         title: '家具品牌',
         date: '2019-04-26',
-        number: 7800,
+        rank: 7800,
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/chanPinSheJiZiLiaoKu-4.jpg'
       }
     ],
@@ -114,49 +114,49 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: 'Dieter Rams',
-            number: '德国工业设计师',
+            rank: '德国工业设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 2,
             title: 'YRJO KUKKAPURO',
-            number: '瑞典家具设计大师',
+            rank: '瑞典家具设计大师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 3,
             title: 'はらけんや(原研哉)',
-            number: '无印良品艺术总监',
+            rank: '无印良品艺术总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 4,
             title: '朱小杰',
-            number: '温州澳珀家具公司董事长',
+            rank: '温州澳珀家具公司董事长',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           },
           {
             id: 5,
             title: '侯正光',
-            number: '上海木码设计机构创办人',
+            rank: '上海木码设计机构创办人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-5.jpg'
           },
           {
             id: 6,
             title: '赖亚楠',
-            number: 'DOMO nature创始人',
+            rank: 'DOMO nature创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-6.jpg'
           },
           {
             id: 7,
             title: '温浩',
-            number: '高尚家具品牌创始人',
+            rank: '高尚家具品牌创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-7.jpg'
           },
           {
             id: 8,
             title: '石大宇',
-            number: '清庭设计中心创始人',
+            rank: '清庭设计中心创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-8.jpg'
           }
         ]
@@ -167,49 +167,49 @@ export const DataHomeHandler = {
           {
             id: 1,
             title: '张雷',
-            number: '品物流形设计总监',
+            rank: '品物流形设计总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-9.jpg'
           },
           {
             id: 2,
             title: '于历战',
-            number: '清华美院家具设计带头人',
+            rank: '清华美院家具设计带头人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-10.jpg'
           },
           {
             id: 3,
             title: '吕永忠',
-            number: '半木品牌创始人',
+            rank: '半木品牌创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-11.jpg'
           },
           {
             id: 4,
             title: '周宸宸',
-            number: 'Frank Chou 设计工作室创始人',
+            rank: 'Frank Chou设计工作室创始人',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-12.jpg'
           },
           {
             id: 5,
             title: 'Dieter Rams',
-            number: '德国工业设计师',
+            rank: '德国工业设计师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-1.jpg'
           },
           {
             id: 6,
             title: 'YRJO KUKKAPURO',
-            number: '瑞典家具设计大师',
+            rank: '瑞典家具设计大师',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-2.jpg'
           },
           {
             id: 7,
             title: 'はらけんや(原研哉)',
-            number: '无印良品艺术总监',
+            rank: '无印良品艺术总监',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-3.jpg'
           },
           {
             id: 8,
             title: '朱小杰',
-            number: '温州澳珀家具公司董事长',
+            rank: '温州澳珀家具公司董事长',
             src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/sheJiShiYuanDi-4.jpg'
           }
         ]
@@ -220,25 +220,25 @@ export const DataHomeHandler = {
       {
         id: 1,
         title: '酷家乐',
-        number: 'VR智能室内设计平台',
+        rank: 'VR智能室内设计平台',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-1.jpg'
       },
       {
         id: 2,
         title: '圆方',
-        number: '整体家居解决方案服务商',
+        rank: '整体家居解决方案服务商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-2.jpg'
       },
       {
         id: 3,
         title: '造易',
-        number: '定制家具信息化解决方案提供商',
+        rank: '定制家具信息化解决方案提供商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-3.jpg'
       },
       {
         id: 4,
         title: '三维家',
-        number: '家居行业前后端软件技术服务提供商',
+        rank: '家居行业前后端软件技术服务提供商',
         src: 'assets/imgs/home/chanPinSheJiKaiFaFuWu/shejIRuanJianJiCheng-4.jpg'
       }
     ]
@@ -622,10 +622,10 @@ export const DataHomeHandler = {
     title: '原辅材料机械设备服务',
     enTitle: 'RAW AND AUXILIARY MATERIALS MACHINERY AND EQUIPMENT SERVICES',
     menuData: [
-      { title: ' 木材团购' },
+      { title: '原辅材料' },
       { title: '机械设备' }
     ],
-    // 木材团购
+    // 原辅材料
     data0: [
       {
         id: 1,
@@ -715,62 +715,62 @@ export const DataHomeHandler = {
       { title: '品牌' },
       { title: '众筹频道' }
     ],
-    // 推荐商品
+    // 推荐商品 榜单产品
     data0: [
       {
         id: 1,
-        title: '源氏木语实木双抽床头柜白橡木北欧简约现代卧室迷你小柜子床边柜',
+        title: '沙发套装 典雅舒适 黄牛头层油蜡皮 进口橡胶木 高弹海绵 人性化设计 皮布',
         link: 'www.baidu.com',
-        price: '830 RMB',
+        price: '15999 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-1.jpg'
       },
       {
         id: 2,
-        title: '源氏木语全实木床头柜黑胡桃木两抽小柜子木蜡油环保时尚小斗柜',
+        title: '舒适黄牛真皮沙发 高弹性公仔棉真皮腰枕 带储物功能L型皮艺左转角沙发',
         link: 'www.baidu.com',
-        price: '1440 RMB',
+        price: '6599 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-2.jpg'
       },
       {
         id: 3,
-        title: '源氏木语实木儿童床头柜北欧橡木经济型收纳柜子现代简约卧室家具',
+        title: '畅销经典款 高档水牛头层真皮床 对称式描金雕花 1.8米精致水晶拉扣床',
         link: 'www.baidu.com',
-        price: '780 RMB',
+        price: '3499 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-3.jpg'
       },
       {
         id: 4,
-        title: '源氏木语实木床头柜北欧水曲柳收纳储物柜子现代简约卧室新品家具',
+        title: '1.8米床 森林系 可储物高箱床 白蜡木全实木家具 双人床',
         link: 'www.baidu.com',
-        price: '660 RMB',
+        price: '5099 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-4.jpg'
       },
       {
         id: 5,
-        title: '源氏木语纯实木床头柜白橡木床边柜两抽柜北欧简约整装储物柜卧室',
+        title: '橡木臻品 自然木纹 宽厚桌脚 美国进口白橡木1.6米餐桌',
         link: 'www.baidu.com',
-        price: '920 RMB',
+        price: '1298 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-5.jpg'
       },
       {
         id: 6,
-        title: '源氏木语全实木床头柜现代简约黑胡桃木床边收纳柜北欧',
+        title: '进口乌金木 全实木 自带旋转托盘 餐桌椅组合（1桌+6椅）',
         link: 'www.baidu.com',
-        price: '1250 RMB',
+        price: '17960 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-6.jpg'
       },
       {
         id: 7,
-        title: '源氏木语全实木床头柜北欧卧室橡木收纳柜现代简约带锁床边小柜子',
+        title: '凹弧形书桌边缘 人性化设计书桌',
         link: 'www.baidu.com',
-        price: '900 RMB',
+        price: '1199 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-7.jpg'
       },
       {
         id: 8,
-        title: '源氏木语纯实木床头柜床边柜原木橡木斗柜抽屉柜北欧简约卧室家具',
+        title: '进口芬兰松1.2米双层儿童床 全实木板条床',
         link: 'www.baidu.com',
-        price: '870 RMB',
+        price: '4688 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-8.jpg'
       },
       {

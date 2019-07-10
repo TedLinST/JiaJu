@@ -16,7 +16,7 @@
   <key-item-chunk [enTitle]="dataHandler.ER.enTitle" [title]="dataHandler.ER.title" [menuData]="dataHandler.ER.menuData"
     [currentIndex]="currentIndexER" (switchIndexChange)="carouselER.goTo($event); currentIndexER = $event">
     <div body>
-      <key-item-chunk-body [isMaxItem]="true">
+      <key-item-chunk-body [isMaxItem]="true" [isMore]="true" (clickMore)="portalNav.openErLogin()">
         <nz-carousel #carouselER [nzDots]="false">
           <div nz-carousel-content *ngFor="let resource of dataHandler.ER.data">
             <div class="resource-item">
@@ -57,7 +57,13 @@
                   </div>
                 </div>
                 <div class="footer footer-right">
-                  <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  <div *ngIf="item.title == '大数据分析案例';else Developing">
+                      <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  </div>
+                  <ng-template #Developing>
+                    <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
+                  </ng-template>
+                  <!-- <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a> -->
                 </div>
               </div>
             </div>
@@ -87,8 +93,11 @@
       </key-item-chunk-body>
       <!-- 设计师园地 -->
       <key-item-chunk-body *ngIf="currentIndexPD == 2" [isMore]="true" (clickMore)="portalNav.openDesignersGarden()">
-        <key-carousel [data]="dataHandler.PD.data2" [labelArray]="labelArrayPD2"
+        <div >
+          <key-carousel [data]="dataHandler.PD.data2" [labelArray]="labelArrayPD2"
           (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>
+        </div>
+        
       </key-item-chunk-body>
       <!-- 设计软件集成 -->
       <key-item-chunk-body *ngIf="currentIndexPD == 3" [isMore]="true"
@@ -270,7 +279,8 @@
         </div>
       </key-item-chunk-body>
       <!-- 物流售后服务 -->
-      <key-item-chunk-body *ngIf="currentIndexIS == 3">
+      <key-item-chunk-body *ngIf="currentIndexIS == 3" [isMore]="true"
+        (clickMore)="portalNav.openFurnitureDelivery()">
         <div class="IS3-style" (click)="openLogistics()">
           <img [imgLazyload]="'assets/imgs/home/zongHeFuWu/wuliu.jpg'">
           <key-item-mask [isTextLeft]="true">

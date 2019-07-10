@@ -26,8 +26,12 @@
                   </div>
                 </div>
                 <div class="footer footer-right">
-                  <a
-                    (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  <div *ngIf="item.title == '大数据分析案例';else Developing">
+                      <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  </div>
+                  <ng-template #Developing>
+                    <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
+                  </ng-template>
                 </div>
               </div>
             </div>

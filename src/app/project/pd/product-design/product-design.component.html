@@ -30,8 +30,12 @@
                   </div>
                 </div>
                 <div class="footer footer-right">
-                  <a
-                    (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  <div *ngIf="item.title == '大数据分析案例';else Developing">
+                      <a (click)="portalNav.openDataAnalysisDetails(item.id)">MORE+</a>
+                  </div>
+                  <ng-template #Developing>
+                    <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
+                  </ng-template>
                 </div>
               </div>
             </div>
@@ -56,8 +60,7 @@
       <div class="content">{{dataHandler.IL?.data[0].content}}
       </div>
       <div class="more">
-        <a
-          (click)="openIndustryLibraryDetails(dataHandler.IL?.data[0].id)">MORE+</a>
+        <a (click)="openIndustryLibraryDetails(dataHandler.IL?.data[0].id)">MORE+</a>
       </div>
     </div>
   </div>
@@ -65,18 +68,18 @@
   <!-- 设计师园地 -->
   <key-item-chunk [enTitle]="dataHandler.DG.enTitle"
     [title]="dataHandler.DG.title" [menuData]="dataHandler.DG.menuData"
-    [isTitleLine]="true" (switchIndexChange)="currentIndexDG = $event">
+    [isTitleLine]="true" (switchIndexChange)="currentIndexDG = $event" >
     <div body>
       <!-- 优秀设计师 -->
-      <key-item-chunk-body *ngIf="currentIndexDG == 0" [isMore]="true"
-        (clickMore)="onClickMoreDG0()">
+      <key-item-chunk-body *ngIf="currentIndexDG == 0" [isMore]="true" 
+        (clickMore)="portalNav.openDesignersGarden()">
         <key-carousel [data]="dataHandler.DG.data0" nzSpan="4"
           [labelArray]="labelArrayDG"
           (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>
       </key-item-chunk-body>
       <!-- 新锐设计师 -->
       <key-item-chunk-body *ngIf="currentIndexDG == 1" [isMore]="true"
-        (clickMore)="onClickMoreDG1()">
+        (clickMore)="portalNav.openDesignersGarden()">
         <key-carousel [data]="dataHandler.DG.data1" nzSpan="4"
           [labelArray]="labelArrayDG"
           (clickItemIndex)="openDesignersGardenDetails($event)"></key-carousel>

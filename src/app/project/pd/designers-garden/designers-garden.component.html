@@ -44,7 +44,7 @@
               [active]="btnSortActiveMap['experience']"
               (clickChange)="onClickButtonSortChange($event,'experience')">
             </key-button-sort>
-            <key-button-sort label="按评分与雷达图"
+            <key-button-sort label="按评分"
               [active]="btnSortActiveMap['score']"
               (clickChange)="onClickButtonSortChange($event,'score')">
             </key-button-sort>
@@ -80,7 +80,7 @@
                     <span>擅长风格：{{item.style}}</span><span>使用场所：{{item.place}}</span>
                   </div>
                   <div class="p">
-                    <span>评分与雷达图：{{item.score}}</span>
+                    <span>评分：{{item.score}}</span>
                   </div>
                 </div>
                 <div class="clearfix"></div>
