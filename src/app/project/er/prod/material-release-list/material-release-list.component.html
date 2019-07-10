@@ -23,13 +23,13 @@
     </key-table-column>
     <key-table-column heading="生产订单编号" width="130" key="ShengChanDingDanBianHao" sortable>
     </key-table-column>
-    <key-table-column heading="款号" width="130" key="KuanHao" sortable>
-    </key-table-column>
     <key-table-column heading="款式" width="130" key="KuanShi" sortable>
     </key-table-column>
-    <key-table-column heading="制表人" width="100" key="ZhiBiaoRen" sortable>
+    <key-table-column heading="材料名称" width="100" key="ZhiBiaoRen" sortable>
     </key-table-column>
-    <key-table-column heading="制表日期" width="100" key="ZhiBiaoRiQi" sortable>
+    <key-table-column heading="出库数量" width="100" key="ZhiBiaoRiQi" sortable>
+    </key-table-column>
+    <key-table-column heading="单位" width="130" key="KuanHao" sortable>
     </key-table-column>
     <key-table-column heading="审核状态" width="100" key="ShenHeZhuangTai" sortable>
     </key-table-column>
@@ -64,7 +64,7 @@
           <input #bean_ShengChanDingDanBianHao="ngModel" type="text" class="form-control"
             name="bean.ShengChanDingDanBianHao" [(ngModel)]="bean.ShengChanDingDanBianHao" required>
         </key-form-element>
-        <key-form-element label="款号" [error]="bean_KuanHao.errors">
+        <key-form-element label="单位" [error]="bean_KuanHao.errors">
           <input #bean_KuanHao="ngModel" type="text" class="form-control" name="bean.KuanHao"
             [(ngModel)]="bean.KuanHao">
         </key-form-element>
@@ -72,12 +72,12 @@
           <input #bean_KuanShi="ngModel" type="text" class="form-control" name="bean.KuanShi"
             [(ngModel)]="bean.KuanShi">
         </key-form-element>
-        <key-form-element label="制表人" [error]="bean_ZhiBiaoRen.errors">
+        <key-form-element label="材料名称" [error]="bean_ZhiBiaoRen.errors">
           <input #bean_ZhiBiaoRen="ngModel" type="text" class="form-control" name="bean.ZhiBiaoRen"
             [(ngModel)]="bean.ZhiBiaoRen">
         </key-form-element>
-        <key-form-element label="制表日期" [error]="bean_ZhiBiaoRiQi.errors">
-          <input #bean_ZhiBiaoRiQi="ngModel" type="date" class="form-control" name="bean.ZhiBiaoRiQi"
+        <key-form-element label="出库数量" [error]="bean_ZhiBiaoRiQi.errors">
+          <input #bean_ZhiBiaoRiQi="ngModel" type="text" class="form-control" name="bean.ZhiBiaoRiQi"
             [(ngModel)]="bean.ZhiBiaoRiQi">
         </key-form-element>
       </div>
