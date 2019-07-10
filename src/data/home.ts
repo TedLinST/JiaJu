@@ -622,10 +622,10 @@ export const DataHomeHandler = {
     title: '原辅材料机械设备服务',
     enTitle: 'RAW AND AUXILIARY MATERIALS MACHINERY AND EQUIPMENT SERVICES',
     menuData: [
-      { title: ' 木材团购' },
+      { title: '原辅材料' },
       { title: '机械设备' }
     ],
-    // 木材团购
+    // 原辅材料
     data0: [
       {
         id: 1,
@@ -715,62 +715,62 @@ export const DataHomeHandler = {
       { title: '品牌' },
       { title: '众筹频道' }
     ],
-    // 推荐商品
+    // 推荐商品 榜单产品
     data0: [
       {
         id: 1,
-        title: '源氏木语实木双抽床头柜白橡木北欧简约现代卧室迷你小柜子床边柜',
+        title: '沙发套装 典雅舒适 黄牛头层油蜡皮 进口橡胶木 高弹海绵 人性化设计 皮布',
         link: 'www.baidu.com',
-        price: '830 RMB',
+        price: '15999 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-1.jpg'
       },
       {
         id: 2,
-        title: '源氏木语全实木床头柜黑胡桃木两抽小柜子木蜡油环保时尚小斗柜',
+        title: '舒适黄牛真皮沙发 高弹性公仔棉真皮腰枕 带储物功能L型皮艺左转角沙发',
         link: 'www.baidu.com',
-        price: '1440 RMB',
+        price: '6599 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-2.jpg'
       },
       {
         id: 3,
-        title: '源氏木语实木儿童床头柜北欧橡木经济型收纳柜子现代简约卧室家具',
+        title: '畅销经典款 高档水牛头层真皮床 对称式描金雕花 1.8米精致水晶拉扣床',
         link: 'www.baidu.com',
-        price: '780 RMB',
+        price: '3499 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-3.jpg'
       },
       {
         id: 4,
-        title: '源氏木语实木床头柜北欧水曲柳收纳储物柜子现代简约卧室新品家具',
+        title: '1.8米床 森林系 可储物高箱床 白蜡木全实木家具 双人床',
         link: 'www.baidu.com',
-        price: '660 RMB',
+        price: '5099 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-4.jpg'
       },
       {
         id: 5,
-        title: '源氏木语纯实木床头柜白橡木床边柜两抽柜北欧简约整装储物柜卧室',
+        title: '橡木臻品 自然木纹 宽厚桌脚 美国进口白橡木1.6米餐桌',
         link: 'www.baidu.com',
-        price: '920 RMB',
+        price: '1298 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-5.jpg'
       },
       {
         id: 6,
-        title: '源氏木语全实木床头柜现代简约黑胡桃木床边收纳柜北欧',
+        title: '进口乌金木 全实木 自带旋转托盘 餐桌椅组合（1桌+6椅）',
         link: 'www.baidu.com',
-        price: '1250 RMB',
+        price: '17960 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-6.jpg'
       },
       {
         id: 7,
-        title: '源氏木语全实木床头柜北欧卧室橡木收纳柜现代简约带锁床边小柜子',
+        title: '凹弧形书桌边缘 人性化设计书桌',
         link: 'www.baidu.com',
-        price: '900 RMB',
+        price: '1199 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-7.jpg'
       },
       {
         id: 8,
-        title: '源氏木语纯实木床头柜床边柜原木橡木斗柜抽屉柜北欧简约卧室家具',
+        title: '进口芬兰松1.2米双层儿童床 全实木板条床',
         link: 'www.baidu.com',
-        price: '870 RMB',
+        price: '4688 RMB',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-8.jpg'
       },
       {
