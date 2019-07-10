@@ -15,14 +15,14 @@
     <a (click)="portalNav.openEquipmentSupplier()">机械设备供应商</a>
     <a (click)="portalNav.openEquipmentPurchase()">机械设备求购</a> -->
 
-    <img (click)="portalNav.openMaterialMart()" src="assets/imgs/material-equipment/menu-logo-4.png">
-    <img (click)="portalNav.openmMaterialShopping()" src="assets/imgs/material-equipment/menu-logo-5.png">
-    <img (click)="portalNav.openMaterialPurchase()" src="assets/imgs/material-equipment/menu-logo-6.png">
-    <img (click)="portalNav.openMaterialSupplier()" src="assets/imgs/material-equipment/menu-logo-7.png">
-    <img (click)="portalNav.openTimberAuction()" src="assets/imgs/material-equipment/menu-logo-8.png">
-    <img (click)="portalNav.openEquipmentMart()" src="assets/imgs/material-equipment/menu-logo-1.png">
-    <img (click)="portalNav.openEquipmentSupplier()" src="assets/imgs/material-equipment/menu-logo-2.png">
-    <img (click)="portalNav.openEquipmentPurchase()" src="assets/imgs/material-equipment/menu-logo-3.png">
+    <img title="原辅材料商城" (click)="portalNav.openMaterialMart()" src="assets/imgs/material-equipment/menu-logo-4.png">
+    <img title="原辅材料团购" (click)="portalNav.openWoodShopping()" src="assets/imgs/material-equipment/menu-logo-5.png">
+    <img title="原辅材料求购" (click)="portalNav.openMaterialPurchase()" src="assets/imgs/material-equipment/menu-logo-6.png">
+    <img title="原辅材料供应商" (click)="portalNav.openMaterialSupplier()" src="assets/imgs/material-equipment/menu-logo-7.png">
+    <img title="木材拍卖行" (click)="portalNav.openTimberAuction()" src="assets/imgs/material-equipment/menu-logo-8.png">
+    <img title="机械设备商城" (click)="portalNav.openEquipmentMart()" src="assets/imgs/material-equipment/menu-logo-1.png">
+    <img title="机械设备供应商" (click)="portalNav.openEquipmentSupplier()" src="assets/imgs/material-equipment/menu-logo-2.png">
+    <img title="机械设备求购" (click)="portalNav.openEquipmentPurchase()" src="assets/imgs/material-equipment/menu-logo-3.png">
   </div>
 
   <!-- 原辅材料商城 -->
@@ -38,7 +38,7 @@
               <div class="item-box item-box-no-border item-box-margin-5"
                 (click)="openMaterialMartDetails(item.id)">
                 <div class="header">
-                  <img [src]="item.src">
+                  <img [src]="item.src" [title]="item.title">
                   <!-- <key-item-mask>
                     <key-item-mask-label [label]="item.title">
                     </key-item-mask-label>
@@ -57,7 +57,7 @@
     [title]="dataHandler.MS.title" [isTitleLine]="true">
     <div body>
       <key-item-chunk-body [isMore]="true" [showItemNumber]="5"
-        (clickMore)="portalNav.openmMaterialShopping()">
+        (clickMore)="portalNav.openWoodShopping()">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.MS.data"
             let-index="index">
@@ -65,7 +65,7 @@
               <div class="item-box item-box-margin-3"
                 (click)="openmMaterialShoppingDetails(item.id)">
                 <div class="header">
-                  <img [src]="item.src">
+                  <img [src]="item.src" >
                   <key-item-mask>
                     <key-item-mask-label [label]="item.title">
                     </key-item-mask-label>

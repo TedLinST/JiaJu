@@ -11,6 +11,16 @@
       &:last-child {
         margin-right: 0px;
       }
+
+      &:hover,
+      &.active {
+        background-color: #d2f5d2;
+        color: #fff;
+        border: 1px solid #d2f5d2;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+      }
     }
 
     a {
@@ -39,12 +49,36 @@
     }
   }
 
+  // 原辅材料商城
   .item-box-no-border {
     border-width: 0px !important;
+
+    .header{
+
+      img{
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        &:hover,
+        &.active {
+          background-color: #d2f5d2;
+          color: #fff;
+          border: 1px solid #d2f5d2;
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none;
+        }
+      }
+    }
+    
     &:hover {
       border-width: 0px !important;
     }
   }
+
+ 
 
   // 机械设备求购
   .EP-list {
