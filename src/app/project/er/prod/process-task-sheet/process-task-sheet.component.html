@@ -20,17 +20,17 @@
     </key-table-column>
     <key-table-column heading="任务派发日期" width="120" key="RenWuPaiFaRiQi" sortable>
     </key-table-column>
-    <key-table-column heading="款号" width="120" key="KuanHao" sortable>
+    <key-table-column heading="工序" width="120" key="KuanHao" sortable>
     </key-table-column>
     <key-table-column heading="款式" width="120" key="KuanShi" sortable>
+    </key-table-column>
+    <key-table-column heading="部件名称" width="120" key="ZhiBiaoRen" sortable>
+    </key-table-column>
+    <key-table-column heading="数量" width="120" key="ZhiBiaoRiQi" sortable>
     </key-table-column>
     <key-table-column heading="计划开始日期" width="120" key="JiHuaKaiShiRiQi" sortable>
     </key-table-column>
     <key-table-column heading="计划完成日期" width="120" key="JiHuaWanChengRiQi" sortable>
-    </key-table-column>
-    <key-table-column heading="制表人" width="120" key="ZhiBiaoRen" sortable>
-    </key-table-column>
-    <key-table-column heading="制表日期" width="120" key="ZhiBiaoRiQi" sortable>
     </key-table-column>
     <key-table-column heading="审核状态" width="120" key="ShenHeZhuangTai" sortable>
     </key-table-column>
@@ -69,7 +69,7 @@
           <input #bean_RenWuPaiFaRiQi="ngModel" type="text" class="form-control" name="bean.RenWuPaiFaRiQi"
             [(ngModel)]="bean.RenWuPaiFaRiQi">
         </key-form-element>
-        <key-form-element label="款号" [error]="bean_KuanHao.errors">
+        <key-form-element label="工序" [error]="bean_KuanHao.errors">
           <input #bean_KuanHao="ngModel" type="text" class="form-control" name="bean.KuanHao"
             [(ngModel)]="bean.KuanHao">
         </key-form-element>

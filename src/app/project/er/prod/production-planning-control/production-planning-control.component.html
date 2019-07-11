@@ -145,6 +145,9 @@
         <key-table-column heading="计划完成" width="90" key="JiHuaWanCheng17" sortable>
         </key-table-column>
         <key-table-column heading="实际完成" width="90" key="ShiJiWanCheng17" sortable>
+          <ng-template let-row="row">
+            {{(row?.WanChengShuLiang / row.DingDanShuLiang * 100) | number:'1.2-2'}} %
+          </ng-template>
         </key-table-column>
       </key-table-column>
     </key-table-column>

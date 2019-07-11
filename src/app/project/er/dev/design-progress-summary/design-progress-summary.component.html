@@ -24,29 +24,41 @@
       <key-table-column heading="已开发完成款数" width="120" key="YiKaiFaWanChengKuanShu" sortable>
       </key-table-column>
       <key-table-column heading="完成比列" width="120" key="WanChengBiLi" sortable>
-        <ng-template let-value>
+        <ng-template let-value let-row="row">
+          {{ (row.YiKaiFaWanChengKuanShu*100/row.JiHuaKaiFaKuanShu) | number: '1.2-2' }}
+        </ng-template>
+        <!--<ng-template let-value>
           <div>
             {{value | number:'1.2-2'}}
           </div>
-        </ng-template>
+        </ng-template>-->
       </key-table-column>
       <key-table-column heading="未开发完成款数" width="120" key="WeiKaiFaWanChengKuanShu" sortable>
+        <ng-template let-value let-row="row">
+          {{ row.JiHuaKaiFaKuanShu - row.YiKaiFaWanChengKuanShu}}
+        </ng-template>
       </key-table-column>
       <key-table-column heading="未完成比列" width="120" key="WeiWanChengBiLi" sortable>
-        <ng-template let-value>
+        <ng-template let-value let-row="row">
+          {{ ((row.JiHuaKaiFaKuanShu - row.YiKaiFaWanChengKuanShu)*100/row.JiHuaKaiFaKuanShu) | number: '1.2-2' }}
+        </ng-template>
+        <!--<ng-template let-value>
           <div>
             {{value | number:'1.2-2'}}
           </div>
-        </ng-template>
+        </ng-template>-->
       </key-table-column>
       <key-table-column heading="超期款数" width="120" key="ChaoQiKuanShu" sortable>
       </key-table-column>
       <key-table-column heading="超期比列" width="120" key="ChaoQiBiLi" sortable>
-        <ng-template let-value>
+        <ng-template let-value let-row="row">
+          {{ (row.ChaoQiKuanShu*100/row.JiHuaKaiFaKuanShu) | number: '1.2-2' }}
+        </ng-template>
+        <!--<ng-template let-value>
           <div>
             {{value | number:'1.2-2'}}
           </div>
-        </ng-template>
+        </ng-template>-->
       </key-table-column>
     </key-table-column>
   </key-table>

@@ -30,18 +30,33 @@
     </key-table-column>
     <key-table-column heading="成本" align="center">
       <key-table-column heading="材料成本" width="100" key="CaiLiaoChengBen" sortable>
+        <ng-template let-row="row">
+          {{(row.DingDanShuLiang * 300.18) | number: '1.2-2'}}
+        </ng-template>
       </key-table-column>
       <key-table-column heading="人工成本" width="100" key="RenGongChengBen" sortable>
+        <ng-template let-row="row">
+          {{(row.DingDanShuLiang * 100.56) | number: '1.2-2'}}
+        </ng-template>
       </key-table-column>
       <key-table-column heading="特殊工艺成本" width="130" key="TeShuGongYiChengBen" sortable>
+        <ng-template let-row="row">
+          {{(row.DingDanShuLiang * 20.18) | number: '1.2-2'}}
+        </ng-template>
       </key-table-column>
       <key-table-column heading="管理成本" width="100" key="GuanLiChengBen" sortable>
+        <ng-template let-row="row">
+          {{(row.DingDanShuLiang * 50.33) | number: '1.2-2'}}
+        </ng-template>
       </key-table-column>
       <key-table-column heading="制造成本" width="100" key="ZhiZaoChengBen" sortable>
+        <ng-template let-row="row">
+          {{(row.DingDanShuLiang * 100.77) | number: '1.2-2'}}
+        </ng-template>
       </key-table-column>
       <key-table-column heading="合计成本" width="100" key="" sortable>
         <ng-template let-row="row">
-          {{row.CaiLiaoChengBen + row.RenGongChengBen + row.TeShuGongYiChengBen + row.GuanLiChengBen + row.ZhiZaoChengBen}}
+          {{(row.DingDanShuLiang * 300.18 + row.DingDanShuLiang * 100.56 + row.DingDanShuLiang * 20.18 + row.DingDanShuLiang * 50.33 + row.DingDanShuLiang * 100.77) | number: '1.2-2'}}
         </ng-template>
       </key-table-column>
     </key-table-column>

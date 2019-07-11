@@ -19,7 +19,7 @@
     </key-table-column>
     <key-table-column heading="销售单位名称" width="120" key="XiaoShouDanWeiMingCheng" sortable>
     </key-table-column>
-    <key-table-column heading="销售日期" width="100" key="XiaoShouRiQi" sortable>
+    <key-table-column heading="款式" width="100" key="XiaoShouRiQi" sortable>
     </key-table-column>
     <key-table-column heading="售后日期" width="100" key="ShouHouRiQi" sortable>
     </key-table-column>
@@ -52,8 +52,8 @@
           <input #bean_XiaoShouDanWeiMingCheng="ngModel" type="text" class="form-control"
             name="bean.XiaoShouDanWeiMingCheng" [(ngModel)]="bean.XiaoShouDanWeiMingCheng">
         </key-form-element>
-        <key-form-element label="销售日期" [error]="bean_XiaoShouRiQi.errors">
-          <input #bean_XiaoShouRiQi="ngModel" type="date" class="form-control" name="bean.XiaoShouRiQi"
+        <key-form-element label="款式" [error]="bean_XiaoShouRiQi.errors">
+          <input #bean_XiaoShouRiQi="ngModel" type="text" class="form-control" name="bean.XiaoShouRiQi"
             [(ngModel)]="bean.XiaoShouRiQi">
         </key-form-element>
         <key-form-element label="售后日期" [error]="bean_ShouHouRiQi.errors">
