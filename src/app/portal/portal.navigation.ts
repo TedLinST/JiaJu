@@ -275,9 +275,44 @@ export class PortalNavigation {
   }
 
   /**
+   * 综合服务 - 政府服务 - 专利服务
+   * @param $event 
+   */
+  openPatentsService(event?: any){
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('patent-service');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 政府服务 - 税务服务
+   * @param $event 
+   */
+  openTaxService(event?: any){
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('patent-service');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 政府服务 - 环保服务
+   */
+openEnvironmentalProtectionService(event?: any){
+  if (!!event) {
+    event.stopPropagation();
+  }
+  // this.router.navigateByUrl('patent-service');
+  this.navigateDeveloping();
+}
+
+  /**
    * 综合服务 - 政府服务 - 工商服务
    */
-  openPatentService(event?: any) {
+  openBusinessService(event?: any) {
     if (!!event) {
       event.stopPropagation();
     }

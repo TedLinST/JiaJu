@@ -3,7 +3,8 @@ import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-men
 import { Router } from '@angular/router';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
-import { DataFurnitureStandardHandler } from 'src/data/is/furniture-standard';
+// import { DataFurnitureStandardHandler } from 'src/data/is/furniture-standard';
+import { DataGovernmentHandler } from 'src/data/is/government';
 import { UtilsIs } from '../utils/utils-is';
 
 @Component({
@@ -32,7 +33,8 @@ export class FurnitureStandardComponent implements OnInit {
   ngOnInit() {
     this.CH_IS_BANNER_SRC = ConstantHandler.CH_IS_BANNER_SRC;
     this.CH_IS_BANNER_MENU = ConstantHandler.CH_IS_BANNER_MENU;
-    this.dataHandler = DataFurnitureStandardHandler;
+    // this.dataHandler = DataFurnitureStandardHandler;
+    this.dataHandler = DataGovernmentHandler;
   }
 
   /**
