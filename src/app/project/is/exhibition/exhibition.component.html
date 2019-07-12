@@ -26,16 +26,15 @@
         <div class="E-style" >
           <nz-carousel nzAutoPlay [nzDots]="false" >
             <div class="top-title" nz-carousel-content *ngFor="let item of dataHandler.FE.data">
-              <div class="top-title">
-                <!-- <div calss="left"  style="text-align: left"> -->
-                    <div class="title">{{item.subTtile}}</div>
-                    <div class="EnTitle">{{item.subEnTtile}}</div>
-                  <!-- </div> -->
-                  <div calss="right" style="text-align: right">
-                    <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
-                  </div>
 
-              </div>
+                <div calss="left"  style="text-align: left">
+                  <div class="title">{{item.subTtile}}</div>
+                  <div class="EnTitle">{{item.subEnTtile}}</div>
+                </div>
+                <div calss="right" style="text-align: right">
+                  <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
+                </div>
+
             </div>
             <key-carousel [data]="dataHandler.FE.data" nzSpan="6" 
               [maskMode]="true" ></key-carousel>
