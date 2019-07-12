@@ -343,25 +343,25 @@ export const DataSECooperationHandler = {
     data1: [
       {
         id: '1',
-        BiaoTi: '宜家长沙卖场招聘会',
+        BiaoTi: '业务员招聘',
         GongSi: '宜家(中国)投资有限公司',
         LeiXing: '外资企业'
       },
       {
         id: '2',
-        BiaoTi: '2019年校园巡回招聘会',
+        BiaoTi: '外贸经理助理招聘',
         GongSi: '美克国际家居用品股份有限公司',
         LeiXing: '合资'
       },
       {
         id: '3',
-        BiaoTi: '2019年校园招聘会',
+        BiaoTi: '软件工程师招聘',
         GongSi: '宜华生活科技股份有限公司',
         LeiXing: '上市企业'
       },
       {
         id: '4',
-        BiaoTi: '2019年新店筹备招聘',
+        BiaoTi: '销售储备干部招聘',
         GongSi: '西安健威凯利家具有限公司',
         LeiXing: '合资'
       },
