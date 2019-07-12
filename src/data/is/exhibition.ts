@@ -39,7 +39,7 @@ export const DataExhibitionHandler = {
       { //国外展会-米兰国际家具展
         id: 2,
         subTtile: '米兰国际家具展',
-        subEnTtile: 'COLOGNE, GERMANY',
+        subEnTtile: 'MILAN, ITALY',
         data: [
           {
             id: 1,
@@ -65,8 +65,8 @@ export const DataExhibitionHandler = {
       },
       {//国外展会-
         id: 3,
-        subTtile: '国外展会',
-        subEnTtile: 'COLOGNE, GERMANY',
+        subTtile: '其他国际家具展',
+        subEnTtile: 'OTHER AREAS',
         data: [
           {
             id: 1,
@@ -100,30 +100,30 @@ export const DataExhibitionHandler = {
     subTtile: '中国国际家具博览会',
     subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
     data: [
-      { //国内展会-国际名家具（东莞）展览会
+      { //国内展会-深圳国际家具展
         id: 1,
-        subTtile: '国际名家具（东莞）展览会',
+        subTtile: '深圳国际家具展',
         subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
         data: [
           {
             id: 1,
-            title: '一直想请您来，这样的名家具展是您期待的样子吗？',
-            src: 'assets/imgs/exhibition/GNzhanhui-1.jpg'
+            title: '青年设计师创想汇：给你一场超级的思想脑爆',
+            src: 'assets/imgs/exhibition/GNzhanhui-9.jpg'
           },
           {
             id: 2,
-            title: '泛家居行业的渠道裂变，从这个大咖顶级饭局开始？',
-            src: 'assets/imgs/exhibition/GNzhanhui-2.jpg'
+            title: '给设计以更靓丽的色彩——金堂奖全国女设计师联盟来了！',
+            src: 'assets/imgs/exhibition/GNzhanhui-10.jpg'
           },
           {
             id: 3,
-            title: '设计选材 | 流行是暂时的，风格是永恒的',
-            src: 'assets/imgs/exhibition/GNzhanhui-3.jpg'
+            title: '中国青年设计师创想峰会拉开帷幕，系列活动引爆设计新势力',
+            src: 'assets/imgs/exhibition/GNzhanhui-11.jpg'
           },
           {
             id: 4,
-            title: '把五星级酒店装修转化为家居场景，你喜欢吗？',
-            src: 'assets/imgs/exhibition/GNzhanhui-4.jpg'
+            title: '当广州遇上深圳，设计界的华山论道就在中国青年设计师创想峰会',
+            src: 'assets/imgs/exhibition/GNzhanhui-12.jpg'
           }
         ]
       },
@@ -154,30 +154,30 @@ export const DataExhibitionHandler = {
           }
         ]
       },
-      { //国内展会-深圳国际家具展
+      { //国内展会-国际名家具（东莞）展览会
         id: 3,
-        subTtile: '深圳国际家具展',
+        subTtile: '国际名家具（东莞）展览会',
         subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
         data: [
           {
             id: 1,
-            title: '青年设计师创想汇：给你一场超级的思想脑爆',
-            src: 'assets/imgs/exhibition/GNzhanhui-9.jpg'
+            title: '一直想请您来，这样的名家具展是您期待的样子吗？',
+            src: 'assets/imgs/exhibition/GNzhanhui-1.jpg'
           },
           {
             id: 2,
-            title: '给设计以更靓丽的色彩——金堂奖全国女设计师联盟来了！',
-            src: 'assets/imgs/exhibition/GNzhanhui-10.jpg'
+            title: '泛家居行业的渠道裂变，从这个大咖顶级饭局开始？',
+            src: 'assets/imgs/exhibition/GNzhanhui-2.jpg'
           },
           {
             id: 3,
-            title: '中国青年设计师创想峰会拉开帷幕，系列活动引爆设计新势力',
-            src: 'assets/imgs/exhibition/GNzhanhui-11.jpg'
+            title: '设计选材 | 流行是暂时的，风格是永恒的',
+            src: 'assets/imgs/exhibition/GNzhanhui-3.jpg'
           },
           {
             id: 4,
-            title: '当广州遇上深圳，设计界的华山论道就在中国青年设计师创想峰会',
-            src: 'assets/imgs/exhibition/GNzhanhui-12.jpg'
+            title: '把五星级酒店装修转化为家居场景，你喜欢吗？',
+            src: 'assets/imgs/exhibition/GNzhanhui-4.jpg'
           }
         ]
       }
