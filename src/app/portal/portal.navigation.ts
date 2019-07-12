@@ -37,6 +37,9 @@ export class PortalNavigation {
    * 产品设计开发服务 - 大数据分析
    */
   openDataAnalysis(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('data-analysis');
   }
 
@@ -51,6 +54,9 @@ export class PortalNavigation {
    * 产品设计开发服务 - 产品设计资料库
    */
   openDesignDatabase(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('design-database');
   }
 
@@ -58,6 +64,9 @@ export class PortalNavigation {
    * 产品设计开发服务 - 设计师园地
    */
   openDesignersGarden(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('designers-garden');
   }
 
@@ -65,6 +74,9 @@ export class PortalNavigation {
    * 产品设计开发服务 - 设计软件集成
    */
   openSoftwareIntegration(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('software-integration');
   }
 
@@ -259,9 +271,44 @@ export class PortalNavigation {
   }
 
   /**
+   * 综合服务 - 政府服务 - 专利服务
+   * @param $event 
+   */
+  openPatentsService(event?: any){
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('patent-service');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 政府服务 - 税务服务
+   * @param $event 
+   */
+  openTaxService(event?: any){
+    if (!!event) {
+      event.stopPropagation();
+    }
+    // this.router.navigateByUrl('patent-service');
+    this.navigateDeveloping();
+  }
+
+  /**
+   * 综合服务 - 政府服务 - 环保服务
+   */
+openEnvironmentalProtectionService(event?: any){
+  if (!!event) {
+    event.stopPropagation();
+  }
+  // this.router.navigateByUrl('patent-service');
+  this.navigateDeveloping();
+}
+
+  /**
    * 综合服务 - 政府服务 - 工商服务
    */
-  openPatentService(event?: any) {
+  openBusinessService(event?: any) {
     if (!!event) {
       event.stopPropagation();
     }

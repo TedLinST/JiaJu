@@ -35,8 +35,20 @@ export class UtilsIs {
           portalNav.openFurnitureStandard();
           break;
         case '2-2':
+            //专利服务
+            portalNav.openPatentsService();
+            break;
+        case '2-3':
+            // 税务服务
+            portalNav.openTaxService();
+            break;
+        case '2-4':
+            // 环保服务
+            portalNav.openEnvironmentalProtectionService();
+            break;
+        case '2-5':
           // 工商服务
-          portalNav.openPatentService();
+          portalNav.openBusinessService();
           break;
         case '3':
           // 金融服务
