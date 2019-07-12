@@ -38,6 +38,9 @@ export class ShopDetailsComponent implements OnInit {
     if (!!itemInfo) {
       this.itemInfo = JSON.parse(itemInfo);
     }
+    else {
+      this.itemInfo = DataShopDetailsHandler.LIST_DATA[0]
+    }
   }
 
   /**

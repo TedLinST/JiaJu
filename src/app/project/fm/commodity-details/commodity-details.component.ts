@@ -63,6 +63,9 @@ export class CommodityDetailsComponent implements OnInit {
     if (!!itemInfo) {
       this.itemInfo = JSON.parse(itemInfo);
     }
+    else{
+      this.itemInfo = DataCommodityDetailsHandler.data1[0]
+    }
   }
 
   /**

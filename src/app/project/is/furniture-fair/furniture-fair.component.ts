@@ -48,7 +48,15 @@ export class FurnitureFairComponent implements OnInit {
    * @param id 
    */
   openEDEIDetails(id: any) {
-    console.log("展会详细介绍与展会资讯详情页");
+    if (id == 2) {
+      // 展会服务 - 预登记详细
+      this.portalNav.openPreRegistration();
+    } else if (id == 5) {
+      // 申请参展详细
+      this.portalNav.openApplyExhibitors();
+    } else {
+      console.log("展会详细介绍与展会资讯详情页");
+    }
     // this.navigateDeveloping();
   }
 

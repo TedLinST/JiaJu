@@ -84,7 +84,7 @@
                     let-index="index">
                     <div *ngIf="index < 5" class="itemGoods">
                       <div class="key-item-box item-box-bg item-box-margin-1"
-                        style="width: 195px;height: 304px; margin-bottom: 2px;">
+                        style="width: 195px;height: 304px; margin-bottom: 2px;" (click)="portalNav.openCommodityDetails()">
                         <div class="header">
                           <img [src]="itemGoods.src">
                           <key-item-mask [isTextLeft]="true">

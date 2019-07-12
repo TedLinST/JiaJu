@@ -36,7 +36,7 @@
   <key-item-chunk [enTitle]="dataHandler.RP.enTitle"
     [title]="dataHandler.RP.title">
     <div body class="box-style">
-      <key-item-chunk-body [showItemNumber]="5">
+      <key-item-chunk-body [showItemNumber]="5" [isMore]="true" (clickMore)="portalNav.openShopMerchandise(itemInfo,$event)">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="itemInfo.data"
             let-index="index">
@@ -71,7 +71,7 @@
   <key-item-chunk [enTitle]="dataHandler.PS.enTitle"
     [title]="dataHandler.PS.title">
     <div body class="box-style">
-      <key-item-chunk-body>
+      <key-item-chunk-body [isMore]="true" (clickMore)="portalNav.openShopMerchandise(itemInfo,$event)">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="itemInfo.data"
             let-index="index">

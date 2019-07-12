@@ -30,6 +30,9 @@ export class PortalNavigation {
    * 产品设计开发服务
    */
   openProductDesign(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('product-design');
   }
 
@@ -37,6 +40,9 @@ export class PortalNavigation {
    * 产品设计开发服务 - 大数据分析
    */
   openDataAnalysis(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('data-analysis');
   }
 
@@ -51,6 +57,9 @@ export class PortalNavigation {
    * 产品设计开发服务 - 产品设计资料库
    */
   openDesignDatabase(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('design-database');
   }
 
@@ -58,6 +67,9 @@ export class PortalNavigation {
    * 产品设计开发服务 - 设计师园地
    */
   openDesignersGarden(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('designers-garden');
   }
 
@@ -65,6 +77,9 @@ export class PortalNavigation {
    * 产品设计开发服务 - 设计软件集成
    */
   openSoftwareIntegration(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
     this.router.navigateByUrl('software-integration');
   }
 
@@ -255,7 +270,8 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    this.router.navigateByUrl('furniture-standard');
+    this.router.navigateByUrl('developing');
+    //this.router.navigateByUrl('furniture-standard');
   }
 
   /**

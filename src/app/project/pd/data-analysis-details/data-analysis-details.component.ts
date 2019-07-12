@@ -3,9 +3,9 @@ import { KeyVerticalMenuEvent } from 'src/modules/key/vertical-menu/vertical-men
 import { ConstantHandler } from 'src/modules/utils/constant-handler';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { DataDataAnalysisDetailsHandler } from 'src/data/pd/data-analysis-details';
+import { UtilsPd } from '../utils/utils-pd';
 import { Utils } from 'src/modules/utils/utils';
 import { PortalNavigation } from 'src/app/portal/portal.navigation';
-import { UtilsPd } from '../utils/utils-pd';
 
 @Component({
   selector: 'app-data-analysis-details',

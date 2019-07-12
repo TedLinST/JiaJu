@@ -145,7 +145,7 @@
   <key-item-chunk [enTitle]="dataHandler.NRS.enTitle" [title]="dataHandler.NRS.title">
     <div body>
       <key-item-chunk-body [isMore]="true" (clickMore)="portalNav.openShop()">
-        <key-carousel [data]="dataHandler.NRS.data" nzSpan="5" nzSpanNumber="5" [maskMode]="true" [rowArray]="[0,1]">
+        <key-carousel [data]="dataHandler.NRS.data" nzSpan="5" nzSpanNumber="5" [maskMode]="true" [rowArray]="[0,1]" (click)="portalNav.openShopDetails(item)">
         </key-carousel>
       </key-item-chunk-body>
     </div>
@@ -159,7 +159,7 @@
           <ng-template ngFor let-item [ngForOf]="dataHandler.PF.data" let-index="index">
             <div nz-col nzSpan="6" style="height: 288px; margin-bottom: 12px;">
               <div class="key-item-box item-box-margin-13">
-                <div class="header">
+                <div class="header" (click)="portalNav.openCommodityDetails()">
                   <img [src]="item.src">
                   <key-item-mask [isTextLeft]="true">
                     <key-item-mask-label [label]="item.title">

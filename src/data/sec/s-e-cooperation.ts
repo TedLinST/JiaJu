@@ -343,150 +343,150 @@ export const DataSECooperationHandler = {
     data1: [
       {
         id: '1',
-        BiaoTi: '宜家长沙卖场招聘会',
-        GongSi: '宜家(中国)投资有限公司',
-        LeiXing: '外资企业'
+        BiaoTi: '总经理助理',
+        GongSi: '大连市沙河口区欣华图文设计部',
+        LeiXing: '民营企业'
       },
       {
         id: '2',
-        BiaoTi: '2019年校园巡回招聘会',
-        GongSi: '美克国际家居用品股份有限公司',
-        LeiXing: '合资'
+        BiaoTi: '专职科研人员',
+        GongSi: '武大巨成结构股份有限公司',
+        LeiXing: '股份公司'
       },
       {
         id: '3',
-        BiaoTi: '2019年校园招聘会',
-        GongSi: '宜华生活科技股份有限公司',
-        LeiXing: '上市企业'
+        BiaoTi: 'BD业务拓展',
+        GongSi: '上海天籍信息科技有限公司',
+        LeiXing: '民营企业'
       },
       {
         id: '4',
-        BiaoTi: '2019年新店筹备招聘',
-        GongSi: '西安健威凯利家具有限公司',
-        LeiXing: '合资'
+        BiaoTi: '结构分析工程师',
+        GongSi: '华强方特文化科技集团股份有限公司',
+        LeiXing: '民营企业'
       },
       {
         id: '5',
-        BiaoTi: '销售后勤人员招聘',
-        GongSi: '太原市名峰家具有限公司',
-        LeiXing: '民营'
+        BiaoTi: '家具设计教师',
+        GongSi: '青岛理工大学琴岛学院',
+        LeiXing: '其他'
       },
       {
         id: '6',
-        BiaoTi: '门店销售人员招聘',
-        GongSi: '湖南励鑫隆办公家具有限公司',
-        LeiXing: '民营'
+        BiaoTi: '有机合成研究员',
+        GongSi: '深圳市华加生物科技有限公司',
+        LeiXing: '合资企业'
       },
       {
         id: '7',
-        BiaoTi: '资深销售人员招聘',
-        GongSi: '大连飞马文仪家具有限公司',
-        LeiXing: '合资'
+        BiaoTi: '室内设计实习生',
+        GongSi: '江苏省海岳酒店设计顾问有限公司',
+        LeiXing: '民营企业'
       },
       {
         id: '8',
-        BiaoTi: '外贸人员专场招聘',
-        GongSi: '霸州市星光家具有限公司',
-        LeiXing: '民营'
+        BiaoTi: '工艺工程师',
+        GongSi: '世源科技工程有限公司西安分公司',
+        LeiXing: '国企'
       },
       {
         id: '9',
-        BiaoTi: '车间高级技术人员招聘会',
-        GongSi: '青岛西德汉姆家具有限公司',
-        LeiXing: '民营'
+        BiaoTi: '智慧家居项目研发',
+        GongSi: '昆山英莱特电子科技有限公司',
+        LeiXing: '民营企业'
       },
       {
         id: '10',
-        BiaoTi: '部门负责人专场招聘',
-        GongSi: '喜临门家具股份有限公司',
-        LeiXing: '民营'
+        BiaoTi: '智能家居研发',
+        GongSi: '王力安防科技股份有限公司',
+        LeiXing: '民营企业'
       },
       {
         id: '11',
-        BiaoTi: '家具编辑人员招聘',
+        BiaoTi: '结构分析工程师',
         GongSi: '山东省家具协会',
-        LeiXing: '社会团体'
+        LeiXing: '其他'
       },
       {
         id: '12',
-        BiaoTi: '专业技术人员招聘',
+        BiaoTi: '有机合成研究员',
         GongSi: '四川米兰办公家具有限公司',
-        LeiXing: '民营'
+        LeiXing: '合资企业'
       }
     ],
     // 专家应聘
     data2: [
       {
         id: '1',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '总经理',
+        GongSi: '大连市沙河口区欣华图文设计部',
+        LeiXing: '民营'
       },
       {
         id: '2',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: 'BD业务拓展总监',
+        GongSi: '上海天籍信息科技有限公司',
+        LeiXing: '民营'
       },
       {
         id: '3',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '智慧家居项目研发总监',
+        GongSi: '昆山英莱特电子科技有限公司',
+        LeiXing: '民营'
       },
       {
         id: '4',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '智能家居研发总监',
+        GongSi: '王力安防科技股份有限公司',
+        LeiXing: '民营'
       },
       {
         id: '5',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '有机合成高级研究员',
+        GongSi: '深圳市华加生物科技有限公司',
+        LeiXing: '合资'
       },
       {
         id: '6',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '高级工艺工程师',
+        GongSi: '世源科技工程有限公司西安分公司',
+        LeiXing: '国企'
       },
       {
         id: '7',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '家具设计教师',
+        GongSi: '青岛理工大学琴岛学院',
+        LeiXing: '其他'
       },
       {
         id: '8',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '结构分析工程师',
+        GongSi: '华强方特文化科技集团股份有限公司',
+        LeiXing: '民营'
       },
       {
         id: '9',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '智能家居研发总监',
+        GongSi: '王力安防科技股份有限公司',
+        LeiXing: '民营'
       },
       {
         id: '10',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '总经理',
+        GongSi: '上海天籍信息科技有限公司',
+        LeiXing: '民营'
       },
       {
         id: '11',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '结构分析总监',
+        GongSi: '华强方特文化科技集团股份有限公司',
+        LeiXing: '民营'
       },
       {
         id: '12',
-        BiaoTi: '广州点动股份需求校企合作 - 专家',
-        GongSi: 'XXXX有限公司',
-        LeiXing: '~~~'
+        BiaoTi: '有机合成高级研究员',
+        GongSi: '世源科技工程有限公司西安分公司',
+        LeiXing: '国企'
       }
     ],
     // 招聘会预告
@@ -516,17 +516,26 @@ export const DataSECooperationHandler = {
     data0: [
       {
         id: 1,
-        BiaoTi: '互动讲堂标题1',
+        title: '红木家具材料',
+        ZhuJiangRen: '林金国教授',
+        ZhiWu: '福建农林大学',
+        state: true,
         src: 'assets/videos/home/movie0.mp4'
       },
       {
         id: 2,
-        BiaoTi: '互动讲堂标题2',
+        title: '明清家具的古今加工方式',
+        ZhuJiangRen: '赵中元',
+        ZhiWu: '南京林业大学',
+        state: true,
         src: 'assets/videos/home/movie1.mp4'
       },
       {
         id: 3,
-        BiaoTi: '互动讲堂标题3',
+        title: '中国古典家具发展概述',
+        ZhuJiangRen: '刘学莘',
+        ZhiWu: '福建农林大学',
+        state: true,
         src: 'assets/videos/home/movie2.mp4'
       }
     ],

@@ -43,5 +43,11 @@ export class GovernmentComponent implements OnInit {
     UtilsIs.clickBannerMenu(this.portalNav, menu);
   }
 
+  /**
+   * 导航到正在开发中页面
+   */
+  navigateDeveloping() {
+    this.router.navigateByUrl('developing');
+  }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-portal',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortalComponent implements OnInit {
 
-  constructor() {
+  constructor(private router: Router) {
   }
+
+  // 门户导航
+  portalNav: any;
 
   ngOnInit() {
   }
@@ -22,7 +26,7 @@ export class PortalComponent implements OnInit {
   }
 
   onBj(event){
-    event.stopPropagation();
+    this.router.navigateByUrl('shopping-cart');
   }
 
   onWx(event){
