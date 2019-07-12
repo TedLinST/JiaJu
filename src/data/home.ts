@@ -458,7 +458,7 @@ export const DataHomeHandler = {
     title: '综合服务',
     enTitle: 'GENERAL SERVICE',
     menuData: [
-      { title: ' 展会服务' },
+      { title: '展会服务' },
       { title: '政府服务' },
       { title: '金融服务' },
       { title: '物流售后服务' }

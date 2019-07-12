@@ -20,18 +20,26 @@
   </div>
 
   <!-- 国外主要展会 -->
-  <key-item-chunk [enTitle]="dataHandler.FE.enTitle"
-    [title]="dataHandler.FE.title">
-    <div body>
-      <key-item-chunk-body>
-        <div class="E-style">
-          <div class="top-title">
-            <div class="title">{{dataHandler.FE.subTtile}}</div>
-            <div class="EnTitle">{{dataHandler.FE.subEnTtile}}</div>
-          </div>
-          <key-carousel [data]="dataHandler.FE.data" nzSpan="6"
-            [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
-          </key-carousel>
+  <key-item-chunk [enTitle]="dataHandler.FE.enTitle" [title]="dataHandler.FE.title" >
+    <div body >
+      <key-item-chunk-body  >
+        <div class="E-style" >
+          <nz-carousel nzAutoPlay [nzDots]="false" >
+            <div class="top-title" nz-carousel-content *ngFor="let item of dataHandler.FE.data">
+              <div class="top-title">
+                <!-- <div calss="left"  style="text-align: left"> -->
+                    <div class="title">{{item.subTtile}}</div>
+                    <div class="EnTitle">{{item.subEnTtile}}</div>
+                  <!-- </div> -->
+                  <div calss="right" style="text-align: right">
+                    <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
+                  </div>
+
+              </div>
+            </div>
+            <key-carousel [data]="dataHandler.FE.data" nzSpan="6" 
+              [maskMode]="true" ></key-carousel>
+          </nz-carousel>
         </div>
       </key-item-chunk-body>
     </div>
@@ -41,15 +49,29 @@
   <key-item-chunk [enTitle]="dataHandler.DE.enTitle"
     [title]="dataHandler.DE.title">
     <div body>
-      <key-item-chunk-body>
+      <key-item-chunk-body >
         <div class="E-style">
-          <div class="top-title">
+          <nz-carousel  nzAutoPlay [nzDots]="false" >
+            <div class="top-title" nz-carousel-content *ngFor="let item of dataHandler.DE.data">
+              <div calss="left"  style="text-align: left">
+                <div class="title">{{item.subTtile}}</div>
+                <div class="EnTitle">{{item.subEnTtile}}</div>
+              </div>
+              <div calss="right" style="text-align: right">
+                <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
+              </div>
+            </div>
+            <key-carousel [data]="dataHandler.DE.data" nzSpan="6" 
+              [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
+            </key-carousel>
+          </nz-carousel>
+          <!-- <div class="top-title">
             <div class="title">{{dataHandler.DE.subTtile}}</div>
             <div class="EnTitle">{{dataHandler.DE.subEnTtile}}</div>
           </div>
-          <key-carousel [data]="dataHandler.DE.data" nzSpan="6"
+          <key-carousel [data]="dataHandler.DE.data" nzSpan="6" 
             [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
-          </key-carousel>
+          </key-carousel> -->
         </div>
       </key-item-chunk-body>
     </div>
@@ -61,13 +83,28 @@
     <div body>
       <key-item-chunk-body>
         <div class="E-style">
-          <div class="top-title">
+          <nz-carousel  nzAutoPlay [nzDots]="false" >
+            <div class="top-title" nz-carousel-content *ngFor="let item of dataHandler.SE.data">
+              <div calss="left"  style="text-align: left">
+                <div class="title">{{item.subTtile}}</div>
+                <div class="EnTitle">{{item.subEnTtile}}</div>
+              </div>
+              <div calss="right" style="text-align: right">
+                <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
+              </div>
+            </div>
+            <key-carousel [data]="dataHandler.SE.data" nzSpan="6" 
+              [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
+            </key-carousel>
+          </nz-carousel>
+
+          <!-- <div class="top-title">
             <div class="title">{{dataHandler.SE.subTtile}}</div>
             <div class="EnTitle">{{dataHandler.SE.subEnTtile}}</div>
           </div>
           <key-carousel [data]="dataHandler.SE.data" nzSpan="6"
             [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
-          </key-carousel>
+          </key-carousel> -->
         </div>
       </key-item-chunk-body>
     </div>

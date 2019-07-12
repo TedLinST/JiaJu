@@ -6,11 +6,13 @@ export const DataExhibitionHandler = {
   FE: {
     title: '国外主要展会',
     enTitle: 'MAJOR FOREIGN EXHIBITIONS',
-    subTtile: '德国科隆展',
-    subEnTtile: 'COLOGNE, GERMANY',
+    // subTtile: '德国科隆展',
+    // subEnTtile: 'COLOGNE, GERMANY',
     data: [
       { //国外展会-德国科隆展
         id: 1,
+        subTtile: '德国科隆展',
+        subEnTtile: 'COLOGNE, GERMANY',
         data: [
           {
             id: 1,
@@ -36,6 +38,8 @@ export const DataExhibitionHandler = {
       },
       { //国外展会-米兰国际家具展
         id: 2,
+        subTtile: '米兰国际家具展',
+        subEnTtile: 'COLOGNE, GERMANY',
         data: [
           {
             id: 1,
@@ -61,6 +65,8 @@ export const DataExhibitionHandler = {
       },
       {//国外展会-
         id: 3,
+        subTtile: '国外展会',
+        subEnTtile: 'COLOGNE, GERMANY',
         data: [
           {
             id: 1,
@@ -96,6 +102,8 @@ export const DataExhibitionHandler = {
     data: [
       { //国内展会-国际名家具（东莞）展览会
         id: 1,
+        subTtile: '国际名家具（东莞）展览会',
+        subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
         data: [
           {
             id: 1,
@@ -121,6 +129,8 @@ export const DataExhibitionHandler = {
       },
       { //国内展会-中国(广州)国际家具博览会
         id: 2,
+        subTtile: '中国(广州)国际家具博览会',
+        subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
         data: [
           {
             id: 1,
@@ -146,6 +156,8 @@ export const DataExhibitionHandler = {
       },
       { //国内展会-深圳国际家具展
         id: 3,
+        subTtile: '深圳国际家具展',
+        subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
         data: [
           {
             id: 1,
@@ -176,11 +188,13 @@ export const DataExhibitionHandler = {
   SE: {
     title: '专门性展会',
     enTitle: 'SPECIALIZED EXHIBITION',
-    subTtile: '中国建博会（定制家具）',
-    subEnTtile: 'CHINA CONSTRUCTION EXPO (CUSTOM FURNITURE)',
+    // subTtile: '中国建博会（定制家具）',
+    // subEnTtile: 'CHINA CONSTRUCTION EXPO (CUSTOM FURNITURE)',
     data: [
       { //专门性展会-成都国际家具工业展览会
         id: 1,
+        subTtile: '成都国际家具工业展览会',
+        subEnTtile: 'CHINA CONSTRUCTION EXPO (CUSTOM FURNITURE)',
         data: [
           {
             id: 1,
@@ -206,6 +220,8 @@ export const DataExhibitionHandler = {
       },
       { //专门性展会-青岛国际家具展
         id: 2,
+        subTtile: '青岛国际家具展',
+        subEnTtile: 'CHINA CONSTRUCTION EXPO (CUSTOM FURNITURE)',
         data: [
           {
             id: 1,
@@ -231,6 +247,8 @@ export const DataExhibitionHandler = {
       },
       { //专门性展会-苏州家博会
         id: 3,
+        subTtile: '苏州家博会',
+        subEnTtile: 'CHINA CONSTRUCTION EXPO (CUSTOM FURNITURE)',
         data: [
           {
             id: 1,
