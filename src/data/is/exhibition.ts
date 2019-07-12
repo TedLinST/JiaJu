@@ -97,8 +97,8 @@ export const DataExhibitionHandler = {
   DE: {
     title: '国内主要展会',
     enTitle: 'MAJOR DOMESTIC EXHIBITIONS',
-    subTtile: '中国国际家具博览会',
-    subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
+    // subTtile: '中国国际家具博览会',
+    // subEnTtile: 'CHINA INTERNATIONAL FURNITURE FAIR',
     data: [
       { //国内展会-深圳国际家具展
         id: 1,

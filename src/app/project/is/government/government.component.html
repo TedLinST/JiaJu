@@ -115,7 +115,7 @@
     [title]="dataHandler.PSA.title">
     <div body>
       <key-item-chunk-body [isMore]="true"
-        (clickMore)="portalNav.openPatentService()">
+        (clickMore)="portalNav.navigateDeveloping()">
         <div class="PSA-style">
           <div class="z-row">
             <div class="z-col z-col-2">
@@ -171,7 +171,8 @@
   <key-item-chunk [enTitle]="dataHandler.TSA.enTitle"
     [title]="dataHandler.TSA.title">
     <div body>
-      <key-item-chunk-body>
+      <key-item-chunk-body [isMore]="true"
+      (clickMore)="portalNav.navigateDeveloping()">
         <div class="TSA-style">
           <div class="z-row">
             <div class="z-col z-col-2">
@@ -227,7 +228,8 @@
   <key-item-chunk [enTitle]="dataHandler.ESA.enTitle"
     [title]="dataHandler.ESA.title">
     <div body>
-      <key-item-chunk-body>
+      <key-item-chunk-body [isMore]="true"
+      (clickMore)="portalNav.navigateDeveloping()">
         <div class="ESA-style">
           <div class="z-row">
             <div class="z-col z-col-2">
@@ -283,7 +285,8 @@
   <key-item-chunk [enTitle]="dataHandler.BSA.enTitle"
     [title]="dataHandler.BSA.title">
     <div body>
-      <key-item-chunk-body>
+      <key-item-chunk-body [isMore]="true"
+      (clickMore)="portalNav.openPatentService()">
         <div class="BSA-style">
           <div class="z-row">
             <div class="z-col z-col-2">
