@@ -270,8 +270,19 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    this.router.navigateByUrl('developing');
-    //this.router.navigateByUrl('furniture-standard');
+    //this.router.navigateByUrl('developing');
+    this.router.navigateByUrl('furniture-standard');
+  }
+
+  /**
+   * 综合服务 - 政府服务 - 家具国家标准
+   */
+  openFurnitureStandardDetails(event?: any) {
+    if (!!event) {
+      event.stopPropagation();
+    }
+    //this.router.navigateByUrl('developing');
+    this.router.navigateByUrl('standard-details');
   }
 
   /**

@@ -68,7 +68,7 @@
     [title]="dataHandler.FNSD.title">
     <div body>
       <key-item-chunk-body [isMore]="true"
-        (clickMore)="portalNav.navigateDeveloping()">
+        (clickMore)="portalNav.openFurnitureStandard()">
         <div class="FNSD-style">
           <div class="z-row">
             <div class="z-col z-col-3">
@@ -77,7 +77,7 @@
                 <div class="body">
                   <ng-template ngFor let-item [ngForOf]="dataHandler.FNSD.data0"
                     let-index="index">
-                    <div class="label singleTextBeyondHide">{{item.title}}</div>
+                    <div class="label singleTextBeyondHide" (click)="portalNav.openFurnitureStandardDetails()"><a>{{item.title}}</a></div>
                   </ng-template>
                 </div>
               </div>
@@ -88,7 +88,7 @@
                 <div class="body">
                   <ng-template ngFor let-item [ngForOf]="dataHandler.FNSD.data1"
                     let-index="index">
-                    <div class="label singleTextBeyondHide">{{item.title}}</div>
+                    <div class="label singleTextBeyondHide" (click)="portalNav.openFurnitureStandardDetails()"><a>{{item.title}}</a></div>
                   </ng-template>
                 </div>
               </div>
@@ -99,7 +99,7 @@
                 <div class="body">
                   <ng-template ngFor let-item [ngForOf]="dataHandler.FNSD.data2"
                     let-index="index">
-                    <div class="label singleTextBeyondHide">{{item.title}}</div>
+                    <div class="label singleTextBeyondHide" (click)="portalNav.openFurnitureStandardDetails()"><a>{{item.title}}</a></div>
                   </ng-template>
                 </div>
               </div>
