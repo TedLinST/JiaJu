@@ -276,7 +276,6 @@ export class PortalNavigation {
 
   /**
    * 综合服务 - 政府服务 - 专利服务
-   * @param $event 
    */
   openPatentsService(event?: any){
     if (!!event) {
@@ -288,7 +287,6 @@ export class PortalNavigation {
 
   /**
    * 综合服务 - 政府服务 - 税务服务
-   * @param $event 
    */
   openTaxService(event?: any){
     if (!!event) {

@@ -220,18 +220,6 @@ export class ConstantHandler {
           title: '家具国家标准',
         },
         {
-          id: '2-3',
-          title: '专利服务',
-        },
-        {
-          id: '2-4',
-          title: '税务服务',
-        },
-        {
-          id: '2-5',
-          title: '环保服务',
-        },
-        {
           id: '2-2',
           title: '专利服务',
         },
