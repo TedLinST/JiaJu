@@ -292,8 +292,8 @@ export class PortalNavigation {
     if (!!event) {
       event.stopPropagation();
     }
-    // this.router.navigateByUrl('patent-service');
-    this.navigateDeveloping();
+    this.router.navigateByUrl('patent-service');
+    //this.navigateDeveloping();
   }
 
   /**
@@ -325,7 +325,7 @@ openEnvironmentalProtectionService(event?: any){
     if (!!event) {
       event.stopPropagation();
     }
-    this.router.navigateByUrl('patent-service');
+    this.router.navigateByUrl('business-service');
   }
 
   /**

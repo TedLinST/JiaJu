@@ -1,16 +1,16 @@
-// 综合服务 - 政府服务 - 工商服务数据助手
+// 综合服务 - 政府服务 - 专利服务数据助手
 export const DataPatentServiceHandler = {
 
   // 子横幅
   SB: {
-    title: '国家市场监督管理总局网站',
-    link: 'http://www.samr.gov.cn/',
-    src: 'assets/imgs/patent-service/gongshang.jpg'
+    title: '国家知识产权局网站',
+    link: 'http://www.cnipa.gov.cn',
+    src: 'assets/imgs/patent-service/guojiazscqj.jpg'
   },
 
-  // 专利政策与解读  ->  工商政策与解读
+  // 专利政策与解读  ->  专利政策与解读
   PPI: {
-    title: '工商政策与解读',
+    title: '专利政策与解读',
     enTitle: 'PATENT POLICY AND INTERPRETATION',
     // 相关政策
     data0: [
@@ -110,7 +110,7 @@ export const DataPatentServiceHandler = {
         src: 'assets/imgs/patent-service/zhinan-2.jpg'
       },
       {
-        title: '工商年检办理',
+        title: '专利年检办理',
         src: 'assets/imgs/patent-service/zhinan-1.jpg'
       },
       {
@@ -120,9 +120,9 @@ export const DataPatentServiceHandler = {
     ]
   },
 
-  //  工商代理机构
+  //  专利代理机构
   PA: {
-    title: '工商代理机构',
+    title: '专利代理机构',
     enTitle: 'PATENT AGENCY',
     data: [
       {

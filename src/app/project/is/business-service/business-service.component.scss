@@ -1,0 +1,58 @@
+.business-service {
+  >.body {
+    width: 1200px;
+    margin: 20px auto 0px;
+
+    .sub-banner {
+      position: relative;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .PPI-style {
+    border-top: 5px solid #ffc5c5;
+    background-color: #f8f8f8;
+    margin: 0px 4px 0px;
+
+    .box {
+      padding: 10px 20px;
+
+      .header {
+        color: #222;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .body {
+        position: relative;
+        font-size: 15px;
+        color: #7b7b7b;
+
+        .img-box {
+          position: relative;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .label {
+          margin-bottom: 3px;
+
+          .time {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}

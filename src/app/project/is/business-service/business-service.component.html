@@ -1,7 +1,7 @@
-<div class="patent-service">
+<div class="business-service">
   <!-- 横幅 -->
   <is-banner-menu [srcUrl]="CH_IS_BANNER_SRC" [dataMenu]="CH_IS_BANNER_MENU"
-    activeSubTitle="专利服务" (clickMenu)="onClickBannerMenu($event)">
+    activeSubTitle="工商服务" (clickMenu)="onClickBannerMenu($event)">
   </is-banner-menu>
 
   <div class="body">
@@ -17,7 +17,7 @@
         <a (click)="portalNav.openExhibition()">政府服务</a>
       </nz-breadcrumb-item>
       <nz-breadcrumb-item>
-        专利服务
+        工商服务
       </nz-breadcrumb-item>
     </nz-breadcrumb>
 
@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <!-- 专利政策与解读 -->
+  <!-- 工商政策与解读 -->
   <key-item-chunk [enTitle]="dataHandler.PPI.enTitle"
     [title]="dataHandler.PPI.title">
     <div body>
@@ -41,7 +41,7 @@
           <div class="z-row">
             <div class="z-col z-col-2">
               <div class="box">
-                <div class="header">专利相关政策</div>
+                <div class="header">工商相关政策</div>
                 <div class="body">
                   <ng-template ngFor let-item [ngForOf]="dataHandler.PPI.data0"
                     let-index="index">
@@ -93,7 +93,7 @@
     </div>
   </key-item-chunk>
 
-  <!-- 专利代理机构 -->
+  <!-- 工商代理机构 -->
   <key-item-chunk [enTitle]="dataHandler.PA.enTitle"
     [title]="dataHandler.PA.title">
     <div body>
