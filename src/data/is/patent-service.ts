@@ -15,67 +15,67 @@ export const DataPatentServiceHandler = {
     // 相关政策
     data0: [
       {
-        title: '加强专利代理管理 促进规范行业健康发展'
+        title: '专利代理师资格考试办法（国家市场监督管理总局令第7号）'
       },
       {
-        title: '全国人民代表大会常务委员会做出修改《中华人民共和国反不正当竞争法》的决定'
+        title: '专利代理管理办法（国家市场监督管理总局令第6号）'
       },
       {
-        title: '“铁拳”出击 严厉打击侵犯知识产权违法行为'
+        title: '《专利优先审查管理办法》(2017)(局令第76号)'
       },
       {
-        title: '国家市场监督管理总局规章制定程序规定'
+        title: '关于规范专利申请行为的若干规定(2017)(局令第75号)'
       },
       {
-        title: '市场监管总局等六部门印发《加强网购和进出口领域知识产权执法实施办法》'
+        title: '关于修改〈专利审查指南〉的决定(2017)(局令第74号)'
       },
       {
-        title: '专利代理管理办法'
+        title: '《国家知识产权局规范性文件制定和管理办法》(局令第73号)'
       },
       {
-        title: '中华人民共和国价格法'
+        title: '关于废止第39号令发布的《专利费用减缓办法》的令(局令第72号)'
       },
       {
-        title: '中华人民共和国反不正当竞争法'
+        title: '《关于修改<专利行政执法办法>的决定》(第71号)'
       },
       {
-        title:'直销管理条例'
+        title:'《专利代理管理办法》(局令第70号)'
       },
       {
-        title:'价格违法行为行政处罚规定'
+        title:'《用于专利程序的生物材料保藏办法》(局令第69号)'
       }
     ],
     // 政策解读
     data1: [
       {
-        title: '2018年前三季度市场环境形势分析报告'
+        title: '开展“蓝天”行动 加强代理监管'
       },
       {
-        title: '市场监管总局关于明确免予办理强制性产品认证工作要求的通知'
+        title: '2019年全国专利代理师资格考试常见问题解答'
       },
       {
-        title: '市场监管总局关于加强认证监管工作的通知'
+        title: '商标法修改相关问题解读'
       },
       {
-        title: '市场监管总局关于《市场监督管理投诉与举报处理办法（征求意见稿）》公开征求意见的公告'
+        title: '《专利代理条例》解读：为专利代理行业发展提供制度支撑'
       },
       {
-        title: '市场监管总局关于发布《绿色产品标识使用管理办法》的公告'
+        title: '财政部会计司 国家知识产权局战略规划司有关负责人就《知识产权相关会计信息披露规定》答记者问'
       },
       {
-        title: '十三个新职业发布 人工智能工程技术人员、无人机驾驶员等榜上有名'
+        title: '提升代理质量　优化营商环境——国家知识产权局、司法部有关负责人解读新《专利代理条例》'
       },
       {
-        title: '市场监管总局：去年虚假违法广告案罚没金额超7亿元'
+        title: '《知识产权认证管理办法》政策解读'
       },
       {
-        title: '按摩器具产品抽查 超三成不合格存漏电火灾风险'
+        title: '《高校知识产权信息服务中心建设实施办法》解读'
       },
       {
-        title: '2018年全国市场主体发展基本情况'
+        title: '走进新时代 迈上新征程——解读党的十九大报告10个关键词'
       },
       {
-        title: '全国12358价格监管平台2018年11月分析报告'
+        title: '《专利优先审查管理办法》解读'
       }
     ]
   },
@@ -86,35 +86,35 @@ export const DataPatentServiceHandler = {
     enTitle: 'HANDLING GUIDELINE',
     data: [
       {
-        title: '开办家具厂所需的手续',
+        title: '专利申请的提交形式',
         src: 'assets/imgs/patent-service/zhinan-1.jpg'
       },
       {
-        title: '如何办理营业执照',
+        title: '申请专利应当提交哪些申请文件',
         src: 'assets/imgs/patent-service/zhinan-2.jpg'
       },
       {
-        title: '企业公章的制作与管理',
+        title: '申请文件使用统一制定的表格',
         src: 'assets/imgs/patent-service/zhinan-1.jpg'
       },
       {
-        title: '企业银行账户开户',
+        title: '提交申请时如何排列申请文件',
         src: 'assets/imgs/patent-service/zhinan-2.jpg'
       },
       {
-        title: '国税地税的办理',
+        title: '申请文件的文字和书写要求',
         src: 'assets/imgs/patent-service/zhinan-1.jpg'
       },
       {
-        title: '企业社保登记',
+        title: '证明文件',
         src: 'assets/imgs/patent-service/zhinan-2.jpg'
       },
       {
-        title: '专利年检办理',
+        title: '专利申请内容的单一性要求',
         src: 'assets/imgs/patent-service/zhinan-1.jpg'
       },
       {
-        title: '家具出口手续办理',
+        title: '如何缴纳费用',
         src: 'assets/imgs/patent-service/zhinan-2.jpg'
       }
     ]
@@ -126,43 +126,43 @@ export const DataPatentServiceHandler = {
     enTitle: 'PATENT AGENCY',
     data: [
       {
-        title: '人人帮',
+        title: '长沙永星专利商标事务所',
         src: 'assets/imgs/patent-service/DLjigou-1.jpg'
       },
       {
-        title: '好办易',
+        title: '湖南兆弘专利事务所',
         src: 'assets/imgs/patent-service/DLjigou-2.jpg'
       },
       {
-        title: '韧启',
+        title: '湘潭市汇智专利事务所',
         src: 'assets/imgs/patent-service/DLjigou-3.jpg'
       },
       {
-        title: '讯法网',
+        title: '长沙欧诺专利代理事务所',
         src: 'assets/imgs/patent-service/DLjigou-4.jpg'
       },
       {
-        title: '就爱创业',
+        title: '长沙市融智专利事务所',
         src: 'assets/imgs/patent-service/DLjigou-5.jpg'
       },
       {
-        title: '顶呱呱',
+        title: '长沙智嵘专利代理事务所',
         src: 'assets/imgs/patent-service/DLjigou-6.jpg'
       },
       {
-        title: '慧算账',
+        title: '郴州大天知识产权事务所',
         src: 'assets/imgs/patent-service/DLjigou-7.jpg'
       },
       {
-        title: '京师企服',
+        title: '长沙朕扬知识产权代理事务所',
         src: 'assets/imgs/patent-service/DLjigou-8.jpg'
       },
       {
-        title: '和创财税',
+        title: '长沙七源专利代理事务所',
         src: 'assets/imgs/patent-service/DLjigou-9.jpg'
       },
       {
-        title: '誉胜',
+        title: '湖南思博达律师事务所',
         src: 'assets/imgs/patent-service/DLjigou-10.jpg'
       }
     ]
