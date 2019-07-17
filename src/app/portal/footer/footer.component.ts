@@ -11,12 +11,15 @@ export class FooterComponent implements OnInit {
 
   // 门户导航
   portalNav: any;
+  // 数据助手
+  dataHandler: any;
 
   constructor(private router: Router) {
     this.portalNav = new PortalNavigation(router);
   }
-
+  
   ngOnInit() {
+    this.dataHandler = { link: 'http://www.beian.miit.gov.cn' }
   }
 
 }
