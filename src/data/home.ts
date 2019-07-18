@@ -721,70 +721,70 @@ export const DataHomeHandler = {
         id: 1,
         title: '沙发套装 典雅舒适 黄牛头层油蜡皮 进口橡胶木 高弹海绵 人性化设计 皮布',
         link: 'www.baidu.com',
-        price: '15999 RMB',
+        price: '￥15999',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-1.jpg'
       },
       {
         id: 2,
         title: '舒适黄牛真皮沙发 高弹性公仔棉真皮腰枕 带储物功能L型皮艺左转角沙发',
         link: 'www.baidu.com',
-        price: '6599 RMB',
+        price: '￥6599',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-2.jpg'
       },
       {
         id: 3,
         title: '畅销经典款 高档水牛头层真皮床 对称式描金雕花 1.8米精致水晶拉扣床',
         link: 'www.baidu.com',
-        price: '3499 RMB',
+        price: '￥3499',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-3.jpg'
       },
       {
         id: 4,
         title: '1.8米床 森林系 可储物高箱床 白蜡木全实木家具 双人床',
         link: 'www.baidu.com',
-        price: '5099 RMB',
+        price: '￥5099',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-4.jpg'
       },
       {
         id: 5,
         title: '橡木臻品 自然木纹 宽厚桌脚 美国进口白橡木1.6米餐桌',
         link: 'www.baidu.com',
-        price: '1298 RMB',
+        price: '￥1298',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-5.jpg'
       },
       {
         id: 6,
         title: '进口乌金木 全实木 自带旋转托盘 餐桌椅组合（1桌+6椅）',
         link: 'www.baidu.com',
-        price: '17960 RMB',
+        price: '￥17960',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-6.jpg'
       },
       {
         id: 7,
         title: '凹弧形书桌边缘 人性化设计书桌',
         link: 'www.baidu.com',
-        price: '1199 RMB',
+        price: '￥1199',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-7.jpg'
       },
       {
         id: 8,
         title: '进口芬兰松1.2米双层儿童床 全实木板条床',
         link: 'www.baidu.com',
-        price: '4688 RMB',
+        price: '￥4688',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-8.jpg'
       },
       {
         id: 9,
         title: '源氏木语纯实木简约现代原木床头柜卧室床边柜白橡木柜子储物家具',
         link: 'www.baidu.com',
-        price: '820 RMB',
+        price: '￥820',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-9.jpg'
       },
       {
         id: 10,
         title: '源氏木语全实木床头柜北欧卧室带锁储物柜现代简约橡木床边收纳柜',
         link: 'www.baidu.com',
-        price: '750 RMB',
+        price: '￥750',
         src: 'assets/imgs/home/jiaJuShangCheng/tuijian-10.jpg'
       }
     ],
@@ -794,49 +794,49 @@ export const DataHomeHandler = {
         id: 1,
         title: '红木酒柜客厅实木家具花梨木玻璃展示柜刺猬紫檀餐厅仿古红酒柜',
         link: 'www.baidu.com',
-        price: '5800 RMB',
+        price: '5800',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-1.jpg'
       },
       {
         id: 2,
         title: '沙发',
         link: 'www.baidu.com',
-        price: '3540 RMB',
+        price: '3540',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-2.jpg'
       },
       {
         id: 3,
         title: '电视柜',
         link: 'www.baidu.com',
-        price: '398 RMB',
+        price: '398',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-3.jpg'
       },
       {
         id: 4,
         title: '床头柜',
         link: 'www.baidu.com',
-        price: '400 RMB',
+        price: '400',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-4.jpg'
       },
       {
         id: 5,
         title: '茶几',
         link: 'www.baidu.com',
-        price: '250 RMB',
+        price: '250',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-5.jpg'
       },
       {
         id: 6,
         title: '沙发',
         link: 'www.baidu.com',
-        price: '999 RMB',
+        price: '999',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-6.jpg'
       },
       {
         id: 7,
         title: '床头柜',
         link: 'www.baidu.com',
-        price: '1080 RMB',
+        price: '1080',
         src: 'assets/imgs/home/jiaJuShangCheng/tuangou-7.jpg'
       }
     ],
@@ -957,19 +957,19 @@ export const DataHomeHandler = {
         id: 4,
         title: '传承明式传统工艺榫卯结构 缅甸花梨方凳',
         subTitle: '餐椅',
-        src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-1.jpg'
+        src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-4.jpg'
       },
       {
         id: 5,
         title: '铜师傅 铜木主义 塞尚卧室家具',
         subTitle: '床',
-        src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-2.jpg'
+        src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-5.jpg'
       },
       {
         id: 6,
         title: '一张可以鲜活空间的高颜值茶台',
         subTitle: '茶几',
-        src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-3.jpg'
+        src: 'assets/imgs/home/jiaJuShangCheng/zhongchou-6.jpg'
       }
     ]
   },

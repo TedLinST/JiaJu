@@ -11,7 +11,7 @@
           <div class="left" (click)="openSchoolProjectDetails(dataHandler.SP.data[0].id)">
             <img [src]="dataHandler.SP.data[0].src">
             <key-item-mask>
-              <key-item-mask-label [label]="dataHandler.SP.data[0].BiaoTi">
+              <key-item-mask-label [label]="dataHandler.SP.data[0].BiaoTi" class="title">
               </key-item-mask-label>
               <div class="subtitle">
                 <key-item-mask-label [label]="dataHandler.SP.data[0].JiBie">
@@ -28,7 +28,7 @@
                   <div class="header">
                     <img [src]="item.src">
                     <key-item-mask [isTextLeft]="true">
-                      <key-item-mask-label [label]="item.BiaoTi">
+                      <key-item-mask-label [label]="item.BiaoTi" class="title">
                       </key-item-mask-label>
                       <div class="subtitle">
                         <key-item-mask-label [label]="item.JiBie">
@@ -60,7 +60,7 @@
                 <div class="header">
                   <img [src]="item.src">
                   <key-item-mask [isTextLeft]="true">
-                    <key-item-mask-label [label]="item.BiaoTi">
+                    <key-item-mask-label [label]="item.BiaoTi" class="title">
                     </key-item-mask-label>
                     <key-item-mask-label [label]="item.FaBuShiJian">
                     </key-item-mask-label>
@@ -229,7 +229,7 @@
                   <key-item-mask *ngIf="item.state" [isMaskPaved]="true" [isActive]="true"
                     [maskStyle]="{'height':'40%','margin-bottom':'18.5%','font-size':'120%'}"
                     (clickChange)="onClickChange(item)">
-                    <key-item-mask-label [label]="item.title"></key-item-mask-label>
+                    <key-item-mask-label [label]="item.title" class="title"></key-item-mask-label>
                     <key-item-mask-label [label]="item.ZhuJiangRen"></key-item-mask-label>
                     <key-item-mask-label [label]="item.ZhiWu"></key-item-mask-label>
                   </key-item-mask>
