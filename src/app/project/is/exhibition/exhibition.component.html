@@ -24,21 +24,24 @@
     <div body >
       <key-item-chunk-body  [isMore]="true" (clickMore)="portalNav.navigateDeveloping()">
         <div class="E-style" >
-          <nz-carousel nzAutoPlay [nzDots]="false" >
-            <div class="top-title" nz-carousel-content *ngFor="let item of dataHandler.FE.data">
-
+          
+          <nz-carousel #FEcarousel [nzDots]="false" >
+            <div class="top-title" 
+              nz-carousel-content *ngFor="let item of dataHandler.FE.data">
                 <div calss="left"  style="text-align: left">
                   <div class="title">{{item.subTtile}}</div>
                   <div class="EnTitle">{{item.subEnTtile}}</div>
                 </div>
-                <!-- <div calss="right" style="text-align: right">
-                  <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
-                </div> -->
-
             </div>
-            <key-carousel [data]="dataHandler.FE.data" nzSpan="6" 
-              [maskMode]="true" ></key-carousel>
+            <key-carousel  [data]="dataHandler.FE.data" nzSpan="6" 
+              [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)"></key-carousel>
           </nz-carousel>
+          <!-- 箭头 -->
+          <div class="key-arrow key-arrow-horizontal-out">
+            <i class="fa fa-angle-left left" (click)="FEcarousel.pre();"></i>
+            <i class="fa fa-angle-right right" (click)="FEcarousel.next();"></i>
+          </div>
+          
         </div>
       </key-item-chunk-body>
     </div>
@@ -50,27 +53,22 @@
     <div body>
       <key-item-chunk-body [isMore]="true" (clickMore)="portalNav.openFurnitureFair()">
         <div class="E-style">
-          <nz-carousel  nzAutoPlay [nzDots]="false" >
+          <nz-carousel #DEcarousel [nzDots]="false" >
             <div class="top-title" nz-carousel-content *ngFor="let item of dataHandler.DE.data">
               <div calss="left"  style="text-align: left">
                 <div class="title">{{item.subTtile}}</div>
                 <div class="EnTitle">{{item.subEnTtile}}</div>
               </div>
-              <!-- <div calss="right" style="text-align: right">
-                <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
-              </div> -->
             </div>
             <key-carousel [data]="dataHandler.DE.data" nzSpan="6" 
               [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
             </key-carousel>
           </nz-carousel>
-          <!-- <div class="top-title">
-            <div class="title">{{dataHandler.DE.subTtile}}</div>
-            <div class="EnTitle">{{dataHandler.DE.subEnTtile}}</div>
+          <!-- 箭头 -->
+          <div class="key-arrow key-arrow-horizontal-out">
+            <i class="fa fa-angle-left left" (click)="DEcarousel.pre();"></i>
+            <i class="fa fa-angle-right right" (click)="DEcarousel.next();"></i>
           </div>
-          <key-carousel [data]="dataHandler.DE.data" nzSpan="6" 
-            [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
-          </key-carousel> -->
         </div>
       </key-item-chunk-body>
     </div>
@@ -82,20 +80,22 @@
     <div body>
       <key-item-chunk-body [isMore]="true" (clickMore)="portalNav.navigateDeveloping()">
         <div class="E-style">
-          <nz-carousel  nzAutoPlay [nzDots]="false" >
+          <nz-carousel  #SEcarousel [nzDots]="false" >
             <div class="top-title" nz-carousel-content *ngFor="let item of dataHandler.SE.data">
               <div calss="left"  style="text-align: left">
                 <div class="title">{{item.subTtile}}</div>
                 <div class="EnTitle">{{item.subEnTtile}}</div>
               </div>
-              <!-- <div calss="right" style="text-align: right">
-                <a (click)="portalNav.navigateDeveloping(item.id)">MORE+</a>
-              </div> -->
             </div>
             <key-carousel [data]="dataHandler.SE.data" nzSpan="6" 
               [maskMode]="true" (clickItemIndex)="openExhibitionDetails($event)">
             </key-carousel>
           </nz-carousel>
+          <!-- 箭头 -->
+          <div class="key-arrow key-arrow-horizontal-out">
+            <i class="fa fa-angle-left left" (click)="SEcarousel.pre();"></i>
+            <i class="fa fa-angle-right right" (click)="SEcarousel.next();"></i>
+          </div>
 
           <!-- <div class="top-title">
             <div class="title">{{dataHandler.SE.subTtile}}</div>
