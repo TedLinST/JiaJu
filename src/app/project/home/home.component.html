@@ -365,7 +365,7 @@
         (clickMore)="portalNav.openCommodity()">
         <div nz-row>
           <ng-template ngFor let-item [ngForOf]="dataHandler.FM.data0" let-index="index">
-            <div nz-col nzSpan="4" style="height: 385px;margin-bottom: 6px;">
+            <div nz-col nzSpan="4" style="height: 312px;margin-bottom: 6px;overflow: hidden;">
               <div class="item-box item-box-margin-3">
                 <div class="header">
                   <img [imgLazyload]="item.src">
@@ -478,7 +478,7 @@
         <div class="FE0-style">
           <div class="left" (click)="openQuickAccess(dataHandler.FE.data0[0].id)">
             <img [imgLazyload]="dataHandler.FE.data0[0].src">
-            <key-item-mask>
+            <key-item-mask isTextCenter="true">
               <key-item-mask-label [label]="dataHandler.FE.data0[0].title">
               </key-item-mask-label>
             </key-item-mask>
