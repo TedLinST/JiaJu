@@ -27,8 +27,11 @@
                 <div *ngIf="!maskMode" class="body" [ngStyle]="bodyStyle"
                   [class.body-padding]="labelArray != null && labelArray.length > 0"
                   [class.body-bg]="isBodyBg">
-                  <ng-template ngFor let-labels [ngForOf]="labelArray">
-                    <key-carousel-label [label]="labels.label"
+                  <ng-template ngFor let-labels [ngForOf]="labelArray" let-index="index">
+                    <key-carousel-label *ngIf="index == 0" [label]="labels.label"
+                      [value]="subData[labels.key]" [unit]="labels.unit" style="font-weight: bold;">
+                    </key-carousel-label>
+                    <key-carousel-label *ngIf="index != 0" [label]="labels.label"
                       [value]="subData[labels.key]" [unit]="labels.unit">
                     </key-carousel-label>
                   </ng-template>
