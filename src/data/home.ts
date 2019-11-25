@@ -397,15 +397,15 @@ export const DataHomeHandler = {
           },
           {
             id: 5,
-            title: '吴智慧教授',
-            text: '木材加工、家具与木制品设计和制造',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
+            title: '刘元教授',
+            text: '木材材性、木材功能性改良、生物质复合材料',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5a.jpg'
           },
           {
             id: 6,
-            title: '李贤军教授',
-            text: '木材干燥、木材功能性改良　　　　　',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5.jpg'
+            title: '戴向东教授',
+            text: '家具设计、室内设计、陈设艺术',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia6a.jpg'
           }
         ]
       },
@@ -414,15 +414,15 @@ export const DataHomeHandler = {
         data: [
           {
             id: 1,
-            title: '陈礼辉教授',
-            text: '植物资源化学与新材料的研究',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia6.jpg'
+            title: '李光耀教授',
+            text: '室内与家具设计方向理论与实务教学和科研',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia7a.jpg'
           },
           {
             id: 2,
-            title: '李新功教授',
-            text: '人造板工艺与装备、生物质复合材料、家具工程',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia8.jpg'
+            title: '陈桂华教授',
+            text: '生物质复合材料、人造板工艺',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia11.jpg'
           },
           {
             id: 3,
@@ -432,21 +432,21 @@ export const DataHomeHandler = {
           },
           {
             id: 4,
-            title: '袁光明教授',
-            text: '木材功能性改良；木竹基复合材料',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia10.jpg'
+            title: '吴智慧教授',
+            text: '木材加工、家具与木制品设计和制造、家具与室内环境',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
           },
           {
             id: 5,
-            title: '陈桂华教授',
-            text: '生物质复合材料、人造板工艺',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia11.jpg'
+            title: '刘文金教授',
+            text: '工业设计教育、家具设计理论研究和设计实践',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia11a.jpg'
           },
           {
             id: 6,
-            title: '吴智慧教授',
-            text: '木材加工、家具与木制品设计和制造',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
+            title: '李贤军教授',
+            text: '木材干燥、木材功能性改良、林业生物质复合材料',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5.jpg'
           }
         ]
       }

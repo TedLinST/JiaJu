@@ -687,15 +687,15 @@ export const DataSECooperationHandler = {
           },
           {
             id: 5,
-            title: '吴智慧教授',
-            text: '木材加工、家具与木制品设计和制造',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia4.jpg'
+            title: '刘元教授',
+            text: '木材材性、木材功能性改良、生物质复合材料',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5a.jpg'
           },
           {
             id: 6,
-            title: '李贤军教授',
-            text: '木材干燥、木材功能性改良　　　　　',
-            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia5.jpg'
+            title: '戴向东教授',
+            text: '家具设计、室内设计、陈设艺术',
+            src: 'assets/imgs/home/xiaoQiHeZuoFuWu/zhuanjia6a.jpg'
           }
         ]
       }
